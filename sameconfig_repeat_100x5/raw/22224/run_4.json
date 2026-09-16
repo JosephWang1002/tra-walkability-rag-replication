@@ -1,0 +1,122 @@
+{
+ "oid": "22224",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22224.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22224_120.702936_31.333591_09002900121708081541349787H_299.03_2017_8_苏州工业园区金鸡湖街道西沈浒路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.8,
+ "usage": {
+  "completion_tokens": 833,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 429,
+   "engine_ttlt_ms": 12793,
+   "pre_inference_ms": 382,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1016,
+   "service_ttlt_ms": 13374,
+   "user_visible_ttft_ms": 634
+  },
+  "prompt_tokens": 5158,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4864
+  },
+  "total_tokens": 5991
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 61.0\n    },\n    \"safety\": 63.0,\n    \"livability\": 58.0,\n    \"sustainability\": 74.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 69.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to motor vehicles, with marked parking bays on both sides and a central carriageway, while no clearly visible dedicated pedestrian sidewalk is evident in the image.\",\n      \"Accessibility is only moderate because the road edges are defined by curbs and parking areas, but no visible curb ramps, tactile paving, zebra crossing, or other barrier-free pedestrian facilities can be confirmed.\",\n      \"Fairness for all road users is limited because drivers have clear lane markings and parking organization, while pedestrians do not have an equally legible protected path in the visible scene.\"\n    ],\n    \"safety\": [\n      \"Vehicle movement is somewhat organized by the centerline and marked parking spaces, which helps reduce random conflicts between parked and moving cars.\",\n      \"Safety is weakened by the narrow shared roadway with parked cars on both sides, creating potential dooring and visibility conflicts for anyone walking along the edge of the carriageway.\",\n      \"The scene is heavily shaded and visually dark under dense tree canopy, which may reduce visibility between users and lower perceived personal security, especially in low-light conditions.\"\n    ],\n    \"livability\": [\n      \"Dense mature trees create a calm residential atmosphere and visually buffer the parked cars, which supports a quieter everyday environment.\",\n      \"Livability is reduced because the visible space functions mainly as an internal access road and parking area, with no visible benches, play spaces, storefronts, or social activity nodes.\",\n      \"The presence of residential towers and landscaped tree cover suggests a usable neighborhood setting, but the lack of visible pedestrian amenities limits street life and everyday convenience at ground level.\"\n    ],\n    \"sustainability\": [\n      \"The large amount of mature tree canopy is a strong positive feature, contributing shade, cooling, and ecological value within the street space.\",\n      \"Permeable-looking paving or grass-grid parking surfaces on the left side suggest some stormwater infiltration potential compared with fully sealed asphalt.\",\n      \"Sustainability is moderated by the car-oriented layout, since much of the visible ground plane is devoted to parking bays and vehicle access rather than walking or cycling infrastructure.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous canopy of mature trees gives the street a lush, enclosed green character that is visually appealing.\",\n      \"The roadway, parking bays, and curbs appear orderly and relatively clean, which improves visual coherence.\",\n      \"Aesthetics are somewhat reduced by the dominance of parked cars and the dark, tunnel-like appearance under the dense canopy, which makes the space feel less open and vibrant.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good because the dense tree canopy provides extensive shade over the roadway and parking edges.\",\n      \"Physical comfort is mixed: the asphalt road surface appears smooth for vehicles, but no clearly visible continuous pedestrian walkway or seating is provided for people on foot.\",\n      \"Psychological comfort is moderate because the enclosed greenery creates a calm setting, yet the dark shaded environment and close proximity of parked vehicles can make movement feel constrained.\"\n    ],\n    \"walkability\": [\n      \"Walkability is poor because no continuous, clearly designated sidewalk is visible; pedestrians would likely need to share space with cars or walk along parking edges.\",\n      \"There are no visible zebra crossings, curb ramps, pedestrian signs, or refuge features that would improve route legibility and crossing safety.\",\n      \"Although the tree canopy offers pleasant shade, the street remains primarily organized around vehicle access and parking rather than pedestrian circulation.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 58.0,
+   "accessibility": 61.0
+  },
+  "safety": 63.0,
+  "livability": 58.0,
+  "sustainability": 74.0,
+  "aesthetics": 72.0,
+  "comfort": 69.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 61.0,
+  "safety": 63.0,
+  "livability": 58.0,
+  "sustainability": 74.0,
+  "aesthetics": 72.0,
+  "comfort": 69.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:51:26+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to motor vehicles, with marked parking bays on both sides and a central carriageway, while no clearly visible dedicated pedestrian sidewalk is evident in the image.",
+   "Accessibility is only moderate because the road edges are defined by curbs and parking areas, but no visible curb ramps, tactile paving, zebra crossing, or other barrier-free pedestrian facilities can be confirmed.",
+   "Fairness for all road users is limited because drivers have clear lane markings and parking organization, while pedestrians do not have an equally legible protected path in the visible scene."
+  ],
+  "safety": [
+   "Vehicle movement is somewhat organized by the centerline and marked parking spaces, which helps reduce random conflicts between parked and moving cars.",
+   "Safety is weakened by the narrow shared roadway with parked cars on both sides, creating potential dooring and visibility conflicts for anyone walking along the edge of the carriageway.",
+   "The scene is heavily shaded and visually dark under dense tree canopy, which may reduce visibility between users and lower perceived personal security, especially in low-light conditions."
+  ],
+  "livability": [
+   "Dense mature trees create a calm residential atmosphere and visually buffer the parked cars, which supports a quieter everyday environment.",
+   "Livability is reduced because the visible space functions mainly as an internal access road and parking area, with no visible benches, play spaces, storefronts, or social activity nodes.",
+   "The presence of residential towers and landscaped tree cover suggests a usable neighborhood setting, but the lack of visible pedestrian amenities limits street life and everyday convenience at ground level."
+  ],
+  "sustainability": [
+   "The large amount of mature tree canopy is a strong positive feature, contributing shade, cooling, and ecological value within the street space.",
+   "Permeable-looking paving or grass-grid parking surfaces on the left side suggest some stormwater infiltration potential compared with fully sealed asphalt.",
+   "Sustainability is moderated by the car-oriented layout, since much of the visible ground plane is devoted to parking bays and vehicle access rather than walking or cycling infrastructure."
+  ],
+  "aesthetics": [
+   "The continuous canopy of mature trees gives the street a lush, enclosed green character that is visually appealing.",
+   "The roadway, parking bays, and curbs appear orderly and relatively clean, which improves visual coherence.",
+   "Aesthetics are somewhat reduced by the dominance of parked cars and the dark, tunnel-like appearance under the dense canopy, which makes the space feel less open and vibrant."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively good because the dense tree canopy provides extensive shade over the roadway and parking edges.",
+   "Physical comfort is mixed: the asphalt road surface appears smooth for vehicles, but no clearly visible continuous pedestrian walkway or seating is provided for people on foot.",
+   "Psychological comfort is moderate because the enclosed greenery creates a calm setting, yet the dark shaded environment and close proximity of parked vehicles can make movement feel constrained."
+  ],
+  "walkability": [
+   "Walkability is poor because no continuous, clearly designated sidewalk is visible; pedestrians would likely need to share space with cars or walk along parking edges.",
+   "There are no visible zebra crossings, curb ramps, pedestrian signs, or refuge features that would improve route legibility and crossing safety.",
+   "Although the tree canopy offers pleasant shade, the street remains primarily organized around vehicle access and parking rather than pedestrian circulation."
+  ]
+ }
+}

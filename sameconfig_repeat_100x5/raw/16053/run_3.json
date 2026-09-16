@@ -1,0 +1,125 @@
+{
+ "oid": "16053",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16053.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16053_120.607754_31.198769_09002900121904160826414021L_177.49_2019_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 20.4,
+ "usage": {
+  "completion_tokens": 896,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 410,
+   "engine_ttlt_ms": 16060,
+   "pre_inference_ms": 390,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1071,
+   "service_ttlt_ms": 16716,
+   "user_visible_ttft_ms": 681
+  },
+  "prompt_tokens": 5266,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6162
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 52.0,\n      \"accessibility\": 52.0\n    },\n    \"safety\": 61.0,\n    \"livability\": 42.0,\n    \"sustainability\": 56.0,\n    \"aesthetics\": 58.0,\n    \"comfort\": 46.0,\n    \"walkability\": 38.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street space is dominated by a wide asphalt carriageway and multiple parking areas with only narrow curb edges visible, so spatial resources appear to favor cars more than pedestrians.\",\n      \"Curbed planting islands and smooth new pavement suggest an orderly layout, but no marked sidewalk, curb ramp, tactile paving, or crossing facility is visible for people moving on foot.\",\n      \"Streetlights are provided along the road, which supports more equal basic service provision, yet the absence of visible pedestrian infrastructure limits accessibility for all road users beyond drivers.\"\n    ],\n    \"safety\": [\n      \"The road surface is new, flat, and free of visible debris or potholes, which supports safer movement for vehicles and potentially for walking where space exists.\",\n      \"Streetlights line both sides of the internal road, which can improve visibility and perceived safety after dark compared with an unlit access road.\",\n      \"Safety for pedestrians is weakened because there are no visible crosswalk markings, refuge islands, sidewalks, or traffic-calming elements at the broad intersection in the foreground.\",\n      \"Several parked cars sit close to the roadway edges and internal junction areas, which may reduce sightlines between moving vehicles and any pedestrians crossing informally.\"\n    ],\n    \"livability\": [\n      \"The setting appears to be a low-activity industrial or campus-like area with fenced edges, large setbacks, and few visible destinations, offering limited everyday street life.\",\n      \"No benches, bus stops, kiosks, storefronts, or social spaces are visible, so the street provides little support for lingering, meeting, or daily convenience.\",\n      \"Grass planting strips and landscaped islands add some environmental quality, but they do not compensate for the lack of active frontage and human-scale amenities.\"\n    ],\n    \"sustainability\": [\n      \"The landscaped medians and verge planting introduce permeable green areas that can modestly support stormwater absorption and reduce fully paved coverage.\",\n      \"There are no visible bike lanes, bus stops, or other clear low-carbon transport facilities, so the scene appears primarily car-oriented.\",\n      \"The broad paved roadway and dispersed parking layout indicate land use and circulation patterns that likely encourage driving rather than walking or transit use.\"\n    ],\n    \"aesthetics\": [\n      \"The street has a clean and orderly appearance, with fresh asphalt, trimmed grass islands, and consistent curb lines creating visual neatness.\",\n      \"However, the environment feels visually sparse because of large expanses of pavement, simple fencing, and utilitarian buildings with limited facade detail.\",\n      \"The low greenery and open sky provide some softness, but the overall composition remains more functional than memorable or vibrant.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is weak because the road and parking areas are highly exposed, with almost no mature trees or shade structures visible along the travel path.\",\n      \"Physical comfort for pedestrians is limited since no dedicated sidewalk, seating, or sheltered waiting area can be seen.\",\n      \"Psychological comfort is mixed: the area looks uncrowded and quiet, but the emptiness, wide vehicle space, and fenced edges may feel isolating for people on foot.\",\n      \"The smooth paving and low apparent traffic volume support comfortable driving, but comfort is not evenly provided across all road users.\"\n    ],\n    \"walkability\": [\n      \"Walkability is poor because no continuous sidewalk is visible along the roadway, leaving no clearly designated pedestrian route.\",\n      \"The wide junction in the foreground lacks zebra markings, curb ramps, or pedestrian signals, making crossing routes unclear and potentially inconvenient.\",\n      \"Long setbacks, fenced edges, and limited visible destinations reduce walking interest and practical usefulness for everyday trips.\",\n      \"Although the pavement is smooth and the area appears relatively flat, these positive conditions do not overcome the absence of core pedestrian infrastructure.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 52.0,
+   "accessibility": 52.0
+  },
+  "safety": 61.0,
+  "livability": 42.0,
+  "sustainability": 56.0,
+  "aesthetics": 58.0,
+  "comfort": 46.0,
+  "walkability": 38.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 52.0,
+  "justice_accessibility": 52.0,
+  "safety": 61.0,
+  "livability": 42.0,
+  "sustainability": 56.0,
+  "aesthetics": 58.0,
+  "comfort": 46.0,
+  "walkability": 38.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:27:44+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street space is dominated by a wide asphalt carriageway and multiple parking areas with only narrow curb edges visible, so spatial resources appear to favor cars more than pedestrians.",
+   "Curbed planting islands and smooth new pavement suggest an orderly layout, but no marked sidewalk, curb ramp, tactile paving, or crossing facility is visible for people moving on foot.",
+   "Streetlights are provided along the road, which supports more equal basic service provision, yet the absence of visible pedestrian infrastructure limits accessibility for all road users beyond drivers."
+  ],
+  "safety": [
+   "The road surface is new, flat, and free of visible debris or potholes, which supports safer movement for vehicles and potentially for walking where space exists.",
+   "Streetlights line both sides of the internal road, which can improve visibility and perceived safety after dark compared with an unlit access road.",
+   "Safety for pedestrians is weakened because there are no visible crosswalk markings, refuge islands, sidewalks, or traffic-calming elements at the broad intersection in the foreground.",
+   "Several parked cars sit close to the roadway edges and internal junction areas, which may reduce sightlines between moving vehicles and any pedestrians crossing informally."
+  ],
+  "livability": [
+   "The setting appears to be a low-activity industrial or campus-like area with fenced edges, large setbacks, and few visible destinations, offering limited everyday street life.",
+   "No benches, bus stops, kiosks, storefronts, or social spaces are visible, so the street provides little support for lingering, meeting, or daily convenience.",
+   "Grass planting strips and landscaped islands add some environmental quality, but they do not compensate for the lack of active frontage and human-scale amenities."
+  ],
+  "sustainability": [
+   "The landscaped medians and verge planting introduce permeable green areas that can modestly support stormwater absorption and reduce fully paved coverage.",
+   "There are no visible bike lanes, bus stops, or other clear low-carbon transport facilities, so the scene appears primarily car-oriented.",
+   "The broad paved roadway and dispersed parking layout indicate land use and circulation patterns that likely encourage driving rather than walking or transit use."
+  ],
+  "aesthetics": [
+   "The street has a clean and orderly appearance, with fresh asphalt, trimmed grass islands, and consistent curb lines creating visual neatness.",
+   "However, the environment feels visually sparse because of large expanses of pavement, simple fencing, and utilitarian buildings with limited facade detail.",
+   "The low greenery and open sky provide some softness, but the overall composition remains more functional than memorable or vibrant."
+  ],
+  "comfort": [
+   "Thermal comfort is weak because the road and parking areas are highly exposed, with almost no mature trees or shade structures visible along the travel path.",
+   "Physical comfort for pedestrians is limited since no dedicated sidewalk, seating, or sheltered waiting area can be seen.",
+   "Psychological comfort is mixed: the area looks uncrowded and quiet, but the emptiness, wide vehicle space, and fenced edges may feel isolating for people on foot.",
+   "The smooth paving and low apparent traffic volume support comfortable driving, but comfort is not evenly provided across all road users."
+  ],
+  "walkability": [
+   "Walkability is poor because no continuous sidewalk is visible along the roadway, leaving no clearly designated pedestrian route.",
+   "The wide junction in the foreground lacks zebra markings, curb ramps, or pedestrian signals, making crossing routes unclear and potentially inconvenient.",
+   "Long setbacks, fenced edges, and limited visible destinations reduce walking interest and practical usefulness for everyday trips.",
+   "Although the pavement is smooth and the area appears relatively flat, these positive conditions do not overcome the absence of core pedestrian infrastructure."
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "oid": "17650",
+ "description": "The image shows a multi-lane roadway with no visible sidewalk; pedestrians would have to walk along the curb/road edge, where the right side is bounded by a continuous concrete barrier wall and the left side by the underside of an elevated structure. Traffic is separated from the pedestrian area mainly by the curb and barrier, with no physical pedestrian guardrails except a red railing along the right; lighting poles and overhead roadway infrastructure suggest moderate illumination, but there are no clear crosswalks or curb ramps visible. There is some greenery and trees along the right side that provide partial shade, though the pedestrian environment appears limited and potentially unsafe due to the lack of dedicated, continuous walking space.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 139,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 12,
+   "engine_ttft_ms": 240,
+   "engine_ttlt_ms": 1881,
+   "pre_inference_ms": 204,
+   "service_tbt_ms": 12,
+   "service_ttft_ms": 526,
+   "service_ttlt_ms": 2161,
+   "total_duration_ms": 1965,
+   "user_visible_ttft_ms": 322
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1123
+ },
+ "latency_s": 5.0,
+ "timestamp": "2026-08-31T16:17:43"
+}

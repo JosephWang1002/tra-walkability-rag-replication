@@ -1,0 +1,122 @@
+{
+ "oid": "10145",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\10145.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\10145_120.427874_31.096625_09002900011603011311115724C_291.59_2016_3_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.8,
+ "usage": {
+  "completion_tokens": 803,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 399,
+   "engine_ttlt_ms": 12847,
+   "pre_inference_ms": 337,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 964,
+   "service_ttlt_ms": 13409,
+   "user_visible_ttft_ms": 627
+  },
+  "prompt_tokens": 5243,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6046
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 29.0\n    },\n    \"safety\": 52.0,\n    \"livability\": 41.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 68.0,\n    \"comfort\": 43.0,\n    \"walkability\": 27.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible street width is allocated to motor-vehicle lanes, while no clearly usable sidewalk or pedestrian zone is visible on either side, indicating an uneven distribution of space for all road users.\",\n      \"There is no visible dedicated cycling facility such as a protected bike lane, painted cycle lane, or separate path, so non-motorized users appear to receive limited infrastructure compared with drivers.\",\n      \"No curb ramps, tactile paving, marked crossings, or other barrier-free access elements are visible in the scene, which weakens accessibility for a broad range of users.\"\n    ],\n    \"safety\": [\n      \"The roadway surface is smooth and lane markings are clear, including centerlines and edge lines, which supports predictable vehicle movement.\",\n      \"A transverse yellow marking across the carriageway suggests a traffic-calming or warning treatment, which may help alert drivers to reduce speed.\",\n      \"Safety for non-motorized users appears weak because there is no visible sidewalk, crossing facility, refuge island, or separated bike space along this long open road.\"\n    ],\n    \"livability\": [\n      \"The street runs through a low-density landscape with planting, lawns, and open views, which gives a calm setting but limited evidence of everyday street life.\",\n      \"There are very few visible destinations or active frontages directly addressing the road, so the scene does not strongly support social interaction or daily convenience on foot.\",\n      \"No benches, bus stops, plazas, or other public-use amenities are visible, reducing the street's function as a lived public space for all road users.\"\n    ],\n    \"sustainability\": [\n      \"Landscaped edges, shrubs, and scattered trees provide some green infrastructure value compared with a fully hardened roadside.\",\n      \"The corridor appears designed primarily for private motor traffic, with no visible transit stop, bike lane, or pedestrian-priority feature to support lower-carbon travel choices.\",\n      \"Tree cover is sparse and shade is limited along the road edge, so the visible vegetation likely provides only modest ecological and microclimate benefits.\"\n    ],\n    \"aesthetics\": [\n      \"The road has a clean, orderly appearance with fresh pavement, crisp lane markings, and well-maintained edges.\",\n      \"Open views toward distant hills and water create a pleasant scenic backdrop that enhances visual quality.\",\n      \"Roadside planting, flowering vegetation on the right, and a relatively uncluttered streetscape contribute to a neat and attractive composition.\"\n    ],\n    \"comfort\": [\n      \"The pavement appears even and well maintained, which supports physical comfort for vehicle travel and potentially for cycling if cyclists use the roadway shoulder.\",\n      \"Thermal comfort is limited because there is little continuous tree canopy or built shade along the roadside.\",\n      \"Psychological comfort for pedestrians is low because the scene shows a wide open carriageway with no clearly protected walking space, seating, or buffered refuge from traffic.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk is clearly visible on either side of the road, which is a major limitation for walking.\",\n      \"There is no visible marked pedestrian crossing, curb extension, refuge island, or signalized crossing opportunity along this segment.\",\n      \"The long road geometry and sparse roadside activity provide little pedestrian enclosure, shade, or destination support, making the environment unattractive for routine walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 35.0,
+   "accessibility": 29.0
+  },
+  "safety": 52.0,
+  "livability": 41.0,
+  "sustainability": 46.0,
+  "aesthetics": 68.0,
+  "comfort": 43.0,
+  "walkability": 27.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 29.0,
+  "safety": 52.0,
+  "livability": 41.0,
+  "sustainability": 46.0,
+  "aesthetics": 68.0,
+  "comfort": 43.0,
+  "walkability": 27.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:08:08+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible street width is allocated to motor-vehicle lanes, while no clearly usable sidewalk or pedestrian zone is visible on either side, indicating an uneven distribution of space for all road users.",
+   "There is no visible dedicated cycling facility such as a protected bike lane, painted cycle lane, or separate path, so non-motorized users appear to receive limited infrastructure compared with drivers.",
+   "No curb ramps, tactile paving, marked crossings, or other barrier-free access elements are visible in the scene, which weakens accessibility for a broad range of users."
+  ],
+  "safety": [
+   "The roadway surface is smooth and lane markings are clear, including centerlines and edge lines, which supports predictable vehicle movement.",
+   "A transverse yellow marking across the carriageway suggests a traffic-calming or warning treatment, which may help alert drivers to reduce speed.",
+   "Safety for non-motorized users appears weak because there is no visible sidewalk, crossing facility, refuge island, or separated bike space along this long open road."
+  ],
+  "livability": [
+   "The street runs through a low-density landscape with planting, lawns, and open views, which gives a calm setting but limited evidence of everyday street life.",
+   "There are very few visible destinations or active frontages directly addressing the road, so the scene does not strongly support social interaction or daily convenience on foot.",
+   "No benches, bus stops, plazas, or other public-use amenities are visible, reducing the street's function as a lived public space for all road users."
+  ],
+  "sustainability": [
+   "Landscaped edges, shrubs, and scattered trees provide some green infrastructure value compared with a fully hardened roadside.",
+   "The corridor appears designed primarily for private motor traffic, with no visible transit stop, bike lane, or pedestrian-priority feature to support lower-carbon travel choices.",
+   "Tree cover is sparse and shade is limited along the road edge, so the visible vegetation likely provides only modest ecological and microclimate benefits."
+  ],
+  "aesthetics": [
+   "The road has a clean, orderly appearance with fresh pavement, crisp lane markings, and well-maintained edges.",
+   "Open views toward distant hills and water create a pleasant scenic backdrop that enhances visual quality.",
+   "Roadside planting, flowering vegetation on the right, and a relatively uncluttered streetscape contribute to a neat and attractive composition."
+  ],
+  "comfort": [
+   "The pavement appears even and well maintained, which supports physical comfort for vehicle travel and potentially for cycling if cyclists use the roadway shoulder.",
+   "Thermal comfort is limited because there is little continuous tree canopy or built shade along the roadside.",
+   "Psychological comfort for pedestrians is low because the scene shows a wide open carriageway with no clearly protected walking space, seating, or buffered refuge from traffic."
+  ],
+  "walkability": [
+   "No continuous sidewalk is clearly visible on either side of the road, which is a major limitation for walking.",
+   "There is no visible marked pedestrian crossing, curb extension, refuge island, or signalized crossing opportunity along this segment.",
+   "The long road geometry and sparse roadside activity provide little pedestrian enclosure, shade, or destination support, making the environment unattractive for routine walking."
+  ]
+ }
+}

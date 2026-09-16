@@ -1,0 +1,122 @@
+{
+ "oid": "10687",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\10687.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\10687_120.478473_31.244616_09002900121708121639511663O_264.59_2017_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.4,
+ "usage": {
+  "completion_tokens": 793,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 371,
+   "engine_ttlt_ms": 13357,
+   "pre_inference_ms": 346,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1016,
+   "service_ttlt_ms": 13981,
+   "user_visible_ttft_ms": 671
+  },
+  "prompt_tokens": 5226,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6019
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 32.0,\n      \"accessibility\": 30.0\n    },\n    \"safety\": 28.0,\n    \"livability\": 22.0,\n    \"sustainability\": 18.0,\n    \"aesthetics\": 26.0,\n    \"comfort\": 24.0,\n    \"walkability\": 20.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by a muddy vehicle lane, while no dedicated sidewalk is visible on either side; all users appear forced to share the same narrow corridor.\",\n      \"Accessibility is weak because the ground surface is uneven, wet, and full of puddles, which would hinder wheelchairs, strollers, and people with limited mobility.\",\n      \"Fairness is reduced by edge obstructions: stacked construction boards and debris on the left, bags and scattered materials on the right, and a bicycle leaning into the passage all narrow usable space for general public movement.\"\n    ],\n    \"safety\": [\n      \"The roadway is muddy and waterlogged, with multiple puddles that can cause slipping for pedestrians and unstable footing for cyclists.\",\n      \"There is no visible separation between walking space, cycling space, and driving space, increasing conflict risk among all road users in this industrial alley.\",\n      \"Loose materials and debris along both edges, plus parked vehicles and service activity ahead, create cluttered sightlines and potential collision hazards.\"\n    ],\n    \"livability\": [\n      \"The scene appears to be a back-of-house industrial/service lane with warehouses, utility sheds, and exposed materials rather than an environment supporting everyday public street life.\",\n      \"No visible benches, trees, storefronts, public gathering spaces, or active social amenities are present to support daily comfort or community use.\",\n      \"The wet, dirty surface and scattered waste/construction remnants make the space feel utilitarian and inhospitable for lingering or casual walking.\"\n    ],\n    \"sustainability\": [\n      \"There is no visible street greenery, tree canopy, or planted area, so ecological and cooling functions appear absent.\",\n      \"The unpaved or poorly finished muddy surface with standing water suggests weak stormwater management rather than visible permeable or organized drainage infrastructure.\",\n      \"Although one bicycle is visible, there is no dedicated bike lane, bike parking system, or other clear low-carbon transport support visible in the corridor.\"\n    ],\n    \"aesthetics\": [\n      \"Visual quality is weakened by scattered scrap boards, bags, and debris along both sides of the lane.\",\n      \"The muddy road surface, puddles, and stained industrial facades create a neglected appearance.\",\n      \"Building forms are simple and repetitive, but the lack of landscaping, frontage design, or coordinated public-realm elements limits visual appeal.\"\n    ],\n    \"comfort\": [\n      \"Physical comfort is poor because users must move on an uneven muddy surface with puddles instead of a smooth sidewalk or finished walking path.\",\n      \"Thermal comfort features are minimal: there are no visible street trees, shade structures, or landscaped buffers, despite some building-edge cover.\",\n      \"Psychological comfort is limited by the cluttered industrial setting, narrow shared passage, and lack of clear pedestrian refuge or resting facilities.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very weak because no continuous sidewalk or marked pedestrian route is visible anywhere in the image.\",\n      \"Walking space is obstructed by construction materials on the left and miscellaneous items on the right, forcing pedestrians into the muddy central track.\",\n      \"The route surface is discontinuous and uncomfortable, with puddles, dirt, and uneven edges that reduce ease, safety, and directness for walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 32.0,
+   "accessibility": 30.0
+  },
+  "safety": 28.0,
+  "livability": 22.0,
+  "sustainability": 18.0,
+  "aesthetics": 26.0,
+  "comfort": 24.0,
+  "walkability": 20.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 32.0,
+  "justice_accessibility": 30.0,
+  "safety": 28.0,
+  "livability": 22.0,
+  "sustainability": 18.0,
+  "aesthetics": 26.0,
+  "comfort": 24.0,
+  "walkability": 20.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:11:25+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by a muddy vehicle lane, while no dedicated sidewalk is visible on either side; all users appear forced to share the same narrow corridor.",
+   "Accessibility is weak because the ground surface is uneven, wet, and full of puddles, which would hinder wheelchairs, strollers, and people with limited mobility.",
+   "Fairness is reduced by edge obstructions: stacked construction boards and debris on the left, bags and scattered materials on the right, and a bicycle leaning into the passage all narrow usable space for general public movement."
+  ],
+  "safety": [
+   "The roadway is muddy and waterlogged, with multiple puddles that can cause slipping for pedestrians and unstable footing for cyclists.",
+   "There is no visible separation between walking space, cycling space, and driving space, increasing conflict risk among all road users in this industrial alley.",
+   "Loose materials and debris along both edges, plus parked vehicles and service activity ahead, create cluttered sightlines and potential collision hazards."
+  ],
+  "livability": [
+   "The scene appears to be a back-of-house industrial/service lane with warehouses, utility sheds, and exposed materials rather than an environment supporting everyday public street life.",
+   "No visible benches, trees, storefronts, public gathering spaces, or active social amenities are present to support daily comfort or community use.",
+   "The wet, dirty surface and scattered waste/construction remnants make the space feel utilitarian and inhospitable for lingering or casual walking."
+  ],
+  "sustainability": [
+   "There is no visible street greenery, tree canopy, or planted area, so ecological and cooling functions appear absent.",
+   "The unpaved or poorly finished muddy surface with standing water suggests weak stormwater management rather than visible permeable or organized drainage infrastructure.",
+   "Although one bicycle is visible, there is no dedicated bike lane, bike parking system, or other clear low-carbon transport support visible in the corridor."
+  ],
+  "aesthetics": [
+   "Visual quality is weakened by scattered scrap boards, bags, and debris along both sides of the lane.",
+   "The muddy road surface, puddles, and stained industrial facades create a neglected appearance.",
+   "Building forms are simple and repetitive, but the lack of landscaping, frontage design, or coordinated public-realm elements limits visual appeal."
+  ],
+  "comfort": [
+   "Physical comfort is poor because users must move on an uneven muddy surface with puddles instead of a smooth sidewalk or finished walking path.",
+   "Thermal comfort features are minimal: there are no visible street trees, shade structures, or landscaped buffers, despite some building-edge cover.",
+   "Psychological comfort is limited by the cluttered industrial setting, narrow shared passage, and lack of clear pedestrian refuge or resting facilities."
+  ],
+  "walkability": [
+   "Walkability is very weak because no continuous sidewalk or marked pedestrian route is visible anywhere in the image.",
+   "Walking space is obstructed by construction materials on the left and miscellaneous items on the right, forcing pedestrians into the muddy central track.",
+   "The route surface is discontinuous and uncomfortable, with puddles, dirt, and uneven edges that reduce ease, safety, and directness for walking."
+  ]
+ }
+}

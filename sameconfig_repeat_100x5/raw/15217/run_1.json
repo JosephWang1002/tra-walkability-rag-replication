@@ -1,0 +1,122 @@
+{
+ "oid": "15217",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\15217.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\15217_120.617361_31.213972_0900290012220828134916688AP_58.36_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.0,
+ "usage": {
+  "completion_tokens": 876,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 382,
+   "engine_ttlt_ms": 14517,
+   "pre_inference_ms": 351,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1025,
+   "service_ttlt_ms": 15156,
+   "user_visible_ttft_ms": 674
+  },
+  "prompt_tokens": 5279,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6155
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 52.0,\n      \"accessibility\": 52.0\n    },\n    \"safety\": 72.0,\n    \"livability\": 42.0,\n    \"sustainability\": 56.0,\n    \"aesthetics\": 60.0,\n    \"comfort\": 50.0,\n    \"walkability\": 38.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is allocated to multiple wide motor-vehicle lanes, while no clear sidewalk or pedestrian zone is visible in the camera view, suggesting an uneven distribution of space across road users.\",\n      \"Lane markings are clear and the carriageway is orderly for drivers, but there are no visible curb ramps, tactile paving, or marked pedestrian access routes near the intersection, limiting accessibility for the general public.\",\n      \"A metal median barrier separates directions of traffic and can improve order, but it also indicates that crossing opportunities are tightly controlled; without a visible crosswalk or refuge for pedestrians in the image, access appears less equitable for non-drivers.\"\n    ],\n    \"safety\": [\n      \"The roadway has clear lane arrows, lane lines, and overhead traffic signals, which help organize movements and reduce conflict for all road users.\",\n      \"A central metal barrier separates opposing flows, lowering the risk of head-on conflicts and discouraging unsafe mid-road movements.\",\n      \"The intersection is very wide and vehicle-oriented, with trucks and service vehicles present under the overpass; if pedestrians need to cross here, the long crossing distance and lack of visible marked crosswalks in the image would reduce safety.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by fast-moving road infrastructure, including a large overpass, multiple traffic lanes, and signal equipment, with little visible human-scale activity.\",\n      \"There are planted green edges and trees on both sides, which soften the corridor somewhat, but they function more as roadside landscaping than as active public space.\",\n      \"No visible benches, storefronts, bus shelters, or gathering spaces appear in the image, so the street offers limited support for everyday social life.\"\n    ],\n    \"sustainability\": [\n      \"Trees, shrubs, and planted medians are visible along the roadside, providing some ecological value and limited stormwater and heat-mitigation benefits.\",\n      \"However, the corridor is overwhelmingly designed for motor traffic, with several wide lanes and a grade-separated overpass that encourage car and truck movement.\",\n      \"No visible bike lane, bike parking, or clearly identifiable public-transit stop is present in the image, so support for low-carbon travel modes appears limited.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway looks clean and well maintained, with fresh pavement markings and orderly infrastructure, which contributes positively to visual quality.\",\n      \"Green trees and trimmed planting strips on both sides add some visual relief to the otherwise hard-engineered setting.\",\n      \"The massive elevated structure, tall poles, and broad asphalt surface create a utilitarian and somewhat monotonous appearance, reducing overall scenic appeal.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: roadside trees provide greenery at the edges, but the main travel space is a broad exposed asphalt surface with little visible shade for people at street level.\",\n      \"Physical comfort for walking is weak because no clear sidewalk, seating, or pedestrian waiting area is visible in the image.\",\n      \"Psychological comfort is limited by the scale of the road environment: multiple wide lanes, heavy vehicles, barriers, and the overpass create a traffic-dominated atmosphere rather than a calm human-centered one.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk is clearly visible from this viewpoint, making pedestrian movement difficult to confirm and lowering perceived walkability.\",\n      \"There is no clearly visible marked crosswalk, pedestrian refuge island, or pedestrian signal head in the foreground approach, despite the very wide intersection.\",\n      \"The street geometry prioritizes vehicle throughput with long lane widths, turning space, and an overpass, which makes the environment feel inconvenient and unattractive for walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 52.0,
+   "accessibility": 52.0
+  },
+  "safety": 72.0,
+  "livability": 42.0,
+  "sustainability": 56.0,
+  "aesthetics": 60.0,
+  "comfort": 50.0,
+  "walkability": 38.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 52.0,
+  "justice_accessibility": 52.0,
+  "safety": 72.0,
+  "livability": 42.0,
+  "sustainability": 56.0,
+  "aesthetics": 60.0,
+  "comfort": 50.0,
+  "walkability": 38.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:25:25+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is allocated to multiple wide motor-vehicle lanes, while no clear sidewalk or pedestrian zone is visible in the camera view, suggesting an uneven distribution of space across road users.",
+   "Lane markings are clear and the carriageway is orderly for drivers, but there are no visible curb ramps, tactile paving, or marked pedestrian access routes near the intersection, limiting accessibility for the general public.",
+   "A metal median barrier separates directions of traffic and can improve order, but it also indicates that crossing opportunities are tightly controlled; without a visible crosswalk or refuge for pedestrians in the image, access appears less equitable for non-drivers."
+  ],
+  "safety": [
+   "The roadway has clear lane arrows, lane lines, and overhead traffic signals, which help organize movements and reduce conflict for all road users.",
+   "A central metal barrier separates opposing flows, lowering the risk of head-on conflicts and discouraging unsafe mid-road movements.",
+   "The intersection is very wide and vehicle-oriented, with trucks and service vehicles present under the overpass; if pedestrians need to cross here, the long crossing distance and lack of visible marked crosswalks in the image would reduce safety."
+  ],
+  "livability": [
+   "The scene is dominated by fast-moving road infrastructure, including a large overpass, multiple traffic lanes, and signal equipment, with little visible human-scale activity.",
+   "There are planted green edges and trees on both sides, which soften the corridor somewhat, but they function more as roadside landscaping than as active public space.",
+   "No visible benches, storefronts, bus shelters, or gathering spaces appear in the image, so the street offers limited support for everyday social life."
+  ],
+  "sustainability": [
+   "Trees, shrubs, and planted medians are visible along the roadside, providing some ecological value and limited stormwater and heat-mitigation benefits.",
+   "However, the corridor is overwhelmingly designed for motor traffic, with several wide lanes and a grade-separated overpass that encourage car and truck movement.",
+   "No visible bike lane, bike parking, or clearly identifiable public-transit stop is present in the image, so support for low-carbon travel modes appears limited."
+  ],
+  "aesthetics": [
+   "The roadway looks clean and well maintained, with fresh pavement markings and orderly infrastructure, which contributes positively to visual quality.",
+   "Green trees and trimmed planting strips on both sides add some visual relief to the otherwise hard-engineered setting.",
+   "The massive elevated structure, tall poles, and broad asphalt surface create a utilitarian and somewhat monotonous appearance, reducing overall scenic appeal."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: roadside trees provide greenery at the edges, but the main travel space is a broad exposed asphalt surface with little visible shade for people at street level.",
+   "Physical comfort for walking is weak because no clear sidewalk, seating, or pedestrian waiting area is visible in the image.",
+   "Psychological comfort is limited by the scale of the road environment: multiple wide lanes, heavy vehicles, barriers, and the overpass create a traffic-dominated atmosphere rather than a calm human-centered one."
+  ],
+  "walkability": [
+   "No continuous sidewalk is clearly visible from this viewpoint, making pedestrian movement difficult to confirm and lowering perceived walkability.",
+   "There is no clearly visible marked crosswalk, pedestrian refuge island, or pedestrian signal head in the foreground approach, despite the very wide intersection.",
+   "The street geometry prioritizes vehicle throughput with long lane widths, turning space, and an overpass, which makes the environment feel inconvenient and unattractive for walking."
+  ]
+ }
+}

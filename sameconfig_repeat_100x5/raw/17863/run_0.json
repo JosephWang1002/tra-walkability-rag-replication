@@ -1,0 +1,122 @@
+{
+ "oid": "17863",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\17863.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\17863_120.52308_31.280761_09002900011603010915095844C_73.46_2016_3_吴中区木渎镇创业街_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.9,
+ "usage": {
+  "completion_tokens": 790,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 588,
+   "engine_ttlt_ms": 12839,
+   "pre_inference_ms": 380,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1244,
+   "service_ttlt_ms": 13490,
+   "user_visible_ttft_ms": 864
+  },
+  "prompt_tokens": 5279,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6069
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 63.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 62.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 64.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 63.0,\n    \"walkability\": 61.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Both sides of the street provide some pedestrian space through paved edge zones, so space is not allocated only to cars.\",\n      \"However, the carriageway remains the dominant central space and there are parked cars directly along building edges, which suggests motor vehicles still receive a large share of usable street area.\",\n      \"Accessibility is moderate because the sidewalks appear relatively flat and continuous, but no tactile paving, marked curb ramps, or other clearly visible barrier-free guidance features can be seen.\"\n    ],\n    \"safety\": [\n      \"The street appears narrow with low traffic volume, and only a few vehicles are visible, which likely reduces conflict intensity for all road users.\",\n      \"There are no visible zebra crossings, speed humps, bollards, or other traffic-calming devices, so pedestrian priority is not strongly communicated.\",\n      \"Parked cars and building-side parking bays on the right can create edge conflicts and reduce visibility for people walking near driveways or vehicle access points.\"\n    ],\n    \"livability\": [\n      \"The street has a residential character with building entrances, small frontage spaces, and a relatively quiet environment, which supports everyday neighborhood use.\",\n      \"A few trees and small planted elements are visible on the left side, adding some human-scale amenity to the street.\",\n      \"Livability is limited by the lack of visible public seating, play space, active storefronts, or community facilities that would support longer stays and social interaction.\"\n    ],\n    \"sustainability\": [\n      \"Some street trees and planter areas are present, but greenery is sparse and does not form a continuous ecological or shading network.\",\n      \"No dedicated cycling lane, bus stop, or other clearly visible low-carbon transport infrastructure can be identified in the image.\",\n      \"There are no visible bioswales, rain gardens, permeable green strips, or other stormwater-management features integrated into the street.\"\n    ],\n    \"aesthetics\": [\n      \"The street looks orderly and clean, with well-maintained paving and building facades that create a neat visual impression.\",\n      \"The buildings on both sides have fairly consistent height and residential scale, which gives the street a coherent enclosure.\",\n      \"Visual quality is reduced somewhat by exposed parked cars, blank garage-like edges, and limited greenery compared with a more landscaped street.\"\n    ],\n    \"comfort\": [\n      \"Physical comfort is supported by smooth-looking sidewalks and a relatively even road surface without obvious clutter blocking movement.\",\n      \"Thermal comfort is only moderate because there are a few mature trees on the left, but much of the street and sidewalk area remains exposed to direct sun.\",\n      \"Psychological comfort benefits from the calm, low-traffic residential setting, though the absence of seating, stronger shade, and clearer pedestrian separation limits overall comfort.\"\n    ],\n    \"walkability\": [\n      \"Walkability is helped by the presence of paved sidewalks on both sides and a short-scale residential street that appears easy to traverse.\",\n      \"The sidewalks seem mostly continuous, but they are modest in width and are interrupted visually by parking access and building-edge vehicle spaces, especially on the right.\",\n      \"There are no visible marked crossings, curb extensions, or pedestrian-priority design cues, so walking conditions are acceptable but not strongly optimized.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 63.0,
+   "fairness": 58.0,
+   "accessibility": 62.0
+  },
+  "safety": 66.0,
+  "livability": 64.0,
+  "sustainability": 46.0,
+  "aesthetics": 72.0,
+  "comfort": 63.0,
+  "walkability": 61.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 63.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 62.0,
+  "safety": 66.0,
+  "livability": 64.0,
+  "sustainability": 46.0,
+  "aesthetics": 72.0,
+  "comfort": 63.0,
+  "walkability": 61.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:37:02+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Both sides of the street provide some pedestrian space through paved edge zones, so space is not allocated only to cars.",
+   "However, the carriageway remains the dominant central space and there are parked cars directly along building edges, which suggests motor vehicles still receive a large share of usable street area.",
+   "Accessibility is moderate because the sidewalks appear relatively flat and continuous, but no tactile paving, marked curb ramps, or other clearly visible barrier-free guidance features can be seen."
+  ],
+  "safety": [
+   "The street appears narrow with low traffic volume, and only a few vehicles are visible, which likely reduces conflict intensity for all road users.",
+   "There are no visible zebra crossings, speed humps, bollards, or other traffic-calming devices, so pedestrian priority is not strongly communicated.",
+   "Parked cars and building-side parking bays on the right can create edge conflicts and reduce visibility for people walking near driveways or vehicle access points."
+  ],
+  "livability": [
+   "The street has a residential character with building entrances, small frontage spaces, and a relatively quiet environment, which supports everyday neighborhood use.",
+   "A few trees and small planted elements are visible on the left side, adding some human-scale amenity to the street.",
+   "Livability is limited by the lack of visible public seating, play space, active storefronts, or community facilities that would support longer stays and social interaction."
+  ],
+  "sustainability": [
+   "Some street trees and planter areas are present, but greenery is sparse and does not form a continuous ecological or shading network.",
+   "No dedicated cycling lane, bus stop, or other clearly visible low-carbon transport infrastructure can be identified in the image.",
+   "There are no visible bioswales, rain gardens, permeable green strips, or other stormwater-management features integrated into the street."
+  ],
+  "aesthetics": [
+   "The street looks orderly and clean, with well-maintained paving and building facades that create a neat visual impression.",
+   "The buildings on both sides have fairly consistent height and residential scale, which gives the street a coherent enclosure.",
+   "Visual quality is reduced somewhat by exposed parked cars, blank garage-like edges, and limited greenery compared with a more landscaped street."
+  ],
+  "comfort": [
+   "Physical comfort is supported by smooth-looking sidewalks and a relatively even road surface without obvious clutter blocking movement.",
+   "Thermal comfort is only moderate because there are a few mature trees on the left, but much of the street and sidewalk area remains exposed to direct sun.",
+   "Psychological comfort benefits from the calm, low-traffic residential setting, though the absence of seating, stronger shade, and clearer pedestrian separation limits overall comfort."
+  ],
+  "walkability": [
+   "Walkability is helped by the presence of paved sidewalks on both sides and a short-scale residential street that appears easy to traverse.",
+   "The sidewalks seem mostly continuous, but they are modest in width and are interrupted visually by parking access and building-edge vehicle spaces, especially on the right.",
+   "There are no visible marked crossings, curb extensions, or pedestrian-priority design cues, so walking conditions are acceptable but not strongly optimized."
+  ]
+ }
+}

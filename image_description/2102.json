@@ -1,0 +1,33 @@
+{
+ "oid": "2102",
+ "description": "The image shows a wide, multi-lane roadway with no visible continuous sidewalk; the pedestrian space appears to be a narrow paved shoulder or edge strip with a curb-less boundary to a landscaped verge. Traffic is separated from the roadside by lane markings only, with no physical barriers, and the road is lit by tall streetlights along the center/median area. On the right, there is greenery and some trees providing partial shade, but there are no clearly marked crosswalks, curb cuts, or other accessibility features visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 108,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 9,
+   "engine_ttft_ms": 772,
+   "engine_ttlt_ms": 1692,
+   "pre_inference_ms": 525,
+   "service_tbt_ms": 9,
+   "service_ttft_ms": 2345,
+   "service_ttlt_ms": 3261,
+   "total_duration_ms": 2743,
+   "user_visible_ttft_ms": 1819
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1092
+ },
+ "latency_s": 48.6,
+ "timestamp": "2026-08-31T16:31:53"
+}

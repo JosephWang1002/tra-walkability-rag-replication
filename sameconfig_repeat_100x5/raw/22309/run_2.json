@@ -1,0 +1,129 @@
+{
+ "oid": "22309",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22309.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22309_120.676033_31.326915_0900290012220902152644821AP_73.74_2022_9_苏州工业园区金鸡湖街道沁畔街_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.4,
+ "usage": {
+  "completion_tokens": 984,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 430,
+   "engine_ttlt_ms": 15281,
+   "pre_inference_ms": 452,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1179,
+   "service_ttlt_ms": 16024,
+   "user_visible_ttft_ms": 727
+  },
+  "prompt_tokens": 5426,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6410
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 66.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 70.0,\n    \"livability\": 63.0,\n    \"sustainability\": 72.0,\n    \"aesthetics\": 81.0,\n    \"comfort\": 68.0,\n    \"walkability\": 54.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to motor traffic, with a very wide multi-lane carriageway dominating the scene, while pedestrian space is pushed to the edges and appears comparatively limited.\",\n      \"Large tree-lined edges on both sides provide some environmental benefit for all users, suggesting partial equity in landscape distribution rather than a fully vehicle-only corridor.\",\n      \"Accessibility is only moderate because sidewalks are visible at the margins, but no curb ramps, tactile paving, or clearly marked pedestrian refuge details can be confirmed from the image.\",\n      \"Fairness for non-motorized users is weakened because the intersection design visibly prioritizes through-movement of cars and buses over direct, legible pedestrian movement across the junction.\"\n    ],\n    \"safety\": [\n      \"Traffic signals, lane markings, median islands, and directional signs provide structured control at this large intersection, which supports basic operational safety.\",\n      \"The roadway is extremely wide, so crossing distances for pedestrians would likely be long and exposure time to moving vehicles would be high.\",\n      \"Motor vehicles, including cars and a bus, are present in a broad high-capacity corridor, indicating potential speed and conflict risk despite formal traffic control.\",\n      \"Trees and medians help organize the corridor visually, but no clearly visible protected pedestrian crossing or dedicated cycling facility can be identified in the photo.\"\n    ],\n    \"livability\": [\n      \"The avenue has generous greenery, including mature street trees and planted medians, which improves environmental quality and makes the corridor feel less harsh.\",\n      \"High-rise residential buildings line both sides, indicating that the street serves an inhabited urban district rather than an isolated traffic corridor.\",\n      \"Livability is reduced by the oversized asphalt intersection, which creates a space primarily experienced as traffic infrastructure rather than as a social or human-scaled public place.\",\n      \"No visible benches, active storefronts, or small-scale gathering spaces can be seen, limiting evidence of everyday street life at ground level.\"\n    ],\n    \"sustainability\": [\n      \"A bus is visible in the corridor, showing support for public transport rather than exclusive dependence on private cars.\",\n      \"Extensive tree cover and landscaped medians contribute to urban greening, shade potential, and some ecological value.\",\n      \"The street remains heavily car-oriented because of the very large paved roadway area, which implies substantial land devoted to motorized movement.\",\n      \"No visible dedicated bike lane or obvious permeable drainage feature can be confirmed, so sustainable mobility support is present but incomplete.\"\n    ],\n    \"aesthetics\": [\n      \"The boulevard has a strong visual order, with aligned high-rise buildings, continuous tree rows, and a symmetrical corridor composition.\",\n      \"Mature green trees on the left and willow-like planting on the right soften the large road space and add seasonal visual richness.\",\n      \"The street appears clean and well maintained, with clear markings, trimmed planting, and orderly infrastructure.\",\n      \"Aesthetic quality is somewhat reduced by the vast expanse of asphalt in the foreground, which makes the intersection feel visually hard and oversized.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is moderate to good at the edges because dense mature trees provide visible shade along the sidewalks and roadside areas.\",\n      \"Physical comfort for pedestrians is uncertain because the sidewalks are distant and details such as paving quality, seating, and curb design cannot be clearly verified.\",\n      \"Psychological comfort is mixed: the greenery and openness are pleasant, but the very wide intersection and visible motor traffic can feel intimidating for non-drivers.\",\n      \"The road surface for vehicles appears smooth and well marked, which supports travel comfort for drivers and bus users.\"\n    ],\n    \"walkability\": [\n      \"Sidewalks appear to exist on both sides of the avenue, so basic pedestrian provision is present.\",\n      \"Walkability is weakened by the very long crossing width created by the broad multi-lane intersection, which likely increases delay and effort for pedestrians.\",\n      \"No clearly visible zebra crossing, curb ramp detail, or pedestrian-priority design feature can be confirmed from this viewpoint, reducing confidence in easy crossing.\",\n      \"Street trees improve the attractiveness of walking along the edges, but the overall spatial emphasis remains on vehicle throughput rather than pedestrian continuity.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 66.0,
+   "fairness": 58.0,
+   "accessibility": 59.0
+  },
+  "safety": 70.0,
+  "livability": 63.0,
+  "sustainability": 72.0,
+  "aesthetics": 81.0,
+  "comfort": 68.0,
+  "walkability": 54.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 59.0,
+  "safety": 70.0,
+  "livability": 63.0,
+  "sustainability": 72.0,
+  "aesthetics": 81.0,
+  "comfort": 68.0,
+  "walkability": 54.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:51:45+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to motor traffic, with a very wide multi-lane carriageway dominating the scene, while pedestrian space is pushed to the edges and appears comparatively limited.",
+   "Large tree-lined edges on both sides provide some environmental benefit for all users, suggesting partial equity in landscape distribution rather than a fully vehicle-only corridor.",
+   "Accessibility is only moderate because sidewalks are visible at the margins, but no curb ramps, tactile paving, or clearly marked pedestrian refuge details can be confirmed from the image.",
+   "Fairness for non-motorized users is weakened because the intersection design visibly prioritizes through-movement of cars and buses over direct, legible pedestrian movement across the junction."
+  ],
+  "safety": [
+   "Traffic signals, lane markings, median islands, and directional signs provide structured control at this large intersection, which supports basic operational safety.",
+   "The roadway is extremely wide, so crossing distances for pedestrians would likely be long and exposure time to moving vehicles would be high.",
+   "Motor vehicles, including cars and a bus, are present in a broad high-capacity corridor, indicating potential speed and conflict risk despite formal traffic control.",
+   "Trees and medians help organize the corridor visually, but no clearly visible protected pedestrian crossing or dedicated cycling facility can be identified in the photo."
+  ],
+  "livability": [
+   "The avenue has generous greenery, including mature street trees and planted medians, which improves environmental quality and makes the corridor feel less harsh.",
+   "High-rise residential buildings line both sides, indicating that the street serves an inhabited urban district rather than an isolated traffic corridor.",
+   "Livability is reduced by the oversized asphalt intersection, which creates a space primarily experienced as traffic infrastructure rather than as a social or human-scaled public place.",
+   "No visible benches, active storefronts, or small-scale gathering spaces can be seen, limiting evidence of everyday street life at ground level."
+  ],
+  "sustainability": [
+   "A bus is visible in the corridor, showing support for public transport rather than exclusive dependence on private cars.",
+   "Extensive tree cover and landscaped medians contribute to urban greening, shade potential, and some ecological value.",
+   "The street remains heavily car-oriented because of the very large paved roadway area, which implies substantial land devoted to motorized movement.",
+   "No visible dedicated bike lane or obvious permeable drainage feature can be confirmed, so sustainable mobility support is present but incomplete."
+  ],
+  "aesthetics": [
+   "The boulevard has a strong visual order, with aligned high-rise buildings, continuous tree rows, and a symmetrical corridor composition.",
+   "Mature green trees on the left and willow-like planting on the right soften the large road space and add seasonal visual richness.",
+   "The street appears clean and well maintained, with clear markings, trimmed planting, and orderly infrastructure.",
+   "Aesthetic quality is somewhat reduced by the vast expanse of asphalt in the foreground, which makes the intersection feel visually hard and oversized."
+  ],
+  "comfort": [
+   "Thermal comfort is moderate to good at the edges because dense mature trees provide visible shade along the sidewalks and roadside areas.",
+   "Physical comfort for pedestrians is uncertain because the sidewalks are distant and details such as paving quality, seating, and curb design cannot be clearly verified.",
+   "Psychological comfort is mixed: the greenery and openness are pleasant, but the very wide intersection and visible motor traffic can feel intimidating for non-drivers.",
+   "The road surface for vehicles appears smooth and well marked, which supports travel comfort for drivers and bus users."
+  ],
+  "walkability": [
+   "Sidewalks appear to exist on both sides of the avenue, so basic pedestrian provision is present.",
+   "Walkability is weakened by the very long crossing width created by the broad multi-lane intersection, which likely increases delay and effort for pedestrians.",
+   "No clearly visible zebra crossing, curb ramp detail, or pedestrian-priority design feature can be confirmed from this viewpoint, reducing confidence in easy crossing.",
+   "Street trees improve the attractiveness of walking along the edges, but the overall spatial emphasis remains on vehicle throughput rather than pedestrian continuity."
+  ]
+ }
+}

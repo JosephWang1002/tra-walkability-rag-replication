@@ -1,0 +1,32 @@
+{
+ "oid": "1036",
+ "description": "This appears to be a highway or ramp with no sidewalk, curb, or pedestrian space; the asphalt is smooth for vehicles, but there is no continuous walking surface or visible accessibility features such as curb cuts or ramps. Traffic is separated by metal guardrails on both sides, with multiple lanes/merge geometry and curve warning signs suggesting higher-speed vehicle movement, making it unsuitable for walking.\n\nGreenery is limited to low shrubs, grass, and a few trees along the roadside, offering little shade or pedestrian comfort. No street lighting, benches, crossings, or other pedestrian safety amenities are visible, and the guardrails and road design create a clear barrier to pedestrian access.",
+ "usage": {
+  "completion_tokens": 136,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 396,
+   "engine_ttlt_ms": 2110,
+   "pre_inference_ms": 342,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1031,
+   "service_ttlt_ms": 2740,
+   "total_duration_ms": 2406,
+   "user_visible_ttft_ms": 689
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1120
+ },
+ "latency_s": 7.1,
+ "timestamp": "2026-08-31T14:39:53"
+}

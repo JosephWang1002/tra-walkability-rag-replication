@@ -1,0 +1,33 @@
+{
+ "oid": "13324",
+ "description": "The image shows a wide, multi-lane roadway with no visible sidewalks or pedestrian path; the road edges appear to be continuous asphalt with no curb cuts or ramps visible. Traffic is separated only by lane markings, with no physical barriers, and the roadway is bordered by dense greenery/trees that provide some visual separation but not a dedicated, walkable surface. Lighting and pedestrian-specific safety features (crosswalks, signals, guardrails, or street furniture) are not visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 99,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 7,
+   "engine_ttft_ms": 740,
+   "engine_ttlt_ms": 1403,
+   "pre_inference_ms": 369,
+   "service_tbt_ms": 7,
+   "service_ttft_ms": 1994,
+   "service_ttlt_ms": 2652,
+   "total_duration_ms": 2295,
+   "user_visible_ttft_ms": 1625
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1083
+ },
+ "latency_s": 6.2,
+ "timestamp": "2026-08-31T15:52:21"
+}

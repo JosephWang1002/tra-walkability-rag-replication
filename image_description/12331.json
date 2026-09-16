@@ -1,0 +1,33 @@
+{
+ "oid": "12331",
+ "description": "The road has no visible sidewalks; pedestrians would have to walk in the roadway alongside parked cars. Traffic is separated only by painted lane lines, with multiple vehicle lanes and no physical barrier, while dense trees on both sides provide continuous shade and greenery. Lighting and accessibility features (e.g., curb ramps/curb cuts) are not visible, and there are few pedestrian-specific safety elements such as crosswalks or protected crossings.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 89,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 11,
+   "engine_ttft_ms": 249,
+   "engine_ttlt_ms": 1207,
+   "pre_inference_ms": 311,
+   "service_tbt_ms": 11,
+   "service_ttft_ms": 729,
+   "service_ttlt_ms": 1682,
+   "total_duration_ms": 1379,
+   "user_visible_ttft_ms": 417
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1073
+ },
+ "latency_s": 68.8,
+ "timestamp": "2026-08-31T15:46:28"
+}

@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 58,
+      "equity": 60,
+      "fairness": 56,
+      "accessibility": 58
+    },
+    "safety": 71,
+    "livability": 42,
+    "sustainability": 63,
+    "aesthetics": 66,
+    "comfort": 57,
+    "walkability": 49,
+    "bikeability": 38
+  },
+  "explanations": {
+    "justice": [
+      "Road space is generously allocated to motor traffic with multiple wide lanes, while pedestrian space appears limited to a narrow sidewalk on the right, suggesting an imbalanced (less equitable) distribution for non-motor users",
+      "The right-side sidewalk is physically separated from traffic by a curb and a planted strip (shrubs/trees), which supports basic access and reduces exposure for pedestrians compared with no buffer",
+      "No visible marked crosswalks, pedestrian signals, curb ramps, or tactile guidance are present in the scene, which can reduce fair usability across different needs even for the general population (e.g., strollers, carts, travelers)",
+      "A continuous fence along the right edge limits mid-block access to adjacent buildings and may force longer detours to find entrances, reducing practical accessibility for all users"
+    ],
+    "safety": [
+      "Clear lane markings (center yellow line, white edge lines, directional arrows) provide strong guidance for drivers and reduce lane confusion",
+      "A planted buffer and curb separate the sidewalk from the roadway, lowering the immediate risk of vehicles encroaching into pedestrian space",
+      "Long, straight roadway geometry and apparent lack of traffic-calming features (e.g., speed humps, narrowed lanes, raised crossings) can encourage higher vehicle speeds, increasing crash severity risk for all users",
+      "There are streetlights along the corridor, supporting nighttime visibility; however, pedestrian-scale lighting is not clearly evident from the image"
+    ],
+    "livability": [
+      "The street appears largely devoid of people, street activity, or active ground-floor frontages, which weakens social vitality and everyday convenience for all road users",
+      "Right-side frontage is dominated by fencing and set-back buildings, reducing opportunities for interaction and perceived neighborhood vibrancy",
+      "Limited amenities are visible (no benches, kiosks, bus stops, or small public spaces), lowering comfort for staying, waiting, or casual use",
+      "The corridor reads as a through-traffic environment rather than a mixed-use civic street, which typically reduces perceived livability"
+    ],
+    "sustainability": [
+      "Street trees and continuous landscaping (trees and shrubs on both sides) provide urban greening benefits such as shade potential, air-quality support, and heat mitigation compared to fully paved edges",
+      "The design prioritizes motor-vehicle capacity (wide carriageway) and provides no visible dedicated cycling facility, which may reduce support for low-carbon mode shift",
+      "Smooth asphalt and clear markings may reduce stop-and-go driving and related emissions compared with congested/chaotic streets, though this depends on actual speeds and volumes",
+      "No visible green stormwater features (e.g., bioswales, permeable paving, rain gardens) are identifiable; planting strips appear conventional rather than explicitly water-managing"
+    ],
+    "aesthetics": [
+      "Continuous rows of mature trees create a coherent avenue character and soften the visual impact of the wide road",
+      "The streetscape is clean and orderly (well-maintained asphalt, consistent lane markings, trimmed shrubs), contributing to a neat visual impression",
+      "Large paved surfaces and long straight sightlines make the corridor feel monotonous and highway-like, limiting visual richness",
+      "Fencing and set-back buildings reduce architectural engagement at eye level, weakening street enclosure and pedestrian-oriented aesthetics"
+    ],
+    "comfort": [
+      "Tree canopy provides some shade potential, improving thermal comfort compared with treeless streets, though canopy coverage over the sidewalk is partial and not continuous",
+      "The sidewalk edge appears narrow and adjacent to a curb, which can feel less physically comfortable for walking side-by-side or passing, especially where trees/poles constrain effective width",
+      "A planted strip between sidewalk and roadway reduces perceived noise and spray compared with a curb-only edge, improving psychological comfort",
+      "Lack of visible seating, shelters, or resting nodes (no benches/bus stops) reduces overall comfort for stopping or waiting along the corridor"
+    ],
+    "walkability": [
+      "A continuous sidewalk is visible on the right with a curb and landscape buffer, supporting basic pedestrian movement along the corridor",
+      "The environment is strongly car-oriented (wide multi-lane roadway) with no visible crosswalks or pedestrian priority at crossings, reducing perceived and practical walkability",
+      "Long blocks with fencing and limited visible access points can force detours, lowering route choice and pedestrian permeability",
+      "Minimal pedestrian-scale destinations and amenities (no shops, cafés, benches, transit stops visible) reduce walking attractiveness for everyday trips"
+    ],
+    "bikeability": [
+      "No dedicated bike lane markings, protected cycle track, or shared-lane signage is visible, indicating low cycling accommodation",
+      "High-speed design cues (straight, wide lanes) increase stress for cyclists mixing with traffic, reducing perceived safety for most riders",
+      "Edge space appears to be a sidewalk with curb and landscaping rather than a rideable shoulder; cyclists would likely need to ride in the vehicle lanes",
+      "No bicycle parking or supporting facilities are visible, reducing convenience for bicycle trips to/from adjacent buildings"
+    ]
+  },
+  "image_id": "img-1777267093312-1ylbcehr2",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:19:23.669Z",
+  "record_id": "183fccf887874689b0d30e37f30376dd",
+  "stored_image_url": "/storage/records/183fccf887874689b0d30e37f30376dd/image.jpg",
+  "stored_thumb_url": "/storage/records/183fccf887874689b0d30e37f30376dd/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:19:48.201Z"
+}

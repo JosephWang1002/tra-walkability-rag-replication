@@ -1,0 +1,33 @@
+{
+ "oid": "23428",
+ "description": "The scene shows a narrow, cracked paved shoulder/path running along the edge of a rural road, with no clearly marked sidewalk or curb separation; it appears continuous but uneven and without visible curb cuts or other accessibility features. There is no traffic barrier or lane separation visible, and the roadway is bordered by open fields and a small drainage/ditch with some low vegetation, providing limited shade. Overhead utility poles and lines are present, but there are no streetlights, crosswalks, or pedestrian amenities visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 105,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 7,
+   "engine_ttft_ms": 254,
+   "engine_ttlt_ms": 999,
+   "pre_inference_ms": 292,
+   "service_tbt_ms": 7,
+   "service_ttft_ms": 840,
+   "service_ttlt_ms": 1580,
+   "total_duration_ms": 1297,
+   "user_visible_ttft_ms": 548
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1089
+ },
+ "latency_s": 69.3,
+ "timestamp": "2026-08-31T16:48:19"
+}

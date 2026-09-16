@@ -1,0 +1,129 @@
+{
+ "oid": "16529",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16529.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16529_120.519596_31.206316_09002900011603011113320844C_180.77_2016_3_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.2,
+ "usage": {
+  "completion_tokens": 883,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 447,
+   "engine_ttlt_ms": 13709,
+   "pre_inference_ms": 460,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1204,
+   "service_ttlt_ms": 14462,
+   "user_visible_ttft_ms": 744
+  },
+  "prompt_tokens": 5409,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6292
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 61.0\n    },\n    \"safety\": 57.0,\n    \"livability\": 54.0,\n    \"sustainability\": 72.0,\n    \"aesthetics\": 74.0,\n    \"comfort\": 68.0,\n    \"walkability\": 63.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The paved path provides a continuous travel surface for multiple users, which supports a basic equitable allocation of space compared with an unpaved trail.\",\n      \"Accessibility is limited because no curb ramps, tactile paving, handrails, or marked edge guidance are visible on this path.\",\n      \"Fairness for diverse users is weakened by the very narrow corridor width, which may force pedestrians, cyclists, and other users to negotiate space informally.\",\n      \"The path appears relatively flat and free of steps, which helps general access, but the rough dirt shoulders and leaf litter at both edges reduce inclusive usability.\"\n    ],\n    \"safety\": [\n      \"The path is straight with a long forward sightline, allowing users to see approaching people or vehicles from a distance.\",\n      \"Safety is reduced by the narrow pavement width, which leaves little room for comfortable passing if walkers, cyclists, or small vehicles meet.\",\n      \"There is visible debris and discarded material along the left edge, creating potential trip or snag hazards near the usable path.\",\n      \"Dense trees and the absence of visible lighting, markings, or protective barriers may reduce perceived safety, especially in low-light conditions.\"\n    ],\n    \"livability\": [\n      \"The wooded setting offers a quiet, nature-oriented environment that can support recreation and casual walking.\",\n      \"Livability is limited because no benches, rest areas, lighting, signage, or social amenities are visible along the corridor.\",\n      \"There are no visible shops, services, active frontages, or gathering spaces, so the path appears more like a transit or recreational segment than a socially vibrant street.\",\n      \"The scattered waste and unmanaged edges on the left side slightly reduce the sense of care and everyday usability.\"\n    ],\n    \"sustainability\": [\n      \"The strong tree cover on both sides contributes shade, habitat value, and carbon sequestration benefits.\",\n      \"A narrow paved corridor through a wooded area supports low-impact movement such as walking and potentially cycling rather than car-dominated travel.\",\n      \"The unsealed soil and leaf-covered ground beside the pavement likely allow some rainwater infiltration compared with a fully hardscaped street.\",\n      \"Sustainability is moderated by the visible construction debris or dumped material on the left side, which suggests weaker environmental maintenance.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous rows of trees on both sides create a visually immersive green corridor with strong natural character.\",\n      \"Dappled sunlight and tree shadows across the pavement add visual texture and make the scene more attractive.\",\n      \"The simple, straight path framed by trunks gives the space a clear composition and pleasant depth.\",\n      \"Aesthetic quality is somewhat reduced by the visible rubble and scattered materials along the left edge.\"\n    ],\n    \"comfort\": [\n      \"Tree canopy on both sides provides meaningful shade, improving thermal comfort during sunny weather.\",\n      \"The paved surface appears mostly even and step-free, supporting reasonably comfortable walking and rolling.\",\n      \"Physical comfort is reduced by the narrow width, which can make passing or side-by-side movement awkward for all road users.\",\n      \"Psychological comfort is mixed: the quiet natural setting is calming, but the isolated wooded corridor and lack of visible activity or amenities may make some users uneasy.\"\n    ],\n    \"walkability\": [\n      \"The path is continuous, paved, and generally unobstructed in the center, which supports basic walking conditions.\",\n      \"Its mostly flat alignment and direct route improve ease of movement for everyday walking.\",\n      \"Walkability is weakened by the narrow effective width, especially where users may need to pass each other.\",\n      \"No marked pedestrian priority features, seating, lighting, crossings, or wayfinding elements are visible, limiting overall pedestrian support.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 58.0,
+   "accessibility": 61.0
+  },
+  "safety": 57.0,
+  "livability": 54.0,
+  "sustainability": 72.0,
+  "aesthetics": 74.0,
+  "comfort": 68.0,
+  "walkability": 63.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 61.0,
+  "safety": 57.0,
+  "livability": 54.0,
+  "sustainability": 72.0,
+  "aesthetics": 74.0,
+  "comfort": 68.0,
+  "walkability": 63.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:30:06+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The paved path provides a continuous travel surface for multiple users, which supports a basic equitable allocation of space compared with an unpaved trail.",
+   "Accessibility is limited because no curb ramps, tactile paving, handrails, or marked edge guidance are visible on this path.",
+   "Fairness for diverse users is weakened by the very narrow corridor width, which may force pedestrians, cyclists, and other users to negotiate space informally.",
+   "The path appears relatively flat and free of steps, which helps general access, but the rough dirt shoulders and leaf litter at both edges reduce inclusive usability."
+  ],
+  "safety": [
+   "The path is straight with a long forward sightline, allowing users to see approaching people or vehicles from a distance.",
+   "Safety is reduced by the narrow pavement width, which leaves little room for comfortable passing if walkers, cyclists, or small vehicles meet.",
+   "There is visible debris and discarded material along the left edge, creating potential trip or snag hazards near the usable path.",
+   "Dense trees and the absence of visible lighting, markings, or protective barriers may reduce perceived safety, especially in low-light conditions."
+  ],
+  "livability": [
+   "The wooded setting offers a quiet, nature-oriented environment that can support recreation and casual walking.",
+   "Livability is limited because no benches, rest areas, lighting, signage, or social amenities are visible along the corridor.",
+   "There are no visible shops, services, active frontages, or gathering spaces, so the path appears more like a transit or recreational segment than a socially vibrant street.",
+   "The scattered waste and unmanaged edges on the left side slightly reduce the sense of care and everyday usability."
+  ],
+  "sustainability": [
+   "The strong tree cover on both sides contributes shade, habitat value, and carbon sequestration benefits.",
+   "A narrow paved corridor through a wooded area supports low-impact movement such as walking and potentially cycling rather than car-dominated travel.",
+   "The unsealed soil and leaf-covered ground beside the pavement likely allow some rainwater infiltration compared with a fully hardscaped street.",
+   "Sustainability is moderated by the visible construction debris or dumped material on the left side, which suggests weaker environmental maintenance."
+  ],
+  "aesthetics": [
+   "The continuous rows of trees on both sides create a visually immersive green corridor with strong natural character.",
+   "Dappled sunlight and tree shadows across the pavement add visual texture and make the scene more attractive.",
+   "The simple, straight path framed by trunks gives the space a clear composition and pleasant depth.",
+   "Aesthetic quality is somewhat reduced by the visible rubble and scattered materials along the left edge."
+  ],
+  "comfort": [
+   "Tree canopy on both sides provides meaningful shade, improving thermal comfort during sunny weather.",
+   "The paved surface appears mostly even and step-free, supporting reasonably comfortable walking and rolling.",
+   "Physical comfort is reduced by the narrow width, which can make passing or side-by-side movement awkward for all road users.",
+   "Psychological comfort is mixed: the quiet natural setting is calming, but the isolated wooded corridor and lack of visible activity or amenities may make some users uneasy."
+  ],
+  "walkability": [
+   "The path is continuous, paved, and generally unobstructed in the center, which supports basic walking conditions.",
+   "Its mostly flat alignment and direct route improve ease of movement for everyday walking.",
+   "Walkability is weakened by the narrow effective width, especially where users may need to pass each other.",
+   "No marked pedestrian priority features, seating, lighting, crossings, or wayfinding elements are visible, limiting overall pedestrian support."
+  ]
+ }
+}

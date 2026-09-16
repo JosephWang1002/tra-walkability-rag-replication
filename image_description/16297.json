@@ -1,0 +1,33 @@
+{
+ "oid": "16297",
+ "description": "The sidewalk/path appears to be a narrow, continuous concrete strip along the right side, but it’s partially constrained by parked cars and a high curb/wall edge; the surface looks even with minor debris, and there are no visible curb ramps or marked accessibility features. Traffic is separated from pedestrians mainly by the parked vehicles along the curb, with no clear physical barrier or lane markings visible, and the street is lined with trees providing some shade. Lighting is not prominent in this view, and there are few pedestrian amenities; obstacles include closely parked cars and a wall that limits space for passing.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 121,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 898,
+   "engine_ttlt_ms": 3012,
+   "pre_inference_ms": 332,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 1627,
+   "service_ttlt_ms": 3737,
+   "total_duration_ms": 3413,
+   "user_visible_ttft_ms": 1295
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1105
+ },
+ "latency_s": 6.7,
+ "timestamp": "2026-08-31T16:08:20"
+}

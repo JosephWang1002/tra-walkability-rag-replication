@@ -1,0 +1,129 @@
+{
+ "oid": "20443",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\20443.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\20443_120.668871_31.094951_0900290012200304082956133GF_186.83_2020_3_吴江区江陵街道G524_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.8,
+ "usage": {
+  "completion_tokens": 941,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 534,
+   "engine_ttlt_ms": 15835,
+   "pre_inference_ms": 347,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1120,
+   "service_ttlt_ms": 16417,
+   "user_visible_ttft_ms": 773
+  },
+  "prompt_tokens": 5542,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6483
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 49.0,\n      \"equity\": 46.0,\n      \"fairness\": 50.0,\n      \"accessibility\": 51.0\n    },\n    \"safety\": 63.0,\n    \"livability\": 45.0,\n    \"sustainability\": 58.0,\n    \"aesthetics\": 67.0,\n    \"comfort\": 52.0,\n    \"walkability\": 38.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is allocated to a wide motor-vehicle carriageway, while no dedicated sidewalk is clearly visible on either side, indicating limited spatial equity for non-drivers.\",\n      \"The road edges are lined with curbs, shrubs, and narrow planted strips, but there are no visible curb ramps, marked crossings, or barrier-free pedestrian access points, which weakens accessibility for all users.\",\n      \"Parked cars along the right side occupy edge space that could otherwise support walking or multimodal use, suggesting an uneven distribution of public right-of-way.\",\n      \"There is no visible dedicated cycling facility, so cyclists appear expected to share the general traffic lane, reducing fairness across road-user types.\"\n    ],\n    \"safety\": [\n      \"The roadway surface is smooth and well maintained, and the centerline is clearly marked, which supports predictable vehicle movement.\",\n      \"Streetlights are present along the corridor, which likely improves visibility after dark, although their actual illumination cannot be verified from the daytime image.\",\n      \"The street appears relatively low traffic at the moment, with only a few moving vehicles visible in the distance, which may reduce immediate conflict risk.\",\n      \"However, there is no visible sidewalk, crosswalk, or protected cycling lane, so pedestrians and cyclists would have limited protected space if using this street.\"\n    ],\n    \"livability\": [\n      \"Continuous greenery with shrubs and roadside trees improves the environmental quality of the corridor.\",\n      \"The street lacks visible benches, bus stops, shopfronts, or other public amenities that would support lingering, social interaction, or daily street life.\",\n      \"Buildings are set back and partly screened by vegetation, creating a quiet but inactive edge rather than an engaging public realm.\",\n      \"The scene reads more like an access or industrial/service road than a mixed-use neighborhood street, limiting everyday livability for all road users.\"\n    ],\n    \"sustainability\": [\n      \"Rows of shrubs and trees on both sides provide some green infrastructure and can contribute to air-quality improvement and stormwater absorption.\",\n      \"The corridor design is still dominated by motor-vehicle space, with no visible bus stop, bike lane, or other clear support for low-carbon travel modes.\",\n      \"Street trees are present but many are leafless and appear to provide limited canopy cover, reducing their current ecological and microclimate benefits.\",\n      \"Permeable landscape strips along both sides are visible, which is more sustainable than a fully paved edge condition.\"\n    ],\n    \"aesthetics\": [\n      \"The street has a neat and orderly appearance, with clean asphalt, trimmed shrubs, and regularly spaced light poles.\",\n      \"Green planting on both sides softens the corridor and improves visual quality compared with a fully hardscaped roadway.\",\n      \"The long straight perspective and consistent roadside treatment create visual coherence.\",\n      \"Aesthetic quality is moderated by overhead utility wires, sparse winter tree canopies, and utilitarian industrial-looking buildings on the right.\"\n    ],\n    \"comfort\": [\n      \"The asphalt road surface appears smooth, which benefits driving comfort and would also reduce vibration for cyclists compared with rough pavement.\",\n      \"Thermal comfort is limited because the visible trees provide little canopy shade over the roadway or roadside edges.\",\n      \"There are no visible benches, shelters, or resting facilities, reducing physical comfort for anyone traveling on foot.\",\n      \"Psychological comfort for pedestrians is weakened by the absence of a clearly defined sidewalk or buffer-separated walking zone, even though traffic volume appears low.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk is clearly visible on either side of the road, which is a major limitation for walking.\",\n      \"There are no visible marked crosswalks, pedestrian refuge islands, or curb extensions to support safe crossing.\",\n      \"The planted edges and curbs create a visually pleasant corridor, but they do not substitute for dedicated pedestrian infrastructure.\",\n      \"Long uninterrupted roadway geometry and a car-oriented layout make the street feel more suitable for driving than for everyday walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 49.0,
+   "equity": 46.0,
+   "fairness": 50.0,
+   "accessibility": 51.0
+  },
+  "safety": 63.0,
+  "livability": 45.0,
+  "sustainability": 58.0,
+  "aesthetics": 67.0,
+  "comfort": 52.0,
+  "walkability": 38.0
+ },
+ "scores_flat": {
+  "justice": 49.0,
+  "justice_equity": 46.0,
+  "justice_fairness": 50.0,
+  "justice_accessibility": 51.0,
+  "safety": 63.0,
+  "livability": 45.0,
+  "sustainability": 58.0,
+  "aesthetics": 67.0,
+  "comfort": 52.0,
+  "walkability": 38.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:45:36+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is allocated to a wide motor-vehicle carriageway, while no dedicated sidewalk is clearly visible on either side, indicating limited spatial equity for non-drivers.",
+   "The road edges are lined with curbs, shrubs, and narrow planted strips, but there are no visible curb ramps, marked crossings, or barrier-free pedestrian access points, which weakens accessibility for all users.",
+   "Parked cars along the right side occupy edge space that could otherwise support walking or multimodal use, suggesting an uneven distribution of public right-of-way.",
+   "There is no visible dedicated cycling facility, so cyclists appear expected to share the general traffic lane, reducing fairness across road-user types."
+  ],
+  "safety": [
+   "The roadway surface is smooth and well maintained, and the centerline is clearly marked, which supports predictable vehicle movement.",
+   "Streetlights are present along the corridor, which likely improves visibility after dark, although their actual illumination cannot be verified from the daytime image.",
+   "The street appears relatively low traffic at the moment, with only a few moving vehicles visible in the distance, which may reduce immediate conflict risk.",
+   "However, there is no visible sidewalk, crosswalk, or protected cycling lane, so pedestrians and cyclists would have limited protected space if using this street."
+  ],
+  "livability": [
+   "Continuous greenery with shrubs and roadside trees improves the environmental quality of the corridor.",
+   "The street lacks visible benches, bus stops, shopfronts, or other public amenities that would support lingering, social interaction, or daily street life.",
+   "Buildings are set back and partly screened by vegetation, creating a quiet but inactive edge rather than an engaging public realm.",
+   "The scene reads more like an access or industrial/service road than a mixed-use neighborhood street, limiting everyday livability for all road users."
+  ],
+  "sustainability": [
+   "Rows of shrubs and trees on both sides provide some green infrastructure and can contribute to air-quality improvement and stormwater absorption.",
+   "The corridor design is still dominated by motor-vehicle space, with no visible bus stop, bike lane, or other clear support for low-carbon travel modes.",
+   "Street trees are present but many are leafless and appear to provide limited canopy cover, reducing their current ecological and microclimate benefits.",
+   "Permeable landscape strips along both sides are visible, which is more sustainable than a fully paved edge condition."
+  ],
+  "aesthetics": [
+   "The street has a neat and orderly appearance, with clean asphalt, trimmed shrubs, and regularly spaced light poles.",
+   "Green planting on both sides softens the corridor and improves visual quality compared with a fully hardscaped roadway.",
+   "The long straight perspective and consistent roadside treatment create visual coherence.",
+   "Aesthetic quality is moderated by overhead utility wires, sparse winter tree canopies, and utilitarian industrial-looking buildings on the right."
+  ],
+  "comfort": [
+   "The asphalt road surface appears smooth, which benefits driving comfort and would also reduce vibration for cyclists compared with rough pavement.",
+   "Thermal comfort is limited because the visible trees provide little canopy shade over the roadway or roadside edges.",
+   "There are no visible benches, shelters, or resting facilities, reducing physical comfort for anyone traveling on foot.",
+   "Psychological comfort for pedestrians is weakened by the absence of a clearly defined sidewalk or buffer-separated walking zone, even though traffic volume appears low."
+  ],
+  "walkability": [
+   "No continuous sidewalk is clearly visible on either side of the road, which is a major limitation for walking.",
+   "There are no visible marked crosswalks, pedestrian refuge islands, or curb extensions to support safe crossing.",
+   "The planted edges and curbs create a visually pleasant corridor, but they do not substitute for dedicated pedestrian infrastructure.",
+   "Long uninterrupted roadway geometry and a car-oriented layout make the street feel more suitable for driving than for everyday walking."
+  ]
+ }
+}

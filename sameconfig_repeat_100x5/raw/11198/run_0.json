@@ -1,0 +1,122 @@
+{
+ "oid": "11198",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\11198.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\11198_120.505307_31.319762_09002900122201141058358023O_78.46_2022_1_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.5,
+ "usage": {
+  "completion_tokens": 832,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 505,
+   "engine_ttlt_ms": 12502,
+   "pre_inference_ms": 422,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1181,
+   "service_ttlt_ms": 13157,
+   "user_visible_ttft_ms": 758
+  },
+  "prompt_tokens": 5186,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6018
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 66.0,\n      \"equity\": 72.0,\n      \"fairness\": 64.0,\n      \"accessibility\": 62.0\n    },\n    \"safety\": 78.0,\n    \"livability\": 67.0,\n    \"sustainability\": 74.0,\n    \"aesthetics\": 82.0,\n    \"comfort\": 73.0,\n    \"walkability\": 58.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to multiple users through wide carriageways, a planted median, sidewalks on both sides, and a central pedestrian barrier, suggesting some organized distribution of road space.\",\n      \"Fairness is only moderate because motor vehicles visibly receive the largest share of the corridor, while no dedicated bicycle lane or clearly marked pedestrian-priority space is visible in the image.\",\n      \"Accessibility is limited by the lack of visible curb ramps, tactile paving, or marked crossing points in this view, so barrier-free movement for all users cannot be confirmed from the photo.\"\n    ],\n    \"safety\": [\n      \"A continuous central fence separates opposing traffic streams and discourages unsafe mid-block crossing, reducing severe vehicle conflict risk.\",\n      \"The roadway is wide, well-marked with lane lines, and appears to have good sight distance, which supports predictable vehicle movement.\",\n      \"Streetlights are installed along the corridor and large roadside trees create a buffered edge, but the broad multi-lane road still implies relatively high vehicle speeds that can reduce safety for people outside cars.\"\n    ],\n    \"livability\": [\n      \"Continuous rows of mature trees on both sides make the corridor greener and more pleasant than a bare arterial road.\",\n      \"Shops and active building frontages are visible along the right and left edges, indicating some everyday urban activity and service presence.\",\n      \"Livability is constrained because the street is dominated by fast-moving traffic lanes and long linear fencing, which makes the environment feel more like a traffic corridor than a social public space.\"\n    ],\n    \"sustainability\": [\n      \"Dense street trees and planted medians provide visible green infrastructure that can support shade, air-quality improvement, and urban ecological value.\",\n      \"The orderly, wide corridor could support efficient movement, but no visible bus stop, bike lane, or bike parking is present in this frame to strongly demonstrate low-carbon mode priority.\",\n      \"The landscaped median and roadside planting strips are positive for sustainability, though no visible permeable paving or stormwater features can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has strong visual order created by symmetrical tree rows, evenly spaced streetlights, and consistent lane geometry.\",\n      \"The roadway and planting areas appear clean and well maintained, which improves overall visual quality.\",\n      \"The long perspective view, mature canopy, and landscaped median create an attractive boulevard character despite the large scale of the road.\"\n    ],\n    \"comfort\": [\n      \"Large roadside trees provide substantial shade over the curbside areas, improving thermal comfort for people on the sidewalks.\",\n      \"The asphalt roadway looks smooth and well maintained, which supports physical comfort for vehicle travel and likely for walking on adjacent paved areas, though the sidewalks themselves are only partly visible.\",\n      \"Psychological comfort is mixed: the street is orderly and uncluttered, but the wide multi-lane carriageway and traffic-oriented design may feel less relaxed for non-motorized users.\"\n    ],\n    \"walkability\": [\n      \"Sidewalks appear to exist continuously along both sides of the street, supported by tree-lined edges that can make walking more pleasant.\",\n      \"Walkability is weakened because no marked crosswalk, pedestrian refuge opening, or curb ramp is visible in this scene, making crossing opportunities unclear.\",\n      \"The corridor is very wide and vehicle-oriented, and the central fence limits direct pedestrian permeability, so walking routes may be continuous along the edge but less convenient across the street.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 66.0,
+   "equity": 72.0,
+   "fairness": 64.0,
+   "accessibility": 62.0
+  },
+  "safety": 78.0,
+  "livability": 67.0,
+  "sustainability": 74.0,
+  "aesthetics": 82.0,
+  "comfort": 73.0,
+  "walkability": 58.0
+ },
+ "scores_flat": {
+  "justice": 66.0,
+  "justice_equity": 72.0,
+  "justice_fairness": 64.0,
+  "justice_accessibility": 62.0,
+  "safety": 78.0,
+  "livability": 67.0,
+  "sustainability": 74.0,
+  "aesthetics": 82.0,
+  "comfort": 73.0,
+  "walkability": 58.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:12:54+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to multiple users through wide carriageways, a planted median, sidewalks on both sides, and a central pedestrian barrier, suggesting some organized distribution of road space.",
+   "Fairness is only moderate because motor vehicles visibly receive the largest share of the corridor, while no dedicated bicycle lane or clearly marked pedestrian-priority space is visible in the image.",
+   "Accessibility is limited by the lack of visible curb ramps, tactile paving, or marked crossing points in this view, so barrier-free movement for all users cannot be confirmed from the photo."
+  ],
+  "safety": [
+   "A continuous central fence separates opposing traffic streams and discourages unsafe mid-block crossing, reducing severe vehicle conflict risk.",
+   "The roadway is wide, well-marked with lane lines, and appears to have good sight distance, which supports predictable vehicle movement.",
+   "Streetlights are installed along the corridor and large roadside trees create a buffered edge, but the broad multi-lane road still implies relatively high vehicle speeds that can reduce safety for people outside cars."
+  ],
+  "livability": [
+   "Continuous rows of mature trees on both sides make the corridor greener and more pleasant than a bare arterial road.",
+   "Shops and active building frontages are visible along the right and left edges, indicating some everyday urban activity and service presence.",
+   "Livability is constrained because the street is dominated by fast-moving traffic lanes and long linear fencing, which makes the environment feel more like a traffic corridor than a social public space."
+  ],
+  "sustainability": [
+   "Dense street trees and planted medians provide visible green infrastructure that can support shade, air-quality improvement, and urban ecological value.",
+   "The orderly, wide corridor could support efficient movement, but no visible bus stop, bike lane, or bike parking is present in this frame to strongly demonstrate low-carbon mode priority.",
+   "The landscaped median and roadside planting strips are positive for sustainability, though no visible permeable paving or stormwater features can be identified."
+  ],
+  "aesthetics": [
+   "The avenue has strong visual order created by symmetrical tree rows, evenly spaced streetlights, and consistent lane geometry.",
+   "The roadway and planting areas appear clean and well maintained, which improves overall visual quality.",
+   "The long perspective view, mature canopy, and landscaped median create an attractive boulevard character despite the large scale of the road."
+  ],
+  "comfort": [
+   "Large roadside trees provide substantial shade over the curbside areas, improving thermal comfort for people on the sidewalks.",
+   "The asphalt roadway looks smooth and well maintained, which supports physical comfort for vehicle travel and likely for walking on adjacent paved areas, though the sidewalks themselves are only partly visible.",
+   "Psychological comfort is mixed: the street is orderly and uncluttered, but the wide multi-lane carriageway and traffic-oriented design may feel less relaxed for non-motorized users."
+  ],
+  "walkability": [
+   "Sidewalks appear to exist continuously along both sides of the street, supported by tree-lined edges that can make walking more pleasant.",
+   "Walkability is weakened because no marked crosswalk, pedestrian refuge opening, or curb ramp is visible in this scene, making crossing opportunities unclear.",
+   "The corridor is very wide and vehicle-oriented, and the central fence limits direct pedestrian permeability, so walking routes may be continuous along the edge but less convenient across the street."
+  ]
+ }
+}

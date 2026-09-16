@@ -1,0 +1,33 @@
+{
+ "oid": "18597",
+ "description": "The image shows a multi-lane roadway with no visible sidewalk or pedestrian path; the curb edge is not clearly accessible, and pedestrians would likely need to walk in/near the traffic lane. Traffic is separated only by lane markings, with vehicles moving in both directions and no physical barrier between the roadway and the curbside greenery. There is some tree-lined greenery providing partial shade along the left and right edges, and streetlights are present, but there are no clear curb cuts, ramps, or pedestrian safety features (e.g., crossings, barriers, or sidewalks).",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 116,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 279,
+   "engine_ttlt_ms": 2120,
+   "pre_inference_ms": 499,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1007,
+   "service_ttlt_ms": 2838,
+   "total_duration_ms": 2346,
+   "user_visible_ttft_ms": 508
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1100
+ },
+ "latency_s": 71.4,
+ "timestamp": "2026-08-31T16:23:10"
+}

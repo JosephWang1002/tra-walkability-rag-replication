@@ -1,0 +1,195 @@
+{
+ "oid": "30835",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\30835_120.483602_31.264426_09002900011603021112396844C_111.5_2016_3_吴中区木渎镇穹灵路辅路_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 6.3,
+  "usage": {
+   "completion_tokens": 145,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 269,
+    "engine_ttlt_ms": 1274,
+    "pre_inference_ms": 437,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 856,
+    "service_ttlt_ms": 1854,
+    "user_visible_ttft_ms": 418
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1406
+  },
+  "raw": "{\"road_type\":\"arterial\",\"elements\":{\"sidewalk\":\"false\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"many\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"false\",\"street_lighting\":\"true\",\"greenery\":\"high\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"no_bike_lane\",\"poor_accessibility\",\"no_crossing\"],\"brief\":\"A wide arterial road with multiple lanes, a few cars, and tall streetlights runs between dense trees and high-rise buildings. There is no visible sidewalk or pedestrian crossing, and no benches or bus stop are visible.\"}",
+  "parsed": {
+   "road_type": "arterial",
+   "elements": {
+    "sidewalk": "false",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "many",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "true",
+    "greenery": "high",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "no_bike_lane",
+    "poor_accessibility",
+    "no_crossing"
+   ],
+   "brief": "A wide arterial road with multiple lanes, a few cars, and tall streetlights runs between dense trees and high-rise buildings. There is no visible sidewalk or pedestrian crossing, and no benches or bus stop are visible."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A wide arterial road with multiple lanes, a few cars, and tall streetlights runs between dense trees and high-rise buildings. There is no visible sidewalk or pedestrian crossing, and no benches or bus stop are visible. Road type: arterial. Visible elements: sidewalk=false, bike_lane=false, seating=false, shade_trees=many, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=true, greenery=high, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'no_bike_lane', 'poor_accessibility', 'no_crossing']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 16.2,
+  "usage": {
+   "completion_tokens": 844,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 13,
+    "engine_ttft_ms": 398,
+    "engine_ttlt_ms": 11020,
+    "pre_inference_ms": 316,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 957,
+    "service_ttlt_ms": 11561,
+    "user_visible_ttft_ms": 641
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2731
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 49.0,\n      \"equity\": 58.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 44.0\n    },\n    \"safety\": 61.0,\n    \"livability\": 42.0,\n    \"sustainability\": 54.0,\n    \"aesthetics\": 63.0,\n    \"comfort\": 46.0,\n    \"walkability\": 34.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The roadway is very wide with multiple motor-vehicle lanes, while no visible sidewalk, crossing, or pedestrian space is shown in the frame, indicating spatial resources are allocated mainly to cars rather than all road users.\",\n      \"Streetlights and a planted median are provided along the corridor, showing some public investment across the street section, but these features do not compensate for the lack of visible walking facilities.\",\n      \"No curb ramps, tactile paving, marked crosswalks, or bus stop access points are visible, so accessibility for diverse users cannot be confirmed and appears limited in the photographed segment.\"\n    ],\n    \"safety\": [\n      \"Lane markings are clear and the asphalt surface appears smooth and well maintained, which supports predictable vehicle movement and reduces crash risk for drivers.\",\n      \"A planted median separates opposing traffic streams, lowering the likelihood of head-on conflicts on this broad arterial road.\",\n      \"The road is long, straight, and visually open, which improves sight distance, but the apparent absence of visible pedestrian crossings, sidewalks, or protected non-motorized space creates safety concerns for anyone outside a car.\"\n    ],\n    \"livability\": [\n      \"Tall residential towers line the right side and dense greenery lines both sides, but the street itself functions primarily as a traffic corridor rather than an active public place.\",\n      \"No benches, storefronts, bus shelters, plazas, or visible gathering spaces appear in the image, limiting everyday street life and social use.\",\n      \"The large road width and sparse visible human activity make the environment feel less supportive of casual walking, lingering, or neighborhood interaction.\"\n    ],\n    \"sustainability\": [\n      \"Continuous tree belts and planted vegetation along both sides and the median add green cover and can help with air quality and heat mitigation.\",\n      \"The corridor design is dominated by private motor-vehicle lanes, with no visible bike lane, transit stop, or dedicated pedestrian infrastructure to support lower-carbon travel choices.\",\n      \"Modern streetlights and landscaped medians suggest some investment in orderly urban infrastructure, but there are no visible permeable surfaces, rain gardens, or other stormwater features.\"\n    ],\n    \"aesthetics\": [\n      \"The long tree-lined edges and planted median create a relatively orderly and green visual frame for the street.\",\n      \"High-rise buildings on the right form a consistent urban wall, giving the corridor a coherent but somewhat monotonous appearance.\",\n      \"The pavement and roadway appear clean and well maintained, yet the very wide asphalt surface and hazy sky reduce visual warmth and human-scale appeal.\"\n    ],\n    \"comfort\": [\n      \"Trees along both sides may provide some shade at the edges, but the main roadway and visible shoulder are fully exposed to sun, limiting thermal comfort in hot weather.\",\n      \"The asphalt surface looks smooth for driving, but no visible seating, sidewalk, or pedestrian refuge is present to support physical comfort for people outside vehicles.\",\n      \"The broad, fast-moving road environment with little visible human activity can feel psychologically uncomfortable for non-drivers because of exposure, scale, and traffic dominance.\"\n    ],\n    \"walkability\": [\n      \"No clear sidewalk is visible in the image, so there is no confirmed dedicated walking path along this segment.\",\n      \"There are no marked crosswalks, pedestrian signals, refuge islands for crossing, or curb ramps visible, which weakens route continuity for walking.\",\n      \"Although the corridor is visually open and lined with trees, the street width and car-oriented design make it unattractive and inconvenient for everyday walking.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 49.0,
+    "equity": 58.0,
+    "fairness": 45.0,
+    "accessibility": 44.0
+   },
+   "safety": 61.0,
+   "livability": 42.0,
+   "sustainability": 54.0,
+   "aesthetics": 63.0,
+   "comfort": 46.0,
+   "walkability": 34.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The roadway is very wide with multiple motor-vehicle lanes, while no visible sidewalk, crossing, or pedestrian space is shown in the frame, indicating spatial resources are allocated mainly to cars rather than all road users.",
+    "Streetlights and a planted median are provided along the corridor, showing some public investment across the street section, but these features do not compensate for the lack of visible walking facilities.",
+    "No curb ramps, tactile paving, marked crosswalks, or bus stop access points are visible, so accessibility for diverse users cannot be confirmed and appears limited in the photographed segment."
+   ],
+   "safety": [
+    "Lane markings are clear and the asphalt surface appears smooth and well maintained, which supports predictable vehicle movement and reduces crash risk for drivers.",
+    "A planted median separates opposing traffic streams, lowering the likelihood of head-on conflicts on this broad arterial road.",
+    "The road is long, straight, and visually open, which improves sight distance, but the apparent absence of visible pedestrian crossings, sidewalks, or protected non-motorized space creates safety concerns for anyone outside a car."
+   ],
+   "livability": [
+    "Tall residential towers line the right side and dense greenery lines both sides, but the street itself functions primarily as a traffic corridor rather than an active public place.",
+    "No benches, storefronts, bus shelters, plazas, or visible gathering spaces appear in the image, limiting everyday street life and social use.",
+    "The large road width and sparse visible human activity make the environment feel less supportive of casual walking, lingering, or neighborhood interaction."
+   ],
+   "sustainability": [
+    "Continuous tree belts and planted vegetation along both sides and the median add green cover and can help with air quality and heat mitigation.",
+    "The corridor design is dominated by private motor-vehicle lanes, with no visible bike lane, transit stop, or dedicated pedestrian infrastructure to support lower-carbon travel choices.",
+    "Modern streetlights and landscaped medians suggest some investment in orderly urban infrastructure, but there are no visible permeable surfaces, rain gardens, or other stormwater features."
+   ],
+   "aesthetics": [
+    "The long tree-lined edges and planted median create a relatively orderly and green visual frame for the street.",
+    "High-rise buildings on the right form a consistent urban wall, giving the corridor a coherent but somewhat monotonous appearance.",
+    "The pavement and roadway appear clean and well maintained, yet the very wide asphalt surface and hazy sky reduce visual warmth and human-scale appeal."
+   ],
+   "comfort": [
+    "Trees along both sides may provide some shade at the edges, but the main roadway and visible shoulder are fully exposed to sun, limiting thermal comfort in hot weather.",
+    "The asphalt surface looks smooth for driving, but no visible seating, sidewalk, or pedestrian refuge is present to support physical comfort for people outside vehicles.",
+    "The broad, fast-moving road environment with little visible human activity can feel psychologically uncomfortable for non-drivers because of exposure, scale, and traffic dominance."
+   ],
+   "walkability": [
+    "No clear sidewalk is visible in the image, so there is no confirmed dedicated walking path along this segment.",
+    "There are no marked crosswalks, pedestrian signals, refuge islands for crossing, or curb ramps visible, which weakens route continuity for walking.",
+    "Although the corridor is visually open and lined with trees, the street width and car-oriented design make it unattractive and inconvenient for everyday walking."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 49.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 44.0,
+  "safety": 61.0,
+  "livability": 42.0,
+  "sustainability": 54.0,
+  "aesthetics": 63.0,
+  "comfort": 46.0,
+  "walkability": 34.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T16:30:35+00:00",
+  "step2": "2026-09-03T16:30:35+00:00",
+  "step3": "2026-09-03T16:30:51+00:00",
+  "completed": "2026-09-03T16:30:51+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\30835.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

@@ -1,0 +1,125 @@
+{
+ "oid": "13324",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\13324.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\13324_120.597454_30.958447_01002900001406071517500075Q_148.04_2014_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.0,
+ "usage": {
+  "completion_tokens": 896,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 18,
+   "engine_ttft_ms": 431,
+   "engine_ttlt_ms": 16842,
+   "pre_inference_ms": 266,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 928,
+   "service_ttlt_ms": 17330,
+   "user_visible_ttft_ms": 662
+  },
+  "prompt_tokens": 5612,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6508
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 45.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 34.0,\n    \"sustainability\": 52.0,\n    \"aesthetics\": 71.0,\n    \"comfort\": 49.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The paved carriageway is very wide and smooth for motor vehicles, but there is no visible sidewalk, shoulder path, or marked pedestrian space, so street space is not evenly allocated across road users.\",\n      \"No curb ramps, tactile paving, crossings, or refuge islands are visible, which limits barrier-free access and reduces accessibility for people moving outside vehicles.\",\n      \"The road markings consist mainly of a centerline and edge lines for traffic movement, with no visible facilities that specifically support pedestrians or other slower users, suggesting a vehicle-prioritized design rather than a broadly fair one.\"\n    ],\n    \"safety\": [\n      \"The roadway is straight with long sight distance, and the centerline and edge lines are clearly visible, which supports predictable vehicle movement.\",\n      \"There is no visible sidewalk, protected shoulder, guardrail, or separated non-motorized lane, so anyone walking along the corridor would be exposed close to moving traffic.\",\n      \"Roadside trees and shrubs form a continuous edge on the right and vegetation lines the left side, which improves enclosure but could also limit recovery space if a vehicle leaves the lane.\",\n      \"Traffic volume appears low in the image, with only a few distant vehicles visible, which reduces immediate conflict frequency.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by a through-road and roadside vegetation, with no visible shops, seating, bus stops, plazas, or community facilities that support everyday street life.\",\n      \"There are no visible pedestrians, cyclists, or social activity areas, so the corridor appears to function mainly as a movement space rather than a lived public space.\",\n      \"The rural roadside planting is pleasant visually, but the absence of destinations or amenities limits the street's usefulness for daily social and local activities.\"\n    ],\n    \"sustainability\": [\n      \"The dense tree line on the right and additional vegetation on the left provide substantial green cover, which supports ecological value and roadside shading.\",\n      \"No dedicated bike lane, sidewalk, or public transport stop is visible, so the corridor does not clearly support lower-carbon travel choices beyond private vehicles.\",\n      \"The road surface appears fully asphalted and there are no visible permeable strips, bioswales, or stormwater features, so water-sensitive design is not evident from the image.\"\n    ],\n    \"aesthetics\": [\n      \"The long straight perspective, orderly lane markings, and continuous tree rows create a strong sense of visual coherence.\",\n      \"Dense green vegetation and flowering shrubs along both sides soften the road edge and improve scenic quality.\",\n      \"The roadway appears clean and well maintained, with smooth asphalt and limited roadside clutter, which enhances visual appeal.\"\n    ],\n    \"comfort\": [\n      \"For vehicle users, the asphalt surface looks smooth and even, which supports physical comfort during travel.\",\n      \"For people outside vehicles, comfort is weaker because there is no visible sidewalk, bench, shelter, or designated resting space along the corridor.\",\n      \"Tree cover is substantial along the edges, especially on the right, but the travel lanes themselves are fully exposed to sun with no overhead shade.\",\n      \"The open rural setting and low visible traffic suggest relatively low crowding and potentially lower psychological stress than a busy urban street.\"\n    ],\n    \"walkability\": [\n      \"There is no visible sidewalk or separated walking path, which is a major limitation for walking along this road.\",\n      \"No marked crosswalks, pedestrian signals, curb extensions, or median refuges are visible, so crossing opportunities appear poor.\",\n      \"The corridor is long and auto-oriented, with wide travel lanes and minimal pedestrian infrastructure, making it unattractive and inconvenient for walking.\",\n      \"Although the road edge is visually green, the lack of dedicated pedestrian space outweighs the landscape benefit for walkability.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 45.0,
+   "fairness": 40.0,
+   "accessibility": 41.0
+  },
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 52.0,
+  "aesthetics": 71.0,
+  "comfort": 49.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 41.0,
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 52.0,
+  "aesthetics": 71.0,
+  "comfort": 49.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:21:03+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The paved carriageway is very wide and smooth for motor vehicles, but there is no visible sidewalk, shoulder path, or marked pedestrian space, so street space is not evenly allocated across road users.",
+   "No curb ramps, tactile paving, crossings, or refuge islands are visible, which limits barrier-free access and reduces accessibility for people moving outside vehicles.",
+   "The road markings consist mainly of a centerline and edge lines for traffic movement, with no visible facilities that specifically support pedestrians or other slower users, suggesting a vehicle-prioritized design rather than a broadly fair one."
+  ],
+  "safety": [
+   "The roadway is straight with long sight distance, and the centerline and edge lines are clearly visible, which supports predictable vehicle movement.",
+   "There is no visible sidewalk, protected shoulder, guardrail, or separated non-motorized lane, so anyone walking along the corridor would be exposed close to moving traffic.",
+   "Roadside trees and shrubs form a continuous edge on the right and vegetation lines the left side, which improves enclosure but could also limit recovery space if a vehicle leaves the lane.",
+   "Traffic volume appears low in the image, with only a few distant vehicles visible, which reduces immediate conflict frequency."
+  ],
+  "livability": [
+   "The scene is dominated by a through-road and roadside vegetation, with no visible shops, seating, bus stops, plazas, or community facilities that support everyday street life.",
+   "There are no visible pedestrians, cyclists, or social activity areas, so the corridor appears to function mainly as a movement space rather than a lived public space.",
+   "The rural roadside planting is pleasant visually, but the absence of destinations or amenities limits the street's usefulness for daily social and local activities."
+  ],
+  "sustainability": [
+   "The dense tree line on the right and additional vegetation on the left provide substantial green cover, which supports ecological value and roadside shading.",
+   "No dedicated bike lane, sidewalk, or public transport stop is visible, so the corridor does not clearly support lower-carbon travel choices beyond private vehicles.",
+   "The road surface appears fully asphalted and there are no visible permeable strips, bioswales, or stormwater features, so water-sensitive design is not evident from the image."
+  ],
+  "aesthetics": [
+   "The long straight perspective, orderly lane markings, and continuous tree rows create a strong sense of visual coherence.",
+   "Dense green vegetation and flowering shrubs along both sides soften the road edge and improve scenic quality.",
+   "The roadway appears clean and well maintained, with smooth asphalt and limited roadside clutter, which enhances visual appeal."
+  ],
+  "comfort": [
+   "For vehicle users, the asphalt surface looks smooth and even, which supports physical comfort during travel.",
+   "For people outside vehicles, comfort is weaker because there is no visible sidewalk, bench, shelter, or designated resting space along the corridor.",
+   "Tree cover is substantial along the edges, especially on the right, but the travel lanes themselves are fully exposed to sun with no overhead shade.",
+   "The open rural setting and low visible traffic suggest relatively low crowding and potentially lower psychological stress than a busy urban street."
+  ],
+  "walkability": [
+   "There is no visible sidewalk or separated walking path, which is a major limitation for walking along this road.",
+   "No marked crosswalks, pedestrian signals, curb extensions, or median refuges are visible, so crossing opportunities appear poor.",
+   "The corridor is long and auto-oriented, with wide travel lanes and minimal pedestrian infrastructure, making it unattractive and inconvenient for walking.",
+   "Although the road edge is visually green, the lack of dedicated pedestrian space outweighs the landscape benefit for walkability."
+  ]
+ }
+}

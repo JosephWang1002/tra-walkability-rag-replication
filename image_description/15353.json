@@ -1,0 +1,32 @@
+{
+ "oid": "15353",
+ "description": "The sidewalk is narrow and continuous along both sides, with a smooth concrete surface but limited width for passing; there are curb edges and no clearly visible curb ramps or marked accessible crossings. Street traffic is separated from pedestrians mainly by the curb/parking edge, with parked cars along the right and no visible physical barrier, suggesting cars may encroach into the pedestrian space. There is some greenery and tree canopy providing partial shade, but lighting details are not prominent in this view and there are few obvious obstacles or safety features beyond the curb and landscaping.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 111,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 7,
+   "engine_ttft_ms": 231,
+   "engine_ttlt_ms": 1036,
+   "pre_inference_ms": 324,
+   "service_tbt_ms": 7,
+   "service_ttft_ms": 823,
+   "service_ttlt_ms": 1628,
+   "user_visible_ttft_ms": 499
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1095
+ },
+ "latency_s": 4.5,
+ "timestamp": "2026-08-31T16:04:01"
+}

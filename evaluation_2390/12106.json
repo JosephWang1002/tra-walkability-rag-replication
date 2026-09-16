@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 62.5,
+      "equity": 60,
+      "fairness": 62,
+      "accessibility": 65.5
+    },
+    "safety": 66.5,
+    "livability": 48.5,
+    "sustainability": 70,
+    "aesthetics": 63.5,
+    "comfort": 60.5,
+    "walkability": 57.5,
+    "bikeability": 38.5
+  },
+  "explanations": {
+    "justice": [
+      "A continuous paved sidewalk is visible on the right side, indicating some allocation of space for pedestrians rather than only for motor vehicles.",
+      "Street lighting poles are present along the corridor, suggesting shared public infrastructure that benefits multiple users (drivers, walkers) rather than a single group.",
+      "There is no clearly marked crosswalk, pedestrian refuge, or intersection crossing facility visible in the scene, which can disadvantage people who need safe formal crossing points (reducing practical accessibility and fairness across users).",
+      "No curb ramps or tactile paving can be confirmed from the image; the sidewalk-to-road transition details are unclear, which weakens confidence in barrier-free accessibility for all users."
+    ],
+    "safety": [
+      "The roadway is wide with clear lane edge lines, which supports predictable vehicle movement and can reduce side-swipe conflicts.",
+      "Long sightlines along a straight corridor improve forward visibility for drivers, cyclists, and pedestrians approaching from a distance.",
+      "There is no visible protected bike lane, physical buffer, or dedicated cycling markings; cyclists would likely share space with higher-speed traffic, increasing crash risk.",
+      "The sidewalk appears adjacent to a grass verge with trees, but a strong physical barrier (e.g., guardrail/bollards) between pedestrians and the roadway is not evident, which can reduce perceived and actual safety on a high-speed arterial."
+    ],
+    "livability": [
+      "The streetscape appears primarily corridor-like with few (or no) active ground-floor uses, shops, or public destinations visible, limiting day-to-day street life.",
+      "No benches, plazas, pocket parks, or social gathering facilities are visible along the sidewalk, reducing opportunities for staying activities.",
+      "Very low pedestrian and cyclist presence in the scene suggests limited current street vitality and weaker 'eyes on the street' effect.",
+      "Greenery is present, but it functions mainly as roadside planting rather than clearly usable public space or amenities."
+    ],
+    "sustainability": [
+      "Substantial roadside trees and planted green strips provide ecosystem services (shade potential, air quality benefits, habitat), supporting environmental sustainability.",
+      "The corridor design appears to accommodate walking via a continuous sidewalk, enabling some non-motorized travel option.",
+      "The roadway is wide and appears oriented to motor traffic capacity, which can induce higher vehicle dependence and emissions if speeds/volumes are high.",
+      "No visible stormwater features (bioswales, rain gardens, permeable paving cues) can be identified; green space is present but not clearly designed for runoff management."
+    ],
+    "aesthetics": [
+      "A strong tree line and continuous greenery on both sides create a coherent, natural visual edge and soften the road environment.",
+      "The corridor looks clean and well-maintained (no visible litter, graffiti, or damaged pavement), supporting a positive visual impression.",
+      "The space is visually dominated by wide asphalt carriageway and repeated utility/light poles, which can feel monotonous and less human-scaled.",
+      "There are few architectural or placemaking elements (signage, art, distinctive storefronts) visible to create visual interest."
+    ],
+    "comfort": [
+      "Trees along the right side can provide shade and reduce radiant heat for pedestrians, improving thermal comfort during hot periods (though canopy coverage over the sidewalk appears partial).",
+      "The sidewalk looks relatively smooth and continuous, supporting stable walking comfort for most users.",
+      "A lack of visible seating/rest areas reduces physical comfort for users who may need breaks (e.g., people walking longer distances).",
+      "The corridor appears quiet with low traffic presence at the moment, which can improve psychological comfort (less crowding and perceived stress), but openness may feel exposed due to limited enclosure."
+    ],
+    "walkability": [
+      "A dedicated sidewalk is present and appears continuous along the right side, enabling basic pedestrian circulation.",
+      "The environment is highly car-oriented (wide lanes, long uninterrupted segment) with no visible marked crossings or pedestrian signals, reducing safe permeability across the road.",
+      "Few visible destinations and limited street-front activity reduce walking attractiveness and functional utility for daily trips.",
+      "Buffer greenery (grass strip/trees) next to the sidewalk can improve walking experience, but the separation from traffic does not appear strongly protected."
+    ],
+    "bikeability": [
+      "No visible bike lane markings, colored pavement, or physical protection is provided, implying cyclists must ride in mixed traffic or on the road shoulder.",
+      "The roadway appears designed for higher speeds (wide carriageway and long straight alignment), which increases stress and danger for cyclists.",
+      "There is no visible bicycle parking, bike-share station, or cycling wayfinding signage to support cycling convenience.",
+      "The right edge shows a paved sidewalk and green verge, but it is not indicated as a shared-use path; lack of designated cycling space significantly reduces bikeability."
+    ]
+  },
+  "image_id": "img-1777267085461-l67gso5oq",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:39:23.892Z",
+  "record_id": "e3c411529202424ab82f7e72d761c01b",
+  "stored_image_url": "/storage/records/e3c411529202424ab82f7e72d761c01b/image.jpg",
+  "stored_thumb_url": "/storage/records/e3c411529202424ab82f7e72d761c01b/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:39:29.495Z"
+}

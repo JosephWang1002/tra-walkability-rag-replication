@@ -1,0 +1,122 @@
+{
+ "oid": "23116",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23116.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23116_120.66817_31.390841_0900290012210414155426275HO_21.42_2021_4_相城区澄阳街道G1522_常台高速_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.2,
+ "usage": {
+  "completion_tokens": 867,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 452,
+   "engine_ttlt_ms": 13045,
+   "pre_inference_ms": 348,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1095,
+   "service_ttlt_ms": 13674,
+   "user_visible_ttft_ms": 747
+  },
+  "prompt_tokens": 5244,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6111
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 60.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 42.0,\n    \"sustainability\": 61.0,\n    \"aesthetics\": 57.0,\n    \"comfort\": 63.0,\n    \"walkability\": 41.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The carriageway occupies most of the visible corridor width, while the pedestrian space on the right is comparatively narrow, suggesting spatial resources are distributed primarily to motor traffic rather than evenly across all users.\",\n      \"A sidewalk is visible on the right side and appears continuous and separated from the roadway by a planted strip and curb, which supports basic access for non-drivers.\",\n      \"No visible curb ramps, tactile paving, marked crossings, benches, or transit stops can be seen in this frame, so accessibility and fairness for a wide range of users are only partially supported.\"\n    ],\n    \"safety\": [\n      \"The road surface is smooth and lane markings are clear, which helps drivers maintain lane discipline and reduces ambiguity in vehicle movement.\",\n      \"Pedestrians appear physically separated from moving traffic by a curb, planting strip, and roadside trees on the right, lowering direct conflict risk where the sidewalk exists.\",\n      \"The long, straight underpass-like corridor beneath the elevated structure may encourage higher driving speeds, and no visible traffic-calming devices, crossings, or active street presence are present to moderate behavior.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by elevated infrastructure, wide asphalt lanes, and concrete columns, creating a strongly traffic-oriented environment rather than a socially active street.\",\n      \"There are no visible shops, building entrances, seating areas, plazas, or people engaging in street life, so the corridor offers little evidence of everyday public activity.\",\n      \"Although there are trees and planted medians, the overall setting feels transitional and infrastructural, with limited amenities that would support lingering, meeting, or neighborhood use.\"\n    ],\n    \"sustainability\": [\n      \"Rows of young street trees and planted strips add some green infrastructure and can contribute to air-quality improvement and corridor greening.\",\n      \"The continuous sidewalk provides at least some support for non-motorized travel, which is better than a road with no pedestrian provision at all.\",\n      \"However, no dedicated bike lane, bus stop, permeable paving, or visible stormwater features are present in the image, while the large amount of space devoted to motor lanes indicates a still car-oriented corridor.\"\n    ],\n    \"aesthetics\": [\n      \"The corridor has a clean and orderly appearance, with fresh asphalt, consistent lane markings, aligned trees, and maintained planting beds.\",\n      \"The massive elevated roadway and repetitive concrete supports create a heavy visual character that reduces warmth and human-scale appeal.\",\n      \"Greenery on the right side softens the scene somewhat, but the overall composition remains dominated by gray infrastructure and long empty roadway views.\"\n    ],\n    \"comfort\": [\n      \"The elevated structure provides extensive shade over the roadway and part of the corridor, which likely improves thermal comfort during hot weather.\",\n      \"The visible sidewalk appears flat and continuous, and the road surface is smooth, indicating generally good physical comfort for movement.\",\n      \"Psychological comfort is mixed: the street is quiet and uncrowded, but the long enclosed perspective under the viaduct, sparse activity, and absence of seating or human-scale features can make the environment feel isolated.\"\n    ],\n    \"walkability\": [\n      \"A continuous sidewalk is visible on the right, separated from traffic by a curb and planting strip, which supports basic pedestrian movement along the corridor.\",\n      \"Walkability is weakened by the absence of visible crossings, curb ramps, active frontages, benches, or destinations directly engaging the sidewalk.\",\n      \"The street environment is dominated by fast-moving road space and elevated infrastructure, so even though walking is possible, it is not especially inviting or convenient for everyday pedestrian use.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 58.0,
+   "equity": 60.0,
+   "fairness": 55.0,
+   "accessibility": 59.0
+  },
+  "safety": 66.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 57.0,
+  "comfort": 63.0,
+  "walkability": 41.0
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 60.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 59.0,
+  "safety": 66.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 57.0,
+  "comfort": 63.0,
+  "walkability": 41.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:54:16+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The carriageway occupies most of the visible corridor width, while the pedestrian space on the right is comparatively narrow, suggesting spatial resources are distributed primarily to motor traffic rather than evenly across all users.",
+   "A sidewalk is visible on the right side and appears continuous and separated from the roadway by a planted strip and curb, which supports basic access for non-drivers.",
+   "No visible curb ramps, tactile paving, marked crossings, benches, or transit stops can be seen in this frame, so accessibility and fairness for a wide range of users are only partially supported."
+  ],
+  "safety": [
+   "The road surface is smooth and lane markings are clear, which helps drivers maintain lane discipline and reduces ambiguity in vehicle movement.",
+   "Pedestrians appear physically separated from moving traffic by a curb, planting strip, and roadside trees on the right, lowering direct conflict risk where the sidewalk exists.",
+   "The long, straight underpass-like corridor beneath the elevated structure may encourage higher driving speeds, and no visible traffic-calming devices, crossings, or active street presence are present to moderate behavior."
+  ],
+  "livability": [
+   "The scene is dominated by elevated infrastructure, wide asphalt lanes, and concrete columns, creating a strongly traffic-oriented environment rather than a socially active street.",
+   "There are no visible shops, building entrances, seating areas, plazas, or people engaging in street life, so the corridor offers little evidence of everyday public activity.",
+   "Although there are trees and planted medians, the overall setting feels transitional and infrastructural, with limited amenities that would support lingering, meeting, or neighborhood use."
+  ],
+  "sustainability": [
+   "Rows of young street trees and planted strips add some green infrastructure and can contribute to air-quality improvement and corridor greening.",
+   "The continuous sidewalk provides at least some support for non-motorized travel, which is better than a road with no pedestrian provision at all.",
+   "However, no dedicated bike lane, bus stop, permeable paving, or visible stormwater features are present in the image, while the large amount of space devoted to motor lanes indicates a still car-oriented corridor."
+  ],
+  "aesthetics": [
+   "The corridor has a clean and orderly appearance, with fresh asphalt, consistent lane markings, aligned trees, and maintained planting beds.",
+   "The massive elevated roadway and repetitive concrete supports create a heavy visual character that reduces warmth and human-scale appeal.",
+   "Greenery on the right side softens the scene somewhat, but the overall composition remains dominated by gray infrastructure and long empty roadway views."
+  ],
+  "comfort": [
+   "The elevated structure provides extensive shade over the roadway and part of the corridor, which likely improves thermal comfort during hot weather.",
+   "The visible sidewalk appears flat and continuous, and the road surface is smooth, indicating generally good physical comfort for movement.",
+   "Psychological comfort is mixed: the street is quiet and uncrowded, but the long enclosed perspective under the viaduct, sparse activity, and absence of seating or human-scale features can make the environment feel isolated."
+  ],
+  "walkability": [
+   "A continuous sidewalk is visible on the right, separated from traffic by a curb and planting strip, which supports basic pedestrian movement along the corridor.",
+   "Walkability is weakened by the absence of visible crossings, curb ramps, active frontages, benches, or destinations directly engaging the sidewalk.",
+   "The street environment is dominated by fast-moving road space and elevated infrastructure, so even though walking is possible, it is not especially inviting or convenient for everyday pedestrian use."
+  ]
+ }
+}

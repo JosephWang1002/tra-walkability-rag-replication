@@ -1,0 +1,32 @@
+{
+ "oid": "16529",
+ "description": "The scene shows a narrow, continuous concrete pedestrian path running straight through a wooded area, with a relatively smooth surface but some visible cracking and uneven patches. There is no curb or curb-cut/accessibility feature visible, and traffic separation is minimal—vehicles appear far ahead with no clear barrier or lane markings, though the road is not immediately adjacent. Dense trees provide strong shade along both sides, while lighting and street furniture are not visible, and there are no obvious obstacles or signage directly on the path.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 103,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 10,
+   "engine_ttft_ms": 205,
+   "engine_ttlt_ms": 1262,
+   "pre_inference_ms": 506,
+   "service_tbt_ms": 10,
+   "service_ttft_ms": 784,
+   "service_ttlt_ms": 1829,
+   "user_visible_ttft_ms": 278
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1087
+ },
+ "latency_s": 5.3,
+ "timestamp": "2026-08-31T16:09:37"
+}

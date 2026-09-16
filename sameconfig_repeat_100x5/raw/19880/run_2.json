@@ -1,0 +1,129 @@
+{
+ "oid": "19880",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\19880.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\19880_120.680832_31.09317_01002900001405271006237925W_278.66_2014_5_吴江区江陵街道_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.3,
+ "usage": {
+  "completion_tokens": 913,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 498,
+   "engine_ttlt_ms": 13980,
+   "pre_inference_ms": 486,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1555,
+   "service_ttlt_ms": 14980,
+   "user_visible_ttft_ms": 1069
+  },
+  "prompt_tokens": 5331,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1408
+  },
+  "total_tokens": 6244
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 52.0,\n      \"accessibility\": 52.0\n    },\n    \"safety\": 61.0,\n    \"livability\": 48.0,\n    \"sustainability\": 72.0,\n    \"aesthetics\": 82.0,\n    \"comfort\": 71.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The roadway is very wide and visually dominates the corridor, while no sidewalk is clearly visible on either side, suggesting spatial resources are allocated more to vehicles than to pedestrians.\",\n      \"A marked crossing is visible in the foreground, which provides some formal right-of-way for people crossing the street and supports basic fairness among road users.\",\n      \"No curb ramps, tactile paving, refuge island, or clearly separated pedestrian path can be seen at the crossing, limiting accessibility for users who need barrier-free walking space.\",\n      \"Streetlights are provided on both sides of the road, indicating some effort to distribute basic public infrastructure along the corridor.\"\n    ],\n    \"safety\": [\n      \"The road is long, straight, and wide with minimal friction elements, which can encourage higher driving speeds and reduce safety for all road users.\",\n      \"A marked crosswalk is present in the foreground, giving a designated crossing point that improves pedestrian safety compared with an unmarked crossing.\",\n      \"Streetlights line both sides of the corridor, which can support nighttime visibility and perceived security.\",\n      \"Dense trees and setbacks create clear edges to the roadway, but there are no visible traffic calming devices such as raised crossings, curb extensions, or median refuge islands.\"\n    ],\n    \"livability\": [\n      \"The corridor appears quiet and green, with continuous rows of mature trees that improve environmental quality.\",\n      \"There are no visible shops, benches, bus stops, or active frontages, so the street offers few everyday amenities or social functions for people.\",\n      \"The scene looks dominated by movement space rather than places to stop, sit, or interact, which weakens street life.\",\n      \"The landscaped edges and shrubs add some pleasantness, but the overall setting feels more like an access road than a lively public street.\"\n    ],\n    \"sustainability\": [\n      \"Continuous mature tree cover on both sides provides substantial urban greenery, which supports shade, cooling, and ecological value.\",\n      \"The simple corridor design and absence of visible parking lanes may reduce paved roadside clutter and land devoted to stationary vehicles.\",\n      \"No bike lane, bus stop, or other visible public transport infrastructure is present, so support for low-carbon travel modes is limited in the image.\",\n      \"The planted verges and shrubs along the edges suggest some green infrastructure, even though no explicit stormwater features are visible.\"\n    ],\n    \"aesthetics\": [\n      \"The symmetrical rows of mature trees create a strong visual rhythm and a coherent boulevard character.\",\n      \"The street appears clean and uncluttered, with little visual noise from signage, parked cars, or overhead wires.\",\n      \"The open sky, orderly streetlights, and trimmed vegetation contribute to a calm and visually pleasing scene.\",\n      \"The long central perspective gives the corridor a formal and well-maintained appearance.\"\n    ],\n    \"comfort\": [\n      \"Large trees on both sides provide substantial shade along the edges, which likely improves thermal comfort for people near the roadside.\",\n      \"The roadway surface appears smooth and well maintained, supporting comfortable travel for vehicles and potentially for crossing pedestrians.\",\n      \"The environment looks quiet and uncrowded, which supports psychological comfort through low congestion and low visual stress.\",\n      \"However, no benches, shelters, or clearly visible pedestrian walkway are present, reducing physical comfort for anyone traveling on foot.\"\n    ],\n    \"walkability\": [\n      \"A marked crosswalk is visible, which helps legibility for crossing and indicates some pedestrian consideration.\",\n      \"No continuous sidewalk is clearly visible on either side of the road, which is a major weakness for everyday walking.\",\n      \"There are no visible curb ramps, tactile strips, or pedestrian refuge features at the crossing, reducing walking convenience and continuity.\",\n      \"The tree-lined edges make the corridor visually pleasant, but the very wide carriageway and sparse pedestrian infrastructure make it feel less supportive for walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 52.0,
+   "accessibility": 52.0
+  },
+  "safety": 61.0,
+  "livability": 48.0,
+  "sustainability": 72.0,
+  "aesthetics": 82.0,
+  "comfort": 71.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 52.0,
+  "justice_accessibility": 52.0,
+  "safety": 61.0,
+  "livability": 48.0,
+  "sustainability": 72.0,
+  "aesthetics": 82.0,
+  "comfort": 71.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:43:05+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The roadway is very wide and visually dominates the corridor, while no sidewalk is clearly visible on either side, suggesting spatial resources are allocated more to vehicles than to pedestrians.",
+   "A marked crossing is visible in the foreground, which provides some formal right-of-way for people crossing the street and supports basic fairness among road users.",
+   "No curb ramps, tactile paving, refuge island, or clearly separated pedestrian path can be seen at the crossing, limiting accessibility for users who need barrier-free walking space.",
+   "Streetlights are provided on both sides of the road, indicating some effort to distribute basic public infrastructure along the corridor."
+  ],
+  "safety": [
+   "The road is long, straight, and wide with minimal friction elements, which can encourage higher driving speeds and reduce safety for all road users.",
+   "A marked crosswalk is present in the foreground, giving a designated crossing point that improves pedestrian safety compared with an unmarked crossing.",
+   "Streetlights line both sides of the corridor, which can support nighttime visibility and perceived security.",
+   "Dense trees and setbacks create clear edges to the roadway, but there are no visible traffic calming devices such as raised crossings, curb extensions, or median refuge islands."
+  ],
+  "livability": [
+   "The corridor appears quiet and green, with continuous rows of mature trees that improve environmental quality.",
+   "There are no visible shops, benches, bus stops, or active frontages, so the street offers few everyday amenities or social functions for people.",
+   "The scene looks dominated by movement space rather than places to stop, sit, or interact, which weakens street life.",
+   "The landscaped edges and shrubs add some pleasantness, but the overall setting feels more like an access road than a lively public street."
+  ],
+  "sustainability": [
+   "Continuous mature tree cover on both sides provides substantial urban greenery, which supports shade, cooling, and ecological value.",
+   "The simple corridor design and absence of visible parking lanes may reduce paved roadside clutter and land devoted to stationary vehicles.",
+   "No bike lane, bus stop, or other visible public transport infrastructure is present, so support for low-carbon travel modes is limited in the image.",
+   "The planted verges and shrubs along the edges suggest some green infrastructure, even though no explicit stormwater features are visible."
+  ],
+  "aesthetics": [
+   "The symmetrical rows of mature trees create a strong visual rhythm and a coherent boulevard character.",
+   "The street appears clean and uncluttered, with little visual noise from signage, parked cars, or overhead wires.",
+   "The open sky, orderly streetlights, and trimmed vegetation contribute to a calm and visually pleasing scene.",
+   "The long central perspective gives the corridor a formal and well-maintained appearance."
+  ],
+  "comfort": [
+   "Large trees on both sides provide substantial shade along the edges, which likely improves thermal comfort for people near the roadside.",
+   "The roadway surface appears smooth and well maintained, supporting comfortable travel for vehicles and potentially for crossing pedestrians.",
+   "The environment looks quiet and uncrowded, which supports psychological comfort through low congestion and low visual stress.",
+   "However, no benches, shelters, or clearly visible pedestrian walkway are present, reducing physical comfort for anyone traveling on foot."
+  ],
+  "walkability": [
+   "A marked crosswalk is visible, which helps legibility for crossing and indicates some pedestrian consideration.",
+   "No continuous sidewalk is clearly visible on either side of the road, which is a major weakness for everyday walking.",
+   "There are no visible curb ramps, tactile strips, or pedestrian refuge features at the crossing, reducing walking convenience and continuity.",
+   "The tree-lined edges make the corridor visually pleasant, but the very wide carriageway and sparse pedestrian infrastructure make it feel less supportive for walking."
+  ]
+ }
+}

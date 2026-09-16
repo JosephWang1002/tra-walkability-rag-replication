@@ -1,0 +1,33 @@
+{
+ "oid": "18916",
+ "description": "The scene shows a wide, multi-lane roadway with no visible pedestrian sidewalk or curbside walking space; the roadside is landscaped with low shrubs/hedges and trees, providing some greenery but not a continuous, walkable surface. Traffic is separated only by lane markings, with a truck traveling in the right lane and overhead streetlights along the road; there are no visible barriers or pedestrian crossings. The area appears relatively open and unobstructed for vehicles, but pedestrians would have to walk in the roadway due to the lack of sidewalks and curb cuts.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 114,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 12,
+   "engine_ttft_ms": 242,
+   "engine_ttlt_ms": 1640,
+   "pre_inference_ms": 296,
+   "service_tbt_ms": 12,
+   "service_ttft_ms": 658,
+   "service_ttlt_ms": 2037,
+   "total_duration_ms": 1750,
+   "user_visible_ttft_ms": 362
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1098
+ },
+ "latency_s": 4.5,
+ "timestamp": "2026-08-31T16:26:01"
+}

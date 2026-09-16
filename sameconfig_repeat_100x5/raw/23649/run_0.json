@@ -1,0 +1,122 @@
+{
+ "oid": "23649",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23649.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23649_120.748539_31.383781_09002900121708021157284747H_284.49_2017_8_苏州工业园区唯亭街道水芙路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.7,
+ "usage": {
+  "completion_tokens": 827,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 417,
+   "engine_ttlt_ms": 12404,
+   "pre_inference_ms": 442,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1092,
+   "service_ttlt_ms": 13073,
+   "user_visible_ttft_ms": 650
+  },
+  "prompt_tokens": 5368,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6195
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 18.0,\n      \"equity\": 20.0,\n      \"fairness\": 15.0,\n      \"accessibility\": 18.0\n    },\n    \"safety\": 42.0,\n    \"livability\": 12.0,\n    \"sustainability\": 28.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 22.0,\n    \"walkability\": 5.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible space is almost entirely allocated to a multi-lane motor roadway, while no sidewalk, crosswalk, or bike lane is visible, indicating highly uneven distribution of street space for all road users.\",\n      \"Concrete side barriers with red guardrails line both edges, but there are no visible pedestrian access points, curb ramps, or barrier-free walking facilities, so accessibility is very limited for non-drivers.\",\n      \"Tall noise barriers and elevated structures serve fast vehicular movement, yet no equivalent infrastructure for walking or waiting is shown, suggesting rules and design priorities favor motor traffic over other users.\"\n    ],\n    \"safety\": [\n      \"For drivers, the roadway surface appears smooth and well-marked with clear lane lines, which supports basic operational safety.\",\n      \"Continuous concrete barriers and red railings separate the carriageway from the edges, reducing the chance of vehicles leaving the roadway.\",\n      \"However, the road is elevated and visually long and open, which can encourage higher speeds, and no visible traffic calming, pedestrian refuge, or cyclist protection is present for other road users.\"\n    ],\n    \"livability\": [\n      \"The scene functions as a transport corridor rather than a social street: there are no shops, benches, plazas, or visible human activity supporting everyday street life.\",\n      \"Large elevated structures, noise barriers, and expansive asphalt create an infrastructure-dominated environment with little evidence of community use.\",\n      \"Although residential towers are visible in the distance, there is no visible direct pedestrian-oriented interface between those buildings and this roadway.\"\n    ],\n    \"sustainability\": [\n      \"Green vegetation is visible beneath and beside the elevated structure on the right, which adds some ecological value compared with a fully paved corridor.\",\n      \"The corridor appears designed primarily for private motor traffic, with no visible bus stop, bike lane, or pedestrian route to support lower-carbon travel choices.\",\n      \"The extensive concrete viaducts, barriers, and wide asphalt surface indicate a high-resource, car-oriented infrastructure form with limited visible green-stormwater features.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway has a clean, orderly appearance with fresh asphalt, consistent lane markings, and regularly spaced light poles, giving it a visually neat character.\",\n      \"Parallel elevated structures and repeating columns create strong linear rhythm, but the scene is also monotonous and dominated by gray concrete.\",\n      \"Some visual relief comes from the green vegetation strip and distant residential skyline, yet there is little streetscape detail, public art, or human-scale design.\"\n    ],\n    \"comfort\": [\n      \"There is no visible sidewalk, seating, or resting space, so physical comfort is poor for anyone outside a vehicle.\",\n      \"Shade is minimal on the roadway itself despite the open sky and exposed asphalt, which likely reduces thermal comfort for any non-motorized user.\",\n      \"The large-scale elevated infrastructure, barriers, and likely traffic noise environment can create a psychologically harsh setting, even though the road surface appears smooth for drivers.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk or pedestrian path is visible anywhere in the frame, making the corridor effectively non-walkable for all road users on foot.\",\n      \"There are no crosswalks, curb ramps, pedestrian signals, or refuge areas visible along this elevated segment.\",\n      \"The design is continuous and vehicle-oriented, with concrete barriers and guardrails preventing informal walking access and offering no pedestrian connectivity.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 18.0,
+   "equity": 20.0,
+   "fairness": 15.0,
+   "accessibility": 18.0
+  },
+  "safety": 42.0,
+  "livability": 12.0,
+  "sustainability": 28.0,
+  "aesthetics": 46.0,
+  "comfort": 22.0,
+  "walkability": 5.0
+ },
+ "scores_flat": {
+  "justice": 18.0,
+  "justice_equity": 20.0,
+  "justice_fairness": 15.0,
+  "justice_accessibility": 18.0,
+  "safety": 42.0,
+  "livability": 12.0,
+  "sustainability": 28.0,
+  "aesthetics": 46.0,
+  "comfort": 22.0,
+  "walkability": 5.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:56:26+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible space is almost entirely allocated to a multi-lane motor roadway, while no sidewalk, crosswalk, or bike lane is visible, indicating highly uneven distribution of street space for all road users.",
+   "Concrete side barriers with red guardrails line both edges, but there are no visible pedestrian access points, curb ramps, or barrier-free walking facilities, so accessibility is very limited for non-drivers.",
+   "Tall noise barriers and elevated structures serve fast vehicular movement, yet no equivalent infrastructure for walking or waiting is shown, suggesting rules and design priorities favor motor traffic over other users."
+  ],
+  "safety": [
+   "For drivers, the roadway surface appears smooth and well-marked with clear lane lines, which supports basic operational safety.",
+   "Continuous concrete barriers and red railings separate the carriageway from the edges, reducing the chance of vehicles leaving the roadway.",
+   "However, the road is elevated and visually long and open, which can encourage higher speeds, and no visible traffic calming, pedestrian refuge, or cyclist protection is present for other road users."
+  ],
+  "livability": [
+   "The scene functions as a transport corridor rather than a social street: there are no shops, benches, plazas, or visible human activity supporting everyday street life.",
+   "Large elevated structures, noise barriers, and expansive asphalt create an infrastructure-dominated environment with little evidence of community use.",
+   "Although residential towers are visible in the distance, there is no visible direct pedestrian-oriented interface between those buildings and this roadway."
+  ],
+  "sustainability": [
+   "Green vegetation is visible beneath and beside the elevated structure on the right, which adds some ecological value compared with a fully paved corridor.",
+   "The corridor appears designed primarily for private motor traffic, with no visible bus stop, bike lane, or pedestrian route to support lower-carbon travel choices.",
+   "The extensive concrete viaducts, barriers, and wide asphalt surface indicate a high-resource, car-oriented infrastructure form with limited visible green-stormwater features."
+  ],
+  "aesthetics": [
+   "The roadway has a clean, orderly appearance with fresh asphalt, consistent lane markings, and regularly spaced light poles, giving it a visually neat character.",
+   "Parallel elevated structures and repeating columns create strong linear rhythm, but the scene is also monotonous and dominated by gray concrete.",
+   "Some visual relief comes from the green vegetation strip and distant residential skyline, yet there is little streetscape detail, public art, or human-scale design."
+  ],
+  "comfort": [
+   "There is no visible sidewalk, seating, or resting space, so physical comfort is poor for anyone outside a vehicle.",
+   "Shade is minimal on the roadway itself despite the open sky and exposed asphalt, which likely reduces thermal comfort for any non-motorized user.",
+   "The large-scale elevated infrastructure, barriers, and likely traffic noise environment can create a psychologically harsh setting, even though the road surface appears smooth for drivers."
+  ],
+  "walkability": [
+   "No sidewalk or pedestrian path is visible anywhere in the frame, making the corridor effectively non-walkable for all road users on foot.",
+   "There are no crosswalks, curb ramps, pedestrian signals, or refuge areas visible along this elevated segment.",
+   "The design is continuous and vehicle-oriented, with concrete barriers and guardrails preventing informal walking access and offering no pedestrian connectivity."
+  ]
+ }
+}

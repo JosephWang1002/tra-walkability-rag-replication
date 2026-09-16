@@ -1,0 +1,122 @@
+{
+ "oid": "22932",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22932.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22932_120.688839_31.295214_09002900121707270922494815R_266.49_2017_7_苏州工业园区金鸡湖街道_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.2,
+ "usage": {
+  "completion_tokens": 778,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 18,
+   "engine_ttft_ms": 488,
+   "engine_ttlt_ms": 14451,
+   "pre_inference_ms": 386,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 1106,
+   "service_ttlt_ms": 15064,
+   "user_visible_ttft_ms": 719
+  },
+  "prompt_tokens": 5498,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6276
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 66.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 57.0\n    },\n    \"safety\": 64.0,\n    \"livability\": 58.0,\n    \"sustainability\": 76.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 63.0,\n    \"walkability\": 54.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The space is generously allocated to greenery and a dedicated ramped passage, suggesting some equitable provision of non-vehicular infrastructure for all road users.\",\n      \"Accessibility is limited because the visible route is a relatively steep descending ramp into an underpass, and no stairs-free alternative, handrail separation, or resting landing is clearly visible in the image.\",\n      \"Fairness for diverse users is weakened by the absence of visible tactile paving or other guidance features for visually impaired users along the ramp edges or entrance area.\"\n    ],\n    \"safety\": [\n      \"Metal railings line both sides of the ramp, which helps prevent falls and provides edge definition along the descent.\",\n      \"The underpass entrance appears dark compared with the bright surroundings, creating a visibility transition that may reduce perceived personal safety and hazard detection.\",\n      \"The ramp surface looks patched and uneven in places, which may increase slip or trip risk for pedestrians and cyclists using the shared-looking passage.\"\n    ],\n    \"livability\": [\n      \"Dense trees, shrubs, and landscaped edges create a calm park-like setting that supports everyday recreation and passive enjoyment.\",\n      \"The scene lacks visible seating, social spaces, kiosks, or active frontage, so it appears more like a pass-through corridor than a lively public place for lingering.\",\n      \"The separated path network within the greenery suggests some recreational walking value, but the underpass itself offers limited visible amenities for social use.\"\n    ],\n    \"sustainability\": [\n      \"Extensive tree canopy and layered planting provide strong green infrastructure, which supports cooling, habitat value, and air-quality benefits.\",\n      \"The setting appears to prioritize walking or cycling movement through a landscaped corridor rather than visible motor traffic, supporting lower-carbon mobility.\",\n      \"Although no explicit permeable paving or stormwater features are visible, the large amount of vegetation and limited hardscape indicate a relatively sustainable land-cover balance.\"\n    ],\n    \"aesthetics\": [\n      \"The abundant mature trees and dense planting create a visually rich and attractive green landscape.\",\n      \"The corridor has strong symmetry, with matching railings and hedges framing the ramp and drawing the eye toward the underpass entrance.\",\n      \"The scene appears clean, orderly, and well-maintained, with trimmed hedges and minimal visible clutter.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good on the approaches because the surrounding mature trees provide substantial shade and cooling greenery.\",\n      \"Physical comfort is reduced by the rough, patched ramp surface, which may feel jarring underfoot or when rolling a bicycle or stroller.\",\n      \"Psychological comfort is mixed: the lush landscape is calming, but the narrow descending corridor and dark tunnel opening may feel enclosed or uneasy for some users.\"\n    ],\n    \"walkability\": [\n      \"The landscaped path environment supports pleasant walking on the surface level, with greenery and separation from visible traffic.\",\n      \"Walkability is weakened by the steep ramped descent into the underpass, which requires extra effort and may be inconvenient compared with a direct at-grade route.\",\n      \"No visible crosswalk markings, tactile paving, benches, or clear wayfinding are present at the entrance, limiting pedestrian convenience and universal usability.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 66.0,
+   "fairness": 60.0,
+   "accessibility": 57.0
+  },
+  "safety": 64.0,
+  "livability": 58.0,
+  "sustainability": 76.0,
+  "aesthetics": 84.0,
+  "comfort": 63.0,
+  "walkability": 54.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 57.0,
+  "safety": 64.0,
+  "livability": 58.0,
+  "sustainability": 76.0,
+  "aesthetics": 84.0,
+  "comfort": 63.0,
+  "walkability": 54.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:53:29+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The space is generously allocated to greenery and a dedicated ramped passage, suggesting some equitable provision of non-vehicular infrastructure for all road users.",
+   "Accessibility is limited because the visible route is a relatively steep descending ramp into an underpass, and no stairs-free alternative, handrail separation, or resting landing is clearly visible in the image.",
+   "Fairness for diverse users is weakened by the absence of visible tactile paving or other guidance features for visually impaired users along the ramp edges or entrance area."
+  ],
+  "safety": [
+   "Metal railings line both sides of the ramp, which helps prevent falls and provides edge definition along the descent.",
+   "The underpass entrance appears dark compared with the bright surroundings, creating a visibility transition that may reduce perceived personal safety and hazard detection.",
+   "The ramp surface looks patched and uneven in places, which may increase slip or trip risk for pedestrians and cyclists using the shared-looking passage."
+  ],
+  "livability": [
+   "Dense trees, shrubs, and landscaped edges create a calm park-like setting that supports everyday recreation and passive enjoyment.",
+   "The scene lacks visible seating, social spaces, kiosks, or active frontage, so it appears more like a pass-through corridor than a lively public place for lingering.",
+   "The separated path network within the greenery suggests some recreational walking value, but the underpass itself offers limited visible amenities for social use."
+  ],
+  "sustainability": [
+   "Extensive tree canopy and layered planting provide strong green infrastructure, which supports cooling, habitat value, and air-quality benefits.",
+   "The setting appears to prioritize walking or cycling movement through a landscaped corridor rather than visible motor traffic, supporting lower-carbon mobility.",
+   "Although no explicit permeable paving or stormwater features are visible, the large amount of vegetation and limited hardscape indicate a relatively sustainable land-cover balance."
+  ],
+  "aesthetics": [
+   "The abundant mature trees and dense planting create a visually rich and attractive green landscape.",
+   "The corridor has strong symmetry, with matching railings and hedges framing the ramp and drawing the eye toward the underpass entrance.",
+   "The scene appears clean, orderly, and well-maintained, with trimmed hedges and minimal visible clutter."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively good on the approaches because the surrounding mature trees provide substantial shade and cooling greenery.",
+   "Physical comfort is reduced by the rough, patched ramp surface, which may feel jarring underfoot or when rolling a bicycle or stroller.",
+   "Psychological comfort is mixed: the lush landscape is calming, but the narrow descending corridor and dark tunnel opening may feel enclosed or uneasy for some users."
+  ],
+  "walkability": [
+   "The landscaped path environment supports pleasant walking on the surface level, with greenery and separation from visible traffic.",
+   "Walkability is weakened by the steep ramped descent into the underpass, which requires extra effort and may be inconvenient compared with a direct at-grade route.",
+   "No visible crosswalk markings, tactile paving, benches, or clear wayfinding are present at the entrance, limiting pedestrian convenience and universal usability."
+  ]
+ }
+}

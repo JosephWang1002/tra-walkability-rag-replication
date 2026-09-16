@@ -1,0 +1,270 @@
+{
+ "oid": "19880",
+ "arm": "policy_only",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\19880_120.680832_31.09317_01002900001405271006237925W_278.66_2014_5_吴江区江陵街道_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 5,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "policy_only_en_top5"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 6.5,
+  "usage": {
+   "completion_tokens": 137,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 9,
+    "engine_ttft_ms": 390,
+    "engine_ttlt_ms": 1607,
+    "pre_inference_ms": 333,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 896,
+    "service_ttlt_ms": 2107,
+    "user_visible_ttft_ms": 562
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1398
+  },
+  "raw": "{\"road_type\":\"arterial\",\"elements\":{\"sidewalk\":\"false\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"many\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"true\",\"street_lighting\":\"true\",\"greenery\":\"high\",\"vehicle_traffic\":\"none\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"no_bike_lane\",\"poor_accessibility\"],\"brief\":\"A wide paved road with a painted pedestrian crossing is lined by many large trees and streetlights on both sides. No sidewalk, seating, bike lane, curb ramp, or bus stop is visible.\"}",
+  "parsed": {
+   "road_type": "arterial",
+   "elements": {
+    "sidewalk": "false",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "many",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "true",
+    "street_lighting": "true",
+    "greenery": "high",
+    "vehicle_traffic": "none",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "no_bike_lane",
+    "poor_accessibility"
+   ],
+   "brief": "A wide paved road with a painted pedestrian crossing is lined by many large trees and streetlights on both sides. No sidewalk, seating, bike lane, curb ramp, or bus stop is visible."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A wide paved road with a painted pedestrian crossing is lined by many large trees and streetlights on both sides. No sidewalk, seating, bike lane, curb ramp, or bus stop is visible. Road type: arterial. Visible elements: sidewalk=false, bike_lane=false, seating=false, shade_trees=many, curb_ramp=false, tactile_paving=false, pedestrian_crossing=true, street_lighting=true, greenery=high, vehicle_traffic=none, bus_stop=false. Issues: ['no_seating', 'no_bike_lane', 'poor_accessibility']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 5,
+  "n_policy": 5,
+  "n_academic": 0,
+  "passages": [
+   {
+    "rank": 1,
+    "chunk_idx": 36,
+    "source": "policy",
+    "n_chars": 2885,
+    "hash": "a4aa46710b98",
+    "dense_sim": 0.5032432675361633,
+    "bm25": 60.06017462302512,
+    "hybrid": 0.8789599653224308,
+    "forced_policy": false,
+    "text": "motor vehicle lane count on a road section is 2 lanes, the one-way passenger bus volume exceeds 6,000 persons/peak hour, and bus flow exceeds 150 vehicles/peak hour. 29 4. Bus-only lanes may be paved with colored asphalt. After paving, the lane color is conspicuous and forms a sharp contrast with the adjacent ordinary motor vehicle lane, preventing ordinary motor vehicles from mistakenly entering the lane. Figure 2.1-5 Schematic of Colored Paving for Bus-Only Lanes 2.1.6 Bus Stops Bus bay stops may be divided into direct stops and bay stops. 1. Direct Bus Stop The lane width of a direct bus stop shall generally not be less than 3.00 m, and shall not be less than 2.75 m where conditions are constrained. Figure 2.1-6 Schematic of a Direct Bus Stop 2. Bay Bus Stop Where space within the road is insufficient, the road red line may be locally widened. Where the red line is constrained, a bay bus stop may be provided by reducing lane width and through integrated design with roadside space. Figure 2.1-7 Schematic of a Single Bay Bus Stop In addition to single bay stops, there are also double bay bus stops. Generally, a double bay bus stop consists of a main stop and an auxiliary stop. The main stop is a bay stop, while the auxiliary stop is a direct stop where vehicles stop directly. 30 Figure 2.1-8 Schematic of a Double Bay Bus Stop 2.1.7 Roadside Parking Lane The general rules for parking space arrangement are as follows: 1. At unsignalized intersections where the approach or departure road is a single lane, no parking spaces shall be set within 10 m of the straight curb segment on the intersection approach side; no parking spaces shall be set within 8 m of the straight curb segment on the departure side. 2. At channelized intersections, no parking spaces shall be set within the channelized area and within 5 m outside it. 3. No parking spaces shall be set within 6 m on the departure side and 10 m on the approach side, measured from the starting point of the straight curb segment on both sides of a parcel entrance/exit. 4. No parking spaces shall be set within 8 m upstream and 6 m downstream of the vehicle stop line in the direction of approach to a pedestrian crossing. 5. No parking spaces shall be set within 25 m before and 15 m after a bus stop platform. 6. No parking spaces shall be set in the ground space corresponding to a radius of 1.5 m from the center of the manhole cover of underground utility access shafts. 7. The distance between parking spaces before and after a fire hydrant shall not be less than 30 m, and the distance from the nearest parking space to the fire hydrant shall not be less than 2.5 m. Figure 2.1-9 Layout Forms of Roadside Parking Lanes On roads with relatively heavy traffic function, on-street parking should be avoided as far as possible; in areas with weaker traffic function and greater parking demand, parallel",
+    "policy_key": "苏州市城市道路精细化建设导则",
+    "zh_name": "苏州市城市道路精细化建设导则",
+    "en_name": "Suzhou Urban Road Refined Construction Guide"
+   },
+   {
+    "rank": 2,
+    "chunk_idx": 164,
+    "source": "policy",
+    "n_chars": 3249,
+    "hash": "a021461a5c87",
+    "dense_sim": 0.5445810556411743,
+    "bm25": 57.157893347779805,
+    "hybrid": 0.8786957296180885,
+    "forced_policy": false,
+    "text": "are uneven. a. Under the premise of meeting safety requirements, components shall be processed as an integrated whole; the main poles must be processed integrally. b. Reflective markers need to be installed on guardrail uprights. c. Pedestrian guardrails and vehicle-stopping bollards shall have buried foundations, and construction shall be strictly carried out in accordance with the design drawings. Traffic management facilities (bollards) A. The styles are mixed and cluttered. a. On the same road, the wheel stops shall have a unified style or a coordinated design style. A. The layout is arbitrary and the arrangement effect is poor. b. The layout shall be standardized to ensure proper arrangement. Traffic management facilities (utility boxes / exterior utility boxes and decorative covers) A. The concrete foundation of municipal equipment boxes is exposed, and the appearance is poor. a. The foundation design of municipal boxes shall be refined and aesthetically improved. B. The opening direction of municipal equipment boxes faces the non-motorized lane, creating a safety hazard. b. The opening direction of municipal equipment boxes shall face the sidewalk. C. Municipal equipment boxes are mixed with advertising light boxes, resulting in a cluttered arrangement. c. Equipment boxes with different functions shall be arranged by category and should not be placed in a mixed manner. A. The joints of pole components are uneven. B. The foundation components are not concealed; flange components are exposed on the pavement. Public lighting facilities a. The light source and illuminance of public lighting facilities shall comply with the requirements for pavement paving facilities in the “Standard for Lighting Design of Urban Roads” (CJJ 45-2015), and luminaires used in areas with frequent vehicle passage and in places prone to strong vibration such as bridges must meet the anti-vibration requirements of the current national standards. b. The safety of the main poles of public lighting facilities must comply with the requirements of national and industry standards. A. The orientation of the street name sign is incorrect. B. The pedestrian guidance sign is not displayed on both sides. Information service facilities a. The direction of a one-way street name sign shall be consistent with the direction of the sidewalk. For a two-way street name sign, one side shall be consistent with the direction of the sidewalk, and the other side shall be perpendicular to the sidewalk and face inward toward the sidewalk. See the figure below. b. The pedestrian guidance sign shall be set within the sidewalk facility belt and shall be displayed on both sides. A. The top cover has seams, no waterproofing measures have been taken, and it is not sealed. B. The top cover is not fully enclosed and cannot prevent rain or water ingress. C. The component workmanship is substandard and not firm. D. The seat is too wide and too high. E. No lighting. F. Station name information is incomplete. Public transport facilities (bus shelters) a. Bus shelters should adopt a modular design and may be combined into units according to actual conditions. When combined, two single shelters shall be used. b. The top shall be tightly seam-connected",
+    "policy_key": "苏州市城市道路精细化建设导则",
+    "zh_name": "苏州市城市道路精细化建设导则",
+    "en_name": "Suzhou Urban Road Refined Construction Guide"
+   },
+   {
+    "rank": 3,
+    "chunk_idx": 25,
+    "source": "policy",
+    "n_chars": 3234,
+    "hash": "1cbdc5822e69",
+    "dense_sim": 0.5867286920547485,
+    "bm25": 52.52459729510679,
+    "hybrid": 0.8637245834626951,
+    "forced_policy": false,
+    "text": "paving is not greater than 300 mm, the width of warning tactile paving shall be greater than that of directional tactile paving | | Remarks | Laying shall be continuous; the pattern shall protrude 4 mm above the pavement; shall be skid-resistant | 2. Curb ramps Curb ramps shall comply with the following requirements: A. The lower end of the curb ramp shall be flush with the pavement. B. The slope of curb ramps shall comply with the following provisions: a. The slope of a full-width single-slope curb ramp shall not be greater than 1:20. From a human-centered perspective, the slope of single-slope curb ramps shall in principle be controlled at 1:30. b. The slope of the front and side ramps of a three-sided curb ramp shall not be greater than 1:12. From a human-centered perspective, the slope shall not be greater than 1:15. Figure 1.5-1 Schematic diagram of single-slope curb ramp Figure 1.5-2 Schematic diagram of three-sided curb ramp ### 1.5.2 Barrier-Free Facilities for Pedestrian Crossings 1. The width of pedestrian crossings shall meet the needs of wheelchair passage. 2. Pedestrian crossings in Suzhou’s central urban area and in areas with a concentration of persons with visual impairments shall be equipped with audible crossing reminder devices. 17 ### 1.5.3 Barrier-Free Facilities at Bus Stops 1. Barrier-free bus stops A. Special attention shall be paid to the human-centered design of ramps around bus stops. The height of the bus stop platform should be relatively consistent with the height of the bus step, facilitating wheelchair users boarding and alighting. B. Where bus stops are set within a median separating motor vehicles and non-motorized traffic, barrier-free access may be achieved within the platform area by locally raising the non-motorized lane or by setting curb ramps at the platform. Barrier-free ramps around bus stops Raised non-motorized lane at bus stop Figure 1.5-3 Schematic diagram of barrier-free facilities at bus stops C. In the bus stop area, the roadway surface of the non-motorized lane may be raised and end guidance signs may be added to remind passing non-motorized vehicles to slow down in advance, ensuring pedestrian safety. 2. Tactile paving and braille information layout A. Warning tactile paving shall be installed 250 mm–500 mm from the curb, and its length shall correspond to the length of the bus stop. B. Braille stop signs or voice prompt service facilities should be provided. The location, height, form, and content of the braille stop signs shall be convenient for use by persons with visual impairments. ### 1.5.4 Barrier-Free Facilities for Grade-Separated Crossings 1. Grade-separated crossing facilities should be equipped with elevators. It is recommended that elevators be installed in all quadrants, with at least one pair of elevators. Barrier-free ramps shall be provided at elevator entrances and exits to facilitate wheelchair use. 2. Where, within a 500 m radius of grade-separated crossing facilities, there are transport hubs, large hospitals, major commercial districts, or large residential areas, and the distance to adjacent at-grade crossing facilities is more than 100 m, elevators shall be installed. In other areas, where the spacing",
+    "policy_key": "苏州市城市道路精细化建设导则",
+    "zh_name": "苏州市城市道路精细化建设导则",
+    "en_name": "Suzhou Urban Road Refined Construction Guide"
+   },
+   {
+    "rank": 4,
+    "chunk_idx": 150,
+    "source": "policy",
+    "n_chars": 3413,
+    "hash": "ce224e2f0ae9",
+    "dense_sim": 0.6248688101768494,
+    "bm25": 49.40547398097554,
+    "hybrid": 0.8596050645480842,
+    "forced_policy": false,
+    "text": "decoration and are coordinated with the road environment. The setting of walkway lights and streetlights shall take the intersection stop line as the starting and ending point, at a distance of 3.0 m–10.0 m. Figure 4.3-4 Example of Walkway Lights 4.3.3 Pavement Surfacing 1. Sidewalk paving: It shall meet the requirements of stability, anti-slip performance, flatness, ecological environmental protection, and urban landscape. Its design shall be practical, economical, aesthetically pleasing, and durable, and shall be designed for permeability in accordance with sponge city requirements. Guidance and directional signs may be added to the paving; signs shall be appropriately scaled and clearly informative. 2. Tactile paving: The color of tactile paving should contrast with the color of adjacent sidewalk paving and be coordinated with the surrounding landscape. The surface of tactile paving profiles shall have anti-slip functionality. The width should be 0.3 m–0.6 m, and the tactile pattern shall protrude 4 mm above the road surface. Tactile paving shall be laid continuously and shall avoid obstacles such as trees (tree pits), utility poles, and guy wires. Figure 4.3-5 Example of tactile paving 3. Curb stones: These shall be designed in accordance with road class, construction scale, landscape environment, and usage requirements. Sidewalks must be provided with curb ramps at all intersections and at the entrances/exits of residential communities and institutions fronting the street. The height difference between the curb stone and the road surface shall not exceed 1 cm. At pedestrian crossings, the centerline of the curb-ramp opening should align with the centerline of the crosswalk. At road intersections, curb ramps are recommended to adopt a full-width, single-sided ramp descending to the bottom. 4. Tree pits / tree grates: Their dimensions shall be designed in coordination with the sidewalk paving, forming a certain proportional modular relationship. The paved surface of the tree pit / tree grate should be flush with the sidewalk paving. Tree grates should preferably use fiberglass grating, eco-friendly rubber, stone paving, and similar materials. In parks, squares, commercial pedestrian streets, and other leisure activity areas, tree pits should be designed in combination with seating, or as compact / multifunctional designs that provide seating functions. Figure 4.3-6 Example of tree pits / tree grates 5. Manhole covers: All types of manhole covers shall comply with the relevant standards in Manhole Covers (GB/T 23858-2009). The paved surface of the manhole cover shall be flush with the sidewalk paving surface, and the height difference shall not exceed 1 cm. Concealed manhole covers may be used; the decorative surface layer shall be unified with the road paving. Manhole covers with distinctive patterns may also be used. Figure 4.3-7 Example of manhole covers 4.3.4 Information service facilities Information service facilities refer to service facilities that provide information on roads, places, public announcements, and similar matters within an area. They are usually installed along sidewalks, as well as in parks, squares, tourist attractions, and similar areas. They shall be systematically designed in conjunction with the surrounding environment and other urban furniture in the area, and their form and style shall be harmonized and unified with the",
+    "policy_key": "苏州市城市道路精细化建设导则",
+    "zh_name": "苏州市城市道路精细化建设导则",
+    "en_name": "Suzhou Urban Road Refined Construction Guide"
+   },
+   {
+    "rank": 5,
+    "chunk_idx": 13,
+    "source": "policy",
+    "n_chars": 3223,
+    "hash": "d02796c6e081",
+    "dense_sim": 0.5365570783615112,
+    "bm25": 54.94199279040243,
+    "hybrid": 0.8543407717222979,
+    "forced_policy": false,
+    "text": "3.0 | 2.0 | | Pedestrian Level II | 3.0 | 2.0 | 1.8 | | Pedestrian Level III | 2.0 | 1.5 | 1.5 | | Road section | Suitable width (m) | Minimum width (m) | Effective pedestrian passage width (m) | |---|---:|---:|---:| | Sections concentrated with commercial and cultural centers, large stores, or large public cultural institutions | 5.0 | 4.0 | 2.8 | | Special sections | | | | | Sections near railway stations and wharves | 5.0 | 4.0 | 2.8 | | Sections containing rail transit stations or long-distance bus stations | 4.0 | 3.5 | 2.8 | Notes: 1) Pedestrian main corridor (Pedestrian Level I): very heavy pedestrian flow, with a relatively high level of street-edge activity; an important component of the pedestrian network. It is mainly distributed on living-oriented arterial roads in urban central areas, around major public facilities, major transport hubs, urban core functional areas, and citizen activity gathering areas; on secondary arterial roads with heavy pedestrian flow; on branch roads with better cross-sectional conditions and dense pedestrian activity; and on auxiliary roads of expressways with relatively high surrounding land-use intensity. 2) Pedestrian distribution corridor (Pedestrian Level II): relatively heavy pedestrian flow, with a relatively friendly street edge; a major component of the pedestrian network. It is mainly distributed on secondary arterial roads and branch roads in urban sub-centers, around medium-sized public facilities, and in general urban functional areas (such as general commercial areas, government affairs areas, and large residential areas). 3) Pedestrian connection corridor (Pedestrian Level III): mainly for direct pedestrian passage, with a low level of street-edge activity and relatively small pedestrian flow; pedestrian activity is mostly simple crossing and has little connection with buildings on both sides; it is an extension and supplement to the pedestrian network. 3. A facility strip shall be set on the sidewalk, and functions such as non-motor vehicle parking and bus stop platform installation should be integrated to form a comprehensive facility strip. For newly built roads, the width of the facility strip shall not be less than 0.7 m, and generally should be 1.5 m to 2 m. 1.1.2 Technical Requirements for Sidewalks 1. Sidewalks shall be firm and level, with no ponding, no settlement, no uneven joints, and no detachment; they shall connect smoothly with adjacent structures, and the surface shall be flat and dense. The flatness of concrete precast brick pavements shall be ≤2 mm, and the flatness of stone pavements shall be ≤3 mm. 2. Sidewalk blocks shall have uniform joint widths and fully filled joints. The strength standard for paved sidewalk surfaces shall follow plaza standards; the compressive strength of concrete blocks shall be ≥35 MPa, and the flexural strength shall be ≥4.5 MPa. All manhole covers shall be flush with the sidewalk elevation and in good condition, and the strength of manhole covers must meet sidewalk traffic requirements. 3. The skid resistance of sidewalks shall meet BPN ≥60. Curbstones at the same level as the sidewalk shall likewise meet the sidewalk skid-resistance requirement of BPN ≥60. 4. When",
+    "policy_key": "苏州市城市道路精细化建设导则",
+    "zh_name": "苏州市城市道路精细化建设导则",
+    "en_name": "Suzhou Urban Road Refined Construction Guide"
+   }
+  ]
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 21.5,
+  "usage": {
+   "completion_tokens": 774,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 21,
+    "engine_ttft_ms": 510,
+    "engine_ttlt_ms": 16614,
+    "pre_inference_ms": 331,
+    "service_tbt_ms": 21,
+    "service_ttft_ms": 952,
+    "service_ttlt_ms": 17036,
+    "user_visible_ttft_ms": 621
+   },
+   "prompt_tokens": 5341,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 6115
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 52.0,\n    \"sustainability\": 71.0,\n    \"aesthetics\": 82.0,\n    \"comfort\": 76.0,\n    \"walkability\": 57.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The carriageway appears very wide and evenly maintained, and both sides of the road have continuous tree-lined edges, suggesting a balanced spatial layout for general road use.\",\n      \"A marked crosswalk is visible in the foreground, which indicates some formal pedestrian right-of-way rather than a vehicle-only space.\",\n      \"Accessibility is limited because no curb ramps, tactile paving, or other barrier-free crossing details are visible at the crosswalk edges, so inclusive access for all social groups cannot be confirmed.\"\n    ],\n    \"safety\": [\n      \"The road is straight with a very long sightline, allowing drivers and other users to see far ahead and reducing hidden conflicts.\",\n      \"Streetlights are installed along both sides of the road, which supports basic nighttime visibility and perceived safety.\",\n      \"The scene shows almost no traffic, and there are no parked vehicles or roadside obstructions visible, which lowers immediate collision risk, although the broad open carriageway may also encourage higher driving speeds.\"\n    ],\n    \"livability\": [\n      \"Dense rows of mature trees on both sides create a greener and calmer setting than a fully built-up roadway.\",\n      \"The street lacks visible shops, seating, bus stops, or active frontages, so it appears to provide limited everyday social or service functions for road users.\",\n      \"There are no visible pedestrians, cyclists, or community activities, making the environment feel functional and quiet rather than socially vibrant.\"\n    ],\n    \"sustainability\": [\n      \"The continuous mature tree canopy along both sides contributes substantial greenery, which supports shade, carbon uptake, and ecological value.\",\n      \"The landscaped edge with trees and shrubs is more environmentally supportive than a fully paved roadside condition.\",\n      \"However, no visible bike lane, bus stop, permeable paving detail, or stormwater feature can be identified, so sustainable transport and water-sensitive design are only partly supported.\"\n    ],\n    \"aesthetics\": [\n      \"The symmetrical rows of trees and evenly spaced streetlights create a strong sense of order and visual coherence.\",\n      \"The roadway appears clean and uncluttered, with no visible litter, signage overload, or chaotic roadside elements.\",\n      \"The lush green vegetation framing the long straight avenue gives the street a pleasant and memorable landscape character.\"\n    ],\n    \"comfort\": [\n      \"Large mature trees on both sides provide substantial shade to the road edges, which likely improves thermal comfort for users near the sides of the street.\",\n      \"The pavement appears smooth and even, with no visible potholes or major surface defects, supporting physical comfort for movement.\",\n      \"The absence of visible traffic and roadside crowding suggests a quiet, low-stress environment with relatively good psychological comfort, although there are no benches or dedicated resting facilities visible.\"\n    ],\n    \"walkability\": [\n      \"A zebra crossing is marked in the foreground, showing at least one designated pedestrian crossing point.\",\n      \"Walkability is weakened because no clear sidewalks, curb ramps, refuge islands, or pedestrian-scale facilities are visible along the road edges.\",\n      \"Although the tree-lined edges may make walking more pleasant visually, the very wide carriageway and sparse pedestrian infrastructure reduce convenience and confidence for everyday walking.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 61.0,
+    "equity": 64.0,
+    "fairness": 60.0,
+    "accessibility": 59.0
+   },
+   "safety": 74.0,
+   "livability": 52.0,
+   "sustainability": 71.0,
+   "aesthetics": 82.0,
+   "comfort": 76.0,
+   "walkability": 57.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The carriageway appears very wide and evenly maintained, and both sides of the road have continuous tree-lined edges, suggesting a balanced spatial layout for general road use.",
+    "A marked crosswalk is visible in the foreground, which indicates some formal pedestrian right-of-way rather than a vehicle-only space.",
+    "Accessibility is limited because no curb ramps, tactile paving, or other barrier-free crossing details are visible at the crosswalk edges, so inclusive access for all social groups cannot be confirmed."
+   ],
+   "safety": [
+    "The road is straight with a very long sightline, allowing drivers and other users to see far ahead and reducing hidden conflicts.",
+    "Streetlights are installed along both sides of the road, which supports basic nighttime visibility and perceived safety.",
+    "The scene shows almost no traffic, and there are no parked vehicles or roadside obstructions visible, which lowers immediate collision risk, although the broad open carriageway may also encourage higher driving speeds."
+   ],
+   "livability": [
+    "Dense rows of mature trees on both sides create a greener and calmer setting than a fully built-up roadway.",
+    "The street lacks visible shops, seating, bus stops, or active frontages, so it appears to provide limited everyday social or service functions for road users.",
+    "There are no visible pedestrians, cyclists, or community activities, making the environment feel functional and quiet rather than socially vibrant."
+   ],
+   "sustainability": [
+    "The continuous mature tree canopy along both sides contributes substantial greenery, which supports shade, carbon uptake, and ecological value.",
+    "The landscaped edge with trees and shrubs is more environmentally supportive than a fully paved roadside condition.",
+    "However, no visible bike lane, bus stop, permeable paving detail, or stormwater feature can be identified, so sustainable transport and water-sensitive design are only partly supported."
+   ],
+   "aesthetics": [
+    "The symmetrical rows of trees and evenly spaced streetlights create a strong sense of order and visual coherence.",
+    "The roadway appears clean and uncluttered, with no visible litter, signage overload, or chaotic roadside elements.",
+    "The lush green vegetation framing the long straight avenue gives the street a pleasant and memorable landscape character."
+   ],
+   "comfort": [
+    "Large mature trees on both sides provide substantial shade to the road edges, which likely improves thermal comfort for users near the sides of the street.",
+    "The pavement appears smooth and even, with no visible potholes or major surface defects, supporting physical comfort for movement.",
+    "The absence of visible traffic and roadside crowding suggests a quiet, low-stress environment with relatively good psychological comfort, although there are no benches or dedicated resting facilities visible."
+   ],
+   "walkability": [
+    "A zebra crossing is marked in the foreground, showing at least one designated pedestrian crossing point.",
+    "Walkability is weakened because no clear sidewalks, curb ramps, refuge islands, or pedestrian-scale facilities are visible along the road edges.",
+    "Although the tree-lined edges may make walking more pleasant visually, the very wide carriageway and sparse pedestrian infrastructure reduce convenience and confidence for everyday walking."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 59.0,
+  "safety": 74.0,
+  "livability": 52.0,
+  "sustainability": 71.0,
+  "aesthetics": 82.0,
+  "comfort": 76.0,
+  "walkability": 57.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T14:37:40+00:00",
+  "step2": "2026-09-03T14:37:40+00:00",
+  "step3": "2026-09-03T14:38:01+00:00",
+  "completed": "2026-09-03T14:38:01+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\19880.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n- [Source: policy | Suzhou Urban Road Refined Construction Guide] motor vehicle lane count on a road section is 2 lanes, the one-way passenger bus volume exceeds 6,000 persons/peak hour, and bus flow exceeds 150 vehicles/peak hour. 29 4. Bus-only lanes may be paved with colored asphalt. After paving, the lane color is conspicuous and forms a sharp contrast with the adjacent ordinary motor vehicle lane, preventing ordinary motor vehicles from mistakenly entering the lane. Figure 2.1-5 Schematic of Colored Paving for Bus-Only Lanes 2.1.6 Bus Stops Bus bay stops may be divided into direct stops and bay stops. 1. Direct Bus Stop The lane width of a direct bus stop shall generally not be less than 3.00 m, and shall not be less than 2.75 m where conditions are constrained. Figure 2.1-6 Schematic of a Direct Bus Stop 2. Bay Bus Stop Where space within the road is insufficient, the road red line may be locally widened. Where the red line is constrained, a bay bus stop may be provided by reducing lane width and through integrated design with roadside space. Figure 2.1-7 Schematic of a Single Bay Bus Stop In addition to single bay stops, there are also double bay bus stops. Generally, a double bay bus stop consists of a main stop and an auxiliary stop. The main stop is a bay stop, while the auxiliary stop is a direct stop where vehicles stop directly. 30 Figure 2.1-8 Schematic of a Double Bay Bus Stop 2.1.7 Roadside Parking Lane The general rules for parking space arrangement are as follows: 1. At unsignalized intersections where the approach or departure road is a single lane, no parking spaces shall be set within 10 m of the straight curb segment on the intersection approach side; no parking spaces shall be set within 8 m of the straight curb segment on the departure side. 2. At channelized intersections, no parking spaces shall be set within the channelized area and within 5 m outside it. 3. No parking spaces shall be set within 6 m on the departure side and 10 m on the approach side, measured from the starting point of the straight curb segment on both sides of a parcel entrance/exit. 4. No parking spaces shall be set within 8 m upstream and 6 m downstream of the vehicle stop line in the direction of approach to a pedestrian crossing. 5. No parking spaces shall be set within 25 m before and 15 m after a bus stop platform. 6. No parking spaces shall be set in the ground space corresponding to a radius of 1.5 m from the center of the manhole cover of underground utility access shafts. 7. The distance between parking spaces before and after a fire hydrant shall not be less than 30 m, and the distance from the nearest parking space to the fire hydrant shall not be less than 2.5 m. Figure 2.1-9 Layout Forms of Roadside Parking Lanes On roads with relatively heavy traffic function, on-street parking should be avoided as far as possible; in areas with weaker traffic function and greater parking demand, parallel\n- [Source: policy | Suzhou Urban Road Refined Construction Guide] are uneven. a. Under the premise of meeting safety requirements, components shall be processed as an integrated whole; the main poles must be processed integrally. b. Reflective markers need to be installed on guardrail uprights. c. Pedestrian guardrails and vehicle-stopping bollards shall have buried foundations, and construction shall be strictly carried out in accordance with the design drawings. Traffic management facilities (bollards) A. The styles are mixed and cluttered. a. On the same road, the wheel stops shall have a unified style or a coordinated design style. A. The layout is arbitrary and the arrangement effect is poor. b. The layout shall be standardized to ensure proper arrangement. Traffic management facilities (utility boxes / exterior utility boxes and decorative covers) A. The concrete foundation of municipal equipment boxes is exposed, and the appearance is poor. a. The foundation design of municipal boxes shall be refined and aesthetically improved. B. The opening direction of municipal equipment boxes faces the non-motorized lane, creating a safety hazard. b. The opening direction of municipal equipment boxes shall face the sidewalk. C. Municipal equipment boxes are mixed with advertising light boxes, resulting in a cluttered arrangement. c. Equipment boxes with different functions shall be arranged by category and should not be placed in a mixed manner. A. The joints of pole components are uneven. B. The foundation components are not concealed; flange components are exposed on the pavement. Public lighting facilities a. The light source and illuminance of public lighting facilities shall comply with the requirements for pavement paving facilities in the “Standard for Lighting Design of Urban Roads” (CJJ 45-2015), and luminaires used in areas with frequent vehicle passage and in places prone to strong vibration such as bridges must meet the anti-vibration requirements of the current national standards. b. The safety of the main poles of public lighting facilities must comply with the requirements of national and industry standards. A. The orientation of the street name sign is incorrect. B. The pedestrian guidance sign is not displayed on both sides. Information service facilities a. The direction of a one-way street name sign shall be consistent with the direction of the sidewalk. For a two-way street name sign, one side shall be consistent with the direction of the sidewalk, and the other side shall be perpendicular to the sidewalk and face inward toward the sidewalk. See the figure below. b. The pedestrian guidance sign shall be set within the sidewalk facility belt and shall be displayed on both sides. A. The top cover has seams, no waterproofing measures have been taken, and it is not sealed. B. The top cover is not fully enclosed and cannot prevent rain or water ingress. C. The component workmanship is substandard and not firm. D. The seat is too wide and too high. E. No lighting. F. Station name information is incomplete. Public transport facilities (bus shelters) a. Bus shelters should adopt a modular design and may be combined into units according to actual conditions. When combined, two single shelters shall be used. b. The top shall be tightly seam-connected\n- [Source: policy | Suzhou Urban Road Refined Construction Guide] paving is not greater than 300 mm, the width of warning tactile paving shall be greater than that of directional tactile paving | | Remarks | Laying shall be continuous; the pattern shall protrude 4 mm above the pavement; shall be skid-resistant | 2. Curb ramps Curb ramps shall comply with the following requirements: A. The lower end of the curb ramp shall be flush with the pavement. B. The slope of curb ramps shall comply with the following provisions: a. The slope of a full-width single-slope curb ramp shall not be greater than 1:20. From a human-centered perspective, the slope of single-slope curb ramps shall in principle be controlled at 1:30. b. The slope of the front and side ramps of a three-sided curb ramp shall not be greater than 1:12. From a human-centered perspective, the slope shall not be greater than 1:15. Figure 1.5-1 Schematic diagram of single-slope curb ramp Figure 1.5-2 Schematic diagram of three-sided curb ramp ### 1.5.2 Barrier-Free Facilities for Pedestrian Crossings 1. The width of pedestrian crossings shall meet the needs of wheelchair passage. 2. Pedestrian crossings in Suzhou’s central urban area and in areas with a concentration of persons with visual impairments shall be equipped with audible crossing reminder devices. 17 ### 1.5.3 Barrier-Free Facilities at Bus Stops 1. Barrier-free bus stops A. Special attention shall be paid to the human-centered design of ramps around bus stops. The height of the bus stop platform should be relatively consistent with the height of the bus step, facilitating wheelchair users boarding and alighting. B. Where bus stops are set within a median separating motor vehicles and non-motorized traffic, barrier-free access may be achieved within the platform area by locally raising the non-motorized lane or by setting curb ramps at the platform. Barrier-free ramps around bus stops Raised non-motorized lane at bus stop Figure 1.5-3 Schematic diagram of barrier-free facilities at bus stops C. In the bus stop area, the roadway surface of the non-motorized lane may be raised and end guidance signs may be added to remind passing non-motorized vehicles to slow down in advance, ensuring pedestrian safety. 2. Tactile paving and braille information layout A. Warning tactile paving shall be installed 250 mm–500 mm from the curb, and its length shall correspond to the length of the bus stop. B. Braille stop signs or voice prompt service facilities should be provided. The location, height, form, and content of the braille stop signs shall be convenient for use by persons with visual impairments. ### 1.5.4 Barrier-Free Facilities for Grade-Separated Crossings 1. Grade-separated crossing facilities should be equipped with elevators. It is recommended that elevators be installed in all quadrants, with at least one pair of elevators. Barrier-free ramps shall be provided at elevator entrances and exits to facilitate wheelchair use. 2. Where, within a 500 m radius of grade-separated crossing facilities, there are transport hubs, large hospitals, major commercial districts, or large residential areas, and the distance to adjacent at-grade crossing facilities is more than 100 m, elevators shall be installed. In other areas, where the spacing\n- [Source: policy | Suzhou Urban Road Refined Construction Guide] decoration and are coordinated with the road environment. The setting of walkway lights and streetlights shall take the intersection stop line as the starting and ending point, at a distance of 3.0 m–10.0 m. Figure 4.3-4 Example of Walkway Lights 4.3.3 Pavement Surfacing 1. Sidewalk paving: It shall meet the requirements of stability, anti-slip performance, flatness, ecological environmental protection, and urban landscape. Its design shall be practical, economical, aesthetically pleasing, and durable, and shall be designed for permeability in accordance with sponge city requirements. Guidance and directional signs may be added to the paving; signs shall be appropriately scaled and clearly informative. 2. Tactile paving: The color of tactile paving should contrast with the color of adjacent sidewalk paving and be coordinated with the surrounding landscape. The surface of tactile paving profiles shall have anti-slip functionality. The width should be 0.3 m–0.6 m, and the tactile pattern shall protrude 4 mm above the road surface. Tactile paving shall be laid continuously and shall avoid obstacles such as trees (tree pits), utility poles, and guy wires. Figure 4.3-5 Example of tactile paving 3. Curb stones: These shall be designed in accordance with road class, construction scale, landscape environment, and usage requirements. Sidewalks must be provided with curb ramps at all intersections and at the entrances/exits of residential communities and institutions fronting the street. The height difference between the curb stone and the road surface shall not exceed 1 cm. At pedestrian crossings, the centerline of the curb-ramp opening should align with the centerline of the crosswalk. At road intersections, curb ramps are recommended to adopt a full-width, single-sided ramp descending to the bottom. 4. Tree pits / tree grates: Their dimensions shall be designed in coordination with the sidewalk paving, forming a certain proportional modular relationship. The paved surface of the tree pit / tree grate should be flush with the sidewalk paving. Tree grates should preferably use fiberglass grating, eco-friendly rubber, stone paving, and similar materials. In parks, squares, commercial pedestrian streets, and other leisure activity areas, tree pits should be designed in combination with seating, or as compact / multifunctional designs that provide seating functions. Figure 4.3-6 Example of tree pits / tree grates 5. Manhole covers: All types of manhole covers shall comply with the relevant standards in Manhole Covers (GB/T 23858-2009). The paved surface of the manhole cover shall be flush with the sidewalk paving surface, and the height difference shall not exceed 1 cm. Concealed manhole covers may be used; the decorative surface layer shall be unified with the road paving. Manhole covers with distinctive patterns may also be used. Figure 4.3-7 Example of manhole covers 4.3.4 Information service facilities Information service facilities refer to service facilities that provide information on roads, places, public announcements, and similar matters within an area. They are usually installed along sidewalks, as well as in parks, squares, tourist attractions, and similar areas. They shall be systematically designed in conjunction with the surrounding environment and other urban furniture in the area, and their form and style shall be harmonized and unified with the\n- [Source: policy | Suzhou Urban Road Refined Construction Guide] 3.0 | 2.0 | | Pedestrian Level II | 3.0 | 2.0 | 1.8 | | Pedestrian Level III | 2.0 | 1.5 | 1.5 | | Road section | Suitable width (m) | Minimum width (m) | Effective pedestrian passage width (m) | |---|---:|---:|---:| | Sections concentrated with commercial and cultural centers, large stores, or large public cultural institutions | 5.0 | 4.0 | 2.8 | | Special sections | | | | | Sections near railway stations and wharves | 5.0 | 4.0 | 2.8 | | Sections containing rail transit stations or long-distance bus stations | 4.0 | 3.5 | 2.8 | Notes: 1) Pedestrian main corridor (Pedestrian Level I): very heavy pedestrian flow, with a relatively high level of street-edge activity; an important component of the pedestrian network. It is mainly distributed on living-oriented arterial roads in urban central areas, around major public facilities, major transport hubs, urban core functional areas, and citizen activity gathering areas; on secondary arterial roads with heavy pedestrian flow; on branch roads with better cross-sectional conditions and dense pedestrian activity; and on auxiliary roads of expressways with relatively high surrounding land-use intensity. 2) Pedestrian distribution corridor (Pedestrian Level II): relatively heavy pedestrian flow, with a relatively friendly street edge; a major component of the pedestrian network. It is mainly distributed on secondary arterial roads and branch roads in urban sub-centers, around medium-sized public facilities, and in general urban functional areas (such as general commercial areas, government affairs areas, and large residential areas). 3) Pedestrian connection corridor (Pedestrian Level III): mainly for direct pedestrian passage, with a low level of street-edge activity and relatively small pedestrian flow; pedestrian activity is mostly simple crossing and has little connection with buildings on both sides; it is an extension and supplement to the pedestrian network. 3. A facility strip shall be set on the sidewalk, and functions such as non-motor vehicle parking and bus stop platform installation should be integrated to form a comprehensive facility strip. For newly built roads, the width of the facility strip shall not be less than 0.7 m, and generally should be 1.5 m to 2 m. 1.1.2 Technical Requirements for Sidewalks 1. Sidewalks shall be firm and level, with no ponding, no settlement, no uneven joints, and no detachment; they shall connect smoothly with adjacent structures, and the surface shall be flat and dense. The flatness of concrete precast brick pavements shall be ≤2 mm, and the flatness of stone pavements shall be ≤3 mm. 2. Sidewalk blocks shall have uniform joint widths and fully filled joints. The strength standard for paved sidewalk surfaces shall follow plaza standards; the compressive strength of concrete blocks shall be ≥35 MPa, and the flexural strength shall be ≥4.5 MPa. All manhole covers shall be flush with the sidewalk elevation and in good condition, and the strength of manhole covers must meet sidewalk traffic requirements. 3. The skid resistance of sidewalks shall meet BPN ≥60. Curbstones at the same level as the sidewalk shall likewise meet the sidewalk skid-resistance requirement of BPN ≥60. 4. When\n"
+}

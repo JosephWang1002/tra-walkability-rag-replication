@@ -1,0 +1,122 @@
+{
+ "oid": "17650",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\17650.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\17650_120.561333_31.263392_0900290012220826151201982AH_358.49_2022_8_虎丘区横塘街道苏福路288号_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.3,
+ "usage": {
+  "completion_tokens": 951,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 379,
+   "engine_ttlt_ms": 15210,
+   "pre_inference_ms": 304,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 912,
+   "service_ttlt_ms": 15737,
+   "user_visible_ttft_ms": 609
+  },
+  "prompt_tokens": 5126,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4864
+  },
+  "total_tokens": 6077
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 66.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 57.0\n    },\n    \"safety\": 78.0,\n    \"livability\": 48.0,\n    \"sustainability\": 64.0,\n    \"aesthetics\": 67.0,\n    \"comfort\": 58.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are distributed unevenly: the carriageway occupies most of the corridor with multiple wide motor lanes, while the pedestrian space on the right is comparatively narrow and set behind a barrier.\",\n      \"Accessibility is only moderate because a continuous sidewalk is visible on the right, but no curb ramps, tactile paving, marked crossings, or other barrier-free crossing elements are visible in the scene.\",\n      \"Fairness for all road users is limited because the median barrier and grade-separated road design strongly prioritize through motor traffic, while walking routes appear secondary and less directly connected.\"\n    ],\n    \"safety\": [\n      \"Safety is strengthened by clear lane markings, a wide paved roadway, and a physical concrete barrier with red railings separating the motor lanes from the side path, reducing direct vehicle-pedestrian conflict.\",\n      \"The road geometry appears high-speed, with long straight lanes under an elevated structure and no visible traffic calming, which can increase crash severity for any crossing or merging conflicts.\",\n      \"Street lighting poles are visible and the sidewalk is separated from traffic by trees and a verge-like edge, which supports perceived safety, but no visible pedestrian crossing facility is present nearby.\"\n    ],\n    \"livability\": [\n      \"Livability is low because the scene is dominated by transport infrastructure: an elevated viaduct, broad asphalt lanes, barriers, and directional signs, with little evidence of active street life or social uses.\",\n      \"There are trees and landscaped planting strips on both sides, which soften the corridor somewhat, but no visible shops, seating, gathering spaces, or human-scale amenities are present.\",\n      \"The sidewalk appears functional rather than sociable; aside from a trash bin and a parked scooter, there are few visible features that support lingering, interaction, or everyday neighborhood activity.\"\n    ],\n    \"sustainability\": [\n      \"Sustainability benefits from the substantial roadside greenery, including mature trees on the right and planted medians under the viaduct, which contribute to urban greening.\",\n      \"The corridor appears optimized mainly for automobile throughput, with several wide traffic lanes and elevated road infrastructure, which weakens support for lower-carbon, human-scaled mobility.\",\n      \"A separated side path exists along the right edge and could support non-motorized movement, but no clearly marked bike lane, bus stop, or other visible public transport feature can be confirmed from the image.\"\n    ],\n    \"aesthetics\": [\n      \"The streetscape has a relatively orderly appearance, with clean pavement, maintained planting beds, aligned light poles, and a consistent barrier design.\",\n      \"Large gray elevated structures dominate the visual field and create a heavy infrastructural character, reducing visual warmth and fine-grained street appeal.\",\n      \"The row of green trees on the right improves visual quality and provides contrast against the concrete viaduct and asphalt roadway.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: the elevated structure shades the left side of the corridor and trees shade parts of the right sidewalk, but large exposed asphalt areas remain unshaded.\",\n      \"Physical comfort for walking is limited because the visible sidewalk is narrow relative to the corridor scale and no benches, resting places, or pedestrian-oriented amenities are visible.\",\n      \"Psychological comfort is reduced by the high-speed road character, long uninterrupted lanes, concrete barriers, and the imposing elevated roadway, which can make the environment feel vehicle-dominated and less relaxed for non-drivers.\"\n    ],\n    \"walkability\": [\n      \"Walkability is constrained because the visible pedestrian route is confined to one side of a major road corridor and there is no visible crosswalk, refuge island, or signalized pedestrian crossing in the image.\",\n      \"The sidewalk appears continuous and buffered from traffic by a barrier and trees, which supports basic walking safety, but route directness and connectivity seem weak in this grade-separated setting.\",\n      \"Walking attractiveness is limited by the lack of active frontages, seating, storefronts, or pedestrian-scale destinations; the environment reads primarily as a movement corridor rather than a walkable street.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 66.0,
+   "fairness": 60.0,
+   "accessibility": 57.0
+  },
+  "safety": 78.0,
+  "livability": 48.0,
+  "sustainability": 64.0,
+  "aesthetics": 67.0,
+  "comfort": 58.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 57.0,
+  "safety": 78.0,
+  "livability": 48.0,
+  "sustainability": 64.0,
+  "aesthetics": 67.0,
+  "comfort": 58.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:36:13+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are distributed unevenly: the carriageway occupies most of the corridor with multiple wide motor lanes, while the pedestrian space on the right is comparatively narrow and set behind a barrier.",
+   "Accessibility is only moderate because a continuous sidewalk is visible on the right, but no curb ramps, tactile paving, marked crossings, or other barrier-free crossing elements are visible in the scene.",
+   "Fairness for all road users is limited because the median barrier and grade-separated road design strongly prioritize through motor traffic, while walking routes appear secondary and less directly connected."
+  ],
+  "safety": [
+   "Safety is strengthened by clear lane markings, a wide paved roadway, and a physical concrete barrier with red railings separating the motor lanes from the side path, reducing direct vehicle-pedestrian conflict.",
+   "The road geometry appears high-speed, with long straight lanes under an elevated structure and no visible traffic calming, which can increase crash severity for any crossing or merging conflicts.",
+   "Street lighting poles are visible and the sidewalk is separated from traffic by trees and a verge-like edge, which supports perceived safety, but no visible pedestrian crossing facility is present nearby."
+  ],
+  "livability": [
+   "Livability is low because the scene is dominated by transport infrastructure: an elevated viaduct, broad asphalt lanes, barriers, and directional signs, with little evidence of active street life or social uses.",
+   "There are trees and landscaped planting strips on both sides, which soften the corridor somewhat, but no visible shops, seating, gathering spaces, or human-scale amenities are present.",
+   "The sidewalk appears functional rather than sociable; aside from a trash bin and a parked scooter, there are few visible features that support lingering, interaction, or everyday neighborhood activity."
+  ],
+  "sustainability": [
+   "Sustainability benefits from the substantial roadside greenery, including mature trees on the right and planted medians under the viaduct, which contribute to urban greening.",
+   "The corridor appears optimized mainly for automobile throughput, with several wide traffic lanes and elevated road infrastructure, which weakens support for lower-carbon, human-scaled mobility.",
+   "A separated side path exists along the right edge and could support non-motorized movement, but no clearly marked bike lane, bus stop, or other visible public transport feature can be confirmed from the image."
+  ],
+  "aesthetics": [
+   "The streetscape has a relatively orderly appearance, with clean pavement, maintained planting beds, aligned light poles, and a consistent barrier design.",
+   "Large gray elevated structures dominate the visual field and create a heavy infrastructural character, reducing visual warmth and fine-grained street appeal.",
+   "The row of green trees on the right improves visual quality and provides contrast against the concrete viaduct and asphalt roadway."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: the elevated structure shades the left side of the corridor and trees shade parts of the right sidewalk, but large exposed asphalt areas remain unshaded.",
+   "Physical comfort for walking is limited because the visible sidewalk is narrow relative to the corridor scale and no benches, resting places, or pedestrian-oriented amenities are visible.",
+   "Psychological comfort is reduced by the high-speed road character, long uninterrupted lanes, concrete barriers, and the imposing elevated roadway, which can make the environment feel vehicle-dominated and less relaxed for non-drivers."
+  ],
+  "walkability": [
+   "Walkability is constrained because the visible pedestrian route is confined to one side of a major road corridor and there is no visible crosswalk, refuge island, or signalized pedestrian crossing in the image.",
+   "The sidewalk appears continuous and buffered from traffic by a barrier and trees, which supports basic walking safety, but route directness and connectivity seem weak in this grade-separated setting.",
+   "Walking attractiveness is limited by the lack of active frontages, seating, storefronts, or pedestrian-scale destinations; the environment reads primarily as a movement corridor rather than a walkable street."
+  ]
+ }
+}

@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 34,
+      "equity": 38,
+      "fairness": 35,
+      "accessibility": 29
+    },
+    "safety": 61,
+    "livability": 24,
+    "sustainability": 32,
+    "aesthetics": 55,
+    "comfort": 30,
+    "walkability": 12,
+    "bikeability": 8
+  },
+  "explanations": {
+    "justice": [
+      "The bridge allocates most of the width to multiple motor-vehicle lanes, while no visible pedestrian sidewalk is provided in the camera view.",
+      "No marked bicycle lane, shoulder bikeway, or cycling space is visible, indicating limited distribution of space for non-motorized users.",
+      "Concrete median barriers and edge guardrails create a controlled roadway environment for drivers but do not show barrier-free access elements for all users.",
+      "No curb ramps, tactile paving, pedestrian crossings, or transit stops are visible, so accessibility for diverse users appears weak."
+    ],
+    "safety": [
+      "Clear lane markings, a wide roadway, and a central concrete barrier reduce head-on conflict between opposing traffic streams.",
+      "Tall streetlights are installed along the bridge, which supports basic nighttime visibility even though daylight conditions dominate the image.",
+      "Guardrails and parapets on both sides provide edge protection on the elevated structure.",
+      "The high-speed bridge geometry, long straight lanes, and lack of pedestrian refuge or separated cycle infrastructure make the environment unsafe for non-motorized users."
+    ],
+    "livability": [
+      "This is an elevated bridge environment with no visible shops, building entrances, seating, or public activity space that would support everyday street life.",
+      "There are no visible benches, bus stops, kiosks, or community facilities along the corridor.",
+      "The scene is dominated by asphalt, barriers, and moving vehicles, offering little opportunity for social interaction or lingering.",
+      "Although distant buildings and greenery are visible off the bridge, they are not directly accessible from the roadway space shown."
+    ],
+    "sustainability": [
+      "Some greenery is visible beyond the bridge edges, which slightly softens the corridor and suggests adjacent vegetated land.",
+      "The transport space itself is dominated by several car lanes, indicating strong support for private motorized travel rather than low-carbon modes.",
+      "No dedicated bus lane, bus stop, protected cycle lane, or pedestrian-priority feature is visible in the image.",
+      "The bridge surface and barriers are largely impervious concrete and asphalt, with no visible rain-garden, bioswale, or stormwater infiltration element."
+    ],
+    "aesthetics": [
+      "The roadway has a clean, well-maintained appearance with smooth pavement and consistent white lane markings.",
+      "Uniform streetlight spacing and the continuous bridge railings create a visually orderly composition.",
+      "The broad sky view and open sightlines give the scene a spacious feel.",
+      "However, the landscape is visually monotonous because the foreground is dominated by asphalt, concrete barriers, and sparse streetscape detail."
+    ],
+    "comfort": [
+      "There is no visible shade structure or tree canopy on the bridge deck, so thermal comfort is likely poor in hot or sunny weather.",
+      "No benches, resting areas, or protected standing space are visible, limiting physical comfort for anyone outside a vehicle.",
+      "The smooth pavement supports comfortable vehicle movement, but it does not translate into comfort for pedestrians or cyclists because dedicated space is absent.",
+      "The open elevated setting and likely high vehicle speeds may create wind exposure and psychological discomfort for vulnerable road users."
+    ],
+    "walkability": [
+      "No visible sidewalk or pedestrian path is present within the image, making walking accommodation extremely limited.",
+      "There are no crosswalks, curb ramps, pedestrian signals, or refuge islands shown on this bridge segment.",
+      "The long elevated roadway and high-speed traffic environment strongly discourage walking.",
+      "Lack of frontage, destinations, shade, and seating further reduces the practicality and attractiveness of walking."
+    ],
+    "bikeability": [
+      "No protected bike lane, painted cycle lane, or paved shoulder for cyclists is visible on the bridge.",
+      "Cyclists would need to share space with fast-moving motor vehicles across multiple traffic lanes, which greatly reduces perceived and actual safety.",
+      "No bicycle symbols, lane markings, or bicycle parking facilities are visible anywhere in the corridor.",
+      "The elevated bridge design with barriers and no recovery space offers little comfort or margin for error for people cycling."
+    ]
+  },
+  "image_id": "img-1777183850391-edamu92eu",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4"
+  },
+  "generated_at": "2026-04-26T06:51:06.365Z",
+  "record_id": "11145a78b9b34367a14ee55ff423e509",
+  "stored_image_url": "/storage/records/11145a78b9b34367a14ee55ff423e509/image.jpg",
+  "stored_thumb_url": "/storage/records/11145a78b9b34367a14ee55ff423e509/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-26T06:54:39.477Z"
+}

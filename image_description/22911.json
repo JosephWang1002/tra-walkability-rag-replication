@@ -1,0 +1,33 @@
+{
+ "oid": "22911",
+ "description": "The scene shows a wide, continuous sidewalk along the left side, separated from the roadway by a curb and a planted strip with dense shrubs/trees that provide some shade. Traffic is in multiple lanes with no visible pedestrian barriers beyond the curb/landscaping, and the road appears to be designed for relatively fast vehicle movement; streetlights line the roadway and there are no clear curb ramps or tactile accessibility features visible. The sidewalk surface looks even and unobstructed, with few apparent hazards, though there are parked motorcycles along the right side near the buildings rather than along the main pedestrian path.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 122,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 11,
+   "engine_ttft_ms": 296,
+   "engine_ttlt_ms": 1590,
+   "pre_inference_ms": 380,
+   "service_tbt_ms": 11,
+   "service_ttft_ms": 902,
+   "service_ttlt_ms": 2190,
+   "total_duration_ms": 1818,
+   "user_visible_ttft_ms": 522
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1106
+ },
+ "latency_s": 5.8,
+ "timestamp": "2026-08-31T16:41:06"
+}

@@ -1,0 +1,33 @@
+{
+ "oid": "16562",
+ "description": "The image shows a wide, multi-lane roadway with no visible sidewalks or pedestrian path; the curb edges appear continuous and there are no clear curb cuts or ramps for pedestrian access. Traffic is separated from the landscaped areas by a curb, with multiple lanes marked by white lines and tall streetlights along the road, but there are no barriers or pedestrian-specific safety features. Landscaping (trees and low shrubs/flower beds) runs continuously along both sides, providing some visual greenery, while the open roadway and lack of pedestrian infrastructure limit walkability and safety.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 113,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 12,
+   "engine_ttft_ms": 735,
+   "engine_ttlt_ms": 2035,
+   "pre_inference_ms": 283,
+   "service_tbt_ms": 12,
+   "service_ttft_ms": 1404,
+   "service_ttlt_ms": 2699,
+   "total_duration_ms": 2426,
+   "user_visible_ttft_ms": 1121
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1097
+ },
+ "latency_s": 6.8,
+ "timestamp": "2026-08-31T16:10:54"
+}

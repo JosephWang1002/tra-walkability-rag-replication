@@ -1,0 +1,122 @@
+{
+ "oid": "18745",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\18745.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\18745_120.538969_31.368002_0900290012220824122634581AL_138.11_2022_8_姑苏区白洋湾街道藕巷街_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.3,
+ "usage": {
+  "completion_tokens": 936,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 391,
+   "engine_ttlt_ms": 14596,
+   "pre_inference_ms": 1075,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1693,
+   "service_ttlt_ms": 15894,
+   "user_visible_ttft_ms": 618
+  },
+  "prompt_tokens": 5338,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6274
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 52.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 63.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The roadway provides generous space with multiple wide lanes, medians, and landscaped edges, showing substantial public investment, but most visible space is allocated to motor traffic rather than to pedestrians or other street users.\",\n      \"Sidewalk-like edge space is visible on the right side behind the hedge and trees, yet no marked pedestrian crossing, curb ramp, or tactile paving is visible in the scene, limiting clearly demonstrated accessibility for all users.\",\n      \"Street lighting, planted medians, and orderly roadside landscaping appear to serve the corridor consistently on both sides, which supports a basic sense of fair public provision, but the absence of visible dedicated facilities for walking or cycling weakens equity across user groups.\"\n    ],\n    \"safety\": [\n      \"The carriageway is wide and well maintained, with clear dashed lane markings that help drivers keep position and reduce lane ambiguity.\",\n      \"A planted median and edge hedges create physical separation between opposing traffic and roadside space, which can reduce direct conflicts and improve perceived traffic order.\",\n      \"Tall streetlights are installed along the corridor, supporting roadway visibility, but the long straight alignment and broad lanes may also encourage higher vehicle speeds, which can reduce safety for any pedestrian crossing this road.\"\n    ],\n    \"livability\": [\n      \"The street appears clean, spacious, and landscaped with trees, shrubs, and medians, which improves environmental quality compared with a fully barren arterial road.\",\n      \"However, the corridor feels dominated by through-traffic movement, with no visible shops, seating, bus stops, or active frontage that would support everyday social life on the street.\",\n      \"The long green wall on the right and the large setback from destinations reduce visible human activity and make the space feel more like a transport corridor than a lively public place.\"\n    ],\n    \"sustainability\": [\n      \"Continuous rows of trees, shrubs, and planted medians provide visible green infrastructure that can support air-quality improvement and some stormwater absorption.\",\n      \"The broad, smooth roadway may support efficient traffic flow, but no visible bus lane, bus stop, bike lane, or bike parking is present to show strong support for low-carbon travel modes.\",\n      \"Because the corridor includes substantial landscaping on both sides and in the median, it performs better environmentally than a fully paved road, though its design still appears primarily car-oriented.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has a neat and coherent visual structure, with aligned streetlights, centered lane markings, trimmed hedges, and regularly spaced trees.\",\n      \"Landscaped medians and roadside planting soften the large road surface and create a more pleasant visual experience than an unplanted arterial.\",\n      \"The scene is somewhat monotonous because of the very long straight road, sparse visible activity, and continuous wall on the right, which limits visual richness despite the tidy appearance.\"\n    ],\n    \"comfort\": [\n      \"The road surface appears smooth and well maintained, which supports physical comfort for vehicle users and likely reduces vibration.\",\n      \"Trees and planting are present along both sides and medians, but canopy cover over pedestrian space is limited, so thermal comfort from shade appears modest rather than strong.\",\n      \"The corridor looks uncrowded and orderly, which can reduce psychological stress for drivers, yet the wide fast-moving road environment may feel less comfortable for anyone walking along or trying to cross it.\"\n    ],\n    \"walkability\": [\n      \"A pedestrian path is only weakly visible at the road edge, and there are no clearly marked crosswalks, pedestrian refuge islands for crossing, or signalized pedestrian facilities in the visible segment.\",\n      \"The very wide carriageway with multiple lanes creates a long crossing distance, which reduces convenience and comfort for walking even though medians and hedges structure the corridor.\",\n      \"Street trees and a separated roadside zone offer some support for walking along the corridor, but the lack of visible active frontage, crossings, benches, and clearly legible pedestrian infrastructure keeps walkability low.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 60.0,
+   "accessibility": 59.0
+  },
+  "safety": 74.0,
+  "livability": 52.0,
+  "sustainability": 66.0,
+  "aesthetics": 72.0,
+  "comfort": 63.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 59.0,
+  "safety": 74.0,
+  "livability": 52.0,
+  "sustainability": 66.0,
+  "aesthetics": 72.0,
+  "comfort": 63.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:41:04+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The roadway provides generous space with multiple wide lanes, medians, and landscaped edges, showing substantial public investment, but most visible space is allocated to motor traffic rather than to pedestrians or other street users.",
+   "Sidewalk-like edge space is visible on the right side behind the hedge and trees, yet no marked pedestrian crossing, curb ramp, or tactile paving is visible in the scene, limiting clearly demonstrated accessibility for all users.",
+   "Street lighting, planted medians, and orderly roadside landscaping appear to serve the corridor consistently on both sides, which supports a basic sense of fair public provision, but the absence of visible dedicated facilities for walking or cycling weakens equity across user groups."
+  ],
+  "safety": [
+   "The carriageway is wide and well maintained, with clear dashed lane markings that help drivers keep position and reduce lane ambiguity.",
+   "A planted median and edge hedges create physical separation between opposing traffic and roadside space, which can reduce direct conflicts and improve perceived traffic order.",
+   "Tall streetlights are installed along the corridor, supporting roadway visibility, but the long straight alignment and broad lanes may also encourage higher vehicle speeds, which can reduce safety for any pedestrian crossing this road."
+  ],
+  "livability": [
+   "The street appears clean, spacious, and landscaped with trees, shrubs, and medians, which improves environmental quality compared with a fully barren arterial road.",
+   "However, the corridor feels dominated by through-traffic movement, with no visible shops, seating, bus stops, or active frontage that would support everyday social life on the street.",
+   "The long green wall on the right and the large setback from destinations reduce visible human activity and make the space feel more like a transport corridor than a lively public place."
+  ],
+  "sustainability": [
+   "Continuous rows of trees, shrubs, and planted medians provide visible green infrastructure that can support air-quality improvement and some stormwater absorption.",
+   "The broad, smooth roadway may support efficient traffic flow, but no visible bus lane, bus stop, bike lane, or bike parking is present to show strong support for low-carbon travel modes.",
+   "Because the corridor includes substantial landscaping on both sides and in the median, it performs better environmentally than a fully paved road, though its design still appears primarily car-oriented."
+  ],
+  "aesthetics": [
+   "The avenue has a neat and coherent visual structure, with aligned streetlights, centered lane markings, trimmed hedges, and regularly spaced trees.",
+   "Landscaped medians and roadside planting soften the large road surface and create a more pleasant visual experience than an unplanted arterial.",
+   "The scene is somewhat monotonous because of the very long straight road, sparse visible activity, and continuous wall on the right, which limits visual richness despite the tidy appearance."
+  ],
+  "comfort": [
+   "The road surface appears smooth and well maintained, which supports physical comfort for vehicle users and likely reduces vibration.",
+   "Trees and planting are present along both sides and medians, but canopy cover over pedestrian space is limited, so thermal comfort from shade appears modest rather than strong.",
+   "The corridor looks uncrowded and orderly, which can reduce psychological stress for drivers, yet the wide fast-moving road environment may feel less comfortable for anyone walking along or trying to cross it."
+  ],
+  "walkability": [
+   "A pedestrian path is only weakly visible at the road edge, and there are no clearly marked crosswalks, pedestrian refuge islands for crossing, or signalized pedestrian facilities in the visible segment.",
+   "The very wide carriageway with multiple lanes creates a long crossing distance, which reduces convenience and comfort for walking even though medians and hedges structure the corridor.",
+   "Street trees and a separated roadside zone offer some support for walking along the corridor, but the lack of visible active frontage, crossings, benches, and clearly legible pedestrian infrastructure keeps walkability low."
+  ]
+ }
+}

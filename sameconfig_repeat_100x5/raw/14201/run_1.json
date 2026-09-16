@@ -1,0 +1,122 @@
+{
+ "oid": "14201",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\14201.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\14201_120.516961_31.009955_01002900001405280904596435W_197.24_2014_5_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.3,
+ "usage": {
+  "completion_tokens": 927,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 419,
+   "engine_ttlt_ms": 15086,
+   "pre_inference_ms": 452,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1165,
+   "service_ttlt_ms": 15829,
+   "user_visible_ttft_ms": 713
+  },
+  "prompt_tokens": 5560,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5248
+  },
+  "total_tokens": 6487
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 41.0,\n      \"equity\": 38.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 40.0\n    },\n    \"safety\": 46.0,\n    \"livability\": 34.0,\n    \"sustainability\": 39.0,\n    \"aesthetics\": 52.0,\n    \"comfort\": 36.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible street space is allocated to multiple wide motor-vehicle lanes, while there is no clearly visible dedicated sidewalk or pedestrian zone along the main carriageway, indicating uneven distribution of space among road users.\",\n      \"A zebra crossing is painted across the road, but there are no visible refuge islands, pedestrian signals, or curb ramps at the crossing edges, so access appears only partially provided for all users.\",\n      \"No tactile paving, protected waiting area, or clearly separated walking path is visible near the crossing or roadside, which limits accessibility for users who rely on barrier-free design.\"\n    ],\n    \"safety\": [\n      \"The road is very wide and open, which can encourage higher vehicle speeds; only painted zebra markings are visible, and there is no raised crossing, signal control, or median refuge to reduce crossing risk.\",\n      \"A metal guardrail lines the waterside edge, which helps prevent vehicles from leaving the roadway toward the canal, but it does not improve pedestrian protection at the crossing itself.\",\n      \"Streetlights are present along the corridor, supporting visibility, yet the crossing area lacks visible pedestrian-focused safety elements such as warning beacons, curb extensions, or protected islands.\"\n    ],\n    \"livability\": [\n      \"The setting appears dominated by through-traffic infrastructure, with expansive asphalt, sparse roadside activity, and very limited visible public amenities such as benches, shops, or gathering spaces.\",\n      \"The adjacent water body adds some environmental openness, but the road edge on the right functions mainly as a shoulder beside a guardrail rather than as an active public place.\",\n      \"Residential buildings are visible in the distance on the left, yet the immediate streetscape shows little street-level social activity or mixed-use frontage that would support everyday public life.\"\n    ],\n    \"sustainability\": [\n      \"The corridor includes tall streetlights and a broad paved roadway, but no visible bus stop, bike lane, or other clear support for low-carbon travel modes is present in the image.\",\n      \"The large water body and some roadside vegetation contribute ecological value, but the transport design itself is heavily car-oriented and consumes substantial paved surface area.\",\n      \"There are no visible permeable paving features, bioswales, or street trees providing shade and stormwater benefits along the crossing area or road edge.\"\n    ],\n    \"aesthetics\": [\n      \"The waterside setting and long open views create a visually spacious scene, giving the corridor some scenic quality despite its utilitarian road design.\",\n      \"The streetscape is visually simple and relatively clean, with orderly lane markings, consistent light poles, and unobstructed sightlines.\",\n      \"However, the very wide asphalt surface, overhead utility lines, guardrails, and sparse planting make the environment feel more infrastructural than refined or inviting.\"\n    ],\n    \"comfort\": [\n      \"There is almost no visible shade at the crossing or along the road edge; the open asphalt and minimal tree cover suggest poor thermal comfort in hot weather.\",\n      \"No benches, shelters, or resting places are visible, so the environment offers little physical comfort for people who might need to pause or wait before crossing.\",\n      \"The broad roadway, passing truck, and exposed edge beside the canal can create psychological discomfort for non-motorized users, even though the pavement surface itself appears smooth.\"\n    ],\n    \"walkability\": [\n      \"A marked zebra crossing is present, which provides a formal crossing point, but it spans a very wide carriageway without a visible median refuge, making walking routes feel long and exposed.\",\n      \"There is no clearly continuous sidewalk visible along the main road in the foreground, especially on the right side where the edge transitions to a narrow paved strip beside the guardrail and water.\",\n      \"The streetscape lacks pedestrian-scale features such as shade trees, seating, active frontages, and protected separation from fast traffic, all of which weakens the attractiveness and practicality of walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 41.0,
+   "equity": 38.0,
+   "fairness": 45.0,
+   "accessibility": 40.0
+  },
+  "safety": 46.0,
+  "livability": 34.0,
+  "sustainability": 39.0,
+  "aesthetics": 52.0,
+  "comfort": 36.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 41.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 40.0,
+  "safety": 46.0,
+  "livability": 34.0,
+  "sustainability": 39.0,
+  "aesthetics": 52.0,
+  "comfort": 36.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:22:40+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible street space is allocated to multiple wide motor-vehicle lanes, while there is no clearly visible dedicated sidewalk or pedestrian zone along the main carriageway, indicating uneven distribution of space among road users.",
+   "A zebra crossing is painted across the road, but there are no visible refuge islands, pedestrian signals, or curb ramps at the crossing edges, so access appears only partially provided for all users.",
+   "No tactile paving, protected waiting area, or clearly separated walking path is visible near the crossing or roadside, which limits accessibility for users who rely on barrier-free design."
+  ],
+  "safety": [
+   "The road is very wide and open, which can encourage higher vehicle speeds; only painted zebra markings are visible, and there is no raised crossing, signal control, or median refuge to reduce crossing risk.",
+   "A metal guardrail lines the waterside edge, which helps prevent vehicles from leaving the roadway toward the canal, but it does not improve pedestrian protection at the crossing itself.",
+   "Streetlights are present along the corridor, supporting visibility, yet the crossing area lacks visible pedestrian-focused safety elements such as warning beacons, curb extensions, or protected islands."
+  ],
+  "livability": [
+   "The setting appears dominated by through-traffic infrastructure, with expansive asphalt, sparse roadside activity, and very limited visible public amenities such as benches, shops, or gathering spaces.",
+   "The adjacent water body adds some environmental openness, but the road edge on the right functions mainly as a shoulder beside a guardrail rather than as an active public place.",
+   "Residential buildings are visible in the distance on the left, yet the immediate streetscape shows little street-level social activity or mixed-use frontage that would support everyday public life."
+  ],
+  "sustainability": [
+   "The corridor includes tall streetlights and a broad paved roadway, but no visible bus stop, bike lane, or other clear support for low-carbon travel modes is present in the image.",
+   "The large water body and some roadside vegetation contribute ecological value, but the transport design itself is heavily car-oriented and consumes substantial paved surface area.",
+   "There are no visible permeable paving features, bioswales, or street trees providing shade and stormwater benefits along the crossing area or road edge."
+  ],
+  "aesthetics": [
+   "The waterside setting and long open views create a visually spacious scene, giving the corridor some scenic quality despite its utilitarian road design.",
+   "The streetscape is visually simple and relatively clean, with orderly lane markings, consistent light poles, and unobstructed sightlines.",
+   "However, the very wide asphalt surface, overhead utility lines, guardrails, and sparse planting make the environment feel more infrastructural than refined or inviting."
+  ],
+  "comfort": [
+   "There is almost no visible shade at the crossing or along the road edge; the open asphalt and minimal tree cover suggest poor thermal comfort in hot weather.",
+   "No benches, shelters, or resting places are visible, so the environment offers little physical comfort for people who might need to pause or wait before crossing.",
+   "The broad roadway, passing truck, and exposed edge beside the canal can create psychological discomfort for non-motorized users, even though the pavement surface itself appears smooth."
+  ],
+  "walkability": [
+   "A marked zebra crossing is present, which provides a formal crossing point, but it spans a very wide carriageway without a visible median refuge, making walking routes feel long and exposed.",
+   "There is no clearly continuous sidewalk visible along the main road in the foreground, especially on the right side where the edge transitions to a narrow paved strip beside the guardrail and water.",
+   "The streetscape lacks pedestrian-scale features such as shade trees, seating, active frontages, and protected separation from fast traffic, all of which weakens the attractiveness and practicality of walking."
+  ]
+ }
+}

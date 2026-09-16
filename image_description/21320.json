@@ -1,0 +1,33 @@
+{
+ "oid": "21320",
+ "description": "The scene shows a wide, multi-lane roadway with no clearly marked or continuous sidewalk; the pedestrian space appears limited to a narrow edge/shoulder along the right side, with a rougher surface and no visible curb ramps or tactile paving. Traffic is separated from the building side by the roadway width and a low curb/edge, with trees lining both sides providing substantial shade, but there are few pedestrian amenities (no visible lighting, crossings, or street furniture) and minimal protection from vehicle movement.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 104,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 9,
+   "engine_ttft_ms": 898,
+   "engine_ttlt_ms": 1820,
+   "pre_inference_ms": 241,
+   "service_tbt_ms": 9,
+   "service_ttft_ms": 1546,
+   "service_ttlt_ms": 2463,
+   "total_duration_ms": 2231,
+   "user_visible_ttft_ms": 1305
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1088
+ },
+ "latency_s": 5.0,
+ "timestamp": "2026-08-31T16:34:18"
+}

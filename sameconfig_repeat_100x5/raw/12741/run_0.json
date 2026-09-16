@@ -1,0 +1,122 @@
+{
+ "oid": "12741",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12741.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12741_120.487847_31.341759_0900290012220829164304189AL_5.49_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.3,
+ "usage": {
+  "completion_tokens": 871,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 491,
+   "engine_ttlt_ms": 13083,
+   "pre_inference_ms": 589,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1357,
+   "service_ttlt_ms": 13943,
+   "user_visible_ttft_ms": 768
+  },
+  "prompt_tokens": 5203,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6074
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 66.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 57.0\n    },\n    \"safety\": 78.0,\n    \"livability\": 64.0,\n    \"sustainability\": 74.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 71.0,\n    \"walkability\": 55.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to motor traffic, with multiple wide vehicle lanes visible, while pedestrian space is only indirectly visible at the edges, suggesting an uneven distribution of street space across user types.\",\n      \"Continuous rows of street trees and landscaped verges appear on both sides, indicating that environmental amenities are provided along the corridor rather than concentrated on only one side.\",\n      \"Accessibility is uncertain because sidewalks are partly obscured by planting strips and no curb ramps, tactile paving, marked crossings, or other barrier-free details are visible in the image.\"\n    ],\n    \"safety\": [\n      \"The roadway is wide, clean, and clearly marked with centerlines and lane lines, which supports predictable vehicle movement and reduces lane ambiguity.\",\n      \"A planted median and side planting strips create physical separation between opposing traffic and between the carriageway edge and pedestrian realm, lowering direct conflict risk.\",\n      \"Traffic volume appears low in the photo, with only one clearly visible moving car ahead, which likely reduces immediate crash exposure for all road users.\"\n    ],\n    \"livability\": [\n      \"The corridor has abundant mature trees, shrubs, and landscaped medians, which improve environmental quality and make the street feel more pleasant than a bare traffic corridor.\",\n      \"Buildings are set back behind greenery, and there are no visible ground-floor shops, kiosks, or active public uses, so the street appears functional and calm rather than socially vibrant.\",\n      \"The scene looks orderly and well maintained, with smooth pavement, trimmed vegetation, and little visible clutter, supporting a moderate level of everyday livability.\"\n    ],\n    \"sustainability\": [\n      \"Dense street trees on both sides and in the median provide substantial green infrastructure, which can support shade, cooling, and air-quality benefits.\",\n      \"The landscaped strips and planted median reduce the amount of fully paved surface compared with an all-asphalt corridor and suggest some ecological value in the streetscape design.\",\n      \"No dedicated bus lane, bus stop, or visible cycling facility can be seen, so while the greenery supports sustainability, the image provides limited evidence of strong support for low-carbon multimodal travel.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has a strong visual rhythm created by evenly spaced streetlights, continuous tree rows, and a long, symmetrical roadway perspective.\",\n      \"Vegetation is lush and well maintained, with mature canopy trees, trimmed shrubs, and neat planting beds that enhance visual quality.\",\n      \"The street appears very clean and uncluttered, and the modern buildings framed by greenery contribute to an attractive, polished urban image.\"\n    ],\n    \"comfort\": [\n      \"Large street trees along both sides provide meaningful shade potential for side paths and sidewalks, improving thermal comfort compared with an exposed roadway.\",\n      \"The asphalt surface appears smooth and well maintained, which supports physical comfort for vehicle travel and likely for walking on adjacent paved areas if similarly maintained.\",\n      \"Psychological comfort is mixed: the corridor feels calm because of low visible traffic and greenery, but the very wide carriageway and fast-road character may feel less comfortable for slower users near crossings or edges.\"\n    ],\n    \"walkability\": [\n      \"Sidewalks or side paths are only partially visible behind planting strips, so pedestrian route continuity cannot be fully confirmed from the image.\",\n      \"The road is very wide with multiple traffic lanes, and no marked crosswalks, pedestrian refuge crossings, or curb ramps are visible, which weakens crossing convenience for walkers.\",\n      \"Tree-lined edges likely improve the walking environment through shade and buffering from traffic, but the corridor still reads primarily as a vehicle-oriented arterial rather than a strongly walkable street.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 66.0,
+   "fairness": 60.0,
+   "accessibility": 57.0
+  },
+  "safety": 78.0,
+  "livability": 64.0,
+  "sustainability": 74.0,
+  "aesthetics": 84.0,
+  "comfort": 71.0,
+  "walkability": 55.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 57.0,
+  "safety": 78.0,
+  "livability": 64.0,
+  "sustainability": 74.0,
+  "aesthetics": 84.0,
+  "comfort": 71.0,
+  "walkability": 55.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:18:57+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to motor traffic, with multiple wide vehicle lanes visible, while pedestrian space is only indirectly visible at the edges, suggesting an uneven distribution of street space across user types.",
+   "Continuous rows of street trees and landscaped verges appear on both sides, indicating that environmental amenities are provided along the corridor rather than concentrated on only one side.",
+   "Accessibility is uncertain because sidewalks are partly obscured by planting strips and no curb ramps, tactile paving, marked crossings, or other barrier-free details are visible in the image."
+  ],
+  "safety": [
+   "The roadway is wide, clean, and clearly marked with centerlines and lane lines, which supports predictable vehicle movement and reduces lane ambiguity.",
+   "A planted median and side planting strips create physical separation between opposing traffic and between the carriageway edge and pedestrian realm, lowering direct conflict risk.",
+   "Traffic volume appears low in the photo, with only one clearly visible moving car ahead, which likely reduces immediate crash exposure for all road users."
+  ],
+  "livability": [
+   "The corridor has abundant mature trees, shrubs, and landscaped medians, which improve environmental quality and make the street feel more pleasant than a bare traffic corridor.",
+   "Buildings are set back behind greenery, and there are no visible ground-floor shops, kiosks, or active public uses, so the street appears functional and calm rather than socially vibrant.",
+   "The scene looks orderly and well maintained, with smooth pavement, trimmed vegetation, and little visible clutter, supporting a moderate level of everyday livability."
+  ],
+  "sustainability": [
+   "Dense street trees on both sides and in the median provide substantial green infrastructure, which can support shade, cooling, and air-quality benefits.",
+   "The landscaped strips and planted median reduce the amount of fully paved surface compared with an all-asphalt corridor and suggest some ecological value in the streetscape design.",
+   "No dedicated bus lane, bus stop, or visible cycling facility can be seen, so while the greenery supports sustainability, the image provides limited evidence of strong support for low-carbon multimodal travel."
+  ],
+  "aesthetics": [
+   "The avenue has a strong visual rhythm created by evenly spaced streetlights, continuous tree rows, and a long, symmetrical roadway perspective.",
+   "Vegetation is lush and well maintained, with mature canopy trees, trimmed shrubs, and neat planting beds that enhance visual quality.",
+   "The street appears very clean and uncluttered, and the modern buildings framed by greenery contribute to an attractive, polished urban image."
+  ],
+  "comfort": [
+   "Large street trees along both sides provide meaningful shade potential for side paths and sidewalks, improving thermal comfort compared with an exposed roadway.",
+   "The asphalt surface appears smooth and well maintained, which supports physical comfort for vehicle travel and likely for walking on adjacent paved areas if similarly maintained.",
+   "Psychological comfort is mixed: the corridor feels calm because of low visible traffic and greenery, but the very wide carriageway and fast-road character may feel less comfortable for slower users near crossings or edges."
+  ],
+  "walkability": [
+   "Sidewalks or side paths are only partially visible behind planting strips, so pedestrian route continuity cannot be fully confirmed from the image.",
+   "The road is very wide with multiple traffic lanes, and no marked crosswalks, pedestrian refuge crossings, or curb ramps are visible, which weakens crossing convenience for walkers.",
+   "Tree-lined edges likely improve the walking environment through shade and buffering from traffic, but the corridor still reads primarily as a vehicle-oriented arterial rather than a strongly walkable street."
+  ]
+ }
+}

@@ -1,0 +1,73 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 30,
+      "equity": 31,
+      "fairness": 29,
+      "accessibility": 22
+    },
+    "safety": 75,
+    "livability": 20,
+    "sustainability": 44,
+    "aesthetics": 48,
+    "comfort": 32,
+    "walkability": 4,
+    "bikeability": 2
+  },
+  "explanations": {
+    "justice": [
+      "Elevated urban expressway exclusively serves high-speed motorized traffic.",
+      "Pedestrians, cyclists and people with disabilities are fully prohibited from access.",
+      "Extreme modal bias towards private vehicles, near-zero equity for vulnerable road users."
+    ],
+    "safety": [
+      "Full crash barriers, anti-noise screens and median separation minimize cross-traffic hazards.",
+      "Fully controlled access eliminates intersection conflict points.",
+      "High design speed results in severe casualty outcomes in case of collision."
+    ],
+    "livability": [
+      "Pure regional transit function with no on-site residential or public amenity provision.",
+      "Persistent traffic noise and emissions degrade surrounding neighborhood livability.",
+      "No resting, leisure or public activity facilities along the corridor."
+    ],
+    "sustainability": [
+      "Limited roadside green belt provides minor carbon sequestration and noise mitigation.",
+      "Massive impervious asphalt surface impairs urban stormwater infiltration.",
+      "Car-centric design discourages low-carbon active travel modes."
+    ],
+    "aesthetics": [
+      "Linear, open viaduct layout presents a spacious, functional modern infrastructure appearance.",
+      "Noise barriers and guardrails create monotonous visual rhythm.",
+      "Lack of human-scale landscaping and place-making design."
+    ],
+    "comfort": [
+      "High-quality pavement delivers superior driving comfort for motorists.",
+      "Constant high-speed traffic generates continuous vibration, noise and air pollution.",
+      "No pedestrian-oriented buffer or rest space available."
+    ],
+    "walkability": [
+      "Pedestrian access is strictly forbidden on this elevated expressway.",
+      "Extreme fatal risk for any walking behavior.",
+      "Zero walking infrastructure is reserved."
+    ],
+    "bikeability": [
+      "Cycling is explicitly prohibited.",
+      "No bicycle lanes or supportive infrastructure exist.",
+      "Completely unsuitable for any cycling activity."
+    ]
+  },
+  "image_id": "scene-highway-viaduct",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-27T10:00:00.000Z",
+  "record_id": "rec-highway-viaduct",
+  "stored_image_url": "",
+  "stored_thumb_url": "",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T10:00:50.000Z"
+}

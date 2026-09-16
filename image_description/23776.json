@@ -1,0 +1,33 @@
+{
+ "oid": "23776",
+ "description": "The image shows a multi-lane roadway with no visible sidewalks or pedestrian path; the curb edge and roadside verge are present but there are no clear curb cuts, ramps, or continuous pedestrian surface. Trees line both sides, providing substantial shade, while traffic appears separated only by lane markings with no physical barriers; lighting is not visible (daytime scene), and there are no obvious pedestrian obstacles or crossings in view.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 86,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 8,
+   "engine_ttft_ms": 900,
+   "engine_ttlt_ms": 1561,
+   "pre_inference_ms": 320,
+   "service_tbt_ms": 8,
+   "service_ttft_ms": 1683,
+   "service_ttlt_ms": 2339,
+   "total_duration_ms": 2027,
+   "user_visible_ttft_ms": 1364
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1070
+ },
+ "latency_s": 5.8,
+ "timestamp": "2026-08-31T16:51:46"
+}

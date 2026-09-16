@@ -1,0 +1,32 @@
+{
+ "oid": "21170",
+ "description": "The image shows a wide, multi-lane roadway with no visible sidewalks or pedestrian path; the edges are defined by a concrete curb/barrier and red guardrail, so pedestrians would have to walk in/near the roadway. Traffic is separated from the shoulder by the continuous barrier, with tall streetlights along the median/roadway providing lighting, but there is little to no greenery or shade and no visible curb ramps or other accessibility features. The roadway appears smooth and well-marked, yet the lack of pedestrian infrastructure and separation makes it poorly walkable and potentially unsafe.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 118,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 1358,
+   "engine_ttlt_ms": 2906,
+   "pre_inference_ms": 303,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 2002,
+   "service_ttlt_ms": 3546,
+   "user_visible_ttft_ms": 1699
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1102
+ },
+ "latency_s": 6.6,
+ "timestamp": "2026-08-31T16:33:28"
+}

@@ -1,0 +1,122 @@
+{
+ "oid": "11523",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\11523.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\11523_120.494981_31.310117_09002900121705301128561165H_348.36_2017_5_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.1,
+ "usage": {
+  "completion_tokens": 797,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 448,
+   "engine_ttlt_ms": 10959,
+   "pre_inference_ms": 408,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1127,
+   "service_ttlt_ms": 11632,
+   "user_visible_ttft_ms": 719
+  },
+  "prompt_tokens": 5668,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6465
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 71.0,\n      \"equity\": 74.0,\n      \"fairness\": 70.0,\n      \"accessibility\": 69.0\n    },\n    \"safety\": 76.0,\n    \"livability\": 63.0,\n    \"sustainability\": 78.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 72.0,\n    \"walkability\": 66.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"A continuous red-paved side path runs alongside the curved roadway, showing that some right-of-way is allocated to non-motorized users rather than only to cars.\",\n      \"The roadway is visually wide while the side path appears relatively narrow, so spatial distribution still favors motor vehicles more than pedestrians and other slow users.\",\n      \"No visible curb ramps, tactile paving, marked crossings, or resting facilities can be seen in this view, which limits accessibility for a broad range of users despite the presence of the side path.\"\n    ],\n    \"safety\": [\n      \"The road curve is guided by clear yellow centerline and hatched markings, which help organize vehicle movement and reduce confusion.\",\n      \"A raised painted/physical island in the roadway appears to channel traffic and may calm speeds on the bend, improving safety for all road users.\",\n      \"Streetlights are present along the corridor, which supports visibility and perceived safety, although no pedestrian crossing or protective barrier is visible between the road and side path.\"\n    ],\n    \"livability\": [\n      \"The corridor is lined with abundant trees, shrubs, and open green space, creating a pleasant recreational setting.\",\n      \"The mountain backdrop and low-intensity traffic environment suggest a quiet atmosphere, but there are no visible shops, services, benches, or social activity nodes that would support everyday street life.\",\n      \"The scene functions more like a scenic park road than a mixed-use neighborhood street, so daily-use livability is moderate rather than high.\"\n    ],\n    \"sustainability\": [\n      \"Extensive roadside vegetation and tree cover contribute to ecological value and help reduce the hardscape dominance of the corridor.\",\n      \"The presence of a dedicated side path supports walking and potentially low-carbon micromobility instead of exclusive car dependence.\",\n      \"There are no visible transit stops, rain gardens, permeable drainage features, or solar elements in the image, so sustainability benefits come mainly from greenery and active-travel accommodation.\"\n    ],\n    \"aesthetics\": [\n      \"The curving road, mountain view, and layered greenery create a strong scenic quality and visual openness.\",\n      \"The streetscape appears clean and well maintained, with neat pavement edges, trimmed planting, and orderly lane markings.\",\n      \"The simple palette of gray pavement, red side path, yellow markings, and green vegetation gives the corridor a coherent and attractive appearance.\"\n    ],\n    \"comfort\": [\n      \"Trees and shrubs along both sides provide some shade potential and a greener microclimate, improving thermal comfort compared with a fully exposed roadway.\",\n      \"The side path surface appears smooth and continuous, which supports physically comfortable walking or rolling.\",\n      \"However, there are no visible benches, shelters, or dedicated rest areas, and parts of the corridor remain exposed to sun, so comfort is only moderate.\"\n    ],\n    \"walkability\": [\n      \"A continuous side path separated by curb and verge from the main carriageway gives pedestrians a defined place to walk.\",\n      \"The path appears relatively narrow and directly adjacent to a curved road without a substantial buffer, which may reduce walking comfort and perceived safety.\",\n      \"No visible crosswalks, curb ramps, wayfinding signs, benches, or active frontages are present, so route continuity exists but pedestrian support features are limited.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 71.0,
+   "equity": 74.0,
+   "fairness": 70.0,
+   "accessibility": 69.0
+  },
+  "safety": 76.0,
+  "livability": 63.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 72.0,
+  "walkability": 66.0
+ },
+ "scores_flat": {
+  "justice": 71.0,
+  "justice_equity": 74.0,
+  "justice_fairness": 70.0,
+  "justice_accessibility": 69.0,
+  "safety": 76.0,
+  "livability": 63.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 72.0,
+  "walkability": 66.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:14:43+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "A continuous red-paved side path runs alongside the curved roadway, showing that some right-of-way is allocated to non-motorized users rather than only to cars.",
+   "The roadway is visually wide while the side path appears relatively narrow, so spatial distribution still favors motor vehicles more than pedestrians and other slow users.",
+   "No visible curb ramps, tactile paving, marked crossings, or resting facilities can be seen in this view, which limits accessibility for a broad range of users despite the presence of the side path."
+  ],
+  "safety": [
+   "The road curve is guided by clear yellow centerline and hatched markings, which help organize vehicle movement and reduce confusion.",
+   "A raised painted/physical island in the roadway appears to channel traffic and may calm speeds on the bend, improving safety for all road users.",
+   "Streetlights are present along the corridor, which supports visibility and perceived safety, although no pedestrian crossing or protective barrier is visible between the road and side path."
+  ],
+  "livability": [
+   "The corridor is lined with abundant trees, shrubs, and open green space, creating a pleasant recreational setting.",
+   "The mountain backdrop and low-intensity traffic environment suggest a quiet atmosphere, but there are no visible shops, services, benches, or social activity nodes that would support everyday street life.",
+   "The scene functions more like a scenic park road than a mixed-use neighborhood street, so daily-use livability is moderate rather than high."
+  ],
+  "sustainability": [
+   "Extensive roadside vegetation and tree cover contribute to ecological value and help reduce the hardscape dominance of the corridor.",
+   "The presence of a dedicated side path supports walking and potentially low-carbon micromobility instead of exclusive car dependence.",
+   "There are no visible transit stops, rain gardens, permeable drainage features, or solar elements in the image, so sustainability benefits come mainly from greenery and active-travel accommodation."
+  ],
+  "aesthetics": [
+   "The curving road, mountain view, and layered greenery create a strong scenic quality and visual openness.",
+   "The streetscape appears clean and well maintained, with neat pavement edges, trimmed planting, and orderly lane markings.",
+   "The simple palette of gray pavement, red side path, yellow markings, and green vegetation gives the corridor a coherent and attractive appearance."
+  ],
+  "comfort": [
+   "Trees and shrubs along both sides provide some shade potential and a greener microclimate, improving thermal comfort compared with a fully exposed roadway.",
+   "The side path surface appears smooth and continuous, which supports physically comfortable walking or rolling.",
+   "However, there are no visible benches, shelters, or dedicated rest areas, and parts of the corridor remain exposed to sun, so comfort is only moderate."
+  ],
+  "walkability": [
+   "A continuous side path separated by curb and verge from the main carriageway gives pedestrians a defined place to walk.",
+   "The path appears relatively narrow and directly adjacent to a curved road without a substantial buffer, which may reduce walking comfort and perceived safety.",
+   "No visible crosswalks, curb ramps, wayfinding signs, benches, or active frontages are present, so route continuity exists but pedestrian support features are limited."
+  ]
+ }
+}

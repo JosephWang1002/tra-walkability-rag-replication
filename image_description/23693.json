@@ -1,0 +1,33 @@
+{
+ "oid": "23693",
+ "description": "The road has a continuous, fairly wide sidewalk on the right with a smooth, paved surface and a curb separated from the roadway; there are no visible gaps or major surface defects. Traffic appears to be separated by multiple lanes with no physical barrier, but the landscaped median/hedges and the tree-lined verge provide some visual buffering and shade, with regular streetlights along the roadway. No obvious obstacles or accessibility features (e.g., curb ramps) are visible in this view, and the sidewalk looks clear and unobstructed.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 109,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 6,
+   "engine_ttft_ms": 248,
+   "engine_ttlt_ms": 920,
+   "pre_inference_ms": 297,
+   "service_tbt_ms": 6,
+   "service_ttft_ms": 724,
+   "service_ttlt_ms": 1390,
+   "total_duration_ms": 1105,
+   "user_visible_ttft_ms": 427
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1093
+ },
+ "latency_s": 88.8,
+ "timestamp": "2026-08-31T16:50:55"
+}

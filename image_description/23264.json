@@ -1,0 +1,33 @@
+{
+ "oid": "23264",
+ "description": "The road appears to have no dedicated sidewalk in the immediate foreground; the pedestrian area is limited to a narrow, continuous strip of landscaping/grass along the curb with no visible curb ramps or accessible crossing features. Traffic is separated from the greenery by the roadway only, with multiple lanes and no physical barrier, and vehicles are likely to move at moderate speed given the wide, uninterrupted asphalt. There is some shade from roadside trees and streetlights along the median/roadside, but pedestrians would have to walk close to traffic with few safety buffers and no clear walking surface.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 116,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 12,
+   "engine_ttft_ms": 768,
+   "engine_ttlt_ms": 2162,
+   "pre_inference_ms": 391,
+   "service_tbt_ms": 12,
+   "service_ttft_ms": 1523,
+   "service_ttlt_ms": 2928,
+   "total_duration_ms": 2568,
+   "user_visible_ttft_ms": 1132
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1100
+ },
+ "latency_s": 6.0,
+ "timestamp": "2026-08-31T16:45:58"
+}

@@ -1,0 +1,122 @@
+{
+ "oid": "11962",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\11962.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\11962_120.447946_31.347342_09002900011602251227588784E_115.24_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.7,
+ "usage": {
+  "completion_tokens": 914,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 436,
+   "engine_ttlt_ms": 15594,
+   "pre_inference_ms": 355,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1216,
+   "service_ttlt_ms": 16354,
+   "user_visible_ttft_ms": 862
+  },
+  "prompt_tokens": 5153,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4864
+  },
+  "total_tokens": 6067
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 62.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 57.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 42.0,\n    \"sustainability\": 54.0,\n    \"aesthetics\": 68.0,\n    \"comfort\": 49.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The roadway is very wide and highly engineered for motor traffic, while pedestrian space is pushed to the edges as narrow side sidewalks, suggesting spatial resources are distributed more strongly toward vehicles than toward all users equally.\",\n      \"Metal guardrails in the median organize movement and reduce unsafe mid-block crossing, but they also limit direct pedestrian access across the street and can make routes less convenient for non-drivers.\",\n      \"Sidewalks appear paved, continuous, and generally flat along both sides, which supports basic accessibility, but no tactile paving, curb ramps, or other clearly visible barrier-free details can be confirmed from the image.\"\n    ],\n    \"safety\": [\n      \"Lane arrows, center lines, edge lines, and the signalized intersection ahead are all clearly marked, which improves predictability for all road users and reduces conflict at the junction.\",\n      \"The median guardrail provides physical separation between opposing directions and discourages dangerous crossing movements, which can improve traffic safety on this wide road.\",\n      \"Long sightlines, sparse roadside clutter, and open visibility toward the intersection allow drivers and other users to see approaching movements early, although the broad carriageway may still encourage higher vehicle speeds.\"\n    ],\n    \"livability\": [\n      \"The street is bordered mainly by open land, sparse planting, and infrastructure rather than shops, homes, or active frontages, so there is little visible street life or everyday social activity.\",\n      \"No benches, bus stops, kiosks, or gathering spaces are visible along the sidewalks, limiting the street's usefulness as a place to stay rather than just pass through.\",\n      \"The environment reads as a traffic corridor with large paved surfaces and minimal human-scale amenities, which weakens its sense of neighborhood vitality for all social groups.\"\n    ],\n    \"sustainability\": [\n      \"Young street trees and planted strips are present along the roadside and median edges, adding some green infrastructure and long-term ecological value.\",\n      \"However, the trees are small and canopy cover is currently limited, so the visible environmental benefits such as shade, cooling, and stormwater interception appear modest at present.\",\n      \"The dominant feature is a wide multi-lane asphalt roadway designed for motor traffic, and no clearly marked bike lane, bus stop, or other visible low-carbon transport facility can be confirmed in the image.\"\n    ],\n    \"aesthetics\": [\n      \"The road surface is clean, newly paved, and visually orderly, with crisp white lane markings and a well-maintained appearance.\",\n      \"Mountain views in the background and the open sky create a strong scenic backdrop that improves the visual quality of the corridor.\",\n      \"The streetscape is neat but somewhat monotonous because of the large asphalt expanse, sparse tree canopy, utility towers, and limited architectural or pedestrian-scale detail.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears weak because the sidewalks and roadway are highly exposed to direct sun, while the roadside trees are still too small to provide meaningful shade.\",\n      \"Physical comfort for walking is mixed: the sidewalks look smooth and level, but there are no visible benches, shelters, or resting points for users spending time outdoors.\",\n      \"Psychological comfort is reduced by the very wide carriageway, open high-speed road character, and limited human activity, which can make the space feel vehicle-dominated rather than relaxed for everyday pedestrians.\"\n    ],\n    \"walkability\": [\n      \"Sidewalks are visible on both sides and appear continuous and paved, which supports basic pedestrian movement along the corridor.\",\n      \"Walkability is weakened by the large crossing distance at the intersection ahead and the median guardrail, which reduces directness and makes pedestrian movement feel secondary to vehicle flow.\",\n      \"There is little shade, no visible seating, and no active frontage or pedestrian-oriented destinations along the street edge, so the route appears functional for walking but not especially inviting.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 58.0,
+   "equity": 62.0,
+   "fairness": 55.0,
+   "accessibility": 57.0
+  },
+  "safety": 74.0,
+  "livability": 42.0,
+  "sustainability": 54.0,
+  "aesthetics": 68.0,
+  "comfort": 49.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 62.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 57.0,
+  "safety": 74.0,
+  "livability": 42.0,
+  "sustainability": 54.0,
+  "aesthetics": 68.0,
+  "comfort": 49.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:15:59+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The roadway is very wide and highly engineered for motor traffic, while pedestrian space is pushed to the edges as narrow side sidewalks, suggesting spatial resources are distributed more strongly toward vehicles than toward all users equally.",
+   "Metal guardrails in the median organize movement and reduce unsafe mid-block crossing, but they also limit direct pedestrian access across the street and can make routes less convenient for non-drivers.",
+   "Sidewalks appear paved, continuous, and generally flat along both sides, which supports basic accessibility, but no tactile paving, curb ramps, or other clearly visible barrier-free details can be confirmed from the image."
+  ],
+  "safety": [
+   "Lane arrows, center lines, edge lines, and the signalized intersection ahead are all clearly marked, which improves predictability for all road users and reduces conflict at the junction.",
+   "The median guardrail provides physical separation between opposing directions and discourages dangerous crossing movements, which can improve traffic safety on this wide road.",
+   "Long sightlines, sparse roadside clutter, and open visibility toward the intersection allow drivers and other users to see approaching movements early, although the broad carriageway may still encourage higher vehicle speeds."
+  ],
+  "livability": [
+   "The street is bordered mainly by open land, sparse planting, and infrastructure rather than shops, homes, or active frontages, so there is little visible street life or everyday social activity.",
+   "No benches, bus stops, kiosks, or gathering spaces are visible along the sidewalks, limiting the street's usefulness as a place to stay rather than just pass through.",
+   "The environment reads as a traffic corridor with large paved surfaces and minimal human-scale amenities, which weakens its sense of neighborhood vitality for all social groups."
+  ],
+  "sustainability": [
+   "Young street trees and planted strips are present along the roadside and median edges, adding some green infrastructure and long-term ecological value.",
+   "However, the trees are small and canopy cover is currently limited, so the visible environmental benefits such as shade, cooling, and stormwater interception appear modest at present.",
+   "The dominant feature is a wide multi-lane asphalt roadway designed for motor traffic, and no clearly marked bike lane, bus stop, or other visible low-carbon transport facility can be confirmed in the image."
+  ],
+  "aesthetics": [
+   "The road surface is clean, newly paved, and visually orderly, with crisp white lane markings and a well-maintained appearance.",
+   "Mountain views in the background and the open sky create a strong scenic backdrop that improves the visual quality of the corridor.",
+   "The streetscape is neat but somewhat monotonous because of the large asphalt expanse, sparse tree canopy, utility towers, and limited architectural or pedestrian-scale detail."
+  ],
+  "comfort": [
+   "Thermal comfort appears weak because the sidewalks and roadway are highly exposed to direct sun, while the roadside trees are still too small to provide meaningful shade.",
+   "Physical comfort for walking is mixed: the sidewalks look smooth and level, but there are no visible benches, shelters, or resting points for users spending time outdoors.",
+   "Psychological comfort is reduced by the very wide carriageway, open high-speed road character, and limited human activity, which can make the space feel vehicle-dominated rather than relaxed for everyday pedestrians."
+  ],
+  "walkability": [
+   "Sidewalks are visible on both sides and appear continuous and paved, which supports basic pedestrian movement along the corridor.",
+   "Walkability is weakened by the large crossing distance at the intersection ahead and the median guardrail, which reduces directness and makes pedestrian movement feel secondary to vehicle flow.",
+   "There is little shade, no visible seating, and no active frontage or pedestrian-oriented destinations along the street edge, so the route appears functional for walking but not especially inviting."
+  ]
+ }
+}

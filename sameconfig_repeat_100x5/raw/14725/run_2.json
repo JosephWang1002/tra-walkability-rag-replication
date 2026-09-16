@@ -1,0 +1,122 @@
+{
+ "oid": "14725",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\14725.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\14725_120.517978_31.165679_09002900011604131240165275L_44.65_2016_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.7,
+ "usage": {
+  "completion_tokens": 799,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 504,
+   "engine_ttlt_ms": 12723,
+   "pre_inference_ms": 417,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1196,
+   "service_ttlt_ms": 13408,
+   "user_visible_ttft_ms": 779
+  },
+  "prompt_tokens": 5102,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 5901
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 45.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 46.0,\n    \"sustainability\": 52.0,\n    \"aesthetics\": 74.0,\n    \"comfort\": 57.0,\n    \"walkability\": 34.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible space is allocated to motor-vehicle carriageway, with two broad asphalt lanes and centerline markings, while no clear sidewalk is visible for pedestrians.\",\n      \"White bridge railings provide edge protection, but they also show that people walking would have little dedicated space because a separate pedestrian zone is not evident in the image.\",\n      \"Accessibility appears limited because no curb ramps, tactile paving, marked crossings, or other barrier-free pedestrian facilities are visible anywhere on the bridge approach.\"\n    ],\n    \"safety\": [\n      \"The road surface is newly paved and lane markings are clear, which helps drivers maintain position and reduces basic operational risk.\",\n      \"White guardrails on both sides of the bridge create a physical edge barrier that can reduce the chance of vehicles leaving the roadway.\",\n      \"Safety for non-motorized users is weaker because there is no visible separated sidewalk or bike lane, so pedestrians or cyclists would likely share space close to moving traffic.\"\n    ],\n    \"livability\": [\n      \"Large roadside trees ahead add greenery and soften the corridor, which supports a more pleasant everyday street environment.\",\n      \"The scene appears dominated by through-movement infrastructure on a bridge, with no visible benches, storefront activity, public gathering space, or street amenities that support social life.\",\n      \"Low visible traffic volume makes the setting feel calmer at this moment, but the lack of pedestrian-oriented facilities limits its usefulness as a lively public place for all road users.\"\n    ],\n    \"sustainability\": [\n      \"Mature trees along the road contribute shade, carbon uptake, and some ecological value within the corridor.\",\n      \"The absence of visible dedicated transit stops, bike lanes, or pedestrian facilities suggests the street mainly supports motorized travel rather than a broad low-carbon mode mix.\",\n      \"There are no visible permeable paving areas, bioswales, rain gardens, or other stormwater features; the surface is predominantly continuous asphalt.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous white railings on both sides of the bridge create a strong visual rhythm and a neat, orderly appearance.\",\n      \"Large green tree canopies frame the roadway ahead and provide the most attractive visual element in the scene.\",\n      \"The fresh dark asphalt and relatively clean roadway improve visual tidiness, although overhead utility wires slightly reduce visual quality.\"\n    ],\n    \"comfort\": [\n      \"Tree canopy ahead offers some shade potential, but the bridge section in the foreground is exposed and lacks overhead shading, reducing thermal comfort for people outside vehicles.\",\n      \"The asphalt surface looks smooth and even, which supports physical comfort for wheeled movement such as driving or cycling.\",\n      \"Psychological comfort for pedestrians is limited because no dedicated walking zone is visible, so anyone on foot would likely feel exposed beside moving traffic and bridge railings.\"\n    ],\n    \"walkability\": [\n      \"No clearly designated sidewalk is visible on either side of the roadway, which is a major weakness for walking.\",\n      \"There are no visible crosswalks, curb ramps, tactile paving, pedestrian refuge areas, or pedestrian signs to support safe and legible walking movement.\",\n      \"Although the road edge is protected by white railings and trees improve the setting ahead, the corridor reads primarily as a vehicle route rather than a walkable street for all users.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 45.0,
+   "fairness": 40.0,
+   "accessibility": 41.0
+  },
+  "safety": 58.0,
+  "livability": 46.0,
+  "sustainability": 52.0,
+  "aesthetics": 74.0,
+  "comfort": 57.0,
+  "walkability": 34.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 41.0,
+  "safety": 58.0,
+  "livability": 46.0,
+  "sustainability": 52.0,
+  "aesthetics": 74.0,
+  "comfort": 57.0,
+  "walkability": 34.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:24:00+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible space is allocated to motor-vehicle carriageway, with two broad asphalt lanes and centerline markings, while no clear sidewalk is visible for pedestrians.",
+   "White bridge railings provide edge protection, but they also show that people walking would have little dedicated space because a separate pedestrian zone is not evident in the image.",
+   "Accessibility appears limited because no curb ramps, tactile paving, marked crossings, or other barrier-free pedestrian facilities are visible anywhere on the bridge approach."
+  ],
+  "safety": [
+   "The road surface is newly paved and lane markings are clear, which helps drivers maintain position and reduces basic operational risk.",
+   "White guardrails on both sides of the bridge create a physical edge barrier that can reduce the chance of vehicles leaving the roadway.",
+   "Safety for non-motorized users is weaker because there is no visible separated sidewalk or bike lane, so pedestrians or cyclists would likely share space close to moving traffic."
+  ],
+  "livability": [
+   "Large roadside trees ahead add greenery and soften the corridor, which supports a more pleasant everyday street environment.",
+   "The scene appears dominated by through-movement infrastructure on a bridge, with no visible benches, storefront activity, public gathering space, or street amenities that support social life.",
+   "Low visible traffic volume makes the setting feel calmer at this moment, but the lack of pedestrian-oriented facilities limits its usefulness as a lively public place for all road users."
+  ],
+  "sustainability": [
+   "Mature trees along the road contribute shade, carbon uptake, and some ecological value within the corridor.",
+   "The absence of visible dedicated transit stops, bike lanes, or pedestrian facilities suggests the street mainly supports motorized travel rather than a broad low-carbon mode mix.",
+   "There are no visible permeable paving areas, bioswales, rain gardens, or other stormwater features; the surface is predominantly continuous asphalt."
+  ],
+  "aesthetics": [
+   "The continuous white railings on both sides of the bridge create a strong visual rhythm and a neat, orderly appearance.",
+   "Large green tree canopies frame the roadway ahead and provide the most attractive visual element in the scene.",
+   "The fresh dark asphalt and relatively clean roadway improve visual tidiness, although overhead utility wires slightly reduce visual quality."
+  ],
+  "comfort": [
+   "Tree canopy ahead offers some shade potential, but the bridge section in the foreground is exposed and lacks overhead shading, reducing thermal comfort for people outside vehicles.",
+   "The asphalt surface looks smooth and even, which supports physical comfort for wheeled movement such as driving or cycling.",
+   "Psychological comfort for pedestrians is limited because no dedicated walking zone is visible, so anyone on foot would likely feel exposed beside moving traffic and bridge railings."
+  ],
+  "walkability": [
+   "No clearly designated sidewalk is visible on either side of the roadway, which is a major weakness for walking.",
+   "There are no visible crosswalks, curb ramps, tactile paving, pedestrian refuge areas, or pedestrian signs to support safe and legible walking movement.",
+   "Although the road edge is protected by white railings and trees improve the setting ahead, the corridor reads primarily as a vehicle route rather than a walkable street for all users."
+  ]
+ }
+}

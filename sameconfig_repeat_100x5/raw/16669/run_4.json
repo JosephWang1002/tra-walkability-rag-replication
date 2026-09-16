@@ -1,0 +1,122 @@
+{
+ "oid": "16669",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16669.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16669_120.61442_31.324534_09002900121705210818288207H_181.45_2017_5_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.0,
+ "usage": {
+  "completion_tokens": 849,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 419,
+   "engine_ttlt_ms": 12302,
+   "pre_inference_ms": 409,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1121,
+   "service_ttlt_ms": 12998,
+   "user_visible_ttft_ms": 712
+  },
+  "prompt_tokens": 5608,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5504
+  },
+  "total_tokens": 6457
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 38.0,\n      \"equity\": 35.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 39.0\n    },\n    \"safety\": 42.0,\n    \"livability\": 46.0,\n    \"sustainability\": 30.0,\n    \"aesthetics\": 58.0,\n    \"comfort\": 34.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by motor vehicles: a white sedan is parked on the left edge of the lane, another white car occupies the right foreground, and a blue truck is parked on the right, leaving little clearly protected pedestrian space.\",\n      \"Accessibility is weak because no continuous sidewalk, curb ramp, tactile paving, or marked pedestrian zone is visible; the street appears to function as a shared asphalt surface for everyone.\",\n      \"Fairness across road users is limited because pedestrians and riders must mix in the same narrow carriageway with parked vehicles and a scooter stopped near the center, increasing conflict for those not using cars.\"\n    ],\n    \"safety\": [\n      \"There are no visible crosswalks, lane markings, speed-control devices, or pedestrian refuge areas, so movement relies on informal negotiation in a confined space.\",\n      \"Multiple parked vehicles—the left-side sedan, right-side truck, and foreground car—reduce sightlines and create blind spots for people walking through the junction-like open area.\",\n      \"Overhead utility wires and poles visually clutter the scene, while the narrow roadway and mixed presence of scooter, cars, and truck suggest potential conflict points without clear traffic organization.\"\n    ],\n    \"livability\": [\n      \"The low-rise traditional houses and small-scale street environment create a neighborhood character that can support local daily life.\",\n      \"However, the street lacks visible public amenities such as benches, planting strips, play space, or active storefronts, limiting its function as a comfortable social place for all road users.\",\n      \"Vehicle storage occupies much of the visible open space, so the street reads more as a service/access area than a vibrant public realm.\"\n    ],\n    \"sustainability\": [\n      \"There is no visible dedicated cycling lane, transit stop, or pedestrian-priority infrastructure that would strongly support low-carbon travel choices.\",\n      \"Green infrastructure is minimal: only a few trees are visible in the background, with almost no street trees, planting beds, or permeable landscape elements along the roadway.\",\n      \"The street surface appears largely hard asphalt with little shade or stormwater-friendly design visible, suggesting limited environmental performance.\"\n    ],\n    \"aesthetics\": [\n      \"The white-walled, dark-tiled traditional buildings provide a coherent architectural character and a recognizable local identity.\",\n      \"Visual quality is reduced by heavy overhead utility cables crossing the sky and by parked vehicles occupying the foreground view.\",\n      \"The street appears relatively clean and orderly, but the lack of greenery and the dominance of asphalt make the public realm less visually appealing.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because the street is exposed to direct sun, with almost no visible street-tree canopy or shade structures over the walking area.\",\n      \"Physical comfort is limited by the absence of a defined sidewalk, seating, or buffer from vehicles; people would need to walk directly on the asphalt surface.\",\n      \"Psychological comfort is weakened by the enclosed vehicle presence—a scooter in the middle, parked cars on both sides, and a truck at the edge—which can make shared movement feel uncertain and stressful.\"\n    ],\n    \"walkability\": [\n      \"Walkability is low because no continuous sidewalk is visible; pedestrians appear to share the same paved surface with cars, a truck, and a scooter.\",\n      \"There are no marked crossings, curb extensions, or pedestrian wayfinding elements to support safe and legible walking routes.\",\n      \"Shade, street furniture, and active pedestrian-oriented frontage are largely absent, so the environment offers limited comfort or attraction for walking trips.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 38.0,
+   "equity": 35.0,
+   "fairness": 40.0,
+   "accessibility": 39.0
+  },
+  "safety": 42.0,
+  "livability": 46.0,
+  "sustainability": 30.0,
+  "aesthetics": 58.0,
+  "comfort": 34.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 38.0,
+  "justice_equity": 35.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 39.0,
+  "safety": 42.0,
+  "livability": 46.0,
+  "sustainability": 30.0,
+  "aesthetics": 58.0,
+  "comfort": 34.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:32:51+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by motor vehicles: a white sedan is parked on the left edge of the lane, another white car occupies the right foreground, and a blue truck is parked on the right, leaving little clearly protected pedestrian space.",
+   "Accessibility is weak because no continuous sidewalk, curb ramp, tactile paving, or marked pedestrian zone is visible; the street appears to function as a shared asphalt surface for everyone.",
+   "Fairness across road users is limited because pedestrians and riders must mix in the same narrow carriageway with parked vehicles and a scooter stopped near the center, increasing conflict for those not using cars."
+  ],
+  "safety": [
+   "There are no visible crosswalks, lane markings, speed-control devices, or pedestrian refuge areas, so movement relies on informal negotiation in a confined space.",
+   "Multiple parked vehicles—the left-side sedan, right-side truck, and foreground car—reduce sightlines and create blind spots for people walking through the junction-like open area.",
+   "Overhead utility wires and poles visually clutter the scene, while the narrow roadway and mixed presence of scooter, cars, and truck suggest potential conflict points without clear traffic organization."
+  ],
+  "livability": [
+   "The low-rise traditional houses and small-scale street environment create a neighborhood character that can support local daily life.",
+   "However, the street lacks visible public amenities such as benches, planting strips, play space, or active storefronts, limiting its function as a comfortable social place for all road users.",
+   "Vehicle storage occupies much of the visible open space, so the street reads more as a service/access area than a vibrant public realm."
+  ],
+  "sustainability": [
+   "There is no visible dedicated cycling lane, transit stop, or pedestrian-priority infrastructure that would strongly support low-carbon travel choices.",
+   "Green infrastructure is minimal: only a few trees are visible in the background, with almost no street trees, planting beds, or permeable landscape elements along the roadway.",
+   "The street surface appears largely hard asphalt with little shade or stormwater-friendly design visible, suggesting limited environmental performance."
+  ],
+  "aesthetics": [
+   "The white-walled, dark-tiled traditional buildings provide a coherent architectural character and a recognizable local identity.",
+   "Visual quality is reduced by heavy overhead utility cables crossing the sky and by parked vehicles occupying the foreground view.",
+   "The street appears relatively clean and orderly, but the lack of greenery and the dominance of asphalt make the public realm less visually appealing."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because the street is exposed to direct sun, with almost no visible street-tree canopy or shade structures over the walking area.",
+   "Physical comfort is limited by the absence of a defined sidewalk, seating, or buffer from vehicles; people would need to walk directly on the asphalt surface.",
+   "Psychological comfort is weakened by the enclosed vehicle presence—a scooter in the middle, parked cars on both sides, and a truck at the edge—which can make shared movement feel uncertain and stressful."
+  ],
+  "walkability": [
+   "Walkability is low because no continuous sidewalk is visible; pedestrians appear to share the same paved surface with cars, a truck, and a scooter.",
+   "There are no marked crossings, curb extensions, or pedestrian wayfinding elements to support safe and legible walking routes.",
+   "Shade, street furniture, and active pedestrian-oriented frontage are largely absent, so the environment offers limited comfort or attraction for walking trips."
+  ]
+ }
+}

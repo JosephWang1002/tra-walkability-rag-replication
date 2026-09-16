@@ -1,0 +1,196 @@
+{
+ "oid": "12901",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12901_120.489343_31.361085_09002900121904211047156615H_310.25_2019_4_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 5.6,
+  "usage": {
+   "completion_tokens": 155,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 449,
+    "engine_ttlt_ms": 1592,
+    "pre_inference_ms": 397,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 1054,
+    "service_ttlt_ms": 2194,
+    "user_visible_ttft_ms": 657
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1416
+  },
+  "raw": "{\"road_type\":\"neighborhood_street\",\"elements\":{\"sidewalk\":\"true\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"many\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"false\",\"street_lighting\":\"false\",\"greenery\":\"high\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"no_bike_lane\",\"poor_accessibility\",\"no_crossing\",\"high_traffic_exposure\"],\"brief\":\"A narrow paved road runs through a wooded area with many trees and dense greenery along both sides. Large trucks and a motorcycle are visible, and there is a sidewalk-like path but no marked crossing, seating, or bike lane.\"}",
+  "parsed": {
+   "road_type": "neighborhood_street",
+   "elements": {
+    "sidewalk": "true",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "many",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "false",
+    "greenery": "high",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "no_bike_lane",
+    "poor_accessibility",
+    "no_crossing",
+    "high_traffic_exposure"
+   ],
+   "brief": "A narrow paved road runs through a wooded area with many trees and dense greenery along both sides. Large trucks and a motorcycle are visible, and there is a sidewalk-like path but no marked crossing, seating, or bike lane."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A narrow paved road runs through a wooded area with many trees and dense greenery along both sides. Large trucks and a motorcycle are visible, and there is a sidewalk-like path but no marked crossing, seating, or bike lane. Road type: neighborhood_street. Visible elements: sidewalk=true, bike_lane=false, seating=false, shade_trees=many, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=false, greenery=high, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'no_bike_lane', 'poor_accessibility', 'no_crossing', 'high_traffic_exposure']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 16.0,
+  "usage": {
+   "completion_tokens": 736,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 15,
+    "engine_ttft_ms": 467,
+    "engine_ttlt_ms": 11592,
+    "pre_inference_ms": 465,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 1418,
+    "service_ttlt_ms": 12538,
+    "user_visible_ttft_ms": 953
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2623
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 40.0,\n      \"fairness\": 43.0,\n      \"accessibility\": 43.0\n    },\n    \"safety\": 35.0,\n    \"livability\": 38.0,\n    \"sustainability\": 54.0,\n    \"aesthetics\": 63.0,\n    \"comfort\": 49.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The road space is dominated by a large red freight truck on a narrow carriageway, leaving little clearly protected space for pedestrians or other non-motorized users.\",\n      \"There is no visible sidewalk, curb ramp, tactile paving, or marked pedestrian zone, so access appears to favor motor vehicles over a broader range of users.\",\n      \"The right edge has only a narrow shoulder beside trees and leaf litter, which does not provide an equally usable path for people walking, pushing strollers, or using wheelchairs.\"\n    ],\n    \"safety\": [\n      \"A heavy truck occupies much of the narrow roadway, creating potential conflict and limited clearance for opposing traffic and vulnerable users.\",\n      \"There are no visible crosswalks, guardrails, traffic calming devices, or separated pedestrian facilities along the road edge.\",\n      \"A motorcyclist appears to share the same constrained lane space with large vehicles, indicating mixed traffic conditions with limited protection.\"\n    ],\n    \"livability\": [\n      \"Dense roadside trees and surrounding greenery provide a natural setting, which supports environmental quality.\",\n      \"However, the scene lacks visible benches, shops, bus stops, lighting, or community-facing amenities that would support everyday street life.\",\n      \"The roadway appears oriented mainly to through traffic, especially freight movement, rather than social activity or daily pedestrian use.\"\n    ],\n    \"sustainability\": [\n      \"The substantial tree canopy and continuous vegetation along both sides contribute to shade, habitat value, and carbon absorption.\",\n      \"The absence of visible bike lanes, transit stops, or pedestrian infrastructure limits support for low-carbon travel choices beyond private or freight vehicles.\",\n      \"The roadside remains largely permeable and green rather than fully paved, which is a positive sign for ecological performance.\"\n    ],\n    \"aesthetics\": [\n      \"Large mature trees on the right and dense green vegetation on the left create a visually rich and natural corridor.\",\n      \"The street has a relatively uncluttered appearance, with few signs, poles, or overhead wires interrupting the view.\",\n      \"Fallen leaves along the edge and the dominance of heavy trucks reduce visual refinement and make the corridor feel more utilitarian than designed.\"\n    ],\n    \"comfort\": [\n      \"The mature trees provide meaningful shade on the right side, which likely improves thermal comfort in warm weather.\",\n      \"There is no visible sidewalk, seating, or dedicated resting space, reducing physical comfort for anyone traveling outside a vehicle.\",\n      \"The presence of large trucks on a narrow road likely increases noise, perceived danger, and psychological stress for all road users.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk or marked pedestrian path is visible, so walking space appears discontinuous and exposed to traffic.\",\n      \"The road edge on the right is narrow and partly covered with leaves, making it less comfortable and less predictable for walking.\",\n      \"There are no visible crossings, pedestrian signs, or buffers separating walkers from heavy vehicles, which strongly weakens walkability.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 42.0,
+    "equity": 40.0,
+    "fairness": 43.0,
+    "accessibility": 43.0
+   },
+   "safety": 35.0,
+   "livability": 38.0,
+   "sustainability": 54.0,
+   "aesthetics": 63.0,
+   "comfort": 49.0,
+   "walkability": 28.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The road space is dominated by a large red freight truck on a narrow carriageway, leaving little clearly protected space for pedestrians or other non-motorized users.",
+    "There is no visible sidewalk, curb ramp, tactile paving, or marked pedestrian zone, so access appears to favor motor vehicles over a broader range of users.",
+    "The right edge has only a narrow shoulder beside trees and leaf litter, which does not provide an equally usable path for people walking, pushing strollers, or using wheelchairs."
+   ],
+   "safety": [
+    "A heavy truck occupies much of the narrow roadway, creating potential conflict and limited clearance for opposing traffic and vulnerable users.",
+    "There are no visible crosswalks, guardrails, traffic calming devices, or separated pedestrian facilities along the road edge.",
+    "A motorcyclist appears to share the same constrained lane space with large vehicles, indicating mixed traffic conditions with limited protection."
+   ],
+   "livability": [
+    "Dense roadside trees and surrounding greenery provide a natural setting, which supports environmental quality.",
+    "However, the scene lacks visible benches, shops, bus stops, lighting, or community-facing amenities that would support everyday street life.",
+    "The roadway appears oriented mainly to through traffic, especially freight movement, rather than social activity or daily pedestrian use."
+   ],
+   "sustainability": [
+    "The substantial tree canopy and continuous vegetation along both sides contribute to shade, habitat value, and carbon absorption.",
+    "The absence of visible bike lanes, transit stops, or pedestrian infrastructure limits support for low-carbon travel choices beyond private or freight vehicles.",
+    "The roadside remains largely permeable and green rather than fully paved, which is a positive sign for ecological performance."
+   ],
+   "aesthetics": [
+    "Large mature trees on the right and dense green vegetation on the left create a visually rich and natural corridor.",
+    "The street has a relatively uncluttered appearance, with few signs, poles, or overhead wires interrupting the view.",
+    "Fallen leaves along the edge and the dominance of heavy trucks reduce visual refinement and make the corridor feel more utilitarian than designed."
+   ],
+   "comfort": [
+    "The mature trees provide meaningful shade on the right side, which likely improves thermal comfort in warm weather.",
+    "There is no visible sidewalk, seating, or dedicated resting space, reducing physical comfort for anyone traveling outside a vehicle.",
+    "The presence of large trucks on a narrow road likely increases noise, perceived danger, and psychological stress for all road users."
+   ],
+   "walkability": [
+    "No continuous sidewalk or marked pedestrian path is visible, so walking space appears discontinuous and exposed to traffic.",
+    "The road edge on the right is narrow and partly covered with leaves, making it less comfortable and less predictable for walking.",
+    "There are no visible crossings, pedestrian signs, or buffers separating walkers from heavy vehicles, which strongly weakens walkability."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 40.0,
+  "justice_fairness": 43.0,
+  "justice_accessibility": 43.0,
+  "safety": 35.0,
+  "livability": 38.0,
+  "sustainability": 54.0,
+  "aesthetics": 63.0,
+  "comfort": 49.0,
+  "walkability": 28.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T13:56:36+00:00",
+  "step2": "2026-09-03T13:56:36+00:00",
+  "step3": "2026-09-03T13:56:52+00:00",
+  "completed": "2026-09-03T13:56:52+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12901.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

@@ -1,0 +1,122 @@
+{
+ "oid": "16164",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16164.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16164_120.611437_31.215255_09002900121707181046520496G_21.83_2017_7_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.0,
+ "usage": {
+  "completion_tokens": 841,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 453,
+   "engine_ttlt_ms": 11803,
+   "pre_inference_ms": 376,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1138,
+   "service_ttlt_ms": 12554,
+   "user_visible_ttft_ms": 762
+  },
+  "prompt_tokens": 5258,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6099
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 46.0,\n      \"equity\": 45.0,\n      \"fairness\": 48.0,\n      \"accessibility\": 45.0\n    },\n    \"safety\": 52.0,\n    \"livability\": 42.0,\n    \"sustainability\": 44.0,\n    \"aesthetics\": 58.0,\n    \"comfort\": 49.0,\n    \"walkability\": 40.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible street space is allocated to a wide asphalt carriageway, while there is no clearly continuous sidewalk on either side, suggesting an uneven distribution of space for non-motorized users.\",\n      \"The left edge has only a narrow paved strip beside the building entrance, and the right edge is mainly curb and planting, so pedestrians do not appear to receive the same dedicated facilities as vehicles.\",\n      \"No visible curb ramps, tactile paving, marked crossings, or other barrier-free elements can be identified in the scene, which weakens accessibility for a broad range of users.\"\n    ],\n    \"safety\": [\n      \"Motor traffic appears light and the internal road is relatively open, which may reduce immediate collision risk compared with a busy arterial street.\",\n      \"There are no marked pedestrian crossings, speed humps, bollards, or other traffic-calming devices visible on the roadway, so pedestrian priority is unclear.\",\n      \"The walking edge is poorly defined because the asphalt road blends directly into curbs, planting beds, and building frontage, increasing potential conflict between vehicles and people on foot.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by service-road asphalt, fenced edges, and blank building facades rather than active frontages, shops, or public amenities that support everyday street life.\",\n      \"Some trees and planted strips are present along the right side and center island, adding a small amount of environmental quality to an otherwise utilitarian space.\",\n      \"No benches, bus stops, outdoor seating, or visible social activity are present, so the street offers limited support for lingering, meeting, or daily neighborhood use.\"\n    ],\n    \"sustainability\": [\n      \"The visible trees, shrubs, and planted verge provide some greenery and likely modest ecological benefit compared with a fully paved environment.\",\n      \"However, the street remains heavily paved with asphalt and there are no visible permeable surfaces, bioswales, or rainwater-management features.\",\n      \"No bike lane, bus stop, or other clear support for low-carbon travel modes is visible, limiting the street's contribution to sustainable mobility.\"\n    ],\n    \"aesthetics\": [\n      \"The trees and landscaped planting beds soften the scene and provide some visual relief along the road edge and center island.\",\n      \"Building forms are relatively orderly and the street appears fairly clean, with little visible litter or visual clutter.\",\n      \"At the same time, large expanses of worn asphalt, fencing on the right, and plain building walls create a functional but not especially attractive streetscape.\"\n    ],\n    \"comfort\": [\n      \"Tree planting exists, but shade coverage over the roadway and walking edges is limited, so thermal comfort appears only moderate under sunny conditions.\",\n      \"The road surface looks mostly flat, yet there is no clearly designated pedestrian path with comfortable paving, which reduces physical comfort for walking.\",\n      \"The area appears quiet and uncrowded, which likely improves psychological comfort, but the sparse amenities and inactive edges make the space feel more utilitarian than welcoming.\"\n    ],\n    \"walkability\": [\n      \"A continuous, clearly separated sidewalk is not visible; pedestrians would likely need to share or closely track the asphalt roadway for part of the route.\",\n      \"There are no visible crosswalk markings, pedestrian signs, or curb ramps to support safe and legible walking movement through the space.\",\n      \"Although the street seems low-speed and lightly trafficked, the lack of dedicated pedestrian infrastructure, frontage activity, and shade limits overall walkability.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 46.0,
+   "equity": 45.0,
+   "fairness": 48.0,
+   "accessibility": 45.0
+  },
+  "safety": 52.0,
+  "livability": 42.0,
+  "sustainability": 44.0,
+  "aesthetics": 58.0,
+  "comfort": 49.0,
+  "walkability": 40.0
+ },
+ "scores_flat": {
+  "justice": 46.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 48.0,
+  "justice_accessibility": 45.0,
+  "safety": 52.0,
+  "livability": 42.0,
+  "sustainability": 44.0,
+  "aesthetics": 58.0,
+  "comfort": 49.0,
+  "walkability": 40.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:27:56+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible street space is allocated to a wide asphalt carriageway, while there is no clearly continuous sidewalk on either side, suggesting an uneven distribution of space for non-motorized users.",
+   "The left edge has only a narrow paved strip beside the building entrance, and the right edge is mainly curb and planting, so pedestrians do not appear to receive the same dedicated facilities as vehicles.",
+   "No visible curb ramps, tactile paving, marked crossings, or other barrier-free elements can be identified in the scene, which weakens accessibility for a broad range of users."
+  ],
+  "safety": [
+   "Motor traffic appears light and the internal road is relatively open, which may reduce immediate collision risk compared with a busy arterial street.",
+   "There are no marked pedestrian crossings, speed humps, bollards, or other traffic-calming devices visible on the roadway, so pedestrian priority is unclear.",
+   "The walking edge is poorly defined because the asphalt road blends directly into curbs, planting beds, and building frontage, increasing potential conflict between vehicles and people on foot."
+  ],
+  "livability": [
+   "The scene is dominated by service-road asphalt, fenced edges, and blank building facades rather than active frontages, shops, or public amenities that support everyday street life.",
+   "Some trees and planted strips are present along the right side and center island, adding a small amount of environmental quality to an otherwise utilitarian space.",
+   "No benches, bus stops, outdoor seating, or visible social activity are present, so the street offers limited support for lingering, meeting, or daily neighborhood use."
+  ],
+  "sustainability": [
+   "The visible trees, shrubs, and planted verge provide some greenery and likely modest ecological benefit compared with a fully paved environment.",
+   "However, the street remains heavily paved with asphalt and there are no visible permeable surfaces, bioswales, or rainwater-management features.",
+   "No bike lane, bus stop, or other clear support for low-carbon travel modes is visible, limiting the street's contribution to sustainable mobility."
+  ],
+  "aesthetics": [
+   "The trees and landscaped planting beds soften the scene and provide some visual relief along the road edge and center island.",
+   "Building forms are relatively orderly and the street appears fairly clean, with little visible litter or visual clutter.",
+   "At the same time, large expanses of worn asphalt, fencing on the right, and plain building walls create a functional but not especially attractive streetscape."
+  ],
+  "comfort": [
+   "Tree planting exists, but shade coverage over the roadway and walking edges is limited, so thermal comfort appears only moderate under sunny conditions.",
+   "The road surface looks mostly flat, yet there is no clearly designated pedestrian path with comfortable paving, which reduces physical comfort for walking.",
+   "The area appears quiet and uncrowded, which likely improves psychological comfort, but the sparse amenities and inactive edges make the space feel more utilitarian than welcoming."
+  ],
+  "walkability": [
+   "A continuous, clearly separated sidewalk is not visible; pedestrians would likely need to share or closely track the asphalt roadway for part of the route.",
+   "There are no visible crosswalk markings, pedestrian signs, or curb ramps to support safe and legible walking movement through the space.",
+   "Although the street seems low-speed and lightly trafficked, the lack of dedicated pedestrian infrastructure, frontage activity, and shade limits overall walkability."
+  ]
+ }
+}

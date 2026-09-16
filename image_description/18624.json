@@ -1,0 +1,33 @@
+{
+ "oid": "18624",
+ "description": "The image shows a multi-lane roadway with no visible pedestrian sidewalk along either side; the curb line is bordered by a planted median/strip with low shrubs and flowers. Traffic is separated from pedestrians only by the curb and landscaped edge, with no barriers or marked pedestrian crossings visible, and the road appears to have relatively high-speed, uninterrupted vehicle space. Street lighting is present via tall poles, but there are no clear accessibility features (e.g., curb ramps) or pedestrian amenities, and the right side includes a fenced/utility area that could be an obstacle near the roadway.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 119,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 726,
+   "engine_ttlt_ms": 2473,
+   "pre_inference_ms": 342,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1451,
+   "service_ttlt_ms": 3194,
+   "total_duration_ms": 2859,
+   "user_visible_ttft_ms": 1110
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1103
+ },
+ "latency_s": 5.7,
+ "timestamp": "2026-08-31T16:23:51"
+}

@@ -1,0 +1,122 @@
+{
+ "oid": "16322",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16322.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16322_120.524645_31.219509_0900290012220830150933060AH_357.23_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.6,
+ "usage": {
+  "completion_tokens": 897,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 701,
+   "engine_ttlt_ms": 13727,
+   "pre_inference_ms": 284,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1219,
+   "service_ttlt_ms": 14242,
+   "user_visible_ttft_ms": 935
+  },
+  "prompt_tokens": 5260,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6157
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 38.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 43.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 34.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 49.0,\n    \"comfort\": 41.0,\n    \"walkability\": 22.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is allocated to multiple wide motor-vehicle lanes under the viaduct, while no sidewalk, crosswalk, or pedestrian zone is visible in the frame, indicating an uneven distribution of space across road users.\",\n      \"Lane arrows and broad carriageway markings are clear for drivers, but there is no visible dedicated space for pedestrians or cyclists, suggesting the street design prioritizes motor traffic over other users.\",\n      \"No curb ramps, tactile paving, refuge islands, or other barrier-free pedestrian facilities are visible, so accessibility for the full range of road users cannot be considered well supported from the image.\"\n    ],\n    \"safety\": [\n      \"The road surface appears smooth and lane arrows are clearly marked, which supports orderly vehicle movement and reduces ambiguity for drivers.\",\n      \"A large box truck occupies the left foreground and creates a substantial visual obstruction, which can reduce sight lines between road users and increase conflict risk.\",\n      \"The elevated structure overhead darkens part of the roadway and creates a tunnel-like environment; while streetlights are present, the under-viaduct setting may reduce visibility and perceived safety compared with an open street.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by a wide asphalt roadway, an elevated viaduct, and moving vehicles, with no visible storefronts, seating, public gathering spaces, or active street frontage that would support everyday street life.\",\n      \"Greenery is present in the median and roadside planting strips, but it functions mainly as roadside landscaping rather than usable public space.\",\n      \"There are no visible pedestrians, benches, bus stops, or community-oriented amenities in the frame, making the environment appear oriented to through-traffic rather than social or neighborhood activity.\"\n    ],\n    \"sustainability\": [\n      \"Rows of trees and shrubs along the roadside and median provide some green infrastructure and modest ecological value compared with a fully paved corridor.\",\n      \"No bike lane, bus stop, transit shelter, or other visible support for low-carbon travel modes appears in the image, so sustainable mobility options are not evident.\",\n      \"The very wide multi-lane carriageway and grade-separated viaduct indicate a high-investment auto-oriented corridor, which generally reflects a transport environment centered on motorized travel.\"\n    ],\n    \"aesthetics\": [\n      \"The linear rhythm of viaduct columns, lane markings, and evenly spaced light poles creates a certain visual order and coherence.\",\n      \"Roadside trees and trimmed shrubs soften the corridor somewhat and add color contrast to the gray pavement and concrete structure.\",\n      \"However, the massive overhead viaduct, large truck in the foreground, and expansive asphalt surface make the overall scene feel heavy and infrastructural rather than visually inviting.\"\n    ],\n    \"comfort\": [\n      \"The viaduct provides continuous overhead shade, which may reduce direct solar exposure for users on the carriageway and slightly improve thermal comfort in hot weather.\",\n      \"At the same time, the environment appears dominated by motor traffic, including a large truck and several cars, which likely increases noise, exhaust exposure, and psychological discomfort for non-motorized users.\",\n      \"No visible benches, sheltered pedestrian waiting areas, or separated walking space are present, so physical comfort for people outside vehicles appears poor.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk is clearly visible within the main field of view, and there is no marked pedestrian crossing across the wide roadway, which strongly limits walkability.\",\n      \"The corridor consists of several wide traffic lanes beneath an elevated road, creating long crossing distances and an environment that is difficult and unattractive for walking.\",\n      \"There are no visible pedestrian-scale features such as curb extensions, benches, active frontages, or wayfinding elements that would support a comfortable walking experience.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 38.0,
+   "fairness": 45.0,
+   "accessibility": 43.0
+  },
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 46.0,
+  "aesthetics": 49.0,
+  "comfort": 41.0,
+  "walkability": 22.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 43.0,
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 46.0,
+  "aesthetics": 49.0,
+  "comfort": 41.0,
+  "walkability": 22.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:29:20+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is allocated to multiple wide motor-vehicle lanes under the viaduct, while no sidewalk, crosswalk, or pedestrian zone is visible in the frame, indicating an uneven distribution of space across road users.",
+   "Lane arrows and broad carriageway markings are clear for drivers, but there is no visible dedicated space for pedestrians or cyclists, suggesting the street design prioritizes motor traffic over other users.",
+   "No curb ramps, tactile paving, refuge islands, or other barrier-free pedestrian facilities are visible, so accessibility for the full range of road users cannot be considered well supported from the image."
+  ],
+  "safety": [
+   "The road surface appears smooth and lane arrows are clearly marked, which supports orderly vehicle movement and reduces ambiguity for drivers.",
+   "A large box truck occupies the left foreground and creates a substantial visual obstruction, which can reduce sight lines between road users and increase conflict risk.",
+   "The elevated structure overhead darkens part of the roadway and creates a tunnel-like environment; while streetlights are present, the under-viaduct setting may reduce visibility and perceived safety compared with an open street."
+  ],
+  "livability": [
+   "The scene is dominated by a wide asphalt roadway, an elevated viaduct, and moving vehicles, with no visible storefronts, seating, public gathering spaces, or active street frontage that would support everyday street life.",
+   "Greenery is present in the median and roadside planting strips, but it functions mainly as roadside landscaping rather than usable public space.",
+   "There are no visible pedestrians, benches, bus stops, or community-oriented amenities in the frame, making the environment appear oriented to through-traffic rather than social or neighborhood activity."
+  ],
+  "sustainability": [
+   "Rows of trees and shrubs along the roadside and median provide some green infrastructure and modest ecological value compared with a fully paved corridor.",
+   "No bike lane, bus stop, transit shelter, or other visible support for low-carbon travel modes appears in the image, so sustainable mobility options are not evident.",
+   "The very wide multi-lane carriageway and grade-separated viaduct indicate a high-investment auto-oriented corridor, which generally reflects a transport environment centered on motorized travel."
+  ],
+  "aesthetics": [
+   "The linear rhythm of viaduct columns, lane markings, and evenly spaced light poles creates a certain visual order and coherence.",
+   "Roadside trees and trimmed shrubs soften the corridor somewhat and add color contrast to the gray pavement and concrete structure.",
+   "However, the massive overhead viaduct, large truck in the foreground, and expansive asphalt surface make the overall scene feel heavy and infrastructural rather than visually inviting."
+  ],
+  "comfort": [
+   "The viaduct provides continuous overhead shade, which may reduce direct solar exposure for users on the carriageway and slightly improve thermal comfort in hot weather.",
+   "At the same time, the environment appears dominated by motor traffic, including a large truck and several cars, which likely increases noise, exhaust exposure, and psychological discomfort for non-motorized users.",
+   "No visible benches, sheltered pedestrian waiting areas, or separated walking space are present, so physical comfort for people outside vehicles appears poor."
+  ],
+  "walkability": [
+   "No sidewalk is clearly visible within the main field of view, and there is no marked pedestrian crossing across the wide roadway, which strongly limits walkability.",
+   "The corridor consists of several wide traffic lanes beneath an elevated road, creating long crossing distances and an environment that is difficult and unattractive for walking.",
+   "There are no visible pedestrian-scale features such as curb extensions, benches, active frontages, or wayfinding elements that would support a comfortable walking experience."
+  ]
+ }
+}

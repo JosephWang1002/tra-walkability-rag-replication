@@ -1,0 +1,122 @@
+{
+ "oid": "14460",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\14460.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\14460_120.602574_31.127754_09002900122004030916584607I_54.47_2020_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 23.5,
+ "usage": {
+  "completion_tokens": 773,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 474,
+   "engine_ttlt_ms": 12549,
+   "pre_inference_ms": 487,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1250,
+   "service_ttlt_ms": 13302,
+   "user_visible_ttft_ms": 763
+  },
+  "prompt_tokens": 5243,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6016
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 49.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 63.0,\n    \"sustainability\": 78.0,\n    \"aesthetics\": 86.0,\n    \"comfort\": 74.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street space is generously landscaped on both sides with continuous tree rows, shrubs, and wide green verges, showing substantial public investment in the corridor.\",\n      \"Most visible space is allocated to the carriageway, while no clearly visible sidewalk, marked crossing, or dedicated pedestrian zone can be confirmed from the photo, which weakens equitable support for non-driving users.\",\n      \"Accessibility appears limited because curb ramps, tactile paving, and any barrier-free crossing facilities are not visible, so inclusive access for all road users cannot be verified.\"\n    ],\n    \"safety\": [\n      \"The roadway is smooth, well maintained, and clearly organized by double yellow centerlines, which supports predictable vehicle movement.\",\n      \"Long sightlines along the gently curving road and the absence of visible parked cars reduce immediate conflict points for all road users.\",\n      \"Safety for pedestrians is less certain because no zebra crossing, pedestrian signal, refuge island, or clearly visible sidewalk edge is evident in the image.\"\n    ],\n    \"livability\": [\n      \"Extensive greenery on both sides, including mature trees, hedges, and planted medians/verges, creates a calm and pleasant everyday environment.\",\n      \"The corridor appears quiet and low in traffic at the moment captured, which can improve perceived neighborhood quality.\",\n      \"Livability is moderated by the lack of visible active frontages, seating, shops, or social spaces; the scene reads more as a landscaped road than a socially vibrant street.\"\n    ],\n    \"sustainability\": [\n      \"The dense tree canopy and continuous planted edges provide visible green infrastructure that can support shade, cooling, and ecological value.\",\n      \"The street landscaping is extensive and well maintained, with multiple layers of vegetation including trees, shrubs, and groundcover.\",\n      \"Sustainability is reduced somewhat because no visible bike lane, bus stop, or other clearly marked low-carbon transport facility can be identified from the image.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has strong visual coherence, with evenly spaced street trees and continuous trimmed planting along both sides.\",\n      \"The road surface and landscape appear clean and well maintained, contributing to a polished streetscape image.\",\n      \"The gentle curve of the road, framed by greenery and distant buildings, creates an attractive and orderly composition.\"\n    ],\n    \"comfort\": [\n      \"Rows of trees on both sides provide substantial shade potential, which supports thermal comfort during warm weather.\",\n      \"The asphalt surface appears smooth and even, suggesting comfortable movement for vehicles and potentially for walking where pedestrian space exists.\",\n      \"Psychological comfort benefits from the quiet, uncrowded setting and abundant greenery, though comfort for pedestrians is limited by the lack of clearly visible benches or dedicated walking space.\"\n    ],\n    \"walkability\": [\n      \"Walkability is constrained because a continuous sidewalk cannot be clearly identified on either side of the road from this image.\",\n      \"No marked pedestrian crossing, curb extension, refuge island, or pedestrian signal is visible, so crossing convenience appears weak.\",\n      \"Although the tree-lined setting is pleasant and shaded, the visible design reads primarily as a vehicle corridor rather than a clearly walk-prioritized street.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 55.0,
+   "accessibility": 49.0
+  },
+  "safety": 66.0,
+  "livability": 63.0,
+  "sustainability": 78.0,
+  "aesthetics": 86.0,
+  "comfort": 74.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 49.0,
+  "safety": 66.0,
+  "livability": 63.0,
+  "sustainability": 78.0,
+  "aesthetics": 86.0,
+  "comfort": 74.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:23:31+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street space is generously landscaped on both sides with continuous tree rows, shrubs, and wide green verges, showing substantial public investment in the corridor.",
+   "Most visible space is allocated to the carriageway, while no clearly visible sidewalk, marked crossing, or dedicated pedestrian zone can be confirmed from the photo, which weakens equitable support for non-driving users.",
+   "Accessibility appears limited because curb ramps, tactile paving, and any barrier-free crossing facilities are not visible, so inclusive access for all road users cannot be verified."
+  ],
+  "safety": [
+   "The roadway is smooth, well maintained, and clearly organized by double yellow centerlines, which supports predictable vehicle movement.",
+   "Long sightlines along the gently curving road and the absence of visible parked cars reduce immediate conflict points for all road users.",
+   "Safety for pedestrians is less certain because no zebra crossing, pedestrian signal, refuge island, or clearly visible sidewalk edge is evident in the image."
+  ],
+  "livability": [
+   "Extensive greenery on both sides, including mature trees, hedges, and planted medians/verges, creates a calm and pleasant everyday environment.",
+   "The corridor appears quiet and low in traffic at the moment captured, which can improve perceived neighborhood quality.",
+   "Livability is moderated by the lack of visible active frontages, seating, shops, or social spaces; the scene reads more as a landscaped road than a socially vibrant street."
+  ],
+  "sustainability": [
+   "The dense tree canopy and continuous planted edges provide visible green infrastructure that can support shade, cooling, and ecological value.",
+   "The street landscaping is extensive and well maintained, with multiple layers of vegetation including trees, shrubs, and groundcover.",
+   "Sustainability is reduced somewhat because no visible bike lane, bus stop, or other clearly marked low-carbon transport facility can be identified from the image."
+  ],
+  "aesthetics": [
+   "The avenue has strong visual coherence, with evenly spaced street trees and continuous trimmed planting along both sides.",
+   "The road surface and landscape appear clean and well maintained, contributing to a polished streetscape image.",
+   "The gentle curve of the road, framed by greenery and distant buildings, creates an attractive and orderly composition."
+  ],
+  "comfort": [
+   "Rows of trees on both sides provide substantial shade potential, which supports thermal comfort during warm weather.",
+   "The asphalt surface appears smooth and even, suggesting comfortable movement for vehicles and potentially for walking where pedestrian space exists.",
+   "Psychological comfort benefits from the quiet, uncrowded setting and abundant greenery, though comfort for pedestrians is limited by the lack of clearly visible benches or dedicated walking space."
+  ],
+  "walkability": [
+   "Walkability is constrained because a continuous sidewalk cannot be clearly identified on either side of the road from this image.",
+   "No marked pedestrian crossing, curb extension, refuge island, or pedestrian signal is visible, so crossing convenience appears weak.",
+   "Although the tree-lined setting is pleasant and shaded, the visible design reads primarily as a vehicle corridor rather than a clearly walk-prioritized street."
+  ]
+ }
+}

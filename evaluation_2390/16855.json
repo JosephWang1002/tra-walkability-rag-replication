@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 55,
+      "equity": 58,
+      "fairness": 52,
+      "accessibility": 55
+    },
+    "safety": 60,
+    "livability": 62,
+    "sustainability": 52,
+    "aesthetics": 57,
+    "comfort": 50,
+    "walkability": 58,
+    "bikeability": 40
+  },
+  "explanations": {
+    "justice": [
+      "Road space is primarily allocated to motor vehicles (multiple general lanes with many cars and a truck), while dedicated space for cyclists is not visible, indicating uneven distribution across user types.",
+      "Sidewalks exist on both sides with continuous building frontage, suggesting pedestrians are provided for, but the sidewalks appear narrow and partly constrained by storefront edges and parked scooters near the right-hand curb.",
+      "Barrier-free features (e.g., curb ramps, tactile paving) are not visible in the scene, making universal accessibility uncertain for users with mobility/vision needs."
+    ],
+    "safety": [
+      "A planted median/strip separates opposing flows and creates a buffer near the right edge, which can reduce head-on conflict and some encroachment.",
+      "Mixed traffic includes a large truck and multiple cars on a relatively narrow corridor, increasing perceived risk for pedestrians crossing and for two-wheelers riding near the curb.",
+      "Strong sun glare and haze reduce visibility down the corridor, which can increase crash risk for all road users, especially at driveways and crossings not clearly marked in the image."
+    ],
+    "livability": [
+      "Active ground-floor commercial frontage on the right (shop signs and entrances) can support daily needs and street activity for multiple user types.",
+      "The street appears noisy/traffic-dominant with steady vehicle flow, which can reduce the suitability for lingering and social interaction along the curbside.",
+      "Presence of small planted greenery along the roadside provides some visual softening and separation from traffic, modestly improving day-to-day street experience."
+    ],
+    "sustainability": [
+      "Greenery is limited to low shrubs/planters; there is little tree canopy visible, limiting cooling, habitat value, and air-quality co-benefits.",
+      "No clear public transport stop infrastructure or bus lanes are visible, suggesting the corridor is oriented toward private motor traffic rather than low-carbon modes.",
+      "Lack of visible protected cycling infrastructure likely suppresses cycling uptake, reducing the mode-share potential for sustainable mobility."
+    ],
+    "aesthetics": [
+      "Building facades are utilitarian and somewhat visually cluttered (dense signage and repetitive windows), reducing overall visual coherence.",
+      "The planted strip provides a cleaner, more organized edge condition than a fully hardscaped street, adding some visual order.",
+      "Harsh lighting and glare dominate the scene, washing out detail and reducing perceived streetscape quality despite an otherwise orderly corridor."
+    ],
+    "comfort": [
+      "Thermal comfort is weak: minimal tree shade and strong direct sunlight/glare indicate high heat exposure for pedestrians and cyclists.",
+      "Physical comfort for pedestrians appears limited by narrow sidewalk conditions and curbside clutter (scooters/objects near storefronts on the right).",
+      "Psychological comfort is moderated by traffic proximity and speed cues (multiple vehicles and a truck nearby), which can feel stressful for non-motorized users."
+    ],
+    "walkability": [
+      "Sidewalks are present on both sides, supporting basic pedestrian movement along the corridor.",
+      "Crossing support is unclear: no visible marked crosswalks, pedestrian signals, or refuge islands at an intersection in the frame, reducing comfortable connectivity across the street.",
+      "Traffic-heavy conditions and limited shade reduce the attractiveness of walking, especially during hot/sunny periods."
+    ],
+    "bikeability": [
+      "No dedicated or protected bike lane markings are visible; cyclists would likely need to mix with cars and trucks, substantially lowering perceived safety.",
+      "Curbside conditions (parked scooters/edge activity near the right) can create dooring/obstacle risks for cyclists riding close to the curb.",
+      "Intersection/turning management for bikes is not visible (no bike boxes, colored lanes, or signage), reducing legibility and priority for cycling movements."
+    ]
+  },
+  "image_id": "img-1776945871490-jdmnr5jsm",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T12:20:49.571Z",
+  "record_id": "0404adfa0b2e490d86665b62ccfeedf9",
+  "stored_image_url": "/storage/records/0404adfa0b2e490d86665b62ccfeedf9/image.jpg",
+  "stored_thumb_url": "/storage/records/0404adfa0b2e490d86665b62ccfeedf9/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T12:21:38.597Z"
+}

@@ -1,0 +1,32 @@
+{
+ "oid": "18130",
+ "description": "The pedestrian path here is a narrow, cracked concrete/gravel lane with no clear curb or continuous sidewalk; it appears uneven and partially bordered by loose gravel and vegetation, which could create trip hazards. There is no visible traffic separation—vehicles share the roadway with no barriers or marked lanes—and the area has limited lighting (none visible) and minimal built accessibility features such as curb cuts or ramps. Dense greenery along both sides provides some visual buffer and potential shade, but the overall walking environment looks rural/low-infrastructure with few safety amenities.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 111,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 10,
+   "engine_ttft_ms": 170,
+   "engine_ttlt_ms": 1291,
+   "pre_inference_ms": 467,
+   "service_tbt_ms": 10,
+   "service_ttft_ms": 766,
+   "service_ttlt_ms": 1868,
+   "user_visible_ttft_ms": 299
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1095
+ },
+ "latency_s": 4.8,
+ "timestamp": "2026-08-31T16:21:14"
+}

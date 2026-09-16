@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 48,
+      "equity": 50,
+      "fairness": 49,
+      "accessibility": 45
+    },
+    "safety": 47,
+    "livability": 58,
+    "sustainability": 48,
+    "aesthetics": 45,
+    "comfort": 46,
+    "walkability": 49,
+    "bikeability": 42
+  },
+  "explanations": {
+    "justice": [
+      "Mixed living and logistics road serving surrounding villagers and small factories.",
+      "Basic flat pavement, lack of barrier-free facilities maintenance.",
+      "Moderate overall equity, coexistence of pedestrians, vehicles and sundry stacking."
+    ],
+    "safety": [
+      "Unregulated roadside garbage, random parking and obstacles create frequent hidden dangers.",
+      "Mixed pedestrian-vehicle flow leads to high minor collision probability.",
+      "Lack of traffic warning and isolation facilities."
+    ],
+    "livability": [
+      "Native town life atmosphere, convenient basic daily living.",
+      "Messy roadside environment and open garbage accumulation reduce environmental quality.",
+      "No standardized public leisure facilities."
+    ],
+    "sustainability": [
+      "Sparse scattered roadside trees provide limited ecological improvement.",
+      "Aged hardened pavement has poor rainwater infiltration.",
+      "Overall ecological and environmental level is low."
+    ],
+    "aesthetics": [
+      "Simple rural town street appearance.",
+      "Roadside garbage disorder greatly damages landscape tidiness.",
+      "No landscaping and environmental renovation."
+    ],
+    "comfort": [
+      "Uneven road surface and messy surrounding greatly reduce comfort.",
+      "Passing vehicles bring dust and noise interference.",
+      "No dedicated rest and activity buffer space."
+    ],
+    "walkability": [
+      "Temporary walking passage on roadside.",
+      "Need to constantly avoid obstacles and vehicles.",
+      "Only suitable for nearby residents' short trip."
+    ],
+    "bikeability": [
+      "No bicycle lane division.",
+      "Many roadside obstacles affect riding smoothness.",
+      "Low overall riding safety and experience."
+    ]
+  },
+  "image_id": "rural-town-street-lane",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-30T10:08:00.000Z",
+  "record_id": "rec-rural-town-street-lane",
+  "export_timestamp": "2026-04-30T10:08:50.000Z"
+}

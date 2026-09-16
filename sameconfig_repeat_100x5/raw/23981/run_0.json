@@ -1,0 +1,122 @@
+{
+ "oid": "23981",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23981.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23981_120.741097_31.372452_0900290012220906103106082AJ_71.96_2022_9_苏州工业园区唯亭街道澄湾路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.8,
+ "usage": {
+  "completion_tokens": 836,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 433,
+   "engine_ttlt_ms": 12950,
+   "pre_inference_ms": 421,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1097,
+   "service_ttlt_ms": 13610,
+   "user_visible_ttft_ms": 677
+  },
+  "prompt_tokens": 5429,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6265
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 66.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 57.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 72.0,\n    \"sustainability\": 78.0,\n    \"aesthetics\": 86.0,\n    \"comfort\": 81.0,\n    \"walkability\": 54.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Street space is distributed relatively evenly for general users: there are two motor-vehicle lanes, a marked edge lane on the right, and broad green verges with trees on both sides rather than a fully vehicle-dominated corridor.\",\n      \"A posted 30 km/h speed-limit sign suggests rules intended to moderate vehicle priority and improve fairness for all road users on this street.\",\n      \"Accessibility is only moderate because no sidewalk surface, curb ramps, tactile paving, marked crossing, or bus stop access features are clearly visible in the image, so barrier-free movement cannot be confirmed from the photo.\"\n    ],\n    \"safety\": [\n      \"The 30 km/h speed-limit sign is a strong visible traffic-calming element and generally supports lower crash severity for all users.\",\n      \"Long sightlines down the straight roadway improve mutual visibility between drivers and any crossing or entering users.\",\n      \"Rows of mature trees and hedges create a buffered edge from adjacent land uses, but the heavy shade pattern across the carriageway can also produce alternating light-dark patches that may slightly reduce hazard detection.\"\n    ],\n    \"livability\": [\n      \"Extensive mature trees, planted medians/hedges, and park-like greenery on both sides create a pleasant everyday environment rather than a harsh traffic corridor.\",\n      \"The street appears quiet, with very low visible traffic volume and little roadside clutter, which supports a calm residential or campus-like atmosphere.\",\n      \"Livability is limited somewhat by the lack of visible active frontages, shops, seating, or social amenities in the frame, so the space seems pleasant but not highly socially vibrant.\"\n    ],\n    \"sustainability\": [\n      \"Dense tree canopy on both sides provides substantial urban greenery, which supports cooling, shade, and ecological value.\",\n      \"The low-speed street design indicated by the 30 km/h sign is more compatible with lower-impact local circulation than a high-speed arterial environment.\",\n      \"Sustainability is not higher because no clearly protected bike lane, transit stop, permeable paving, or visible stormwater feature can be confirmed in the image.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous rows of mature trees form a strong green canopy and give the street a highly attractive, coherent visual character.\",\n      \"The roadway edges are neat, with trimmed hedges, clean pavement, and limited visual clutter from signs or utility elements.\",\n      \"The long, symmetrical perspective of the avenue and the consistent planting design create a calm and visually harmonious streetscape.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears strong because the mature trees provide extensive shade over both sides of the street and parts of the roadway.\",\n      \"Psychological comfort is supported by the quiet setting, low visible traffic, and generous green enclosure from trees and hedges.\",\n      \"Physical comfort for walking is uncertain because the actual sidewalk surface, seating, and pedestrian amenities are not visible, although the road itself appears smooth and well maintained.\"\n    ],\n    \"walkability\": [\n      \"Walkability is constrained because a dedicated sidewalk is not clearly visible in the frame; the right edge shows a curb and planting strip, but not a confirmed pedestrian path.\",\n      \"No marked crosswalk, pedestrian signal, refuge island, or curb ramp is visible, so crossing convenience and route continuity cannot be verified.\",\n      \"Walking attractiveness is improved by the shaded tree canopy, low-speed environment, and landscaped edges, but missing visible pedestrian infrastructure keeps the score moderate-to-low.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 66.0,
+   "fairness": 60.0,
+   "accessibility": 57.0
+  },
+  "safety": 74.0,
+  "livability": 72.0,
+  "sustainability": 78.0,
+  "aesthetics": 86.0,
+  "comfort": 81.0,
+  "walkability": 54.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 57.0,
+  "safety": 74.0,
+  "livability": 72.0,
+  "sustainability": 78.0,
+  "aesthetics": 86.0,
+  "comfort": 81.0,
+  "walkability": 54.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:59:27+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Street space is distributed relatively evenly for general users: there are two motor-vehicle lanes, a marked edge lane on the right, and broad green verges with trees on both sides rather than a fully vehicle-dominated corridor.",
+   "A posted 30 km/h speed-limit sign suggests rules intended to moderate vehicle priority and improve fairness for all road users on this street.",
+   "Accessibility is only moderate because no sidewalk surface, curb ramps, tactile paving, marked crossing, or bus stop access features are clearly visible in the image, so barrier-free movement cannot be confirmed from the photo."
+  ],
+  "safety": [
+   "The 30 km/h speed-limit sign is a strong visible traffic-calming element and generally supports lower crash severity for all users.",
+   "Long sightlines down the straight roadway improve mutual visibility between drivers and any crossing or entering users.",
+   "Rows of mature trees and hedges create a buffered edge from adjacent land uses, but the heavy shade pattern across the carriageway can also produce alternating light-dark patches that may slightly reduce hazard detection."
+  ],
+  "livability": [
+   "Extensive mature trees, planted medians/hedges, and park-like greenery on both sides create a pleasant everyday environment rather than a harsh traffic corridor.",
+   "The street appears quiet, with very low visible traffic volume and little roadside clutter, which supports a calm residential or campus-like atmosphere.",
+   "Livability is limited somewhat by the lack of visible active frontages, shops, seating, or social amenities in the frame, so the space seems pleasant but not highly socially vibrant."
+  ],
+  "sustainability": [
+   "Dense tree canopy on both sides provides substantial urban greenery, which supports cooling, shade, and ecological value.",
+   "The low-speed street design indicated by the 30 km/h sign is more compatible with lower-impact local circulation than a high-speed arterial environment.",
+   "Sustainability is not higher because no clearly protected bike lane, transit stop, permeable paving, or visible stormwater feature can be confirmed in the image."
+  ],
+  "aesthetics": [
+   "The continuous rows of mature trees form a strong green canopy and give the street a highly attractive, coherent visual character.",
+   "The roadway edges are neat, with trimmed hedges, clean pavement, and limited visual clutter from signs or utility elements.",
+   "The long, symmetrical perspective of the avenue and the consistent planting design create a calm and visually harmonious streetscape."
+  ],
+  "comfort": [
+   "Thermal comfort appears strong because the mature trees provide extensive shade over both sides of the street and parts of the roadway.",
+   "Psychological comfort is supported by the quiet setting, low visible traffic, and generous green enclosure from trees and hedges.",
+   "Physical comfort for walking is uncertain because the actual sidewalk surface, seating, and pedestrian amenities are not visible, although the road itself appears smooth and well maintained."
+  ],
+  "walkability": [
+   "Walkability is constrained because a dedicated sidewalk is not clearly visible in the frame; the right edge shows a curb and planting strip, but not a confirmed pedestrian path.",
+   "No marked crosswalk, pedestrian signal, refuge island, or curb ramp is visible, so crossing convenience and route continuity cannot be verified.",
+   "Walking attractiveness is improved by the shaded tree canopy, low-speed environment, and landscaped edges, but missing visible pedestrian infrastructure keeps the score moderate-to-low."
+  ]
+ }
+}

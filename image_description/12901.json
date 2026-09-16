@@ -1,0 +1,33 @@
+{
+ "oid": "12901",
+ "description": "The image shows a narrow, continuous paved shoulder/side path along the right side of the road, with a curb-like edge and no visible sidewalk markings; the surface appears even but there are scattered leaves and debris near the edge. Traffic is separated from pedestrians only by the road itself (no guardrail or barrier), and the roadway looks relatively quiet with trees lining the right side providing substantial shade. There are no visible curb cuts, ramps, lighting, or pedestrian crossing features, and the main potential obstacles are the roadside vegetation and leaf litter.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 112,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 9,
+   "engine_ttft_ms": 250,
+   "engine_ttlt_ms": 1274,
+   "pre_inference_ms": 390,
+   "service_tbt_ms": 9,
+   "service_ttft_ms": 927,
+   "service_ttlt_ms": 1946,
+   "total_duration_ms": 1564,
+   "user_visible_ttft_ms": 537
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1096
+ },
+ "latency_s": 64.7,
+ "timestamp": "2026-08-31T15:51:00"
+}

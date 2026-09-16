@@ -1,0 +1,122 @@
+{
+ "oid": "13324",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\13324.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\13324_120.597454_30.958447_01002900001406071517500075Q_148.04_2014_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.9,
+ "usage": {
+  "completion_tokens": 845,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 412,
+   "engine_ttlt_ms": 13315,
+   "pre_inference_ms": 421,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1240,
+   "service_ttlt_ms": 14034,
+   "user_visible_ttft_ms": 819
+  },
+  "prompt_tokens": 5612,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6457
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 29.0\n    },\n    \"safety\": 52.0,\n    \"livability\": 30.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 71.0,\n    \"comfort\": 49.0,\n    \"walkability\": 24.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible space is allocated to a wide two-lane carriageway, while no sidewalk, marked pedestrian zone, or dedicated cycling facility is visible, indicating an uneven distribution of street space among road users.\",\n      \"The road edge on both sides appears to transition directly to narrow shoulders, vegetation, or drainage margins, which limits fair use by pedestrians and cyclists compared with motor vehicles.\",\n      \"No curb ramps, tactile paving, marked crossings, bus stops, or other barrier-free access elements are visible, so accessibility for diverse users cannot be considered well supported.\"\n    ],\n    \"safety\": [\n      \"The asphalt surface appears smooth and lane markings are clear, which supports predictable vehicle movement and basic operational safety for drivers.\",\n      \"The roadway is long, straight, and visually open, improving forward sight distance, but this same geometry can encourage higher driving speeds and increase crash severity risk.\",\n      \"There is no visible sidewalk, crossing, refuge island, shoulder protection, or separated bike lane, so vulnerable users would have little protection if present on this road.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by through-traffic infrastructure and roadside vegetation, with no visible shops, homes facing the street, public seating, or social activity that would support everyday street life.\",\n      \"No pedestrian amenities such as benches, shelters, lighting, or gathering spaces are visible, reducing the street's usefulness as a place rather than only a movement corridor.\",\n      \"The corridor appears semi-rural and low-activity, which may feel calm, but it offers very limited visible support for daily non-motorized or community-oriented use.\"\n    ],\n    \"sustainability\": [\n      \"Dense roadside trees and shrubs on the right and flowering vegetation on the left provide green cover and some ecological value along the corridor.\",\n      \"The absence of visible bus stops, sidewalks, or dedicated cycling infrastructure suggests the corridor mainly supports car travel, which weakens transport sustainability.\",\n      \"No visible permeable paving, bioswales, rain gardens, or other stormwater features can be identified from the image, so green infrastructure benefits appear limited to roadside planting.\"\n    ],\n    \"aesthetics\": [\n      \"The long tree-lined edge on the right creates a strong green corridor and gives the road a visually coherent frame.\",\n      \"Flowering shrubs and open sky contribute to a pleasant rural landscape character and soften the otherwise utilitarian roadway.\",\n      \"The pavement appears clean and well maintained, with simple, orderly markings that create a neat visual impression.\"\n    ],\n    \"comfort\": [\n      \"The smooth asphalt and absence of visible potholes support physical comfort for motorized travel and potentially for cycling on the shoulder, though no dedicated bike space is marked.\",\n      \"Tree cover is concentrated along the edges rather than over a pedestrian path, and no shelters or shaded walking areas are visible, so thermal comfort for non-motorized users is weak.\",\n      \"The open, low-density setting likely reduces crowding and urban noise, but the lack of protected walking space can create psychological discomfort for anyone outside a vehicle.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk or separated footpath is visible on either side of the road, which is a major limitation for walking.\",\n      \"There are no marked crosswalks, pedestrian signals, curb extensions, or refuge islands visible, so crossing opportunities appear poor.\",\n      \"Although the road edge is visually open and lined with greenery, the walking environment lacks dedicated space, protection from traffic, and pedestrian amenities.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 35.0,
+   "accessibility": 29.0
+  },
+  "safety": 52.0,
+  "livability": 30.0,
+  "sustainability": 46.0,
+  "aesthetics": 71.0,
+  "comfort": 49.0,
+  "walkability": 24.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 29.0,
+  "safety": 52.0,
+  "livability": 30.0,
+  "sustainability": 46.0,
+  "aesthetics": 71.0,
+  "comfort": 49.0,
+  "walkability": 24.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:21:21+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible space is allocated to a wide two-lane carriageway, while no sidewalk, marked pedestrian zone, or dedicated cycling facility is visible, indicating an uneven distribution of street space among road users.",
+   "The road edge on both sides appears to transition directly to narrow shoulders, vegetation, or drainage margins, which limits fair use by pedestrians and cyclists compared with motor vehicles.",
+   "No curb ramps, tactile paving, marked crossings, bus stops, or other barrier-free access elements are visible, so accessibility for diverse users cannot be considered well supported."
+  ],
+  "safety": [
+   "The asphalt surface appears smooth and lane markings are clear, which supports predictable vehicle movement and basic operational safety for drivers.",
+   "The roadway is long, straight, and visually open, improving forward sight distance, but this same geometry can encourage higher driving speeds and increase crash severity risk.",
+   "There is no visible sidewalk, crossing, refuge island, shoulder protection, or separated bike lane, so vulnerable users would have little protection if present on this road."
+  ],
+  "livability": [
+   "The scene is dominated by through-traffic infrastructure and roadside vegetation, with no visible shops, homes facing the street, public seating, or social activity that would support everyday street life.",
+   "No pedestrian amenities such as benches, shelters, lighting, or gathering spaces are visible, reducing the street's usefulness as a place rather than only a movement corridor.",
+   "The corridor appears semi-rural and low-activity, which may feel calm, but it offers very limited visible support for daily non-motorized or community-oriented use."
+  ],
+  "sustainability": [
+   "Dense roadside trees and shrubs on the right and flowering vegetation on the left provide green cover and some ecological value along the corridor.",
+   "The absence of visible bus stops, sidewalks, or dedicated cycling infrastructure suggests the corridor mainly supports car travel, which weakens transport sustainability.",
+   "No visible permeable paving, bioswales, rain gardens, or other stormwater features can be identified from the image, so green infrastructure benefits appear limited to roadside planting."
+  ],
+  "aesthetics": [
+   "The long tree-lined edge on the right creates a strong green corridor and gives the road a visually coherent frame.",
+   "Flowering shrubs and open sky contribute to a pleasant rural landscape character and soften the otherwise utilitarian roadway.",
+   "The pavement appears clean and well maintained, with simple, orderly markings that create a neat visual impression."
+  ],
+  "comfort": [
+   "The smooth asphalt and absence of visible potholes support physical comfort for motorized travel and potentially for cycling on the shoulder, though no dedicated bike space is marked.",
+   "Tree cover is concentrated along the edges rather than over a pedestrian path, and no shelters or shaded walking areas are visible, so thermal comfort for non-motorized users is weak.",
+   "The open, low-density setting likely reduces crowding and urban noise, but the lack of protected walking space can create psychological discomfort for anyone outside a vehicle."
+  ],
+  "walkability": [
+   "No sidewalk or separated footpath is visible on either side of the road, which is a major limitation for walking.",
+   "There are no marked crosswalks, pedestrian signals, curb extensions, or refuge islands visible, so crossing opportunities appear poor.",
+   "Although the road edge is visually open and lined with greenery, the walking environment lacks dedicated space, protection from traffic, and pedestrian amenities."
+  ]
+ }
+}

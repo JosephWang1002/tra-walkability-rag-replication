@@ -1,0 +1,122 @@
+{
+ "oid": "22552",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22552.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22552_120.679416_31.266116_09002900121904191213182511J_88.29_2019_4_吴中区郭巷街道墅港路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.0,
+ "usage": {
+  "completion_tokens": 791,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 1005,
+   "engine_ttlt_ms": 12053,
+   "pre_inference_ms": 609,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1990,
+   "service_ttlt_ms": 12961,
+   "user_visible_ttft_ms": 1381
+  },
+  "prompt_tokens": 5219,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6010
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 31.0,\n      \"equity\": 34.0,\n      \"fairness\": 28.0,\n      \"accessibility\": 31.0\n    },\n    \"safety\": 29.0,\n    \"livability\": 24.0,\n    \"sustainability\": 18.0,\n    \"aesthetics\": 27.0,\n    \"comfort\": 22.0,\n    \"walkability\": 20.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible street width is allocated to vehicle movement and parking, while no dedicated sidewalk is clearly visible on either side, indicating an uneven distribution of space for all road users.\",\n      \"Several vans and cars are parked directly along the road edge beside the blue warehouse buildings, which narrows the usable edge space and reduces fair access for pedestrians.\",\n      \"Accessibility is weak because there are no visible curb ramps, tactile paving, marked pedestrian paths, or protected walking zones; the surface appears dusty and uneven for anyone walking.\"\n    ],\n    \"safety\": [\n      \"There is no clearly separated sidewalk or pedestrian refuge, so anyone walking would need to share space with moving vans, cars, and small trucks on the same carriageway.\",\n      \"Multiple parked vehicles line both sides of the road, creating potential sightline obstruction and increasing conflict risk when vehicles pull in or out.\",\n      \"The road surface appears unpaved or heavily worn with dust and irregular texture, which can reduce traction and control for both drivers and pedestrians.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by warehouse sheds, parked vehicles, fencing, and utility infrastructure, with little evidence of active public-facing uses that support everyday street life.\",\n      \"No benches, public gathering spaces, street trees, or pedestrian amenities are visible, limiting the street's usefulness beyond industrial access.\",\n      \"The environment appears oriented to loading, storage, and vehicle circulation rather than social interaction or daily neighborhood activity.\"\n    ],\n    \"sustainability\": [\n      \"No visible street trees, planting strips, or other green infrastructure are present, so the corridor shows little ecological or cooling support.\",\n      \"There are no visible facilities for low-carbon travel such as bike lanes, bike parking, or a bus stop; the layout appears strongly vehicle-dependent.\",\n      \"The broad hard surface and dusty roadside edges show no obvious permeable paving, bioswales, or drainage features that would help manage runoff.\"\n    ],\n    \"aesthetics\": [\n      \"Large blue metal warehouse facades and corrugated shutters create a monotonous industrial frontage with limited visual richness.\",\n      \"Overhead power lines, utility poles, fencing, and scattered parked vehicles contribute to a cluttered visual environment.\",\n      \"The street lacks visible landscaping, public art, facade detailing, or coordinated streetscape elements that would improve visual appeal.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because there are no visible trees, canopies, or shaded pedestrian areas along the road edge.\",\n      \"Physical comfort is limited by the dusty, rough-looking road surface and the absence of benches, smooth sidewalks, or designated waiting areas.\",\n      \"Psychological comfort is low because pedestrians would likely feel exposed in a wide industrial roadway shared with vehicles and without clear protected walking space.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very weak because no continuous sidewalk is visible; the road edge appears to function mainly as informal vehicle parking and access space.\",\n      \"There are no marked crossings, curb extensions, pedestrian signs, or traffic-calming elements visible to support safe walking movement.\",\n      \"The long industrial frontage, sparse amenities, and lack of shade or active edges make the route unattractive and uncomfortable for walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 31.0,
+   "equity": 34.0,
+   "fairness": 28.0,
+   "accessibility": 31.0
+  },
+  "safety": 29.0,
+  "livability": 24.0,
+  "sustainability": 18.0,
+  "aesthetics": 27.0,
+  "comfort": 22.0,
+  "walkability": 20.0
+ },
+ "scores_flat": {
+  "justice": 31.0,
+  "justice_equity": 34.0,
+  "justice_fairness": 28.0,
+  "justice_accessibility": 31.0,
+  "safety": 29.0,
+  "livability": 24.0,
+  "sustainability": 18.0,
+  "aesthetics": 27.0,
+  "comfort": 22.0,
+  "walkability": 20.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:52:50+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible street width is allocated to vehicle movement and parking, while no dedicated sidewalk is clearly visible on either side, indicating an uneven distribution of space for all road users.",
+   "Several vans and cars are parked directly along the road edge beside the blue warehouse buildings, which narrows the usable edge space and reduces fair access for pedestrians.",
+   "Accessibility is weak because there are no visible curb ramps, tactile paving, marked pedestrian paths, or protected walking zones; the surface appears dusty and uneven for anyone walking."
+  ],
+  "safety": [
+   "There is no clearly separated sidewalk or pedestrian refuge, so anyone walking would need to share space with moving vans, cars, and small trucks on the same carriageway.",
+   "Multiple parked vehicles line both sides of the road, creating potential sightline obstruction and increasing conflict risk when vehicles pull in or out.",
+   "The road surface appears unpaved or heavily worn with dust and irregular texture, which can reduce traction and control for both drivers and pedestrians."
+  ],
+  "livability": [
+   "The scene is dominated by warehouse sheds, parked vehicles, fencing, and utility infrastructure, with little evidence of active public-facing uses that support everyday street life.",
+   "No benches, public gathering spaces, street trees, or pedestrian amenities are visible, limiting the street's usefulness beyond industrial access.",
+   "The environment appears oriented to loading, storage, and vehicle circulation rather than social interaction or daily neighborhood activity."
+  ],
+  "sustainability": [
+   "No visible street trees, planting strips, or other green infrastructure are present, so the corridor shows little ecological or cooling support.",
+   "There are no visible facilities for low-carbon travel such as bike lanes, bike parking, or a bus stop; the layout appears strongly vehicle-dependent.",
+   "The broad hard surface and dusty roadside edges show no obvious permeable paving, bioswales, or drainage features that would help manage runoff."
+  ],
+  "aesthetics": [
+   "Large blue metal warehouse facades and corrugated shutters create a monotonous industrial frontage with limited visual richness.",
+   "Overhead power lines, utility poles, fencing, and scattered parked vehicles contribute to a cluttered visual environment.",
+   "The street lacks visible landscaping, public art, facade detailing, or coordinated streetscape elements that would improve visual appeal."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because there are no visible trees, canopies, or shaded pedestrian areas along the road edge.",
+   "Physical comfort is limited by the dusty, rough-looking road surface and the absence of benches, smooth sidewalks, or designated waiting areas.",
+   "Psychological comfort is low because pedestrians would likely feel exposed in a wide industrial roadway shared with vehicles and without clear protected walking space."
+  ],
+  "walkability": [
+   "Walkability is very weak because no continuous sidewalk is visible; the road edge appears to function mainly as informal vehicle parking and access space.",
+   "There are no marked crossings, curb extensions, pedestrian signs, or traffic-calming elements visible to support safe walking movement.",
+   "The long industrial frontage, sparse amenities, and lack of shade or active edges make the route unattractive and uncomfortable for walking."
+  ]
+ }
+}

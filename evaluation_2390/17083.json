@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 60.5,
+      "equity": 58,
+      "fairness": 61,
+      "accessibility": 62.5
+    },
+    "safety": 66.5,
+    "livability": 63,
+    "sustainability": 71.5,
+    "aesthetics": 74,
+    "comfort": 69,
+    "walkability": 60,
+    "bikeability": 47.5
+  },
+  "explanations": {
+    "justice": [
+      "Both sides of the road appear to have sidewalks separated from the carriageway by continuous curbs and a planted strip, indicating some allocation of space beyond vehicles.",
+      "A low-clearance height-limit gantry (2.2 m) is a strong control for tall vehicles, but it visually and physically prioritizes motor-vehicle management rather than universal multimodal access (no corresponding pedestrian/cycle priority features visible).",
+      "No clear curb ramps, tactile paving, or marked pedestrian crossing connections are visible at the near side of the scene, which reduces barrier-free accessibility for people pushing strollers, carrying goods, or using mobility aids."
+    ],
+    "safety": [
+      "A zebra crossing is visible ahead, providing a designated pedestrian crossing point and improving legibility at the junction.",
+      "The height-limit gantry with black-yellow hazard striping is highly conspicuous and can reduce collision risk with the structure by improving driver awareness.",
+      "Mixed traffic conditions are evident (cars and an e-scooter/motorbike in the same roadway) with no protected cycle lane markings, increasing conflict risk for non-motorized users, especially near the intersection and crosswalk area."
+    ],
+    "livability": [
+      "Dense, mature street trees create a park-like corridor feel and can support a calmer neighborhood environment.",
+      "The planted verge/median-like greenery along the curb edges adds a buffer from traffic and improves perceived street quality for people walking along the sides.",
+      "The street appears primarily movement-oriented (few visible storefronts, benches, or gathering nodes), which limits opportunities for staying, social interaction, and everyday street activity."
+    ],
+    "sustainability": [
+      "Extensive tree canopy on both sides provides ecosystem services (shade, cooling, and air-quality benefits) and indicates strong green infrastructure presence.",
+      "Narrower roadway feel due to greenery and trees can encourage lower speeds and potentially support more sustainable, human-scale street design compared with wide arterial formats.",
+      "Lack of visible dedicated cycling infrastructure or bicycle parking reduces the likelihood of shifting trips from cars to low-carbon modes despite the green setting."
+    ],
+    "aesthetics": [
+      "A continuous canopy of mature trees forms a visually coherent green tunnel, creating strong streetscape character.",
+      "Well-maintained planted strips and generally tidy edges (curbs and greenery) contribute to a neat, orderly appearance.",
+      "The black-yellow height-limit gantry and multiple traffic signs introduce some visual clutter and industrial character that slightly detracts from the otherwise natural aesthetic."
+    ],
+    "comfort": [
+      "Large tree canopy coverage provides substantial shade, improving thermal comfort for people walking or cycling along the corridor.",
+      "Sidewalks appear separated from traffic by a planted strip and curb, which can reduce splash, minor spray, and perceived proximity to moving vehicles, improving psychological comfort.",
+      "No seating, rest nodes, or waiting areas are visible near the crossing/intersection, limiting physical comfort for people who need to pause (e.g., carrying items or waiting to cross)."
+    ],
+    "walkability": [
+      "Sidewalks are present on both sides and visually continuous, supporting basic pedestrian network continuity.",
+      "The zebra crossing ahead improves crossing provision, but the approach lacks clearly visible pedestrian refuge or traffic-calming elements at the crossing, which can reduce crossing comfort for all users.",
+      "The height-limit gantry posts and roadside sign cluster near the corner may create pinch points and visual obstacles near pedestrian paths, potentially reducing effective walking width in the junction area."
+    ],
+    "bikeability": [
+      "No dedicated or protected bike lane markings are visible; cyclists likely share space with cars, lowering perceived and actual cycling safety.",
+      "An e-scooter/motorbike is riding within the general traffic lane, suggesting mixed-flow operations that can be intimidating for less confident cyclists.",
+      "Intersection/crossing area ahead (zebra crossing and merging/turn arrows) creates multiple potential conflict points without visible cycle-specific guidance (e.g., bike boxes, colored lanes, or separated crossings)."
+    ]
+  },
+  "image_id": "img-1776945871490-dw8flz4h9",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T12:29:16.983Z",
+  "record_id": "dba632bd977f497a815093a581f44a70",
+  "stored_image_url": "/storage/records/dba632bd977f497a815093a581f44a70/image.jpg",
+  "stored_thumb_url": "/storage/records/dba632bd977f497a815093a581f44a70/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T12:29:31.019Z"
+}

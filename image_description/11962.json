@@ -1,0 +1,33 @@
+{
+ "oid": "11962",
+ "description": "The image shows a wide, newly paved roadway with no visible pedestrian sidewalk or curb ramps; the only pedestrian-related elements are painted lane markings and a metal guardrail along the left edge. Traffic is separated from the shoulder/edge by the guardrail, with multiple lanes and no visible barriers between lanes, suggesting vehicles can travel at moderate speed. There is some landscaped greenery and young trees along the right, but limited shade, and lighting appears to be provided by tall streetlights; no obvious obstacles or pedestrian crossing infrastructure are visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 109,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 10,
+   "engine_ttft_ms": 887,
+   "engine_ttlt_ms": 2017,
+   "pre_inference_ms": 398,
+   "service_tbt_ms": 10,
+   "service_ttft_ms": 1823,
+   "service_ttlt_ms": 2948,
+   "total_duration_ms": 2558,
+   "user_visible_ttft_ms": 1425
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1093
+ },
+ "latency_s": 6.7,
+ "timestamp": "2026-08-31T15:38:59"
+}

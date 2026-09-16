@@ -1,0 +1,198 @@
+{
+ "oid": "10687",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\10687_120.478473_31.244616_09002900121708121639511663O_264.59_2017_8_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 5.6,
+  "usage": {
+   "completion_tokens": 160,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 263,
+    "engine_ttlt_ms": 1404,
+    "pre_inference_ms": 524,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 931,
+    "service_ttlt_ms": 2067,
+    "user_visible_ttft_ms": 407
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1421
+  },
+  "raw": "{\"road_type\":\"alley\",\"elements\":{\"sidewalk\":\"false\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"none\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"false\",\"street_lighting\":\"unclear\",\"greenery\":\"none\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"little_shade\",\"no_bike_lane\",\"poor_accessibility\",\"narrow_sidewalk\",\"no_crossing\",\"high_traffic_exposure\"],\"brief\":\"A narrow muddy alley runs between low industrial buildings and small structures, with parked vehicles and scattered debris along the sides. No sidewalk, crossing, or seating is visible, and there are no trees or other greenery.\"}",
+  "parsed": {
+   "road_type": "alley",
+   "elements": {
+    "sidewalk": "false",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "none",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "unclear",
+    "greenery": "none",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "little_shade",
+    "no_bike_lane",
+    "poor_accessibility",
+    "narrow_sidewalk",
+    "no_crossing",
+    "high_traffic_exposure"
+   ],
+   "brief": "A narrow muddy alley runs between low industrial buildings and small structures, with parked vehicles and scattered debris along the sides. No sidewalk, crossing, or seating is visible, and there are no trees or other greenery."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A narrow muddy alley runs between low industrial buildings and small structures, with parked vehicles and scattered debris along the sides. No sidewalk, crossing, or seating is visible, and there are no trees or other greenery. Road type: alley. Visible elements: sidewalk=false, bike_lane=false, seating=false, shade_trees=none, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=unclear, greenery=none, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'little_shade', 'no_bike_lane', 'poor_accessibility', 'narrow_sidewalk', 'no_crossing', 'high_traffic_exposure']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 16.1,
+  "usage": {
+   "completion_tokens": 785,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 14,
+    "engine_ttft_ms": 448,
+    "engine_ttlt_ms": 11691,
+    "pre_inference_ms": 451,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 1169,
+    "service_ttlt_ms": 12409,
+    "user_visible_ttft_ms": 719
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2672
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 28.0,\n      \"equity\": 30.0,\n      \"fairness\": 26.0,\n      \"accessibility\": 28.0\n    },\n    \"safety\": 24.0,\n    \"livability\": 18.0,\n    \"sustainability\": 16.0,\n    \"aesthetics\": 22.0,\n    \"comfort\": 20.0,\n    \"walkability\": 18.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The lane is dominated by vehicle access and service functions, while no dedicated sidewalk is visible for pedestrians, indicating weak spatial allocation for different road users.\",\n      \"Construction debris and stacked boards on the left edge, along with bags and scattered materials on the right edge, reduce usable public space and create unequal access conditions.\",\n      \"Accessibility is poor because the surface is muddy, uneven, and full of puddles, with no curb ramps, tactile paving, or clearly protected walking path visible.\"\n    ],\n    \"safety\": [\n      \"The roadway is narrow and shared by cars, a bicycle, and pedestrians without lane markings or separation, increasing conflict risk among road users.\",\n      \"Wet mud, potholes, and standing water in the center of the lane create slip and trip hazards and may also affect vehicle braking and bicycle stability.\",\n      \"Loose materials, scrap panels, and clutter placed along both sides of the lane reduce clear sightlines and safe clearance for movement.\"\n    ],\n    \"livability\": [\n      \"The scene appears to be an industrial back-lane environment with warehouse-like buildings and service yards rather than an active public street that supports daily social life.\",\n      \"No visible benches, street trees, storefronts, or community amenities are present to support lingering, social interaction, or everyday convenience.\",\n      \"The muddy surface, scattered waste, and utilitarian building edges make the space feel functional only for loading and access rather than comfortable for public use.\"\n    ],\n    \"sustainability\": [\n      \"No visible green infrastructure such as street trees, planting strips, bioswales, or permeable landscape elements is present in the scene.\",\n      \"Large puddles on the unpaved or poorly finished surface suggest weak stormwater management rather than sustainable drainage design.\",\n      \"Although a bicycle is visible, there is no bike lane, bike parking system, or transit facility shown to indicate strong support for low-carbon travel.\"\n    ],\n    \"aesthetics\": [\n      \"The street edge is visually dominated by plain industrial facades, exposed service elements, and temporary-looking metal-clad structures, giving the space a harsh appearance.\",\n      \"Piles of discarded boards, bags, and scattered debris on both sides reduce visual order and cleanliness.\",\n      \"The muddy road surface with puddles and patchy edges creates a neglected and visually unrefined streetscape.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears weak because there are no visible street trees, shade structures, or other pedestrian-oriented shelter elements along the lane.\",\n      \"Physical comfort is low due to the uneven muddy ground, puddles, and edge clutter that make walking unstable and inconvenient.\",\n      \"Psychological comfort is reduced by the narrow enclosed industrial corridor, lack of pedestrian space, and visible disorder from debris and stored materials.\"\n    ],\n    \"walkability\": [\n      \"There is no continuous sidewalk or marked pedestrian zone, so walking must occur directly in the vehicle access lane.\",\n      \"The route surface is poor for walking because it is muddy, uneven, and interrupted by puddles across the path.\",\n      \"Obstacles such as stacked scrap materials on the left and bags and objects on the right narrow the effective walking corridor and reduce route continuity.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 28.0,
+    "equity": 30.0,
+    "fairness": 26.0,
+    "accessibility": 28.0
+   },
+   "safety": 24.0,
+   "livability": 18.0,
+   "sustainability": 16.0,
+   "aesthetics": 22.0,
+   "comfort": 20.0,
+   "walkability": 18.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The lane is dominated by vehicle access and service functions, while no dedicated sidewalk is visible for pedestrians, indicating weak spatial allocation for different road users.",
+    "Construction debris and stacked boards on the left edge, along with bags and scattered materials on the right edge, reduce usable public space and create unequal access conditions.",
+    "Accessibility is poor because the surface is muddy, uneven, and full of puddles, with no curb ramps, tactile paving, or clearly protected walking path visible."
+   ],
+   "safety": [
+    "The roadway is narrow and shared by cars, a bicycle, and pedestrians without lane markings or separation, increasing conflict risk among road users.",
+    "Wet mud, potholes, and standing water in the center of the lane create slip and trip hazards and may also affect vehicle braking and bicycle stability.",
+    "Loose materials, scrap panels, and clutter placed along both sides of the lane reduce clear sightlines and safe clearance for movement."
+   ],
+   "livability": [
+    "The scene appears to be an industrial back-lane environment with warehouse-like buildings and service yards rather than an active public street that supports daily social life.",
+    "No visible benches, street trees, storefronts, or community amenities are present to support lingering, social interaction, or everyday convenience.",
+    "The muddy surface, scattered waste, and utilitarian building edges make the space feel functional only for loading and access rather than comfortable for public use."
+   ],
+   "sustainability": [
+    "No visible green infrastructure such as street trees, planting strips, bioswales, or permeable landscape elements is present in the scene.",
+    "Large puddles on the unpaved or poorly finished surface suggest weak stormwater management rather than sustainable drainage design.",
+    "Although a bicycle is visible, there is no bike lane, bike parking system, or transit facility shown to indicate strong support for low-carbon travel."
+   ],
+   "aesthetics": [
+    "The street edge is visually dominated by plain industrial facades, exposed service elements, and temporary-looking metal-clad structures, giving the space a harsh appearance.",
+    "Piles of discarded boards, bags, and scattered debris on both sides reduce visual order and cleanliness.",
+    "The muddy road surface with puddles and patchy edges creates a neglected and visually unrefined streetscape."
+   ],
+   "comfort": [
+    "Thermal comfort appears weak because there are no visible street trees, shade structures, or other pedestrian-oriented shelter elements along the lane.",
+    "Physical comfort is low due to the uneven muddy ground, puddles, and edge clutter that make walking unstable and inconvenient.",
+    "Psychological comfort is reduced by the narrow enclosed industrial corridor, lack of pedestrian space, and visible disorder from debris and stored materials."
+   ],
+   "walkability": [
+    "There is no continuous sidewalk or marked pedestrian zone, so walking must occur directly in the vehicle access lane.",
+    "The route surface is poor for walking because it is muddy, uneven, and interrupted by puddles across the path.",
+    "Obstacles such as stacked scrap materials on the left and bags and objects on the right narrow the effective walking corridor and reduce route continuity."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 28.0,
+  "justice_equity": 30.0,
+  "justice_fairness": 26.0,
+  "justice_accessibility": 28.0,
+  "safety": 24.0,
+  "livability": 18.0,
+  "sustainability": 16.0,
+  "aesthetics": 22.0,
+  "comfort": 20.0,
+  "walkability": 18.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T13:52:08+00:00",
+  "step2": "2026-09-03T13:52:08+00:00",
+  "step3": "2026-09-03T13:52:25+00:00",
+  "completed": "2026-09-03T13:52:25+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\10687.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 47,
+      "equity": 49,
+      "fairness": 48,
+      "accessibility": 44
+    },
+    "safety": 52,
+    "livability": 38,
+    "sustainability": 45,
+    "aesthetics": 40,
+    "comfort": 41,
+    "walkability": 40,
+    "bikeability": 37
+  },
+  "explanations": {
+    "justice": [
+      "Industrial auxiliary access road, serving factory logistics vehicles and staff commuting.",
+      "Flat pavement provides basic accessibility, no dedicated barrier-free optimization.",
+      "Road resources lean towards motor vehicles, overall mobility equity is relatively low."
+    ],
+    "safety": [
+      "Narrow road width, roadside parked vehicles and overhead pipelines create potential hazards.",
+      "Low internal speed reduces accident casualty risk.",
+      "Lack of complete traffic markings and safety warning facilities."
+    ],
+    "livability": [
+      "Pure industrial functional area with weak permanent residential livability.",
+      "Sparse roadside greenery improves partial environmental quality.",
+      "No leisure and public service supporting facilities."
+    ],
+    "sustainability": [
+      "Scattered roadside trees provide limited ecological purification and noise reduction.",
+      "Aged cement pavement lacks sponge city ecological design.",
+      "Low foundation for green low-carbon travel."
+    ],
+    "aesthetics": [
+      "Plain industrial functional style, exposed pipelines and simple factory walls.",
+      "Messy roadside weeds and stains affect visual tidiness.",
+      "No landscaping and beautification design."
+    ],
+    "comfort": [
+      "Aged road cracks and uneven surface reduce driving comfort.",
+      "Occasional truck passing brings noise interference.",
+      "No independent pedestrian rest buffer zone."
+    ],
+    "walkability": [
+      "Roadside shoulder meets basic short-distance walking demand of staff.",
+      "Need to avoid parked vehicles and passing cars.",
+      "Not suitable for long-time walking activities."
+    ],
+    "bikeability": [
+      "No dedicated bicycle lane division.",
+      "Basic riding conditions are available.",
+      "Vehicle interference brings certain riding risk."
+    ]
+  },
+  "image_id": "industrial-park-side-access-lane",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-05-02T10:00:00.000Z",
+  "record_id": "rec-industrial-park-side-access-lane",
+  "export_timestamp": "2026-05-02T10:00:50.000Z"
+}

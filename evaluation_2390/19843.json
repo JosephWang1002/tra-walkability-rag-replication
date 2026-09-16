@@ -1,0 +1,81 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 61,
+      "equity": 64,
+      "fairness": 58,
+      "accessibility": 61
+    },
+    "safety": 57,
+    "livability": 68,
+    "sustainability": 63,
+    "aesthetics": 71,
+    "comfort": 66,
+    "walkability": 54,
+    "bikeability": 46
+  },
+  "explanations": {
+    "justice": [
+      "The street space is dominated by a narrow shared carriageway, while no clearly protected pedestrian sidewalk or dedicated bicycle lane is visible, suggesting uneven allocation of space among walking, cycling, and driving users.",
+      "The planted green strip with palm trees and hedges on the left improves environmental quality, but it is separated from the travel way by a curb and does not function as a clearly accessible pedestrian facility for all users.",
+      "Several parked cars, scooters, and shopfront activity on the right occupy edge space along the road, which can advantage motorized access and commercial frontage over unobstructed public movement.",
+      "No visible tactile paving, marked curb ramps, or other explicit barrier-free design elements can be identified in the scene, limiting inclusive accessibility for a broad range of users."
+    ],
+    "safety": [
+      "The road is narrow and appears to operate as a mixed-traffic environment where cars, scooters, bicycles, and pedestrians may all share the same space, increasing conflict risk.",
+      "A scooter is traveling near the center-right while parked vehicles line the edge, which can reduce maneuvering room and create visibility issues between moving and stationary users.",
+      "There are no visible crosswalks, speed humps, lane markings, or traffic calming devices in the image, so user priority and vehicle speed control are unclear.",
+      "The presence of people sitting or standing beneath the shop awning places vulnerable users close to moving scooters and cars without a protective buffer."
+    ],
+    "livability": [
+      "The street includes active ground-floor commercial frontage on the right, with people gathered under the awning, indicating some degree of everyday social life and neighborhood activity.",
+      "Residential buildings in the background and the small local shop suggest a mixed living-serving environment that can support routine daily needs nearby.",
+      "Green landscaping on the left, including shrubs, lawn, and palm trees, improves the local residential atmosphere and contributes to a more pleasant living environment.",
+      "However, the street remains functionally dominated by informal vehicle access and parking, which reduces the quality of space available for broader public use and stay activities."
+    ],
+    "sustainability": [
+      "The substantial greenery on the left side, including mature palm trees, hedges, and planted ground cover, provides ecological value and some microclimate benefits.",
+      "The compact neighborhood form with nearby residences and a local storefront may reduce trip distances for daily errands and support short-distance travel.",
+      "Bicycles and scooters are present, indicating some use of lower-space and potentially lower-emission transport modes compared with private cars alone.",
+      "At the same time, there is no visible dedicated cycling infrastructure, transit stop, permeable paving, or stormwater feature, so sustainable mobility and water-sensitive design appear limited."
+    ],
+    "aesthetics": [
+      "The lush green planting strip with palms and trimmed hedges creates a visually attractive edge and softens the otherwise hard residential street environment.",
+      "The street has a relatively coherent neighborhood character, with low- to mid-rise residential buildings and a modest local commercial frontage.",
+      "The shop awning, parked vehicles, overhead utility wires, and somewhat plain building facades reduce visual order and lessen the overall scenic quality.",
+      "Clean landscaping and maintained vegetation improve appearance, even though the roadway itself is simple and utilitarian."
+    ],
+    "comfort": [
+      "Tree canopy and the shop awning provide partial shade, which improves thermal comfort for some users, especially along the left edge and the right storefront.",
+      "The narrow road and low apparent traffic volume may feel less overwhelming than a major arterial, supporting moderate psychological comfort for local users.",
+      "There are a few informal sitting opportunities near the storefront and a bench-like element within the green space, which adds limited resting potential.",
+      "However, there is no continuous, clearly walkable sidewalk surface, and people moving on foot may need to share space with scooters and cars, reducing physical comfort.",
+      "Large portions of the roadway are exposed to direct sun, so thermal comfort remains uneven despite the presence of greenery."
+    ],
+    "walkability": [
+      "A continuous, dedicated pedestrian sidewalk is not clearly visible; instead, the scene appears to rely on a shared narrow road, which weakens pedestrian priority.",
+      "No marked crossings, pedestrian signage, curb ramps, or refuge elements are visible, reducing clarity and convenience for walking routes.",
+      "The green edge and nearby local shop make the environment somewhat pleasant and destination-supportive for short walks within the neighborhood.",
+      "Pedestrians near the storefront must remain close to moving two-wheelers and parked vehicles, which lowers walking comfort and perceived safety."
+    ],
+    "bikeability": [
+      "No dedicated bike lane, painted cycling marking, or protected cycling facility is visible anywhere on the street.",
+      "Cyclists and e-bike riders appear to share the same narrow carriageway with cars and parked vehicles, increasing overtaking and dooring risk.",
+      "A bicycle is present near the storefront, showing that cycling is possible in practice, but convenience and protection are limited by the informal street layout.",
+      "The local, low-speed residential context may moderately support short bicycle trips, yet the lack of separation and guidance keeps overall bikeability low."
+    ]
+  },
+  "image_id": "img-1776959223729-jixnojcz6",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4"
+  },
+  "generated_at": "2026-04-23T16:21:34.893Z",
+  "record_id": "551b38683ac541ea9ab7ae2e015318f5",
+  "stored_image_url": "/storage/records/551b38683ac541ea9ab7ae2e015318f5/image.jpg",
+  "stored_thumb_url": "/storage/records/551b38683ac541ea9ab7ae2e015318f5/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T16:23:10.818Z"
+}

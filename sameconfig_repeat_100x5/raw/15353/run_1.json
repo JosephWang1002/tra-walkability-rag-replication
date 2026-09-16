@@ -1,0 +1,129 @@
+{
+ "oid": "15353",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\15353.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\15353_120.538641_31.203558_09002900122201161340434935X_293.86_2022_1_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 22.5,
+ "usage": {
+  "completion_tokens": 1009,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 18,
+   "engine_ttft_ms": 412,
+   "engine_ttlt_ms": 18502,
+   "pre_inference_ms": 405,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 1140,
+   "service_ttlt_ms": 19169,
+   "user_visible_ttft_ms": 736
+  },
+  "prompt_tokens": 5344,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6353
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 71.0,\n      \"equity\": 74.0,\n      \"fairness\": 68.0,\n      \"accessibility\": 71.0\n    },\n    \"safety\": 73.0,\n    \"livability\": 72.0,\n    \"sustainability\": 69.0,\n    \"aesthetics\": 76.0,\n    \"comfort\": 74.0,\n    \"walkability\": 70.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Street space is distributed relatively evenly: there is a paved sidewalk on the right, a planted verge/edge on both sides, and a modest-width carriageway rather than an oversized road dominated by cars.\",\n      \"Accessibility is moderate because the visible sidewalk on the right appears continuous and fairly smooth, with enough width for side-by-side walking, but no curb ramps or tactile paving are visible in the scene.\",\n      \"Fairness is only moderate because parked cars line the right side near the residences and occupy frontage space, while no clearly marked dedicated space for cyclists or other non-motorized users is visible.\",\n      \"The left side is buffered by trees and a fence, while the right side has direct residential frontage and parking access; this suggests usable public space exists on both sides, but not with equally clear pedestrian priority.\"\n    ],\n    \"safety\": [\n      \"Motor traffic appears low and the roadway is narrow, which generally reduces vehicle speed and conflict risk for all road users.\",\n      \"Large street trees and planted edges create a buffer between some pedestrian areas and the carriageway, especially on the left side, improving perceived protection.\",\n      \"Safety is limited by the absence of visible marked pedestrian crossings, speed-control devices, or dedicated bicycle facilities in the image.\",\n      \"Several parked vehicles along the right edge may create dooring risk and reduce sightlines for pedestrians stepping into the roadway.\"\n    ],\n    \"livability\": [\n      \"The street has a residential character with low-rise homes, greenery, and a calm traffic environment, which supports everyday neighborhood living.\",\n      \"Mature trees along the left side and planted medians/edges add environmental quality and make the street feel more habitable than a fully paved corridor.\",\n      \"The frontage on the right includes homes with windows and entrances facing the street, supporting passive surveillance and neighborhood presence.\",\n      \"Livability is somewhat constrained because no benches, play spaces, or visible community amenities are present in the photo.\"\n    ],\n    \"sustainability\": [\n      \"The mature street trees and planted strips contribute to urban greening, shade, and likely some ecological benefit compared with a fully hardscaped street.\",\n      \"The narrow roadway and neighborhood scale are compatible with lower-speed local access rather than high-capacity car movement, which is more sustainable in form.\",\n      \"Sustainability is reduced by visible curbside parking and the lack of any clearly marked bike lane, bus stop, or other obvious low-carbon transport infrastructure.\",\n      \"No visible permeable paving, bioswale, or rainwater-management feature can be confirmed from the image, so stormwater sustainability appears limited.\"\n    ],\n    \"aesthetics\": [\n      \"Large mature trees create a strong canopy and give the street a pleasant, established visual character.\",\n      \"The low-rise residential buildings on the right are relatively orderly in scale and setback, producing a coherent neighborhood streetscape.\",\n      \"Planted islands and trimmed shrubs soften the road edge and improve visual quality compared with bare asphalt and concrete alone.\",\n      \"Aesthetic quality is weakened somewhat by parked cars, overhead utility wires, and a leafless tree in the foreground that makes part of the scene feel less polished.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is fairly good because the large trees on the left provide substantial shade over part of the street and pedestrian edge.\",\n      \"Physical comfort is moderate to good because the right-side sidewalk appears smooth, level, and unobstructed in the foreground.\",\n      \"Psychological comfort benefits from the quiet residential setting, low apparent traffic volume, and visible building frontage facing the street.\",\n      \"Comfort is reduced by the lack of visible seating or rest areas and by limited shade coverage on the right-side sidewalk where pedestrians may still be exposed.\"\n    ],\n    \"walkability\": [\n      \"A continuous paved sidewalk is visible on the right, supporting basic pedestrian movement along the street.\",\n      \"The street appears calm and local in function, with low traffic and a narrow carriageway that can make walking feel less hostile than on a major road.\",\n      \"Street trees and planting improve the walking environment by adding shade and visual interest, both of which generally support pedestrian appeal.\",\n      \"Walkability is held back by the lack of visible crossings, curb ramps, pedestrian signage, or dedicated separation from parking maneuvers along the right edge.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 71.0,
+   "equity": 74.0,
+   "fairness": 68.0,
+   "accessibility": 71.0
+  },
+  "safety": 73.0,
+  "livability": 72.0,
+  "sustainability": 69.0,
+  "aesthetics": 76.0,
+  "comfort": 74.0,
+  "walkability": 70.0
+ },
+ "scores_flat": {
+  "justice": 71.0,
+  "justice_equity": 74.0,
+  "justice_fairness": 68.0,
+  "justice_accessibility": 71.0,
+  "safety": 73.0,
+  "livability": 72.0,
+  "sustainability": 69.0,
+  "aesthetics": 76.0,
+  "comfort": 74.0,
+  "walkability": 70.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:26:04+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Street space is distributed relatively evenly: there is a paved sidewalk on the right, a planted verge/edge on both sides, and a modest-width carriageway rather than an oversized road dominated by cars.",
+   "Accessibility is moderate because the visible sidewalk on the right appears continuous and fairly smooth, with enough width for side-by-side walking, but no curb ramps or tactile paving are visible in the scene.",
+   "Fairness is only moderate because parked cars line the right side near the residences and occupy frontage space, while no clearly marked dedicated space for cyclists or other non-motorized users is visible.",
+   "The left side is buffered by trees and a fence, while the right side has direct residential frontage and parking access; this suggests usable public space exists on both sides, but not with equally clear pedestrian priority."
+  ],
+  "safety": [
+   "Motor traffic appears low and the roadway is narrow, which generally reduces vehicle speed and conflict risk for all road users.",
+   "Large street trees and planted edges create a buffer between some pedestrian areas and the carriageway, especially on the left side, improving perceived protection.",
+   "Safety is limited by the absence of visible marked pedestrian crossings, speed-control devices, or dedicated bicycle facilities in the image.",
+   "Several parked vehicles along the right edge may create dooring risk and reduce sightlines for pedestrians stepping into the roadway."
+  ],
+  "livability": [
+   "The street has a residential character with low-rise homes, greenery, and a calm traffic environment, which supports everyday neighborhood living.",
+   "Mature trees along the left side and planted medians/edges add environmental quality and make the street feel more habitable than a fully paved corridor.",
+   "The frontage on the right includes homes with windows and entrances facing the street, supporting passive surveillance and neighborhood presence.",
+   "Livability is somewhat constrained because no benches, play spaces, or visible community amenities are present in the photo."
+  ],
+  "sustainability": [
+   "The mature street trees and planted strips contribute to urban greening, shade, and likely some ecological benefit compared with a fully hardscaped street.",
+   "The narrow roadway and neighborhood scale are compatible with lower-speed local access rather than high-capacity car movement, which is more sustainable in form.",
+   "Sustainability is reduced by visible curbside parking and the lack of any clearly marked bike lane, bus stop, or other obvious low-carbon transport infrastructure.",
+   "No visible permeable paving, bioswale, or rainwater-management feature can be confirmed from the image, so stormwater sustainability appears limited."
+  ],
+  "aesthetics": [
+   "Large mature trees create a strong canopy and give the street a pleasant, established visual character.",
+   "The low-rise residential buildings on the right are relatively orderly in scale and setback, producing a coherent neighborhood streetscape.",
+   "Planted islands and trimmed shrubs soften the road edge and improve visual quality compared with bare asphalt and concrete alone.",
+   "Aesthetic quality is weakened somewhat by parked cars, overhead utility wires, and a leafless tree in the foreground that makes part of the scene feel less polished."
+  ],
+  "comfort": [
+   "Thermal comfort is fairly good because the large trees on the left provide substantial shade over part of the street and pedestrian edge.",
+   "Physical comfort is moderate to good because the right-side sidewalk appears smooth, level, and unobstructed in the foreground.",
+   "Psychological comfort benefits from the quiet residential setting, low apparent traffic volume, and visible building frontage facing the street.",
+   "Comfort is reduced by the lack of visible seating or rest areas and by limited shade coverage on the right-side sidewalk where pedestrians may still be exposed."
+  ],
+  "walkability": [
+   "A continuous paved sidewalk is visible on the right, supporting basic pedestrian movement along the street.",
+   "The street appears calm and local in function, with low traffic and a narrow carriageway that can make walking feel less hostile than on a major road.",
+   "Street trees and planting improve the walking environment by adding shade and visual interest, both of which generally support pedestrian appeal.",
+   "Walkability is held back by the lack of visible crossings, curb ramps, pedestrian signage, or dedicated separation from parking maneuvers along the right edge."
+  ]
+ }
+}

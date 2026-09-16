@@ -1,0 +1,122 @@
+{
+ "oid": "21794",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21794.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21794_120.711648_31.219437_09002900011603121017250364C_181.2_2016_3_吴中区郭巷街道S58_西官浦大桥_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.2,
+ "usage": {
+  "completion_tokens": 833,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 963,
+   "engine_ttlt_ms": 12146,
+   "pre_inference_ms": 397,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1678,
+   "service_ttlt_ms": 12857,
+   "user_visible_ttft_ms": 1281
+  },
+  "prompt_tokens": 5620,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5376
+  },
+  "total_tokens": 6453
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 60.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 42.0,\n    \"sustainability\": 61.0,\n    \"aesthetics\": 63.0,\n    \"comfort\": 46.0,\n    \"walkability\": 41.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates most visible space to multiple wide motor-vehicle lanes, while the pedestrian realm on the right is comparatively narrow, suggesting an uneven distribution of street space for all road users.\",\n      \"A paved sidewalk is visible on the right side and appears continuous and level, which supports basic access for pedestrians and some mobility devices.\",\n      \"No marked pedestrian crossing, curb ramp, tactile paving, bus stop, or other inclusive access feature is visible in the scene, limiting evidence that the corridor serves different users equally and without discrimination.\"\n    ],\n    \"safety\": [\n      \"The roadway is newly paved with clear centerlines and lane markings, which helps drivers maintain lane discipline and reduces ambiguity.\",\n      \"Streetlights are installed at regular intervals along the corridor, improving basic visibility and perceived safety, especially after dark.\",\n      \"There is a curb-separated pedestrian path on the right, which provides some separation from moving traffic, but no visible crossing facilities, traffic calming, or dedicated cycling infrastructure can be seen.\"\n    ],\n    \"livability\": [\n      \"The corridor appears highly auto-oriented and lacks visible shops, homes, cafes, benches, or other active frontage that would support everyday street life.\",\n      \"The right-side sidewalk runs beside a sparse planted strip and water edge, but there are no visible social or recreational amenities such as seating, shelters, or gathering spaces.\",\n      \"Very low visible pedestrian and cyclist presence suggests limited current street activity and weak support for daily community interaction.\"\n    ],\n    \"sustainability\": [\n      \"Rows of newly planted street trees and low shrubs provide some green infrastructure and may contribute to long-term ecological value as they mature.\",\n      \"The adjacent water body and planted edge indicate some landscape integration, but no visible rain gardens, permeable paving details, or stormwater management features can be confirmed from the image.\",\n      \"The very wide carriageway and absence of visible transit stops or bike lanes suggest the corridor currently prioritizes car travel more than low-carbon multimodal travel.\"\n    ],\n    \"aesthetics\": [\n      \"The street has a clean, orderly appearance with fresh asphalt, consistent lane markings, and evenly spaced modern light poles.\",\n      \"The long linear perspective, water edge, and repeated rows of trees create a visually coherent and open landscape character.\",\n      \"Aesthetic quality is reduced by the sparse, leafless young trees and the lack of architectural frontage or richer planting that would add texture and human-scale interest.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears weak because the trees are young and leafless, providing almost no shade along the sidewalk or roadway edge.\",\n      \"Physical comfort for walking is mixed: the sidewalk looks smooth and continuous, but there are no visible benches, shelters, or resting points.\",\n      \"Psychological comfort may be limited by the very wide, fast-looking road environment and the absence of nearby people, active uses, or enclosure that would make the space feel more welcoming.\"\n    ],\n    \"walkability\": [\n      \"A continuous paved sidewalk is present on the right side, which provides a basic walking route separated from the roadway by a curb and planting strip.\",\n      \"Walkability is weakened by the lack of visible crossings, curb extensions, pedestrian signals, or destinations that would support practical walking trips.\",\n      \"The corridor offers little shade, seating, or active frontage, so despite the available path, the environment appears better suited to movement along the edge than to comfortable everyday walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 58.0,
+   "equity": 60.0,
+   "fairness": 55.0,
+   "accessibility": 59.0
+  },
+  "safety": 66.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 63.0,
+  "comfort": 46.0,
+  "walkability": 41.0
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 60.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 59.0,
+  "safety": 66.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 63.0,
+  "comfort": 46.0,
+  "walkability": 41.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:49:23+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates most visible space to multiple wide motor-vehicle lanes, while the pedestrian realm on the right is comparatively narrow, suggesting an uneven distribution of street space for all road users.",
+   "A paved sidewalk is visible on the right side and appears continuous and level, which supports basic access for pedestrians and some mobility devices.",
+   "No marked pedestrian crossing, curb ramp, tactile paving, bus stop, or other inclusive access feature is visible in the scene, limiting evidence that the corridor serves different users equally and without discrimination."
+  ],
+  "safety": [
+   "The roadway is newly paved with clear centerlines and lane markings, which helps drivers maintain lane discipline and reduces ambiguity.",
+   "Streetlights are installed at regular intervals along the corridor, improving basic visibility and perceived safety, especially after dark.",
+   "There is a curb-separated pedestrian path on the right, which provides some separation from moving traffic, but no visible crossing facilities, traffic calming, or dedicated cycling infrastructure can be seen."
+  ],
+  "livability": [
+   "The corridor appears highly auto-oriented and lacks visible shops, homes, cafes, benches, or other active frontage that would support everyday street life.",
+   "The right-side sidewalk runs beside a sparse planted strip and water edge, but there are no visible social or recreational amenities such as seating, shelters, or gathering spaces.",
+   "Very low visible pedestrian and cyclist presence suggests limited current street activity and weak support for daily community interaction."
+  ],
+  "sustainability": [
+   "Rows of newly planted street trees and low shrubs provide some green infrastructure and may contribute to long-term ecological value as they mature.",
+   "The adjacent water body and planted edge indicate some landscape integration, but no visible rain gardens, permeable paving details, or stormwater management features can be confirmed from the image.",
+   "The very wide carriageway and absence of visible transit stops or bike lanes suggest the corridor currently prioritizes car travel more than low-carbon multimodal travel."
+  ],
+  "aesthetics": [
+   "The street has a clean, orderly appearance with fresh asphalt, consistent lane markings, and evenly spaced modern light poles.",
+   "The long linear perspective, water edge, and repeated rows of trees create a visually coherent and open landscape character.",
+   "Aesthetic quality is reduced by the sparse, leafless young trees and the lack of architectural frontage or richer planting that would add texture and human-scale interest."
+  ],
+  "comfort": [
+   "Thermal comfort appears weak because the trees are young and leafless, providing almost no shade along the sidewalk or roadway edge.",
+   "Physical comfort for walking is mixed: the sidewalk looks smooth and continuous, but there are no visible benches, shelters, or resting points.",
+   "Psychological comfort may be limited by the very wide, fast-looking road environment and the absence of nearby people, active uses, or enclosure that would make the space feel more welcoming."
+  ],
+  "walkability": [
+   "A continuous paved sidewalk is present on the right side, which provides a basic walking route separated from the roadway by a curb and planting strip.",
+   "Walkability is weakened by the lack of visible crossings, curb extensions, pedestrian signals, or destinations that would support practical walking trips.",
+   "The corridor offers little shade, seating, or active frontage, so despite the available path, the environment appears better suited to movement along the edge than to comfortable everyday walking."
+  ]
+ }
+}

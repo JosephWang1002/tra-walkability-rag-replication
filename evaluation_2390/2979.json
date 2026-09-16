@@ -1,0 +1,73 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 32,
+      "equity": 34,
+      "fairness": 30,
+      "accessibility": 26
+    },
+    "safety": 68,
+    "livability": 22,
+    "sustainability": 53,
+    "aesthetics": 50,
+    "comfort": 32,
+    "walkability": 12,
+    "bikeability": 8
+  },
+  "explanations": {
+    "justice": [
+      "This auxiliary highway lane is only open to motor vehicles, with no consideration for non-motorized travel demand.",
+      "No accessibility design for disabled, elderly and other vulnerable groups at all.",
+      "Mobility equity is extremely low, with all public space occupied by high-speed traffic."
+    ],
+    "safety": [
+      "Complete isolation guardrails on both sides greatly prevent accidental road entry.",
+      "Clear traffic warning signs remind prohibited behaviors to reduce risk.",
+      "Low traffic volume on this section reduces daily driving conflict probability."
+    ],
+    "livability": [
+      "Only serves traffic transit function, with no community life supporting capability.",
+      "No rest benches, leisure facilities or activity space along the road.",
+      "Located on the urban fringe, providing almost no livability improvement value."
+    ],
+    "sustainability": [
+      "Tall dense roadside trees provide excellent shading and ecological benefits.",
+      "Impermeable asphalt surface lacks sponge city ecological drainage design.",
+      "No design guidance for low-carbon walking and cycling travel modes."
+    ],
+    "aesthetics": [
+      "Neat arranged tall street trees form a clean and beautiful linear landscape.",
+      "Unified guardrails and street lamps maintain good visual order.",
+      "Simple and tidy overall, with no excessive messy visual interference."
+    ],
+    "comfort": [
+      "Small traffic volume brings relatively low noise interference.",
+      "Tree shade provides good thermal comfort for surrounding areas.",
+      "Still completely unsuitable for any long-time staying of non-motorized users."
+    ],
+    "walkability": [
+      "This auxiliary lane prohibits pedestrian entry officially.",
+      "High potential driving speed makes walking extremely dangerous.",
+      "No sidewalk or walking supporting facilities are set."
+    ],
+    "bikeability": [
+      "Non-motor vehicle access is prohibited on this road section.",
+      "No cycling dedicated lanes or protection measures exist.",
+      "Overall environment is completely unsuitable for cycling activities."
+    ]
+  },
+  "image_id": "img-highway-003",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-22T12:02:00.000Z",
+  "record_id": "rec-highway-003",
+  "stored_image_url": "/storage/records/rec-highway-003/image.jpg",
+  "stored_thumb_url": "/storage/records/rec-highway-003/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-22T12:02:30.000Z"
+}

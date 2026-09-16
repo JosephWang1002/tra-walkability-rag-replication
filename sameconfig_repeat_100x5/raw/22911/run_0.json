@@ -1,0 +1,122 @@
+{
+ "oid": "22911",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22911.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22911_120.669792_31.282014_0900290012220826150247834HQ_164.88_2022_8_吴中区郭巷街道墅浦路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.1,
+ "usage": {
+  "completion_tokens": 847,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 501,
+   "engine_ttlt_ms": 13920,
+   "pre_inference_ms": 347,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1116,
+   "service_ttlt_ms": 14503,
+   "user_visible_ttft_ms": 768
+  },
+  "prompt_tokens": 5195,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 2176
+  },
+  "total_tokens": 6042
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 71.0,\n      \"equity\": 74.0,\n      \"fairness\": 68.0,\n      \"accessibility\": 71.0\n    },\n    \"safety\": 78.0,\n    \"livability\": 72.0,\n    \"sustainability\": 76.0,\n    \"aesthetics\": 81.0,\n    \"comfort\": 69.0,\n    \"walkability\": 66.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to multiple users, with broad carriageways, planted medians, and visible sidewalks on both sides rather than giving all space only to cars.\",\n      \"Accessibility is partly supported by continuous, level-looking sidewalks along both edges of the road, but no curb ramps, tactile paving, or marked crossings are visible in this view.\",\n      \"Fairness is moderate because pedestrians appear to have dedicated sidewalk space separated by curbs and greenery, yet cyclists do not have any clearly marked bike lane or protected cycling facility visible.\"\n    ],\n    \"safety\": [\n      \"A planted median separates opposing traffic streams, reducing head-on conflict and improving overall road safety for all users.\",\n      \"The roadway is wide, clean, and clearly lane-marked, which supports predictable vehicle movement and lowers confusion for drivers.\",\n      \"Sidewalks are physically offset from moving traffic by curbs, trees, and verge space, but the long straight road may encourage higher vehicle speeds and no visible crossing facility is present in the scene.\"\n    ],\n    \"livability\": [\n      \"Street trees, landscaped medians, and green edges create a more pleasant residential environment than a fully paved corridor.\",\n      \"High-rise residential buildings directly front the street, indicating that the corridor serves everyday living functions rather than only through-traffic.\",\n      \"Livability is limited by the absence of visible benches, active storefronts, or public gathering features; the scene feels orderly but somewhat quiet and vehicle-oriented.\"\n    ],\n    \"sustainability\": [\n      \"The extensive tree planting and continuous planted medians provide urban greenery that can support cooling, air-quality improvement, and ecological value.\",\n      \"Wide sidewalks on both sides can support short walking trips, which is more sustainable than a road designed only for driving.\",\n      \"Sustainability is constrained because no dedicated cycling lane, bus stop, or visible stormwater feature such as permeable paving or bioswales can be identified from the image.\"\n    ],\n    \"aesthetics\": [\n      \"The boulevard has strong visual order, with aligned streetlights, consistent lane markings, and repeated rows of trees along the corridor.\",\n      \"The landscaped median and side greenery soften the large road surface and improve the visual quality of the street.\",\n      \"The tall residential towers and clean pavement create a neat, modern appearance, though the overcast sky and very wide asphalt surface reduce warmth and human-scale richness.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is moderate because there are many trees along the sidewalks and medians, but the tree canopies are still relatively narrow and provide limited continuous shade over the walking path.\",\n      \"Physical comfort is helped by smooth asphalt on the roadway and apparently even sidewalk surfaces, yet no seating or rest areas are visible for users who may need to pause.\",\n      \"Psychological comfort is mixed: the street appears clean, spacious, and not crowded, but the broad multi-lane roadway and long straight sightline can feel exposed and dominated by motor traffic.\"\n    ],\n    \"walkability\": [\n      \"Walkability benefits from the presence of continuous sidewalks on both sides that are separated from traffic by curbs and planted strips.\",\n      \"Tree-lined edges improve the walking environment visually, but shade coverage over the sidewalk appears incomplete and there are no visible benches or pedestrian amenities.\",\n      \"Walkability is reduced by the lack of visible crosswalks, pedestrian signals, curb ramps, or midblock crossing aids on this wide boulevard, making crossing likely difficult despite decent side-path provision.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 71.0,
+   "equity": 74.0,
+   "fairness": 68.0,
+   "accessibility": 71.0
+  },
+  "safety": 78.0,
+  "livability": 72.0,
+  "sustainability": 76.0,
+  "aesthetics": 81.0,
+  "comfort": 69.0,
+  "walkability": 66.0
+ },
+ "scores_flat": {
+  "justice": 71.0,
+  "justice_equity": 74.0,
+  "justice_fairness": 68.0,
+  "justice_accessibility": 71.0,
+  "safety": 78.0,
+  "livability": 72.0,
+  "sustainability": 76.0,
+  "aesthetics": 81.0,
+  "comfort": 69.0,
+  "walkability": 66.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:52:59+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to multiple users, with broad carriageways, planted medians, and visible sidewalks on both sides rather than giving all space only to cars.",
+   "Accessibility is partly supported by continuous, level-looking sidewalks along both edges of the road, but no curb ramps, tactile paving, or marked crossings are visible in this view.",
+   "Fairness is moderate because pedestrians appear to have dedicated sidewalk space separated by curbs and greenery, yet cyclists do not have any clearly marked bike lane or protected cycling facility visible."
+  ],
+  "safety": [
+   "A planted median separates opposing traffic streams, reducing head-on conflict and improving overall road safety for all users.",
+   "The roadway is wide, clean, and clearly lane-marked, which supports predictable vehicle movement and lowers confusion for drivers.",
+   "Sidewalks are physically offset from moving traffic by curbs, trees, and verge space, but the long straight road may encourage higher vehicle speeds and no visible crossing facility is present in the scene."
+  ],
+  "livability": [
+   "Street trees, landscaped medians, and green edges create a more pleasant residential environment than a fully paved corridor.",
+   "High-rise residential buildings directly front the street, indicating that the corridor serves everyday living functions rather than only through-traffic.",
+   "Livability is limited by the absence of visible benches, active storefronts, or public gathering features; the scene feels orderly but somewhat quiet and vehicle-oriented."
+  ],
+  "sustainability": [
+   "The extensive tree planting and continuous planted medians provide urban greenery that can support cooling, air-quality improvement, and ecological value.",
+   "Wide sidewalks on both sides can support short walking trips, which is more sustainable than a road designed only for driving.",
+   "Sustainability is constrained because no dedicated cycling lane, bus stop, or visible stormwater feature such as permeable paving or bioswales can be identified from the image."
+  ],
+  "aesthetics": [
+   "The boulevard has strong visual order, with aligned streetlights, consistent lane markings, and repeated rows of trees along the corridor.",
+   "The landscaped median and side greenery soften the large road surface and improve the visual quality of the street.",
+   "The tall residential towers and clean pavement create a neat, modern appearance, though the overcast sky and very wide asphalt surface reduce warmth and human-scale richness."
+  ],
+  "comfort": [
+   "Thermal comfort is moderate because there are many trees along the sidewalks and medians, but the tree canopies are still relatively narrow and provide limited continuous shade over the walking path.",
+   "Physical comfort is helped by smooth asphalt on the roadway and apparently even sidewalk surfaces, yet no seating or rest areas are visible for users who may need to pause.",
+   "Psychological comfort is mixed: the street appears clean, spacious, and not crowded, but the broad multi-lane roadway and long straight sightline can feel exposed and dominated by motor traffic."
+  ],
+  "walkability": [
+   "Walkability benefits from the presence of continuous sidewalks on both sides that are separated from traffic by curbs and planted strips.",
+   "Tree-lined edges improve the walking environment visually, but shade coverage over the sidewalk appears incomplete and there are no visible benches or pedestrian amenities.",
+   "Walkability is reduced by the lack of visible crosswalks, pedestrian signals, curb ramps, or midblock crossing aids on this wide boulevard, making crossing likely difficult despite decent side-path provision."
+  ]
+ }
+}

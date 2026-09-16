@@ -1,0 +1,194 @@
+{
+ "oid": "29937",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\29937_120.622816_31.28696_09002900121904141222162425R_4.06_2019_4_5幢_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 7.7,
+  "usage": {
+   "completion_tokens": 194,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 444,
+    "engine_ttlt_ms": 1654,
+    "pre_inference_ms": 498,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 1170,
+    "service_ttlt_ms": 2373,
+    "user_visible_ttft_ms": 673
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1455
+  },
+  "raw": "{\n  \"road_type\": \"neighborhood_street\",\n  \"elements\": {\n    \"sidewalk\": \"true\",\n    \"bike_lane\": \"false\",\n    \"seating\": \"true\",\n    \"shade_trees\": \"many\",\n    \"curb_ramp\": \"false\",\n    \"tactile_paving\": \"false\",\n    \"pedestrian_crossing\": \"false\",\n    \"street_lighting\": \"true\",\n    \"greenery\": \"high\",\n    \"vehicle_traffic\": \"light\",\n    \"bus_stop\": \"false\"\n  },\n  \"issues\": [\"no_bike_lane\", \"poor_accessibility\", \"no_crossing\"],\n  \"brief\": \"A narrow neighborhood street with a sidewalk on the right, parked cars, and many large trees lining both sides. Small chairs and a table sit beside a building with a blue awning, and no pedestrian crossing or curb ramp is visible.\"\n}",
+  "parsed": {
+   "road_type": "neighborhood_street",
+   "elements": {
+    "sidewalk": "true",
+    "bike_lane": "false",
+    "seating": "true",
+    "shade_trees": "many",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "true",
+    "greenery": "high",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_bike_lane",
+    "poor_accessibility",
+    "no_crossing"
+   ],
+   "brief": "A narrow neighborhood street with a sidewalk on the right, parked cars, and many large trees lining both sides. Small chairs and a table sit beside a building with a blue awning, and no pedestrian crossing or curb ramp is visible."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A narrow neighborhood street with a sidewalk on the right, parked cars, and many large trees lining both sides. Small chairs and a table sit beside a building with a blue awning, and no pedestrian crossing or curb ramp is visible. Road type: neighborhood_street. Visible elements: sidewalk=true, bike_lane=false, seating=true, shade_trees=many, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=true, greenery=high, vehicle_traffic=light, bus_stop=false. Issues: ['no_bike_lane', 'poor_accessibility', 'no_crossing']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 20.2,
+  "usage": {
+   "completion_tokens": 850,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 17,
+    "engine_ttft_ms": 431,
+    "engine_ttlt_ms": 14627,
+    "pre_inference_ms": 409,
+    "service_tbt_ms": 17,
+    "service_ttft_ms": 1112,
+    "service_ttlt_ms": 15305,
+    "user_visible_ttft_ms": 702
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2737
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 56.0,\n      \"fairness\": 50.0,\n      \"accessibility\": 56.0\n    },\n    \"safety\": 48.0,\n    \"livability\": 58.0,\n    \"sustainability\": 63.0,\n    \"aesthetics\": 61.0,\n    \"comfort\": 57.0,\n    \"walkability\": 52.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street provides some pedestrian space through a paved sidewalk on the right side, but much of it is occupied by parked cars and outdoor chairs, so spatial resources are not evenly available to all road users.\",\n      \"Accessibility is limited because the visible walking path is narrow and partially blocked by furniture, parked vehicles, and storefront edges, which reduces barrier-free movement for people pushing strollers or carts.\",\n      \"Fairness appears weaker because there are no visible marked pedestrian crossings, dedicated cycling facilities, or clear separation of modes, so pedestrians and vehicles must negotiate space informally on a narrow roadway.\"\n    ],\n    \"safety\": [\n      \"The roadway is narrow and lined with parked cars on both sides, which can reduce sightlines and create conflicts when drivers and pedestrians share the same constrained space.\",\n      \"There is no visible dedicated sidewalk protection such as bollards, curbs with strong separation, or guardrails, so pedestrians walking beside the parked white car are exposed to moving vehicles.\",\n      \"Large street trees visually calm the street and likely slow traffic, but overhead utility wires, aging building edges, and clutter near the storefront contribute to a somewhat unmanaged environment.\"\n    ],\n    \"livability\": [\n      \"Mature trees along both sides of the street create a shaded, neighborhood-scale environment that supports everyday residential life.\",\n      \"The small storefront and chairs outside suggest local services and informal social use, which can add street activity and convenience for nearby residents.\",\n      \"Livability is reduced by the worn building facade, cluttered sidewalk edge, and vehicle dominance, which make the street feel more utilitarian than welcoming for lingering or community use.\"\n    ],\n    \"sustainability\": [\n      \"The dense tree canopy is a strong positive feature because it provides shade, cooling, and ecological value along the street corridor.\",\n      \"The compact mixed residential and small-commercial setting may support short local trips on foot rather than requiring longer motorized travel for basic needs.\",\n      \"Sustainability is limited by the visible dominance of private cars parked along the street and the absence of visible bike lanes, transit stops, or stormwater features such as permeable planting strips.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous canopy of mature trees gives the street a pleasant green character and softens the narrow corridor visually.\",\n      \"The scene has some visual interest from the intimate scale of the lane, storefront signage, and residential buildings, creating a lived-in neighborhood atmosphere.\",\n      \"Aesthetic quality is weakened by exposed overhead wires, weathered walls, patched awnings, and sidewalk clutter from chairs and parked vehicles.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good because the large trees provide extensive shade over much of the street and sidewalk.\",\n      \"Physical comfort is mixed: the sidewalk appears paved and mostly level, but chairs, tables, and parked cars narrow the usable walking zone.\",\n      \"Psychological comfort is moderate to low because the lane feels tight and somewhat cluttered, with pedestrians sharing close space with vehicles and limited clear refuge areas.\"\n    ],\n    \"walkability\": [\n      \"Walkability benefits from the shaded environment and the presence of a continuous paved edge along the right side of the street.\",\n      \"Walking conditions are hindered by sidewalk obstruction from parked cars, chairs, and storefront encroachment, forcing pedestrians into a narrower path.\",\n      \"There are no visible crosswalks, curb ramps, pedestrian signs, or dedicated pedestrian-priority elements, so the street does not strongly support clear and comfortable walking for all users.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 54.0,
+    "equity": 56.0,
+    "fairness": 50.0,
+    "accessibility": 56.0
+   },
+   "safety": 48.0,
+   "livability": 58.0,
+   "sustainability": 63.0,
+   "aesthetics": 61.0,
+   "comfort": 57.0,
+   "walkability": 52.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The street provides some pedestrian space through a paved sidewalk on the right side, but much of it is occupied by parked cars and outdoor chairs, so spatial resources are not evenly available to all road users.",
+    "Accessibility is limited because the visible walking path is narrow and partially blocked by furniture, parked vehicles, and storefront edges, which reduces barrier-free movement for people pushing strollers or carts.",
+    "Fairness appears weaker because there are no visible marked pedestrian crossings, dedicated cycling facilities, or clear separation of modes, so pedestrians and vehicles must negotiate space informally on a narrow roadway."
+   ],
+   "safety": [
+    "The roadway is narrow and lined with parked cars on both sides, which can reduce sightlines and create conflicts when drivers and pedestrians share the same constrained space.",
+    "There is no visible dedicated sidewalk protection such as bollards, curbs with strong separation, or guardrails, so pedestrians walking beside the parked white car are exposed to moving vehicles.",
+    "Large street trees visually calm the street and likely slow traffic, but overhead utility wires, aging building edges, and clutter near the storefront contribute to a somewhat unmanaged environment."
+   ],
+   "livability": [
+    "Mature trees along both sides of the street create a shaded, neighborhood-scale environment that supports everyday residential life.",
+    "The small storefront and chairs outside suggest local services and informal social use, which can add street activity and convenience for nearby residents.",
+    "Livability is reduced by the worn building facade, cluttered sidewalk edge, and vehicle dominance, which make the street feel more utilitarian than welcoming for lingering or community use."
+   ],
+   "sustainability": [
+    "The dense tree canopy is a strong positive feature because it provides shade, cooling, and ecological value along the street corridor.",
+    "The compact mixed residential and small-commercial setting may support short local trips on foot rather than requiring longer motorized travel for basic needs.",
+    "Sustainability is limited by the visible dominance of private cars parked along the street and the absence of visible bike lanes, transit stops, or stormwater features such as permeable planting strips."
+   ],
+   "aesthetics": [
+    "The continuous canopy of mature trees gives the street a pleasant green character and softens the narrow corridor visually.",
+    "The scene has some visual interest from the intimate scale of the lane, storefront signage, and residential buildings, creating a lived-in neighborhood atmosphere.",
+    "Aesthetic quality is weakened by exposed overhead wires, weathered walls, patched awnings, and sidewalk clutter from chairs and parked vehicles."
+   ],
+   "comfort": [
+    "Thermal comfort is relatively good because the large trees provide extensive shade over much of the street and sidewalk.",
+    "Physical comfort is mixed: the sidewalk appears paved and mostly level, but chairs, tables, and parked cars narrow the usable walking zone.",
+    "Psychological comfort is moderate to low because the lane feels tight and somewhat cluttered, with pedestrians sharing close space with vehicles and limited clear refuge areas."
+   ],
+   "walkability": [
+    "Walkability benefits from the shaded environment and the presence of a continuous paved edge along the right side of the street.",
+    "Walking conditions are hindered by sidewalk obstruction from parked cars, chairs, and storefront encroachment, forcing pedestrians into a narrower path.",
+    "There are no visible crosswalks, curb ramps, pedestrian signs, or dedicated pedestrian-priority elements, so the street does not strongly support clear and comfortable walking for all users."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 56.0,
+  "justice_fairness": 50.0,
+  "justice_accessibility": 56.0,
+  "safety": 48.0,
+  "livability": 58.0,
+  "sustainability": 63.0,
+  "aesthetics": 61.0,
+  "comfort": 57.0,
+  "walkability": 52.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T16:29:19+00:00",
+  "step2": "2026-09-03T16:29:19+00:00",
+  "step3": "2026-09-03T16:29:39+00:00",
+  "completed": "2026-09-03T16:29:39+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\29937.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

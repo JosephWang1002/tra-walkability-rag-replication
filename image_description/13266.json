@@ -1,0 +1,33 @@
+{
+ "oid": "13266",
+ "description": "The image shows a wide, multi-lane roadway on a bridge with no visible pedestrian sidewalk or curb-separated walking space; the only clear pedestrian-relevant edge is a concrete barrier along the right side. Traffic is separated from any potential walking area only by the roadway markings and the bridge railing, with no barriers or buffers designed for pedestrians, and there are no visible curb cuts, ramps, or other accessibility features. Lighting appears to be provided by tall streetlights along the bridge, but there is little to no greenery or shade, and the scene offers limited pedestrian safety/comfort due to the lack of dedicated walking infrastructure.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 127,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 7,
+   "engine_ttft_ms": 217,
+   "engine_ttlt_ms": 1136,
+   "pre_inference_ms": 309,
+   "service_tbt_ms": 7,
+   "service_ttft_ms": 885,
+   "service_ttlt_ms": 1799,
+   "total_duration_ms": 1497,
+   "user_visible_ttft_ms": 576
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1111
+ },
+ "latency_s": 4.7,
+ "timestamp": "2026-08-31T15:51:55"
+}

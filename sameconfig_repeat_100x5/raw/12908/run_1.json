@@ -1,0 +1,132 @@
+{
+ "oid": "12908",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12908.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12908_120.471601_31.366161_09002900121706021257384155H_96.53_2017_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.4,
+ "usage": {
+  "completion_tokens": 997,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 478,
+   "engine_ttlt_ms": 17912,
+   "pre_inference_ms": 267,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1006,
+   "service_ttlt_ms": 18434,
+   "user_visible_ttft_ms": 740
+  },
+  "prompt_tokens": 5264,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6261
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 52.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 55.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 60.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 74.0,\n    \"comfort\": 63.0,\n    \"walkability\": 48.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by the carriageway: the asphalt road is continuous and centered, while neither side shows a clearly built sidewalk of similar quality for pedestrians.\",\n      \"Accessibility is only moderate because the road edges use raised curbs and narrow concrete strips, but no visible curb ramps, tactile paving, or dedicated barrier-free crossing elements are present.\",\n      \"Fairness across road users is limited because pedestrians appear to rely on the road shoulder or informal edge space beside vegetation, while motor vehicles have the clearest and most legible travel space.\",\n      \"The parked black car occupies part of the left-side frontage area, further reducing the already limited pedestrian realm.\"\n    ],\n    \"safety\": [\n      \"The street is relatively narrow and appears low-speed, which can reduce crash severity compared with a wide multi-lane road.\",\n      \"There is no visible marked crosswalk, refuge island, or traffic calming device such as a raised crossing, so pedestrian crossing protection is weak.\",\n      \"The black parked car on the left sits close to the roadway edge and can obstruct sightlines between walkers and approaching vehicles.\",\n      \"Utility poles are visible, but no clear pedestrian-scale lighting fixtures are evident, which may weaken perceived safety after dark.\",\n      \"Road edges are defined by curbs, yet the absence of a separated sidewalk means pedestrians and vehicles may still mix in the same corridor.\"\n    ],\n    \"livability\": [\n      \"The street has abundant greenery, including large trees, shrubs, and planted edges, which improves the residential feel of the environment.\",\n      \"Low traffic volume and a quiet-looking setting suggest a calmer daily environment than a busy arterial street.\",\n      \"Livability is constrained by the lack of visible public amenities such as benches, bus stops, shops, or community gathering spaces.\",\n      \"Trash bins on the right indicate some basic street management, but the corridor still functions more as a vehicle access road than an active social street.\"\n    ],\n    \"sustainability\": [\n      \"Dense roadside vegetation and mature trees provide ecological value and help soften the paved environment.\",\n      \"The narrow two-way street and modest scale suggest a lower-intensity transport environment than car-oriented high-capacity roads.\",\n      \"Sustainability is limited by the absence of visible bike lanes, transit stops, or other clear support for low-carbon mode choice beyond walking on the edge.\",\n      \"Unpaved soil and planted strips along the right side may allow some rainwater infiltration compared with a fully sealed streetscape.\"\n    ],\n    \"aesthetics\": [\n      \"The corridor has a pleasant green character, with mature trees and shrubs framing both sides of the road.\",\n      \"The street appears relatively clean and uncluttered, with simple paving and limited visual chaos.\",\n      \"The distant hills and vegetation create an attractive natural backdrop that enhances scenic quality.\",\n      \"Aesthetic quality is slightly reduced by visible overhead utility wires and the utilitarian appearance of bins and roadside parking.\"\n    ],\n    \"comfort\": [\n      \"Large trees on the right provide some shade and improve thermal comfort, especially compared with a fully exposed street.\",\n      \"Shade is uneven because much of the roadway and left edge remain exposed, so thermal comfort is only moderate rather than high.\",\n      \"Physical comfort for walking is limited by the lack of a continuous, clearly paved sidewalk; pedestrians may need to use narrow edge strips or the roadway itself.\",\n      \"Psychological comfort benefits from the quiet residential character, low visible traffic, and greenery buffering parts of the street.\",\n      \"No visible benches, shelters, or resting facilities are provided for users who may need to pause.\"\n    ],\n    \"walkability\": [\n      \"Walkability is weak because there is no continuous formal sidewalk visible on either side of the street.\",\n      \"The raised curbs and narrow edge treatments create some separation from vehicles, but they do not form a generous pedestrian path.\",\n      \"There are no visible crosswalk markings, pedestrian signals, or curb ramps to support safe and legible walking routes.\",\n      \"Greenery and a calm-looking traffic environment make the street more pleasant to walk along, partially offsetting the infrastructure deficit.\",\n      \"The parked car on the left and bins on the right show how edge space can become obstructed when pedestrian space is not clearly designated.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 52.0,
+   "fairness": 55.0,
+   "accessibility": 55.0
+  },
+  "safety": 58.0,
+  "livability": 60.0,
+  "sustainability": 66.0,
+  "aesthetics": 74.0,
+  "comfort": 63.0,
+  "walkability": 48.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 52.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 55.0,
+  "safety": 58.0,
+  "livability": 60.0,
+  "sustainability": 66.0,
+  "aesthetics": 74.0,
+  "comfort": 63.0,
+  "walkability": 48.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:20:08+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by the carriageway: the asphalt road is continuous and centered, while neither side shows a clearly built sidewalk of similar quality for pedestrians.",
+   "Accessibility is only moderate because the road edges use raised curbs and narrow concrete strips, but no visible curb ramps, tactile paving, or dedicated barrier-free crossing elements are present.",
+   "Fairness across road users is limited because pedestrians appear to rely on the road shoulder or informal edge space beside vegetation, while motor vehicles have the clearest and most legible travel space.",
+   "The parked black car occupies part of the left-side frontage area, further reducing the already limited pedestrian realm."
+  ],
+  "safety": [
+   "The street is relatively narrow and appears low-speed, which can reduce crash severity compared with a wide multi-lane road.",
+   "There is no visible marked crosswalk, refuge island, or traffic calming device such as a raised crossing, so pedestrian crossing protection is weak.",
+   "The black parked car on the left sits close to the roadway edge and can obstruct sightlines between walkers and approaching vehicles.",
+   "Utility poles are visible, but no clear pedestrian-scale lighting fixtures are evident, which may weaken perceived safety after dark.",
+   "Road edges are defined by curbs, yet the absence of a separated sidewalk means pedestrians and vehicles may still mix in the same corridor."
+  ],
+  "livability": [
+   "The street has abundant greenery, including large trees, shrubs, and planted edges, which improves the residential feel of the environment.",
+   "Low traffic volume and a quiet-looking setting suggest a calmer daily environment than a busy arterial street.",
+   "Livability is constrained by the lack of visible public amenities such as benches, bus stops, shops, or community gathering spaces.",
+   "Trash bins on the right indicate some basic street management, but the corridor still functions more as a vehicle access road than an active social street."
+  ],
+  "sustainability": [
+   "Dense roadside vegetation and mature trees provide ecological value and help soften the paved environment.",
+   "The narrow two-way street and modest scale suggest a lower-intensity transport environment than car-oriented high-capacity roads.",
+   "Sustainability is limited by the absence of visible bike lanes, transit stops, or other clear support for low-carbon mode choice beyond walking on the edge.",
+   "Unpaved soil and planted strips along the right side may allow some rainwater infiltration compared with a fully sealed streetscape."
+  ],
+  "aesthetics": [
+   "The corridor has a pleasant green character, with mature trees and shrubs framing both sides of the road.",
+   "The street appears relatively clean and uncluttered, with simple paving and limited visual chaos.",
+   "The distant hills and vegetation create an attractive natural backdrop that enhances scenic quality.",
+   "Aesthetic quality is slightly reduced by visible overhead utility wires and the utilitarian appearance of bins and roadside parking."
+  ],
+  "comfort": [
+   "Large trees on the right provide some shade and improve thermal comfort, especially compared with a fully exposed street.",
+   "Shade is uneven because much of the roadway and left edge remain exposed, so thermal comfort is only moderate rather than high.",
+   "Physical comfort for walking is limited by the lack of a continuous, clearly paved sidewalk; pedestrians may need to use narrow edge strips or the roadway itself.",
+   "Psychological comfort benefits from the quiet residential character, low visible traffic, and greenery buffering parts of the street.",
+   "No visible benches, shelters, or resting facilities are provided for users who may need to pause."
+  ],
+  "walkability": [
+   "Walkability is weak because there is no continuous formal sidewalk visible on either side of the street.",
+   "The raised curbs and narrow edge treatments create some separation from vehicles, but they do not form a generous pedestrian path.",
+   "There are no visible crosswalk markings, pedestrian signals, or curb ramps to support safe and legible walking routes.",
+   "Greenery and a calm-looking traffic environment make the street more pleasant to walk along, partially offsetting the infrastructure deficit.",
+   "The parked car on the left and bins on the right show how edge space can become obstructed when pedestrian space is not clearly designated."
+  ]
+ }
+}

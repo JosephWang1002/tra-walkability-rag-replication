@@ -1,0 +1,32 @@
+{
+ "oid": "20258",
+ "description": "The street appears to have no continuous sidewalk along either side; instead, there are narrow curb edges with grass strips and landscaped planting beds, and the roadway is directly adjacent to the verge. Traffic separation is minimal—there are no visible barriers or marked pedestrian crossings, and the road looks like a low-speed residential street with streetlights along the centerline. There is some greenery and partial shade from roadside trees, but there are no clearly visible curb ramps or other accessibility features, and there are few pedestrian amenities or protections from vehicles.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 109,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 9,
+   "engine_ttft_ms": 905,
+   "engine_ttlt_ms": 1832,
+   "pre_inference_ms": 324,
+   "service_tbt_ms": 12,
+   "service_ttft_ms": 1598,
+   "service_ttlt_ms": 2950,
+   "user_visible_ttft_ms": 1274
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1093
+ },
+ "latency_s": 6.1,
+ "timestamp": "2026-08-31T16:28:15"
+}

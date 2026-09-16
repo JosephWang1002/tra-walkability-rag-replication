@@ -1,0 +1,126 @@
+{
+ "oid": "14725",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\14725.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\14725_120.517978_31.165679_09002900011604131240165275L_44.65_2016_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.1,
+ "usage": {
+  "completion_tokens": 885,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 364,
+   "engine_ttlt_ms": 14340,
+   "pre_inference_ms": 321,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 948,
+   "service_ttlt_ms": 14919,
+   "user_visible_ttft_ms": 628
+  },
+  "prompt_tokens": 5102,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4864
+  },
+  "total_tokens": 5987
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 49.0,\n      \"equity\": 52.0,\n      \"fairness\": 50.0,\n      \"accessibility\": 45.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 46.0,\n    \"sustainability\": 55.0,\n    \"aesthetics\": 74.0,\n    \"comfort\": 57.0,\n    \"walkability\": 38.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible space is allocated to motor-vehicle carriageway, while no clear sidewalk is visible on either side, suggesting an uneven distribution of street space for different road users.\",\n      \"White roadside guardrails provide edge protection, but they also indicate that people on foot would have limited usable space because no dedicated pedestrian zone can be identified beside the travel lanes.\",\n      \"The road surface is smooth and newly paved for vehicles, yet no visible curb ramps, tactile paving, marked crossings, or pedestrian refuge areas are present, reducing accessibility for a broad range of users.\"\n    ],\n    \"safety\": [\n      \"The roadway appears wide and freshly paved with clear center and edge lane markings, which supports predictable vehicle movement and reduces some conflict risk for drivers.\",\n      \"There is no visible separated pedestrian path or marked crosswalk on this bridge-like segment, so pedestrians would likely be exposed if they needed to use or cross the road.\",\n      \"White guardrails on both sides create a physical barrier at the edges, which helps prevent runoff crashes and improves edge safety along the elevated section.\",\n      \"Large roadside trees narrow sightlines ahead in the distance and create a shaded tunnel effect, which may slightly reduce visibility of other users beyond the curve.\"\n    ],\n    \"livability\": [\n      \"The scene functions mainly as a through-road corridor, with very limited visible social or staying amenities such as benches, storefront frontage, plazas, or gathering spaces.\",\n      \"Large mature trees on the right and ahead add greenery and make the corridor feel less barren, contributing modestly to everyday environmental quality.\",\n      \"Utility poles, overhead wires, and the absence of visible pedestrian-oriented facilities make the space feel more infrastructural than community-oriented.\"\n    ],\n    \"sustainability\": [\n      \"The mature tree canopy along the roadside provides meaningful green coverage, which supports shade, cooling, and ecological value.\",\n      \"No visible dedicated bike lane, bus stop, or transit facility is present, so the corridor appears to prioritize private motor travel over lower-carbon travel options.\",\n      \"The bridge and roadway surfaces appear dominated by asphalt and hard materials, with no visible permeable paving, bioswales, or stormwater features.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous white railings on both sides create a strong visual rhythm and a neat, orderly streetscape.\",\n      \"Large green trees form an attractive canopy ahead and soften the otherwise hard road environment.\",\n      \"The fresh dark asphalt and clean lane markings make the corridor look well maintained and visually coherent.\",\n      \"Overhead utility wires and poles add some visual clutter, slightly reducing the overall scenic quality.\"\n    ],\n    \"comfort\": [\n      \"The smooth asphalt surface suggests good riding and driving comfort with few visible bumps or surface defects.\",\n      \"Tree cover ahead and on the right offers some shade, but much of the visible roadway remains exposed, so thermal comfort is only moderate for users outside vehicles.\",\n      \"No benches, lay-bys for resting, or pedestrian refuge spaces are visible, limiting physical comfort for anyone traveling on foot.\",\n      \"The broad open carriageway and low visible traffic volume reduce immediate crowding stress, supporting moderate psychological comfort for road users.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk is clearly visible on either side of the road, which is a major limitation for walking.\",\n      \"There are no visible marked pedestrian crossings, curb extensions, or pedestrian signals to support safe route continuity on foot.\",\n      \"Guardrails define the road edge but do not substitute for a usable footpath, so pedestrian movement appears constrained on this segment.\",\n      \"Some tree shade improves the attractiveness of the corridor, but the lack of dedicated pedestrian infrastructure keeps overall walkability low.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 49.0,
+   "equity": 52.0,
+   "fairness": 50.0,
+   "accessibility": 45.0
+  },
+  "safety": 58.0,
+  "livability": 46.0,
+  "sustainability": 55.0,
+  "aesthetics": 74.0,
+  "comfort": 57.0,
+  "walkability": 38.0
+ },
+ "scores_flat": {
+  "justice": 49.0,
+  "justice_equity": 52.0,
+  "justice_fairness": 50.0,
+  "justice_accessibility": 45.0,
+  "safety": 58.0,
+  "livability": 46.0,
+  "sustainability": 55.0,
+  "aesthetics": 74.0,
+  "comfort": 57.0,
+  "walkability": 38.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:24:07+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible space is allocated to motor-vehicle carriageway, while no clear sidewalk is visible on either side, suggesting an uneven distribution of street space for different road users.",
+   "White roadside guardrails provide edge protection, but they also indicate that people on foot would have limited usable space because no dedicated pedestrian zone can be identified beside the travel lanes.",
+   "The road surface is smooth and newly paved for vehicles, yet no visible curb ramps, tactile paving, marked crossings, or pedestrian refuge areas are present, reducing accessibility for a broad range of users."
+  ],
+  "safety": [
+   "The roadway appears wide and freshly paved with clear center and edge lane markings, which supports predictable vehicle movement and reduces some conflict risk for drivers.",
+   "There is no visible separated pedestrian path or marked crosswalk on this bridge-like segment, so pedestrians would likely be exposed if they needed to use or cross the road.",
+   "White guardrails on both sides create a physical barrier at the edges, which helps prevent runoff crashes and improves edge safety along the elevated section.",
+   "Large roadside trees narrow sightlines ahead in the distance and create a shaded tunnel effect, which may slightly reduce visibility of other users beyond the curve."
+  ],
+  "livability": [
+   "The scene functions mainly as a through-road corridor, with very limited visible social or staying amenities such as benches, storefront frontage, plazas, or gathering spaces.",
+   "Large mature trees on the right and ahead add greenery and make the corridor feel less barren, contributing modestly to everyday environmental quality.",
+   "Utility poles, overhead wires, and the absence of visible pedestrian-oriented facilities make the space feel more infrastructural than community-oriented."
+  ],
+  "sustainability": [
+   "The mature tree canopy along the roadside provides meaningful green coverage, which supports shade, cooling, and ecological value.",
+   "No visible dedicated bike lane, bus stop, or transit facility is present, so the corridor appears to prioritize private motor travel over lower-carbon travel options.",
+   "The bridge and roadway surfaces appear dominated by asphalt and hard materials, with no visible permeable paving, bioswales, or stormwater features."
+  ],
+  "aesthetics": [
+   "The continuous white railings on both sides create a strong visual rhythm and a neat, orderly streetscape.",
+   "Large green trees form an attractive canopy ahead and soften the otherwise hard road environment.",
+   "The fresh dark asphalt and clean lane markings make the corridor look well maintained and visually coherent.",
+   "Overhead utility wires and poles add some visual clutter, slightly reducing the overall scenic quality."
+  ],
+  "comfort": [
+   "The smooth asphalt surface suggests good riding and driving comfort with few visible bumps or surface defects.",
+   "Tree cover ahead and on the right offers some shade, but much of the visible roadway remains exposed, so thermal comfort is only moderate for users outside vehicles.",
+   "No benches, lay-bys for resting, or pedestrian refuge spaces are visible, limiting physical comfort for anyone traveling on foot.",
+   "The broad open carriageway and low visible traffic volume reduce immediate crowding stress, supporting moderate psychological comfort for road users."
+  ],
+  "walkability": [
+   "No continuous sidewalk is clearly visible on either side of the road, which is a major limitation for walking.",
+   "There are no visible marked pedestrian crossings, curb extensions, or pedestrian signals to support safe route continuity on foot.",
+   "Guardrails define the road edge but do not substitute for a usable footpath, so pedestrian movement appears constrained on this segment.",
+   "Some tree shade improves the attractiveness of the corridor, but the lack of dedicated pedestrian infrastructure keeps overall walkability low."
+  ]
+ }
+}

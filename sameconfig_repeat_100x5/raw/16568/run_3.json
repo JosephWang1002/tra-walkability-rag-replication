@@ -1,0 +1,122 @@
+{
+ "oid": "16568",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16568.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16568_120.57047_31.180799_09002900011602191306530814C_262.82_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 14.3,
+ "usage": {
+  "completion_tokens": 817,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 501,
+   "engine_ttlt_ms": 11122,
+   "pre_inference_ms": 282,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1027,
+   "service_ttlt_ms": 11627,
+   "user_visible_ttft_ms": 745
+  },
+  "prompt_tokens": 5398,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6215
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 45.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 38.0,\n    \"livability\": 34.0,\n    \"sustainability\": 36.0,\n    \"aesthetics\": 43.0,\n    \"comfort\": 35.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible right-of-way is allocated to a narrow concrete carriageway, while no dedicated sidewalk is visible on either side, so spatial resources are not evenly distributed for people walking.\",\n      \"Parked cars occupy edge space on both sides of the road, including a car partly on the paved frontage at the right, which reduces equal access for non-drivers.\",\n      \"Accessibility is weak because there are no visible curb ramps, tactile paving, marked pedestrian zones, or separated walking paths; all users appear to share the same road surface.\"\n    ],\n    \"safety\": [\n      \"There is no visible sidewalk, shoulder protection, or pedestrian refuge, so anyone walking would need to use the same narrow roadway as cars.\",\n      \"The road edges are irregular, with dirt shoulders, scattered materials near the greenhouse on the left, and parked vehicles close to the travel path, increasing conflict risk.\",\n      \"Long straight alignment may support visibility ahead, but the absence of lane markings, crossings, traffic calming, and protective barriers lowers overall safety for all road users.\"\n    ],\n    \"livability\": [\n      \"The setting is sparsely developed, with farmland, utility poles, and a few buildings, but almost no visible public amenities such as benches, shops, bus stops, or social spaces.\",\n      \"There is little evidence of active street life or mixed-use frontage; the road mainly serves access to fields and isolated properties rather than daily community interaction.\",\n      \"Loose materials and a rough roadside condition near the left-side greenhouse reduce the sense of care and everyday usability of the street environment.\"\n    ],\n    \"sustainability\": [\n      \"The rural agricultural landscape and open fields preserve permeable land cover beyond the road itself, which is a modest positive for environmental performance.\",\n      \"However, the street lacks visible street trees, bioswales, rain gardens, or other green infrastructure along the roadway edge.\",\n      \"No bike lane, bus stop, or other clear support for low-carbon travel is visible, so the corridor appears to rely mainly on private vehicle access.\"\n    ],\n    \"aesthetics\": [\n      \"The open horizon and expansive farmland create a simple, uncluttered rural view with long sightlines.\",\n      \"At the same time, dense overhead utility wires crossing the sky create strong visual clutter and reduce scenic quality.\",\n      \"Patchy pavement, parked cars at the edges, and scattered materials beside the greenhouse weaken visual order and maintenance appearance.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because the road is fully exposed, with almost no visible street trees or shade structures along the walking path.\",\n      \"Physical comfort is limited by the lack of sidewalks, seating, and buffered space; pedestrians would need to walk on hard concrete shared with vehicles.\",\n      \"Psychological comfort is also reduced by the isolated setting, narrow roadway, and absence of dedicated pedestrian space, even though traffic volume appears low in the image.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very weak because no continuous sidewalk or footpath is visible on either side of the road.\",\n      \"There are no marked crossings, curb extensions, pedestrian signs, or frontage elements that would support safe and attractive walking.\",\n      \"The straight road offers directness, but the exposed environment, lack of shade, and shared space with parked and moving vehicles make walking inconvenient for general users.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 45.0,
+   "fairness": 40.0,
+   "accessibility": 41.0
+  },
+  "safety": 38.0,
+  "livability": 34.0,
+  "sustainability": 36.0,
+  "aesthetics": 43.0,
+  "comfort": 35.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 41.0,
+  "safety": 38.0,
+  "livability": 34.0,
+  "sustainability": 36.0,
+  "aesthetics": 43.0,
+  "comfort": 35.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:32:13+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible right-of-way is allocated to a narrow concrete carriageway, while no dedicated sidewalk is visible on either side, so spatial resources are not evenly distributed for people walking.",
+   "Parked cars occupy edge space on both sides of the road, including a car partly on the paved frontage at the right, which reduces equal access for non-drivers.",
+   "Accessibility is weak because there are no visible curb ramps, tactile paving, marked pedestrian zones, or separated walking paths; all users appear to share the same road surface."
+  ],
+  "safety": [
+   "There is no visible sidewalk, shoulder protection, or pedestrian refuge, so anyone walking would need to use the same narrow roadway as cars.",
+   "The road edges are irregular, with dirt shoulders, scattered materials near the greenhouse on the left, and parked vehicles close to the travel path, increasing conflict risk.",
+   "Long straight alignment may support visibility ahead, but the absence of lane markings, crossings, traffic calming, and protective barriers lowers overall safety for all road users."
+  ],
+  "livability": [
+   "The setting is sparsely developed, with farmland, utility poles, and a few buildings, but almost no visible public amenities such as benches, shops, bus stops, or social spaces.",
+   "There is little evidence of active street life or mixed-use frontage; the road mainly serves access to fields and isolated properties rather than daily community interaction.",
+   "Loose materials and a rough roadside condition near the left-side greenhouse reduce the sense of care and everyday usability of the street environment."
+  ],
+  "sustainability": [
+   "The rural agricultural landscape and open fields preserve permeable land cover beyond the road itself, which is a modest positive for environmental performance.",
+   "However, the street lacks visible street trees, bioswales, rain gardens, or other green infrastructure along the roadway edge.",
+   "No bike lane, bus stop, or other clear support for low-carbon travel is visible, so the corridor appears to rely mainly on private vehicle access."
+  ],
+  "aesthetics": [
+   "The open horizon and expansive farmland create a simple, uncluttered rural view with long sightlines.",
+   "At the same time, dense overhead utility wires crossing the sky create strong visual clutter and reduce scenic quality.",
+   "Patchy pavement, parked cars at the edges, and scattered materials beside the greenhouse weaken visual order and maintenance appearance."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because the road is fully exposed, with almost no visible street trees or shade structures along the walking path.",
+   "Physical comfort is limited by the lack of sidewalks, seating, and buffered space; pedestrians would need to walk on hard concrete shared with vehicles.",
+   "Psychological comfort is also reduced by the isolated setting, narrow roadway, and absence of dedicated pedestrian space, even though traffic volume appears low in the image."
+  ],
+  "walkability": [
+   "Walkability is very weak because no continuous sidewalk or footpath is visible on either side of the road.",
+   "There are no marked crossings, curb extensions, pedestrian signs, or frontage elements that would support safe and attractive walking.",
+   "The straight road offers directness, but the exposed environment, lack of shade, and shared space with parked and moving vehicles make walking inconvenient for general users."
+  ]
+ }
+}

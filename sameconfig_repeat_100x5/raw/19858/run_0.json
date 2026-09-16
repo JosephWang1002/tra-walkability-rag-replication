@@ -1,0 +1,136 @@
+{
+ "oid": "19858",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\19858.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\19858_120.656329_31.100466_0900290012220817160139851AL_90.78_2022_8_吴江区八坼街道长安路辅路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 23.5,
+ "usage": {
+  "completion_tokens": 1116,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 537,
+   "engine_ttlt_ms": 19519,
+   "pre_inference_ms": 391,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1223,
+   "service_ttlt_ms": 20195,
+   "user_visible_ttft_ms": 833
+  },
+  "prompt_tokens": 5177,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6293
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 61.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 63.0,\n    \"sustainability\": 72.0,\n    \"aesthetics\": 81.0,\n    \"comfort\": 69.0,\n    \"walkability\": 54.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to motor traffic with multiple wide travel lanes, while pedestrian space is pushed to the edges and appears comparatively limited in the photo, indicating an uneven distribution of street resources for all users.\",\n      \"Side sidewalks are physically separated from the carriageway by hedges and tree belts, which supports basic accessibility and protection for non-motorized users.\",\n      \"A bus stop is visible on the right side, showing some provision for shared access to public transport rather than a fully car-only corridor.\",\n      \"No visible curb ramps, tactile paving, or marked crossing points can be confirmed from this view, so barrier-free accessibility and equal usability across user types cannot be rated highly.\",\n      \"The road markings and lane organization are clear for drivers, but equivalent visible guidance for pedestrians is weak, suggesting fairness is stronger for motorists than for people moving on foot.\"\n    ],\n    \"safety\": [\n      \"The carriageway is wide, clean, and clearly lane-marked, which helps organize vehicle movement and reduces immediate conflict between drivers.\",\n      \"Pedestrians are buffered from traffic by hedges, trees, and a separated sidewalk zone on both sides, improving protection from moving vehicles.\",\n      \"Streetlights are installed continuously along the corridor, which supports nighttime visibility and perceived safety.\",\n      \"Traffic volume appears low in the image, with only a few vehicles visible, reducing short-term crash conflict in this moment.\",\n      \"However, the broad straight roadway may encourage higher driving speeds, and no visible traffic calming or pedestrian crossing facility is present in the scene.\"\n    ],\n    \"livability\": [\n      \"The corridor has abundant greenery, including mature trees and trimmed hedges, which improves environmental quality and makes the street feel less harsh.\",\n      \"A bus stop on the right adds some everyday utility and supports access beyond private car travel.\",\n      \"The street appears orderly, clean, and well maintained, which contributes positively to general urban livability.\",\n      \"At the same time, the scene is dominated by fast-moving road space rather than visible shops, seating, or active public edges, so social street life appears limited.\",\n      \"Building frontage is mostly set back or screened by vegetation, reducing direct interaction between the street and surrounding uses.\"\n    ],\n    \"sustainability\": [\n      \"The strong presence of street trees and continuous green medians/hedges contributes to urban greening and likely helps with air quality and heat mitigation.\",\n      \"A visible bus stop supports public transport use, which is a positive low-carbon mobility feature.\",\n      \"The landscaped median and roadside planting indicate investment in green infrastructure rather than a fully paved corridor.\",\n      \"However, no dedicated bike lane is visible, limiting support for cycling as a sustainable travel mode.\",\n      \"The street still devotes most visible space to private motor vehicles through several wide lanes, which constrains the overall sustainability score.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has a strong visual order created by symmetrical streetlights, centered lane markings, and a long straight perspective.\",\n      \"Mature trees and neatly maintained hedges on both sides create a green, composed, and visually pleasant streetscape.\",\n      \"The pavement and roadside elements appear clean and well maintained, with little visible clutter or deterioration.\",\n      \"The broad canopy masses on both sides soften the scale of the wide road and improve scenic quality.\",\n      \"The large overhead blue traffic sign is visually dominant, but overall the corridor remains coherent and attractive.\"\n    ],\n    \"comfort\": [\n      \"Large trees along both sides provide some shade and cooling potential for sidewalk users, improving thermal comfort compared with a fully exposed road.\",\n      \"The sidewalks appear separated from traffic by planted buffers, which likely improves psychological comfort by reducing the feeling of exposure to vehicles.\",\n      \"The road surface is smooth and well maintained, benefiting physical comfort for vehicle users and likely indicating decent walking surfaces nearby.\",\n      \"Because the roadway is very wide and designed for through traffic, noise and speed exposure may still reduce comfort for people near the curb.\",\n      \"No benches, shelters with substantial enclosure, or other visible resting amenities can be confirmed, limiting comfort for longer stays.\"\n    ],\n    \"walkability\": [\n      \"Sidewalks are visible on both sides and are buffered by hedges and trees, which supports basic pedestrian movement.\",\n      \"The green edge treatment makes walking more pleasant than on an unbuffered arterial road.\",\n      \"A bus stop is present, so at least some pedestrian access to transit is accommodated.\",\n      \"However, the street is very wide and no marked crosswalk, pedestrian refuge, or signalized crossing is visible in this image, which weakens route connectivity for walkers.\",\n      \"The corridor reads primarily as a vehicle-through route rather than a pedestrian-priority street, and there are no visible active frontages or pedestrian amenities that would strongly encourage walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 58.0,
+   "accessibility": 61.0
+  },
+  "safety": 74.0,
+  "livability": 63.0,
+  "sustainability": 72.0,
+  "aesthetics": 81.0,
+  "comfort": 69.0,
+  "walkability": 54.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 61.0,
+  "safety": 74.0,
+  "livability": 63.0,
+  "sustainability": 72.0,
+  "aesthetics": 81.0,
+  "comfort": 69.0,
+  "walkability": 54.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:42:21+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to motor traffic with multiple wide travel lanes, while pedestrian space is pushed to the edges and appears comparatively limited in the photo, indicating an uneven distribution of street resources for all users.",
+   "Side sidewalks are physically separated from the carriageway by hedges and tree belts, which supports basic accessibility and protection for non-motorized users.",
+   "A bus stop is visible on the right side, showing some provision for shared access to public transport rather than a fully car-only corridor.",
+   "No visible curb ramps, tactile paving, or marked crossing points can be confirmed from this view, so barrier-free accessibility and equal usability across user types cannot be rated highly.",
+   "The road markings and lane organization are clear for drivers, but equivalent visible guidance for pedestrians is weak, suggesting fairness is stronger for motorists than for people moving on foot."
+  ],
+  "safety": [
+   "The carriageway is wide, clean, and clearly lane-marked, which helps organize vehicle movement and reduces immediate conflict between drivers.",
+   "Pedestrians are buffered from traffic by hedges, trees, and a separated sidewalk zone on both sides, improving protection from moving vehicles.",
+   "Streetlights are installed continuously along the corridor, which supports nighttime visibility and perceived safety.",
+   "Traffic volume appears low in the image, with only a few vehicles visible, reducing short-term crash conflict in this moment.",
+   "However, the broad straight roadway may encourage higher driving speeds, and no visible traffic calming or pedestrian crossing facility is present in the scene."
+  ],
+  "livability": [
+   "The corridor has abundant greenery, including mature trees and trimmed hedges, which improves environmental quality and makes the street feel less harsh.",
+   "A bus stop on the right adds some everyday utility and supports access beyond private car travel.",
+   "The street appears orderly, clean, and well maintained, which contributes positively to general urban livability.",
+   "At the same time, the scene is dominated by fast-moving road space rather than visible shops, seating, or active public edges, so social street life appears limited.",
+   "Building frontage is mostly set back or screened by vegetation, reducing direct interaction between the street and surrounding uses."
+  ],
+  "sustainability": [
+   "The strong presence of street trees and continuous green medians/hedges contributes to urban greening and likely helps with air quality and heat mitigation.",
+   "A visible bus stop supports public transport use, which is a positive low-carbon mobility feature.",
+   "The landscaped median and roadside planting indicate investment in green infrastructure rather than a fully paved corridor.",
+   "However, no dedicated bike lane is visible, limiting support for cycling as a sustainable travel mode.",
+   "The street still devotes most visible space to private motor vehicles through several wide lanes, which constrains the overall sustainability score."
+  ],
+  "aesthetics": [
+   "The avenue has a strong visual order created by symmetrical streetlights, centered lane markings, and a long straight perspective.",
+   "Mature trees and neatly maintained hedges on both sides create a green, composed, and visually pleasant streetscape.",
+   "The pavement and roadside elements appear clean and well maintained, with little visible clutter or deterioration.",
+   "The broad canopy masses on both sides soften the scale of the wide road and improve scenic quality.",
+   "The large overhead blue traffic sign is visually dominant, but overall the corridor remains coherent and attractive."
+  ],
+  "comfort": [
+   "Large trees along both sides provide some shade and cooling potential for sidewalk users, improving thermal comfort compared with a fully exposed road.",
+   "The sidewalks appear separated from traffic by planted buffers, which likely improves psychological comfort by reducing the feeling of exposure to vehicles.",
+   "The road surface is smooth and well maintained, benefiting physical comfort for vehicle users and likely indicating decent walking surfaces nearby.",
+   "Because the roadway is very wide and designed for through traffic, noise and speed exposure may still reduce comfort for people near the curb.",
+   "No benches, shelters with substantial enclosure, or other visible resting amenities can be confirmed, limiting comfort for longer stays."
+  ],
+  "walkability": [
+   "Sidewalks are visible on both sides and are buffered by hedges and trees, which supports basic pedestrian movement.",
+   "The green edge treatment makes walking more pleasant than on an unbuffered arterial road.",
+   "A bus stop is present, so at least some pedestrian access to transit is accommodated.",
+   "However, the street is very wide and no marked crosswalk, pedestrian refuge, or signalized crossing is visible in this image, which weakens route connectivity for walkers.",
+   "The corridor reads primarily as a vehicle-through route rather than a pedestrian-priority street, and there are no visible active frontages or pedestrian amenities that would strongly encourage walking."
+  ]
+ }
+}

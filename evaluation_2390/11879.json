@@ -1,0 +1,78 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 63.5,
+      "equity": 66,
+      "fairness": 61,
+      "accessibility": 63.5
+    },
+    "safety": 67.5,
+    "livability": 58.5,
+    "sustainability": 62.5,
+    "aesthetics": 66.5,
+    "comfort": 60.5,
+    "walkability": 56.5,
+    "bikeability": 49.5
+  },
+  "explanations": {
+    "justice": [
+      "Spatial resources are heavily allocated to motor vehicles: the carriageway is very wide with multiple marked lanes, while pedestrian space appears limited to edge sidewalks and narrow curbside areas.",
+      "Marked zebra crosswalks and signal infrastructure at the intersection provide a basic, rule-based opportunity to cross, supporting general user fairness.",
+      "Accessibility appears partial: curb edges and corner geometry are visible, but no clear curb ramps, tactile paving, or dedicated pedestrian refuge islands can be confirmed from the image, which can disadvantage users who need barrier-free crossings."
+    ],
+    "safety": [
+      "Large intersection footprint with multiple turning lanes (directional arrows) increases conflict points between cars, e-bikes/motorbikes, and pedestrians.",
+      "Zebra crosswalk markings are clear and wide, which can improve driver yielding and crossing legibility for all users.",
+      "Several motorbikes/e-bikes are present in the roadway near the crossing area, indicating mixed traffic that can elevate risk if there is no protected phase or separated space for two-wheelers.",
+      "Street lighting poles are present along the corridor, supporting nighttime visibility and perceived safety compared with unlit streets."
+    ],
+    "livability": [
+      "Roadside greenery (trees and planted strips) is present on both sides, which supports everyday environmental quality and a more pleasant street experience.",
+      "The corridor reads as auto-oriented (very wide asphalt expanse and long crossing distance), which can reduce street-level sociability and ease of accessing nearby uses on foot.",
+      "Building edges on the right appear set back behind a service area/edge landscaping rather than active frontages, limiting “eyes on the street” and casual street activity at the sidewalk level."
+    ],
+    "sustainability": [
+      "Substantial tree cover along the left side and additional planting on the right provide carbon sequestration and urban heat mitigation benefits.",
+      "No dedicated, clearly protected bike lane markings or cycle track separation are visible; this reduces support for low-carbon mode shift despite the presence of two-wheelers.",
+      "Very wide motor-vehicle infrastructure (multiple lanes and turning space) tends to encourage driving and can increase emissions compared with more balanced multimodal streets.",
+      "Green verges/planting beds suggest some permeable landscape area, but no visible rain gardens, bioswales, or drainage features can be confirmed."
+    ],
+    "aesthetics": [
+      "The street looks clean and well-maintained, with clear lane markings and orderly planting beds.",
+      "A strong visual axis toward distant hills/mountains creates a pleasing vista and improves scenic quality.",
+      "Tree-lined edges add softness and enclosure to an otherwise large road surface, improving visual appeal.",
+      "Overhead utility wires and poles are visually prominent and add clutter to the skyline, slightly reducing streetscape coherence."
+    ],
+    "comfort": [
+      "Thermal comfort is moderate: there are many trees along the edges, but the central roadway and crossing areas are fully exposed to sun with little shade over the crosswalk.",
+      "Physical comfort for pedestrians appears limited by long crossing distance across a very wide carriageway, increasing exposure time and fatigue during crossing.",
+      "Psychological comfort is reduced by the scale of the intersection and fast-road cues (multiple lanes, turning arrows), which can feel intimidating for non-drivers.",
+      "Roadside greenery buffers the sidewalk from traffic to some extent, which can improve perceived comfort compared with a hard-edged curb-only street."
+    ],
+    "walkability": [
+      "Crosswalks are clearly marked, supporting route continuity across the intersection for pedestrians.",
+      "The crossing distance appears long due to the wide multi-lane roadway, and no pedestrian refuge island is visible, reducing walkability for slower walkers and increasing delay/stress.",
+      "Sidewalk presence is apparent at the edges, but the street is dominated by vehicular space, making walking less attractive for short trips compared with a more human-scaled street.",
+      "Limited visible pedestrian amenities (e.g., benches, shade structures at corners) reduces the overall walking experience quality."
+    ],
+    "bikeability": [
+      "No clearly delineated bicycle lanes, cycle tracks, or physical protection (bollards/curbs) are visible, indicating low formal accommodation for cyclists.",
+      "Multiple turning movements and wide intersection geometry raise turning-conflict risk for cyclists traveling straight through.",
+      "Two-wheelers (motorbikes/e-bikes) share the general roadway space, which can create speed differentials and uncomfortable interactions for pedal cyclists.",
+      "Lack of visible bicycle-specific signals, bike boxes, or advanced stop lines reduces intersection priority and predictability for cycling."
+    ]
+  },
+  "image_id": "img-1777267053281-ubc1ftego",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:54:26.974Z",
+  "record_id": "aedbca22dc6246398f3a9bf9fff117e0",
+  "stored_image_url": "/storage/records/aedbca22dc6246398f3a9bf9fff117e0/image.jpg",
+  "stored_thumb_url": "/storage/records/aedbca22dc6246398f3a9bf9fff117e0/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:54:59.004Z"
+}

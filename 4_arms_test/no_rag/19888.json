@@ -1,0 +1,195 @@
+{
+ "oid": "19888",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\19888_120.720411_31.153914_0900290012220820090205889AL_11.33_2022_8_吴江区同里镇环湖西路_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 7.6,
+  "usage": {
+   "completion_tokens": 155,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 1063,
+    "engine_ttlt_ms": 2319,
+    "pre_inference_ms": 330,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 1928,
+    "service_ttlt_ms": 3178,
+    "user_visible_ttft_ms": 1598
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1416
+  },
+  "raw": "{\"road_type\":\"neighborhood_street\",\"elements\":{\"sidewalk\":\"true\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"few\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"false\",\"street_lighting\":\"false\",\"greenery\":\"medium\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"no_bike_lane\",\"poor_accessibility\",\"no_crossing\"],\"brief\":\"A narrow neighborhood street with sidewalks/raised edges on both sides, utility poles and overhead wires, and a few trees and grassy areas nearby. A car is visible on the road, with no marked crossing, benches, bike lane, or curb ramp visible.\"}",
+  "parsed": {
+   "road_type": "neighborhood_street",
+   "elements": {
+    "sidewalk": "true",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "few",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "false",
+    "greenery": "medium",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "no_bike_lane",
+    "poor_accessibility",
+    "no_crossing"
+   ],
+   "brief": "A narrow neighborhood street with sidewalks/raised edges on both sides, utility poles and overhead wires, and a few trees and grassy areas nearby. A car is visible on the road, with no marked crossing, benches, bike lane, or curb ramp visible."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A narrow neighborhood street with sidewalks/raised edges on both sides, utility poles and overhead wires, and a few trees and grassy areas nearby. A car is visible on the road, with no marked crossing, benches, bike lane, or curb ramp visible. Road type: neighborhood_street. Visible elements: sidewalk=true, bike_lane=false, seating=false, shade_trees=few, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=false, greenery=medium, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'no_bike_lane', 'poor_accessibility', 'no_crossing']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 16.9,
+  "usage": {
+   "completion_tokens": 828,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 13,
+    "engine_ttft_ms": 1263,
+    "engine_ttlt_ms": 11884,
+    "pre_inference_ms": 278,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 1773,
+    "service_ttlt_ms": 12390,
+    "user_visible_ttft_ms": 1495
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2715
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 45.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 46.0,\n    \"livability\": 38.0,\n    \"sustainability\": 34.0,\n    \"aesthetics\": 49.0,\n    \"comfort\": 37.0,\n    \"walkability\": 35.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street space is dominated by a narrow motor-vehicle carriageway, while the side paths on both bridge edges are very slim, suggesting limited spatial allocation for non-motorized users.\",\n      \"There are no visible marked pedestrian crossings, bike lanes, or dedicated waiting areas, so different road users appear to share space without clearly balanced provision.\",\n      \"Accessibility is limited because the bridge-side walkways are narrow and directly bordered by railings, with no visible curb ramps, tactile paving, or other barrier-free features.\"\n    ],\n    \"safety\": [\n      \"The roadway is narrow and appears to carry two-way traffic, which can create close passing conflicts between cars, motorcycles, and any pedestrians using the edge space.\",\n      \"There is no visible sidewalk separation barrier, crosswalk, or traffic calming marking on the bridge approach, reducing protection for people outside vehicles.\",\n      \"Bridge railings are present on both sides, which helps prevent falls into the adjacent drainage or vegetated channel, but they do not address conflicts with moving traffic.\"\n    ],\n    \"livability\": [\n      \"The scene shows a sparse, low-activity street with few visible public amenities such as benches, shops, bus stops, or social spaces that would support everyday street life.\",\n      \"Most visible frontage consists of walls, utility poles, and scattered small buildings rather than active ground-level uses that invite lingering or interaction.\",\n      \"The bridge and road function mainly as a movement corridor, with little evidence of community-oriented design or places for people to stop comfortably.\"\n    ],\n    \"sustainability\": [\n      \"There is no visible bike lane, bus stop, or other dedicated low-carbon transport infrastructure, so the corridor appears oriented mainly toward private motor traffic.\",\n      \"Some greenery is visible along the right side beyond the bridge, but street-level green infrastructure such as shade trees, planting strips, or rain gardens is absent on the roadway itself.\",\n      \"The extensive overhead utility infrastructure and paved surfaces dominate the visual field, while permeable or ecologically supportive streetscape elements are not evident.\"\n    ],\n    \"aesthetics\": [\n      \"The bridge railings and paved road create a relatively orderly linear composition, and the white building on the left appears clean and maintained.\",\n      \"However, dense overhead utility wires and poles strongly clutter the skyline and reduce visual quality.\",\n      \"Vegetation along the right side adds some natural softness, but the overall streetscape remains plain and utilitarian rather than visually rich.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears weak because there is almost no visible shade over the roadway or narrow side paths, aside from a few trees set back from the street.\",\n      \"Physical comfort is limited by the very narrow bridge-side walking space, which leaves little room for side-by-side walking, resting, or comfortable passing.\",\n      \"Psychological comfort may be reduced because people outside vehicles would be close to moving traffic on a constrained bridge, with no buffer zone or refuge space.\"\n    ],\n    \"walkability\": [\n      \"Walkability is poor because the visible pedestrian space on both sides of the bridge is narrow and constrained by railings, making walking feel secondary to driving.\",\n      \"There are no visible crosswalks, pedestrian signs, curb extensions, or continuous sidewalk features that would improve route clarity and pedestrian priority.\",\n      \"The lack of shade, seating, and active frontage further reduces the attractiveness of walking for everyday trips.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 42.0,
+    "equity": 45.0,
+    "fairness": 40.0,
+    "accessibility": 41.0
+   },
+   "safety": 46.0,
+   "livability": 38.0,
+   "sustainability": 34.0,
+   "aesthetics": 49.0,
+   "comfort": 37.0,
+   "walkability": 35.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The street space is dominated by a narrow motor-vehicle carriageway, while the side paths on both bridge edges are very slim, suggesting limited spatial allocation for non-motorized users.",
+    "There are no visible marked pedestrian crossings, bike lanes, or dedicated waiting areas, so different road users appear to share space without clearly balanced provision.",
+    "Accessibility is limited because the bridge-side walkways are narrow and directly bordered by railings, with no visible curb ramps, tactile paving, or other barrier-free features."
+   ],
+   "safety": [
+    "The roadway is narrow and appears to carry two-way traffic, which can create close passing conflicts between cars, motorcycles, and any pedestrians using the edge space.",
+    "There is no visible sidewalk separation barrier, crosswalk, or traffic calming marking on the bridge approach, reducing protection for people outside vehicles.",
+    "Bridge railings are present on both sides, which helps prevent falls into the adjacent drainage or vegetated channel, but they do not address conflicts with moving traffic."
+   ],
+   "livability": [
+    "The scene shows a sparse, low-activity street with few visible public amenities such as benches, shops, bus stops, or social spaces that would support everyday street life.",
+    "Most visible frontage consists of walls, utility poles, and scattered small buildings rather than active ground-level uses that invite lingering or interaction.",
+    "The bridge and road function mainly as a movement corridor, with little evidence of community-oriented design or places for people to stop comfortably."
+   ],
+   "sustainability": [
+    "There is no visible bike lane, bus stop, or other dedicated low-carbon transport infrastructure, so the corridor appears oriented mainly toward private motor traffic.",
+    "Some greenery is visible along the right side beyond the bridge, but street-level green infrastructure such as shade trees, planting strips, or rain gardens is absent on the roadway itself.",
+    "The extensive overhead utility infrastructure and paved surfaces dominate the visual field, while permeable or ecologically supportive streetscape elements are not evident."
+   ],
+   "aesthetics": [
+    "The bridge railings and paved road create a relatively orderly linear composition, and the white building on the left appears clean and maintained.",
+    "However, dense overhead utility wires and poles strongly clutter the skyline and reduce visual quality.",
+    "Vegetation along the right side adds some natural softness, but the overall streetscape remains plain and utilitarian rather than visually rich."
+   ],
+   "comfort": [
+    "Thermal comfort appears weak because there is almost no visible shade over the roadway or narrow side paths, aside from a few trees set back from the street.",
+    "Physical comfort is limited by the very narrow bridge-side walking space, which leaves little room for side-by-side walking, resting, or comfortable passing.",
+    "Psychological comfort may be reduced because people outside vehicles would be close to moving traffic on a constrained bridge, with no buffer zone or refuge space."
+   ],
+   "walkability": [
+    "Walkability is poor because the visible pedestrian space on both sides of the bridge is narrow and constrained by railings, making walking feel secondary to driving.",
+    "There are no visible crosswalks, pedestrian signs, curb extensions, or continuous sidewalk features that would improve route clarity and pedestrian priority.",
+    "The lack of shade, seating, and active frontage further reduces the attractiveness of walking for everyday trips."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 41.0,
+  "safety": 46.0,
+  "livability": 38.0,
+  "sustainability": 34.0,
+  "aesthetics": 49.0,
+  "comfort": 37.0,
+  "walkability": 35.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T15:14:41+00:00",
+  "step2": "2026-09-03T15:14:41+00:00",
+  "step3": "2026-09-03T15:14:58+00:00",
+  "completed": "2026-09-03T15:14:58+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\19888.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

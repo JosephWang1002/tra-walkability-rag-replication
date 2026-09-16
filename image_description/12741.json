@@ -1,0 +1,33 @@
+{
+ "oid": "12741",
+ "description": "The image shows a wide multi-lane road with no visible sidewalks or pedestrian path; the curb edge is lined with planted greenery and a narrow verge rather than a continuous, walkable surface. Traffic is separated only by lane markings (no physical barrier), with tall streetlights along the roadway and trees providing some visual greenery, but there are no clear curb cuts, ramps, or pedestrian crossing features visible. Overall, pedestrian walkability appears limited due to the lack of dedicated sidewalk infrastructure and direct proximity to vehicle lanes.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 106,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 8,
+   "engine_ttft_ms": 882,
+   "engine_ttlt_ms": 1726,
+   "pre_inference_ms": 389,
+   "service_tbt_ms": 8,
+   "service_ttft_ms": 1689,
+   "service_ttlt_ms": 2528,
+   "total_duration_ms": 2147,
+   "user_visible_ttft_ms": 1301
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1090
+ },
+ "latency_s": 6.3,
+ "timestamp": "2026-08-31T15:48:36"
+}

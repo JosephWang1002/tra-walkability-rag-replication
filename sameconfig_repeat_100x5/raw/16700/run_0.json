@@ -1,0 +1,122 @@
+{
+ "oid": "16700",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16700.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16700_120.606906_31.314588_0900290012220902112340904AH_173.77_2022_9_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.8,
+ "usage": {
+  "completion_tokens": 830,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 470,
+   "engine_ttlt_ms": 13994,
+   "pre_inference_ms": 359,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1102,
+   "service_ttlt_ms": 14620,
+   "user_visible_ttft_ms": 743
+  },
+  "prompt_tokens": 5239,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1408
+  },
+  "total_tokens": 6069
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 71.0,\n      \"equity\": 74.0,\n      \"fairness\": 68.0,\n      \"accessibility\": 71.0\n    },\n    \"safety\": 79.0,\n    \"livability\": 72.0,\n    \"sustainability\": 74.0,\n    \"aesthetics\": 81.0,\n    \"comfort\": 73.0,\n    \"walkability\": 69.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are distributed relatively evenly across the corridor: both sides have sidewalks lined with trees, and the roadway includes organized space for motor traffic and edge space for non-motorized users.\",\n      \"Metal guardrails clearly separate pedestrians from moving vehicles along both sides, which supports fair protection for different user groups, but they also limit informal crossing opportunities and can reduce route flexibility.\",\n      \"Accessibility appears moderate rather than excellent because sidewalks look continuous and fairly wide, yet no curb ramps, tactile paving, or other barrier-free details are clearly visible in the image.\"\n    ],\n    \"safety\": [\n      \"Safety is strengthened by strong physical separation: continuous roadside guardrails keep pedestrians away from fast-moving traffic on this wide multi-lane road.\",\n      \"Lane markings are clear and the carriageway is wide and orderly, which helps drivers maintain predictable positioning and reduces conflict between vehicles.\",\n      \"Streetlights, overhead signals, and a marked crosswalk visible ahead indicate formal traffic control, but the road width and long straight alignment may still encourage higher vehicle speeds.\"\n    ],\n    \"livability\": [\n      \"The street has active urban edges with commercial or institutional buildings, parked scooters, and visible roadside activity, suggesting everyday urban use rather than an empty traffic corridor.\",\n      \"Rows of mature street trees on both sides improve the street's everyday quality and make the corridor feel more habitable.\",\n      \"Livability is limited by the dominance of wide asphalt carriageways and multiple traffic lanes, which give the street a transport-oriented character more than a people-oriented public-space character.\"\n    ],\n    \"sustainability\": [\n      \"Large street trees on both sides provide meaningful green infrastructure, which supports shade, cooling, and urban ecological value.\",\n      \"The corridor appears to accommodate non-motorized travel through side spaces used by scooters and likely bicycles, reducing total dependence on private cars.\",\n      \"Sustainability is moderated by the very large paved road surface and multiple vehicle lanes, which indicate substantial land allocation to motor traffic and heat-absorbing asphalt.\"\n    ],\n    \"aesthetics\": [\n      \"The streetscape is visually coherent, with aligned street trees, consistent guardrails, and orderly lane markings creating a clean and structured appearance.\",\n      \"Planters in the median and mature tree canopies soften the broad roadway and add greenery to an otherwise hard-surfaced corridor.\",\n      \"Modern mid- and high-rise buildings frame the street and give it a contemporary urban character, though the wide road still makes the scene somewhat utilitarian.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is fairly good along the edges because mature trees provide visible shade over parts of the sidewalks and side zones.\",\n      \"Physical comfort appears acceptable due to smooth asphalt, orderly separation of movement spaces, and relatively uncluttered sidewalks.\",\n      \"Psychological comfort is mixed: guardrails create a sense of protection from traffic, but the broad multi-lane roadway and fast-moving vehicle environment can still feel imposing for many users.\"\n    ],\n    \"walkability\": [\n      \"Walkability benefits from continuous sidewalks on both sides and visible tree cover that can make walking more pleasant over longer distances.\",\n      \"A marked crosswalk is visible ahead, indicating at least some formal pedestrian crossing provision on this large corridor.\",\n      \"Walkability is constrained by the street's great width, guardrail-lined edges, and long motor-traffic-oriented geometry, which can increase crossing distance and reduce pedestrian convenience.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 71.0,
+   "equity": 74.0,
+   "fairness": 68.0,
+   "accessibility": 71.0
+  },
+  "safety": 79.0,
+  "livability": 72.0,
+  "sustainability": 74.0,
+  "aesthetics": 81.0,
+  "comfort": 73.0,
+  "walkability": 69.0
+ },
+ "scores_flat": {
+  "justice": 71.0,
+  "justice_equity": 74.0,
+  "justice_fairness": 68.0,
+  "justice_accessibility": 71.0,
+  "safety": 79.0,
+  "livability": 72.0,
+  "sustainability": 74.0,
+  "aesthetics": 81.0,
+  "comfort": 73.0,
+  "walkability": 69.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:33:25+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are distributed relatively evenly across the corridor: both sides have sidewalks lined with trees, and the roadway includes organized space for motor traffic and edge space for non-motorized users.",
+   "Metal guardrails clearly separate pedestrians from moving vehicles along both sides, which supports fair protection for different user groups, but they also limit informal crossing opportunities and can reduce route flexibility.",
+   "Accessibility appears moderate rather than excellent because sidewalks look continuous and fairly wide, yet no curb ramps, tactile paving, or other barrier-free details are clearly visible in the image."
+  ],
+  "safety": [
+   "Safety is strengthened by strong physical separation: continuous roadside guardrails keep pedestrians away from fast-moving traffic on this wide multi-lane road.",
+   "Lane markings are clear and the carriageway is wide and orderly, which helps drivers maintain predictable positioning and reduces conflict between vehicles.",
+   "Streetlights, overhead signals, and a marked crosswalk visible ahead indicate formal traffic control, but the road width and long straight alignment may still encourage higher vehicle speeds."
+  ],
+  "livability": [
+   "The street has active urban edges with commercial or institutional buildings, parked scooters, and visible roadside activity, suggesting everyday urban use rather than an empty traffic corridor.",
+   "Rows of mature street trees on both sides improve the street's everyday quality and make the corridor feel more habitable.",
+   "Livability is limited by the dominance of wide asphalt carriageways and multiple traffic lanes, which give the street a transport-oriented character more than a people-oriented public-space character."
+  ],
+  "sustainability": [
+   "Large street trees on both sides provide meaningful green infrastructure, which supports shade, cooling, and urban ecological value.",
+   "The corridor appears to accommodate non-motorized travel through side spaces used by scooters and likely bicycles, reducing total dependence on private cars.",
+   "Sustainability is moderated by the very large paved road surface and multiple vehicle lanes, which indicate substantial land allocation to motor traffic and heat-absorbing asphalt."
+  ],
+  "aesthetics": [
+   "The streetscape is visually coherent, with aligned street trees, consistent guardrails, and orderly lane markings creating a clean and structured appearance.",
+   "Planters in the median and mature tree canopies soften the broad roadway and add greenery to an otherwise hard-surfaced corridor.",
+   "Modern mid- and high-rise buildings frame the street and give it a contemporary urban character, though the wide road still makes the scene somewhat utilitarian."
+  ],
+  "comfort": [
+   "Thermal comfort is fairly good along the edges because mature trees provide visible shade over parts of the sidewalks and side zones.",
+   "Physical comfort appears acceptable due to smooth asphalt, orderly separation of movement spaces, and relatively uncluttered sidewalks.",
+   "Psychological comfort is mixed: guardrails create a sense of protection from traffic, but the broad multi-lane roadway and fast-moving vehicle environment can still feel imposing for many users."
+  ],
+  "walkability": [
+   "Walkability benefits from continuous sidewalks on both sides and visible tree cover that can make walking more pleasant over longer distances.",
+   "A marked crosswalk is visible ahead, indicating at least some formal pedestrian crossing provision on this large corridor.",
+   "Walkability is constrained by the street's great width, guardrail-lined edges, and long motor-traffic-oriented geometry, which can increase crossing distance and reduce pedestrian convenience."
+  ]
+ }
+}

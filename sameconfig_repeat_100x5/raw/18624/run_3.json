@@ -1,0 +1,131 @@
+{
+ "oid": "18624",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\18624.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\18624_120.525649_31.371411_0900290012200313121414280GR_140.5_2020_3_虎丘区浒墅关镇城际路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.0,
+ "usage": {
+  "completion_tokens": 1027,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 385,
+   "engine_ttlt_ms": 17020,
+   "pre_inference_ms": 423,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1102,
+   "service_ttlt_ms": 17729,
+   "user_visible_ttft_ms": 680
+  },
+  "prompt_tokens": 5252,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6279
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 61.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 54.0,\n    \"sustainability\": 60.0,\n    \"aesthetics\": 67.0,\n    \"comfort\": 52.0,\n    \"walkability\": 50.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to motor vehicles with multiple wide travel lanes, while the pedestrian realm on the right appears comparatively narrow, indicating an uneven distribution of street space across user groups.\",\n      \"A separated sidewalk is visible on the right side and an overpass stair connection is provided, which gives some dedicated pedestrian infrastructure rather than forcing people to walk in traffic.\",\n      \"Accessibility is limited because the visible access to the elevated structure is by stairs, and no elevator, ramp, or tactile paving can be seen for users with strollers, wheelchairs, or visual impairments.\",\n      \"The planted median and curb edges organize movement clearly, but they also reinforce separation without showing convenient at-grade crossing opportunities near the camera position.\"\n    ],\n    \"safety\": [\n      \"Lane markings are clear and the roadway is wide, which helps organize vehicle movements and reduce ambiguity for drivers.\",\n      \"A planted median separates opposing traffic streams, lowering the likelihood of head-on conflicts.\",\n      \"Tall streetlights are present along the corridor, supporting basic roadway visibility, although daytime conditions prevent judging nighttime performance fully.\",\n      \"Pedestrian safety is weaker because no marked crosswalk is visible in the foreground and the road width creates a long crossing distance for anyone trying to cross at street level.\",\n      \"The sidewalk is physically separated from moving traffic by a curb and planting strip on the right, which improves protection for people walking along the corridor.\"\n    ],\n    \"livability\": [\n      \"The corridor feels dominated by through-traffic infrastructure, with broad asphalt lanes, sparse street activity, and limited visible social or commercial frontage.\",\n      \"Only one pedestrian is visible on the right sidewalk, suggesting low street-level activity and limited everyday social vitality.\",\n      \"Landscaped strips with red shrubs and some trees add visual order, but they function more as roadside decoration than as usable public space for lingering or gathering.\",\n      \"The elevated structure and large road reserve create a utilitarian environment rather than a human-scaled neighborhood street.\"\n    ],\n    \"sustainability\": [\n      \"The presence of sidewalks and some street trees supports more sustainable street design than a fully vehicle-only corridor.\",\n      \"However, no dedicated bike lane, bus stop, or visible transit amenity is present in the image, limiting support for low-carbon travel choices beyond walking.\",\n      \"The planted median and roadside greenery contribute modest ecological value and can help with dust capture and heat reduction.\",\n      \"Large paved carriageway areas dominate the scene, which likely increase runoff and heat absorption compared with a greener or more multimodal street layout.\"\n    ],\n    \"aesthetics\": [\n      \"The street has a clean and orderly appearance, with fresh lane markings, trimmed red shrubs, and consistent streetlight placement.\",\n      \"Mid- and high-rise buildings and the elevated structure create a coherent urban backdrop, though the scene is visually dominated by infrastructure.\",\n      \"The landscaped median and roadside planting soften the road edge and improve visual quality compared with a bare asphalt corridor.\",\n      \"The overcast sky, exposed utility poles and wires, and expansive roadway reduce the overall sense of charm and visual warmth.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears limited because tree canopy is sparse and most of the roadway and sidewalk are exposed, offering little visible shade.\",\n      \"Physical comfort for walking is mixed: the right sidewalk looks paved and continuous, but it is relatively narrow compared with the scale of the road and there are no visible benches or resting places.\",\n      \"Psychological comfort is reduced by the very wide carriageway and traffic-oriented design, which can make the environment feel exposed and less inviting for non-drivers.\",\n      \"The planted strips and separation from traffic provide some buffering, but the elevated structure, utility infrastructure, and likely vehicle noise weaken overall comfort.\"\n    ],\n    \"walkability\": [\n      \"A continuous sidewalk is visible on the right, so pedestrians do have a designated place to walk separate from traffic.\",\n      \"Walkability is weakened by the absence of a visible marked crosswalk in the foreground, making route connectivity across this wide road appear poor.\",\n      \"The street scale strongly favors vehicle movement, with multiple lanes and long crossing distances that discourage convenient walking trips.\",\n      \"There is little visible shade, seating, or active frontage along the sidewalk, reducing the attractiveness of walking for everyday use.\",\n      \"The stair-only access visible to the elevated structure does not support universally convenient pedestrian movement.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 58.0,
+   "accessibility": 61.0
+  },
+  "safety": 66.0,
+  "livability": 54.0,
+  "sustainability": 60.0,
+  "aesthetics": 67.0,
+  "comfort": 52.0,
+  "walkability": 50.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 61.0,
+  "safety": 66.0,
+  "livability": 54.0,
+  "sustainability": 60.0,
+  "aesthetics": 67.0,
+  "comfort": 52.0,
+  "walkability": 50.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:40:33+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to motor vehicles with multiple wide travel lanes, while the pedestrian realm on the right appears comparatively narrow, indicating an uneven distribution of street space across user groups.",
+   "A separated sidewalk is visible on the right side and an overpass stair connection is provided, which gives some dedicated pedestrian infrastructure rather than forcing people to walk in traffic.",
+   "Accessibility is limited because the visible access to the elevated structure is by stairs, and no elevator, ramp, or tactile paving can be seen for users with strollers, wheelchairs, or visual impairments.",
+   "The planted median and curb edges organize movement clearly, but they also reinforce separation without showing convenient at-grade crossing opportunities near the camera position."
+  ],
+  "safety": [
+   "Lane markings are clear and the roadway is wide, which helps organize vehicle movements and reduce ambiguity for drivers.",
+   "A planted median separates opposing traffic streams, lowering the likelihood of head-on conflicts.",
+   "Tall streetlights are present along the corridor, supporting basic roadway visibility, although daytime conditions prevent judging nighttime performance fully.",
+   "Pedestrian safety is weaker because no marked crosswalk is visible in the foreground and the road width creates a long crossing distance for anyone trying to cross at street level.",
+   "The sidewalk is physically separated from moving traffic by a curb and planting strip on the right, which improves protection for people walking along the corridor."
+  ],
+  "livability": [
+   "The corridor feels dominated by through-traffic infrastructure, with broad asphalt lanes, sparse street activity, and limited visible social or commercial frontage.",
+   "Only one pedestrian is visible on the right sidewalk, suggesting low street-level activity and limited everyday social vitality.",
+   "Landscaped strips with red shrubs and some trees add visual order, but they function more as roadside decoration than as usable public space for lingering or gathering.",
+   "The elevated structure and large road reserve create a utilitarian environment rather than a human-scaled neighborhood street."
+  ],
+  "sustainability": [
+   "The presence of sidewalks and some street trees supports more sustainable street design than a fully vehicle-only corridor.",
+   "However, no dedicated bike lane, bus stop, or visible transit amenity is present in the image, limiting support for low-carbon travel choices beyond walking.",
+   "The planted median and roadside greenery contribute modest ecological value and can help with dust capture and heat reduction.",
+   "Large paved carriageway areas dominate the scene, which likely increase runoff and heat absorption compared with a greener or more multimodal street layout."
+  ],
+  "aesthetics": [
+   "The street has a clean and orderly appearance, with fresh lane markings, trimmed red shrubs, and consistent streetlight placement.",
+   "Mid- and high-rise buildings and the elevated structure create a coherent urban backdrop, though the scene is visually dominated by infrastructure.",
+   "The landscaped median and roadside planting soften the road edge and improve visual quality compared with a bare asphalt corridor.",
+   "The overcast sky, exposed utility poles and wires, and expansive roadway reduce the overall sense of charm and visual warmth."
+  ],
+  "comfort": [
+   "Thermal comfort appears limited because tree canopy is sparse and most of the roadway and sidewalk are exposed, offering little visible shade.",
+   "Physical comfort for walking is mixed: the right sidewalk looks paved and continuous, but it is relatively narrow compared with the scale of the road and there are no visible benches or resting places.",
+   "Psychological comfort is reduced by the very wide carriageway and traffic-oriented design, which can make the environment feel exposed and less inviting for non-drivers.",
+   "The planted strips and separation from traffic provide some buffering, but the elevated structure, utility infrastructure, and likely vehicle noise weaken overall comfort."
+  ],
+  "walkability": [
+   "A continuous sidewalk is visible on the right, so pedestrians do have a designated place to walk separate from traffic.",
+   "Walkability is weakened by the absence of a visible marked crosswalk in the foreground, making route connectivity across this wide road appear poor.",
+   "The street scale strongly favors vehicle movement, with multiple lanes and long crossing distances that discourage convenient walking trips.",
+   "There is little visible shade, seating, or active frontage along the sidewalk, reducing the attractiveness of walking for everyday use.",
+   "The stair-only access visible to the elevated structure does not support universally convenient pedestrian movement."
+  ]
+ }
+}

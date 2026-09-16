@@ -1,0 +1,122 @@
+{
+ "oid": "11140",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\11140.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\11140_120.444365_31.31882_09002900011602251257461844E_22.29_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.7,
+ "usage": {
+  "completion_tokens": 858,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 404,
+   "engine_ttlt_ms": 15160,
+   "pre_inference_ms": 395,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1031,
+   "service_ttlt_ms": 15782,
+   "user_visible_ttft_ms": 636
+  },
+  "prompt_tokens": 5324,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6182
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 52.0,\n      \"accessibility\": 52.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 48.0,\n    \"sustainability\": 63.0,\n    \"aesthetics\": 78.0,\n    \"comfort\": 61.0,\n    \"walkability\": 42.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates very large space to motor traffic with multiple wide carriageways, while the pedestrian realm is limited to a narrow side path on the right, suggesting an uneven distribution of street space for all users.\",\n      \"A separated side path is visible on the right behind a hedge and tree line, which gives pedestrians some dedicated space, but no visible crossing points connect both sides of this very wide road.\",\n      \"No curb ramps, tactile paving, marked crosswalks, or median refuge crossings are visible in the image, so accessibility and non-discriminatory use for diverse users cannot be considered strong.\"\n    ],\n    \"safety\": [\n      \"The roadway appears well maintained with clear lane markings, wide lanes, and a landscaped median, which helps organize vehicle movement and reduce head-on conflict.\",\n      \"Tall streetlights are installed continuously along the corridor, which supports visibility and perceived safety after dark.\",\n      \"For non-motorized users, safety is weaker because the road is very wide and fast-looking, and there are no visible zebra crossings, traffic calming devices, or protected cycling facilities.\"\n    ],\n    \"livability\": [\n      \"The corridor feels low in everyday street life because there are no visible shops, building frontages, bus stops, benches, or active public uses along the edge.\",\n      \"Although there are trees and trimmed shrubs, the space functions mainly as a movement corridor rather than a social or mixed-use street.\",\n      \"The visible pedestrian path on the right is isolated from destinations and activity, so the environment offers limited support for daily interaction or community vitality.\"\n    ],\n    \"sustainability\": [\n      \"The landscaped median, roadside shrubs, and rows of trees provide green infrastructure and some ecological value compared with a fully paved corridor.\",\n      \"The streetlights and orderly planting indicate planned infrastructure, but the overall cross-section is dominated by asphalt for motor vehicles, which limits sustainability performance.\",\n      \"No visible bus lane, bus stop, bike lane, or bike parking is present, so support for low-carbon travel modes is limited despite the greenery.\"\n    ],\n    \"aesthetics\": [\n      \"The boulevard has a strong visual order created by symmetrical streetlights, centered perspective, and consistent lane markings.\",\n      \"Trimmed hedges, planted medians, and mature trees on both sides make the corridor look clean and well maintained.\",\n      \"The open sky, broad setbacks, and continuous green edges create a calm and visually pleasant streetscape, even though it is somewhat monotonous.\"\n    ],\n    \"comfort\": [\n      \"Trees along the right side and planted medians provide some shade and visual softness, but the main roadway and much of the corridor remain exposed to direct sun, limiting thermal comfort.\",\n      \"The asphalt surface appears smooth and even, which supports physical comfort for driving and potentially for walking on the side path.\",\n      \"Psychological comfort is mixed: the street is quiet and uncluttered, but its very wide, vehicle-oriented scale and lack of visible human activity can feel inhospitable for people outside cars.\"\n    ],\n    \"walkability\": [\n      \"A sidewalk or side path is visible on the right, showing that walking space exists, but it is separated from the main corridor by hedges and appears secondary to the road.\",\n      \"No marked crosswalks, pedestrian signals, curb ramps, or refuge islands are visible, making crossing this broad boulevard difficult for walkers.\",\n      \"There are no visible benches, storefronts, shelters, or frequent destinations along the path, so the street offers limited practical and experiential support for walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 52.0,
+   "accessibility": 52.0
+  },
+  "safety": 66.0,
+  "livability": 48.0,
+  "sustainability": 63.0,
+  "aesthetics": 78.0,
+  "comfort": 61.0,
+  "walkability": 42.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 52.0,
+  "justice_accessibility": 52.0,
+  "safety": 66.0,
+  "livability": 48.0,
+  "sustainability": 63.0,
+  "aesthetics": 78.0,
+  "comfort": 61.0,
+  "walkability": 42.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:12:51+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates very large space to motor traffic with multiple wide carriageways, while the pedestrian realm is limited to a narrow side path on the right, suggesting an uneven distribution of street space for all users.",
+   "A separated side path is visible on the right behind a hedge and tree line, which gives pedestrians some dedicated space, but no visible crossing points connect both sides of this very wide road.",
+   "No curb ramps, tactile paving, marked crosswalks, or median refuge crossings are visible in the image, so accessibility and non-discriminatory use for diverse users cannot be considered strong."
+  ],
+  "safety": [
+   "The roadway appears well maintained with clear lane markings, wide lanes, and a landscaped median, which helps organize vehicle movement and reduce head-on conflict.",
+   "Tall streetlights are installed continuously along the corridor, which supports visibility and perceived safety after dark.",
+   "For non-motorized users, safety is weaker because the road is very wide and fast-looking, and there are no visible zebra crossings, traffic calming devices, or protected cycling facilities."
+  ],
+  "livability": [
+   "The corridor feels low in everyday street life because there are no visible shops, building frontages, bus stops, benches, or active public uses along the edge.",
+   "Although there are trees and trimmed shrubs, the space functions mainly as a movement corridor rather than a social or mixed-use street.",
+   "The visible pedestrian path on the right is isolated from destinations and activity, so the environment offers limited support for daily interaction or community vitality."
+  ],
+  "sustainability": [
+   "The landscaped median, roadside shrubs, and rows of trees provide green infrastructure and some ecological value compared with a fully paved corridor.",
+   "The streetlights and orderly planting indicate planned infrastructure, but the overall cross-section is dominated by asphalt for motor vehicles, which limits sustainability performance.",
+   "No visible bus lane, bus stop, bike lane, or bike parking is present, so support for low-carbon travel modes is limited despite the greenery."
+  ],
+  "aesthetics": [
+   "The boulevard has a strong visual order created by symmetrical streetlights, centered perspective, and consistent lane markings.",
+   "Trimmed hedges, planted medians, and mature trees on both sides make the corridor look clean and well maintained.",
+   "The open sky, broad setbacks, and continuous green edges create a calm and visually pleasant streetscape, even though it is somewhat monotonous."
+  ],
+  "comfort": [
+   "Trees along the right side and planted medians provide some shade and visual softness, but the main roadway and much of the corridor remain exposed to direct sun, limiting thermal comfort.",
+   "The asphalt surface appears smooth and even, which supports physical comfort for driving and potentially for walking on the side path.",
+   "Psychological comfort is mixed: the street is quiet and uncluttered, but its very wide, vehicle-oriented scale and lack of visible human activity can feel inhospitable for people outside cars."
+  ],
+  "walkability": [
+   "A sidewalk or side path is visible on the right, showing that walking space exists, but it is separated from the main corridor by hedges and appears secondary to the road.",
+   "No marked crosswalks, pedestrian signals, curb ramps, or refuge islands are visible, making crossing this broad boulevard difficult for walkers.",
+   "There are no visible benches, storefronts, shelters, or frequent destinations along the path, so the street offers limited practical and experiential support for walking."
+  ]
+ }
+}

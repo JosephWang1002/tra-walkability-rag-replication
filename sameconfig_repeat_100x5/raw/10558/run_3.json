@@ -1,0 +1,122 @@
+{
+ "oid": "10558",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\10558.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\10558_120.426432_31.229826_0900290012220828102000058AH_275.78_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.4,
+ "usage": {
+  "completion_tokens": 815,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 415,
+   "engine_ttlt_ms": 12445,
+   "pre_inference_ms": 354,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1037,
+   "service_ttlt_ms": 13063,
+   "user_visible_ttft_ms": 682
+  },
+  "prompt_tokens": 5179,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4864
+  },
+  "total_tokens": 5994
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 74.0,\n      \"equity\": 76.0,\n      \"fairness\": 72.0,\n      \"accessibility\": 74.0\n    },\n    \"safety\": 81.0,\n    \"livability\": 70.0,\n    \"sustainability\": 78.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 80.0,\n    \"walkability\": 77.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Both sides of the street have continuous sidewalks with similar width and paving, suggesting a relatively even distribution of pedestrian space for all road users.\",\n      \"The carriageway is wide and clearly organized with lane markings, while sidewalks remain protected by curbs and tree strips, indicating a balanced allocation of space rather than complete dominance by vehicles.\",\n      \"Accessibility appears moderate rather than excellent because the sidewalks look smooth and continuous, but no curb ramps, tactile paving, or other barrier-free details are clearly visible at the crossing in the image.\"\n    ],\n    \"safety\": [\n      \"A marked zebra crossing is visible ahead, which provides a formal pedestrian crossing point and improves conflict predictability between walkers and drivers.\",\n      \"The road has clear centerline and edge line markings, and traffic appears light, which supports legibility and lowers immediate crash risk for all road users.\",\n      \"Large roadside trees and the absence of parked cars near the crossing improve sightlines compared with streets where parked vehicles block pedestrians, although the long straight roadway may still encourage higher driving speeds.\"\n    ],\n    \"livability\": [\n      \"The street is lined with mature trees on both sides, creating a greener and calmer environment that supports everyday street use beyond pure traffic movement.\",\n      \"Sidewalks are present and visually separated from the roadway by curbs and planting, making the corridor more usable for routine walking.\",\n      \"Livability is limited by the lack of visible active ground-floor uses, seating, shops, or social amenities; the street feels orderly but somewhat sparse in human activity.\"\n    ],\n    \"sustainability\": [\n      \"Dense rows of mature street trees provide substantial green infrastructure, which can support shade, cooling, and some ecological benefits.\",\n      \"The presence of continuous sidewalks and a formal crossing supports short walking trips and reduces total dependence on motor vehicles.\",\n      \"No dedicated bike lane, bus stop, or visible stormwater feature is evident in the image, so sustainability performance is helped by greenery but constrained by limited visible multimodal infrastructure.\"\n    ],\n    \"aesthetics\": [\n      \"The double rows of mature green trees create a strong visual canopy and give the street a pleasant, coherent landscape character.\",\n      \"The roadway, sidewalks, curbs, and markings appear clean and well maintained, contributing to a neat and orderly streetscape.\",\n      \"Visual clutter is low: there are few signs, no visible overhead utility mess, and no roadside parking congestion, which strengthens the overall visual quality.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively strong because mature trees line both sidewalks and provide substantial shade for pedestrians.\",\n      \"Physical comfort is supported by smooth-looking sidewalks, curb separation from traffic, and an even road surface without obvious potholes or obstructions.\",\n      \"Psychological comfort is aided by the quiet appearance, low traffic volume, and generous spacing, though the lack of visible benches or waiting areas reduces comfort for longer stays.\"\n    ],\n    \"walkability\": [\n      \"Continuous sidewalks on both sides of the street provide the basic infrastructure needed for walking along the corridor.\",\n      \"A zebra crossing is visible at the intersection ahead, improving route continuity and making pedestrian movement across the street more direct.\",\n      \"Walkability is reduced somewhat because the street is wide and vehicle-oriented, and no pedestrian-scale amenities such as benches, curb extensions, or clearly visible accessibility features are present.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 74.0,
+   "equity": 76.0,
+   "fairness": 72.0,
+   "accessibility": 74.0
+  },
+  "safety": 81.0,
+  "livability": 70.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 80.0,
+  "walkability": 77.0
+ },
+ "scores_flat": {
+  "justice": 74.0,
+  "justice_equity": 76.0,
+  "justice_fairness": 72.0,
+  "justice_accessibility": 74.0,
+  "safety": 81.0,
+  "livability": 70.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 80.0,
+  "walkability": 77.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:09:45+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Both sides of the street have continuous sidewalks with similar width and paving, suggesting a relatively even distribution of pedestrian space for all road users.",
+   "The carriageway is wide and clearly organized with lane markings, while sidewalks remain protected by curbs and tree strips, indicating a balanced allocation of space rather than complete dominance by vehicles.",
+   "Accessibility appears moderate rather than excellent because the sidewalks look smooth and continuous, but no curb ramps, tactile paving, or other barrier-free details are clearly visible at the crossing in the image."
+  ],
+  "safety": [
+   "A marked zebra crossing is visible ahead, which provides a formal pedestrian crossing point and improves conflict predictability between walkers and drivers.",
+   "The road has clear centerline and edge line markings, and traffic appears light, which supports legibility and lowers immediate crash risk for all road users.",
+   "Large roadside trees and the absence of parked cars near the crossing improve sightlines compared with streets where parked vehicles block pedestrians, although the long straight roadway may still encourage higher driving speeds."
+  ],
+  "livability": [
+   "The street is lined with mature trees on both sides, creating a greener and calmer environment that supports everyday street use beyond pure traffic movement.",
+   "Sidewalks are present and visually separated from the roadway by curbs and planting, making the corridor more usable for routine walking.",
+   "Livability is limited by the lack of visible active ground-floor uses, seating, shops, or social amenities; the street feels orderly but somewhat sparse in human activity."
+  ],
+  "sustainability": [
+   "Dense rows of mature street trees provide substantial green infrastructure, which can support shade, cooling, and some ecological benefits.",
+   "The presence of continuous sidewalks and a formal crossing supports short walking trips and reduces total dependence on motor vehicles.",
+   "No dedicated bike lane, bus stop, or visible stormwater feature is evident in the image, so sustainability performance is helped by greenery but constrained by limited visible multimodal infrastructure."
+  ],
+  "aesthetics": [
+   "The double rows of mature green trees create a strong visual canopy and give the street a pleasant, coherent landscape character.",
+   "The roadway, sidewalks, curbs, and markings appear clean and well maintained, contributing to a neat and orderly streetscape.",
+   "Visual clutter is low: there are few signs, no visible overhead utility mess, and no roadside parking congestion, which strengthens the overall visual quality."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively strong because mature trees line both sidewalks and provide substantial shade for pedestrians.",
+   "Physical comfort is supported by smooth-looking sidewalks, curb separation from traffic, and an even road surface without obvious potholes or obstructions.",
+   "Psychological comfort is aided by the quiet appearance, low traffic volume, and generous spacing, though the lack of visible benches or waiting areas reduces comfort for longer stays."
+  ],
+  "walkability": [
+   "Continuous sidewalks on both sides of the street provide the basic infrastructure needed for walking along the corridor.",
+   "A zebra crossing is visible at the intersection ahead, improving route continuity and making pedestrian movement across the street more direct.",
+   "Walkability is reduced somewhat because the street is wide and vehicle-oriented, and no pedestrian-scale amenities such as benches, curb extensions, or clearly visible accessibility features are present."
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "oid": "22552",
+ "description": "The scene shows an industrial street with no clearly defined sidewalk; pedestrians would likely walk along the edge of the roadway on a narrow, uneven dirt/concrete shoulder with visible cracks and debris. Traffic is separated only by lane markings and parked vehicles, with no physical barriers or curb protection, and there’s little to no shade or greenery. Lighting appears minimal (overhead utility poles only), and there are no visible curb cuts, ramps, or other accessibility features; the right side has a fenced/raised area that may create obstacles and reduce safe walking space.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 114,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 10,
+   "engine_ttft_ms": 590,
+   "engine_ttlt_ms": 1689,
+   "pre_inference_ms": 227,
+   "service_tbt_ms": 10,
+   "service_ttft_ms": 1150,
+   "service_ttlt_ms": 2239,
+   "total_duration_ms": 2021,
+   "user_visible_ttft_ms": 924
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1098
+ },
+ "latency_s": 5.0,
+ "timestamp": "2026-08-31T16:40:41"
+}

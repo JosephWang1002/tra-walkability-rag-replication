@@ -1,0 +1,33 @@
+{
+ "oid": "20329",
+ "description": "The road appears to have no continuous sidewalk; the pedestrian space is limited to narrow, unpaved-looking shoulders along the edges, with no visible curb ramps or marked accessible crossings. Traffic is separated only by the roadway itself (no median or physical barrier), and the environment is dominated by tall utility poles and overhead lines, with trees providing partial shade but also creating a long, uninterrupted walking edge. Street lighting is present via tall poles with fixtures, but there are no clear pedestrian amenities or safety features (e.g., guardrails, crosswalks, or dedicated paths) visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 120,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 11,
+   "engine_ttft_ms": 308,
+   "engine_ttlt_ms": 1581,
+   "pre_inference_ms": 494,
+   "service_tbt_ms": 11,
+   "service_ttft_ms": 904,
+   "service_ttlt_ms": 2175,
+   "total_duration_ms": 1688,
+   "user_visible_ttft_ms": 410
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1104
+ },
+ "latency_s": 29.7,
+ "timestamp": "2026-08-31T16:30:13"
+}

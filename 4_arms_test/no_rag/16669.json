@@ -1,0 +1,196 @@
+{
+ "oid": "16669",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16669_120.61442_31.324534_09002900121705210818288207H_181.45_2017_5_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 5.4,
+  "usage": {
+   "completion_tokens": 149,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 352,
+    "engine_ttlt_ms": 1203,
+    "pre_inference_ms": 487,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 1023,
+    "service_ttlt_ms": 1937,
+    "user_visible_ttft_ms": 536
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1410
+  },
+  "raw": "{\"road_type\":\"neighborhood_street\",\"elements\":{\"sidewalk\":\"false\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"few\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"false\",\"street_lighting\":\"false\",\"greenery\":\"low\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"little_shade\",\"no_bike_lane\",\"poor_accessibility\",\"no_crossing\"],\"brief\":\"A narrow neighborhood street with white-walled houses, parked cars, a scooter, and a small trailer is visible. There is no sidewalk or marked crossing, with only a few trees and overhead utility wires.\"}",
+  "parsed": {
+   "road_type": "neighborhood_street",
+   "elements": {
+    "sidewalk": "false",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "few",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "false",
+    "greenery": "low",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "little_shade",
+    "no_bike_lane",
+    "poor_accessibility",
+    "no_crossing"
+   ],
+   "brief": "A narrow neighborhood street with white-walled houses, parked cars, a scooter, and a small trailer is visible. There is no sidewalk or marked crossing, with only a few trees and overhead utility wires."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A narrow neighborhood street with white-walled houses, parked cars, a scooter, and a small trailer is visible. There is no sidewalk or marked crossing, with only a few trees and overhead utility wires. Road type: neighborhood_street. Visible elements: sidewalk=false, bike_lane=false, seating=false, shade_trees=few, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=false, greenery=low, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'little_shade', 'no_bike_lane', 'poor_accessibility', 'no_crossing']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 16.4,
+  "usage": {
+   "completion_tokens": 798,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 14,
+    "engine_ttft_ms": 521,
+    "engine_ttlt_ms": 12062,
+    "pre_inference_ms": 404,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 1163,
+    "service_ttlt_ms": 12698,
+    "user_visible_ttft_ms": 760
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2685
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 40.0,\n      \"fairness\": 43.0,\n      \"accessibility\": 43.0\n    },\n    \"safety\": 38.0,\n    \"livability\": 46.0,\n    \"sustainability\": 34.0,\n    \"aesthetics\": 58.0,\n    \"comfort\": 37.0,\n    \"walkability\": 32.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Street space is dominated by parked and stopped motor vehicles, including a white sedan on the left, a blue truck on the right, and another white car in the foreground, leaving little clearly dedicated space for pedestrians.\",\n      \"No marked sidewalk, curb ramp, tactile paving, or protected pedestrian zone is visible, so accessibility appears weak for a broad range of road users.\",\n      \"The roadway functions as a shared surface, but the scooter and rider positioned near the center further narrow movement space and suggest that vulnerable users do not receive clearly protected priority.\"\n    ],\n    \"safety\": [\n      \"There are no visible crosswalks, lane markings, bollards, or traffic calming devices, making movement patterns unclear for all road users.\",\n      \"Multiple vehicles occupy the small junction area, including parked cars and a truck, which can create blind spots and conflict points.\",\n      \"Overhead utility wires and poles do not directly affect movement on the ground, but the narrow open roadway and informal parking arrangement indicate a low-organization traffic environment.\"\n    ],\n    \"livability\": [\n      \"The low-rise residential buildings create a human-scale neighborhood character, which supports a basic sense of local living environment.\",\n      \"However, the street appears to function mainly as a vehicle access and parking space rather than as an active public place, with no visible seating, storefront activity, or social amenities.\",\n      \"A waste/recycling station on the left and the generally modest residential setting suggest everyday utility, but the lack of greenery and pedestrian facilities limits broader street life quality.\"\n    ],\n    \"sustainability\": [\n      \"No bike lane, bus stop, transit shelter, or other visible support for low-carbon travel is present in the scene.\",\n      \"Tree cover is very limited, with only a small amount of visible greenery in the background and almost no street-level planting along the roadway.\",\n      \"The street surface appears largely impervious asphalt or concrete, and no visible rain gardens, permeable paving, or stormwater features can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"The traditional white-walled, dark-tiled houses provide a coherent architectural character and some visual identity.\",\n      \"At the same time, dense overhead utility wires create strong visual clutter across the sky.\",\n      \"Parked vehicles, exposed service elements, and the lack of landscaped edges reduce the overall visual refinement of the street scene.\"\n    ],\n    \"comfort\": [\n      \"Direct sunlight covers most of the roadway, and there is very little visible shade from trees or canopies, reducing thermal comfort.\",\n      \"No benches, resting areas, or widened pedestrian refuge spaces are visible, limiting physical comfort for people spending time on the street.\",\n      \"Because there is no clear sidewalk and vehicles occupy much of the space, walking may feel psychologically uncomfortable due to uncertainty and proximity to traffic.\"\n    ],\n    \"walkability\": [\n      \"A continuous, clearly separated sidewalk is not visible, so pedestrians appear to need to walk within the same space used by cars and scooters.\",\n      \"Parked vehicles along both sides and a scooter stopped near the center obstruct direct pedestrian movement through the junction area.\",\n      \"There are no visible crossings, curb extensions, shade elements, or pedestrian-oriented wayfinding features that would make walking safer or more attractive.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 42.0,
+    "equity": 40.0,
+    "fairness": 43.0,
+    "accessibility": 43.0
+   },
+   "safety": 38.0,
+   "livability": 46.0,
+   "sustainability": 34.0,
+   "aesthetics": 58.0,
+   "comfort": 37.0,
+   "walkability": 32.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "Street space is dominated by parked and stopped motor vehicles, including a white sedan on the left, a blue truck on the right, and another white car in the foreground, leaving little clearly dedicated space for pedestrians.",
+    "No marked sidewalk, curb ramp, tactile paving, or protected pedestrian zone is visible, so accessibility appears weak for a broad range of road users.",
+    "The roadway functions as a shared surface, but the scooter and rider positioned near the center further narrow movement space and suggest that vulnerable users do not receive clearly protected priority."
+   ],
+   "safety": [
+    "There are no visible crosswalks, lane markings, bollards, or traffic calming devices, making movement patterns unclear for all road users.",
+    "Multiple vehicles occupy the small junction area, including parked cars and a truck, which can create blind spots and conflict points.",
+    "Overhead utility wires and poles do not directly affect movement on the ground, but the narrow open roadway and informal parking arrangement indicate a low-organization traffic environment."
+   ],
+   "livability": [
+    "The low-rise residential buildings create a human-scale neighborhood character, which supports a basic sense of local living environment.",
+    "However, the street appears to function mainly as a vehicle access and parking space rather than as an active public place, with no visible seating, storefront activity, or social amenities.",
+    "A waste/recycling station on the left and the generally modest residential setting suggest everyday utility, but the lack of greenery and pedestrian facilities limits broader street life quality."
+   ],
+   "sustainability": [
+    "No bike lane, bus stop, transit shelter, or other visible support for low-carbon travel is present in the scene.",
+    "Tree cover is very limited, with only a small amount of visible greenery in the background and almost no street-level planting along the roadway.",
+    "The street surface appears largely impervious asphalt or concrete, and no visible rain gardens, permeable paving, or stormwater features can be identified."
+   ],
+   "aesthetics": [
+    "The traditional white-walled, dark-tiled houses provide a coherent architectural character and some visual identity.",
+    "At the same time, dense overhead utility wires create strong visual clutter across the sky.",
+    "Parked vehicles, exposed service elements, and the lack of landscaped edges reduce the overall visual refinement of the street scene."
+   ],
+   "comfort": [
+    "Direct sunlight covers most of the roadway, and there is very little visible shade from trees or canopies, reducing thermal comfort.",
+    "No benches, resting areas, or widened pedestrian refuge spaces are visible, limiting physical comfort for people spending time on the street.",
+    "Because there is no clear sidewalk and vehicles occupy much of the space, walking may feel psychologically uncomfortable due to uncertainty and proximity to traffic."
+   ],
+   "walkability": [
+    "A continuous, clearly separated sidewalk is not visible, so pedestrians appear to need to walk within the same space used by cars and scooters.",
+    "Parked vehicles along both sides and a scooter stopped near the center obstruct direct pedestrian movement through the junction area.",
+    "There are no visible crossings, curb extensions, shade elements, or pedestrian-oriented wayfinding features that would make walking safer or more attractive."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 40.0,
+  "justice_fairness": 43.0,
+  "justice_accessibility": 43.0,
+  "safety": 38.0,
+  "livability": 46.0,
+  "sustainability": 34.0,
+  "aesthetics": 58.0,
+  "comfort": 37.0,
+  "walkability": 32.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T14:03:54+00:00",
+  "step2": "2026-09-03T14:03:54+00:00",
+  "step3": "2026-09-03T14:04:10+00:00",
+  "completed": "2026-09-03T14:04:10+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16669.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

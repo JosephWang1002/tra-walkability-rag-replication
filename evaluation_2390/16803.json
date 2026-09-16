@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 63.5,
+      "equity": 62,
+      "fairness": 61,
+      "accessibility": 67.5
+    },
+    "safety": 69.5,
+    "livability": 62.5,
+    "sustainability": 64,
+    "aesthetics": 70.5,
+    "comfort": 66,
+    "walkability": 63,
+    "bikeability": 55.5
+  },
+  "explanations": {
+    "justice": [
+      "The roadway space is generously allocated to motor vehicles (multiple lanes) while pedestrian space appears narrower on both sides, suggesting an imbalanced distribution of spatial resources across user types.",
+      "A continuous center median fence prioritizes motor-traffic channelization, but it can reduce pedestrian route choice and make crossing less convenient, which may disadvantage people who rely on walking for short trips.",
+      "Sidewalks are present on both sides and look generally continuous, supporting baseline accessibility; however, curb ramps/tactile paving are not visible in the image, limiting confidence in barrier-free design.",
+      "Cyclists appear to be using a right-edge lane without clear protection; the lack of dedicated, protected cycling space suggests less equitable provision for non-motorized users."
+    ],
+    "safety": [
+      "The center median fence reduces risky mid-block crossings and head-on conflicts, improving overall traffic organization and lowering certain crash risks.",
+      "A cyclist is riding near the right edge in proximity to moving/parked vehicles; without a protected bike lane, dooring and side-swipe risks remain.",
+      "Clear lane markings and a relatively wide carriageway support predictable vehicle movements, which can reduce sudden conflicts for drivers and cyclists.",
+      "Large trees and open sightlines along the right side provide some natural surveillance, but no clearly visible pedestrian crossings or signals are seen in the frame, leaving crossing safety uncertain."
+    ],
+    "livability": [
+      "Street trees on both sides and a green verge/park-like area to the right add pleasant everyday outdoor space value for multiple user types.",
+      "Low-rise buildings with ground-floor frontages on the left suggest some potential for daily services, but visible street-level activity appears limited in the scene.",
+      "The corridor feels vehicle-dominant (wide road, steady traffic), which can reduce perceived neighborhood friendliness for lingering and social interaction.",
+      "Sidewalks exist and appear maintained, supporting basic daily walking, though the lack of visible benches or small gathering nodes limits stay activities."
+    ],
+    "sustainability": [
+      "Mature street trees and a landscaped green area on the right contribute to urban canopy, habitat support, and microclimate benefits.",
+      "The apparent absence of a protected bike lane may suppress cycling mode share, limiting low-carbon mobility potential despite the corridor’s width.",
+      "The median fence and multi-lane layout indicate prioritization of car throughput, which can encourage higher vehicle use compared to multimodal street designs.",
+      "Streetlights and orderly curb edges suggest standard municipal infrastructure, but no visible green stormwater features (e.g., rain gardens/permeable strips) can be confirmed from the image."
+    ],
+    "aesthetics": [
+      "Consistent street tree rhythm on both sides creates a coherent streetscape edge and improves visual quality.",
+      "The clean, wide roadway with clear markings and an orderly median fence gives a tidy, structured appearance.",
+      "Building forms are mixed (low-rise left, taller towers in the distance), adding skyline variety without strong visual clutter in the foreground.",
+      "The right-side greenery and open space provide a softer, more attractive counterbalance to the asphalt-dominant roadway."
+    ],
+    "comfort": [
+      "Large trees provide meaningful shade coverage along the sidewalks/edges, improving thermal comfort for pedestrians and cyclists in warm periods.",
+      "Sidewalk surfaces look relatively even and unobstructed, supporting physical comfort for walking and wheeled movement (strollers, carts).",
+      "Traffic volumes and wide lanes can increase noise and perceived exposure for non-motorized users, reducing psychological comfort compared with calmer streets.",
+      "The presence of a buffer/green area on the right side can reduce stress and improve perceived comfort compared to fully built-up, hardscape-only corridors."
+    ],
+    "walkability": [
+      "Sidewalks are present on both sides and appear continuous, supporting basic pedestrian circulation.",
+      "The center median fence can make crossing harder by forcing longer detours to formal crossing points (not visible), reducing pedestrian network permeability.",
+      "Tree-lined edges enhance walking appeal and provide shade, which supports longer walking distances.",
+      "The street feels vehicle-oriented (multiple travel lanes, moving traffic), which may discourage walking for some users despite adequate sidewalk provision."
+    ],
+    "bikeability": [
+      "No clearly marked or physically protected bike lane is visible; the cyclist is riding near the curb in mixed/edge conditions, lowering perceived and actual cycling safety.",
+      "Proximity to parked vehicles on the right increases dooring risk, especially without a buffer zone or dedicated cycle track.",
+      "The wide roadway and clear lane markings benefit drivers but can encourage higher speeds, which reduces comfort for cyclists sharing the corridor.",
+      "There is no visible bicycle parking or bike-specific signage/markings, reducing end-to-end cycling convenience and legibility."
+    ]
+  },
+  "image_id": "img-1776945770768-dun8uuq9h",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T12:28:46.843Z",
+  "record_id": "84a8440c183547788b403d617875a869",
+  "stored_image_url": "/storage/records/84a8440c183547788b403d617875a869/image.jpg",
+  "stored_thumb_url": "/storage/records/84a8440c183547788b403d617875a869/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T12:29:07.284Z"
+}

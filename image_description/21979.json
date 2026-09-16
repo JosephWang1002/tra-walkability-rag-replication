@@ -1,0 +1,33 @@
+{
+ "oid": "21979",
+ "description": "The image shows a wide multi-lane road with marked crosswalk/turning markings but no clearly visible continuous sidewalk on either side; the pedestrian space appears limited to a curb edge and a narrow verge. Traffic is separated from the roadside by curb/roadway markings only, with no visible physical barrier, and vehicles are traveling in multiple lanes under overhead signal gantries. There are trees along the right side providing some shade, street lighting is present via the overhead fixtures, and a curb ramp/accessible crossing feature is not clearly discernible from this view.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 115,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 203,
+   "engine_ttlt_ms": 1923,
+   "pre_inference_ms": 328,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 614,
+   "service_ttlt_ms": 2328,
+   "total_duration_ms": 2008,
+   "user_visible_ttft_ms": 286
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1099
+ },
+ "latency_s": 5.4,
+ "timestamp": "2026-08-31T16:36:28"
+}

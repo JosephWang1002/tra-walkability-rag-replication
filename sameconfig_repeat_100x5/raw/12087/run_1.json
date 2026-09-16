@@ -1,0 +1,122 @@
+{
+ "oid": "12087",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12087.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12087_120.45377_31.341197_09002900011602231221367174E_174.89_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.5,
+ "usage": {
+  "completion_tokens": 840,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 398,
+   "engine_ttlt_ms": 12677,
+   "pre_inference_ms": 382,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 986,
+   "service_ttlt_ms": 13261,
+   "user_visible_ttft_ms": 603
+  },
+  "prompt_tokens": 7767,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 8607
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 49.0\n    },\n    \"safety\": 63.0,\n    \"livability\": 42.0,\n    \"sustainability\": 61.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 46.0,\n    \"walkability\": 38.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates most visible space to the carriageway, while the pedestrian paths on both sides are narrow and set behind planting strips, suggesting an imbalanced distribution of space for non-motorized users.\",\n      \"Both sides appear to include continuous side paths separated from traffic by curbs and tree planting, which provides some baseline provision for all road users rather than excluding pedestrians entirely.\",\n      \"Accessibility is limited because no curb ramps, tactile paving, marked crossings, or other barrier-free details are visible anywhere in the scene, so inclusive access cannot be confirmed from the image.\"\n    ],\n    \"safety\": [\n      \"The roadway is wide, smooth, and clearly marked with a center line, which helps drivers maintain lane discipline and reduces immediate conflict risk.\",\n      \"Pedestrian movement is somewhat protected by raised curbs and planted buffers with trees between the road and side paths, increasing separation from moving vehicles.\",\n      \"Safety for crossing or multimodal use appears weak because there are no visible crosswalks, traffic calming devices, bike lanes, or warning signs, and the long open curve may encourage higher driving speeds.\"\n    ],\n    \"livability\": [\n      \"The scene lacks visible shops, homes with active frontages, benches, bus stops, or public gathering spaces, so it offers little evidence of daily street life or social activity.\",\n      \"The side paths and tree-lined edges provide a basic public realm structure, but the surrounding land appears largely undeveloped and inactive.\",\n      \"Streetlights are present, which supports basic service infrastructure, yet the overall environment feels transitional and sparse rather than supportive of everyday neighborhood use.\"\n    ],\n    \"sustainability\": [\n      \"Rows of street trees and planted medians provide green infrastructure and can contribute to carbon uptake and long-term environmental value.\",\n      \"The strong separation of planting beds from the roadway may help with landscape buffering, but no visible bioswales, permeable paving, or stormwater features can be confirmed.\",\n      \"There is no visible dedicated cycling lane, bus stop, or transit facility, so support for low-carbon travel modes appears limited despite the landscaped setting.\"\n    ],\n    \"aesthetics\": [\n      \"The double rows of evenly spaced trees create strong visual order and rhythm along the corridor.\",\n      \"The road surface, curbs, planting beds, and light poles appear new and well maintained, giving the street a clean and coherent appearance.\",\n      \"Aesthetic quality is reduced somewhat by the leafless trees, bare soil, and largely empty surroundings, which make the landscape feel stark and unfinished.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears weak because the trees are young or leafless and provide almost no visible shade over the side paths or roadway.\",\n      \"Physical comfort is limited by the absence of benches, shelters, or other resting amenities along the pedestrian routes.\",\n      \"The smooth asphalt road and separated side paths suggest comfortable movement surfaces, but the exposed, open setting may reduce psychological comfort for people walking due to isolation and lack of activity.\"\n    ],\n    \"walkability\": [\n      \"There are side paths on both sides of the road, which supports basic pedestrian continuity along the corridor.\",\n      \"Walkability is reduced because the pedestrian paths appear narrow, visually isolated, and disconnected from destinations, with no visible crossings, curb ramps, or active edges.\",\n      \"Limited shade, no seating, and a long auto-oriented roadway profile make the environment less inviting for routine walking even though a sidewalk-like facility exists.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 55.0,
+   "accessibility": 49.0
+  },
+  "safety": 63.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 72.0,
+  "comfort": 46.0,
+  "walkability": 38.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 49.0,
+  "safety": 63.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 72.0,
+  "comfort": 46.0,
+  "walkability": 38.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:16:51+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates most visible space to the carriageway, while the pedestrian paths on both sides are narrow and set behind planting strips, suggesting an imbalanced distribution of space for non-motorized users.",
+   "Both sides appear to include continuous side paths separated from traffic by curbs and tree planting, which provides some baseline provision for all road users rather than excluding pedestrians entirely.",
+   "Accessibility is limited because no curb ramps, tactile paving, marked crossings, or other barrier-free details are visible anywhere in the scene, so inclusive access cannot be confirmed from the image."
+  ],
+  "safety": [
+   "The roadway is wide, smooth, and clearly marked with a center line, which helps drivers maintain lane discipline and reduces immediate conflict risk.",
+   "Pedestrian movement is somewhat protected by raised curbs and planted buffers with trees between the road and side paths, increasing separation from moving vehicles.",
+   "Safety for crossing or multimodal use appears weak because there are no visible crosswalks, traffic calming devices, bike lanes, or warning signs, and the long open curve may encourage higher driving speeds."
+  ],
+  "livability": [
+   "The scene lacks visible shops, homes with active frontages, benches, bus stops, or public gathering spaces, so it offers little evidence of daily street life or social activity.",
+   "The side paths and tree-lined edges provide a basic public realm structure, but the surrounding land appears largely undeveloped and inactive.",
+   "Streetlights are present, which supports basic service infrastructure, yet the overall environment feels transitional and sparse rather than supportive of everyday neighborhood use."
+  ],
+  "sustainability": [
+   "Rows of street trees and planted medians provide green infrastructure and can contribute to carbon uptake and long-term environmental value.",
+   "The strong separation of planting beds from the roadway may help with landscape buffering, but no visible bioswales, permeable paving, or stormwater features can be confirmed.",
+   "There is no visible dedicated cycling lane, bus stop, or transit facility, so support for low-carbon travel modes appears limited despite the landscaped setting."
+  ],
+  "aesthetics": [
+   "The double rows of evenly spaced trees create strong visual order and rhythm along the corridor.",
+   "The road surface, curbs, planting beds, and light poles appear new and well maintained, giving the street a clean and coherent appearance.",
+   "Aesthetic quality is reduced somewhat by the leafless trees, bare soil, and largely empty surroundings, which make the landscape feel stark and unfinished."
+  ],
+  "comfort": [
+   "Thermal comfort appears weak because the trees are young or leafless and provide almost no visible shade over the side paths or roadway.",
+   "Physical comfort is limited by the absence of benches, shelters, or other resting amenities along the pedestrian routes.",
+   "The smooth asphalt road and separated side paths suggest comfortable movement surfaces, but the exposed, open setting may reduce psychological comfort for people walking due to isolation and lack of activity."
+  ],
+  "walkability": [
+   "There are side paths on both sides of the road, which supports basic pedestrian continuity along the corridor.",
+   "Walkability is reduced because the pedestrian paths appear narrow, visually isolated, and disconnected from destinations, with no visible crossings, curb ramps, or active edges.",
+   "Limited shade, no seating, and a long auto-oriented roadway profile make the environment less inviting for routine walking even though a sidewalk-like facility exists."
+  ]
+ }
+}

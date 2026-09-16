@@ -1,0 +1,33 @@
+{
+ "oid": "18572",
+ "description": "The image shows a wide, continuous roadway with no visible pedestrian sidewalk on either side; instead, there are metal guardrails along the left edge and a curb/edge line near the right, limiting pedestrian access. Traffic appears separated from the pedestrian realm by barriers and multiple lanes, with no marked crosswalks or curb ramps visible, and street lighting is present via tall poles along the corridor. There is some greenery (trees/plantings) along the right side that may provide partial shade, but there are no clear pedestrian amenities, accessible crossings, or pedestrian-scale lighting/wayfinding in view.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 123,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 227,
+   "engine_ttlt_ms": 2001,
+   "pre_inference_ms": 308,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 714,
+   "service_ttlt_ms": 2483,
+   "total_duration_ms": 2189,
+   "user_visible_ttft_ms": 407
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1107
+ },
+ "latency_s": 5.5,
+ "timestamp": "2026-08-31T16:21:38"
+}

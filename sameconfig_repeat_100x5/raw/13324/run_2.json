@@ -1,0 +1,122 @@
+{
+ "oid": "13324",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\13324.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\13324_120.597454_30.958447_01002900001406071517500075Q_148.04_2014_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.2,
+ "usage": {
+  "completion_tokens": 852,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 458,
+   "engine_ttlt_ms": 14586,
+   "pre_inference_ms": 279,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 962,
+   "service_ttlt_ms": 15086,
+   "user_visible_ttft_ms": 683
+  },
+  "prompt_tokens": 5612,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6464
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 45.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 34.0,\n    \"sustainability\": 52.0,\n    \"aesthetics\": 71.0,\n    \"comfort\": 54.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible space is allocated to a wide two-lane carriageway, while no sidewalk, marked pedestrian zone, or dedicated cycling facility is visible, indicating an uneven distribution of street space among road users.\",\n      \"The road has clear centerline and edge-line markings for motor vehicles, but there are no visible curb ramps, crossings, refuge islands, or barrier-free pedestrian facilities for non-drivers.\",\n      \"Accessibility appears limited because the road edges transition directly to vegetation and narrow shoulders, with no visible paved footpath or separated slow-traffic space for people walking alongside the road.\"\n    ],\n    \"safety\": [\n      \"The asphalt surface appears smooth and the lane markings are clear, which supports predictable vehicle movement and basic driving safety.\",\n      \"The roadway is long and straight with open forward visibility, allowing road users to see approaching vehicles from a distance.\",\n      \"Safety is reduced for non-motorized users because there is no visible sidewalk, protected shoulder, crossing point, or dedicated bike lane separating them from fast-moving traffic.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by a rural through-road with no visible shops, homes facing the street, seating, bus stops, or public gathering spaces that would support everyday street life.\",\n      \"There are no visible pedestrian amenities such as benches, lighting, shelters, or social spaces, making the corridor function mainly as a transport route rather than a lived-in public place.\",\n      \"Although roadside greenery is abundant, the environment appears low in human activity and services, which limits its usefulness for daily social and community life.\"\n    ],\n    \"sustainability\": [\n      \"Dense rows of roadside trees and shrubs on both sides provide substantial green coverage, which supports ecological value and some environmental buffering.\",\n      \"The corridor lacks visible public transport stops, sidewalks, or cycling infrastructure, so it appears to prioritize private motor travel over lower-carbon travel choices.\",\n      \"The vegetated edges may help with landscape integration and some stormwater absorption, but no visible permeable paving, bioswales, or other explicit green-infrastructure features can be confirmed.\"\n    ],\n    \"aesthetics\": [\n      \"The long straight road framed by continuous tree lines creates a strong visual corridor and a coherent landscape composition.\",\n      \"The roadside vegetation, including dense green trees and flowering white shrubs, adds color contrast and improves scenic quality.\",\n      \"The pavement appears clean and well maintained, with neat markings and limited visual clutter, contributing to an orderly appearance.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: the dense roadside trees likely provide shade near the edges, but the broad exposed asphalt carriageway is fully sunlit and offers little protection for users on the road itself.\",\n      \"Physical comfort is good for drivers because the pavement looks smooth and even, but poor for walkers because no sidewalk, resting area, or dedicated walking surface is visible.\",\n      \"Psychological comfort for all road users is limited by the road's wide, vehicle-oriented character and the absence of protected space for slower users, even though traffic volume in the image appears low.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk or clearly designated pedestrian path is visible along either side of the road, which severely limits safe and comfortable walking.\",\n      \"There are no visible crosswalks, pedestrian signals, curb extensions, or refuge islands to support route continuity for people on foot.\",\n      \"The roadside greenery improves visual quality, but without paved pedestrian infrastructure or destinations along the corridor, the environment is not supportive of everyday walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 45.0,
+   "fairness": 40.0,
+   "accessibility": 41.0
+  },
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 52.0,
+  "aesthetics": 71.0,
+  "comfort": 54.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 41.0,
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 52.0,
+  "aesthetics": 71.0,
+  "comfort": 54.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:21:06+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible space is allocated to a wide two-lane carriageway, while no sidewalk, marked pedestrian zone, or dedicated cycling facility is visible, indicating an uneven distribution of street space among road users.",
+   "The road has clear centerline and edge-line markings for motor vehicles, but there are no visible curb ramps, crossings, refuge islands, or barrier-free pedestrian facilities for non-drivers.",
+   "Accessibility appears limited because the road edges transition directly to vegetation and narrow shoulders, with no visible paved footpath or separated slow-traffic space for people walking alongside the road."
+  ],
+  "safety": [
+   "The asphalt surface appears smooth and the lane markings are clear, which supports predictable vehicle movement and basic driving safety.",
+   "The roadway is long and straight with open forward visibility, allowing road users to see approaching vehicles from a distance.",
+   "Safety is reduced for non-motorized users because there is no visible sidewalk, protected shoulder, crossing point, or dedicated bike lane separating them from fast-moving traffic."
+  ],
+  "livability": [
+   "The scene is dominated by a rural through-road with no visible shops, homes facing the street, seating, bus stops, or public gathering spaces that would support everyday street life.",
+   "There are no visible pedestrian amenities such as benches, lighting, shelters, or social spaces, making the corridor function mainly as a transport route rather than a lived-in public place.",
+   "Although roadside greenery is abundant, the environment appears low in human activity and services, which limits its usefulness for daily social and community life."
+  ],
+  "sustainability": [
+   "Dense rows of roadside trees and shrubs on both sides provide substantial green coverage, which supports ecological value and some environmental buffering.",
+   "The corridor lacks visible public transport stops, sidewalks, or cycling infrastructure, so it appears to prioritize private motor travel over lower-carbon travel choices.",
+   "The vegetated edges may help with landscape integration and some stormwater absorption, but no visible permeable paving, bioswales, or other explicit green-infrastructure features can be confirmed."
+  ],
+  "aesthetics": [
+   "The long straight road framed by continuous tree lines creates a strong visual corridor and a coherent landscape composition.",
+   "The roadside vegetation, including dense green trees and flowering white shrubs, adds color contrast and improves scenic quality.",
+   "The pavement appears clean and well maintained, with neat markings and limited visual clutter, contributing to an orderly appearance."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: the dense roadside trees likely provide shade near the edges, but the broad exposed asphalt carriageway is fully sunlit and offers little protection for users on the road itself.",
+   "Physical comfort is good for drivers because the pavement looks smooth and even, but poor for walkers because no sidewalk, resting area, or dedicated walking surface is visible.",
+   "Psychological comfort for all road users is limited by the road's wide, vehicle-oriented character and the absence of protected space for slower users, even though traffic volume in the image appears low."
+  ],
+  "walkability": [
+   "No sidewalk or clearly designated pedestrian path is visible along either side of the road, which severely limits safe and comfortable walking.",
+   "There are no visible crosswalks, pedestrian signals, curb extensions, or refuge islands to support route continuity for people on foot.",
+   "The roadside greenery improves visual quality, but without paved pedestrian infrastructure or destinations along the corridor, the environment is not supportive of everyday walking."
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "oid": "23116",
+ "description": "The view shows a wide, smooth asphalt roadway running under a continuous concrete elevated structure, with no visible sidewalks or pedestrian path—there are only narrow edge markings and a landscaped strip. Traffic appears separated from any pedestrian space by the lack of a sidewalk and by roadside barriers/green fencing, and the underpass provides substantial shade but limited lighting (bright daylight only at the far end). There are no visible curb ramps, crosswalks, or pedestrian accessibility features, and the roadway is free of obvious obstacles within the travel lane.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 109,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 6,
+   "engine_ttft_ms": 249,
+   "engine_ttlt_ms": 906,
+   "pre_inference_ms": 296,
+   "service_tbt_ms": 6,
+   "service_ttft_ms": 935,
+   "service_ttlt_ms": 1587,
+   "total_duration_ms": 1301,
+   "user_visible_ttft_ms": 639
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1093
+ },
+ "latency_s": 6.6,
+ "timestamp": "2026-08-31T16:45:01"
+}

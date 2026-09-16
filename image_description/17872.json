@@ -1,0 +1,33 @@
+{
+ "oid": "17872",
+ "description": "The image shows a wide, multi-lane roadway with a continuous metal guardrail along the left, providing strong separation from traffic but leaving limited visible pedestrian space. Sidewalks are not clearly visible; where people appear near the left, they are close to the curb/road edge, and there are no obvious curb ramps or marked crosswalks in view. The street is lined with dense trees that provide some greenery and potential shade, and there are tall streetlights, but the overall pedestrian comfort and accessibility features (clear, continuous sidewalk surface/width and curb cuts) are not evident.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 122,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 228,
+   "engine_ttlt_ms": 2026,
+   "pre_inference_ms": 382,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 974,
+   "service_ttlt_ms": 2767,
+   "total_duration_ms": 2394,
+   "user_visible_ttft_ms": 592
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1106
+ },
+ "latency_s": 5.6,
+ "timestamp": "2026-08-31T16:19:48"
+}

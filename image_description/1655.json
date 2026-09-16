@@ -1,0 +1,33 @@
+{
+ "oid": "1655",
+ "description": "The view shows a multi-lane roadway with no visible sidewalk or pedestrian path; the shoulder is narrow and appears unmarked, with a continuous asphalt surface that has some cracking. Traffic is separated from any pedestrian space only by a metal guardrail, and the road curves with multiple lanes and overhead streetlights, suggesting vehicles may be relatively fast. Dense roadside greenery provides some visual separation but little direct pedestrian shade, and there are no visible curb cuts, ramps, crosswalks, or other accessibility features.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 104,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 732,
+   "engine_ttlt_ms": 2164,
+   "pre_inference_ms": 256,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1442,
+   "service_ttlt_ms": 2869,
+   "total_duration_ms": 2622,
+   "user_visible_ttft_ms": 1186
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1088
+ },
+ "latency_s": 5.8,
+ "timestamp": "2026-08-31T16:10:02"
+}

@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 46.5,
+      "equity": 50,
+      "fairness": 45,
+      "accessibility": 44.5
+    },
+    "safety": 42,
+    "livability": 52.5,
+    "sustainability": 60.5,
+    "aesthetics": 58,
+    "comfort": 55.5,
+    "walkability": 40.5,
+    "bikeability": 36.5
+  },
+  "explanations": {
+    "justice": [
+      "Road space is primarily allocated to mixed motor traffic with no visible dedicated sidewalk or bike lane, limiting equitable access for non-drivers on this corridor",
+      "No marked crosswalks, pedestrian priority signage, or traffic-calming features are visible, suggesting rules/priority may implicitly favor motor vehicles rather than all users equally",
+      "Road edges appear uncurbed with vegetation encroaching on the shoulder, creating physical barriers and reducing usable edge space for walking or cycling (accessibility constraint)",
+      "No visible curb ramps, tactile paving, or barrier-free path continuity is identifiable in the scene, limiting universal accessibility for people with mobility/visual needs"
+    ],
+    "safety": [
+      "Narrow carriageway with mixed users (a small three-wheeler/cart, scooters/motorbikes) and no lane markings increases conflict risk between different speeds and vehicle types",
+      "Absence of marked pedestrian facilities (sidewalks/crossings) forces pedestrians to share the roadway edge, increasing exposure to passing vehicles",
+      "Overhead utility lines and roadside poles create fixed-object hazards close to the travel way, especially for cyclists or drivers needing evasive maneuvers",
+      "Vegetation along both sides narrows sightlines at the edges and can conceal pedestrians or animals stepping into the road"
+    ],
+    "livability": [
+      "Low-rise residential buildings and a small roadside vending cart suggest some local daily-life activity and basic services within the street environment",
+      "Greenery and a relatively quiet, low-traffic rural/neighborhood character can support a calmer living environment compared with arterial roads",
+      "Lack of pedestrian amenities (benches, continuous walkway, lighting emphasis at pedestrian scale) reduces the street’s usability as a social/public space",
+      "No visible public-space nodes (pocket park, seating area, plaza) or community frontage treatments are evident, limiting opportunities for staying and social interaction"
+    ],
+    "sustainability": [
+      "Substantial roadside vegetation and mature trees contribute to carbon sequestration, habitat value, and microclimate benefits compared with fully hardscaped streets",
+      "Presence of small, light vehicles (scooters/three-wheeler) indicates potential for lower-carbon local mobility, though infrastructure support is weak",
+      "No visible stormwater management features (swales, permeable shoulders, drains) are identifiable; runoff likely goes untreated from the asphalt surface",
+      "Overhead utility wiring suggests older infrastructure; opportunities for modernization (undergrounding, efficient lighting) are not apparent in the image"
+    ],
+    "aesthetics": [
+      "Dense greenery on both sides provides a pleasant natural frame and softens the visual environment",
+      "The street view has moderate visual coherence (continuous tree line and low-rise forms), but cluttered overhead wires reduce visual quality",
+      "Road surface appears worn and patchy, which detracts from perceived maintenance and streetscape quality",
+      "The vending cart and scattered roadside elements add some local character but also create minor visual disorder at the edge"
+    ],
+    "comfort": [
+      "Tree canopy and abundant vegetation provide partial shade and cooling potential, improving thermal comfort during hot periods",
+      "No dedicated seating/resting facilities are visible, reducing physical comfort for people who may need to pause (e.g., long-distance walkers)",
+      "The shoulder area is uneven/encroached by plants, limiting comfortable walking space and pushing users closer to moving traffic (physical and psychological discomfort)",
+      "The setting appears relatively uncrowded and likely quieter than major roads, supporting psychological comfort despite limited pedestrian protection"
+    ],
+    "walkability": [
+      "No continuous sidewalk is visible; pedestrians must walk along the road edge where vegetation and irregular shoulders reduce effective width",
+      "Lack of crosswalk markings, curb definitions, and pedestrian signage reduces legibility and safe crossing opportunities",
+      "Roadside obstacles (poles, cart stopping/parking at the edge) can force pedestrians into the roadway, reducing route continuity",
+      "Greenery improves perceived pleasantness, but the absence of pedestrian-scale infrastructure keeps overall walkability low"
+    ],
+    "bikeability": [
+      "No bike lane markings or physical protection are present, requiring cyclists to mix with motorbikes and other vehicles on a narrow roadway",
+      "Edge conditions (vegetation encroachment, uneven shoulders) reduce safe escape space for cyclists and increase the chance of falls or sideswipes",
+      "No visible bicycle parking, wayfinding, or cycling-support facilities are present to improve convenience for everyday cycling",
+      "Overhead wires/poles and limited lane guidance increase complexity and perceived risk, especially when overtaking slower vehicles (e.g., the three-wheeler/cart)"
+    ]
+  },
+  "image_id": "img-1777267120275-qbb2600qh",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:51:11.049Z",
+  "record_id": "ac27ba90ee624faba25e79fdfd869700",
+  "stored_image_url": "/storage/records/ac27ba90ee624faba25e79fdfd869700/image.jpg",
+  "stored_thumb_url": "/storage/records/ac27ba90ee624faba25e79fdfd869700/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:52:13.563Z"
+}

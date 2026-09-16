@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 60,
+      "equity": 63,
+      "fairness": 60,
+      "accessibility": 57
+    },
+    "safety": 73,
+    "livability": 50,
+    "sustainability": 78,
+    "aesthetics": 86,
+    "comfort": 72,
+    "walkability": 48,
+    "bikeability": 42
+  },
+  "explanations": {
+    "justice": [
+      "The corridor allocates substantial space to motor lanes, while no clearly visible sidewalk is provided in the image, indicating an imbalanced distribution of space across user types.",
+      "Street trees, landscaped verges, and lighting appear to benefit the whole corridor rather than a single mode, which supports some baseline fairness for all users.",
+      "Accessibility is limited because the road edge is defined by a raised curb and there are no visible curb ramps, tactile paving, or marked pedestrian access points in the scene."
+    ],
+    "safety": [
+      "The road is wide, straight, and has clear centerline and lane markings, which supports predictable vehicle movement and reduces ambiguity for drivers.",
+      "Tall streetlights are installed along the corridor, indicating some provision for nighttime visibility and passive safety infrastructure.",
+      "Safety is weakened for non-motorized users because there is no visible crosswalk, protected bike lane, or clearly separated pedestrian path alongside the carriageway."
+    ],
+    "livability": [
+      "Extensive tree cover and landscaped planting beds create a calm and pleasant environmental setting.",
+      "The street appears low in activity, with only a small number of vehicles and no visible shops, seating, bus stops, or public gathering functions that would support everyday social life.",
+      "The corridor reads more as a through-road in a park-like setting than as a mixed-use neighborhood street serving daily needs and active street life."
+    ],
+    "sustainability": [
+      "Large mature trees line both sides of the road, providing substantial urban greenery and ecological value.",
+      "Continuous planted medians and shrub beds increase permeable landscape area compared with a fully hard-paved roadside.",
+      "Sustainability is reduced somewhat by the car-oriented street design, as no visible cycling facilities or public transport stops are present to support broader low-carbon travel choices."
+    ],
+    "aesthetics": [
+      "The double rows of mature trees create a strong visual frame and a coherent boulevard character.",
+      "Landscaped shrubs, flowering trees on the right, and well-maintained roadside planting improve visual richness and seasonal appeal.",
+      "The roadway surface, curbs, and lighting poles appear orderly and well maintained, contributing to a clean and harmonious streetscape."
+    ],
+    "comfort": [
+      "The dense tree canopy along both sides of the street likely improves thermal comfort by providing shade and cooling effects, especially on adjacent edges.",
+      "The smooth asphalt surface and orderly road geometry support physical comfort for drivers and potentially cyclists, although dedicated cycling space is not visible.",
+      "Psychological comfort benefits from the uncrowded environment, low visible traffic volume, and strong greenery presence, but comfort for walkers is reduced by the lack of clearly visible sidewalks or resting amenities."
+    ],
+    "walkability": [
+      "Walkability is constrained because a continuous, clearly visible sidewalk is not evident on either side of the road in the image.",
+      "The raised curb along the roadway edge forms a barrier between the carriageway and roadside landscape, but no marked pedestrian route or crossing point is visible.",
+      "Although the tree-lined setting is visually pleasant and likely shaded, the absence of clear pedestrian infrastructure such as crosswalks, benches, and frontage activity limits practical walking appeal."
+    ],
+    "bikeability": [
+      "No dedicated bike lane, painted cycle marking, or physically protected cycling space is visible on the roadway.",
+      "The wide and relatively low-traffic road could be rideable for confident cyclists, but mixed traffic conditions reduce comfort for many users.",
+      "There is no visible bicycle parking, intersection treatment for cyclists, or wayfinding signage that would indicate a bicycle-supportive corridor."
+    ]
+  },
+  "image_id": "img-1777133400640-6y0ngyif5",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4"
+  },
+  "generated_at": "2026-04-25T16:35:13.734Z",
+  "record_id": "a84a61e52ec3410b8d9c49c067609b37",
+  "stored_image_url": "/storage/records/a84a61e52ec3410b8d9c49c067609b37/image.jpg",
+  "stored_thumb_url": "/storage/records/a84a61e52ec3410b8d9c49c067609b37/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-25T16:35:59.806Z"
+}

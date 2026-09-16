@@ -1,0 +1,129 @@
+{
+ "oid": "22932",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22932.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22932_120.688839_31.295214_09002900121707270922494815R_266.49_2017_7_苏州工业园区金鸡湖街道_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 20.6,
+ "usage": {
+  "completion_tokens": 917,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 1086,
+   "engine_ttlt_ms": 16387,
+   "pre_inference_ms": 492,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1935,
+   "service_ttlt_ms": 17228,
+   "user_visible_ttft_ms": 1443
+  },
+  "prompt_tokens": 5498,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5248
+  },
+  "total_tokens": 6415
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 63.0,\n    \"sustainability\": 78.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 69.0,\n    \"walkability\": 57.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The space is generously allocated to greenery and a dedicated descending path, suggesting some equitable provision of public space rather than total domination by cars.\",\n      \"Accessibility is limited by the steep ramp leading into the underpass/tunnel, which can be difficult for many users even though the path is physically wide.\",\n      \"Metal railings line both sides of the ramp and help define a protected pedestrian route, but no tactile paving or other visible guidance for visually impaired users is present.\",\n      \"The route appears to prioritize a single linear movement into a dark tunnel, with no visible alternative stair-free level crossing or resting area shown in the image.\"\n    ],\n    \"safety\": [\n      \"Continuous railings on both sides of the descending ramp reduce the risk of falling off the edges and provide clear separation from the planted areas.\",\n      \"The tunnel entrance is visibly dark compared with the bright surroundings, which may reduce perceived personal security and visibility ahead.\",\n      \"The ramp surface shows patchy repairs and uneven texture, creating potential slip or trip hazards for all road users on foot.\",\n      \"Dense vegetation and the recessed underpass geometry limit long-distance sightlines, which can weaken natural surveillance.\"\n    ],\n    \"livability\": [\n      \"Abundant trees, shrubs, and landscaped edges create a calm park-like setting that supports everyday recreation and visual relief.\",\n      \"The area appears quiet and separated from heavy traffic, which can improve the quality of the public environment for strolling.\",\n      \"Livability is reduced by the lack of visible seating, social spaces, or active frontage; the scene functions more as a passage than a place to stay.\",\n      \"The underpass entrance feels infrastructural and utilitarian, which weakens the sense of sociable public life despite the strong greenery.\"\n    ],\n    \"sustainability\": [\n      \"Large mature trees and extensive planting provide substantial green cover, supporting shade, cooling, and ecological value.\",\n      \"The landscape-dominant design suggests lower visual priority for motor traffic and stronger support for non-motorized public space.\",\n      \"Vegetated edges along both sides of the ramp can help with stormwater absorption compared with a fully hardscaped corridor.\",\n      \"No visible solar lighting, permeable paving markings, or explicit water-management features can be confirmed, so sustainability is strong but not comprehensive.\"\n    ],\n    \"aesthetics\": [\n      \"The scene has high visual appeal due to lush mature trees, layered shrubs, and a coherent green corridor framing the path.\",\n      \"The symmetrical railings and planted edges create a clear composition that draws the eye toward the center.\",\n      \"Blue sky, dense canopy, and well-maintained vegetation contribute to a pleasant and orderly landscape character.\",\n      \"Aesthetic quality is slightly reduced by the worn concrete ramp surface and the dark, plain tunnel opening.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good because the surrounding mature trees provide substantial shade potential and cooling greenery.\",\n      \"Physical comfort is mixed: the ramp is wide and unobstructed, but the pavement appears rough and patched rather than smooth.\",\n      \"Psychological comfort is reduced by the dark underpass entrance and enclosed descending form, which can feel isolating.\",\n      \"There are no visible benches, shelters, or resting points, so the space supports movement more than lingering comfort.\"\n    ],\n    \"walkability\": [\n      \"The pedestrian route is continuous and clearly defined, with railings and planting separating it from adjacent landscape areas.\",\n      \"Walkability is weakened by the steep downhill ramp, which increases effort and may be uncomfortable for many users over longer distances.\",\n      \"The pavement surface looks uneven and repaired, reducing walking ease and potentially affecting stroller or suitcase movement.\",\n      \"No visible crosswalks, signage, seating, or tactile guidance are present in the frame, so the route supports passage but not a fully inclusive walking experience.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 60.0,
+   "accessibility": 59.0
+  },
+  "safety": 66.0,
+  "livability": 63.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 69.0,
+  "walkability": 57.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 59.0,
+  "safety": 66.0,
+  "livability": 63.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 69.0,
+  "walkability": 57.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:53:49+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The space is generously allocated to greenery and a dedicated descending path, suggesting some equitable provision of public space rather than total domination by cars.",
+   "Accessibility is limited by the steep ramp leading into the underpass/tunnel, which can be difficult for many users even though the path is physically wide.",
+   "Metal railings line both sides of the ramp and help define a protected pedestrian route, but no tactile paving or other visible guidance for visually impaired users is present.",
+   "The route appears to prioritize a single linear movement into a dark tunnel, with no visible alternative stair-free level crossing or resting area shown in the image."
+  ],
+  "safety": [
+   "Continuous railings on both sides of the descending ramp reduce the risk of falling off the edges and provide clear separation from the planted areas.",
+   "The tunnel entrance is visibly dark compared with the bright surroundings, which may reduce perceived personal security and visibility ahead.",
+   "The ramp surface shows patchy repairs and uneven texture, creating potential slip or trip hazards for all road users on foot.",
+   "Dense vegetation and the recessed underpass geometry limit long-distance sightlines, which can weaken natural surveillance."
+  ],
+  "livability": [
+   "Abundant trees, shrubs, and landscaped edges create a calm park-like setting that supports everyday recreation and visual relief.",
+   "The area appears quiet and separated from heavy traffic, which can improve the quality of the public environment for strolling.",
+   "Livability is reduced by the lack of visible seating, social spaces, or active frontage; the scene functions more as a passage than a place to stay.",
+   "The underpass entrance feels infrastructural and utilitarian, which weakens the sense of sociable public life despite the strong greenery."
+  ],
+  "sustainability": [
+   "Large mature trees and extensive planting provide substantial green cover, supporting shade, cooling, and ecological value.",
+   "The landscape-dominant design suggests lower visual priority for motor traffic and stronger support for non-motorized public space.",
+   "Vegetated edges along both sides of the ramp can help with stormwater absorption compared with a fully hardscaped corridor.",
+   "No visible solar lighting, permeable paving markings, or explicit water-management features can be confirmed, so sustainability is strong but not comprehensive."
+  ],
+  "aesthetics": [
+   "The scene has high visual appeal due to lush mature trees, layered shrubs, and a coherent green corridor framing the path.",
+   "The symmetrical railings and planted edges create a clear composition that draws the eye toward the center.",
+   "Blue sky, dense canopy, and well-maintained vegetation contribute to a pleasant and orderly landscape character.",
+   "Aesthetic quality is slightly reduced by the worn concrete ramp surface and the dark, plain tunnel opening."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively good because the surrounding mature trees provide substantial shade potential and cooling greenery.",
+   "Physical comfort is mixed: the ramp is wide and unobstructed, but the pavement appears rough and patched rather than smooth.",
+   "Psychological comfort is reduced by the dark underpass entrance and enclosed descending form, which can feel isolating.",
+   "There are no visible benches, shelters, or resting points, so the space supports movement more than lingering comfort."
+  ],
+  "walkability": [
+   "The pedestrian route is continuous and clearly defined, with railings and planting separating it from adjacent landscape areas.",
+   "Walkability is weakened by the steep downhill ramp, which increases effort and may be uncomfortable for many users over longer distances.",
+   "The pavement surface looks uneven and repaired, reducing walking ease and potentially affecting stroller or suitcase movement.",
+   "No visible crosswalks, signage, seating, or tactile guidance are present in the frame, so the route supports passage but not a fully inclusive walking experience."
+  ]
+ }
+}

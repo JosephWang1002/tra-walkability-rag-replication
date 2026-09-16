@@ -1,0 +1,33 @@
+{
+ "oid": "22309",
+ "description": "The image shows a wide multi-lane road with no visible continuous sidewalk or pedestrian path in the foreground; the curb area appears separated from the roadway by a landscaped strip with dense greenery. Traffic is separated by lane markings only, with no visible physical barriers, and there are no clear pedestrian crossing features (e.g., marked crosswalks or curb ramps) visible from this viewpoint. Street lighting poles and trees provide some visual comfort, but the lack of accessible, continuous pedestrian infrastructure would limit walkability and safety.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 106,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 9,
+   "engine_ttft_ms": 731,
+   "engine_ttlt_ms": 1656,
+   "pre_inference_ms": 315,
+   "service_tbt_ms": 9,
+   "service_ttft_ms": 1470,
+   "service_ttlt_ms": 2388,
+   "total_duration_ms": 2081,
+   "user_visible_ttft_ms": 1155
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1090
+ },
+ "latency_s": 57.6,
+ "timestamp": "2026-08-31T16:39:48"
+}

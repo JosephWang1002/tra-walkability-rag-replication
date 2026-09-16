@@ -1,0 +1,122 @@
+{
+ "oid": "1062",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\1062.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\1062_120.455161_31.3479_09002900121706211805014145H_172.02_2017_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.5,
+ "usage": {
+  "completion_tokens": 821,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 490,
+   "engine_ttlt_ms": 13224,
+   "pre_inference_ms": 417,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1148,
+   "service_ttlt_ms": 13876,
+   "user_visible_ttft_ms": 732
+  },
+  "prompt_tokens": 5065,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4736
+  },
+  "total_tokens": 5886
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 72.0,\n    \"livability\": 48.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 71.0,\n    \"comfort\": 58.0,\n    \"walkability\": 54.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The corridor provides both a motor-vehicle carriageway and a separate side path on the right, showing some distribution of space beyond cars alone.\",\n      \"Accessibility is limited because the visible side path has no clearly marked curb ramps, tactile paving, or crossing points connecting it to the roadway edges.\",\n      \"Fairness for all users is only moderate: drivers receive a wide, smooth asphalt lane with center markings, while pedestrian-oriented elements such as benches, shelters, and visible wayfinding are absent.\"\n    ],\n    \"safety\": [\n      \"The road surface is smooth and well maintained, and the dashed centerline clearly organizes opposing traffic movements.\",\n      \"There is a physically separated side path on the right, which reduces direct conflict between walkers and motor vehicles compared with sharing the carriageway.\",\n      \"Safety is weakened by the long, gently curving alignment and the lack of visible crosswalks, guardrails, or traffic-calming features, which may encourage higher driving speeds.\"\n    ],\n    \"livability\": [\n      \"The setting is quiet and open, with vegetation on both sides and very low visible traffic, which supports a calm environment.\",\n      \"Livability is limited because there are no visible active frontages, shops, homes facing the street, or public gathering spaces along the corridor.\",\n      \"No benches, bus stops, plazas, or other everyday-use amenities are visible, so the street appears to function mainly as a movement corridor rather than a socially active place.\"\n    ],\n    \"sustainability\": [\n      \"Substantial roadside greenery and planted verges are visible on both sides, contributing to ecological value and some stormwater absorption potential.\",\n      \"The separate side path could support low-carbon travel such as walking or cycling, even though its exact designation is not signed in the image.\",\n      \"Sustainability is constrained by the road-dominated layout and the absence of visible transit facilities, permeable paving details, or street trees providing dense canopy.\"\n    ],\n    \"aesthetics\": [\n      \"The curving roadway, mountain backdrop on the left, and continuous green edges create a visually pleasant landscape setting.\",\n      \"Decorative streetlights add visual order and a designed character to the corridor.\",\n      \"Aesthetic quality is reduced somewhat by the overcast sky, sparse shade trees, and the utilitarian emptiness of the street without active edges or distinctive public-space features.\"\n    ],\n    \"comfort\": [\n      \"Physical comfort for drivers and cyclists is supported by the smooth asphalt surface and the absence of potholes or clutter in the travel lane.\",\n      \"Thermal comfort appears weak because the road and side path are largely exposed, with very limited tree canopy or built shade along the route.\",\n      \"Psychological comfort is mixed: the low traffic volume and open sightlines feel calm, but the isolated setting and lack of nearby activity, seating, or services can make the space feel exposed and less supportive for non-drivers.\"\n    ],\n    \"walkability\": [\n      \"A continuous side path on the right provides a dedicated place for walking separate from the main carriageway.\",\n      \"Walkability is reduced because the path is set beside a grassy edge with no visible benches, crossings, curb ramps, or destinations along the route.\",\n      \"The corridor appears long and exposed, with little shade from trees and no active frontage, making walking possible but not especially convenient or attractive for everyday trips.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 60.0,
+   "accessibility": 59.0
+  },
+  "safety": 72.0,
+  "livability": 48.0,
+  "sustainability": 66.0,
+  "aesthetics": 71.0,
+  "comfort": 58.0,
+  "walkability": 54.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 59.0,
+  "safety": 72.0,
+  "livability": 48.0,
+  "sustainability": 66.0,
+  "aesthetics": 71.0,
+  "comfort": 58.0,
+  "walkability": 54.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:11:09+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The corridor provides both a motor-vehicle carriageway and a separate side path on the right, showing some distribution of space beyond cars alone.",
+   "Accessibility is limited because the visible side path has no clearly marked curb ramps, tactile paving, or crossing points connecting it to the roadway edges.",
+   "Fairness for all users is only moderate: drivers receive a wide, smooth asphalt lane with center markings, while pedestrian-oriented elements such as benches, shelters, and visible wayfinding are absent."
+  ],
+  "safety": [
+   "The road surface is smooth and well maintained, and the dashed centerline clearly organizes opposing traffic movements.",
+   "There is a physically separated side path on the right, which reduces direct conflict between walkers and motor vehicles compared with sharing the carriageway.",
+   "Safety is weakened by the long, gently curving alignment and the lack of visible crosswalks, guardrails, or traffic-calming features, which may encourage higher driving speeds."
+  ],
+  "livability": [
+   "The setting is quiet and open, with vegetation on both sides and very low visible traffic, which supports a calm environment.",
+   "Livability is limited because there are no visible active frontages, shops, homes facing the street, or public gathering spaces along the corridor.",
+   "No benches, bus stops, plazas, or other everyday-use amenities are visible, so the street appears to function mainly as a movement corridor rather than a socially active place."
+  ],
+  "sustainability": [
+   "Substantial roadside greenery and planted verges are visible on both sides, contributing to ecological value and some stormwater absorption potential.",
+   "The separate side path could support low-carbon travel such as walking or cycling, even though its exact designation is not signed in the image.",
+   "Sustainability is constrained by the road-dominated layout and the absence of visible transit facilities, permeable paving details, or street trees providing dense canopy."
+  ],
+  "aesthetics": [
+   "The curving roadway, mountain backdrop on the left, and continuous green edges create a visually pleasant landscape setting.",
+   "Decorative streetlights add visual order and a designed character to the corridor.",
+   "Aesthetic quality is reduced somewhat by the overcast sky, sparse shade trees, and the utilitarian emptiness of the street without active edges or distinctive public-space features."
+  ],
+  "comfort": [
+   "Physical comfort for drivers and cyclists is supported by the smooth asphalt surface and the absence of potholes or clutter in the travel lane.",
+   "Thermal comfort appears weak because the road and side path are largely exposed, with very limited tree canopy or built shade along the route.",
+   "Psychological comfort is mixed: the low traffic volume and open sightlines feel calm, but the isolated setting and lack of nearby activity, seating, or services can make the space feel exposed and less supportive for non-drivers."
+  ],
+  "walkability": [
+   "A continuous side path on the right provides a dedicated place for walking separate from the main carriageway.",
+   "Walkability is reduced because the path is set beside a grassy edge with no visible benches, crossings, curb ramps, or destinations along the route.",
+   "The corridor appears long and exposed, with little shade from trees and no active frontage, making walking possible but not especially convenient or attractive for everyday trips."
+  ]
+ }
+}

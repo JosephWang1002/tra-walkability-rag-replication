@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 52,
+      "equity": 54,
+      "fairness": 53,
+      "accessibility": 50
+    },
+    "safety": 56,
+    "livability": 50,
+    "sustainability": 51,
+    "aesthetics": 52,
+    "comfort": 49,
+    "walkability": 47,
+    "bikeability": 45
+  },
+  "explanations": {
+    "justice": [
+      "Town waterfront main transit road for mixed passenger and freight traffic.",
+      "Basic sidewalk available but no barrier-free optimization design.",
+      "Right-of-way gives priority to large vehicles, with insufficient protection for vulnerable groups."
+    ],
+    "safety": [
+      "Large volume of mixed large truck and private car flow increases conflict risk.",
+      "Unpaved shoulder and roadside drop-off hazard exist.",
+      "Road surface wear reduces driving friction performance."
+    ],
+    "livability": [
+      "Adjacent waterside scenery, but long-term heavy traffic brings noise and pollution.",
+      "Scattered residential buildings nearby.",
+      "Not suitable for daily leisure and long-term residence."
+    ],
+    "sustainability": [
+      "Roadside green belts provide basic environmental improvement.",
+      "High traffic volume leads to relatively high carbon emissions.",
+      "Overall ecological and low-carbon performance remains moderate."
+    ],
+    "aesthetics": [
+      "Open waterside view and simple stone guardrail arrangement.",
+      "Plain functional road layout with limited landscape design.",
+      "Practical but lacks ornamental aesthetic value."
+    ],
+    "comfort": [
+      "Road wear and large vehicle vibration reduce driving comfort.",
+      "Persistent traffic noise interferes with the surrounding environment.",
+      "No dedicated pedestrian rest facilities."
+    ],
+    "walkability": [
+      "Narrow roadside walking space available.",
+      "Need to avoid large passing vehicles at all times.",
+      "Walking experience and safety level are relatively low."
+    ],
+    "bikeability": [
+      "No separated dedicated bicycle lane.",
+      "High risk of conflict with large freight vehicles.",
+      "Only acceptable for extremely short-distance riding."
+    ]
+  },
+  "image_id": "town-waterside-truck-transit-road",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-05-12T10:02:00.000Z",
+  "record_id": "rec-town-waterside-truck-transit-road",
+  "export_timestamp": "2026-05-12T10:02:50.000Z"
+}

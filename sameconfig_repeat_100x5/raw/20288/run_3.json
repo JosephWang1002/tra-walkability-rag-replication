@@ -1,0 +1,122 @@
+{
+ "oid": "20288",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\20288.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\20288_120.641092_31.133117_09002900121904190713088461L_275.2_2019_4_吴江区松陵街道安惠路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.1,
+ "usage": {
+  "completion_tokens": 820,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 18,
+   "engine_ttft_ms": 450,
+   "engine_ttlt_ms": 15427,
+   "pre_inference_ms": 364,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 1047,
+   "service_ttlt_ms": 16019,
+   "user_visible_ttft_ms": 684
+  },
+  "prompt_tokens": 5217,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4864
+  },
+  "total_tokens": 6037
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 60.0,\n      \"fairness\": 56.0,\n      \"accessibility\": 58.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 54.0,\n    \"sustainability\": 72.0,\n    \"aesthetics\": 82.0,\n    \"comfort\": 68.0,\n    \"walkability\": 57.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The central paved approach to the building is wide and unobstructed, so spatial access is not reserved only for cars and supports use by multiple road users.\",\n      \"Most visible foreground space is organized as parking bays and a vehicle driveway, which gives substantial street space to cars relative to pedestrians and lowers equity in space distribution.\",\n      \"No clearly visible sidewalk edge, marked pedestrian crossing, tactile paving, or curb ramp can be identified in the image, so accessibility and fairness for users with different mobility and sensory needs appear only moderate.\"\n    ],\n    \"safety\": [\n      \"Vehicle parking spaces directly flank the main approach road, creating potential conflict points where parked cars may enter or reverse across the shared access area.\",\n      \"The driveway is broad and visually open, and the low traffic volume visible in the image reduces immediate collision risk.\",\n      \"There is no clearly marked pedestrian crossing, bollard-protected walkway, or dedicated cycle facility visible near the entrance, so separation between walking and driving movements is limited.\"\n    ],\n    \"livability\": [\n      \"The scene appears to be a civic or public building with a formal entrance, which can support public use, but there are few visible active frontage elements such as shops, seating, or social gathering spaces.\",\n      \"Landscaped tree islands and low shrubs add some environmental quality, yet the space functions mainly as an access road and parking forecourt rather than a lively public realm.\",\n      \"Very few people are visible, and the large paved forecourt lacks amenities like benches, kiosks, or shaded waiting areas that would encourage lingering and everyday street life.\"\n    ],\n    \"sustainability\": [\n      \"Multiple mature trees and planted shrub beds provide visible green infrastructure and likely help with shade, cooling, and stormwater benefits.\",\n      \"The parking bays appear to use permeable grass-grid paving, which is a positive sustainability feature compared with fully sealed asphalt.\",\n      \"The image is dominated by car parking and does not show visible public transit stops, bike parking, or bike lanes, so support for low-carbon travel is only partial.\"\n    ],\n    \"aesthetics\": [\n      \"The building facade has a clean, coherent geometric pattern that creates a strong and orderly visual identity.\",\n      \"Rows of mature trees and neatly maintained red shrub borders soften the paved forecourt and improve visual quality.\",\n      \"The overall environment appears tidy and well maintained, with organized parking layout, trimmed planting, and little visible clutter.\"\n    ],\n    \"comfort\": [\n      \"Large mature trees around the parking edges provide some shade and improve thermal comfort, especially near the sides of the forecourt.\",\n      \"The central walking route is exposed and lacks continuous canopy or covered shelter, so thermal comfort is weaker for people approaching the entrance in hot or rainy weather.\",\n      \"The pavement looks smooth and wide with few visible obstacles, which supports physical comfort, but there are no visible benches or resting facilities for users who may need to pause.\"\n    ],\n    \"walkability\": [\n      \"The approach to the entrance is direct and relatively wide, making basic pedestrian movement possible.\",\n      \"The space reads primarily as a driveway and parking area rather than a clearly defined pedestrian-first walkway, which weakens walking priority.\",\n      \"No visible zebra crossing, continuous sidewalk, curb ramp detail, or tactile guidance is present in the image, so pedestrian legibility and barrier-free walkability are limited.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 58.0,
+   "equity": 60.0,
+   "fairness": 56.0,
+   "accessibility": 58.0
+  },
+  "safety": 66.0,
+  "livability": 54.0,
+  "sustainability": 72.0,
+  "aesthetics": 82.0,
+  "comfort": 68.0,
+  "walkability": 57.0
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 60.0,
+  "justice_fairness": 56.0,
+  "justice_accessibility": 58.0,
+  "safety": 66.0,
+  "livability": 54.0,
+  "sustainability": 72.0,
+  "aesthetics": 82.0,
+  "comfort": 68.0,
+  "walkability": 57.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:44:44+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The central paved approach to the building is wide and unobstructed, so spatial access is not reserved only for cars and supports use by multiple road users.",
+   "Most visible foreground space is organized as parking bays and a vehicle driveway, which gives substantial street space to cars relative to pedestrians and lowers equity in space distribution.",
+   "No clearly visible sidewalk edge, marked pedestrian crossing, tactile paving, or curb ramp can be identified in the image, so accessibility and fairness for users with different mobility and sensory needs appear only moderate."
+  ],
+  "safety": [
+   "Vehicle parking spaces directly flank the main approach road, creating potential conflict points where parked cars may enter or reverse across the shared access area.",
+   "The driveway is broad and visually open, and the low traffic volume visible in the image reduces immediate collision risk.",
+   "There is no clearly marked pedestrian crossing, bollard-protected walkway, or dedicated cycle facility visible near the entrance, so separation between walking and driving movements is limited."
+  ],
+  "livability": [
+   "The scene appears to be a civic or public building with a formal entrance, which can support public use, but there are few visible active frontage elements such as shops, seating, or social gathering spaces.",
+   "Landscaped tree islands and low shrubs add some environmental quality, yet the space functions mainly as an access road and parking forecourt rather than a lively public realm.",
+   "Very few people are visible, and the large paved forecourt lacks amenities like benches, kiosks, or shaded waiting areas that would encourage lingering and everyday street life."
+  ],
+  "sustainability": [
+   "Multiple mature trees and planted shrub beds provide visible green infrastructure and likely help with shade, cooling, and stormwater benefits.",
+   "The parking bays appear to use permeable grass-grid paving, which is a positive sustainability feature compared with fully sealed asphalt.",
+   "The image is dominated by car parking and does not show visible public transit stops, bike parking, or bike lanes, so support for low-carbon travel is only partial."
+  ],
+  "aesthetics": [
+   "The building facade has a clean, coherent geometric pattern that creates a strong and orderly visual identity.",
+   "Rows of mature trees and neatly maintained red shrub borders soften the paved forecourt and improve visual quality.",
+   "The overall environment appears tidy and well maintained, with organized parking layout, trimmed planting, and little visible clutter."
+  ],
+  "comfort": [
+   "Large mature trees around the parking edges provide some shade and improve thermal comfort, especially near the sides of the forecourt.",
+   "The central walking route is exposed and lacks continuous canopy or covered shelter, so thermal comfort is weaker for people approaching the entrance in hot or rainy weather.",
+   "The pavement looks smooth and wide with few visible obstacles, which supports physical comfort, but there are no visible benches or resting facilities for users who may need to pause."
+  ],
+  "walkability": [
+   "The approach to the entrance is direct and relatively wide, making basic pedestrian movement possible.",
+   "The space reads primarily as a driveway and parking area rather than a clearly defined pedestrian-first walkway, which weakens walking priority.",
+   "No visible zebra crossing, continuous sidewalk, curb ramp detail, or tactile guidance is present in the image, so pedestrian legibility and barrier-free walkability are limited."
+  ]
+ }
+}

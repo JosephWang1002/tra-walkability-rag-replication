@@ -1,0 +1,33 @@
+{
+ "oid": "12212",
+ "description": "The image shows a multi-lane road with a narrow, continuous curbside sidewalk/shoulder on both sides, separated from traffic by a low curb and landscaped hedges; the surface appears even but there’s no visible wide pedestrian buffer or dedicated protected cycle/walk space. Traffic is relatively fast and not strongly separated from pedestrians—there are no barriers beyond the curb/hedge, and streetlights are spaced along the roadway for visibility. Dense trees and hedges provide substantial shade and greenery, but there are few visible accessibility features (e.g., curb ramps) or pedestrian crossing elements in this view.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 125,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 976,
+   "engine_ttlt_ms": 2909,
+   "pre_inference_ms": 383,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1751,
+   "service_ttlt_ms": 3679,
+   "total_duration_ms": 3305,
+   "user_visible_ttft_ms": 1368
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1109
+ },
+ "latency_s": 7.2,
+ "timestamp": "2026-08-31T15:44:54"
+}

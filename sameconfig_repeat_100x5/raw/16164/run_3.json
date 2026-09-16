@@ -1,0 +1,122 @@
+{
+ "oid": "16164",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16164.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16164_120.611437_31.215255_09002900121707181046520496G_21.83_2017_7_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.3,
+ "usage": {
+  "completion_tokens": 889,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 423,
+   "engine_ttlt_ms": 13696,
+   "pre_inference_ms": 320,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 966,
+   "service_ttlt_ms": 14235,
+   "user_visible_ttft_ms": 646
+  },
+  "prompt_tokens": 5258,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6147
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 49.0,\n      \"equity\": 50.0,\n      \"fairness\": 46.0,\n      \"accessibility\": 51.0\n    },\n    \"safety\": 54.0,\n    \"livability\": 42.0,\n    \"sustainability\": 48.0,\n    \"aesthetics\": 58.0,\n    \"comfort\": 47.0,\n    \"walkability\": 40.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by a wide asphalt carriageway, while pedestrian space is limited to a narrow strip along the left building edge and a planted curb edge on the right, indicating weak balance among road users.\",\n      \"No marked sidewalk, crosswalk, or dedicated non-motorized lane is visible, so pedestrians and any cyclists would need to share the same vehicular surface, reducing fairness of use for all road users.\",\n      \"Accessibility is only moderate because the road surface appears mostly flat, but there are no visible curb ramps, tactile paving, or clearly continuous barrier-free pedestrian routes along either side.\"\n    ],\n    \"safety\": [\n      \"The street appears to have low traffic volume and a relatively open sightline ahead, which can reduce immediate collision risk.\",\n      \"Safety is weakened because there is no visible separation between walking space and the vehicle travel area; the left-side pedestrian strip blends into drive access and the main roadway.\",\n      \"There are no visible traffic-calming elements, crossing markings, or warning signs, and the broad paved surface may encourage vehicle movement without clear pedestrian priority.\"\n    ],\n    \"livability\": [\n      \"The scene reads as a back-of-building or service-road environment, with blank building edges, fencing, and parking rather than active ground-floor uses that support daily street life.\",\n      \"Some greenery is present in the form of shrubs, lawn edges, and street trees, which adds environmental quality, but these elements do not create an active social space.\",\n      \"No visible benches, bus stops, storefronts, or gathering amenities are present, so the street offers limited support for lingering, social interaction, or everyday neighborhood activity.\"\n    ],\n    \"sustainability\": [\n      \"Street trees, shrubs, and planted edges provide some ecological value and modest urban greening compared with a fully paved service lane.\",\n      \"Most of the visible surface is impervious asphalt, and there are no obvious permeable paving areas, bioswales, or rainwater-management features visible in the scene.\",\n      \"No visible transit stop, bike lane, or cycling facility is provided, so the street does little to visibly support lower-carbon travel modes beyond basic walkability.\"\n    ],\n    \"aesthetics\": [\n      \"The trees and planted beds soften the corridor and improve visual quality compared with a fully industrial or parking-dominated setting.\",\n      \"Aesthetic quality is reduced by the large expanse of worn asphalt with patchy stains, which gives the street a utilitarian and somewhat neglected appearance.\",\n      \"Building facades are simple and relatively orderly, but the fenced parking edge, blank walls, and service-road character limit visual richness and street appeal.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: trees and planting provide some shade potential along the edges, but the central roadway is largely exposed to direct sun.\",\n      \"Physical comfort is limited because there is no clearly paved, continuous sidewalk or resting facility such as benches; walking would likely occur on the same asphalt used by vehicles.\",\n      \"Psychological comfort is only moderate, as the street is quiet and uncrowded, but the inactive edges, fencing, and lack of pedestrian-oriented features can make the environment feel isolated.\"\n    ],\n    \"walkability\": [\n      \"Walkability is weak because there is no clearly defined continuous sidewalk network; the left edge is narrow and interrupted by building frontage, while the right edge is mostly curb and planting.\",\n      \"The flat terrain and low apparent traffic support basic walking feasibility, but the absence of marked crossings, curb ramps, and pedestrian priority treatments reduces route quality.\",\n      \"Limited shade over the walking path, no seating, and little active frontage make the route less attractive and less supportive for everyday pedestrian movement.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 49.0,
+   "equity": 50.0,
+   "fairness": 46.0,
+   "accessibility": 51.0
+  },
+  "safety": 54.0,
+  "livability": 42.0,
+  "sustainability": 48.0,
+  "aesthetics": 58.0,
+  "comfort": 47.0,
+  "walkability": 40.0
+ },
+ "scores_flat": {
+  "justice": 49.0,
+  "justice_equity": 50.0,
+  "justice_fairness": 46.0,
+  "justice_accessibility": 51.0,
+  "safety": 54.0,
+  "livability": 42.0,
+  "sustainability": 48.0,
+  "aesthetics": 58.0,
+  "comfort": 47.0,
+  "walkability": 40.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:28:15+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by a wide asphalt carriageway, while pedestrian space is limited to a narrow strip along the left building edge and a planted curb edge on the right, indicating weak balance among road users.",
+   "No marked sidewalk, crosswalk, or dedicated non-motorized lane is visible, so pedestrians and any cyclists would need to share the same vehicular surface, reducing fairness of use for all road users.",
+   "Accessibility is only moderate because the road surface appears mostly flat, but there are no visible curb ramps, tactile paving, or clearly continuous barrier-free pedestrian routes along either side."
+  ],
+  "safety": [
+   "The street appears to have low traffic volume and a relatively open sightline ahead, which can reduce immediate collision risk.",
+   "Safety is weakened because there is no visible separation between walking space and the vehicle travel area; the left-side pedestrian strip blends into drive access and the main roadway.",
+   "There are no visible traffic-calming elements, crossing markings, or warning signs, and the broad paved surface may encourage vehicle movement without clear pedestrian priority."
+  ],
+  "livability": [
+   "The scene reads as a back-of-building or service-road environment, with blank building edges, fencing, and parking rather than active ground-floor uses that support daily street life.",
+   "Some greenery is present in the form of shrubs, lawn edges, and street trees, which adds environmental quality, but these elements do not create an active social space.",
+   "No visible benches, bus stops, storefronts, or gathering amenities are present, so the street offers limited support for lingering, social interaction, or everyday neighborhood activity."
+  ],
+  "sustainability": [
+   "Street trees, shrubs, and planted edges provide some ecological value and modest urban greening compared with a fully paved service lane.",
+   "Most of the visible surface is impervious asphalt, and there are no obvious permeable paving areas, bioswales, or rainwater-management features visible in the scene.",
+   "No visible transit stop, bike lane, or cycling facility is provided, so the street does little to visibly support lower-carbon travel modes beyond basic walkability."
+  ],
+  "aesthetics": [
+   "The trees and planted beds soften the corridor and improve visual quality compared with a fully industrial or parking-dominated setting.",
+   "Aesthetic quality is reduced by the large expanse of worn asphalt with patchy stains, which gives the street a utilitarian and somewhat neglected appearance.",
+   "Building facades are simple and relatively orderly, but the fenced parking edge, blank walls, and service-road character limit visual richness and street appeal."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: trees and planting provide some shade potential along the edges, but the central roadway is largely exposed to direct sun.",
+   "Physical comfort is limited because there is no clearly paved, continuous sidewalk or resting facility such as benches; walking would likely occur on the same asphalt used by vehicles.",
+   "Psychological comfort is only moderate, as the street is quiet and uncrowded, but the inactive edges, fencing, and lack of pedestrian-oriented features can make the environment feel isolated."
+  ],
+  "walkability": [
+   "Walkability is weak because there is no clearly defined continuous sidewalk network; the left edge is narrow and interrupted by building frontage, while the right edge is mostly curb and planting.",
+   "The flat terrain and low apparent traffic support basic walking feasibility, but the absence of marked crossings, curb ramps, and pedestrian priority treatments reduces route quality.",
+   "Limited shade over the walking path, no seating, and little active frontage make the route less attractive and less supportive for everyday pedestrian movement."
+  ]
+ }
+}

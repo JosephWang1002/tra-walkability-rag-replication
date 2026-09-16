@@ -1,0 +1,200 @@
+{
+ "oid": "3253",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\3253_120.785587_31.373812_09002900011704231223367015D_83.5_2017_4_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 5.8,
+  "usage": {
+   "completion_tokens": 160,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 323,
+    "engine_ttlt_ms": 1340,
+    "pre_inference_ms": 295,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 778,
+    "service_ttlt_ms": 1790,
+    "user_visible_ttft_ms": 483
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1421
+  },
+  "raw": "{\"road_type\":\"highway\",\"elements\":{\"sidewalk\":\"false\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"few\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"false\",\"street_lighting\":\"true\",\"greenery\":\"high\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"little_shade\",\"no_bike_lane\",\"poor_accessibility\",\"no_crossing\",\"high_traffic_exposure\"],\"brief\":\"A multi-lane highway is visible with moving cars, lane markings, guardrails, and roadside signs. Dense greenery lines both sides, with a few trees and tall light poles, but no sidewalk, benches, or pedestrian crossing are visible.\"}",
+  "parsed": {
+   "road_type": "highway",
+   "elements": {
+    "sidewalk": "false",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "few",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "true",
+    "greenery": "high",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "little_shade",
+    "no_bike_lane",
+    "poor_accessibility",
+    "no_crossing",
+    "high_traffic_exposure"
+   ],
+   "brief": "A multi-lane highway is visible with moving cars, lane markings, guardrails, and roadside signs. Dense greenery lines both sides, with a few trees and tall light poles, but no sidewalk, benches, or pedestrian crossing are visible."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A multi-lane highway is visible with moving cars, lane markings, guardrails, and roadside signs. Dense greenery lines both sides, with a few trees and tall light poles, but no sidewalk, benches, or pedestrian crossing are visible. Road type: highway. Visible elements: sidewalk=false, bike_lane=false, seating=false, shade_trees=few, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=true, greenery=high, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'little_shade', 'no_bike_lane', 'poor_accessibility', 'no_crossing', 'high_traffic_exposure']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 21.7,
+  "usage": {
+   "completion_tokens": 955,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 17,
+    "engine_ttft_ms": 393,
+    "engine_ttlt_ms": 16828,
+    "pre_inference_ms": 373,
+    "service_tbt_ms": 17,
+    "service_ttft_ms": 1158,
+    "service_ttlt_ms": 17589,
+    "user_visible_ttft_ms": 785
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2842
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 29.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 22.0,\n    \"sustainability\": 30.0,\n    \"aesthetics\": 54.0,\n    \"comfort\": 41.0,\n    \"walkability\": 12.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The scene is dominated by multiple wide motor-vehicle lanes, while no sidewalk, pedestrian crossing, or dedicated pedestrian space is visible, indicating street space is allocated primarily to drivers rather than all road users.\",\n      \"Metal guardrails line both sides of the roadway and physically separate the carriageway from the vegetated edges, but no visible access points, ramps, or pedestrian facilities appear in the image.\",\n      \"Lane markings are clear for vehicles and overhead/directional road signs serve drivers, yet there are no visible features supporting non-motorized users such as curb ramps, refuge islands, or accessible waiting areas.\"\n    ],\n    \"safety\": [\n      \"For drivers, the roadway appears relatively safe because the asphalt surface is smooth, lane markings are bright and continuous, and sightlines are long and unobstructed.\",\n      \"Guardrails on both sides provide roadside protection, reducing the risk of vehicles leaving the carriageway into the vegetated edges.\",\n      \"Safety is weaker for all road users overall because no sidewalk, crosswalk, bike lane, or pedestrian refuge is visible, and the high-speed highway setting creates an inherently hazardous environment for anyone outside a vehicle.\",\n      \"A traffic cone placed in the right lane/shoulder area signals a localized hazard or maintenance condition, which may create minor uncertainty for approaching drivers.\"\n    ],\n    \"livability\": [\n      \"The image shows a highway corridor with fast-moving traffic lanes, guardrails, and roadside vegetation, but no visible shops, homes, public spaces, or social destinations that support everyday street life.\",\n      \"There are no benches, bus stops, plazas, or gathering areas visible, so the corridor offers little support for lingering, social interaction, or daily neighborhood use.\",\n      \"Although greenery is present along both sides, it functions mainly as roadside vegetation beside the highway rather than as usable public open space for people.\"\n    ],\n    \"sustainability\": [\n      \"Vegetation and tree cover along both sides of the road provide some ecological value and visual buffering compared with a fully barren roadside.\",\n      \"However, the corridor is clearly designed around private motor traffic, with several wide lanes and no visible transit stop, bike lane, or pedestrian infrastructure to support lower-carbon travel choices.\",\n      \"No visible green stormwater features, permeable paving, or bioswales can be identified from the image; the dominant surface is extensive asphalt pavement.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway has a clean, orderly appearance with fresh dark pavement, crisp white lane markings, and a visually uncluttered linear composition.\",\n      \"Green vegetation on both sides softens the highway edges and improves the view compared with a fully built-up or industrial roadside.\",\n      \"At the same time, the scene remains visually monotonous because it is dominated by asphalt, guardrails, utility towers, and distant road signage rather than human-scaled design elements.\"\n    ],\n    \"comfort\": [\n      \"Physical comfort is limited for all road users because no sidewalk, seating, rest area, or pedestrian-scale amenities are visible anywhere in the scene.\",\n      \"Thermal comfort appears weak on the roadway itself: the sky is open and sunny, and there is no visible shade structure or street tree canopy over any travel space.\",\n      \"Psychological comfort is low for non-drivers because the environment is a high-speed highway with multiple wide lanes, guardrails, and no protected space for walking or lingering.\",\n      \"For drivers specifically, the smooth pavement and clear lane definition provide a relatively comfortable driving surface.\"\n    ],\n    \"walkability\": [\n      \"Walkability is extremely poor because no sidewalk or footpath is visible along either side of the road.\",\n      \"There are no marked crosswalks, pedestrian signals, refuge islands, or intersections designed for crossing in the visible scene.\",\n      \"Guardrails continuously edge the roadway and reinforce that this corridor is not intended for pedestrian movement.\",\n      \"The highway scale, wide lanes, and vehicle-oriented signage create a setting that is inhospitable to walking even if someone needed to travel along it.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 34.0,
+    "equity": 38.0,
+    "fairness": 35.0,
+    "accessibility": 29.0
+   },
+   "safety": 58.0,
+   "livability": 22.0,
+   "sustainability": 30.0,
+   "aesthetics": 54.0,
+   "comfort": 41.0,
+   "walkability": 12.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The scene is dominated by multiple wide motor-vehicle lanes, while no sidewalk, pedestrian crossing, or dedicated pedestrian space is visible, indicating street space is allocated primarily to drivers rather than all road users.",
+    "Metal guardrails line both sides of the roadway and physically separate the carriageway from the vegetated edges, but no visible access points, ramps, or pedestrian facilities appear in the image.",
+    "Lane markings are clear for vehicles and overhead/directional road signs serve drivers, yet there are no visible features supporting non-motorized users such as curb ramps, refuge islands, or accessible waiting areas."
+   ],
+   "safety": [
+    "For drivers, the roadway appears relatively safe because the asphalt surface is smooth, lane markings are bright and continuous, and sightlines are long and unobstructed.",
+    "Guardrails on both sides provide roadside protection, reducing the risk of vehicles leaving the carriageway into the vegetated edges.",
+    "Safety is weaker for all road users overall because no sidewalk, crosswalk, bike lane, or pedestrian refuge is visible, and the high-speed highway setting creates an inherently hazardous environment for anyone outside a vehicle.",
+    "A traffic cone placed in the right lane/shoulder area signals a localized hazard or maintenance condition, which may create minor uncertainty for approaching drivers."
+   ],
+   "livability": [
+    "The image shows a highway corridor with fast-moving traffic lanes, guardrails, and roadside vegetation, but no visible shops, homes, public spaces, or social destinations that support everyday street life.",
+    "There are no benches, bus stops, plazas, or gathering areas visible, so the corridor offers little support for lingering, social interaction, or daily neighborhood use.",
+    "Although greenery is present along both sides, it functions mainly as roadside vegetation beside the highway rather than as usable public open space for people."
+   ],
+   "sustainability": [
+    "Vegetation and tree cover along both sides of the road provide some ecological value and visual buffering compared with a fully barren roadside.",
+    "However, the corridor is clearly designed around private motor traffic, with several wide lanes and no visible transit stop, bike lane, or pedestrian infrastructure to support lower-carbon travel choices.",
+    "No visible green stormwater features, permeable paving, or bioswales can be identified from the image; the dominant surface is extensive asphalt pavement."
+   ],
+   "aesthetics": [
+    "The roadway has a clean, orderly appearance with fresh dark pavement, crisp white lane markings, and a visually uncluttered linear composition.",
+    "Green vegetation on both sides softens the highway edges and improves the view compared with a fully built-up or industrial roadside.",
+    "At the same time, the scene remains visually monotonous because it is dominated by asphalt, guardrails, utility towers, and distant road signage rather than human-scaled design elements."
+   ],
+   "comfort": [
+    "Physical comfort is limited for all road users because no sidewalk, seating, rest area, or pedestrian-scale amenities are visible anywhere in the scene.",
+    "Thermal comfort appears weak on the roadway itself: the sky is open and sunny, and there is no visible shade structure or street tree canopy over any travel space.",
+    "Psychological comfort is low for non-drivers because the environment is a high-speed highway with multiple wide lanes, guardrails, and no protected space for walking or lingering.",
+    "For drivers specifically, the smooth pavement and clear lane definition provide a relatively comfortable driving surface."
+   ],
+   "walkability": [
+    "Walkability is extremely poor because no sidewalk or footpath is visible along either side of the road.",
+    "There are no marked crosswalks, pedestrian signals, refuge islands, or intersections designed for crossing in the visible scene.",
+    "Guardrails continuously edge the roadway and reinforce that this corridor is not intended for pedestrian movement.",
+    "The highway scale, wide lanes, and vehicle-oriented signage create a setting that is inhospitable to walking even if someone needed to travel along it."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 29.0,
+  "safety": 58.0,
+  "livability": 22.0,
+  "sustainability": 30.0,
+  "aesthetics": 54.0,
+  "comfort": 41.0,
+  "walkability": 12.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T16:32:08+00:00",
+  "step2": "2026-09-03T16:32:08+00:00",
+  "step3": "2026-09-03T16:32:30+00:00",
+  "completed": "2026-09-03T16:32:30+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\3253.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

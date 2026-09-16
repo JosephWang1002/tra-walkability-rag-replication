@@ -1,0 +1,122 @@
+{
+ "oid": "1655",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\1655.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\1655_120.6855_31.004702_01002900001406071131219845L_63.62_2014_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.6,
+ "usage": {
+  "completion_tokens": 824,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 414,
+   "engine_ttlt_ms": 14519,
+   "pre_inference_ms": 316,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 962,
+   "service_ttlt_ms": 15063,
+   "user_visible_ttft_ms": 646
+  },
+  "prompt_tokens": 5385,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6209
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 22.0,\n      \"equity\": 20.0,\n      \"fairness\": 22.0,\n      \"accessibility\": 24.0\n    },\n    \"safety\": 48.0,\n    \"livability\": 18.0,\n    \"sustainability\": 30.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 28.0,\n    \"walkability\": 8.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The scene is a highway-style ramp with only motor-vehicle carriageway visible, while no sidewalk, shoulder path, or pedestrian space is provided, indicating very unequal allocation of street space across road users.\",\n      \"Continuous guardrails line both sides of the ramp and the center divider, but there are no visible curb ramps, crossings, or barrier-free pedestrian facilities, so accessibility for non-drivers is extremely limited.\",\n      \"Lane edge lines and the curved ramp geometry clearly organize movement for vehicles only; the absence of any marked walking zone or waiting area suggests rules and design do not fairly accommodate all road users.\"\n    ],\n    \"safety\": [\n      \"Metal guardrails on the right edge and along the center divider provide crash protection for vehicles on this elevated curved ramp.\",\n      \"The roadway surface appears smooth and lane edge markings are clearly visible, which supports driver guidance and reduces some operational risk.\",\n      \"However, the long sweeping curve and highway-ramp design imply relatively high vehicle speeds, and there are no visible traffic-calming features, crossings, or refuge areas for anyone outside a car.\"\n    ],\n    \"livability\": [\n      \"The image shows an isolated elevated roadway bordered by guardrails and trees, with no shops, homes, benches, bus stops, or social destinations that would support everyday street life.\",\n      \"There are no visible pedestrians, cyclists, or public gathering features, so the space functions as a transport corridor rather than a livable public street.\",\n      \"The absence of active frontages, amenities, and resting places means the environment offers little support for daily non-driving activities.\"\n    ],\n    \"sustainability\": [\n      \"Dense tree cover beside the ramp contributes some ecological value and visual greenery.\",\n      \"At the same time, the visible infrastructure is entirely oriented to private motor traffic, with no bus stop, bike lane, or pedestrian route shown to support lower-carbon travel choices.\",\n      \"The broad paved ramp, guardrails, and vehicle-only geometry indicate a car-dependent facility, limiting sustainability despite the adjacent vegetation.\"\n    ],\n    \"aesthetics\": [\n      \"The curving roadway and continuous tree canopy on the right create a relatively clean and orderly visual composition.\",\n      \"Road markings, guardrails, and pavement appear maintained, which improves visual neatness.\",\n      \"However, the scene is dominated by gray asphalt, metal barriers, and utility poles, with little human-scale detail or design richness, so aesthetic quality is only moderate.\"\n    ],\n    \"comfort\": [\n      \"There is no visible sidewalk, seating, or pedestrian refuge, so physical comfort for anyone outside a vehicle is very poor.\",\n      \"The open paved ramp appears largely unshaded over the travel lane despite trees off to the side, suggesting weak thermal comfort for exposed users.\",\n      \"High-speed roadway geometry, guardrails, and the lack of human activity or buffering create a psychologically uncomfortable environment for non-motorized users.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk, footpath, or separated walking space is visible anywhere in the image, making walking accommodation essentially absent.\",\n      \"There are no crosswalks, curb ramps, pedestrian signals, or refuge islands on this elevated ramp, so route continuity and crossing opportunities for walkers are missing.\",\n      \"The curved highway-style roadway with narrow edge space and continuous guardrails would expose pedestrians to fast-moving traffic, making the environment highly unsuitable for walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 22.0,
+   "equity": 20.0,
+   "fairness": 22.0,
+   "accessibility": 24.0
+  },
+  "safety": 48.0,
+  "livability": 18.0,
+  "sustainability": 30.0,
+  "aesthetics": 46.0,
+  "comfort": 28.0,
+  "walkability": 8.0
+ },
+ "scores_flat": {
+  "justice": 22.0,
+  "justice_equity": 20.0,
+  "justice_fairness": 22.0,
+  "justice_accessibility": 24.0,
+  "safety": 48.0,
+  "livability": 18.0,
+  "sustainability": 30.0,
+  "aesthetics": 46.0,
+  "comfort": 28.0,
+  "walkability": 8.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:30:24+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The scene is a highway-style ramp with only motor-vehicle carriageway visible, while no sidewalk, shoulder path, or pedestrian space is provided, indicating very unequal allocation of street space across road users.",
+   "Continuous guardrails line both sides of the ramp and the center divider, but there are no visible curb ramps, crossings, or barrier-free pedestrian facilities, so accessibility for non-drivers is extremely limited.",
+   "Lane edge lines and the curved ramp geometry clearly organize movement for vehicles only; the absence of any marked walking zone or waiting area suggests rules and design do not fairly accommodate all road users."
+  ],
+  "safety": [
+   "Metal guardrails on the right edge and along the center divider provide crash protection for vehicles on this elevated curved ramp.",
+   "The roadway surface appears smooth and lane edge markings are clearly visible, which supports driver guidance and reduces some operational risk.",
+   "However, the long sweeping curve and highway-ramp design imply relatively high vehicle speeds, and there are no visible traffic-calming features, crossings, or refuge areas for anyone outside a car."
+  ],
+  "livability": [
+   "The image shows an isolated elevated roadway bordered by guardrails and trees, with no shops, homes, benches, bus stops, or social destinations that would support everyday street life.",
+   "There are no visible pedestrians, cyclists, or public gathering features, so the space functions as a transport corridor rather than a livable public street.",
+   "The absence of active frontages, amenities, and resting places means the environment offers little support for daily non-driving activities."
+  ],
+  "sustainability": [
+   "Dense tree cover beside the ramp contributes some ecological value and visual greenery.",
+   "At the same time, the visible infrastructure is entirely oriented to private motor traffic, with no bus stop, bike lane, or pedestrian route shown to support lower-carbon travel choices.",
+   "The broad paved ramp, guardrails, and vehicle-only geometry indicate a car-dependent facility, limiting sustainability despite the adjacent vegetation."
+  ],
+  "aesthetics": [
+   "The curving roadway and continuous tree canopy on the right create a relatively clean and orderly visual composition.",
+   "Road markings, guardrails, and pavement appear maintained, which improves visual neatness.",
+   "However, the scene is dominated by gray asphalt, metal barriers, and utility poles, with little human-scale detail or design richness, so aesthetic quality is only moderate."
+  ],
+  "comfort": [
+   "There is no visible sidewalk, seating, or pedestrian refuge, so physical comfort for anyone outside a vehicle is very poor.",
+   "The open paved ramp appears largely unshaded over the travel lane despite trees off to the side, suggesting weak thermal comfort for exposed users.",
+   "High-speed roadway geometry, guardrails, and the lack of human activity or buffering create a psychologically uncomfortable environment for non-motorized users."
+  ],
+  "walkability": [
+   "No sidewalk, footpath, or separated walking space is visible anywhere in the image, making walking accommodation essentially absent.",
+   "There are no crosswalks, curb ramps, pedestrian signals, or refuge islands on this elevated ramp, so route continuity and crossing opportunities for walkers are missing.",
+   "The curved highway-style roadway with narrow edge space and continuous guardrails would expose pedestrians to fast-moving traffic, making the environment highly unsuitable for walking."
+  ]
+ }
+}

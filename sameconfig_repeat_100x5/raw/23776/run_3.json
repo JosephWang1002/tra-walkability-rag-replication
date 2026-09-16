@@ -1,0 +1,122 @@
+{
+ "oid": "23776",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23776.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23776_120.659091_31.398506_0900290012220908162106299GF_6.64_2022_9_相城区澄阳街道G524_苏州北站高架路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 22.0,
+ "usage": {
+  "completion_tokens": 888,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 3022,
+   "engine_ttlt_ms": 17452,
+   "pre_inference_ms": 652,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 3990,
+   "service_ttlt_ms": 18407,
+   "user_visible_ttft_ms": 3337
+  },
+  "prompt_tokens": 5211,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6099
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 60.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 61.0,\n    \"sustainability\": 74.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 76.0,\n    \"walkability\": 48.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street space is dominated by wide motor-vehicle carriageways, while no clearly visible sidewalk, crossing, or pedestrian zone appears in the photo, suggesting spatial resources are allocated more strongly to drivers than to other road users.\",\n      \"Large continuous tree belts on both sides provide environmental benefits for everyone, but the lack of visible dedicated facilities for pedestrians or cyclists limits equitable support across travel modes.\",\n      \"No curb ramps, tactile paving, marked crossings, or bus stop access features are visible in the image, so barrier-free accessibility cannot be confirmed and appears incomplete from the available evidence.\"\n    ],\n    \"safety\": [\n      \"The roadway is straight with long forward visibility, and lane markings are clear, which helps drivers anticipate traffic conditions and reduces immediate conflict risk.\",\n      \"Mature trees are set behind curbs and planting strips rather than directly in the travel lane, creating a buffered edge that can improve roadside order, though fixed objects remain present near the carriageway.\",\n      \"The pavement appears wet, which can reduce tire grip and braking performance for all road users, and there are no visible pedestrian crossings, refuge islands, or protected cycling facilities to manage multimodal conflicts.\"\n    ],\n    \"livability\": [\n      \"Dense rows of mature trees and landscaped edges create a calm, green corridor that improves the everyday environmental quality of the street.\",\n      \"Traffic volume appears relatively light, with only a few visible vehicles, which supports a quieter and less stressful street atmosphere than a heavily congested road.\",\n      \"However, the image shows little visible street life infrastructure such as benches, storefronts, plazas, or active frontages, so the corridor seems more like a movement space than a socially vibrant public place.\"\n    ],\n    \"sustainability\": [\n      \"The continuous canopy of large street trees on both sides is a strong visible form of green infrastructure that supports shade, cooling, and ecological value.\",\n      \"The landscaped verge and planted edges indicate that the corridor includes substantial non-paved surface area compared with a fully hardened street section.\",\n      \"At the same time, no visible bike lane, bus stop, or other clearly marked low-carbon transport facility can be confirmed in the image, so sustainability is supported mainly by greenery rather than multimodal infrastructure.\"\n    ],\n    \"aesthetics\": [\n      \"The symmetrical rows of mature trees create a strong visual rhythm and enclosure, giving the street a coherent and attractive boulevard character.\",\n      \"The lush green canopy and trimmed planting edges produce a clean, well-maintained appearance with high scenic quality.\",\n      \"The broad, uncluttered roadway and limited roadside signage reduce visual chaos, allowing the greenery and long perspective view to dominate the scene positively.\"\n    ],\n    \"comfort\": [\n      \"Extensive tree canopy on both sides likely improves thermal comfort by shading the road edge and reducing heat exposure compared with an unshaded street.\",\n      \"The road surface appears smooth and well maintained, which supports physical comfort for vehicle travel and would also benefit walking if accessible sidewalks are present beyond the visible frame.\",\n      \"Low visible traffic levels and the green buffer created by trees and planting strips likely improve psychological comfort by making the corridor feel calmer and less harsh than a dense urban arterial.\"\n    ],\n    \"walkability\": [\n      \"No clearly visible sidewalk is identifiable in the photo, and the scene is visually dominated by vehicle lanes, which weakens walkability for all road users.\",\n      \"There are no visible marked crosswalks, pedestrian refuge islands, curb ramps, or signalized pedestrian facilities, so safe route continuity for walking cannot be verified.\",\n      \"Although the tree canopy would improve shade and walking comfort if pedestrian paths exist along the edges, the absence of clearly visible pedestrian infrastructure keeps overall walkability limited.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 58.0,
+   "equity": 60.0,
+   "fairness": 55.0,
+   "accessibility": 59.0
+  },
+  "safety": 66.0,
+  "livability": 61.0,
+  "sustainability": 74.0,
+  "aesthetics": 84.0,
+  "comfort": 76.0,
+  "walkability": 48.0
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 60.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 59.0,
+  "safety": 66.0,
+  "livability": 61.0,
+  "sustainability": 74.0,
+  "aesthetics": 84.0,
+  "comfort": 76.0,
+  "walkability": 48.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:58:53+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street space is dominated by wide motor-vehicle carriageways, while no clearly visible sidewalk, crossing, or pedestrian zone appears in the photo, suggesting spatial resources are allocated more strongly to drivers than to other road users.",
+   "Large continuous tree belts on both sides provide environmental benefits for everyone, but the lack of visible dedicated facilities for pedestrians or cyclists limits equitable support across travel modes.",
+   "No curb ramps, tactile paving, marked crossings, or bus stop access features are visible in the image, so barrier-free accessibility cannot be confirmed and appears incomplete from the available evidence."
+  ],
+  "safety": [
+   "The roadway is straight with long forward visibility, and lane markings are clear, which helps drivers anticipate traffic conditions and reduces immediate conflict risk.",
+   "Mature trees are set behind curbs and planting strips rather than directly in the travel lane, creating a buffered edge that can improve roadside order, though fixed objects remain present near the carriageway.",
+   "The pavement appears wet, which can reduce tire grip and braking performance for all road users, and there are no visible pedestrian crossings, refuge islands, or protected cycling facilities to manage multimodal conflicts."
+  ],
+  "livability": [
+   "Dense rows of mature trees and landscaped edges create a calm, green corridor that improves the everyday environmental quality of the street.",
+   "Traffic volume appears relatively light, with only a few visible vehicles, which supports a quieter and less stressful street atmosphere than a heavily congested road.",
+   "However, the image shows little visible street life infrastructure such as benches, storefronts, plazas, or active frontages, so the corridor seems more like a movement space than a socially vibrant public place."
+  ],
+  "sustainability": [
+   "The continuous canopy of large street trees on both sides is a strong visible form of green infrastructure that supports shade, cooling, and ecological value.",
+   "The landscaped verge and planted edges indicate that the corridor includes substantial non-paved surface area compared with a fully hardened street section.",
+   "At the same time, no visible bike lane, bus stop, or other clearly marked low-carbon transport facility can be confirmed in the image, so sustainability is supported mainly by greenery rather than multimodal infrastructure."
+  ],
+  "aesthetics": [
+   "The symmetrical rows of mature trees create a strong visual rhythm and enclosure, giving the street a coherent and attractive boulevard character.",
+   "The lush green canopy and trimmed planting edges produce a clean, well-maintained appearance with high scenic quality.",
+   "The broad, uncluttered roadway and limited roadside signage reduce visual chaos, allowing the greenery and long perspective view to dominate the scene positively."
+  ],
+  "comfort": [
+   "Extensive tree canopy on both sides likely improves thermal comfort by shading the road edge and reducing heat exposure compared with an unshaded street.",
+   "The road surface appears smooth and well maintained, which supports physical comfort for vehicle travel and would also benefit walking if accessible sidewalks are present beyond the visible frame.",
+   "Low visible traffic levels and the green buffer created by trees and planting strips likely improve psychological comfort by making the corridor feel calmer and less harsh than a dense urban arterial."
+  ],
+  "walkability": [
+   "No clearly visible sidewalk is identifiable in the photo, and the scene is visually dominated by vehicle lanes, which weakens walkability for all road users.",
+   "There are no visible marked crosswalks, pedestrian refuge islands, curb ramps, or signalized pedestrian facilities, so safe route continuity for walking cannot be verified.",
+   "Although the tree canopy would improve shade and walking comfort if pedestrian paths exist along the edges, the absence of clearly visible pedestrian infrastructure keeps overall walkability limited."
+  ]
+ }
+}

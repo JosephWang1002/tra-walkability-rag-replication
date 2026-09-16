@@ -1,0 +1,33 @@
+{
+ "oid": "23798",
+ "description": "The street appears to have narrow, continuous sidewalks on both sides with a mostly smooth surface, set back from the roadway by a curb and a strip of grass/trees. There is no visible physical barrier separating pedestrians from traffic beyond the curb, but the road is wide with low apparent traffic and a centerline, while mature trees provide substantial shade and some comfort; streetlights are present along the corridor. No obvious curb ramps, crosswalks, or sidewalk obstructions are visible in this view.",
+ "model": "gpt-5.4-mini",
+ "usage": {
+  "completion_tokens": 103,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 11,
+   "engine_ttft_ms": 435,
+   "engine_ttlt_ms": 1550,
+   "pre_inference_ms": 538,
+   "service_tbt_ms": 11,
+   "service_ttft_ms": 1187,
+   "service_ttlt_ms": 2283,
+   "total_duration_ms": 1752,
+   "user_visible_ttft_ms": 649
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1087
+ },
+ "latency_s": 5.8,
+ "timestamp": "2026-08-31T21:46:02"
+}

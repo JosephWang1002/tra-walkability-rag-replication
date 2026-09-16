@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 50,
+      "equity": 52,
+      "fairness": 51,
+      "accessibility": 46
+    },
+    "safety": 78,
+    "livability": 42,
+    "sustainability": 60,
+    "aesthetics": 64,
+    "comfort": 73,
+    "walkability": 30,
+    "bikeability": 28
+  },
+  "explanations": {
+    "justice": [
+      "Multi-lane urban outer ring high-speed trunk road.",
+      "Right-of-way completely prioritizes long-distance motor vehicle traffic.",
+      "Almost no reserved slow-traffic facilities, low travel equity."
+    ],
+    "safety": [
+      "Full median isolation guardrail and wide divided lanes.",
+      "Excellent long straight sight distance.",
+      "High driving speed increases accident severity risk."
+    ],
+    "livability": [
+      "Surrounded by large green buffer belts and distant urban buildings.",
+      "Far from residential areas, high traffic noise and exhaust pollution.",
+      "Extremely low permanent residence suitability."
+    ],
+    "sustainability": [
+      "Roadside green belts provide noise reduction and air purification.",
+      "Large hardened pavement reduces ecological permeability.",
+      "Medium overall sustainability level."
+    ],
+    "aesthetics": [
+      "Grand straight linear layout and neat street lamp arrangement.",
+      "Open wide field of view.",
+      "Simple atmospheric modern expressway aesthetic."
+    ],
+    "comfort": [
+      "Flat new pavement ensures excellent high-speed driving comfort.",
+      "Green belts effectively absorb traffic noise.",
+      "Good driving experience, poor pedestrian comfort."
+    ],
+    "walkability": [
+      "Pedestrian access is prohibited.",
+      "Extreme safety hazard from high-speed vehicles.",
+      "Completely unsuitable for walking."
+    ],
+    "bikeability": [
+      "No cycling access allowed.",
+      "Extremely high riding risk.",
+      "Cycling activities are strictly forbidden."
+    ]
+  },
+  "image_id": "urban-outer-ring-express-arterial-road",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-05-15T10:02:00.000Z",
+  "record_id": "rec-urban-outer-ring-express-arterial-road",
+  "export_timestamp": "2026-05-15T10:02:50.000Z"
+}

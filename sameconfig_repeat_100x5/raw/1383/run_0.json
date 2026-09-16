@@ -1,0 +1,129 @@
+{
+ "oid": "1383",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\1383.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\1383_120.613988_31.206429_09002900011701090912123671E_303.71_2017_1_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 22.1,
+ "usage": {
+  "completion_tokens": 1007,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 508,
+   "engine_ttlt_ms": 17508,
+   "pre_inference_ms": 431,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1212,
+   "service_ttlt_ms": 18207,
+   "user_visible_ttft_ms": 780
+  },
+  "prompt_tokens": 5653,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6660
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 24.0,\n      \"equity\": 20.0,\n      \"fairness\": 28.0,\n      \"accessibility\": 24.0\n    },\n    \"safety\": 38.0,\n    \"livability\": 12.0,\n    \"sustainability\": 18.0,\n    \"aesthetics\": 34.0,\n    \"comfort\": 26.0,\n    \"walkability\": 8.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible space is overwhelmingly allocated to multiple toll vehicle lanes, concrete channelizers, and toll booths, while no sidewalk or pedestrian zone is visible, indicating very unequal distribution of street space for all road users.\",\n      \"Lane control signals, ETC signs, and toll equipment clearly serve motor vehicles, but there are no visible facilities for pedestrians, cyclists, or transit users, which weakens fairness across user groups.\",\n      \"Accessibility is poor because no curb ramps, tactile paving, marked pedestrian crossings, or barrier-free walking paths can be seen around the toll plaza area.\",\n      \"The narrow islands and striped barriers separate traffic efficiently for cars and trucks, but they do not provide inclusive access for non-driving users.\"\n    ],\n    \"safety\": [\n      \"For drivers, the toll plaza has clear lane arrows, overhead green signals, and channelized concrete islands, which help organize vehicle movement and reduce some conflict.\",\n      \"Safety is limited by the presence of many hard objects close to travel lanes, including bollards, concrete barriers, toll equipment, and booth islands, leaving little recovery space if a vehicle deviates.\",\n      \"A truck is passing through a narrow toll lane, and the constrained geometry around the booths may increase collision risk during merging or lane selection.\",\n      \"No visible pedestrian crossing, refuge area, or protected non-motorized route is provided, making the environment unsafe for anyone outside a vehicle.\"\n    ],\n    \"livability\": [\n      \"This is a highway toll plaza dominated by traffic operations, with no visible shops, seating, social space, or active frontage that would support everyday street life.\",\n      \"The scene lacks human-scale amenities such as benches, lighting for public space, or gathering areas; the visible infrastructure is almost entirely functional for vehicle processing.\",\n      \"There is very limited greenery, only distant roadside vegetation beyond the toll area, which does little to improve the immediate lived experience.\",\n      \"The large roof structure provides operational cover for toll lanes, but the overall setting remains inhospitable for lingering, social interaction, or neighborhood use.\"\n    ],\n    \"sustainability\": [\n      \"The image shows infrastructure dedicated to private motor vehicles and freight movement, with multiple toll lanes and no visible support for walking, cycling, or public transport.\",\n      \"There are no visible bike lanes, bus stops, or multimodal transfer facilities, so the scene does not appear to encourage lower-carbon travel choices.\",\n      \"The toll plaza consists mainly of concrete pavement, barriers, and metal canopy structures, with little visible green infrastructure or permeable landscape treatment.\",\n      \"Some roadside trees and planting appear in the distance, but they are peripheral and do not meaningfully green the paved toll environment.\"\n    ],\n    \"aesthetics\": [\n      \"The large canopy structure and orderly lane arrangement create some visual coherence and legibility.\",\n      \"However, the scene is dominated by concrete pavement, striped crash barriers, toll machinery, and overhead gantries, producing a highly utilitarian appearance.\",\n      \"The oversized billboard above the toll plaza adds visual clutter and further emphasizes infrastructure rather than place quality.\",\n      \"Limited visible planting and the gray paved foreground reduce softness, variety, and scenic appeal at eye level.\"\n    ],\n    \"comfort\": [\n      \"The canopy provides shade over the toll lanes, which offers some thermal relief for drivers inside vehicles and workers in the toll area.\",\n      \"Physical comfort is reduced by the harsh paved environment, narrow channelized lanes, and close proximity of barriers, bollards, and toll islands.\",\n      \"Psychological comfort is limited because the setting feels highly controlled and traffic-dominated, with trucks, booths, and rigid separators creating a stressful atmosphere.\",\n      \"No visible seating, pedestrian refuge, or buffered waiting area is present, so the environment would be uncomfortable for anyone not traveling by car.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk is visible anywhere in the toll plaza foreground or between the toll lanes, so basic walking infrastructure is absent.\",\n      \"There are no marked crosswalks, pedestrian signals, or refuge islands designed for walking across the toll area.\",\n      \"Concrete barriers, toll booths, and narrow vehicle channels create strong physical obstacles and discontinuity for pedestrians.\",\n      \"The environment is clearly designed for motor vehicle throughput rather than walking, making walkability extremely poor for all road users.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 24.0,
+   "equity": 20.0,
+   "fairness": 28.0,
+   "accessibility": 24.0
+  },
+  "safety": 38.0,
+  "livability": 12.0,
+  "sustainability": 18.0,
+  "aesthetics": 34.0,
+  "comfort": 26.0,
+  "walkability": 8.0
+ },
+ "scores_flat": {
+  "justice": 24.0,
+  "justice_equity": 20.0,
+  "justice_fairness": 28.0,
+  "justice_accessibility": 24.0,
+  "safety": 38.0,
+  "livability": 12.0,
+  "sustainability": 18.0,
+  "aesthetics": 34.0,
+  "comfort": 26.0,
+  "walkability": 8.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:21:28+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible space is overwhelmingly allocated to multiple toll vehicle lanes, concrete channelizers, and toll booths, while no sidewalk or pedestrian zone is visible, indicating very unequal distribution of street space for all road users.",
+   "Lane control signals, ETC signs, and toll equipment clearly serve motor vehicles, but there are no visible facilities for pedestrians, cyclists, or transit users, which weakens fairness across user groups.",
+   "Accessibility is poor because no curb ramps, tactile paving, marked pedestrian crossings, or barrier-free walking paths can be seen around the toll plaza area.",
+   "The narrow islands and striped barriers separate traffic efficiently for cars and trucks, but they do not provide inclusive access for non-driving users."
+  ],
+  "safety": [
+   "For drivers, the toll plaza has clear lane arrows, overhead green signals, and channelized concrete islands, which help organize vehicle movement and reduce some conflict.",
+   "Safety is limited by the presence of many hard objects close to travel lanes, including bollards, concrete barriers, toll equipment, and booth islands, leaving little recovery space if a vehicle deviates.",
+   "A truck is passing through a narrow toll lane, and the constrained geometry around the booths may increase collision risk during merging or lane selection.",
+   "No visible pedestrian crossing, refuge area, or protected non-motorized route is provided, making the environment unsafe for anyone outside a vehicle."
+  ],
+  "livability": [
+   "This is a highway toll plaza dominated by traffic operations, with no visible shops, seating, social space, or active frontage that would support everyday street life.",
+   "The scene lacks human-scale amenities such as benches, lighting for public space, or gathering areas; the visible infrastructure is almost entirely functional for vehicle processing.",
+   "There is very limited greenery, only distant roadside vegetation beyond the toll area, which does little to improve the immediate lived experience.",
+   "The large roof structure provides operational cover for toll lanes, but the overall setting remains inhospitable for lingering, social interaction, or neighborhood use."
+  ],
+  "sustainability": [
+   "The image shows infrastructure dedicated to private motor vehicles and freight movement, with multiple toll lanes and no visible support for walking, cycling, or public transport.",
+   "There are no visible bike lanes, bus stops, or multimodal transfer facilities, so the scene does not appear to encourage lower-carbon travel choices.",
+   "The toll plaza consists mainly of concrete pavement, barriers, and metal canopy structures, with little visible green infrastructure or permeable landscape treatment.",
+   "Some roadside trees and planting appear in the distance, but they are peripheral and do not meaningfully green the paved toll environment."
+  ],
+  "aesthetics": [
+   "The large canopy structure and orderly lane arrangement create some visual coherence and legibility.",
+   "However, the scene is dominated by concrete pavement, striped crash barriers, toll machinery, and overhead gantries, producing a highly utilitarian appearance.",
+   "The oversized billboard above the toll plaza adds visual clutter and further emphasizes infrastructure rather than place quality.",
+   "Limited visible planting and the gray paved foreground reduce softness, variety, and scenic appeal at eye level."
+  ],
+  "comfort": [
+   "The canopy provides shade over the toll lanes, which offers some thermal relief for drivers inside vehicles and workers in the toll area.",
+   "Physical comfort is reduced by the harsh paved environment, narrow channelized lanes, and close proximity of barriers, bollards, and toll islands.",
+   "Psychological comfort is limited because the setting feels highly controlled and traffic-dominated, with trucks, booths, and rigid separators creating a stressful atmosphere.",
+   "No visible seating, pedestrian refuge, or buffered waiting area is present, so the environment would be uncomfortable for anyone not traveling by car."
+  ],
+  "walkability": [
+   "No sidewalk is visible anywhere in the toll plaza foreground or between the toll lanes, so basic walking infrastructure is absent.",
+   "There are no marked crosswalks, pedestrian signals, or refuge islands designed for walking across the toll area.",
+   "Concrete barriers, toll booths, and narrow vehicle channels create strong physical obstacles and discontinuity for pedestrians.",
+   "The environment is clearly designed for motor vehicle throughput rather than walking, making walkability extremely poor for all road users."
+  ]
+ }
+}

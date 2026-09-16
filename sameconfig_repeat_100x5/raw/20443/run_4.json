@@ -1,0 +1,122 @@
+{
+ "oid": "20443",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\20443.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\20443_120.668871_31.094951_0900290012200304082956133GF_186.83_2020_3_吴江区江陵街道G524_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.3,
+ "usage": {
+  "completion_tokens": 853,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 464,
+   "engine_ttlt_ms": 13263,
+   "pre_inference_ms": 339,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1096,
+   "service_ttlt_ms": 13890,
+   "user_visible_ttft_ms": 758
+  },
+  "prompt_tokens": 5542,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5248
+  },
+  "total_tokens": 6395
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 52.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 55.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 50.0,\n    \"sustainability\": 61.0,\n    \"aesthetics\": 69.0,\n    \"comfort\": 56.0,\n    \"walkability\": 42.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible right-of-way is allocated to a two-way carriageway, while no clearly marked sidewalk is visible on either side, suggesting limited spatial equity for people outside cars.\",\n      \"Raised curbs line both edges of the road, but there are no visible curb ramps, tactile paving, or marked crossings, so accessibility appears only partial for the full range of road users.\",\n      \"Street lighting, drainage inlets, and landscaped verges are provided along both sides, indicating some balanced public investment, but the absence of visible pedestrian facilities weakens overall fairness.\"\n    ],\n    \"safety\": [\n      \"The road is relatively narrow with a single centerline and no visible high-speed multi-lane layout, which can help moderate vehicle speeds compared with wider arterials.\",\n      \"Clear lane markings, smooth asphalt, and unobstructed sightlines down the corridor support predictable vehicle movement and reduce immediate crash risk.\",\n      \"Safety for non-motorized users is weaker because no dedicated sidewalk, crosswalk, or bicycle lane is visible, so pedestrians and cyclists would have limited protected space.\"\n    ],\n    \"livability\": [\n      \"Continuous planting strips with shrubs and trees on both sides improve the environmental quality of the street and make it feel less harsh than a fully paved corridor.\",\n      \"The street appears quiet with low visible traffic volume, which can support a calmer everyday environment for nearby users.\",\n      \"Livability is limited by the lack of visible benches, storefront activity, bus stops, or social spaces; the corridor reads more as an access road than a place for daily public life.\"\n    ],\n    \"sustainability\": [\n      \"Rows of trees, shrubs, and planted verges provide green infrastructure that can support shade, air-quality benefits, and some stormwater absorption.\",\n      \"Drainage grates are visible along the curb edge, indicating basic water-management infrastructure, though no clear permeable paving or bioswale features are evident.\",\n      \"Sustainability is constrained by the car-oriented layout: there is no visible bus stop, bike lane, or clearly usable pedestrian path to strongly support low-carbon travel.\"\n    ],\n    \"aesthetics\": [\n      \"The corridor has a neat and orderly appearance, with smooth fresh-looking asphalt, trimmed shrubs, and regularly spaced streetlights.\",\n      \"Tree rows and landscaped edges create a coherent linear streetscape and soften the visual impact of the roadway.\",\n      \"Aesthetic quality is reduced somewhat by leafless trees, overhead utility wires, and industrial-looking buildings on the right, which make the scene less inviting and distinctive.\"\n    ],\n    \"comfort\": [\n      \"The asphalt surface appears smooth and even, which supports physical comfort for drivers and potentially cyclists, but there is no visible dedicated walking surface for pedestrian comfort.\",\n      \"Vegetation is present along both sides, yet many trees are leafless and provide little effective shade at the moment, limiting thermal comfort.\",\n      \"The street looks uncrowded and relatively quiet, which likely improves psychological comfort, but the lack of seating, shelter, and buffered pedestrian space reduces overall comfort for all users.\"\n    ],\n    \"walkability\": [\n      \"No clearly defined sidewalk is visible beside the carriageway; instead, the road edge transitions to planted verges and curbs, which weakens continuous pedestrian movement.\",\n      \"There are no visible marked crosswalks, pedestrian signals, or curb ramps, so crossing opportunities and route connectivity appear poor.\",\n      \"Although the corridor is visually open and landscaped, walkability remains low because basic pedestrian infrastructure is not clearly provided in the image.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 52.0,
+   "fairness": 55.0,
+   "accessibility": 55.0
+  },
+  "safety": 66.0,
+  "livability": 50.0,
+  "sustainability": 61.0,
+  "aesthetics": 69.0,
+  "comfort": 56.0,
+  "walkability": 42.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 52.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 55.0,
+  "safety": 66.0,
+  "livability": 50.0,
+  "sustainability": 61.0,
+  "aesthetics": 69.0,
+  "comfort": 56.0,
+  "walkability": 42.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:45:55+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible right-of-way is allocated to a two-way carriageway, while no clearly marked sidewalk is visible on either side, suggesting limited spatial equity for people outside cars.",
+   "Raised curbs line both edges of the road, but there are no visible curb ramps, tactile paving, or marked crossings, so accessibility appears only partial for the full range of road users.",
+   "Street lighting, drainage inlets, and landscaped verges are provided along both sides, indicating some balanced public investment, but the absence of visible pedestrian facilities weakens overall fairness."
+  ],
+  "safety": [
+   "The road is relatively narrow with a single centerline and no visible high-speed multi-lane layout, which can help moderate vehicle speeds compared with wider arterials.",
+   "Clear lane markings, smooth asphalt, and unobstructed sightlines down the corridor support predictable vehicle movement and reduce immediate crash risk.",
+   "Safety for non-motorized users is weaker because no dedicated sidewalk, crosswalk, or bicycle lane is visible, so pedestrians and cyclists would have limited protected space."
+  ],
+  "livability": [
+   "Continuous planting strips with shrubs and trees on both sides improve the environmental quality of the street and make it feel less harsh than a fully paved corridor.",
+   "The street appears quiet with low visible traffic volume, which can support a calmer everyday environment for nearby users.",
+   "Livability is limited by the lack of visible benches, storefront activity, bus stops, or social spaces; the corridor reads more as an access road than a place for daily public life."
+  ],
+  "sustainability": [
+   "Rows of trees, shrubs, and planted verges provide green infrastructure that can support shade, air-quality benefits, and some stormwater absorption.",
+   "Drainage grates are visible along the curb edge, indicating basic water-management infrastructure, though no clear permeable paving or bioswale features are evident.",
+   "Sustainability is constrained by the car-oriented layout: there is no visible bus stop, bike lane, or clearly usable pedestrian path to strongly support low-carbon travel."
+  ],
+  "aesthetics": [
+   "The corridor has a neat and orderly appearance, with smooth fresh-looking asphalt, trimmed shrubs, and regularly spaced streetlights.",
+   "Tree rows and landscaped edges create a coherent linear streetscape and soften the visual impact of the roadway.",
+   "Aesthetic quality is reduced somewhat by leafless trees, overhead utility wires, and industrial-looking buildings on the right, which make the scene less inviting and distinctive."
+  ],
+  "comfort": [
+   "The asphalt surface appears smooth and even, which supports physical comfort for drivers and potentially cyclists, but there is no visible dedicated walking surface for pedestrian comfort.",
+   "Vegetation is present along both sides, yet many trees are leafless and provide little effective shade at the moment, limiting thermal comfort.",
+   "The street looks uncrowded and relatively quiet, which likely improves psychological comfort, but the lack of seating, shelter, and buffered pedestrian space reduces overall comfort for all users."
+  ],
+  "walkability": [
+   "No clearly defined sidewalk is visible beside the carriageway; instead, the road edge transitions to planted verges and curbs, which weakens continuous pedestrian movement.",
+   "There are no visible marked crosswalks, pedestrian signals, or curb ramps, so crossing opportunities and route connectivity appear poor.",
+   "Although the corridor is visually open and landscaped, walkability remains low because basic pedestrian infrastructure is not clearly provided in the image."
+  ]
+ }
+}

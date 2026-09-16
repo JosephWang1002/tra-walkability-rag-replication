@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 28,
+      "equity": 29,
+      "fairness": 27,
+      "accessibility": 20
+    },
+    "safety": 74,
+    "livability": 18,
+    "sustainability": 42,
+    "aesthetics": 46,
+    "comfort": 30,
+    "walkability": 3,
+    "bikeability": 2
+  },
+  "explanations": {
+    "justice": [
+      "Exclusive high-speed motor vehicle dedicated underpass facility.",
+      "Pedestrians, non-motor vehicles and vulnerable groups are completely prohibited from entering.",
+      "Extreme vehicle-oriented design, almost zero travel equity for non-driving users."
+    ],
+    "safety": [
+      "Enclosed wall structure, full guardrails and clear lane markings effectively isolate cross interference.",
+      "Controlled access eliminates intersection conflict points.",
+      "High design speed leads to extremely severe consequences in case of collision."
+    ],
+    "livability": [
+      "Pure regional rapid transit function, no surrounding residential or public service facilities.",
+      "Long-term traffic noise and exhaust emissions degrade adjacent block livability.",
+      "No rest, leisure and activity space reserved."
+    ],
+    "sustainability": [
+      "Simple roadside greening provides limited ecological benefits.",
+      "Large-area hard impervious pavement severely weakens stormwater infiltration.",
+      "Single car-centric layout suppresses low-carbon active travel modes."
+    ],
+    "aesthetics": [
+      "Neat linear lane layout with orderly traffic marking rhythm.",
+      "Functional enclosure structure creates monotonous visual experience.",
+      "Lacks human-scale landscaping and place-making design."
+    ],
+    "comfort": [
+      "High-quality smooth pavement delivers superior driving comfort for motorists.",
+      "Enclosed space easily accumulates noise and heat, poor environmental comfort.",
+      "Zero human-oriented buffer and rest design."
+    ],
+    "walkability": [
+      "Strict pedestrian prohibition zone.",
+      "Extreme fatal safety risk for walking behavior.",
+      "No pedestrian supporting facilities at all."
+    ],
+    "bikeability": [
+      "Cycling is explicitly forbidden.",
+      "No bicycle infrastructure reserved.",
+      "Absolutely unsuitable for any cycling activity."
+    ]
+  },
+  "image_id": "urban-underpass-expressway",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-29T10:00:00.000Z",
+  "record_id": "rec-urban-underpass-expressway",
+  "export_timestamp": "2026-04-29T10:00:50.000Z"
+}

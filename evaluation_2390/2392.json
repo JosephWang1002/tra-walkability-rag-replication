@@ -1,0 +1,73 @@
+  {
+    "image_id": "img-parked-residential-lane-03",
+    "persona": "all_all",
+    "model_info": {
+      "llmVersion": "gpt-5.4",
+      "ragIndexVersion": "v1.0.0"
+    },
+    "generated_at": "2026-04-21T15:12:00.000Z",
+    "record_id": "auto-batch-001-03",
+    "stored_image_url": "/storage/records/auto-batch-001-03/image.jpg",
+    "stored_thumb_url": "/storage/records/auto-batch-001-03/thumb.jpg",
+    "user_feedback": {
+      "by_indicator": {}
+    },
+    "export_timestamp": "2026-04-21T15:12:30.000Z",
+    "scores": {
+      "justice": {
+        "overall": 52,
+        "equity": 53,
+        "fairness": 50,
+        "accessibility": 48
+      },
+      "safety": 48,
+      "livability": 68,
+      "sustainability": 65,
+      "aesthetics": 65,
+      "comfort": 70,
+      "walkability": 42,
+      "bikeability": 40
+    },
+    "explanations": {
+      "justice": [
+        "Residential branch road space is heavily occupied by roadside parked vehicles, squeezing pedestrian right of way.",
+        "Lack of accessible facilities such as blind roads and ramps, insufficient consideration for vulnerable group travel.",
+        "Resource allocation favors motor vehicle parking, resulting in insufficient travel fairness for non-driving groups."
+      ],
+      "safety": [
+        "Parked vehicles block sight distance on curves, increasing collision risks of oncoming vehicles.",
+        "Complete mixing of people and vehicles on narrow roads raises daily travel safety hazards.",
+        "Low driving speed in residential area reduces high-risk accident probability to a certain extent."
+      ],
+      "livability": [
+        "Dense tall trees form a continuous shaded corridor, creating a quiet and comfortable living atmosphere.",
+        "Surrounding low-rise buildings and enclosed green space create a strong residential community atmosphere.",
+        "No outdoor rest seats and activity venues are arranged along the street."
+      ],
+      "sustainability": [
+        "High-density mature tree canopy provides excellent ecological cooling, carbon fixation and air purification effects.",
+        "Hard road surface lacks permeable design, with no obvious green infrastructure configuration.",
+        "The narrow road itself inherently supports low-speed and low-carbon travel patterns."
+      ],
+      "aesthetics": [
+        "Lush and neat street trees create a beautiful natural green landscape along the whole street.",
+        "Soft light and tree shadow bring a comfortable and pleasant visual experience.",
+        "Random roadside parking slightly damages the overall neat aesthetic feeling of the street."
+      ],
+      "comfort": [
+        "Large area of tree shade brings superior thermal comfort in sunny weather.",
+        "Quiet residential environment with little noise interference improves psychological comfort.",
+        "Pedestrians walking close to vehicles will produce obvious sense of unease."
+      ],
+      "walkability": [
+        "Parked cars severely compress available walking space, no dedicated independent sidewalk.",
+        "Barrier-free design defects greatly affect walking experience of elderly and disabled people.",
+        "Good green landscape improves walking willingness, but traffic environment restricts overall walkability."
+      ],
+      "bikeability": [
+        "No dedicated bicycle lanes, cyclists need to share narrow road with motor vehicles.",
+        "Parked vehicles and narrow road width create obstacles and safety threats for cycling.",
+        "No cycling service facilities such as parking points are provided in the area."
+      ]
+    }
+  }

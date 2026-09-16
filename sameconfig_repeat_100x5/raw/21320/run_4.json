@@ -1,0 +1,122 @@
+{
+ "oid": "21320",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21320.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21320_120.64215_31.232914_0900290012220825131422256HQ_270.09_2022_8_吴中区城南街道迎春南路68号_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.8,
+ "usage": {
+  "completion_tokens": 852,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 461,
+   "engine_ttlt_ms": 12014,
+   "pre_inference_ms": 379,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1108,
+   "service_ttlt_ms": 12658,
+   "user_visible_ttft_ms": 729
+  },
+  "prompt_tokens": 5261,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6113
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 63.0,\n      \"equity\": 66.0,\n      \"fairness\": 60.0,\n      \"accessibility\": 63.0\n    },\n    \"safety\": 71.0,\n    \"livability\": 69.0,\n    \"sustainability\": 74.0,\n    \"aesthetics\": 81.0,\n    \"comfort\": 73.0,\n    \"walkability\": 61.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates visible space to multiple users through a broad carriageway, sidewalks on both sides, and a marked zebra crossing, which suggests a relatively balanced distribution of movement space for all road users.\",\n      \"Accessibility is only moderate because no curb ramps, tactile paving, or other barrier-free details are clearly visible at the crossing edges, so inclusive access cannot be confirmed from the image.\",\n      \"Fairness is weakened by the apparent dominance of motor-vehicle space in the center of the corridor, while no dedicated cycling facility or clearly protected pedestrian zone is visible.\"\n    ],\n    \"safety\": [\n      \"The zebra crossing in the foreground provides a formal pedestrian crossing point, which improves crossing legibility and reduces ambiguity between walkers and drivers.\",\n      \"The road appears wide and relatively open with long sightlines, and there are very few visible vehicles, which lowers immediate conflict risk for all road users.\",\n      \"Safety is limited by the absence of visible traffic calming elements near the crossing, such as raised tables, refuge islands, signals, or curb extensions, so vehicle speeds may remain relatively high on this straight corridor.\"\n    ],\n    \"livability\": [\n      \"Continuous rows of mature street trees on both sides create a greener and more residential atmosphere, supporting everyday street quality beyond pure traffic movement.\",\n      \"The adjacent high-rise housing and neighborhood-scale buildings indicate that the street serves daily residential life, which supports basic urban livability.\",\n      \"Livability is reduced by the lack of visible benches, active storefront edges, or public gathering amenities, making the street feel more like a movement corridor than a social place.\"\n    ],\n    \"sustainability\": [\n      \"The dense tree canopy along both sides contributes visible green infrastructure, which supports shade, air-quality benefits, and a more ecologically supportive streetscape.\",\n      \"The street form appears suitable for walking because sidewalks and a marked crossing are present, which can support lower-carbon short trips within the residential area.\",\n      \"Sustainability is not stronger because no dedicated bike lane, bus stop, permeable paving, rain-garden feature, or other clearly visible low-carbon transport or stormwater facilities can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"The double rows of mature trees create a strong green frame and visual rhythm along the street, giving the corridor a pleasant and orderly appearance.\",\n      \"The residential towers on the right have a consistent height and facade pattern, which adds visual coherence to the streetscape.\",\n      \"The roadway appears clean and uncluttered, with limited visual chaos from signage or parked vehicles, which improves overall visual quality.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good because the large street trees provide substantial shade along both sidewalks and parts of the roadway.\",\n      \"Physical comfort is mixed: the road surface looks smooth and even, but no seating, resting points, or pedestrian-scale amenities are visible.\",\n      \"Psychological comfort benefits from the low visible traffic volume and orderly street layout, though the wide carriageway and long straight alignment may still feel somewhat vehicle-oriented for pedestrians.\"\n    ],\n    \"walkability\": [\n      \"Walkability gains from the presence of sidewalks on both sides and a clearly marked zebra crossing that helps connect the two sides of the street.\",\n      \"The tree-lined edges likely make walking more pleasant by adding shade and enclosure along the route.\",\n      \"Walkability is constrained because sidewalk details are hard to verify and no curb ramps, tactile paving, pedestrian refuge island, or other crossing-support features are visible at the marked crosswalk.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 63.0,
+   "equity": 66.0,
+   "fairness": 60.0,
+   "accessibility": 63.0
+  },
+  "safety": 71.0,
+  "livability": 69.0,
+  "sustainability": 74.0,
+  "aesthetics": 81.0,
+  "comfort": 73.0,
+  "walkability": 61.0
+ },
+ "scores_flat": {
+  "justice": 63.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 60.0,
+  "justice_accessibility": 63.0,
+  "safety": 71.0,
+  "livability": 69.0,
+  "sustainability": 74.0,
+  "aesthetics": 81.0,
+  "comfort": 73.0,
+  "walkability": 61.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:48:16+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates visible space to multiple users through a broad carriageway, sidewalks on both sides, and a marked zebra crossing, which suggests a relatively balanced distribution of movement space for all road users.",
+   "Accessibility is only moderate because no curb ramps, tactile paving, or other barrier-free details are clearly visible at the crossing edges, so inclusive access cannot be confirmed from the image.",
+   "Fairness is weakened by the apparent dominance of motor-vehicle space in the center of the corridor, while no dedicated cycling facility or clearly protected pedestrian zone is visible."
+  ],
+  "safety": [
+   "The zebra crossing in the foreground provides a formal pedestrian crossing point, which improves crossing legibility and reduces ambiguity between walkers and drivers.",
+   "The road appears wide and relatively open with long sightlines, and there are very few visible vehicles, which lowers immediate conflict risk for all road users.",
+   "Safety is limited by the absence of visible traffic calming elements near the crossing, such as raised tables, refuge islands, signals, or curb extensions, so vehicle speeds may remain relatively high on this straight corridor."
+  ],
+  "livability": [
+   "Continuous rows of mature street trees on both sides create a greener and more residential atmosphere, supporting everyday street quality beyond pure traffic movement.",
+   "The adjacent high-rise housing and neighborhood-scale buildings indicate that the street serves daily residential life, which supports basic urban livability.",
+   "Livability is reduced by the lack of visible benches, active storefront edges, or public gathering amenities, making the street feel more like a movement corridor than a social place."
+  ],
+  "sustainability": [
+   "The dense tree canopy along both sides contributes visible green infrastructure, which supports shade, air-quality benefits, and a more ecologically supportive streetscape.",
+   "The street form appears suitable for walking because sidewalks and a marked crossing are present, which can support lower-carbon short trips within the residential area.",
+   "Sustainability is not stronger because no dedicated bike lane, bus stop, permeable paving, rain-garden feature, or other clearly visible low-carbon transport or stormwater facilities can be identified."
+  ],
+  "aesthetics": [
+   "The double rows of mature trees create a strong green frame and visual rhythm along the street, giving the corridor a pleasant and orderly appearance.",
+   "The residential towers on the right have a consistent height and facade pattern, which adds visual coherence to the streetscape.",
+   "The roadway appears clean and uncluttered, with limited visual chaos from signage or parked vehicles, which improves overall visual quality."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively good because the large street trees provide substantial shade along both sidewalks and parts of the roadway.",
+   "Physical comfort is mixed: the road surface looks smooth and even, but no seating, resting points, or pedestrian-scale amenities are visible.",
+   "Psychological comfort benefits from the low visible traffic volume and orderly street layout, though the wide carriageway and long straight alignment may still feel somewhat vehicle-oriented for pedestrians."
+  ],
+  "walkability": [
+   "Walkability gains from the presence of sidewalks on both sides and a clearly marked zebra crossing that helps connect the two sides of the street.",
+   "The tree-lined edges likely make walking more pleasant by adding shade and enclosure along the route.",
+   "Walkability is constrained because sidewalk details are hard to verify and no curb ramps, tactile paving, pedestrian refuge island, or other crossing-support features are visible at the marked crosswalk."
+  ]
+ }
+}

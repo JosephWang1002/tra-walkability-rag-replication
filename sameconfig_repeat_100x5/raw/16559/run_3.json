@@ -1,0 +1,129 @@
+{
+ "oid": "16559",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16559.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16559_120.517697_31.206712_09002900011603011113243034C_179.77_2016_3_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.4,
+ "usage": {
+  "completion_tokens": 956,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 456,
+   "engine_ttlt_ms": 17184,
+   "pre_inference_ms": 415,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 1107,
+   "service_ttlt_ms": 17925,
+   "user_visible_ttft_ms": 692
+  },
+  "prompt_tokens": 5334,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6290
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 64.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 61.0\n    },\n    \"safety\": 57.0,\n    \"livability\": 54.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 71.0,\n    \"comfort\": 60.0,\n    \"walkability\": 58.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The paved path is continuous and relatively wide enough for multiple users to share, which suggests a basic equitable allocation of space for non-motorized movement.\",\n      \"Accessibility is limited because no curb ramps, tactile paving, handrails, or marked edge protection are visible along the path.\",\n      \"Fairness across user groups is weakened by the very minimal facility provision: there are no benches, signs, lane markings, or dedicated zones that would clarify use for different road users.\",\n      \"The path surface appears mostly smooth concrete, which supports general access, but the narrow corridor and unprotected edges beside vegetation and a drainage channel reduce inclusive usability.\"\n    ],\n    \"safety\": [\n      \"Motor-vehicle conflict appears low because the scene shows a narrow off-road or low-traffic paved lane without visible cars or intersections.\",\n      \"Safety is reduced by the lack of separation or guardrail along the left side, where a drainage ditch or water channel is visible close to the pavement edge.\",\n      \"There are no visible centerlines, warning signs, lighting poles, or traffic-calming markings to organize movement or improve safety in low-light conditions.\",\n      \"Tree shade on the right creates darker patches on the pavement, which may reduce forward visibility and make surface irregularities harder to detect.\"\n    ],\n    \"livability\": [\n      \"The corridor is quiet and green, with trees and planted edges on both sides, which supports a calm everyday environment.\",\n      \"Livability is limited because no active frontages, shops, homes, seating, play spaces, or social facilities are visible along the route.\",\n      \"The path functions mainly as a movement corridor through vegetation rather than a place for lingering, gathering, or daily street life.\",\n      \"The natural setting may be pleasant for passing through, but the absence of amenities such as benches, lighting, or rest areas reduces its usefulness for broader daily activities.\"\n    ],\n    \"sustainability\": [\n      \"The tree-lined setting and substantial vegetation on both sides contribute positively to ecological value and local cooling potential.\",\n      \"A paved route that appears suitable for walking and possibly cycling supports low-carbon travel compared with car-dependent access.\",\n      \"The adjacent drainage channel and unbuilt green edges suggest some landscape permeability and stormwater function, even though no formal green infrastructure details are visible.\",\n      \"Sustainability is moderated by the hard concrete surface and the lack of visible permeable paving, bioswales, or dedicated cycling facilities.\"\n    ],\n    \"aesthetics\": [\n      \"The long, straight perspective framed by trees creates a strong visual corridor and a calm scenic character.\",\n      \"Natural vegetation on both sides gives the route a green and relatively serene appearance.\",\n      \"Aesthetics are somewhat reduced by the plain concrete paving, overhead utility wires, and sparse understory maintenance in parts of the scene.\",\n      \"The contrast between sunlit pavement and shaded tree canopy adds visual interest, but the space feels more utilitarian than designed.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: the large trees on the right provide meaningful shade, but the left side and much of the pavement remain exposed to direct sun.\",\n      \"Physical comfort is supported by the generally even concrete surface and uninterrupted path alignment.\",\n      \"Physical comfort is reduced by the absence of benches, rest points, or widened areas for stopping.\",\n      \"Psychological comfort is moderate rather than high because the corridor is isolated, with dense vegetation and no visible nearby people, buildings, or surveillance.\"\n    ],\n    \"walkability\": [\n      \"The path is continuous, direct, and free of obvious obstructions, which supports basic walking movement.\",\n      \"Walkability is weakened by the lack of pedestrian-oriented features such as lighting, seating, signage, crossings, or destination cues.\",\n      \"The close drainage edge on the left and narrow shoulder conditions reduce the sense of security for walkers, especially when passing others.\",\n      \"Tree presence improves the walking experience visually and provides partial shade, but the route appears more like a simple access lane than a fully walkable public street environment.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 64.0,
+   "fairness": 58.0,
+   "accessibility": 61.0
+  },
+  "safety": 57.0,
+  "livability": 54.0,
+  "sustainability": 66.0,
+  "aesthetics": 71.0,
+  "comfort": 60.0,
+  "walkability": 58.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 64.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 61.0,
+  "safety": 57.0,
+  "livability": 54.0,
+  "sustainability": 66.0,
+  "aesthetics": 71.0,
+  "comfort": 60.0,
+  "walkability": 58.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:31:20+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The paved path is continuous and relatively wide enough for multiple users to share, which suggests a basic equitable allocation of space for non-motorized movement.",
+   "Accessibility is limited because no curb ramps, tactile paving, handrails, or marked edge protection are visible along the path.",
+   "Fairness across user groups is weakened by the very minimal facility provision: there are no benches, signs, lane markings, or dedicated zones that would clarify use for different road users.",
+   "The path surface appears mostly smooth concrete, which supports general access, but the narrow corridor and unprotected edges beside vegetation and a drainage channel reduce inclusive usability."
+  ],
+  "safety": [
+   "Motor-vehicle conflict appears low because the scene shows a narrow off-road or low-traffic paved lane without visible cars or intersections.",
+   "Safety is reduced by the lack of separation or guardrail along the left side, where a drainage ditch or water channel is visible close to the pavement edge.",
+   "There are no visible centerlines, warning signs, lighting poles, or traffic-calming markings to organize movement or improve safety in low-light conditions.",
+   "Tree shade on the right creates darker patches on the pavement, which may reduce forward visibility and make surface irregularities harder to detect."
+  ],
+  "livability": [
+   "The corridor is quiet and green, with trees and planted edges on both sides, which supports a calm everyday environment.",
+   "Livability is limited because no active frontages, shops, homes, seating, play spaces, or social facilities are visible along the route.",
+   "The path functions mainly as a movement corridor through vegetation rather than a place for lingering, gathering, or daily street life.",
+   "The natural setting may be pleasant for passing through, but the absence of amenities such as benches, lighting, or rest areas reduces its usefulness for broader daily activities."
+  ],
+  "sustainability": [
+   "The tree-lined setting and substantial vegetation on both sides contribute positively to ecological value and local cooling potential.",
+   "A paved route that appears suitable for walking and possibly cycling supports low-carbon travel compared with car-dependent access.",
+   "The adjacent drainage channel and unbuilt green edges suggest some landscape permeability and stormwater function, even though no formal green infrastructure details are visible.",
+   "Sustainability is moderated by the hard concrete surface and the lack of visible permeable paving, bioswales, or dedicated cycling facilities."
+  ],
+  "aesthetics": [
+   "The long, straight perspective framed by trees creates a strong visual corridor and a calm scenic character.",
+   "Natural vegetation on both sides gives the route a green and relatively serene appearance.",
+   "Aesthetics are somewhat reduced by the plain concrete paving, overhead utility wires, and sparse understory maintenance in parts of the scene.",
+   "The contrast between sunlit pavement and shaded tree canopy adds visual interest, but the space feels more utilitarian than designed."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: the large trees on the right provide meaningful shade, but the left side and much of the pavement remain exposed to direct sun.",
+   "Physical comfort is supported by the generally even concrete surface and uninterrupted path alignment.",
+   "Physical comfort is reduced by the absence of benches, rest points, or widened areas for stopping.",
+   "Psychological comfort is moderate rather than high because the corridor is isolated, with dense vegetation and no visible nearby people, buildings, or surveillance."
+  ],
+  "walkability": [
+   "The path is continuous, direct, and free of obvious obstructions, which supports basic walking movement.",
+   "Walkability is weakened by the lack of pedestrian-oriented features such as lighting, seating, signage, crossings, or destination cues.",
+   "The close drainage edge on the left and narrow shoulder conditions reduce the sense of security for walkers, especially when passing others.",
+   "Tree presence improves the walking experience visually and provides partial shade, but the route appears more like a simple access lane than a fully walkable public street environment."
+  ]
+ }
+}

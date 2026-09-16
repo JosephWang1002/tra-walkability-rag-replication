@@ -1,0 +1,122 @@
+{
+ "oid": "12087",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12087.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12087_120.45377_31.341197_09002900011602231221367174E_174.89_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.0,
+ "usage": {
+  "completion_tokens": 854,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 541,
+   "engine_ttlt_ms": 12861,
+   "pre_inference_ms": 508,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1348,
+   "service_ttlt_ms": 13665,
+   "user_visible_ttft_ms": 840
+  },
+  "prompt_tokens": 7767,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 7424
+  },
+  "total_tokens": 8621
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 62.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 57.0\n    },\n    \"safety\": 66.0,\n    \"livability\": 42.0,\n    \"sustainability\": 61.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 49.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Both sides of the road appear to have parallel side paths and planted verges, suggesting some spatial allocation beyond cars rather than giving all width to the carriageway.\",\n      \"Accessibility is limited because the visible side paths are separated from the roadway by continuous curbs, and no curb ramps, tactile paving, or marked crossings are visible in the scene.\",\n      \"Fairness for diverse users is weakened by the lack of visible dedicated facilities for slower or more vulnerable users, such as benches, crossing aids, or clearly designated pedestrian priority areas.\"\n    ],\n    \"safety\": [\n      \"The motor roadway is wide, smooth, and clearly marked with a center line, which supports predictable vehicle movement and reduces head-on conflict.\",\n      \"Streetlights are installed at regular intervals along the corridor, which likely improves visibility and perceived safety after dark.\",\n      \"Safety for non-motorized users is less certain because no marked crosswalks, speed-calming devices, bike lanes, or protective barriers between the road and side paths are visible.\"\n    ],\n    \"livability\": [\n      \"The street has very little visible active frontage: there are almost no shops, entrances, or public destinations facing the road, which limits everyday street life.\",\n      \"Large open plots and sparse development on both sides make the corridor feel more like an access road than a socially active neighborhood street.\",\n      \"No visible seating, bus stops, gathering spaces, or small public amenities are present, reducing its usefulness as a place to spend time rather than simply pass through.\"\n    ],\n    \"sustainability\": [\n      \"Continuous rows of street trees and planted medians/verges provide green infrastructure that can support cooling, air quality, and stormwater benefits over time.\",\n      \"The presence of side paths on both sides could support low-carbon travel modes, but there are no visible bike lane markings or signs confirming dedicated cycling use.\",\n      \"Current ecological performance appears moderate rather than high because the trees are young and leafless, and much of the visible ground surface remains paved or bare soil.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has strong visual order, with symmetrical rows of trees, evenly spaced light poles, and a gently curving roadway creating a coherent composition.\",\n      \"The road surface and curbs appear new and well maintained, which contributes to a clean and orderly appearance.\",\n      \"Aesthetic richness is limited by the muted winter landscape, bare branches, and largely undeveloped surroundings, which make the scene feel somewhat stark.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is currently limited because the trees are young and leafless, so there is little visible shade over the roadway or side paths.\",\n      \"Physical comfort is mixed: the asphalt road looks smooth, but no benches, shelters, or resting facilities are visible along the side paths.\",\n      \"Psychological comfort benefits from low traffic volume and a spacious layout, yet the emptiness of the corridor and lack of active edges may make the environment feel isolated for some users.\"\n    ],\n    \"walkability\": [\n      \"Walkability is supported at a basic level by the presence of continuous side paths on both sides of the road, separated from moving vehicles by planted strips.\",\n      \"It is weakened by the absence of visible crosswalks, curb ramps, tactile guidance, or intersections that would help pedestrians move conveniently across or along the corridor.\",\n      \"The walking environment lacks common attractors such as storefronts, seating, shade, and visible pedestrian activity, so it appears functional for movement but not inviting for everyday walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 58.0,
+   "equity": 62.0,
+   "fairness": 55.0,
+   "accessibility": 57.0
+  },
+  "safety": 66.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 72.0,
+  "comfort": 49.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 62.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 57.0,
+  "safety": 66.0,
+  "livability": 42.0,
+  "sustainability": 61.0,
+  "aesthetics": 72.0,
+  "comfort": 49.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:17:08+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Both sides of the road appear to have parallel side paths and planted verges, suggesting some spatial allocation beyond cars rather than giving all width to the carriageway.",
+   "Accessibility is limited because the visible side paths are separated from the roadway by continuous curbs, and no curb ramps, tactile paving, or marked crossings are visible in the scene.",
+   "Fairness for diverse users is weakened by the lack of visible dedicated facilities for slower or more vulnerable users, such as benches, crossing aids, or clearly designated pedestrian priority areas."
+  ],
+  "safety": [
+   "The motor roadway is wide, smooth, and clearly marked with a center line, which supports predictable vehicle movement and reduces head-on conflict.",
+   "Streetlights are installed at regular intervals along the corridor, which likely improves visibility and perceived safety after dark.",
+   "Safety for non-motorized users is less certain because no marked crosswalks, speed-calming devices, bike lanes, or protective barriers between the road and side paths are visible."
+  ],
+  "livability": [
+   "The street has very little visible active frontage: there are almost no shops, entrances, or public destinations facing the road, which limits everyday street life.",
+   "Large open plots and sparse development on both sides make the corridor feel more like an access road than a socially active neighborhood street.",
+   "No visible seating, bus stops, gathering spaces, or small public amenities are present, reducing its usefulness as a place to spend time rather than simply pass through."
+  ],
+  "sustainability": [
+   "Continuous rows of street trees and planted medians/verges provide green infrastructure that can support cooling, air quality, and stormwater benefits over time.",
+   "The presence of side paths on both sides could support low-carbon travel modes, but there are no visible bike lane markings or signs confirming dedicated cycling use.",
+   "Current ecological performance appears moderate rather than high because the trees are young and leafless, and much of the visible ground surface remains paved or bare soil."
+  ],
+  "aesthetics": [
+   "The avenue has strong visual order, with symmetrical rows of trees, evenly spaced light poles, and a gently curving roadway creating a coherent composition.",
+   "The road surface and curbs appear new and well maintained, which contributes to a clean and orderly appearance.",
+   "Aesthetic richness is limited by the muted winter landscape, bare branches, and largely undeveloped surroundings, which make the scene feel somewhat stark."
+  ],
+  "comfort": [
+   "Thermal comfort is currently limited because the trees are young and leafless, so there is little visible shade over the roadway or side paths.",
+   "Physical comfort is mixed: the asphalt road looks smooth, but no benches, shelters, or resting facilities are visible along the side paths.",
+   "Psychological comfort benefits from low traffic volume and a spacious layout, yet the emptiness of the corridor and lack of active edges may make the environment feel isolated for some users."
+  ],
+  "walkability": [
+   "Walkability is supported at a basic level by the presence of continuous side paths on both sides of the road, separated from moving vehicles by planted strips.",
+   "It is weakened by the absence of visible crosswalks, curb ramps, tactile guidance, or intersections that would help pedestrians move conveniently across or along the corridor.",
+   "The walking environment lacks common attractors such as storefronts, seating, shade, and visible pedestrian activity, so it appears functional for movement but not inviting for everyday walking."
+  ]
+ }
+}

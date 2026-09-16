@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 48,
+      "equity": 50,
+      "fairness": 49,
+      "accessibility": 45
+    },
+    "safety": 60,
+    "livability": 35,
+    "sustainability": 48,
+    "aesthetics": 42,
+    "comfort": 40,
+    "walkability": 38,
+    "bikeability": 35
+  },
+  "explanations": {
+    "justice": [
+      "Industrial external logistics road, mainly serving factory freight vehicles.",
+      "Basic pavement condition, no barrier-free design for vulnerable groups.",
+      "Road resources lean towards motor vehicles, overall equity is low."
+    ],
+    "safety": [
+      "Wide lanes and long straight sight distance ensure basic driving safety.",
+      "Low internal road speed reduces accident casualty risk.",
+      "Lack of complete traffic isolation facilities."
+    ],
+    "livability": [
+      "Pure industrial functional area with almost no permanent residential livability.",
+      "Sparse roadside greenery improves partial environmental quality.",
+      "No leisure and public service supporting facilities."
+    ],
+    "sustainability": [
+      "Scattered roadside trees provide limited ecological improvement.",
+      "Hard pavement lacks rainwater management capacity.",
+      "Low foundation for green low-carbon travel."
+    ],
+    "aesthetics": [
+      "Plain industrial functional style, messy overhead lines.",
+      "Simple factory buildings and road view, no landscape beautification.",
+      "Overall visual feeling is utilitarian and plain."
+    ],
+    "comfort": [
+      "Aged road surface reduces driving comfort.",
+      "Occasional truck passing generates noise interference.",
+      "No independent pedestrian rest buffer zone."
+    ],
+    "walkability": [
+      "Roadside shoulder meets basic short-distance walking demand of staff.",
+      "Need to avoid passing vehicles and large trucks.",
+      "Not suitable for long-time walking activities."
+    ],
+    "bikeability": [
+      "No dedicated bicycle lane planning.",
+      "Basic riding conditions are available.",
+      "Vehicle interference brings certain riding risk."
+    ]
+  },
+  "image_id": "suburban-industry-logistics-road",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-05-04T10:06:00.000Z",
+  "record_id": "rec-suburban-industry-logistics-road",
+  "export_timestamp": "2026-05-04T10:06:50.000Z"
+}

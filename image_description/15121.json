@@ -1,0 +1,32 @@
+{
+ "oid": "15121",
+ "description": "The sidewalk is a continuous, wide concrete path along the right side, but it appears slightly cracked and uneven in places, with no visible curb ramps or marked accessibility features. Traffic separation is limited: the roadway is directly adjacent with no clear physical barrier or lane markings, though there are fences/walls along both sides and overhead utility lines; lighting is not prominent and there are no streetlights visible. There is some greenery on the right (trees behind fencing) providing partial shade, but overall the street looks exposed with few pedestrian amenities and minimal protection from vehicles.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 115,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 9,
+   "engine_ttft_ms": 797,
+   "engine_ttlt_ms": 1883,
+   "pre_inference_ms": 329,
+   "service_tbt_ms": 9,
+   "service_ttft_ms": 1501,
+   "service_ttlt_ms": 2582,
+   "user_visible_ttft_ms": 1171
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1099
+ },
+ "latency_s": 5.1,
+ "timestamp": "2026-08-31T16:03:07"
+}

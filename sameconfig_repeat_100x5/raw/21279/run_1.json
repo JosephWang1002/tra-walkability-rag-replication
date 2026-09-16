@@ -1,0 +1,124 @@
+{
+ "oid": "21279",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21279.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21279_120.75939_31.237682_01002900001405261626254055L_267.65_2014_5_吴中区甪直镇远航路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.1,
+ "usage": {
+  "completion_tokens": 831,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 468,
+   "engine_ttlt_ms": 11101,
+   "pre_inference_ms": 368,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1128,
+   "service_ttlt_ms": 11754,
+   "user_visible_ttft_ms": 760
+  },
+  "prompt_tokens": 5445,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6276
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 46.0,\n      \"equity\": 48.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 45.0\n    },\n    \"safety\": 52.0,\n    \"livability\": 50.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 74.0,\n    \"comfort\": 63.0,\n    \"walkability\": 38.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The road space is almost entirely a single paved carriageway, with no visible sidewalk, bike lane, or marked pedestrian zone, so spatial resources are not clearly distributed among different road users.\",\n      \"There are utility poles and trees along the edge, but no visible curb ramps, tactile paving, or barrier-free pedestrian facilities, which weakens accessibility for users who need dedicated walking infrastructure.\",\n      \"Because pedestrians, cyclists, and drivers appear to share the same narrow roadway without marked priority rules or separation, the environment provides limited evidence of fair and inclusive accommodation for all users.\"\n    ],\n    \"safety\": [\n      \"The roadway is narrow and appears to carry low traffic, which can reduce vehicle speeds and lower conflict severity compared with a wider high-speed road.\",\n      \"There are no visible lane markings, crosswalks, shoulders, or pedestrian refuges, so people walking would have to use the same paved surface as vehicles.\",\n      \"Trees and vegetation line both sides closely, creating a pleasant enclosure but also potentially limiting sightlines around the curve ahead.\"\n    ],\n    \"livability\": [\n      \"The scene is quiet and green, with many roadside trees and adjacent cultivated land, which supports a calm everyday environment.\",\n      \"A few houses are visible set back from the road, indicating some residential presence, but there are no visible shops, services, benches, or social spaces that would support daily street life.\",\n      \"The street functions more like a rural access road than a multi-use public place, so opportunities for gathering, resting, or diverse activities appear limited.\"\n    ],\n    \"sustainability\": [\n      \"The strong presence of trees and planted land on both sides contributes visible green cover and a more ecologically supportive roadside environment.\",\n      \"The narrow road footprint and absence of large parking areas or multiple traffic lanes suggest relatively low land consumption for motor traffic.\",\n      \"However, there is no visible public transport stop, bike facility, or stormwater infrastructure, so support for broader low-carbon and resilient mobility is only partial.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous rows of mature and young trees create a visually coherent green corridor along the road.\",\n      \"The rural landscape with fields, scattered houses, and a gently curving lane gives the street a calm and attractive character.\",\n      \"The roadway and edges appear relatively clean and uncluttered, with little visual noise from signage, parked cars, or commercial frontage.\"\n    ],\n    \"comfort\": [\n      \"Tree canopy along both sides provides intermittent shade, which likely improves thermal comfort compared with a fully exposed road.\",\n      \"The paved surface looks relatively even and unobstructed, which supports smoother movement for general users.\",\n      \"There are no visible benches, shelters, or designated resting places, so physical comfort for stopping or waiting is limited.\",\n      \"The low-density rural setting likely reduces noise and crowding, supporting psychological comfort.\"\n    ],\n    \"walkability\": [\n      \"There is no visible sidewalk or separated footpath, so pedestrians would need to walk on the carriageway itself.\",\n      \"The road edges transition directly into grass, soil, and drainage-like margins, which reduces comfortable and continuous walking space.\",\n      \"No crosswalks, curb ramps, lighting for pedestrians, or wayfinding elements are visible, limiting pedestrian support and route legibility.\",\n      \"Although the road appears quiet and shaded in parts, the lack of dedicated pedestrian infrastructure keeps overall walkability low.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 46.0,
+   "equity": 48.0,
+   "fairness": 45.0,
+   "accessibility": 45.0
+  },
+  "safety": 52.0,
+  "livability": 50.0,
+  "sustainability": 66.0,
+  "aesthetics": 74.0,
+  "comfort": 63.0,
+  "walkability": 38.0
+ },
+ "scores_flat": {
+  "justice": 46.0,
+  "justice_equity": 48.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 45.0,
+  "safety": 52.0,
+  "livability": 50.0,
+  "sustainability": 66.0,
+  "aesthetics": 74.0,
+  "comfort": 63.0,
+  "walkability": 38.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:47:38+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The road space is almost entirely a single paved carriageway, with no visible sidewalk, bike lane, or marked pedestrian zone, so spatial resources are not clearly distributed among different road users.",
+   "There are utility poles and trees along the edge, but no visible curb ramps, tactile paving, or barrier-free pedestrian facilities, which weakens accessibility for users who need dedicated walking infrastructure.",
+   "Because pedestrians, cyclists, and drivers appear to share the same narrow roadway without marked priority rules or separation, the environment provides limited evidence of fair and inclusive accommodation for all users."
+  ],
+  "safety": [
+   "The roadway is narrow and appears to carry low traffic, which can reduce vehicle speeds and lower conflict severity compared with a wider high-speed road.",
+   "There are no visible lane markings, crosswalks, shoulders, or pedestrian refuges, so people walking would have to use the same paved surface as vehicles.",
+   "Trees and vegetation line both sides closely, creating a pleasant enclosure but also potentially limiting sightlines around the curve ahead."
+  ],
+  "livability": [
+   "The scene is quiet and green, with many roadside trees and adjacent cultivated land, which supports a calm everyday environment.",
+   "A few houses are visible set back from the road, indicating some residential presence, but there are no visible shops, services, benches, or social spaces that would support daily street life.",
+   "The street functions more like a rural access road than a multi-use public place, so opportunities for gathering, resting, or diverse activities appear limited."
+  ],
+  "sustainability": [
+   "The strong presence of trees and planted land on both sides contributes visible green cover and a more ecologically supportive roadside environment.",
+   "The narrow road footprint and absence of large parking areas or multiple traffic lanes suggest relatively low land consumption for motor traffic.",
+   "However, there is no visible public transport stop, bike facility, or stormwater infrastructure, so support for broader low-carbon and resilient mobility is only partial."
+  ],
+  "aesthetics": [
+   "The continuous rows of mature and young trees create a visually coherent green corridor along the road.",
+   "The rural landscape with fields, scattered houses, and a gently curving lane gives the street a calm and attractive character.",
+   "The roadway and edges appear relatively clean and uncluttered, with little visual noise from signage, parked cars, or commercial frontage."
+  ],
+  "comfort": [
+   "Tree canopy along both sides provides intermittent shade, which likely improves thermal comfort compared with a fully exposed road.",
+   "The paved surface looks relatively even and unobstructed, which supports smoother movement for general users.",
+   "There are no visible benches, shelters, or designated resting places, so physical comfort for stopping or waiting is limited.",
+   "The low-density rural setting likely reduces noise and crowding, supporting psychological comfort."
+  ],
+  "walkability": [
+   "There is no visible sidewalk or separated footpath, so pedestrians would need to walk on the carriageway itself.",
+   "The road edges transition directly into grass, soil, and drainage-like margins, which reduces comfortable and continuous walking space.",
+   "No crosswalks, curb ramps, lighting for pedestrians, or wayfinding elements are visible, limiting pedestrian support and route legibility.",
+   "Although the road appears quiet and shaded in parts, the lack of dedicated pedestrian infrastructure keeps overall walkability low."
+  ]
+ }
+}

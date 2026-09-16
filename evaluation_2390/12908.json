@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 58,
+      "equity": 60,
+      "fairness": 55,
+      "accessibility": 59
+    },
+    "safety": 54,
+    "livability": 57,
+    "sustainability": 66,
+    "aesthetics": 73,
+    "comfort": 63,
+    "walkability": 56,
+    "bikeability": 45
+  },
+  "explanations": {
+    "justice": [
+      "Street space is primarily allocated to motor vehicles (single carriageway with centerline) while pedestrian-dedicated space is limited to narrow edge strips, suggesting an uneven distribution of space among user types",
+      "Curb edges are continuous along both sides, but there are no visible curb ramps or marked crossings in the scene, limiting universal access at potential crossing points",
+      "No tactile paving, pedestrian signage, or marked pedestrian priority features are visible, which can disadvantage users who rely on standardized guidance and rules to navigate"
+    ],
+    "safety": [
+      "No marked crosswalks, pedestrian refuge islands, or intersection controls are visible, increasing potential conflict when pedestrians need to cross the roadway",
+      "Vehicles are present/parked close to the roadside (e.g., a car on the left near the edge), and the pedestrian edge zone appears narrow, raising dooring/encroachment risk for people walking or cycling",
+      "There is no protected or painted bike lane; cyclists would share the travel lane with cars, increasing crash risk and perceived danger for non-motorized users"
+    ],
+    "livability": [
+      "The corridor has substantial greenery (dense shrubs and large trees) and a quiet, low-intensity setting, which supports a calm residential/rural living environment",
+      "Some human activity is visible in the distance (people walking along the road), indicating the street is used for everyday movement rather than being purely vehicular",
+      "Public amenities appear minimal (no visible seating, shelters, or active frontages), which limits opportunities for stopping, social interaction, and lingering"
+    ],
+    "sustainability": [
+      "Extensive vegetation and unpaved soil/planting areas along the right side can support habitat value and reduce urban heat impacts compared with fully hardscaped streets",
+      "The street’s low-rise, green-edge character suggests reduced impervious coverage beyond the carriageway, which can be favorable for stormwater infiltration (though no formal rain gardens are visible)",
+      "Lack of dedicated cycling infrastructure may suppress mode shift to biking, partially limiting the corridor’s low-carbon mobility potential"
+    ],
+    "aesthetics": [
+      "The large roadside trees and dense green planting create a strong natural visual frame and a pleasant scenic quality",
+      "The road alignment and distant hills/buildings provide depth and a coherent landscape backdrop, improving visual interest",
+      "Visible utility poles/overhead wires and roadside bins introduce visual clutter that slightly reduces overall neatness"
+    ],
+    "comfort": [
+      "Tree canopy on the right provides intermittent shade, improving thermal comfort for users walking/cycling near that edge",
+      "There are no visible benches, resting points, or sheltered waiting areas, reducing physical comfort for anyone needing breaks",
+      "The street appears relatively uncrowded and buffered by greenery, which can improve psychological comfort by reducing perceived stress and exposure"
+    ],
+    "walkability": [
+      "Sidewalks are not clearly continuous; pedestrian movement seems to rely on narrow edge strips next to curbs rather than a dedicated walkway",
+      "No marked crossings or pedestrian priority markings are visible, reducing route connectivity and comfort when crossing is needed",
+      "Green buffers and low crowding improve the walking experience, but the proximity to traffic without a clear separation lowers overall walkability"
+    ],
+    "bikeability": [
+      "No bike lanes, protected cycle tracks, or bicycle markings are present, forcing cyclists to mix with motor traffic",
+      "Roadside parking/driveway areas (e.g., left-side parking apron) can create turning and pull-out conflicts for cyclists",
+      "No visible bicycle parking, signage, or traffic-calming features targeted at cycling comfort, limiting convenience and perceived safety"
+    ]
+  },
+  "image_id": "img-1777267120275-1ovkbvcnx",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:57:00.821Z",
+  "record_id": "98f342387cc5492296d1762fb096def6",
+  "stored_image_url": "/storage/records/98f342387cc5492296d1762fb096def6/image.jpg",
+  "stored_thumb_url": "/storage/records/98f342387cc5492296d1762fb096def6/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:57:06.419Z"
+}

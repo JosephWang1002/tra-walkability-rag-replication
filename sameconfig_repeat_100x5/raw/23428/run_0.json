@@ -1,0 +1,122 @@
+{
+ "oid": "23428",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23428.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23428_120.677836_31.39172_09002900011507270110012081A_129.77_2015_7_相城区澄阳街道_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.6,
+ "usage": {
+  "completion_tokens": 853,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 472,
+   "engine_ttlt_ms": 13891,
+   "pre_inference_ms": 363,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1123,
+   "service_ttlt_ms": 14538,
+   "user_visible_ttft_ms": 760
+  },
+  "prompt_tokens": 5380,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6233
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 41.0,\n      \"equity\": 43.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 40.0\n    },\n    \"safety\": 38.0,\n    \"livability\": 42.0,\n    \"sustainability\": 55.0,\n    \"aesthetics\": 63.0,\n    \"comfort\": 39.0,\n    \"walkability\": 34.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible street space is dominated by a narrow paved roadway beside open fields, with no dedicated sidewalk, cycle lane, or marked pedestrian zone, suggesting limited and uneven allocation of space among different road users.\",\n      \"Accessibility is weak because the pavement edge is irregular and cracked, and there are no visible curb ramps, tactile paving, or barrier-free crossing features for users with strollers, wheelchairs, or walkers.\",\n      \"Fairness for all social groups is reduced by the lack of basic public facilities such as lighting, seating, signage, or protected waiting space; the scene appears to mainly serve through movement rather than diverse user needs.\"\n    ],\n    \"safety\": [\n      \"Safety is limited because pedestrians and any cyclists would need to share the same narrow roadway with vehicles; no lane markings, shoulder separation, or traffic calming elements are visible.\",\n      \"The road edge directly borders a water-filled agricultural ditch and field, creating a roadside hazard with no guardrail, curb, or protective barrier.\",\n      \"Surface cracks and uneven pavement near the right edge can increase trip risk for walkers and reduce control for cyclists or drivers, especially if speeds are not low.\"\n    ],\n    \"livability\": [\n      \"Livability is modest because the setting has open green views and low apparent traffic, which can feel calm and less congested than an urban arterial.\",\n      \"However, there are no visible shops, services, benches, bus stops, or social spaces along the road, so the street offers little support for daily public life beyond access movement.\",\n      \"The adjacent timber stacks and utility poles indicate a functional rural edge condition rather than an active, people-oriented streetscape.\"\n    ],\n    \"sustainability\": [\n      \"The large agricultural fields and substantial vegetation cover contribute positively to ecological landscape value and permeable ground surface.\",\n      \"At the same time, the street itself shows no visible sustainable mobility infrastructure such as sidewalks, bike lanes, transit stops, or shared low-carbon transport facilities.\",\n      \"Overhead utility lines and a simple paved road are present, but there are no visible stormwater design elements, street trees, or shaded green infrastructure integrated into the roadway edge.\"\n    ],\n    \"aesthetics\": [\n      \"The broad green rice fields, distant tree line, and open sky create a visually pleasant rural landscape with strong natural scenery.\",\n      \"Visual quality is weakened somewhat by exposed utility poles and overhead wires cutting across the view, along with stacked lumber at the roadside.\",\n      \"The road surface appears worn and cracked, which reduces the sense of refinement even though the surrounding landscape remains attractive.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because the roadway edge is fully exposed to sun, with no visible street trees, arcades, or shade structures along the walking path.\",\n      \"Physical comfort is limited by the narrow, cracked pavement and absence of sidewalks, benches, or resting places.\",\n      \"Psychological comfort is mixed: the open rural setting may feel quiet due to low visible traffic, but the lack of separation from vehicles and the adjacent water edge can make walking feel insecure.\"\n    ],\n    \"walkability\": [\n      \"Walkability is low because there is no dedicated sidewalk or footpath; pedestrians would have to walk directly on the vehicular pavement.\",\n      \"The visible route lacks key walking supports such as crossings, curb ramps, lighting, wayfinding signs, or resting facilities.\",\n      \"Cracked pavement, narrow usable width, and direct exposure to sun and roadside drainage reduce the continuity and comfort of walking for all road users.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 41.0,
+   "equity": 43.0,
+   "fairness": 40.0,
+   "accessibility": 40.0
+  },
+  "safety": 38.0,
+  "livability": 42.0,
+  "sustainability": 55.0,
+  "aesthetics": 63.0,
+  "comfort": 39.0,
+  "walkability": 34.0
+ },
+ "scores_flat": {
+  "justice": 41.0,
+  "justice_equity": 43.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 40.0,
+  "safety": 38.0,
+  "livability": 42.0,
+  "sustainability": 55.0,
+  "aesthetics": 63.0,
+  "comfort": 39.0,
+  "walkability": 34.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:56:00+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible street space is dominated by a narrow paved roadway beside open fields, with no dedicated sidewalk, cycle lane, or marked pedestrian zone, suggesting limited and uneven allocation of space among different road users.",
+   "Accessibility is weak because the pavement edge is irregular and cracked, and there are no visible curb ramps, tactile paving, or barrier-free crossing features for users with strollers, wheelchairs, or walkers.",
+   "Fairness for all social groups is reduced by the lack of basic public facilities such as lighting, seating, signage, or protected waiting space; the scene appears to mainly serve through movement rather than diverse user needs."
+  ],
+  "safety": [
+   "Safety is limited because pedestrians and any cyclists would need to share the same narrow roadway with vehicles; no lane markings, shoulder separation, or traffic calming elements are visible.",
+   "The road edge directly borders a water-filled agricultural ditch and field, creating a roadside hazard with no guardrail, curb, or protective barrier.",
+   "Surface cracks and uneven pavement near the right edge can increase trip risk for walkers and reduce control for cyclists or drivers, especially if speeds are not low."
+  ],
+  "livability": [
+   "Livability is modest because the setting has open green views and low apparent traffic, which can feel calm and less congested than an urban arterial.",
+   "However, there are no visible shops, services, benches, bus stops, or social spaces along the road, so the street offers little support for daily public life beyond access movement.",
+   "The adjacent timber stacks and utility poles indicate a functional rural edge condition rather than an active, people-oriented streetscape."
+  ],
+  "sustainability": [
+   "The large agricultural fields and substantial vegetation cover contribute positively to ecological landscape value and permeable ground surface.",
+   "At the same time, the street itself shows no visible sustainable mobility infrastructure such as sidewalks, bike lanes, transit stops, or shared low-carbon transport facilities.",
+   "Overhead utility lines and a simple paved road are present, but there are no visible stormwater design elements, street trees, or shaded green infrastructure integrated into the roadway edge."
+  ],
+  "aesthetics": [
+   "The broad green rice fields, distant tree line, and open sky create a visually pleasant rural landscape with strong natural scenery.",
+   "Visual quality is weakened somewhat by exposed utility poles and overhead wires cutting across the view, along with stacked lumber at the roadside.",
+   "The road surface appears worn and cracked, which reduces the sense of refinement even though the surrounding landscape remains attractive."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because the roadway edge is fully exposed to sun, with no visible street trees, arcades, or shade structures along the walking path.",
+   "Physical comfort is limited by the narrow, cracked pavement and absence of sidewalks, benches, or resting places.",
+   "Psychological comfort is mixed: the open rural setting may feel quiet due to low visible traffic, but the lack of separation from vehicles and the adjacent water edge can make walking feel insecure."
+  ],
+  "walkability": [
+   "Walkability is low because there is no dedicated sidewalk or footpath; pedestrians would have to walk directly on the vehicular pavement.",
+   "The visible route lacks key walking supports such as crossings, curb ramps, lighting, wayfinding signs, or resting facilities.",
+   "Cracked pavement, narrow usable width, and direct exposure to sun and roadside drainage reduce the continuity and comfort of walking for all road users."
+  ]
+ }
+}

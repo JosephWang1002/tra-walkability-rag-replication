@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 42,
+      "equity": 44,
+      "fairness": 43,
+      "accessibility": 38
+    },
+    "safety": 50,
+    "livability": 32,
+    "sustainability": 40,
+    "aesthetics": 35,
+    "comfort": 33,
+    "walkability": 32,
+    "bikeability": 30
+  },
+  "explanations": {
+    "justice": [
+      "Mainly serves factory logistics vehicles and staff commuting mixed traffic.",
+      "Flat basic pavement, lack of formal barrier-free transformation.",
+      "Right-of-way obviously favors large freight vehicles, low-medium overall equity."
+    ],
+    "safety": [
+      "Simple road structure, lack of complete traffic safety isolation facilities.",
+      "Mixed flow of large trucks and personnel brings frequent potential conflict risks.",
+      "Good open sight distance helps avoid road obstacles."
+    ],
+    "livability": [
+      "Pure industrial production supporting area, weak permanent livability.",
+      "Surrounding simple vegetation improves basic environmental quality.",
+      "No leisure and daily living supporting facilities."
+    ],
+    "sustainability": [
+      "Sparse surrounding greenery provides limited ecological benefits.",
+      "Aged cement pavement lacks rainwater infiltration capacity.",
+      "Low-carbon commuting foundation is weak."
+    ],
+    "aesthetics": [
+      "Plain industrial style road view, messy stacked materials on roadside.",
+      "Old factory buildings and overhead lines affect visual tidiness.",
+      "No landscape beautification design."
+    ],
+    "comfort": [
+      "Aged road surface bump reduces driving comfort.",
+      "Frequent truck passing generates noise and vibration interference.",
+      "No independent pedestrian rest buffer zone."
+    ],
+    "walkability": [
+      "Roadside shoulder meets basic staff passing demand.",
+      "Need to avoid frequent large vehicle passing.",
+      "Only suitable for short-distance commuting."
+    ],
+    "bikeability": [
+      "No dedicated bicycle lane planning.",
+      "Basic riding conditions are available.",
+      "Conflict risk with trucks restricts riding experience."
+    ]
+  },
+  "image_id": "suburban-factory-logistics-road",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-30T10:02:00.000Z",
+  "record_id": "rec-suburban-factory-logistics-road",
+  "export_timestamp": "2026-04-30T10:02:50.000Z"
+}

@@ -1,0 +1,122 @@
+{
+ "oid": "12212",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12212.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12212_120.500449_31.359485_0900290012220829075416565AL_0.17_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.5,
+ "usage": {
+  "completion_tokens": 836,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 462,
+   "engine_ttlt_ms": 11335,
+   "pre_inference_ms": 447,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1195,
+   "service_ttlt_ms": 12063,
+   "user_visible_ttft_ms": 748
+  },
+  "prompt_tokens": 5284,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1408
+  },
+  "total_tokens": 6120
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 66.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 63.0,\n    \"sustainability\": 81.0,\n    \"aesthetics\": 86.0,\n    \"comfort\": 78.0,\n    \"walkability\": 57.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The corridor allocates substantial space to motor traffic with multiple wide vehicle lanes, while pedestrian space is only partially visible at the edges, suggesting an uneven distribution of street space across user types.\",\n      \"Continuous green medians, roadside planting, and a visible side path on the right indicate that non-motorized users are not entirely excluded, which supports some degree of equitable provision.\",\n      \"Accessibility is only moderate because no curb ramps, tactile paving, marked crossings, or other barrier-free details are visible in the image, so inclusive access cannot be confirmed from the photo.\"\n    ],\n    \"safety\": [\n      \"The roadway has clear lane markings, a planted median, and edge landscaping that organize movement and reduce direct conflicts between opposing traffic streams.\",\n      \"Large trees and hedges create a buffer between the carriageway and side areas, which can improve perceived safety for people outside the vehicle lanes.\",\n      \"Safety is limited by the apparent high-speed, multi-lane road geometry and the absence of any visible pedestrian crossing, refuge island, or traffic-calming feature in this scene.\"\n    ],\n    \"livability\": [\n      \"Dense rows of mature trees and landscaped medians create a greener and more pleasant urban environment than a bare arterial road.\",\n      \"A bus stop shelter is visible on the left, indicating some support for everyday public transport access and broader urban usability.\",\n      \"Livability is constrained because the scene is dominated by through-traffic lanes and utility infrastructure, with no visible shops, seating, or active street-edge uses that would support social street life.\"\n    ],\n    \"sustainability\": [\n      \"The extensive tree canopy and planted medians provide substantial urban greenery, which supports shade, cooling, and ecological value.\",\n      \"A visible bus stop and bus on the roadway indicate support for mass transit, which is more sustainable than car-only street design.\",\n      \"The corridor appears well suited to lower-emission travel choices through transit and likely side-path movement, although no dedicated bike lane markings are visible on the carriageway.\"\n    ],\n    \"aesthetics\": [\n      \"Long, continuous rows of mature trees on both sides create strong visual order and a high-quality green boulevard character.\",\n      \"The roadway, medians, hedges, and lane markings appear clean and well maintained, contributing to a polished streetscape image.\",\n      \"The balanced composition of tree canopy, landscaped center strips, and open sky gives the street a coherent and attractive appearance despite the large road width.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively strong because mature roadside trees provide extensive shade over side areas and partial shade onto the roadway corridor.\",\n      \"Physical comfort appears acceptable for travel because the asphalt surface looks smooth and lane markings are clear, suggesting a well-maintained carriageway.\",\n      \"Psychological comfort is mixed: the greenery and orderly layout are calming, but the broad multi-lane road and moving bus indicate a traffic-dominant environment that may feel less comfortable for people on foot.\"\n    ],\n    \"walkability\": [\n      \"Walkability benefits from the visible side path and strong tree cover, which likely make walking more pleasant along the corridor.\",\n      \"However, no marked crosswalk, pedestrian signal, curb ramp, or median refuge is visible, so crossing this wide road may be difficult and inconvenient for pedestrians.\",\n      \"The street section appears designed primarily for continuous vehicle movement, and the large carriageway width reduces pedestrian priority and likely lowers walking convenience.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 66.0,
+   "fairness": 58.0,
+   "accessibility": 59.0
+  },
+  "safety": 74.0,
+  "livability": 63.0,
+  "sustainability": 81.0,
+  "aesthetics": 86.0,
+  "comfort": 78.0,
+  "walkability": 57.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 59.0,
+  "safety": 74.0,
+  "livability": 63.0,
+  "sustainability": 81.0,
+  "aesthetics": 86.0,
+  "comfort": 78.0,
+  "walkability": 57.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:17:20+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The corridor allocates substantial space to motor traffic with multiple wide vehicle lanes, while pedestrian space is only partially visible at the edges, suggesting an uneven distribution of street space across user types.",
+   "Continuous green medians, roadside planting, and a visible side path on the right indicate that non-motorized users are not entirely excluded, which supports some degree of equitable provision.",
+   "Accessibility is only moderate because no curb ramps, tactile paving, marked crossings, or other barrier-free details are visible in the image, so inclusive access cannot be confirmed from the photo."
+  ],
+  "safety": [
+   "The roadway has clear lane markings, a planted median, and edge landscaping that organize movement and reduce direct conflicts between opposing traffic streams.",
+   "Large trees and hedges create a buffer between the carriageway and side areas, which can improve perceived safety for people outside the vehicle lanes.",
+   "Safety is limited by the apparent high-speed, multi-lane road geometry and the absence of any visible pedestrian crossing, refuge island, or traffic-calming feature in this scene."
+  ],
+  "livability": [
+   "Dense rows of mature trees and landscaped medians create a greener and more pleasant urban environment than a bare arterial road.",
+   "A bus stop shelter is visible on the left, indicating some support for everyday public transport access and broader urban usability.",
+   "Livability is constrained because the scene is dominated by through-traffic lanes and utility infrastructure, with no visible shops, seating, or active street-edge uses that would support social street life."
+  ],
+  "sustainability": [
+   "The extensive tree canopy and planted medians provide substantial urban greenery, which supports shade, cooling, and ecological value.",
+   "A visible bus stop and bus on the roadway indicate support for mass transit, which is more sustainable than car-only street design.",
+   "The corridor appears well suited to lower-emission travel choices through transit and likely side-path movement, although no dedicated bike lane markings are visible on the carriageway."
+  ],
+  "aesthetics": [
+   "Long, continuous rows of mature trees on both sides create strong visual order and a high-quality green boulevard character.",
+   "The roadway, medians, hedges, and lane markings appear clean and well maintained, contributing to a polished streetscape image.",
+   "The balanced composition of tree canopy, landscaped center strips, and open sky gives the street a coherent and attractive appearance despite the large road width."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively strong because mature roadside trees provide extensive shade over side areas and partial shade onto the roadway corridor.",
+   "Physical comfort appears acceptable for travel because the asphalt surface looks smooth and lane markings are clear, suggesting a well-maintained carriageway.",
+   "Psychological comfort is mixed: the greenery and orderly layout are calming, but the broad multi-lane road and moving bus indicate a traffic-dominant environment that may feel less comfortable for people on foot."
+  ],
+  "walkability": [
+   "Walkability benefits from the visible side path and strong tree cover, which likely make walking more pleasant along the corridor.",
+   "However, no marked crosswalk, pedestrian signal, curb ramp, or median refuge is visible, so crossing this wide road may be difficult and inconvenient for pedestrians.",
+   "The street section appears designed primarily for continuous vehicle movement, and the large carriageway width reduces pedestrian priority and likely lowers walking convenience."
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+﻿config,retrieval,chunk,topk,temp,r_walkability,mean_r
+C0_base,hybrid,512,5,0.0,0.8335,0.8256
+C1_bm25,bm25,512,5,0.0,0.8226,0.8302
+C2_dense,dense,512,5,0.0,0.8468,0.831
+C3_chunk256,hybrid,256,5,0.0,0.8485,0.8428
+C4_chunk1024,hybrid,1024,5,0.0,0.8484,0.8454
+C5_topk3,hybrid,512,3,0.0,0.8488,0.8324
+C6_topk10,hybrid,512,10,0.0,0.8475,0.8343
+C7_temp05,hybrid,512,5,0.5,0.8267,0.8158
+C8_temp10,hybrid,512,5,1.0,0.8406,0.8322

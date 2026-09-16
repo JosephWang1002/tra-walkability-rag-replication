@@ -1,0 +1,33 @@
+{
+ "oid": "14982",
+ "description": "The road has no visible continuous sidewalk on either side; instead, pedestrians appear to walk along the roadside edge with a narrow, unmarked shoulder. Traffic is separated from the greenery by a curb/edge and a fence on the right, with two lanes and painted center/edge markings; there are no visible pedestrian crossings or curb ramps. The streetscape is lined with dense trees providing some shade, but lighting and pedestrian-specific safety features (barriers, signals, dedicated walkways) are not evident in the image.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 107,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 912,
+   "engine_ttlt_ms": 2433,
+   "pre_inference_ms": 380,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1688,
+   "service_ttlt_ms": 3205,
+   "total_duration_ms": 2833,
+   "user_visible_ttft_ms": 1308
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1091
+ },
+ "latency_s": 6.0,
+ "timestamp": "2026-08-31T16:02:40"
+}

@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 45,
+      "equity": 42,
+      "fairness": 50,
+      "accessibility": 43
+    },
+    "safety": 63,
+    "livability": 30,
+    "sustainability": 52,
+    "aesthetics": 58,
+    "comfort": 55,
+    "walkability": 28,
+    "bikeability": 26
+  },
+  "explanations": {
+    "justice": [
+      "Spatial resources are heavily allocated to motor vehicles: multiple wide travel lanes with clear arrow markings dominate the corridor, while pedestrian space is limited to a narrow sidewalk strip on the left.",
+      "The left-side sidewalk appears interrupted by under-bridge conditions and roadside activities/parking (a stopped flatbed/utility vehicle on the shoulder), which can unevenly affect non-driver users’ ability to move through the corridor.",
+      "Accessibility for non-motorized users is weak: there is no visible marked crosswalk, pedestrian refuge island, or curb-ramp detail at crossings in the scene, making the environment effectively less usable for people not in cars.",
+      "Rules/signage seem primarily driver-oriented (directional arrows and highway-style guide signs ahead), suggesting operational priority for drivers over pedestrians/cyclists."
+    ],
+    "safety": [
+      "Driver safety is supported by clear lane markings, directional arrows, and a wide roadway that provides predictable vehicle positioning.",
+      "Non-driver safety is reduced by the lack of visible crosswalks or protected crossings, making it risky for pedestrians to cross such a wide, fast road.",
+      "No dedicated or protected bike lane is visible; cyclists would have to mix with high-speed traffic or use the sidewalk/shoulder, increasing conflict risk.",
+      "The underpass/viaduct edge on the left creates a constrained roadside zone where stopped vehicles (seen on the left shoulder) can introduce hazards and reduce recovery space."
+    ],
+    "livability": [
+      "The corridor functions like an arterial/expressway segment: long blocks, wide lanes, and limited human-scale frontage reduce suitability for daily street life.",
+      "There are no visible amenities that typically support street staying (benches, shops, pocket parks) along the roadway edges.",
+      "A single pedestrian is visible near the right-side greenery, but the environment is dominated by traffic space and buffers rather than social activity areas.",
+      "Large setbacks with dense roadside planting and an elevated structure reduce direct access to destinations, weakening day-to-day street vibrancy for all users."
+    ],
+    "sustainability": [
+      "Substantial roadside greenery and trees on the right provide ecological benefits (shade potential, air filtration, habitat) compared with fully hardscaped corridors.",
+      "However, the design clearly prioritizes car throughput (multiple general-purpose lanes) which tends to induce vehicle use and emissions, limiting sustainability performance.",
+      "There is no visible public-transport stop infrastructure (bus stop signs/shelters) in the scene, reducing support for low-carbon mode shift.",
+      "No visible stormwater features (bioswales, permeable paving, rain gardens) are identifiable; planting appears largely ornamental buffer landscaping."
+    ],
+    "aesthetics": [
+      "The right-side tree line and layered shrubs create a visually pleasant green edge and soften the roadway.",
+      "The elevated structure on the left (viaduct/overpass) introduces a large concrete mass that reduces visual warmth and human-scale appeal.",
+      "The street looks clean and well-maintained (fresh asphalt, crisp lane markings), contributing positively to perceived order and quality.",
+      "Distant modern buildings add skyline interest, but the immediate streetscape remains utilitarian and highway-like."
+    ],
+    "comfort": [
+      "Thermal comfort is mixed: the right side has substantial tree canopy that likely provides shade, but the main roadway and left sidewalk area appear largely exposed with minimal shading.",
+      "Physical comfort for non-drivers is low due to the absence of visible seating/resting points and the apparent narrowness/edge condition of the left sidewalk next to the road.",
+      "Psychological comfort for pedestrians/cyclists is reduced by the wide, fast-moving road environment and limited enclosure at human scale; the space feels oriented to vehicles rather than people.",
+      "For drivers, comfort is relatively good due to wide lanes, smooth pavement, and gentle curvature with clear guidance signage ahead."
+    ],
+    "walkability": [
+      "Sidewalk provision appears minimal and discontinuous: only a narrow left-side walkway is visible, with the rest of edges dominated by roadway/planting buffers.",
+      "Crossing convenience is poor: no marked crosswalks, signals, or median refuge are visible despite the wide multi-lane cross-section.",
+      "The environment is not human-scaled (large roadway width, long sightlines, limited active frontage), reducing walking attractiveness and perceived safety.",
+      "Obstructions/edge friction on the left shoulder area (stopped service/flatbed vehicle and under-bridge conditions) can further discourage walking."
+    ],
+    "bikeability": [
+      "No dedicated bike lane markings, colored pavement, or physical protection are visible; cyclists would likely need to ride in mixed traffic.",
+      "The road appears designed for higher-speed vehicle movement (wide lanes, highway-style signs), which increases stress for cycling.",
+      "There is no visible bicycle parking, bike signals, or intersection treatments that support cycling continuity.",
+      "The landscaped median/edge planting does not function as a protected cycling facility; it mainly buffers the roadway without providing a bikeable path."
+    ]
+  },
+  "image_id": "img-1776945835042-c53ih8ukj",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T12:50:48.793Z",
+  "record_id": "7da5cc2b6508407fb74955644f71353a",
+  "stored_image_url": "/storage/records/7da5cc2b6508407fb74955644f71353a/image.jpg",
+  "stored_thumb_url": "/storage/records/7da5cc2b6508407fb74955644f71353a/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T12:51:32.684Z"
+}

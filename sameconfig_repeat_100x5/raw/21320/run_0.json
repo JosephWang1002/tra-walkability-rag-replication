@@ -1,0 +1,122 @@
+{
+ "oid": "21320",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21320.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21320_120.64215_31.232914_0900290012220825131422256HQ_270.09_2022_8_吴中区城南街道迎春南路68号_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.3,
+ "usage": {
+  "completion_tokens": 794,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 446,
+   "engine_ttlt_ms": 11591,
+   "pre_inference_ms": 276,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1129,
+   "service_ttlt_ms": 12271,
+   "user_visible_ttft_ms": 853
+  },
+  "prompt_tokens": 5261,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6055
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 66.0,\n      \"equity\": 70.0,\n      \"fairness\": 64.0,\n      \"accessibility\": 64.0\n    },\n    \"safety\": 71.0,\n    \"livability\": 68.0,\n    \"sustainability\": 69.0,\n    \"aesthetics\": 79.0,\n    \"comfort\": 74.0,\n    \"walkability\": 63.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to motor vehicles with a wide carriageway, while sidewalks are mostly hidden behind rows of trees and building edges, suggesting a somewhat vehicle-prioritized distribution of space.\",\n      \"A marked zebra crossing is clearly visible across the full road width, which supports fair crossing opportunities for all road users at this location.\",\n      \"No curb ramps, tactile paving, or other barrier-free details are visible at the crossing edges, so accessibility for users needing step-free or guided movement cannot be confirmed from the image.\"\n    ],\n    \"safety\": [\n      \"The zebra crossing provides a clear pedestrian priority cue and improves crossing legibility for drivers approaching the intersection area.\",\n      \"The road appears wide and relatively open with long sightlines in both directions, allowing drivers, pedestrians, and riders to see each other from a distance.\",\n      \"There is no visible protected bike lane, refuge island, or traffic-calming feature near the crossing, so cyclists and pedestrians may still face exposure on the broad roadway.\"\n    ],\n    \"livability\": [\n      \"Continuous rows of mature street trees on both sides create a greener and more residential atmosphere than a bare roadway would.\",\n      \"The tall apartment buildings on the right indicate a lived-in residential environment with potential daily activity and population presence.\",\n      \"However, the street frontage appears quiet and lacks visible benches, shopfront activity, or public gathering amenities, limiting the sense of active street life.\"\n    ],\n    \"sustainability\": [\n      \"The dense tree canopy along both sides of the street contributes visible urban greenery and likely helps with shade, air quality, and heat mitigation.\",\n      \"The street design does not show dedicated cycling infrastructure or visible public transport stops, which weakens support for low-carbon travel choices.\",\n      \"The broad asphalt roadway and large paved surface suggest a car-oriented layout with limited visible permeable landscape features beyond the tree strips.\"\n    ],\n    \"aesthetics\": [\n      \"The double rows of mature trees frame the street and create a strong, orderly green corridor with high visual coherence.\",\n      \"The residential towers on the right have a consistent height, facade rhythm, and setback pattern, giving the streetscape a neat and unified appearance.\",\n      \"The roadway appears clean and uncluttered, with minimal visual chaos from signage, parked cars, or roadside disorder.\"\n    ],\n    \"comfort\": [\n      \"Large street trees provide substantial shade along both sides of the road, which likely improves thermal comfort for people using the sidewalks.\",\n      \"The asphalt road surface looks smooth and well maintained, which supports comfortable movement for drivers and riders and suggests relatively even walking surfaces nearby.\",\n      \"The street appears uncrowded and calm in the image, with very low visible traffic volume, which likely reduces noise stress and improves psychological comfort.\"\n    ],\n    \"walkability\": [\n      \"A clearly marked zebra crossing supports pedestrian movement across the street and improves route continuity at this point.\",\n      \"Tree-lined edges likely make sidewalk travel more pleasant, but the actual sidewalk width and continuity are partly obscured by trees and distance, limiting confidence in walkability.\",\n      \"No visible benches, curb ramps, pedestrian refuge islands, or active edge uses are present in the image, so walking convenience and support features appear limited.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 66.0,
+   "equity": 70.0,
+   "fairness": 64.0,
+   "accessibility": 64.0
+  },
+  "safety": 71.0,
+  "livability": 68.0,
+  "sustainability": 69.0,
+  "aesthetics": 79.0,
+  "comfort": 74.0,
+  "walkability": 63.0
+ },
+ "scores_flat": {
+  "justice": 66.0,
+  "justice_equity": 70.0,
+  "justice_fairness": 64.0,
+  "justice_accessibility": 64.0,
+  "safety": 71.0,
+  "livability": 68.0,
+  "sustainability": 69.0,
+  "aesthetics": 79.0,
+  "comfort": 74.0,
+  "walkability": 63.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:47:59+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to motor vehicles with a wide carriageway, while sidewalks are mostly hidden behind rows of trees and building edges, suggesting a somewhat vehicle-prioritized distribution of space.",
+   "A marked zebra crossing is clearly visible across the full road width, which supports fair crossing opportunities for all road users at this location.",
+   "No curb ramps, tactile paving, or other barrier-free details are visible at the crossing edges, so accessibility for users needing step-free or guided movement cannot be confirmed from the image."
+  ],
+  "safety": [
+   "The zebra crossing provides a clear pedestrian priority cue and improves crossing legibility for drivers approaching the intersection area.",
+   "The road appears wide and relatively open with long sightlines in both directions, allowing drivers, pedestrians, and riders to see each other from a distance.",
+   "There is no visible protected bike lane, refuge island, or traffic-calming feature near the crossing, so cyclists and pedestrians may still face exposure on the broad roadway."
+  ],
+  "livability": [
+   "Continuous rows of mature street trees on both sides create a greener and more residential atmosphere than a bare roadway would.",
+   "The tall apartment buildings on the right indicate a lived-in residential environment with potential daily activity and population presence.",
+   "However, the street frontage appears quiet and lacks visible benches, shopfront activity, or public gathering amenities, limiting the sense of active street life."
+  ],
+  "sustainability": [
+   "The dense tree canopy along both sides of the street contributes visible urban greenery and likely helps with shade, air quality, and heat mitigation.",
+   "The street design does not show dedicated cycling infrastructure or visible public transport stops, which weakens support for low-carbon travel choices.",
+   "The broad asphalt roadway and large paved surface suggest a car-oriented layout with limited visible permeable landscape features beyond the tree strips."
+  ],
+  "aesthetics": [
+   "The double rows of mature trees frame the street and create a strong, orderly green corridor with high visual coherence.",
+   "The residential towers on the right have a consistent height, facade rhythm, and setback pattern, giving the streetscape a neat and unified appearance.",
+   "The roadway appears clean and uncluttered, with minimal visual chaos from signage, parked cars, or roadside disorder."
+  ],
+  "comfort": [
+   "Large street trees provide substantial shade along both sides of the road, which likely improves thermal comfort for people using the sidewalks.",
+   "The asphalt road surface looks smooth and well maintained, which supports comfortable movement for drivers and riders and suggests relatively even walking surfaces nearby.",
+   "The street appears uncrowded and calm in the image, with very low visible traffic volume, which likely reduces noise stress and improves psychological comfort."
+  ],
+  "walkability": [
+   "A clearly marked zebra crossing supports pedestrian movement across the street and improves route continuity at this point.",
+   "Tree-lined edges likely make sidewalk travel more pleasant, but the actual sidewalk width and continuity are partly obscured by trees and distance, limiting confidence in walkability.",
+   "No visible benches, curb ramps, pedestrian refuge islands, or active edge uses are present in the image, so walking convenience and support features appear limited."
+  ]
+ }
+}

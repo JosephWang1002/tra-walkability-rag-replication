@@ -1,0 +1,122 @@
+{
+ "oid": "18130",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\18130.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\18130_120.579531_31.359145_09002900011507200725464726B_162.08_2015_7_姑苏区苏锦街道冉香桥_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 14.8,
+ "usage": {
+  "completion_tokens": 851,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 418,
+   "engine_ttlt_ms": 11469,
+   "pre_inference_ms": 321,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1022,
+   "service_ttlt_ms": 12053,
+   "user_visible_ttft_ms": 701
+  },
+  "prompt_tokens": 5296,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6147
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 32.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 35.0\n    },\n    \"safety\": 30.0,\n    \"livability\": 28.0,\n    \"sustainability\": 42.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 33.0,\n    \"walkability\": 24.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible route is a very narrow concrete lane with no separate sidewalk, so pedestrians, cyclists, and vehicles appear to share the same limited space rather than receiving balanced spatial allocation.\",\n      \"There are no visible curb ramps, tactile paving, marked crossings, or barrier-free edge treatments; this weakens accessibility for a broad range of users even under an all-users perspective.\",\n      \"Utility poles, rough road edges, and encroaching vegetation along the lane reduce usable width and suggest that the street does not provide equally legible and protected space for different road users.\"\n    ],\n    \"safety\": [\n      \"The lane is narrow and lacks any marked pedestrian zone, bike lane, shoulder, or centerline, increasing potential conflict if a car, bicycle, and pedestrian meet at the same time.\",\n      \"The concrete surface shows visible cracking and uneven edges, while rubble and loose material are present on the left side, creating tripping and maneuvering hazards.\",\n      \"There is no visible street lighting, crossing facility, guardrail, or traffic calming device, and the roadside vegetation can limit sightlines near the edge of the path.\"\n    ],\n    \"livability\": [\n      \"The scene appears isolated, with no visible shops, seating, bus stops, or community-facing frontage that would support daily street life.\",\n      \"The left side contains rubble and undeveloped ground, while the right side is dense vegetation; this gives the corridor a leftover or transitional character rather than an active public place.\",\n      \"Although there is greenery, the street lacks amenities such as benches, lighting, shelters, or social spaces that would make it comfortable for lingering or everyday use.\"\n    ],\n    \"sustainability\": [\n      \"Substantial roadside vegetation and tree cover are visible on both sides, which contributes positively to ecological presence compared with a fully paved corridor.\",\n      \"However, the street provides no visible dedicated walking, cycling, or public transport infrastructure, limiting support for sustainable mode choice beyond basic low-speed access.\",\n      \"The corridor looks minimally engineered, but there are no visible stormwater features, permeable pedestrian areas, or organized green infrastructure elements beyond unmanaged vegetation.\"\n    ],\n    \"aesthetics\": [\n      \"The green vegetation and tree line create a natural backdrop that softens the corridor and adds some visual interest.\",\n      \"At the same time, the cracked narrow pavement, rubble field on the left, and overhead utility wires reduce visual quality and coherence.\",\n      \"The street lacks designed landscape elements, coordinated frontage, paving detail, or street furniture, so the overall appearance feels unfinished rather than intentionally composed.\"\n    ],\n    \"comfort\": [\n      \"There is little visible shade directly over the travel path despite surrounding greenery, so thermal comfort on the exposed concrete lane is likely limited in hot weather.\",\n      \"The pavement is narrow and visibly cracked, with rough edges against grass and debris, reducing physical comfort for walking and rolling.\",\n      \"The absence of benches, shelters, buffers, or a dedicated pedestrian realm lowers psychological and physical comfort because users must occupy the same constrained corridor as occasional vehicles.\"\n    ],\n    \"walkability\": [\n      \"There is no sidewalk, curb-separated footpath, or marked pedestrian space; walking must occur directly in the vehicle lane.\",\n      \"The route is narrow and lacks crossings, wayfinding, lighting, and resting facilities, which weakens continuity and convenience for everyday pedestrian travel.\",\n      \"Vegetation, rubble, and uneven pavement edges constrain the effective walking zone, making the corridor feel more like an access track than a walkable street.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 32.0,
+   "fairness": 35.0,
+   "accessibility": 35.0
+  },
+  "safety": 30.0,
+  "livability": 28.0,
+  "sustainability": 42.0,
+  "aesthetics": 46.0,
+  "comfort": 33.0,
+  "walkability": 24.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 32.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 35.0,
+  "safety": 30.0,
+  "livability": 28.0,
+  "sustainability": 42.0,
+  "aesthetics": 46.0,
+  "comfort": 33.0,
+  "walkability": 24.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:38:54+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible route is a very narrow concrete lane with no separate sidewalk, so pedestrians, cyclists, and vehicles appear to share the same limited space rather than receiving balanced spatial allocation.",
+   "There are no visible curb ramps, tactile paving, marked crossings, or barrier-free edge treatments; this weakens accessibility for a broad range of users even under an all-users perspective.",
+   "Utility poles, rough road edges, and encroaching vegetation along the lane reduce usable width and suggest that the street does not provide equally legible and protected space for different road users."
+  ],
+  "safety": [
+   "The lane is narrow and lacks any marked pedestrian zone, bike lane, shoulder, or centerline, increasing potential conflict if a car, bicycle, and pedestrian meet at the same time.",
+   "The concrete surface shows visible cracking and uneven edges, while rubble and loose material are present on the left side, creating tripping and maneuvering hazards.",
+   "There is no visible street lighting, crossing facility, guardrail, or traffic calming device, and the roadside vegetation can limit sightlines near the edge of the path."
+  ],
+  "livability": [
+   "The scene appears isolated, with no visible shops, seating, bus stops, or community-facing frontage that would support daily street life.",
+   "The left side contains rubble and undeveloped ground, while the right side is dense vegetation; this gives the corridor a leftover or transitional character rather than an active public place.",
+   "Although there is greenery, the street lacks amenities such as benches, lighting, shelters, or social spaces that would make it comfortable for lingering or everyday use."
+  ],
+  "sustainability": [
+   "Substantial roadside vegetation and tree cover are visible on both sides, which contributes positively to ecological presence compared with a fully paved corridor.",
+   "However, the street provides no visible dedicated walking, cycling, or public transport infrastructure, limiting support for sustainable mode choice beyond basic low-speed access.",
+   "The corridor looks minimally engineered, but there are no visible stormwater features, permeable pedestrian areas, or organized green infrastructure elements beyond unmanaged vegetation."
+  ],
+  "aesthetics": [
+   "The green vegetation and tree line create a natural backdrop that softens the corridor and adds some visual interest.",
+   "At the same time, the cracked narrow pavement, rubble field on the left, and overhead utility wires reduce visual quality and coherence.",
+   "The street lacks designed landscape elements, coordinated frontage, paving detail, or street furniture, so the overall appearance feels unfinished rather than intentionally composed."
+  ],
+  "comfort": [
+   "There is little visible shade directly over the travel path despite surrounding greenery, so thermal comfort on the exposed concrete lane is likely limited in hot weather.",
+   "The pavement is narrow and visibly cracked, with rough edges against grass and debris, reducing physical comfort for walking and rolling.",
+   "The absence of benches, shelters, buffers, or a dedicated pedestrian realm lowers psychological and physical comfort because users must occupy the same constrained corridor as occasional vehicles."
+  ],
+  "walkability": [
+   "There is no sidewalk, curb-separated footpath, or marked pedestrian space; walking must occur directly in the vehicle lane.",
+   "The route is narrow and lacks crossings, wayfinding, lighting, and resting facilities, which weakens continuity and convenience for everyday pedestrian travel.",
+   "Vegetation, rubble, and uneven pavement edges constrain the effective walking zone, making the corridor feel more like an access track than a walkable street."
+  ]
+ }
+}

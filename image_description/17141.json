@@ -1,0 +1,32 @@
+{
+ "oid": "17141",
+ "description": "The image shows a wide, multi-lane roadway with no visible sidewalks or pedestrian path; the curb line is bordered by a landscaped strip with low hedges and trees that provide some greenery but not a walkable surface. Traffic is separated only by lane markings, with no physical barriers between vehicles and the curb/landscaping, and the road appears to be designed for higher-speed driving. Street lighting poles and trees are present, but there are no clear curb ramps, crosswalks, or pedestrian accessibility features visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 108,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 273,
+   "engine_ttlt_ms": 1915,
+   "pre_inference_ms": 308,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 645,
+   "service_ttlt_ms": 2281,
+   "user_visible_ttft_ms": 338
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1092
+ },
+ "latency_s": 47.5,
+ "timestamp": "2026-08-31T16:16:27"
+}

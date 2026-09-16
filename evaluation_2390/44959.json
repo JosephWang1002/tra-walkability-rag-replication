@@ -1,0 +1,88 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 57,
+      "equity": 60,
+      "fairness": 55,
+      "accessibility": 56
+    },
+    "safety": 61,
+    "livability": 48,
+    "sustainability": 46,
+    "aesthetics": 72,
+    "comfort": 58,
+    "walkability": 52,
+    "bikeability": 34
+  },
+  "explanations": {
+    "justice": [
+      "Spatial resources appear to prioritize cars: the central carriageway is wide and multiple parked cars occupy the street space, while pedestrian space is limited to side walkways.",
+      "Bollards along the left edge protect pedestrians from vehicles, but they also signal a strong separation where vehicle movement dominates the main corridor.",
+      "Sidewalks on both sides look paved and continuous, which supports baseline accessibility for all users.",
+      "No visible tactile paving, marked curb ramps, or dedicated accessible crossing treatment can be identified in the image, reducing accessibility for users with visual or mobility needs.",
+      "There is no visible bicycle lane or designated cycling space, indicating uneven allocation of street space across travel modes."
+    ],
+    "safety": [
+      "The roadway has a centerline and a relatively orderly lane layout, which helps organize vehicle movement and reduce confusion for drivers.",
+      "Bollards and landscaped edges create a physical buffer between pedestrians and the travel lane near the building frontage.",
+      "Several parked cars line both sides of the internal street, which can create dooring risk and visibility conflicts for pedestrians and any cyclists.",
+      "The covered overhead structure darkens the foreground substantially, which may reduce visibility and perceived security compared with the brighter open section beyond.",
+      "No marked pedestrian crossing is visible across the vehicular lane, so pedestrians may need to cross informally in a car-oriented environment."
+    ],
+    "livability": [
+      "The scene appears to be an office or institutional complex with formal building facades and little visible street life, limiting everyday social vibrancy.",
+      "There are planted hedges and small landscaped areas along the edges, which add some environmental quality to the otherwise hard-built setting.",
+      "No benches, kiosks, outdoor seating, or active ground-floor uses are visible, reducing opportunities for lingering and social interaction.",
+      "The internal road functions mainly as an access corridor for cars rather than a multi-use public place.",
+      "The space looks orderly and well maintained, which supports a basic level of environmental quality even if activity diversity is low."
+    ],
+    "sustainability": [
+      "Some greenery is present in the form of hedges and planted borders, but vegetation coverage is modest relative to the amount of pavement and building mass.",
+      "The streetscape is dominated by asphalt roadway, structured building frontage, and private vehicles, suggesting a car-oriented access pattern.",
+      "No bike lane, bike parking, bus stop, or other visible support for low-carbon transport can be identified.",
+      "The large covered structure provides shade but does not visibly integrate ecological features such as green roofs, permeable paving, or stormwater elements.",
+      "The limited tree canopy means the space likely provides weaker cooling and biodiversity benefits than a greener street would."
+    ],
+    "aesthetics": [
+      "The buildings have consistent materials, rectilinear geometry, and a coherent façade treatment, creating strong visual order.",
+      "The landscaped hedges soften the edges of the roadway and improve the visual quality of the complex.",
+      "The street appears clean, with well-maintained paving, trimmed planting, and little visible clutter.",
+      "The monumental columns and overhead connection create a formal, impressive architectural frame.",
+      "However, the dark canopy and vehicle-dominated foreground make the scene feel somewhat heavy and less inviting at eye level."
+    ],
+    "comfort": [
+      "The covered section offers substantial shade, which can improve thermal comfort during hot or rainy conditions.",
+      "Sidewalk paving looks smooth and even, supporting physical comfort for walking.",
+      "No seating or resting facilities are visible along the route, limiting comfort for people who need to pause.",
+      "The enclosed overhead ceiling and large columns create a dimmer environment, which may reduce psychological comfort for some users.",
+      "Landscaped edges provide some visual relief, but the strong presence of parked and moving cars may reduce overall calmness."
+    ],
+    "walkability": [
+      "There are sidewalks on both sides of the roadway, and the walking paths appear continuous through the visible section.",
+      "Bollards and raised walkway edges help define pedestrian territory and offer some protection from vehicles.",
+      "The space lacks visible zebra crossings or priority treatments where pedestrians would cross the internal road.",
+      "The setting is primarily organized around vehicle access, making walking feel secondary rather than primary.",
+      "Shaded building overhangs improve weather protection, but the limited active frontage and absence of pedestrian amenities reduce walking attractiveness."
+    ],
+    "bikeability": [
+      "No dedicated bike lane, painted cycle marking, or physically protected cycling facility is visible anywhere in the corridor.",
+      "Parked cars along both sides of the road create potential conflicts and dooring hazards for cyclists.",
+      "The roadway appears usable for shared cycling at low speed, but this depends on vehicle behavior rather than on bicycle-specific design.",
+      "No bicycle parking racks or end-of-trip facilities are visible near the building entrances.",
+      "The narrow functional corridor between curbs, bollards, and parked vehicles offers weak comfort for less confident cyclists."
+    ]
+  },
+  "image_id": "img-1777226059278-1042pycg0",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4"
+  },
+  "generated_at": "2026-04-26T19:02:29.773Z",
+  "record_id": "92625b1f002642a5be1b78112d2311af",
+  "stored_image_url": "/storage/records/92625b1f002642a5be1b78112d2311af/image.jpg",
+  "stored_thumb_url": "/storage/records/92625b1f002642a5be1b78112d2311af/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-26T19:02:50.820Z"
+}

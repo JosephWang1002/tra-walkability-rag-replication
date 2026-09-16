@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 66.5,
+      "equity": 64,
+      "fairness": 65,
+      "accessibility": 71
+    },
+    "safety": 67.5,
+    "livability": 52.5,
+    "sustainability": 63,
+    "aesthetics": 58.5,
+    "comfort": 61.5,
+    "walkability": 59,
+    "bikeability": 55.5
+  },
+  "explanations": {
+    "justice": [
+      "Road space is heavily allocated to motor vehicles (multiple wide lanes), while pedestrian space appears limited to a narrow sidewalk on the right, suggesting an uneven distribution of spatial resources across user types.",
+      "A bus stop shelter is present on the right, indicating some provision for non-driving users and more equitable access to mobility compared with car-only corridors.",
+      "The right-side sidewalk looks paved and relatively unobstructed near the bus stop, supporting basic accessibility, but no curb ramps/tactile paving are visible in this view, limiting confidence in barrier-free continuity for all users.",
+      "Long blocks under an elevated structure and the absence of visible crossings in the scene can reduce practical accessibility for people who need to cross the corridor, affecting fairness of access between both sides."
+    ],
+    "safety": [
+      "Clear lane markings and a wide carriageway can improve driver guidance, but the overall design appears high-speed, increasing crash severity risk for all users if conflicts occur.",
+      "The bus stop is directly adjacent to the roadway with no clearly visible protective buffer (e.g., guardrail or wide furnishing zone), which can increase risk for waiting passengers near moving traffic.",
+      "An elevated structure overhead creates a visually enclosed corridor; combined with long sightlines, it may encourage higher driving speeds, reducing safety for pedestrians/cyclists near the edge.",
+      "There is no clearly visible protected bicycle lane or physical separation for cyclists; cyclists would likely need to share space with fast traffic or ride near the curb, increasing conflict risk."
+    ],
+    "livability": [
+      "The corridor appears dominated by through-traffic infrastructure (elevated viaduct and multi-lane road), with little street-level frontage activity, reducing opportunities for social interaction.",
+      "A bus stop provides a basic public amenity, but there are no visible shops, community facilities, or active edges in the immediate streetscape to support everyday street life.",
+      "Greenery exists along the sides (trees and shrubs), yet the space under the elevated structure and broad road create a less people-oriented environment for lingering or recreation.",
+      "No visible seating or small public-space elements near the bus stop are apparent from this angle, limiting the street’s usefulness as a comfortable place to stay."
+    ],
+    "sustainability": [
+      "Public transport infrastructure (bus stop shelter) supports lower-carbon travel options versus car dependence.",
+      "Street trees and planted strips along both sides provide some ecosystem services (shade, air filtration, habitat) and contribute to greener infrastructure.",
+      "The elevated roadway and extensive asphalt area indicate a large impervious surface footprint; no visible permeable paving, bioswales, or stormwater features are evident in the scene.",
+      "Lack of clearly marked/segregated cycling facilities reduces the likelihood of mode shift to cycling, limiting sustainability benefits."
+    ],
+    "aesthetics": [
+      "The massive elevated structure visually dominates the scene, creating a heavy, industrial character that can reduce perceived visual appeal for many users.",
+      "Landscaping (trees and low shrubs) adds greenery and softens the hard infrastructure edges, improving visual quality compared with a fully paved corridor.",
+      "The roadway looks clean and well-maintained with crisp lane markings, which supports an orderly appearance.",
+      "Overhead power lines and large utility poles add visual clutter along the right side, detracting from streetscape coherence."
+    ],
+    "comfort": [
+      "Thermal comfort is mixed: the elevated structure provides extensive shade over the roadway and parts of the corridor, while the right-side sidewalk area near the bus stop appears more exposed with limited tree canopy directly over it.",
+      "Physical comfort for walkers/transit users seems moderate due to paved sidewalks and a covered bus shelter, but a lack of visible benches or resting features beyond the shelter reduces comfort for waiting and lingering.",
+      "Psychological comfort may be reduced by the wide, fast-feeling road environment and the imposing viaduct overhead, which can make the space feel vehicle-prioritized and less relaxing.",
+      "Traffic noise and air exposure are likely higher near the curb due to multi-lane traffic, reducing overall comfort for pedestrians and bus users."
+    ],
+    "walkability": [
+      "A continuous paved sidewalk is visible on the right, supporting basic pedestrian movement along the corridor.",
+      "However, the streetscape is car-oriented (multi-lane width, long straight alignment) and lacks visible pedestrian crossings/refuge islands in this view, reducing practical walkability and connectivity.",
+      "The bus stop increases walk-and-ride potential, but the walking environment to access it appears exposed to adjacent traffic with minimal buffering.",
+      "Limited active frontage and few human-scale elements (e.g., frequent entrances, seating nodes) reduce walking attractiveness for all user groups."
+    ],
+    "bikeability": [
+      "No dedicated or protected bicycle lane markings are visible; cyclists would likely ride in mixed traffic or on the edge, which is uncomfortable and risky on a wide arterial.",
+      "The wide lanes and long straight corridor suggest higher vehicle speeds, which discourages cycling for most users.",
+      "There is no visible bicycle parking or cycling-support facilities near the bus stop, reducing convenience for bike-transit integration.",
+      "While the roadway surface appears smooth and well-maintained (a positive for riding quality), the lack of separation and intersection/crossing support dominates overall bikeability."
+    ]
+  },
+  "image_id": "img-1776928211131-1dnvqmi7v",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T11:17:46.603Z",
+  "record_id": "dfeee4f0999c471faa4f67d060bc3d6b",
+  "stored_image_url": "/storage/records/dfeee4f0999c471faa4f67d060bc3d6b/image.jpg",
+  "stored_thumb_url": "/storage/records/dfeee4f0999c471faa4f67d060bc3d6b/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T11:18:21.018Z"
+}

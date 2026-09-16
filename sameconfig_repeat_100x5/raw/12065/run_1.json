@@ -1,0 +1,122 @@
+{
+ "oid": "12065",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12065.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12065_120.455786_31.377091_09002900011602251003026904E_242.68_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 23.8,
+ "usage": {
+  "completion_tokens": 799,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 409,
+   "engine_ttlt_ms": 11375,
+   "pre_inference_ms": 1039,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1711,
+   "service_ttlt_ms": 12671,
+   "user_visible_ttft_ms": 671
+  },
+  "prompt_tokens": 5277,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6076
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 31.0,\n      \"equity\": 34.0,\n      \"fairness\": 30.0,\n      \"accessibility\": 29.0\n    },\n    \"safety\": 27.0,\n    \"livability\": 24.0,\n    \"sustainability\": 38.0,\n    \"aesthetics\": 36.0,\n    \"comfort\": 28.0,\n    \"walkability\": 22.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by an unpaved vehicle track, while no dedicated sidewalk, cycle lane, or marked pedestrian zone is visible, so different road users do not receive balanced space.\",\n      \"Accessibility is weak because the route surface is loose dirt and gravel with potholes and uneven patches, which would hinder strollers, wheelchairs, and people with limited mobility.\",\n      \"Fair treatment across users is limited because pedestrians must share the same narrow carriageway with a visible construction vehicle, and there are no markings, curbs, or protective separators to organize movement.\"\n    ],\n    \"safety\": [\n      \"The road is unpaved and visibly uneven, with ruts, loose stones, and surface defects that increase slip and trip risk for all users.\",\n      \"A construction vehicle is parked directly on the travel path, narrowing the usable width and creating conflict for pedestrians, cyclists, and drivers.\",\n      \"There are no visible sidewalks, crossings, lane markings, guardrails, or traffic-calming elements, so user separation and movement guidance are very limited.\"\n    ],\n    \"livability\": [\n      \"The setting appears industrial or peri-urban, with a long blue metal fence on one side and little visible active frontage, shops, or community-serving uses.\",\n      \"There are no visible benches, bus stops, lighting amenities, or social spaces that would support everyday street life.\",\n      \"Dusty ground conditions, scattered debris, and a utilitarian road environment reduce the sense of cleanliness and everyday neighborhood vitality.\"\n    ],\n    \"sustainability\": [\n      \"The line of mature trees and shrubs on the right provides some green cover and ecological value compared with a fully barren roadside.\",\n      \"However, the street lacks visible low-carbon transport infrastructure such as sidewalks, bike lanes, or transit stops, limiting sustainable travel choices.\",\n      \"The unsealed dirt surface may allow some water infiltration, but there are no visible stormwater features, planted swales, or structured green infrastructure elements.\"\n    ],\n    \"aesthetics\": [\n      \"The trees on the right add natural texture and soften part of the corridor visually.\",\n      \"Visual quality is weakened by the rough dirt roadway, exposed utility poles and overhead wires, and the long corrugated blue fence.\",\n      \"The scene feels unfinished and utilitarian, with construction equipment, bare soil, and sparse roadside detailing reducing visual coherence.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: trees on the right provide partial shade, but much of the road remains fully exposed to direct sun.\",\n      \"Physical comfort is poor because the walking surface is dusty, uneven, and unpaved, with bumps and loose material visible across the route.\",\n      \"Psychological comfort is limited by the isolated industrial character, lack of pedestrian refuge, and the need to share space with a construction vehicle on a narrow road.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very low because no sidewalk or clearly defined pedestrian path is visible along either side of the road.\",\n      \"The route surface is irregular dirt and gravel with potholes and patches, which reduces walking stability and convenience.\",\n      \"There are no crossings, curb ramps, wayfinding cues, or pedestrian-scale amenities such as seating, lighting, or continuous frontage to support walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 31.0,
+   "equity": 34.0,
+   "fairness": 30.0,
+   "accessibility": 29.0
+  },
+  "safety": 27.0,
+  "livability": 24.0,
+  "sustainability": 38.0,
+  "aesthetics": 36.0,
+  "comfort": 28.0,
+  "walkability": 22.0
+ },
+ "scores_flat": {
+  "justice": 31.0,
+  "justice_equity": 34.0,
+  "justice_fairness": 30.0,
+  "justice_accessibility": 29.0,
+  "safety": 27.0,
+  "livability": 24.0,
+  "sustainability": 38.0,
+  "aesthetics": 36.0,
+  "comfort": 28.0,
+  "walkability": 22.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:16:23+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by an unpaved vehicle track, while no dedicated sidewalk, cycle lane, or marked pedestrian zone is visible, so different road users do not receive balanced space.",
+   "Accessibility is weak because the route surface is loose dirt and gravel with potholes and uneven patches, which would hinder strollers, wheelchairs, and people with limited mobility.",
+   "Fair treatment across users is limited because pedestrians must share the same narrow carriageway with a visible construction vehicle, and there are no markings, curbs, or protective separators to organize movement."
+  ],
+  "safety": [
+   "The road is unpaved and visibly uneven, with ruts, loose stones, and surface defects that increase slip and trip risk for all users.",
+   "A construction vehicle is parked directly on the travel path, narrowing the usable width and creating conflict for pedestrians, cyclists, and drivers.",
+   "There are no visible sidewalks, crossings, lane markings, guardrails, or traffic-calming elements, so user separation and movement guidance are very limited."
+  ],
+  "livability": [
+   "The setting appears industrial or peri-urban, with a long blue metal fence on one side and little visible active frontage, shops, or community-serving uses.",
+   "There are no visible benches, bus stops, lighting amenities, or social spaces that would support everyday street life.",
+   "Dusty ground conditions, scattered debris, and a utilitarian road environment reduce the sense of cleanliness and everyday neighborhood vitality."
+  ],
+  "sustainability": [
+   "The line of mature trees and shrubs on the right provides some green cover and ecological value compared with a fully barren roadside.",
+   "However, the street lacks visible low-carbon transport infrastructure such as sidewalks, bike lanes, or transit stops, limiting sustainable travel choices.",
+   "The unsealed dirt surface may allow some water infiltration, but there are no visible stormwater features, planted swales, or structured green infrastructure elements."
+  ],
+  "aesthetics": [
+   "The trees on the right add natural texture and soften part of the corridor visually.",
+   "Visual quality is weakened by the rough dirt roadway, exposed utility poles and overhead wires, and the long corrugated blue fence.",
+   "The scene feels unfinished and utilitarian, with construction equipment, bare soil, and sparse roadside detailing reducing visual coherence."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: trees on the right provide partial shade, but much of the road remains fully exposed to direct sun.",
+   "Physical comfort is poor because the walking surface is dusty, uneven, and unpaved, with bumps and loose material visible across the route.",
+   "Psychological comfort is limited by the isolated industrial character, lack of pedestrian refuge, and the need to share space with a construction vehicle on a narrow road."
+  ],
+  "walkability": [
+   "Walkability is very low because no sidewalk or clearly defined pedestrian path is visible along either side of the road.",
+   "The route surface is irregular dirt and gravel with potholes and patches, which reduces walking stability and convenience.",
+   "There are no crossings, curb ramps, wayfinding cues, or pedestrian-scale amenities such as seating, lighting, or continuous frontage to support walking."
+  ]
+ }
+}

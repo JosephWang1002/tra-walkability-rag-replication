@@ -1,0 +1,73 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 30,
+      "equity": 33,
+      "fairness": 28,
+      "accessibility": 25
+    },
+    "safety": 64,
+    "livability": 20,
+    "sustainability": 51,
+    "aesthetics": 47,
+    "comfort": 30,
+    "walkability": 10,
+    "bikeability": 6
+  },
+  "explanations": {
+    "justice": [
+      "All road right-of-way exclusively serves high-speed motor vehicle traffic.",
+      "No accessibility barrier-free facilities, severely ignoring travel needs of disadvantaged groups.",
+      "Spatial resource allocation has an extreme bias towards motor vehicle users."
+    ],
+    "safety": [
+      "Clear lane markings and guide markings standardize vehicle driving trajectory.",
+      "Guardrail isolation on both sides effectively reduces cross risk.",
+      "Large truck adjacent driving increases driving risk and potential hazard severity."
+    ],
+    "livability": [
+      "Pure transportation corridor without any living and service attributes.",
+      "No leisure, rest and social interaction facilities along the route.",
+      "Cannot provide any livability enhancement for surrounding residents."
+    ],
+    "sustainability": [
+      "Good green vegetation configuration on both sides delivers ecological benefits.",
+      "Large-area impervious pavement lacks rainwater ecological management.",
+      "Car-oriented design cannot support low-carbon green travel transformation."
+    ],
+    "aesthetics": [
+      "Neat green belts on both sides maintain basic tidy landscape effect.",
+      "Distant large billboards affect the overall visual purity of the road.",
+      "Open field of view brings a broad but monotonous visual experience."
+    ],
+    "comfort": [
+      "Smooth pavement ensures good driving comfort for vehicles.",
+      "Mixed large vehicle traffic brings high noise and exhaust pollution impact.",
+      "No human-oriented buffer design, poor psychological comfort for vulnerable groups."
+    ],
+    "walkability": [
+      "Strictly prohibit pedestrian walking on this highway section.",
+      "High vehicle speed brings fatal threat to pedestrian safety.",
+      "Completely no pedestrian supporting infrastructure configuration."
+    ],
+    "bikeability": [
+      "Bicycle access is clearly prohibited on high-speed expressways.",
+      "No any special facilities reserved for cycling activities.",
+      "Large vehicle traffic flow creates extremely dangerous cycling environment."
+    ]
+  },
+  "image_id": "img-highway-004",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-22T12:03:00.000Z",
+  "record_id": "rec-highway-004",
+  "stored_image_url": "/storage/records/rec-highway-004/image.jpg",
+  "stored_thumb_url": "/storage/records/rec-highway-004/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-22T12:03:30.000Z"
+}

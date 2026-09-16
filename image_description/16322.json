@@ -1,0 +1,33 @@
+{
+ "oid": "16322",
+ "description": "The view shows a multi-lane roadway with no visible pedestrian sidewalk; the left side is dominated by a large truck and a building/overpass support, leaving pedestrians no clear, continuous walking space. Traffic is separated from the camera’s side only by lane markings, with no barriers or curb separation, and the road appears open and relatively fast. There is some greenery along the right (trees/shrubs) but limited pedestrian infrastructure, and lighting is provided by tall streetlights; no curb cuts, ramps, or other accessibility features are visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 113,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 757,
+   "engine_ttlt_ms": 2264,
+   "pre_inference_ms": 342,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1573,
+   "service_ttlt_ms": 3074,
+   "total_duration_ms": 2741,
+   "user_visible_ttft_ms": 1231
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1097
+ },
+ "latency_s": 5.8,
+ "timestamp": "2026-08-31T16:08:45"
+}

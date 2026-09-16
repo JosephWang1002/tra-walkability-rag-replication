@@ -1,0 +1,122 @@
+{
+ "oid": "1562",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\1562.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\1562_120.686463_31.04475_01002900001406071140120345L_1.64_2014_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.4,
+ "usage": {
+  "completion_tokens": 812,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 400,
+   "engine_ttlt_ms": 11142,
+   "pre_inference_ms": 591,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1286,
+   "service_ttlt_ms": 12023,
+   "user_visible_ttft_ms": 695
+  },
+  "prompt_tokens": 5300,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6112
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 22.0,\n      \"equity\": 20.0,\n      \"fairness\": 22.0,\n      \"accessibility\": 24.0\n    },\n    \"safety\": 38.0,\n    \"livability\": 18.0,\n    \"sustainability\": 26.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 34.0,\n    \"walkability\": 8.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible space is overwhelmingly allocated to multiple wide motor-vehicle lanes, while no sidewalk, pedestrian zone, or cycling facility is visible, indicating highly uneven distribution of street space for all road users.\",\n      \"Continuous guardrails on both sides and a freeway-style cross section suggest that non-drivers are effectively excluded from using this corridor, which weakens fairness for users who do not travel by car.\",\n      \"No curb ramps, tactile paving, marked crossings, refuge islands, or bus stops are visible, so accessible movement options for diverse users cannot be observed in the scene.\"\n    ],\n    \"safety\": [\n      \"Lane markings are clear and the roadway is wide and straight, which supports predictable vehicle movement for drivers.\",\n      \"Metal guardrails along both edges provide roadside containment, reducing the chance of vehicles leaving the carriageway.\",\n      \"However, the very wide high-speed roadway, long open sightline, and absence of any protected pedestrian or cyclist infrastructure make the environment unsafe for anyone outside a motor vehicle.\"\n    ],\n    \"livability\": [\n      \"The scene functions as a highway corridor rather than a social street: there are no shops, benches, transit stops, or public gathering spaces visible.\",\n      \"Large expanses of asphalt and sparse roadside activity provide little support for daily street life or human-scale interaction.\",\n      \"Although roadside greenery exists beyond the guardrails, it is separated from users by barriers and does not create an active, usable public realm.\"\n    ],\n    \"sustainability\": [\n      \"The corridor appears designed primarily for private motor traffic, with several travel lanes and no visible support for walking, cycling, or public transport.\",\n      \"Vegetation is present along both sides and in the median edge areas, which adds some ecological value and softens the highway environment slightly.\",\n      \"No visible bus lane, bus stop, bike lane, permeable paving, or stormwater feature can be identified, limiting evidence of low-carbon or green-infrastructure design.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway has a clean, orderly appearance with consistent lane markings and a visually uncluttered horizon.\",\n      \"Green vegetation lining both sides adds some visual relief to the otherwise expansive paved corridor.\",\n      \"At the same time, the dominant impression is monotonous infrastructure: broad asphalt, guardrails, overpass structures, and large billboards reduce human-scale visual quality.\"\n    ],\n    \"comfort\": [\n      \"There is no visible shade structure, street tree canopy over users, or sheltered space, so thermal comfort is poor in this exposed sunlit corridor.\",\n      \"The road surface appears smooth for vehicles, but no pedestrian paving, seating, or resting facilities are visible for non-motorized users.\",\n      \"Psychological comfort is limited for all road users because the environment is dominated by fast-moving traffic space, long distances, and barriers, with little sense of enclosure or refuge outside a vehicle.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk or footpath is visible anywhere in the image, so there is no dedicated walking space.\",\n      \"There are no zebra crossings, pedestrian signals, refuge islands, or curb extensions visible, meaning crossing opportunities are effectively absent.\",\n      \"Guardrails, multiple traffic lanes, and freeway geometry create strong severance, making the corridor functionally unwalkable for all road users outside vehicles.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 22.0,
+   "equity": 20.0,
+   "fairness": 22.0,
+   "accessibility": 24.0
+  },
+  "safety": 38.0,
+  "livability": 18.0,
+  "sustainability": 26.0,
+  "aesthetics": 46.0,
+  "comfort": 34.0,
+  "walkability": 8.0
+ },
+ "scores_flat": {
+  "justice": 22.0,
+  "justice_equity": 20.0,
+  "justice_fairness": 22.0,
+  "justice_accessibility": 24.0,
+  "safety": 38.0,
+  "livability": 18.0,
+  "sustainability": 26.0,
+  "aesthetics": 46.0,
+  "comfort": 34.0,
+  "walkability": 8.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:26:24+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible space is overwhelmingly allocated to multiple wide motor-vehicle lanes, while no sidewalk, pedestrian zone, or cycling facility is visible, indicating highly uneven distribution of street space for all road users.",
+   "Continuous guardrails on both sides and a freeway-style cross section suggest that non-drivers are effectively excluded from using this corridor, which weakens fairness for users who do not travel by car.",
+   "No curb ramps, tactile paving, marked crossings, refuge islands, or bus stops are visible, so accessible movement options for diverse users cannot be observed in the scene."
+  ],
+  "safety": [
+   "Lane markings are clear and the roadway is wide and straight, which supports predictable vehicle movement for drivers.",
+   "Metal guardrails along both edges provide roadside containment, reducing the chance of vehicles leaving the carriageway.",
+   "However, the very wide high-speed roadway, long open sightline, and absence of any protected pedestrian or cyclist infrastructure make the environment unsafe for anyone outside a motor vehicle."
+  ],
+  "livability": [
+   "The scene functions as a highway corridor rather than a social street: there are no shops, benches, transit stops, or public gathering spaces visible.",
+   "Large expanses of asphalt and sparse roadside activity provide little support for daily street life or human-scale interaction.",
+   "Although roadside greenery exists beyond the guardrails, it is separated from users by barriers and does not create an active, usable public realm."
+  ],
+  "sustainability": [
+   "The corridor appears designed primarily for private motor traffic, with several travel lanes and no visible support for walking, cycling, or public transport.",
+   "Vegetation is present along both sides and in the median edge areas, which adds some ecological value and softens the highway environment slightly.",
+   "No visible bus lane, bus stop, bike lane, permeable paving, or stormwater feature can be identified, limiting evidence of low-carbon or green-infrastructure design."
+  ],
+  "aesthetics": [
+   "The roadway has a clean, orderly appearance with consistent lane markings and a visually uncluttered horizon.",
+   "Green vegetation lining both sides adds some visual relief to the otherwise expansive paved corridor.",
+   "At the same time, the dominant impression is monotonous infrastructure: broad asphalt, guardrails, overpass structures, and large billboards reduce human-scale visual quality."
+  ],
+  "comfort": [
+   "There is no visible shade structure, street tree canopy over users, or sheltered space, so thermal comfort is poor in this exposed sunlit corridor.",
+   "The road surface appears smooth for vehicles, but no pedestrian paving, seating, or resting facilities are visible for non-motorized users.",
+   "Psychological comfort is limited for all road users because the environment is dominated by fast-moving traffic space, long distances, and barriers, with little sense of enclosure or refuge outside a vehicle."
+  ],
+  "walkability": [
+   "No sidewalk or footpath is visible anywhere in the image, so there is no dedicated walking space.",
+   "There are no zebra crossings, pedestrian signals, refuge islands, or curb extensions visible, meaning crossing opportunities are effectively absent.",
+   "Guardrails, multiple traffic lanes, and freeway geometry create strong severance, making the corridor functionally unwalkable for all road users outside vehicles."
+  ]
+ }
+}

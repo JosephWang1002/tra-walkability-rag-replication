@@ -1,0 +1,122 @@
+{
+ "oid": "17811",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\17811.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\17811_120.557779_31.262517_09002900121708231610416663O_161.91_2017_8_吴中区木渎镇中山东路281号_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.6,
+ "usage": {
+  "completion_tokens": 828,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 429,
+   "engine_ttlt_ms": 13908,
+   "pre_inference_ms": 399,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1095,
+   "service_ttlt_ms": 14570,
+   "user_visible_ttft_ms": 696
+  },
+  "prompt_tokens": 5282,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6110
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 31.0,\n      \"equity\": 34.0,\n      \"fairness\": 28.0,\n      \"accessibility\": 31.0\n    },\n    \"safety\": 24.0,\n    \"livability\": 29.0,\n    \"sustainability\": 22.0,\n    \"aesthetics\": 26.0,\n    \"comfort\": 23.0,\n    \"walkability\": 21.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Street space is dominated by the carriageway and informal edge storage, while no dedicated sidewalk is visible on either side, indicating weak and inequitable allocation of space for non-motorized users.\",\n      \"Accessibility is poor because the road edges are rough dirt and gravel, with piles of scrap metal, branches, and parked vehicles narrowing the usable margin for walking.\",\n      \"Fairness is limited by the absence of visible barrier-free elements such as curb ramps, tactile paving, marked pedestrian zones, or protected crossings, so the environment does not visibly accommodate diverse users equally.\"\n    ],\n    \"safety\": [\n      \"There is no visible sidewalk, bike lane, or shoulder separation, so pedestrians and other slow users would need to share space directly with moving cars on the narrow roadway.\",\n      \"Scrap piles, construction materials, and parked vehicles along both sides reduce sightlines and create roadside hazards, especially where users may step around obstacles into traffic.\",\n      \"The cracked pavement, uneven road edges, and utility poles close to the travel corridor increase conflict risk and reduce recovery space for all road users.\"\n    ],\n    \"livability\": [\n      \"The street lacks visible public amenities such as benches, shade structures, bus stops, or organized social space, which weakens everyday usability beyond basic vehicle access.\",\n      \"Industrial-looking frontage and open storage of metal debris and branches create a harsh edge condition rather than an inviting mixed-use public realm.\",\n      \"Although buildings are present on both sides, the street interface appears inactive and poorly maintained, with shuttered or rough frontages that do little to support vibrant street life.\"\n    ],\n    \"sustainability\": [\n      \"There is almost no visible street greenery or tree canopy along the roadway, limiting ecological value, shade, and stormwater benefits.\",\n      \"The street design appears centered on car access, with no visible support for low-carbon modes such as protected walking space, cycling facilities, or transit infrastructure.\",\n      \"No permeable landscape strips, bioswales, or rainwater-management features are visible; instead, most surfaces appear hard, dusty, and minimally landscaped.\"\n    ],\n    \"aesthetics\": [\n      \"Visible scrap metal piles, loose branches, and roadside clutter create a disorderly visual environment.\",\n      \"The roadway surface is cracked and patchy, and the street edges are unfinished, which lowers perceived maintenance quality.\",\n      \"Overhead utility wires and utilitarian building facades dominate the view, while the lack of trees or designed streetscape elements reduces visual appeal.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because there are no visible street trees or shade devices along the walking edges, leaving users exposed to sun.\",\n      \"Physical comfort is low due to the absence of sidewalks and the presence of uneven dirt shoulders, debris piles, and rough pavement conditions.\",\n      \"Psychological comfort is reduced by roadside clutter, narrow shared space with cars, and the generally neglected industrial atmosphere, which can make movement feel stressful.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very weak because no continuous sidewalk is visible; pedestrians would likely have to walk on the roadway or on rough roadside margins.\",\n      \"Obstacles such as parked cars, scrap piles, and stacked materials interrupt any potential walking path along both sides of the street.\",\n      \"There are no visible crossings, curb extensions, traffic-calming features, or shaded pedestrian zones to support safe and convenient walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 31.0,
+   "equity": 34.0,
+   "fairness": 28.0,
+   "accessibility": 31.0
+  },
+  "safety": 24.0,
+  "livability": 29.0,
+  "sustainability": 22.0,
+  "aesthetics": 26.0,
+  "comfort": 23.0,
+  "walkability": 21.0
+ },
+ "scores_flat": {
+  "justice": 31.0,
+  "justice_equity": 34.0,
+  "justice_fairness": 28.0,
+  "justice_accessibility": 31.0,
+  "safety": 24.0,
+  "livability": 29.0,
+  "sustainability": 22.0,
+  "aesthetics": 26.0,
+  "comfort": 23.0,
+  "walkability": 21.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:36:41+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Street space is dominated by the carriageway and informal edge storage, while no dedicated sidewalk is visible on either side, indicating weak and inequitable allocation of space for non-motorized users.",
+   "Accessibility is poor because the road edges are rough dirt and gravel, with piles of scrap metal, branches, and parked vehicles narrowing the usable margin for walking.",
+   "Fairness is limited by the absence of visible barrier-free elements such as curb ramps, tactile paving, marked pedestrian zones, or protected crossings, so the environment does not visibly accommodate diverse users equally."
+  ],
+  "safety": [
+   "There is no visible sidewalk, bike lane, or shoulder separation, so pedestrians and other slow users would need to share space directly with moving cars on the narrow roadway.",
+   "Scrap piles, construction materials, and parked vehicles along both sides reduce sightlines and create roadside hazards, especially where users may step around obstacles into traffic.",
+   "The cracked pavement, uneven road edges, and utility poles close to the travel corridor increase conflict risk and reduce recovery space for all road users."
+  ],
+  "livability": [
+   "The street lacks visible public amenities such as benches, shade structures, bus stops, or organized social space, which weakens everyday usability beyond basic vehicle access.",
+   "Industrial-looking frontage and open storage of metal debris and branches create a harsh edge condition rather than an inviting mixed-use public realm.",
+   "Although buildings are present on both sides, the street interface appears inactive and poorly maintained, with shuttered or rough frontages that do little to support vibrant street life."
+  ],
+  "sustainability": [
+   "There is almost no visible street greenery or tree canopy along the roadway, limiting ecological value, shade, and stormwater benefits.",
+   "The street design appears centered on car access, with no visible support for low-carbon modes such as protected walking space, cycling facilities, or transit infrastructure.",
+   "No permeable landscape strips, bioswales, or rainwater-management features are visible; instead, most surfaces appear hard, dusty, and minimally landscaped."
+  ],
+  "aesthetics": [
+   "Visible scrap metal piles, loose branches, and roadside clutter create a disorderly visual environment.",
+   "The roadway surface is cracked and patchy, and the street edges are unfinished, which lowers perceived maintenance quality.",
+   "Overhead utility wires and utilitarian building facades dominate the view, while the lack of trees or designed streetscape elements reduces visual appeal."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because there are no visible street trees or shade devices along the walking edges, leaving users exposed to sun.",
+   "Physical comfort is low due to the absence of sidewalks and the presence of uneven dirt shoulders, debris piles, and rough pavement conditions.",
+   "Psychological comfort is reduced by roadside clutter, narrow shared space with cars, and the generally neglected industrial atmosphere, which can make movement feel stressful."
+  ],
+  "walkability": [
+   "Walkability is very weak because no continuous sidewalk is visible; pedestrians would likely have to walk on the roadway or on rough roadside margins.",
+   "Obstacles such as parked cars, scrap piles, and stacked materials interrupt any potential walking path along both sides of the street.",
+   "There are no visible crossings, curb extensions, traffic-calming features, or shaded pedestrian zones to support safe and convenient walking."
+  ]
+ }
+}

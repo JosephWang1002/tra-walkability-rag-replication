@@ -1,0 +1,129 @@
+{
+ "oid": "12901",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12901.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12901_120.489343_31.361085_09002900121904211047156615H_310.25_2019_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.1,
+ "usage": {
+  "completion_tokens": 959,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 439,
+   "engine_ttlt_ms": 14723,
+   "pre_inference_ms": 656,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1450,
+   "service_ttlt_ms": 15676,
+   "user_visible_ttft_ms": 794
+  },
+  "prompt_tokens": 5272,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6231
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 32.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 35.0\n    },\n    \"safety\": 28.0,\n    \"livability\": 30.0,\n    \"sustainability\": 42.0,\n    \"aesthetics\": 62.0,\n    \"comfort\": 46.0,\n    \"walkability\": 22.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is allocated to motor traffic, with a large red truck occupying much of the narrow carriageway while no dedicated sidewalk is visible, indicating weak spatial equity for non-drivers.\",\n      \"The right edge has only a narrow paved shoulder beside a curb and leaf litter, which does not provide a clearly protected pedestrian zone and suggests limited fair accommodation for different road users.\",\n      \"No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible, so accessibility appears poor for users who need formal pedestrian infrastructure.\",\n      \"A motorcyclist appears to share the same narrow roadway with heavy trucks, showing that vulnerable users are not given clearly separated space.\"\n    ],\n    \"safety\": [\n      \"A heavy truck and another large vehicle are using a very narrow two-way road, leaving limited lateral clearance and increasing conflict risk for all road users.\",\n      \"There is no visible sidewalk, guardrail, or buffer separating pedestrians from moving vehicles, so anyone walking would be exposed directly to traffic.\",\n      \"No marked crosswalks, warning signs, speed-calming devices, or refuge areas are visible, reducing protection on a road carrying large freight vehicles.\",\n      \"The road edge on the right is lined by a curb and vegetation, which leaves little recovery space if drivers or riders need to evade oncoming traffic.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by freight traffic, including a large tanker truck, which makes the environment feel more like a service road than a people-oriented public street.\",\n      \"There are no visible benches, storefronts, bus stops, or community facilities that would support daily social activity or street life.\",\n      \"The abundant trees and green vegetation improve environmental quality visually, but the lack of pedestrian amenities limits everyday usability.\",\n      \"The narrow road and absence of active frontages reduce opportunities for lingering, social interaction, or comfortable local access.\"\n    ],\n    \"sustainability\": [\n      \"Large mature trees and dense roadside vegetation provide ecological value, shade, and some carbon-sequestration benefit.\",\n      \"However, the corridor appears designed primarily for motor vehicles, with heavy trucks visible and no dedicated transit stop, bike lane, or pedestrian facility to support low-carbon travel choices.\",\n      \"The road surface appears to be conventional asphalt, and no visible permeable paving, bioswale, or stormwater feature can be identified.\",\n      \"Tree cover along the right side contributes positively to green infrastructure, but this benefit is offset by the dominance of freight movement.\"\n    ],\n    \"aesthetics\": [\n      \"The tall trees and dense greenery on both sides create a pleasant natural backdrop and soften the roadside environment.\",\n      \"The corridor has a simple, uncluttered visual character with limited signage and infrastructure clutter.\",\n      \"At the same time, the large red truck and utilitarian asphalt roadway dominate the foreground, reducing scenic harmony.\",\n      \"Leaf litter along the curb and the absence of designed pedestrian elements make the space feel less refined despite the strong vegetation.\"\n    ],\n    \"comfort\": [\n      \"The mature trees on the right side likely provide meaningful shade, which improves thermal comfort during warm weather.\",\n      \"There are no visible benches, rest areas, or widened pedestrian spaces, so physical comfort for people outside vehicles is limited.\",\n      \"The absence of a formal sidewalk means pedestrians would need to use a narrow edge next to moving traffic, reducing both physical and psychological comfort.\",\n      \"Heavy trucks on a narrow road likely increase noise, perceived danger, and stress for anyone walking or cycling in the corridor.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk is visible; the only apparent walking space is a narrow road edge beside a curb and vegetation, which severely limits walkability.\",\n      \"There are no marked crossings, curb ramps, pedestrian signs, or refuge islands to support safe and connected walking routes.\",\n      \"Heavy vehicles occupy most of the carriageway, making walking alongside the road feel unsafe and uncomfortable.\",\n      \"Although tree cover improves shade, the lack of dedicated pedestrian infrastructure outweighs this benefit for practical walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 32.0,
+   "fairness": 35.0,
+   "accessibility": 35.0
+  },
+  "safety": 28.0,
+  "livability": 30.0,
+  "sustainability": 42.0,
+  "aesthetics": 62.0,
+  "comfort": 46.0,
+  "walkability": 22.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 32.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 35.0,
+  "safety": 28.0,
+  "livability": 30.0,
+  "sustainability": 42.0,
+  "aesthetics": 62.0,
+  "comfort": 46.0,
+  "walkability": 22.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:19:49+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is allocated to motor traffic, with a large red truck occupying much of the narrow carriageway while no dedicated sidewalk is visible, indicating weak spatial equity for non-drivers.",
+   "The right edge has only a narrow paved shoulder beside a curb and leaf litter, which does not provide a clearly protected pedestrian zone and suggests limited fair accommodation for different road users.",
+   "No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible, so accessibility appears poor for users who need formal pedestrian infrastructure.",
+   "A motorcyclist appears to share the same narrow roadway with heavy trucks, showing that vulnerable users are not given clearly separated space."
+  ],
+  "safety": [
+   "A heavy truck and another large vehicle are using a very narrow two-way road, leaving limited lateral clearance and increasing conflict risk for all road users.",
+   "There is no visible sidewalk, guardrail, or buffer separating pedestrians from moving vehicles, so anyone walking would be exposed directly to traffic.",
+   "No marked crosswalks, warning signs, speed-calming devices, or refuge areas are visible, reducing protection on a road carrying large freight vehicles.",
+   "The road edge on the right is lined by a curb and vegetation, which leaves little recovery space if drivers or riders need to evade oncoming traffic."
+  ],
+  "livability": [
+   "The scene is dominated by freight traffic, including a large tanker truck, which makes the environment feel more like a service road than a people-oriented public street.",
+   "There are no visible benches, storefronts, bus stops, or community facilities that would support daily social activity or street life.",
+   "The abundant trees and green vegetation improve environmental quality visually, but the lack of pedestrian amenities limits everyday usability.",
+   "The narrow road and absence of active frontages reduce opportunities for lingering, social interaction, or comfortable local access."
+  ],
+  "sustainability": [
+   "Large mature trees and dense roadside vegetation provide ecological value, shade, and some carbon-sequestration benefit.",
+   "However, the corridor appears designed primarily for motor vehicles, with heavy trucks visible and no dedicated transit stop, bike lane, or pedestrian facility to support low-carbon travel choices.",
+   "The road surface appears to be conventional asphalt, and no visible permeable paving, bioswale, or stormwater feature can be identified.",
+   "Tree cover along the right side contributes positively to green infrastructure, but this benefit is offset by the dominance of freight movement."
+  ],
+  "aesthetics": [
+   "The tall trees and dense greenery on both sides create a pleasant natural backdrop and soften the roadside environment.",
+   "The corridor has a simple, uncluttered visual character with limited signage and infrastructure clutter.",
+   "At the same time, the large red truck and utilitarian asphalt roadway dominate the foreground, reducing scenic harmony.",
+   "Leaf litter along the curb and the absence of designed pedestrian elements make the space feel less refined despite the strong vegetation."
+  ],
+  "comfort": [
+   "The mature trees on the right side likely provide meaningful shade, which improves thermal comfort during warm weather.",
+   "There are no visible benches, rest areas, or widened pedestrian spaces, so physical comfort for people outside vehicles is limited.",
+   "The absence of a formal sidewalk means pedestrians would need to use a narrow edge next to moving traffic, reducing both physical and psychological comfort.",
+   "Heavy trucks on a narrow road likely increase noise, perceived danger, and stress for anyone walking or cycling in the corridor."
+  ],
+  "walkability": [
+   "No continuous sidewalk is visible; the only apparent walking space is a narrow road edge beside a curb and vegetation, which severely limits walkability.",
+   "There are no marked crossings, curb ramps, pedestrian signs, or refuge islands to support safe and connected walking routes.",
+   "Heavy vehicles occupy most of the carriageway, making walking alongside the road feel unsafe and uncomfortable.",
+   "Although tree cover improves shade, the lack of dedicated pedestrian infrastructure outweighs this benefit for practical walking."
+  ]
+ }
+}

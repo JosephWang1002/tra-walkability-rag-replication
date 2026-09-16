@@ -1,0 +1,33 @@
+{
+ "oid": "20443",
+ "description": "The road appears to have no continuous pedestrian sidewalk; the edges are mostly narrow paved shoulders/curbs with patches of grass and shrubs, and there are no visible curb ramps or marked pedestrian crossings. Traffic is separated from the pedestrian area only by the curb/edge, with a wide multi-lane roadway and no physical barriers; lighting is provided by tall streetlights along the median/roadside. Vegetation and trees provide some greenery but limited, intermittent shade, and there are few obvious pedestrian obstacles or accessibility features visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 108,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 20,
+   "engine_ttft_ms": 2178,
+   "engine_ttlt_ms": 4360,
+   "pre_inference_ms": 358,
+   "service_tbt_ms": 20,
+   "service_ttft_ms": 2996,
+   "service_ttlt_ms": 5172,
+   "total_duration_ms": 4822,
+   "user_visible_ttft_ms": 2638
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1092
+ },
+ "latency_s": 8.0,
+ "timestamp": "2026-08-31T16:30:43"
+}

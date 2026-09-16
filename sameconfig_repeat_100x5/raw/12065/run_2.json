@@ -1,0 +1,122 @@
+{
+ "oid": "12065",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12065.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12065_120.455786_31.377091_09002900011602251003026904E_242.68_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.0,
+ "usage": {
+  "completion_tokens": 784,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 463,
+   "engine_ttlt_ms": 11157,
+   "pre_inference_ms": 386,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1137,
+   "service_ttlt_ms": 11813,
+   "user_visible_ttft_ms": 751
+  },
+  "prompt_tokens": 5277,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6061
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 31.0,\n      \"equity\": 28.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 30.0\n    },\n    \"safety\": 34.0,\n    \"livability\": 26.0,\n    \"sustainability\": 38.0,\n    \"aesthetics\": 36.0,\n    \"comfort\": 33.0,\n    \"walkability\": 24.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by an unpaved vehicle track, while no marked sidewalk, cycle lane, or pedestrian zone is visible, so space is not equitably allocated among road users.\",\n      \"Accessibility is weak because the road edge is uneven dirt with loose gravel and potholes, and there are no curb ramps, tactile paving, or other barrier-free elements visible.\",\n      \"Fair treatment across users is limited because pedestrians would need to share the same rough carriageway with the forklift and other vehicles, with no visible markings or rules separating movements.\"\n    ],\n    \"safety\": [\n      \"A forklift carrying a large load is present directly on the roadway, creating conflict risk for any pedestrian or other road user using the same narrow dirt corridor.\",\n      \"The surface is irregular, with loose stones, ruts, and patches of broken pavement, which increases slip, trip, and vehicle-control risks.\",\n      \"There are no visible sidewalks, crossings, lane markings, guardrails, or traffic calming features, so users lack clear guidance and protection.\"\n    ],\n    \"livability\": [\n      \"The setting appears industrial and sparse, with a blue metal fence, utility poles, and a dirt road rather than active frontages or community-serving street amenities.\",\n      \"No benches, bus stops, shops, lighting, or public gathering features are visible, limiting support for daily social and street life.\",\n      \"The roadway condition and construction-like environment make the corridor feel utilitarian rather than pleasant for everyday public use.\"\n    ],\n    \"sustainability\": [\n      \"Trees and shrubs on the right side provide some green cover and ecological value compared with a fully barren roadside.\",\n      \"However, the street lacks visible sustainable mobility infrastructure such as sidewalks, bike lanes, or transit stops that would support low-carbon travel choices.\",\n      \"Large exposed dirt areas and an unsealed road surface suggest dust generation and weak stormwater management, with no visible permeable design features or drainage elements.\"\n    ],\n    \"aesthetics\": [\n      \"The tree canopy on the right adds some visual softness and natural texture to the corridor.\",\n      \"Overall visual quality is reduced by the dusty unpaved road, scattered debris, and rough roadside edges.\",\n      \"The long blue fence, utility poles, and overhead wires create a harsh industrial appearance with limited architectural or landscape coherence.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: trees on the right provide partial shade, but much of the road remains fully exposed to direct sun.\",\n      \"Physical comfort is poor because the walking surface is unpaved, uneven, and dusty, with no dedicated smooth pedestrian path or seating.\",\n      \"Psychological comfort is limited by the presence of industrial vehicles, the isolated setting, and the lack of clear separation between people and moving equipment.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very low because no continuous sidewalk or pedestrian path is visible along either side of the road.\",\n      \"The dirt surface has potholes, gravel, and broken edges, making walking less stable and less convenient.\",\n      \"There are no crossings, curb ramps, shade structures, benches, or active frontages to support a comfortable and connected walking experience.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 31.0,
+   "equity": 28.0,
+   "fairness": 35.0,
+   "accessibility": 30.0
+  },
+  "safety": 34.0,
+  "livability": 26.0,
+  "sustainability": 38.0,
+  "aesthetics": 36.0,
+  "comfort": 33.0,
+  "walkability": 24.0
+ },
+ "scores_flat": {
+  "justice": 31.0,
+  "justice_equity": 28.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 30.0,
+  "safety": 34.0,
+  "livability": 26.0,
+  "sustainability": 38.0,
+  "aesthetics": 36.0,
+  "comfort": 33.0,
+  "walkability": 24.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:16:15+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by an unpaved vehicle track, while no marked sidewalk, cycle lane, or pedestrian zone is visible, so space is not equitably allocated among road users.",
+   "Accessibility is weak because the road edge is uneven dirt with loose gravel and potholes, and there are no curb ramps, tactile paving, or other barrier-free elements visible.",
+   "Fair treatment across users is limited because pedestrians would need to share the same rough carriageway with the forklift and other vehicles, with no visible markings or rules separating movements."
+  ],
+  "safety": [
+   "A forklift carrying a large load is present directly on the roadway, creating conflict risk for any pedestrian or other road user using the same narrow dirt corridor.",
+   "The surface is irregular, with loose stones, ruts, and patches of broken pavement, which increases slip, trip, and vehicle-control risks.",
+   "There are no visible sidewalks, crossings, lane markings, guardrails, or traffic calming features, so users lack clear guidance and protection."
+  ],
+  "livability": [
+   "The setting appears industrial and sparse, with a blue metal fence, utility poles, and a dirt road rather than active frontages or community-serving street amenities.",
+   "No benches, bus stops, shops, lighting, or public gathering features are visible, limiting support for daily social and street life.",
+   "The roadway condition and construction-like environment make the corridor feel utilitarian rather than pleasant for everyday public use."
+  ],
+  "sustainability": [
+   "Trees and shrubs on the right side provide some green cover and ecological value compared with a fully barren roadside.",
+   "However, the street lacks visible sustainable mobility infrastructure such as sidewalks, bike lanes, or transit stops that would support low-carbon travel choices.",
+   "Large exposed dirt areas and an unsealed road surface suggest dust generation and weak stormwater management, with no visible permeable design features or drainage elements."
+  ],
+  "aesthetics": [
+   "The tree canopy on the right adds some visual softness and natural texture to the corridor.",
+   "Overall visual quality is reduced by the dusty unpaved road, scattered debris, and rough roadside edges.",
+   "The long blue fence, utility poles, and overhead wires create a harsh industrial appearance with limited architectural or landscape coherence."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: trees on the right provide partial shade, but much of the road remains fully exposed to direct sun.",
+   "Physical comfort is poor because the walking surface is unpaved, uneven, and dusty, with no dedicated smooth pedestrian path or seating.",
+   "Psychological comfort is limited by the presence of industrial vehicles, the isolated setting, and the lack of clear separation between people and moving equipment."
+  ],
+  "walkability": [
+   "Walkability is very low because no continuous sidewalk or pedestrian path is visible along either side of the road.",
+   "The dirt surface has potholes, gravel, and broken edges, making walking less stable and less convenient.",
+   "There are no crossings, curb ramps, shade structures, benches, or active frontages to support a comfortable and connected walking experience."
+  ]
+ }
+}

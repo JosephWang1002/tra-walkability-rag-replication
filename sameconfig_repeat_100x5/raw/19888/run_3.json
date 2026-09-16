@@ -1,0 +1,122 @@
+{
+ "oid": "19888",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\19888.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\19888_120.720411_31.153914_0900290012220820090205889AL_11.33_2022_8_吴江区同里镇环湖西路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.2,
+ "usage": {
+  "completion_tokens": 844,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 419,
+   "engine_ttlt_ms": 14432,
+   "pre_inference_ms": 332,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1022,
+   "service_ttlt_ms": 15028,
+   "user_visible_ttft_ms": 690
+  },
+  "prompt_tokens": 5401,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6245
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 32.0,\n      \"accessibility\": 30.0\n    },\n    \"safety\": 41.0,\n    \"livability\": 39.0,\n    \"sustainability\": 33.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 35.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by a narrow carriageway and bridge railings, while no dedicated sidewalk or protected pedestrian zone is visible on either side, indicating weak allocation of space for non-motorized users.\",\n      \"Accessibility appears limited because the bridge edges have only very narrow concrete margins beside the guardrails, with no visible curb ramps, tactile paving, or barrier-free pedestrian path.\",\n      \"Fairness across user groups is reduced because pedestrians, cyclists, and drivers seem to share the same constrained roadway space, while only motor vehicles have a clearly usable continuous path.\"\n    ],\n    \"safety\": [\n      \"The road is narrow and appears to function as a shared mixed-traffic corridor, creating potential conflict between cars, motorcycles, bicycles, and pedestrians.\",\n      \"There are bridge guardrails on both sides, which help prevent falls into adjacent drainage or vegetated channels, providing some edge protection.\",\n      \"No marked crosswalks, traffic calming devices, bike lanes, or pedestrian refuge areas are visible, so vulnerable users would have little formal protection when moving along or across the street.\"\n    ],\n    \"livability\": [\n      \"The setting is low-density and quiet, with houses, small buildings, and greenery, which may support a calm residential atmosphere.\",\n      \"However, there are no visible benches, shops, bus stops, public gathering spaces, or street-facing amenities that would support everyday social life on the street.\",\n      \"The bridge-like segment and utility-dominated corridor make the street feel more like a passage route than an active neighborhood public space.\"\n    ],\n    \"sustainability\": [\n      \"Vegetation is visible along the right side and around buildings, which adds some ecological value compared with a fully paved corridor.\",\n      \"At the same time, there is no visible bike lane, bus stop, or other infrastructure encouraging low-carbon travel beyond basic road access.\",\n      \"Large amounts of overhead utility infrastructure and extensive asphalt paving are visible, while no rain gardens, permeable paving, or other green stormwater features can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"Green vegetation along the right side and several trees near the buildings soften the scene and prevent it from feeling entirely barren.\",\n      \"The streetscape is visually cluttered by dense overhead wires, multiple utility poles, and a transmission tower, which weakens visual coherence.\",\n      \"The road surface and railings appear relatively orderly and maintained, but the overall composition remains plain and infrastructure-heavy rather than distinctive or attractive.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is limited because the roadway and bridge edges are largely exposed, with almost no continuous tree canopy or shade structure over the travel path.\",\n      \"Physical comfort for walking is poor because no proper sidewalk, seating, or buffered pedestrian space is visible; the narrow edge strips beside the railings do not appear comfortable for regular pedestrian use.\",\n      \"Psychological comfort is reduced by the constrained bridge section, mixed traffic conditions, and heavy overhead utility presence, which can make the environment feel exposed and less relaxing for all road users.\"\n    ],\n    \"walkability\": [\n      \"Walkability is weak because there is no clearly designated sidewalk on either side of the road, especially across the bridge segment in the foreground.\",\n      \"The pedestrian realm lacks key walking supports such as curb ramps, crossings, shade, benches, and separation from moving vehicles.\",\n      \"Although the road appears relatively flat and continuous, the narrow shared corridor means walking would likely require negotiating space directly with motor traffic.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 32.0,
+   "accessibility": 30.0
+  },
+  "safety": 41.0,
+  "livability": 39.0,
+  "sustainability": 33.0,
+  "aesthetics": 46.0,
+  "comfort": 35.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 32.0,
+  "justice_accessibility": 30.0,
+  "safety": 41.0,
+  "livability": 39.0,
+  "sustainability": 33.0,
+  "aesthetics": 46.0,
+  "comfort": 35.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:43:45+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by a narrow carriageway and bridge railings, while no dedicated sidewalk or protected pedestrian zone is visible on either side, indicating weak allocation of space for non-motorized users.",
+   "Accessibility appears limited because the bridge edges have only very narrow concrete margins beside the guardrails, with no visible curb ramps, tactile paving, or barrier-free pedestrian path.",
+   "Fairness across user groups is reduced because pedestrians, cyclists, and drivers seem to share the same constrained roadway space, while only motor vehicles have a clearly usable continuous path."
+  ],
+  "safety": [
+   "The road is narrow and appears to function as a shared mixed-traffic corridor, creating potential conflict between cars, motorcycles, bicycles, and pedestrians.",
+   "There are bridge guardrails on both sides, which help prevent falls into adjacent drainage or vegetated channels, providing some edge protection.",
+   "No marked crosswalks, traffic calming devices, bike lanes, or pedestrian refuge areas are visible, so vulnerable users would have little formal protection when moving along or across the street."
+  ],
+  "livability": [
+   "The setting is low-density and quiet, with houses, small buildings, and greenery, which may support a calm residential atmosphere.",
+   "However, there are no visible benches, shops, bus stops, public gathering spaces, or street-facing amenities that would support everyday social life on the street.",
+   "The bridge-like segment and utility-dominated corridor make the street feel more like a passage route than an active neighborhood public space."
+  ],
+  "sustainability": [
+   "Vegetation is visible along the right side and around buildings, which adds some ecological value compared with a fully paved corridor.",
+   "At the same time, there is no visible bike lane, bus stop, or other infrastructure encouraging low-carbon travel beyond basic road access.",
+   "Large amounts of overhead utility infrastructure and extensive asphalt paving are visible, while no rain gardens, permeable paving, or other green stormwater features can be identified."
+  ],
+  "aesthetics": [
+   "Green vegetation along the right side and several trees near the buildings soften the scene and prevent it from feeling entirely barren.",
+   "The streetscape is visually cluttered by dense overhead wires, multiple utility poles, and a transmission tower, which weakens visual coherence.",
+   "The road surface and railings appear relatively orderly and maintained, but the overall composition remains plain and infrastructure-heavy rather than distinctive or attractive."
+  ],
+  "comfort": [
+   "Thermal comfort is limited because the roadway and bridge edges are largely exposed, with almost no continuous tree canopy or shade structure over the travel path.",
+   "Physical comfort for walking is poor because no proper sidewalk, seating, or buffered pedestrian space is visible; the narrow edge strips beside the railings do not appear comfortable for regular pedestrian use.",
+   "Psychological comfort is reduced by the constrained bridge section, mixed traffic conditions, and heavy overhead utility presence, which can make the environment feel exposed and less relaxing for all road users."
+  ],
+  "walkability": [
+   "Walkability is weak because there is no clearly designated sidewalk on either side of the road, especially across the bridge segment in the foreground.",
+   "The pedestrian realm lacks key walking supports such as curb ramps, crossings, shade, benches, and separation from moving vehicles.",
+   "Although the road appears relatively flat and continuous, the narrow shared corridor means walking would likely require negotiating space directly with motor traffic."
+  ]
+ }
+}

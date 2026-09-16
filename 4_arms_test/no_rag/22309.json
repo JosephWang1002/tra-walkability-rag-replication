@@ -1,0 +1,200 @@
+{
+ "oid": "22309",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22309_120.676033_31.326915_0900290012220902152644821AP_73.74_2022_9_苏州工业园区金鸡湖街道沁畔街_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 6.2,
+  "usage": {
+   "completion_tokens": 130,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 339,
+    "engine_ttlt_ms": 1286,
+    "pre_inference_ms": 428,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 944,
+    "service_ttlt_ms": 1886,
+    "user_visible_ttft_ms": 516
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1391
+  },
+  "raw": "{\"road_type\":\"arterial\",\"elements\":{\"sidewalk\":\"true\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"many\",\"curb_ramp\":\"unclear\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"true\",\"street_lighting\":\"true\",\"greenery\":\"high\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"no_bike_lane\"],\"brief\":\"A wide arterial road with multiple lanes, sidewalks, and many trees along both sides. Buildings line the street, with traffic lights, a bus, and a few cars visible.\"}",
+  "parsed": {
+   "road_type": "arterial",
+   "elements": {
+    "sidewalk": "true",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "many",
+    "curb_ramp": "unclear",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "true",
+    "street_lighting": "true",
+    "greenery": "high",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "no_bike_lane"
+   ],
+   "brief": "A wide arterial road with multiple lanes, sidewalks, and many trees along both sides. Buildings line the street, with traffic lights, a bus, and a few cars visible."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A wide arterial road with multiple lanes, sidewalks, and many trees along both sides. Buildings line the street, with traffic lights, a bus, and a few cars visible. Road type: arterial. Visible elements: sidewalk=true, bike_lane=false, seating=false, shade_trees=many, curb_ramp=unclear, tactile_paving=false, pedestrian_crossing=true, street_lighting=true, greenery=high, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'no_bike_lane']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 21.7,
+  "usage": {
+   "completion_tokens": 1041,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 15,
+    "engine_ttft_ms": 423,
+    "engine_ttlt_ms": 16314,
+    "pre_inference_ms": 355,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 1000,
+    "service_ttlt_ms": 16888,
+    "user_visible_ttft_ms": 645
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2928
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 71.0,\n      \"equity\": 74.0,\n      \"fairness\": 69.0,\n      \"accessibility\": 70.0\n    },\n    \"safety\": 73.0,\n    \"livability\": 76.0,\n    \"sustainability\": 78.0,\n    \"aesthetics\": 82.0,\n    \"comfort\": 74.0,\n    \"walkability\": 66.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to multiple users, with very wide carriageways, visible sidewalks on both sides, and a signalized intersection, suggesting a relatively balanced distribution of movement space for all road users.\",\n      \"Accessibility appears moderate rather than high because curb ramps, tactile paving, and detailed crossing aids are not clearly visible from this distance, so barrier-free access cannot be fully confirmed.\",\n      \"Fairness is supported by visible traffic lights, lane markings, and directional signs that indicate rule-based management of the intersection rather than informal or exclusionary use of space.\",\n      \"The broad sidewalks lined with trees on both sides suggest that pedestrians are provided dedicated space instead of being forced into the roadway, which supports equitable access for general social groups.\"\n    ],\n    \"safety\": [\n      \"Safety benefits from the large signalized intersection, with overhead traffic lights, lane markings, and channelized movements that help organize conflicts between vehicles and crossing users.\",\n      \"The roadway is extremely wide, which can increase crossing distance and exposure for pedestrians if they need to traverse the full intersection, reducing safety despite the formal controls.\",\n      \"Good sightlines are present because the intersection is open and unobstructed, allowing drivers and other road users to see approaching traffic from multiple directions.\",\n      \"Street trees are set back from the main carriageway edges and do not appear to block the central view, which helps maintain visibility at this junction.\"\n    ],\n    \"livability\": [\n      \"The scene appears highly residential, with multiple mid- and high-rise apartment buildings facing the boulevard, indicating that the street serves everyday urban living rather than only through traffic.\",\n      \"Extensive greenery, including mature street trees on the left and landscaped vegetation on the right, improves the everyday environmental quality of the corridor.\",\n      \"The broad boulevard and orderly streetscape create a calm, spacious urban setting that can support daily travel and neighborhood identity.\",\n      \"A bus is visible in the corridor, suggesting the presence of public transport service that can support daily access to jobs, services, and social activities.\"\n    ],\n    \"sustainability\": [\n      \"The visible bus on the roadway indicates support for shared, lower-carbon transport rather than complete dependence on private cars.\",\n      \"Large amounts of mature tree canopy and planted medians or roadside greenery contribute to urban cooling, air-quality improvement, and ecological value.\",\n      \"The corridor is very wide and still heavily oriented toward motor traffic, so the amount of paved surface likely increases heat absorption and resource intensity.\",\n      \"No dedicated bike lane or obvious stormwater features are clearly visible in the image, limiting stronger sustainability performance despite the strong green presence.\"\n    ],\n    \"aesthetics\": [\n      \"The boulevard has a strong visual structure, with rows of tall residential buildings framing both sides of the street and creating a coherent urban edge.\",\n      \"Mature green trees on the left and softer planting on the right add color, texture, and seasonal interest, improving the visual quality of the scene.\",\n      \"The street appears clean and well maintained, with clear pavement markings and orderly infrastructure that contribute to a polished appearance.\",\n      \"The wide sky view and open intersection create a sense of spaciousness that enhances the overall visual impression.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good along the edges because mature trees provide substantial shade over the sidewalks, especially on the left side of the street.\",\n      \"Physical comfort for walking is harder to confirm because the sidewalks are distant, but they appear continuous and separated from fast traffic by planting strips or curb space.\",\n      \"Psychological comfort is mixed: the corridor feels orderly and uncluttered, yet the very wide roadway may feel intimidating for some users because of the scale of the intersection.\",\n      \"There are no clearly visible benches, shelters, or other resting amenities in the image, which limits comfort for users spending longer periods in the public realm.\"\n    ],\n    \"walkability\": [\n      \"Walkability is supported by visible sidewalks on both sides of the boulevard and by the formal signalized intersection that should provide designated crossing phases.\",\n      \"The main weakness is the very large crossing width created by the expansive multi-lane roadway, which can make walking routes longer and less convenient.\",\n      \"Street trees improve the attractiveness of walking along the corridor edges by adding shade and a greener pedestrian environment.\",\n      \"Crosswalk markings and curb-level pedestrian details are not clearly visible from this viewpoint, so the quality of pedestrian priority and crossing accessibility cannot be rated highly.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 71.0,
+    "equity": 74.0,
+    "fairness": 69.0,
+    "accessibility": 70.0
+   },
+   "safety": 73.0,
+   "livability": 76.0,
+   "sustainability": 78.0,
+   "aesthetics": 82.0,
+   "comfort": 74.0,
+   "walkability": 66.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The street allocates substantial space to multiple users, with very wide carriageways, visible sidewalks on both sides, and a signalized intersection, suggesting a relatively balanced distribution of movement space for all road users.",
+    "Accessibility appears moderate rather than high because curb ramps, tactile paving, and detailed crossing aids are not clearly visible from this distance, so barrier-free access cannot be fully confirmed.",
+    "Fairness is supported by visible traffic lights, lane markings, and directional signs that indicate rule-based management of the intersection rather than informal or exclusionary use of space.",
+    "The broad sidewalks lined with trees on both sides suggest that pedestrians are provided dedicated space instead of being forced into the roadway, which supports equitable access for general social groups."
+   ],
+   "safety": [
+    "Safety benefits from the large signalized intersection, with overhead traffic lights, lane markings, and channelized movements that help organize conflicts between vehicles and crossing users.",
+    "The roadway is extremely wide, which can increase crossing distance and exposure for pedestrians if they need to traverse the full intersection, reducing safety despite the formal controls.",
+    "Good sightlines are present because the intersection is open and unobstructed, allowing drivers and other road users to see approaching traffic from multiple directions.",
+    "Street trees are set back from the main carriageway edges and do not appear to block the central view, which helps maintain visibility at this junction."
+   ],
+   "livability": [
+    "The scene appears highly residential, with multiple mid- and high-rise apartment buildings facing the boulevard, indicating that the street serves everyday urban living rather than only through traffic.",
+    "Extensive greenery, including mature street trees on the left and landscaped vegetation on the right, improves the everyday environmental quality of the corridor.",
+    "The broad boulevard and orderly streetscape create a calm, spacious urban setting that can support daily travel and neighborhood identity.",
+    "A bus is visible in the corridor, suggesting the presence of public transport service that can support daily access to jobs, services, and social activities."
+   ],
+   "sustainability": [
+    "The visible bus on the roadway indicates support for shared, lower-carbon transport rather than complete dependence on private cars.",
+    "Large amounts of mature tree canopy and planted medians or roadside greenery contribute to urban cooling, air-quality improvement, and ecological value.",
+    "The corridor is very wide and still heavily oriented toward motor traffic, so the amount of paved surface likely increases heat absorption and resource intensity.",
+    "No dedicated bike lane or obvious stormwater features are clearly visible in the image, limiting stronger sustainability performance despite the strong green presence."
+   ],
+   "aesthetics": [
+    "The boulevard has a strong visual structure, with rows of tall residential buildings framing both sides of the street and creating a coherent urban edge.",
+    "Mature green trees on the left and softer planting on the right add color, texture, and seasonal interest, improving the visual quality of the scene.",
+    "The street appears clean and well maintained, with clear pavement markings and orderly infrastructure that contribute to a polished appearance.",
+    "The wide sky view and open intersection create a sense of spaciousness that enhances the overall visual impression."
+   ],
+   "comfort": [
+    "Thermal comfort is relatively good along the edges because mature trees provide substantial shade over the sidewalks, especially on the left side of the street.",
+    "Physical comfort for walking is harder to confirm because the sidewalks are distant, but they appear continuous and separated from fast traffic by planting strips or curb space.",
+    "Psychological comfort is mixed: the corridor feels orderly and uncluttered, yet the very wide roadway may feel intimidating for some users because of the scale of the intersection.",
+    "There are no clearly visible benches, shelters, or other resting amenities in the image, which limits comfort for users spending longer periods in the public realm."
+   ],
+   "walkability": [
+    "Walkability is supported by visible sidewalks on both sides of the boulevard and by the formal signalized intersection that should provide designated crossing phases.",
+    "The main weakness is the very large crossing width created by the expansive multi-lane roadway, which can make walking routes longer and less convenient.",
+    "Street trees improve the attractiveness of walking along the corridor edges by adding shade and a greener pedestrian environment.",
+    "Crosswalk markings and curb-level pedestrian details are not clearly visible from this viewpoint, so the quality of pedestrian priority and crossing accessibility cannot be rated highly."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 71.0,
+  "justice_equity": 74.0,
+  "justice_fairness": 69.0,
+  "justice_accessibility": 70.0,
+  "safety": 73.0,
+  "livability": 76.0,
+  "sustainability": 78.0,
+  "aesthetics": 82.0,
+  "comfort": 74.0,
+  "walkability": 66.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T15:19:45+00:00",
+  "step2": "2026-09-03T15:19:45+00:00",
+  "step3": "2026-09-03T15:20:06+00:00",
+  "completed": "2026-09-03T15:20:06+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22309.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

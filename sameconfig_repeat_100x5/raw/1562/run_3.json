@@ -1,0 +1,122 @@
+{
+ "oid": "1562",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\1562.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\1562_120.686463_31.04475_01002900001406071140120345L_1.64_2014_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.9,
+ "usage": {
+  "completion_tokens": 865,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 18,
+   "engine_ttft_ms": 356,
+   "engine_ttlt_ms": 15728,
+   "pre_inference_ms": 257,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 901,
+   "service_ttlt_ms": 16268,
+   "user_visible_ttft_ms": 645
+  },
+  "prompt_tokens": 5300,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6165
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 22.0,\n      \"equity\": 20.0,\n      \"fairness\": 25.0,\n      \"accessibility\": 21.0\n    },\n    \"safety\": 38.0,\n    \"livability\": 18.0,\n    \"sustainability\": 24.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 34.0,\n    \"walkability\": 8.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible space is overwhelmingly allocated to multiple wide motor-vehicle lanes, while no sidewalk, pedestrian zone, or cycling facility is visible, indicating very unequal distribution of street space for all road users.\",\n      \"Guardrails line both sides of the roadway and there are no visible crossing points, curb ramps, or refuge islands, so non-drivers appear excluded from using or crossing this corridor.\",\n      \"Accessibility is very low because the image shows a freeway-like road environment with continuous asphalt carriageway, lane markings for cars, and no barrier-free pedestrian infrastructure such as sidewalks, tactile paving, or protected waiting areas.\"\n    ],\n    \"safety\": [\n      \"For drivers, lane markings are clear and the roadway is wide with long sight distance, which supports basic operational safety.\",\n      \"However, the road appears designed for high-speed traffic, with several broad lanes and an overpass ahead, increasing crash severity risk if conflicts occur.\",\n      \"There is no visible protected space for pedestrians or cyclists, and the roadside guardrails and absence of crossings would make the environment unsafe for any non-motorized user.\"\n    ],\n    \"livability\": [\n      \"The scene lacks human-scale amenities such as benches, storefronts, bus stops, or public gathering spaces, so it offers little support for everyday street life.\",\n      \"The environment is dominated by highway pavement, guardrails, billboards, and fast-moving traffic space, which reduces social and community value for all road users except through-movement by car.\",\n      \"Although roadside greenery is present, it functions mainly as edge vegetation beside the highway rather than as usable public space that improves daily urban life.\"\n    ],\n    \"sustainability\": [\n      \"Some green vegetation is visible along both sides and in the median edge areas, which provides limited ecological value and softens the corridor slightly.\",\n      \"The corridor strongly prioritizes private motor-vehicle travel through many traffic lanes, while no transit stop, bike lane, or walking facility is visible, which weakens transport sustainability.\",\n      \"Large paved surfaces dominate the image, suggesting high impervious coverage and heat accumulation, with no visible stormwater features or multimodal infrastructure.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway has a clean, orderly appearance with consistent lane markings and trimmed roadside greenery, which gives some visual neatness.\",\n      \"Long open views and green edges on both sides create a relatively uncluttered landscape compared with dense urban streets.\",\n      \"At the same time, large billboards, expansive asphalt, and the highway-like scale make the scene visually monotonous and less appealing at a human scale.\"\n    ],\n    \"comfort\": [\n      \"Physical comfort is low for non-drivers because no sidewalk, seating, or sheltered edge space is visible anywhere in the scene.\",\n      \"Thermal comfort appears weak: the road is a broad exposed asphalt surface under strong sun, and the roadside vegetation does not provide usable shade over any travel path.\",\n      \"Psychological comfort for all road users is mixed; drivers benefit from openness and clear alignment, but the very wide high-speed roadway and lack of protected non-motorized space create an inhospitable atmosphere.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk or pedestrian path is visible, so there is effectively no dedicated walking infrastructure in the photographed corridor.\",\n      \"There are no zebra crossings, pedestrian signals, refuge islands, or raised crossings visible, making route continuity for walking extremely poor.\",\n      \"Guardrails along both sides and the freeway-style multi-lane carriageway create strong severance, so walking access across or along this road appears nearly impossible.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 22.0,
+   "equity": 20.0,
+   "fairness": 25.0,
+   "accessibility": 21.0
+  },
+  "safety": 38.0,
+  "livability": 18.0,
+  "sustainability": 24.0,
+  "aesthetics": 46.0,
+  "comfort": 34.0,
+  "walkability": 8.0
+ },
+ "scores_flat": {
+  "justice": 22.0,
+  "justice_equity": 20.0,
+  "justice_fairness": 25.0,
+  "justice_accessibility": 21.0,
+  "safety": 38.0,
+  "livability": 18.0,
+  "sustainability": 24.0,
+  "aesthetics": 46.0,
+  "comfort": 34.0,
+  "walkability": 8.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:26:44+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible space is overwhelmingly allocated to multiple wide motor-vehicle lanes, while no sidewalk, pedestrian zone, or cycling facility is visible, indicating very unequal distribution of street space for all road users.",
+   "Guardrails line both sides of the roadway and there are no visible crossing points, curb ramps, or refuge islands, so non-drivers appear excluded from using or crossing this corridor.",
+   "Accessibility is very low because the image shows a freeway-like road environment with continuous asphalt carriageway, lane markings for cars, and no barrier-free pedestrian infrastructure such as sidewalks, tactile paving, or protected waiting areas."
+  ],
+  "safety": [
+   "For drivers, lane markings are clear and the roadway is wide with long sight distance, which supports basic operational safety.",
+   "However, the road appears designed for high-speed traffic, with several broad lanes and an overpass ahead, increasing crash severity risk if conflicts occur.",
+   "There is no visible protected space for pedestrians or cyclists, and the roadside guardrails and absence of crossings would make the environment unsafe for any non-motorized user."
+  ],
+  "livability": [
+   "The scene lacks human-scale amenities such as benches, storefronts, bus stops, or public gathering spaces, so it offers little support for everyday street life.",
+   "The environment is dominated by highway pavement, guardrails, billboards, and fast-moving traffic space, which reduces social and community value for all road users except through-movement by car.",
+   "Although roadside greenery is present, it functions mainly as edge vegetation beside the highway rather than as usable public space that improves daily urban life."
+  ],
+  "sustainability": [
+   "Some green vegetation is visible along both sides and in the median edge areas, which provides limited ecological value and softens the corridor slightly.",
+   "The corridor strongly prioritizes private motor-vehicle travel through many traffic lanes, while no transit stop, bike lane, or walking facility is visible, which weakens transport sustainability.",
+   "Large paved surfaces dominate the image, suggesting high impervious coverage and heat accumulation, with no visible stormwater features or multimodal infrastructure."
+  ],
+  "aesthetics": [
+   "The roadway has a clean, orderly appearance with consistent lane markings and trimmed roadside greenery, which gives some visual neatness.",
+   "Long open views and green edges on both sides create a relatively uncluttered landscape compared with dense urban streets.",
+   "At the same time, large billboards, expansive asphalt, and the highway-like scale make the scene visually monotonous and less appealing at a human scale."
+  ],
+  "comfort": [
+   "Physical comfort is low for non-drivers because no sidewalk, seating, or sheltered edge space is visible anywhere in the scene.",
+   "Thermal comfort appears weak: the road is a broad exposed asphalt surface under strong sun, and the roadside vegetation does not provide usable shade over any travel path.",
+   "Psychological comfort for all road users is mixed; drivers benefit from openness and clear alignment, but the very wide high-speed roadway and lack of protected non-motorized space create an inhospitable atmosphere."
+  ],
+  "walkability": [
+   "No sidewalk or pedestrian path is visible, so there is effectively no dedicated walking infrastructure in the photographed corridor.",
+   "There are no zebra crossings, pedestrian signals, refuge islands, or raised crossings visible, making route continuity for walking extremely poor.",
+   "Guardrails along both sides and the freeway-style multi-lane carriageway create strong severance, so walking access across or along this road appears nearly impossible."
+  ]
+ }
+}

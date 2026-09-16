@@ -1,0 +1,32 @@
+{
+ "oid": "12087",
+ "description": "The scene shows a wide, paved roadway with no visible sidewalk or pedestrian path; the edges are defined by a curb and a narrow strip of bare ground/planting beds separated from the road by short metal posts/rails. Traffic separation is minimal (no barrier between vehicles and the curb beyond the posts), and there are no visible crosswalks, curb ramps, or other accessibility features. Street lighting poles line the road, but there is limited pedestrian comfort due to lack of a continuous, walkable surface and sparse shade from young trees.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 112,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 23,
+   "engine_ttft_ms": 180,
+   "engine_ttlt_ms": 2741,
+   "pre_inference_ms": 460,
+   "service_tbt_ms": 23,
+   "service_ttft_ms": 750,
+   "service_ttlt_ms": 3306,
+   "user_visible_ttft_ms": 290
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1096
+ },
+ "latency_s": 81.8,
+ "timestamp": "2026-08-31T15:43:17"
+}

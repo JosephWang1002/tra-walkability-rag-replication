@@ -1,0 +1,200 @@
+{
+ "oid": "18099",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\18099_120.531389_31.347278_0900290012200306111421557GR_173.84_2020_3_虎丘区浒墅关镇长江路856号_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 4.8,
+  "usage": {
+   "completion_tokens": 136,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 367,
+    "engine_ttlt_ms": 1386,
+    "pre_inference_ms": 367,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 900,
+    "service_ttlt_ms": 1912,
+    "user_visible_ttft_ms": 533
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1397
+  },
+  "raw": "{\"road_type\":\"arterial\",\"elements\":{\"sidewalk\":\"true\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"many\",\"curb_ramp\":\"unclear\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"true\",\"street_lighting\":\"unclear\",\"greenery\":\"high\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"no_bike_lane\"],\"brief\":\"A wide paved road with a zebra pedestrian crossing is bordered by many trees and low greenery. A sidewalk is visible at the left edge, and a truck is present on the right side of the scene.\"}",
+  "parsed": {
+   "road_type": "arterial",
+   "elements": {
+    "sidewalk": "true",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "many",
+    "curb_ramp": "unclear",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "true",
+    "street_lighting": "unclear",
+    "greenery": "high",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "no_bike_lane"
+   ],
+   "brief": "A wide paved road with a zebra pedestrian crossing is bordered by many trees and low greenery. A sidewalk is visible at the left edge, and a truck is present on the right side of the scene."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A wide paved road with a zebra pedestrian crossing is bordered by many trees and low greenery. A sidewalk is visible at the left edge, and a truck is present on the right side of the scene. Road type: arterial. Visible elements: sidewalk=true, bike_lane=false, seating=false, shade_trees=many, curb_ramp=unclear, tactile_paving=false, pedestrian_crossing=true, street_lighting=unclear, greenery=high, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'no_bike_lane']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 21.0,
+  "usage": {
+   "completion_tokens": 927,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 16,
+    "engine_ttft_ms": 431,
+    "engine_ttlt_ms": 15361,
+    "pre_inference_ms": 384,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 1143,
+    "service_ttlt_ms": 16069,
+    "user_visible_ttft_ms": 759
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2814
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 60.0,\n      \"fairness\": 57.0,\n      \"accessibility\": 57.0\n    },\n    \"safety\": 63.0,\n    \"livability\": 54.0,\n    \"sustainability\": 61.0,\n    \"aesthetics\": 68.0,\n    \"comfort\": 59.0,\n    \"walkability\": 56.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"A full-width zebra crossing is clearly marked across the intersection, showing some allocation of space to pedestrians rather than only vehicles.\",\n      \"The roadway is very wide and visually dominates the scene, while dedicated pedestrian space such as visible sidewalks, refuge islands, or protected waiting areas is limited in the image, suggesting an uneven distribution of space among road users.\",\n      \"No curb ramps, tactile paving, or other barrier-free details are clearly visible at the crossing edges, which weakens accessibility for users with different mobility needs.\",\n      \"There are no visible bike lanes or dedicated cycling facilities, so the street appears to prioritize motor traffic more than non-motorized users.\"\n    ],\n    \"safety\": [\n      \"The zebra crossing is highly visible and spans the full road width, which helps clarify where pedestrians should cross.\",\n      \"A large truck is present close to the intersection on the right side, increasing potential conflict and visibility risk for other road users near the crossing area.\",\n      \"The intersection is broad and open, which can encourage higher vehicle speeds if not paired with visible traffic calming measures.\",\n      \"Mature roadside trees frame the far side of the street, but they may also partially screen side views and reduce early detection of crossing users in some directions.\"\n    ],\n    \"livability\": [\n      \"The street edge is lined with mature trees and planted greenery, which adds environmental quality and makes the corridor feel less barren.\",\n      \"The scene appears dominated by traffic space, with no visible benches, storefront activity, or public gathering features that would support everyday street life.\",\n      \"There are no clearly visible people, outdoor amenities, or active frontages in the image, so the space reads more as a movement corridor than a socially vibrant place.\",\n      \"The landscaped median or verge on the far side improves visual quality, but it does not by itself create strong signs of community use.\"\n    ],\n    \"sustainability\": [\n      \"A continuous row of mature trees provides substantial green cover, which supports shade, cooling, and urban ecological value.\",\n      \"The image shows a conventional asphalt-dominated intersection with a large paved surface, indicating high impervious coverage.\",\n      \"No visible bike lane, bus stop, or other clear low-carbon transport infrastructure is present in the frame.\",\n      \"The planted edges and tree canopy contribute positively, but there are no obvious permeable surfaces or stormwater features visible.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous line of mature trees creates a strong green backdrop and gives the street a coherent visual edge.\",\n      \"The intersection appears relatively clean and uncluttered, with simple markings and limited visual chaos.\",\n      \"The very wide asphalt foreground and bright open sky make the scene feel somewhat harsh and utilitarian despite the greenery.\",\n      \"The truck occupying the right side of the frame reduces visual harmony and emphasizes the industrial traffic character of the space.\"\n    ],\n    \"comfort\": [\n      \"Large trees on both sides provide meaningful shade along the street edges, which likely improves thermal comfort near the sidewalks.\",\n      \"The center of the intersection is fully exposed to sun, and the broad paved surface can increase heat and glare for users crossing the road.\",\n      \"No benches, shelters, or resting facilities are visible, limiting physical comfort for people spending time in the space.\",\n      \"The presence of a heavy truck suggests noise and perceived traffic stress, which can reduce psychological comfort for all road users.\"\n    ],\n    \"walkability\": [\n      \"The marked zebra crossing supports basic pedestrian movement across the intersection.\",\n      \"The crossing distance appears long because of the wide roadway, which can make walking less convenient and more stressful.\",\n      \"No pedestrian refuge island is visible in the middle of the crossing, so walkers may need to cross the full width in one movement.\",\n      \"Sidewalk details, curb ramps, and continuous pedestrian paths are not clearly visible from this angle, limiting confidence in overall walking accessibility.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 58.0,
+    "equity": 60.0,
+    "fairness": 57.0,
+    "accessibility": 57.0
+   },
+   "safety": 63.0,
+   "livability": 54.0,
+   "sustainability": 61.0,
+   "aesthetics": 68.0,
+   "comfort": 59.0,
+   "walkability": 56.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "A full-width zebra crossing is clearly marked across the intersection, showing some allocation of space to pedestrians rather than only vehicles.",
+    "The roadway is very wide and visually dominates the scene, while dedicated pedestrian space such as visible sidewalks, refuge islands, or protected waiting areas is limited in the image, suggesting an uneven distribution of space among road users.",
+    "No curb ramps, tactile paving, or other barrier-free details are clearly visible at the crossing edges, which weakens accessibility for users with different mobility needs.",
+    "There are no visible bike lanes or dedicated cycling facilities, so the street appears to prioritize motor traffic more than non-motorized users."
+   ],
+   "safety": [
+    "The zebra crossing is highly visible and spans the full road width, which helps clarify where pedestrians should cross.",
+    "A large truck is present close to the intersection on the right side, increasing potential conflict and visibility risk for other road users near the crossing area.",
+    "The intersection is broad and open, which can encourage higher vehicle speeds if not paired with visible traffic calming measures.",
+    "Mature roadside trees frame the far side of the street, but they may also partially screen side views and reduce early detection of crossing users in some directions."
+   ],
+   "livability": [
+    "The street edge is lined with mature trees and planted greenery, which adds environmental quality and makes the corridor feel less barren.",
+    "The scene appears dominated by traffic space, with no visible benches, storefront activity, or public gathering features that would support everyday street life.",
+    "There are no clearly visible people, outdoor amenities, or active frontages in the image, so the space reads more as a movement corridor than a socially vibrant place.",
+    "The landscaped median or verge on the far side improves visual quality, but it does not by itself create strong signs of community use."
+   ],
+   "sustainability": [
+    "A continuous row of mature trees provides substantial green cover, which supports shade, cooling, and urban ecological value.",
+    "The image shows a conventional asphalt-dominated intersection with a large paved surface, indicating high impervious coverage.",
+    "No visible bike lane, bus stop, or other clear low-carbon transport infrastructure is present in the frame.",
+    "The planted edges and tree canopy contribute positively, but there are no obvious permeable surfaces or stormwater features visible."
+   ],
+   "aesthetics": [
+    "The continuous line of mature trees creates a strong green backdrop and gives the street a coherent visual edge.",
+    "The intersection appears relatively clean and uncluttered, with simple markings and limited visual chaos.",
+    "The very wide asphalt foreground and bright open sky make the scene feel somewhat harsh and utilitarian despite the greenery.",
+    "The truck occupying the right side of the frame reduces visual harmony and emphasizes the industrial traffic character of the space."
+   ],
+   "comfort": [
+    "Large trees on both sides provide meaningful shade along the street edges, which likely improves thermal comfort near the sidewalks.",
+    "The center of the intersection is fully exposed to sun, and the broad paved surface can increase heat and glare for users crossing the road.",
+    "No benches, shelters, or resting facilities are visible, limiting physical comfort for people spending time in the space.",
+    "The presence of a heavy truck suggests noise and perceived traffic stress, which can reduce psychological comfort for all road users."
+   ],
+   "walkability": [
+    "The marked zebra crossing supports basic pedestrian movement across the intersection.",
+    "The crossing distance appears long because of the wide roadway, which can make walking less convenient and more stressful.",
+    "No pedestrian refuge island is visible in the middle of the crossing, so walkers may need to cross the full width in one movement.",
+    "Sidewalk details, curb ramps, and continuous pedestrian paths are not clearly visible from this angle, limiting confidence in overall walking accessibility."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 60.0,
+  "justice_fairness": 57.0,
+  "justice_accessibility": 57.0,
+  "safety": 63.0,
+  "livability": 54.0,
+  "sustainability": 61.0,
+  "aesthetics": 68.0,
+  "comfort": 59.0,
+  "walkability": 56.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T15:11:21+00:00",
+  "step2": "2026-09-03T15:11:21+00:00",
+  "step3": "2026-09-03T15:11:42+00:00",
+  "completed": "2026-09-03T15:11:42+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\18099.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

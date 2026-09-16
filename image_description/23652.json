@@ -1,0 +1,32 @@
+{
+ "oid": "23652",
+ "description": "The image shows a multi-lane roadway with no visible sidewalk or pedestrian path; the roadside is bordered by a narrow strip of low shrubs/grass and a curb, with pedestrians likely forced to walk in the roadway edge. Traffic is separated only by lane markings, with no physical barriers visible, and the area appears to have relatively high-speed, uninterrupted vehicle flow. Trees line both sides and provide some greenery, but there are no visible crosswalks, curb ramps, lighting, or pedestrian accessibility/safety features in view.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 108,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 195,
+   "engine_ttlt_ms": 1998,
+   "pre_inference_ms": 423,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 741,
+   "service_ttlt_ms": 2529,
+   "user_visible_ttft_ms": 318
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1092
+ },
+ "latency_s": 6.2,
+ "timestamp": "2026-08-31T16:49:07"
+}

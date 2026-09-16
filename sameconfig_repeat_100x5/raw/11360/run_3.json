@@ -1,0 +1,129 @@
+{
+ "oid": "11360",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\11360.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\11360_120.467447_31.270199_09002900011602181103352124C_191.72_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 23.3,
+ "usage": {
+  "completion_tokens": 1070,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 394,
+   "engine_ttlt_ms": 18486,
+   "pre_inference_ms": 1499,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 2197,
+   "service_ttlt_ms": 20283,
+   "user_visible_ttft_ms": 698
+  },
+  "prompt_tokens": 5305,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6375
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 31.0,\n      \"equity\": 34.0,\n      \"fairness\": 28.0,\n      \"accessibility\": 31.0\n    },\n    \"safety\": 24.0,\n    \"livability\": 18.0,\n    \"sustainability\": 20.0,\n    \"aesthetics\": 29.0,\n    \"comfort\": 22.0,\n    \"walkability\": 16.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by a very wide asphalt carriageway, while the right side only has an unpaved dirt shoulder and the left side shows no clearly usable pedestrian path, indicating weak equity for non-motorized users.\",\n      \"Accessibility is poor because no marked crosswalks, curb ramps, tactile paving, or continuous sidewalks are visible; the road edge transitions directly to rough soil and construction debris.\",\n      \"Fairness is limited for all road users because the scene appears to prioritize through-movement of vehicles on a newly paved road, while pedestrians must use the uneven roadside track visible on the right.\",\n      \"The temporary traffic cones lying in the roadway suggest an unfinished or loosely managed environment, which does not provide equally legible and reliable conditions for different users.\"\n    ],\n    \"safety\": [\n      \"Safety is low because there are no visible lane markings, crosswalks, guardrails, or protected pedestrian space on this long straight road, reducing guidance and separation among users.\",\n      \"The right roadside consists of loose dirt, excavation edges, and scattered debris, creating trip hazards and unstable footing for anyone walking along the corridor.\",\n      \"Traffic control appears inadequate: several cones are toppled or scattered in the travel lane, which weakens hazard communication and may confuse approaching drivers.\",\n      \"Overhead utility poles and a broad open roadway encourage higher vehicle speeds, while no traffic calming features, refuge islands, or pedestrian warning signs are visible.\"\n    ],\n    \"livability\": [\n      \"Livability is very limited because the corridor lacks visible shops, active frontages, seating, bus stops, or public gathering spaces; it reads mainly as a transport and construction edge.\",\n      \"The surrounding environment is dominated by bare soil embankments, utility infrastructure, and vacant roadside land, offering little support for daily social or street life.\",\n      \"Only a few distant people are visible on the right side, and there is no clear pedestrian realm with amenities such as benches, shade structures, or landscaped edges.\",\n      \"The unfinished roadside condition reduces the sense that this is a usable neighborhood street for everyday activities beyond passing through.\"\n    ],\n    \"sustainability\": [\n      \"Sustainability performance is weak because no bike lane, bus stop, transit priority feature, or other visible support for low-carbon travel is present.\",\n      \"Green infrastructure is minimal: there are almost no street trees, planted swales, rain gardens, or permeable landscape elements visible along the corridor.\",\n      \"The road section is heavily paved and auto-oriented, while the roadside remains largely exposed dirt, which suggests limited ecological integration and poor stormwater treatment.\",\n      \"A few distant trees near the far-right background provide only minor environmental benefit compared with the long treeless roadway.\"\n    ],\n    \"aesthetics\": [\n      \"Visual quality is modest at best: the new asphalt surface looks relatively smooth, but the overall scene is dominated by barren soil, utility poles, and overhead transmission lines.\",\n      \"The roadside edges appear unfinished and irregular, with excavated earth piles and scattered debris reducing visual coherence.\",\n      \"There is little greenery, facade definition, or streetscape furnishing to create an attractive public realm; most of the view is open pavement and construction ground.\",\n      \"The long straight perspective gives some spatial clarity, but the hazy sky and infrastructure-heavy setting make the environment feel stark rather than inviting.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because the corridor is almost entirely exposed, with virtually no street trees or shade structures along the walking edge.\",\n      \"Physical comfort is low since pedestrians would need to use the rough dirt shoulder on the right or the road edge itself; no smooth dedicated sidewalk or resting facility is visible.\",\n      \"Psychological comfort is weak because the broad empty roadway, sparse activity, and unfinished roadside create a sense of exposure and uncertainty for non-drivers.\",\n      \"The newly paved carriageway may provide a smoother ride for drivers, but this benefit is offset for all users by dust, construction-like conditions, and lack of protected space.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very poor because there is no continuous sidewalk visible on either side that clearly supports safe pedestrian movement.\",\n      \"The right side functions as an informal dirt track with uneven surfaces and roadside excavation, which undermines continuity, stability, and comfort for walking.\",\n      \"No marked crossings, pedestrian signals, curb ramps, or refuge features are visible on this long corridor, so crossing opportunities appear absent.\",\n      \"The lack of shade, seating, active frontage, and pedestrian-scale elements makes walking both inconvenient and unattractive for everyday use.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 31.0,
+   "equity": 34.0,
+   "fairness": 28.0,
+   "accessibility": 31.0
+  },
+  "safety": 24.0,
+  "livability": 18.0,
+  "sustainability": 20.0,
+  "aesthetics": 29.0,
+  "comfort": 22.0,
+  "walkability": 16.0
+ },
+ "scores_flat": {
+  "justice": 31.0,
+  "justice_equity": 34.0,
+  "justice_fairness": 28.0,
+  "justice_accessibility": 31.0,
+  "safety": 24.0,
+  "livability": 18.0,
+  "sustainability": 20.0,
+  "aesthetics": 29.0,
+  "comfort": 22.0,
+  "walkability": 16.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:13:51+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by a very wide asphalt carriageway, while the right side only has an unpaved dirt shoulder and the left side shows no clearly usable pedestrian path, indicating weak equity for non-motorized users.",
+   "Accessibility is poor because no marked crosswalks, curb ramps, tactile paving, or continuous sidewalks are visible; the road edge transitions directly to rough soil and construction debris.",
+   "Fairness is limited for all road users because the scene appears to prioritize through-movement of vehicles on a newly paved road, while pedestrians must use the uneven roadside track visible on the right.",
+   "The temporary traffic cones lying in the roadway suggest an unfinished or loosely managed environment, which does not provide equally legible and reliable conditions for different users."
+  ],
+  "safety": [
+   "Safety is low because there are no visible lane markings, crosswalks, guardrails, or protected pedestrian space on this long straight road, reducing guidance and separation among users.",
+   "The right roadside consists of loose dirt, excavation edges, and scattered debris, creating trip hazards and unstable footing for anyone walking along the corridor.",
+   "Traffic control appears inadequate: several cones are toppled or scattered in the travel lane, which weakens hazard communication and may confuse approaching drivers.",
+   "Overhead utility poles and a broad open roadway encourage higher vehicle speeds, while no traffic calming features, refuge islands, or pedestrian warning signs are visible."
+  ],
+  "livability": [
+   "Livability is very limited because the corridor lacks visible shops, active frontages, seating, bus stops, or public gathering spaces; it reads mainly as a transport and construction edge.",
+   "The surrounding environment is dominated by bare soil embankments, utility infrastructure, and vacant roadside land, offering little support for daily social or street life.",
+   "Only a few distant people are visible on the right side, and there is no clear pedestrian realm with amenities such as benches, shade structures, or landscaped edges.",
+   "The unfinished roadside condition reduces the sense that this is a usable neighborhood street for everyday activities beyond passing through."
+  ],
+  "sustainability": [
+   "Sustainability performance is weak because no bike lane, bus stop, transit priority feature, or other visible support for low-carbon travel is present.",
+   "Green infrastructure is minimal: there are almost no street trees, planted swales, rain gardens, or permeable landscape elements visible along the corridor.",
+   "The road section is heavily paved and auto-oriented, while the roadside remains largely exposed dirt, which suggests limited ecological integration and poor stormwater treatment.",
+   "A few distant trees near the far-right background provide only minor environmental benefit compared with the long treeless roadway."
+  ],
+  "aesthetics": [
+   "Visual quality is modest at best: the new asphalt surface looks relatively smooth, but the overall scene is dominated by barren soil, utility poles, and overhead transmission lines.",
+   "The roadside edges appear unfinished and irregular, with excavated earth piles and scattered debris reducing visual coherence.",
+   "There is little greenery, facade definition, or streetscape furnishing to create an attractive public realm; most of the view is open pavement and construction ground.",
+   "The long straight perspective gives some spatial clarity, but the hazy sky and infrastructure-heavy setting make the environment feel stark rather than inviting."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because the corridor is almost entirely exposed, with virtually no street trees or shade structures along the walking edge.",
+   "Physical comfort is low since pedestrians would need to use the rough dirt shoulder on the right or the road edge itself; no smooth dedicated sidewalk or resting facility is visible.",
+   "Psychological comfort is weak because the broad empty roadway, sparse activity, and unfinished roadside create a sense of exposure and uncertainty for non-drivers.",
+   "The newly paved carriageway may provide a smoother ride for drivers, but this benefit is offset for all users by dust, construction-like conditions, and lack of protected space."
+  ],
+  "walkability": [
+   "Walkability is very poor because there is no continuous sidewalk visible on either side that clearly supports safe pedestrian movement.",
+   "The right side functions as an informal dirt track with uneven surfaces and roadside excavation, which undermines continuity, stability, and comfort for walking.",
+   "No marked crossings, pedestrian signals, curb ramps, or refuge features are visible on this long corridor, so crossing opportunities appear absent.",
+   "The lack of shade, seating, active frontage, and pedestrian-scale elements makes walking both inconvenient and unattractive for everyday use."
+  ]
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "oid": "13266",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\13266.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\13266_120.615159_30.962184_01002900001405290827292785W_190.93_2014_5_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.9,
+ "usage": {
+  "completion_tokens": 964,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 441,
+   "engine_ttlt_ms": 14977,
+   "pre_inference_ms": 653,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1395,
+   "service_ttlt_ms": 15897,
+   "user_visible_ttft_ms": 742
+  },
+  "prompt_tokens": 5236,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6200
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 29.0\n    },\n    \"safety\": 42.0,\n    \"livability\": 18.0,\n    \"sustainability\": 22.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 24.0,\n    \"walkability\": 12.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The bridge deck is almost entirely allocated to multiple motor-vehicle lanes, while no visible sidewalk, pedestrian zone, or dedicated cycling facility appears in the image, indicating an uneven distribution of street space across road users.\",\n      \"Continuous concrete side barriers protect the carriageway edge, but they also show no visible curb ramps, refuge areas, or barrier-free pedestrian access elements for non-drivers on this segment.\",\n      \"Lane markings are clear for drivers, yet there are no visible tactile paving strips, crossing points, or separated non-motorized paths, so the design appears to prioritize vehicle movement over inclusive access for all road users.\"\n    ],\n    \"safety\": [\n      \"The roadway has clear white lane markings and a wide paved surface, which helps drivers maintain lane position and reduces ambiguity in vehicle movement.\",\n      \"Concrete barriers on both sides separate traffic from the adjacent water, which is an important protective feature on a bridge.\",\n      \"Safety is weakened for all road users beyond drivers because no visible shoulder for walking, no protected bike lane, and no pedestrian barrier-separated path can be seen on the bridge.\",\n      \"The red car is traveling close to the camera position in an active traffic lane, and the apparent high-speed, multi-lane environment increases crash severity risk if conflicts occur.\"\n    ],\n    \"livability\": [\n      \"The scene is a long bridge over water with only traffic lanes, light poles, and barriers visible, offering almost no signs of social activity, street life, or everyday public use beyond vehicle travel.\",\n      \"There are no visible benches, shops, bus stops, trees, or gathering spaces that would support daily urban life or make the place useful as a public street environment.\",\n      \"The large expanse of asphalt and absence of human-scale amenities make the corridor feel purely infrastructural rather than a livable street for diverse users.\"\n    ],\n    \"sustainability\": [\n      \"No visible bus lane, bus stop, sidewalk, or dedicated bicycle facility is present, so the bridge appears to mainly support private motorized travel rather than low-carbon mode choice.\",\n      \"There is almost no visible greenery on the bridge deck itself; the surface is dominated by asphalt and concrete barriers, limiting ecological and cooling functions.\",\n      \"The adjacent water body is visible, but there are no observable stormwater features, permeable surfaces, or planted infrastructure on the roadway segment shown.\"\n    ],\n    \"aesthetics\": [\n      \"The bridge has a clean, orderly appearance with consistent lane markings, evenly spaced light poles, and a strong linear perspective.\",\n      \"Open views across the water on both sides add some scenic value and visual openness.\",\n      \"Aesthetic quality is reduced by the dominance of bare asphalt, concrete barriers, and the lack of trees, planting, public art, or detailed streetscape elements.\",\n      \"The hazy sky and highly utilitarian design make the environment feel monotonous rather than visually rich.\"\n    ],\n    \"comfort\": [\n      \"There is no visible shade from trees, canopies, or structures on the bridge, so thermal comfort is likely poor in sunny or hot weather.\",\n      \"The environment is dominated by fast-moving traffic lanes and hard concrete edges, which likely creates psychological discomfort for anyone outside a vehicle.\",\n      \"No seating, rest areas, or pedestrian-scale amenities are visible, so physical comfort for non-driving users is very limited.\",\n      \"The smooth asphalt surface benefits vehicle ride quality, but for all road users collectively, the absence of protected space and shelter keeps overall comfort low.\"\n    ],\n    \"walkability\": [\n      \"No visible sidewalk or pedestrian path can be identified along the bridge, which is a major deficiency for walkability.\",\n      \"There are no marked crossings, curb ramps, pedestrian signals, or refuge spaces visible anywhere in the scene.\",\n      \"The long uninterrupted motor-traffic corridor, combined with concrete barriers and lack of human-scale features, makes the route appear unsuitable and unattractive for walking.\",\n      \"The bridge offers no visible shade, seating, or active frontage, so even if walking were technically allowed, the walking experience would be poor.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 35.0,
+   "accessibility": 29.0
+  },
+  "safety": 42.0,
+  "livability": 18.0,
+  "sustainability": 22.0,
+  "aesthetics": 46.0,
+  "comfort": 24.0,
+  "walkability": 12.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 29.0,
+  "safety": 42.0,
+  "livability": 18.0,
+  "sustainability": 22.0,
+  "aesthetics": 46.0,
+  "comfort": 24.0,
+  "walkability": 12.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:20:28+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The bridge deck is almost entirely allocated to multiple motor-vehicle lanes, while no visible sidewalk, pedestrian zone, or dedicated cycling facility appears in the image, indicating an uneven distribution of street space across road users.",
+   "Continuous concrete side barriers protect the carriageway edge, but they also show no visible curb ramps, refuge areas, or barrier-free pedestrian access elements for non-drivers on this segment.",
+   "Lane markings are clear for drivers, yet there are no visible tactile paving strips, crossing points, or separated non-motorized paths, so the design appears to prioritize vehicle movement over inclusive access for all road users."
+  ],
+  "safety": [
+   "The roadway has clear white lane markings and a wide paved surface, which helps drivers maintain lane position and reduces ambiguity in vehicle movement.",
+   "Concrete barriers on both sides separate traffic from the adjacent water, which is an important protective feature on a bridge.",
+   "Safety is weakened for all road users beyond drivers because no visible shoulder for walking, no protected bike lane, and no pedestrian barrier-separated path can be seen on the bridge.",
+   "The red car is traveling close to the camera position in an active traffic lane, and the apparent high-speed, multi-lane environment increases crash severity risk if conflicts occur."
+  ],
+  "livability": [
+   "The scene is a long bridge over water with only traffic lanes, light poles, and barriers visible, offering almost no signs of social activity, street life, or everyday public use beyond vehicle travel.",
+   "There are no visible benches, shops, bus stops, trees, or gathering spaces that would support daily urban life or make the place useful as a public street environment.",
+   "The large expanse of asphalt and absence of human-scale amenities make the corridor feel purely infrastructural rather than a livable street for diverse users."
+  ],
+  "sustainability": [
+   "No visible bus lane, bus stop, sidewalk, or dedicated bicycle facility is present, so the bridge appears to mainly support private motorized travel rather than low-carbon mode choice.",
+   "There is almost no visible greenery on the bridge deck itself; the surface is dominated by asphalt and concrete barriers, limiting ecological and cooling functions.",
+   "The adjacent water body is visible, but there are no observable stormwater features, permeable surfaces, or planted infrastructure on the roadway segment shown."
+  ],
+  "aesthetics": [
+   "The bridge has a clean, orderly appearance with consistent lane markings, evenly spaced light poles, and a strong linear perspective.",
+   "Open views across the water on both sides add some scenic value and visual openness.",
+   "Aesthetic quality is reduced by the dominance of bare asphalt, concrete barriers, and the lack of trees, planting, public art, or detailed streetscape elements.",
+   "The hazy sky and highly utilitarian design make the environment feel monotonous rather than visually rich."
+  ],
+  "comfort": [
+   "There is no visible shade from trees, canopies, or structures on the bridge, so thermal comfort is likely poor in sunny or hot weather.",
+   "The environment is dominated by fast-moving traffic lanes and hard concrete edges, which likely creates psychological discomfort for anyone outside a vehicle.",
+   "No seating, rest areas, or pedestrian-scale amenities are visible, so physical comfort for non-driving users is very limited.",
+   "The smooth asphalt surface benefits vehicle ride quality, but for all road users collectively, the absence of protected space and shelter keeps overall comfort low."
+  ],
+  "walkability": [
+   "No visible sidewalk or pedestrian path can be identified along the bridge, which is a major deficiency for walkability.",
+   "There are no marked crossings, curb ramps, pedestrian signals, or refuge spaces visible anywhere in the scene.",
+   "The long uninterrupted motor-traffic corridor, combined with concrete barriers and lack of human-scale features, makes the route appear unsuitable and unattractive for walking.",
+   "The bridge offers no visible shade, seating, or active frontage, so even if walking were technically allowed, the walking experience would be poor."
+  ]
+ }
+}

@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 31,
+      "equity": 32,
+      "fairness": 30,
+      "accessibility": 23
+    },
+    "safety": 73,
+    "livability": 21,
+    "sustainability": 65,
+    "aesthetics": 53,
+    "comfort": 35,
+    "walkability": 5,
+    "bikeability": 4
+  },
+  "explanations": {
+    "justice": [
+      "Main suburban external traffic channel, fully prioritizing high-speed motor vehicle passage.",
+      "Almost no travel right reserved for pedestrians and slow traffic.",
+      "Extremely low mobility equity, serious modal split imbalance."
+    ],
+    "safety": [
+      "Full roadside guardrail and median green belt separation reduce accident probability.",
+      "Long straight alignment and wide lanes ensure stable high-speed driving.",
+      "High speed will cause extremely serious injury consequences once collision occurs."
+    ],
+    "livability": [
+      "Pure long-distance transit function, almost no surrounding residential supporting facilities.",
+      "Traffic noise has limited impact on peripheral undeveloped green land.",
+      "No public rest and activity facilities arranged."
+    ],
+    "sustainability": [
+      "Ultra-large continuous shelterbelt provides outstanding ecological protection and carbon sequestration.",
+      "Massive hard pavement impairs urban hydrological cycle.",
+      "Single car-oriented layout restricts active travel system construction."
+    ],
+    "aesthetics": [
+      "Neat double-sided dense green belt forms grand linear green tunnel landscape.",
+      "Open distant sky and wide field of view create spacious feeling.",
+      "Functional road facilities are simple and lack humanistic design."
+    ],
+    "comfort": [
+      "Excellent road flatness brings stable and comfortable motor driving experience.",
+      "Green vegetation effectively absorbs partial traffic noise and pollution.",
+      "Completely lack human-oriented comfort design."
+    ],
+    "walkability": [
+      "Non-open pedestrian passage area.",
+      "High-speed vehicle flow brings huge life safety threat.",
+      "Not allowed and unsuitable for walking."
+    ],
+    "bikeability": [
+      "Cycling behavior is highly prohibited and dangerous.",
+      "No any cycling supporting infrastructure.",
+      "Absolutely not recommended for riding."
+    ]
+  },
+  "image_id": "suburban-green-trunk-highway",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-29T10:08:00.000Z",
+  "record_id": "rec-suburban-green-trunk-highway",
+  "export_timestamp": "2026-04-29T10:08:50.000Z"
+}

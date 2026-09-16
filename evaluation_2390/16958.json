@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 49.5,
+      "equity": 52,
+      "fairness": 50,
+      "accessibility": 46.5
+    },
+    "safety": 45.5,
+    "livability": 44,
+    "sustainability": 55,
+    "aesthetics": 46.5,
+    "comfort": 52.5,
+    "walkability": 41.5,
+    "bikeability": 33.5
+  },
+  "explanations": {
+    "justice": [
+      "Right-side curb space is largely occupied by parked cars and a large truck, concentrating usable edge space for drivers while reducing space for other users (unequal allocation of street-edge resources).",
+      "There is no clearly marked sidewalk or pedestrian zone visible; the left side appears as a narrow verge/grass strip next to a wall, which limits equitable pedestrian provision compared with vehicular space.",
+      "No visible curb ramps, tactile paving, or marked crossings in the scene; this weakens barrier-free accessibility for a broad range of users, especially anyone pushing strollers, carrying goods, or with mobility limits."
+    ],
+    "safety": [
+      "Multiple parked vehicles (including a truck) encroach close to the roadway edge, creating door-opening and pull-out conflicts for passing traffic and for any pedestrians walking along the edge.",
+      "A scooter/moped is positioned near the parked vehicles on the right, adding mixed-traffic interactions without a dedicated space, increasing conflict risk.",
+      "No marked crosswalks, bike lanes, or pedestrian refuge features are visible, reducing clarity of expected movements and increasing potential for user conflicts."
+    ],
+    "livability": [
+      "Street frontage is dominated by parking and a long wall/green buffer, with limited visible active uses or amenities, which reduces perceived street vitality for all users.",
+      "No benches, bus stop facilities, or social gathering nodes are visible, limiting everyday comfort and stay activities beyond passing through.",
+      "Some greenery (trees and grass strip) exists along the left side, providing a modest environmental quality benefit, but it does not translate into usable public space in the image."
+    ],
+    "sustainability": [
+      "Presence of trees and a grass verge on the left suggests some green infrastructure and potential microclimate/ecosystem benefits compared with fully paved edges.",
+      "The street design appears vehicle-oriented with extensive curbside parking, which tends to support car dependence rather than shifting trips to low-carbon modes.",
+      "No visible dedicated cycling infrastructure or transit facilities (e.g., bus stop signage/shelter) to encourage sustainable mode choice."
+    ],
+    "aesthetics": [
+      "Green elements (trees and grass strip) add some visual softness and landscape value along the left edge.",
+      "Visual clutter is introduced by dense curbside parking and a large truck on the right, which dominates the streetscape and reduces scenic quality.",
+      "Overall streetscape lacks coordinated street furniture, consistent pedestrian realm design, or distinctive architectural frontage; the long wall and parked vehicles create a utilitarian look."
+    ],
+    "comfort": [
+      "Trees along the left side can provide intermittent shade and improved thermal comfort for users near that edge, although canopy coverage appears limited over the roadway.",
+      "The roadway surface looks relatively smooth and continuous, supporting physical comfort for drivers and cyclists, but edge conditions for pedestrians are unclear due to lack of a defined sidewalk.",
+      "Psychological comfort is reduced by the close proximity of large vehicles (truck) and dense parking, which can feel constraining and unpredictable for non-motorized users sharing the edge."
+    ],
+    "walkability": [
+      "No clearly delineated sidewalk is visible; the left edge is a narrow grass verge by a wall and the right edge is occupied by parked vehicles, leaving pedestrians without a continuous, protected walking space.",
+      "Lack of marked crossings or pedestrian guidance features reduces route legibility and makes walking less convenient and less safe at potential crossing points.",
+      "Obstructions from curbside parking (including a truck) likely force pedestrians to walk closer to moving traffic, lowering perceived and actual walkability for all users."
+    ],
+    "bikeability": [
+      "No bike lane markings, buffers, or protected cycling space are visible, requiring cyclists to mix with motor vehicles in a narrow corridor.",
+      "Curbside parking creates a high dooring risk zone and unpredictable vehicle movements (pull-in/pull-out), which significantly reduces cycling safety and comfort.",
+      "No visible bicycle parking or cycling-support amenities are present, lowering convenience for destination cycling."
+    ]
+  },
+  "image_id": "img-1776945770768-cgxd8za2u",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T12:35:51.119Z",
+  "record_id": "63ee190682f74c86a412761245df43fe",
+  "stored_image_url": "/storage/records/63ee190682f74c86a412761245df43fe/image.jpg",
+  "stored_thumb_url": "/storage/records/63ee190682f74c86a412761245df43fe/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T12:37:26.476Z"
+}

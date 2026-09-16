@@ -1,0 +1,32 @@
+{
+ "oid": "16669",
+ "description": "The view shows a narrow street with no clearly marked or continuous sidewalk; pedestrians would likely have to walk along the edge of the roadway beside parked cars and building walls. Traffic separation is minimal—there are no visible barriers or curb delineation, and the street appears to be shared with vehicles moving through at low speed. Lighting is strong daylight with limited greenery/shade, and there are no visible curb cuts, ramps, or other accessibility features; obstacles include parked vehicles and street clutter near the curb line.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 104,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 1239,
+   "engine_ttlt_ms": 2714,
+   "pre_inference_ms": 377,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1968,
+   "service_ttlt_ms": 3438,
+   "user_visible_ttft_ms": 1590
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1088
+ },
+ "latency_s": 48.7,
+ "timestamp": "2026-08-31T16:13:16"
+}

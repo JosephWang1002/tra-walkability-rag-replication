@@ -1,0 +1,1032 @@
+[17:06:15] === same-config repeat n=1 runs=1 SCORE=gpt-5.4 T=0.0 frozen_from=E:\PAPER1\revision\results\ablation_3step\full_rag_v2 ===
+[17:06:15] oids[10145 .. 10145]
+[17:06:15] already complete 0/1
+[17:06:15] [1/1] 10145 run 0/0 start
+[17:06:34] [1/1] 10145 run 0 done walk=27.0 lat=18.2s complete=1/1
+[17:06:34] ICC n_rows=1 n_oids_any=1 n_oids_complete_1runs=1 |   justice: insufficient complete cells |   safety: insufficient complete cells |   livability: insufficient complete cells |   sustainability: insufficient complete cells |   aesthetics: insufficient complete cells |   comfort: insufficient complete cells |   walkability: insufficient complete cells
+[17:06:34] === finished complete=1/1 dir=E:\PAPER1\revision\results\sameconfig_repeat_100x5 ===
+[17:07:51] === same-config repeat n=100 runs=5 SCORE=gpt-5.4 T=0.0 frozen_from=E:\PAPER1\revision\results\ablation_3step\full_rag_v2 ===
+[17:07:51] oids[10145 .. 23981]
+[17:07:51] already complete 1/500 workers=3
+[17:07:51] [1/100] 10145 run 1/4 start
+[17:07:51] [1/100] 10145 run 2/4 start
+[17:07:51] [1/100] 10145 run 3/4 start
+[17:08:08] [1/100] 10145 run 3 done walk=27.0 lat=16.8s complete=2/500
+[17:08:08] [1/100] 10145 run 4/4 start
+[17:08:10] [1/100] 10145 run 1 done walk=34.0 lat=18.6s complete=3/500
+[17:08:10] [2/100] 10186 run 0/4 start
+[17:08:14] [1/100] 10145 run 2 done walk=34.0 lat=22.8s complete=4/500
+[17:08:14] [2/100] 10186 run 1/4 start
+[17:08:28] [1/100] 10145 run 4 done walk=34.0 lat=20.1s complete=5/500
+[17:08:28] [2/100] 10186 run 2/4 start
+[17:08:28] [2/100] 10186 run 0 done walk=34.0 lat=18.5s complete=6/500
+[17:08:28] [2/100] 10186 run 3/4 start
+[17:08:34] [2/100] 10186 run 1 done walk=32.0 lat=19.9s complete=7/500
+[17:08:34] [2/100] 10186 run 4/4 start
+[17:08:46] [2/100] 10186 run 3 done walk=38.0 lat=17.2s complete=8/500
+[17:08:46] [3/100] 1036 run 0/4 start
+[17:08:47] [2/100] 10186 run 2 done walk=38.0 lat=18.4s complete=9/500
+[17:08:47] [3/100] 1036 run 1/4 start
+[17:08:51] [2/100] 10186 run 4 done walk=38.0 lat=16.7s complete=10/500
+[17:08:51] [3/100] 1036 run 2/4 start
+[17:09:03] [3/100] 1036 run 0 done walk=8.0 lat=17.4s complete=11/500
+[17:09:03] [3/100] 1036 run 3/4 start
+[17:09:07] [3/100] 1036 run 1 done walk=8.0 lat=20.8s complete=12/500
+[17:09:07] [3/100] 1036 run 4/4 start
+[17:09:09] [3/100] 1036 run 2 done walk=6.0 lat=18.8s complete=13/500
+[17:09:09] [4/100] 10558 run 0/4 start
+[17:09:19] [3/100] 1036 run 3 done walk=5.0 lat=15.8s complete=14/500
+[17:09:19] [4/100] 10558 run 1/4 start
+[17:09:26] [3/100] 1036 run 4 done walk=2.0 lat=18.4s complete=15/500
+[17:09:26] [4/100] 10558 run 2/4 start
+[17:09:29] [4/100] 10558 run 0 done walk=77.0 lat=19.1s complete=16/500
+[17:09:29] [4/100] 10558 run 3/4 start
+[17:09:41] [4/100] 10558 run 1 done walk=75.0 lat=21.8s complete=17/500
+[17:09:41] [4/100] 10558 run 4/4 start
+[17:09:42] [4/100] 10558 run 2 done walk=73.0 lat=15.9s complete=18/500
+[17:09:42] [5/100] 10607 run 0/4 start
+[17:09:45] [4/100] 10558 run 3 done walk=77.0 lat=16.4s complete=19/500
+[17:09:45] [5/100] 10607 run 1/4 start
+[17:09:59] [5/100] 10607 run 0 done walk=34.0 lat=17.8s complete=20/500
+[17:09:59] [5/100] 10607 run 2/4 start
+[17:10:00] [4/100] 10558 run 4 done walk=73.0 lat=19.0s complete=21/500
+[17:10:00] [5/100] 10607 run 3/4 start
+[17:10:02] [5/100] 10607 run 1 done walk=35.0 lat=16.8s complete=22/500
+[17:10:02] [5/100] 10607 run 4/4 start
+[17:10:18] [5/100] 10607 run 2 done walk=35.0 lat=19.0s complete=23/500
+[17:10:18] [6/100] 1062 run 0/4 start
+[17:10:21] [5/100] 10607 run 4 done walk=40.0 lat=19.3s complete=24/500
+[17:10:21] [6/100] 1062 run 1/4 start
+[17:10:21] [5/100] 10607 run 3 done walk=40.0 lat=21.6s complete=25/500
+[17:10:21] [6/100] 1062 run 2/4 start
+[17:10:35] [6/100] 1062 run 0 done walk=54.0 lat=16.6s complete=26/500
+[17:10:35] [6/100] 1062 run 3/4 start
+[17:10:35] ICC n_rows=26 n_oids_any=6 n_oids_complete_5runs=5 |   justice: ICC(2,1)=0.973 meanSD=3.09 minSD=0.00 maxSD=4.47 pairwiseMAE=3.20 n=5x5 |   safety: ICC(2,1)=0.972 meanSD=1.86 minSD=0.00 maxSD=4.38 pairwiseMAE=2.04 n=5x5 |   livability: ICC(2,1)=0.982 meanSD=2.62 minSD=1.10 maxSD=3.65 pairwiseMAE=3.00 n=5x5 |   sustainability: ICC(2,1)=0.984 meanSD=2.54 minSD=0.45 maxSD=3.94 pairwiseMAE=2.68 n=5x5 |   aesthetics: ICC(2,1)=0.977 meanSD=1.74 minSD=0.00 maxSD=3.42 pairwiseMAE=1.96 n=5x5 |   comfort: ICC(2,1)=0.984 meanSD=2.41 minSD=1.00 maxSD=3.58 pairwiseMAE=2.68 n=5x5 |   walkability: ICC(2,1)=0.987 meanSD=2.82 minSD=2.00 maxSD=3.83 pairwiseMAE=3.24 n=5x5
+[17:10:37] [6/100] 1062 run 1 done walk=54.0 lat=16.0s complete=27/500
+[17:10:37] [6/100] 1062 run 4/4 start
+[17:10:41] [6/100] 1062 run 2 done walk=55.0 lat=19.3s complete=28/500
+[17:10:41] [7/100] 10687 run 0/4 start
+[17:10:46]   API retry 1/6 gpt-5.4: ProxyError: HTTPSConnectionPool(host='api.ohmygpt.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Rem
+[17:10:46]   API retry 1/6 gpt-5.4: ProxyError: HTTPSConnectionPool(host='api.ohmygpt.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Rem
+[17:10:46]   API retry 1/6 gpt-5.4: ProxyError: HTTPSConnectionPool(host='api.ohmygpt.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Rem
+[17:11:07] [7/100] 10687 run 0 done walk=20.0 lat=15.7s complete=29/500
+[17:11:07] [7/100] 10687 run 1/4 start
+[17:11:08] [6/100] 1062 run 4 done walk=55.0 lat=16.6s complete=30/500
+[17:11:08] [7/100] 10687 run 2/4 start
+[17:11:09] [6/100] 1062 run 3 done walk=54.0 lat=17.5s complete=31/500
+[17:11:09] [7/100] 10687 run 3/4 start
+[17:11:25] [7/100] 10687 run 2 done walk=20.0 lat=17.4s complete=32/500
+[17:11:25] [7/100] 10687 run 4/4 start
+[17:11:26] [7/100] 10687 run 3 done walk=20.0 lat=17.7s complete=33/500
+[17:11:26] [8/100] 10949 run 0/4 start
+[17:11:31] [7/100] 10687 run 1 done walk=19.0 lat=24.4s complete=34/500
+[17:11:31] [8/100] 10949 run 1/4 start
+[17:11:42] [8/100] 10949 run 0 done walk=50.0 lat=15.1s complete=35/500
+[17:11:42] [8/100] 10949 run 2/4 start
+[17:11:44] [7/100] 10687 run 4 done walk=20.0 lat=19.0s complete=36/500
+[17:11:44] [8/100] 10949 run 3/4 start
+[17:12:02] [8/100] 10949 run 1 done walk=50.0 lat=31.1s complete=37/500
+[17:12:02] [8/100] 10949 run 4/4 start
+[17:12:15] [8/100] 10949 run 2 done walk=45.0 lat=32.9s complete=38/500
+[17:12:15] [9/100] 11140 run 0/4 start
+[17:12:15] [8/100] 10949 run 3 done walk=43.0 lat=30.6s complete=39/500
+[17:12:15] [9/100] 11140 run 1/4 start
+[17:12:19] [8/100] 10949 run 4 done walk=43.0 lat=16.3s complete=40/500
+[17:12:19] [9/100] 11140 run 2/4 start
+[17:12:32] [9/100] 11140 run 1 done walk=42.0 lat=17.5s complete=41/500
+[17:12:32] [9/100] 11140 run 3/4 start
+[17:12:33] [9/100] 11140 run 0 done walk=42.0 lat=18.0s complete=42/500
+[17:12:33] [9/100] 11140 run 4/4 start
+[17:12:37] [9/100] 11140 run 2 done walk=42.0 lat=18.0s complete=43/500
+[17:12:37] [10/100] 11198 run 0/4 start
+[17:12:51] [9/100] 11140 run 3 done walk=42.0 lat=18.7s complete=44/500
+[17:12:51] [10/100] 11198 run 1/4 start
+[17:12:51] [9/100] 11140 run 4 done walk=42.0 lat=18.8s complete=45/500
+[17:12:51] [10/100] 11198 run 2/4 start
+[17:12:54] [10/100] 11198 run 0 done walk=58.0 lat=17.5s complete=46/500
+[17:12:54] [10/100] 11198 run 3/4 start
+[17:13:07] [10/100] 11198 run 2 done walk=54.0 lat=16.1s complete=47/500
+[17:13:07] [10/100] 11198 run 4/4 start
+[17:13:12] [10/100] 11198 run 1 done walk=61.0 lat=21.1s complete=48/500
+[17:13:12] [11/100] 11360 run 0/4 start
+[17:13:13] [10/100] 11198 run 3 done walk=52.0 lat=18.4s complete=49/500
+[17:13:13] [11/100] 11360 run 1/4 start
+[17:13:25] [10/100] 11198 run 4 done walk=52.0 lat=17.1s complete=50/500
+[17:13:25] [11/100] 11360 run 2/4 start
+[17:13:28] [11/100] 11360 run 0 done walk=19.0 lat=15.9s complete=51/500
+[17:13:28] [11/100] 11360 run 3/4 start
+[17:13:28] ICC n_rows=51 n_oids_any=11 n_oids_complete_5runs=10 |   justice: ICC(2,1)=0.968 meanSD=2.25 minSD=0.00 maxSD=4.47 pairwiseMAE=2.42 n=10x5 |   safety: ICC(2,1)=0.983 meanSD=1.50 minSD=0.00 maxSD=4.38 pairwiseMAE=1.66 n=10x5 |   livability: ICC(2,1)=0.977 meanSD=2.23 minSD=0.00 maxSD=4.38 pairwiseMAE=2.50 n=10x5 |   sustainability: ICC(2,1)=0.985 meanSD=2.06 minSD=0.00 maxSD=4.38 pairwiseMAE=2.22 n=10x5 |   aesthetics: ICC(2,1)=0.988 meanSD=1.70 minSD=0.00 maxSD=3.42 pairwiseMAE=1.90 n=10x5 |   comfort: ICC(2,1)=0.984 meanSD=2.01 minSD=0.00 maxSD=3.83 pairwiseMAE=2.26 n=10x5 |   walkability: ICC(2,1)=0.982 meanSD=2.26 minSD=0.00 maxSD=3.97 pairwiseMAE=2.62 n=10x5
+[17:13:31] [11/100] 11360 run 1 done walk=21.0 lat=18.0s complete=52/500
+[17:13:31] [11/100] 11360 run 4/4 start
+[17:13:40] [11/100] 11360 run 2 done walk=16.0 lat=15.9s complete=53/500
+[17:13:40] [12/100] 11439 run 0/4 start
+[17:13:49] [11/100] 11360 run 4 done walk=16.0 lat=18.1s complete=54/500
+[17:13:49] [12/100] 11439 run 1/4 start
+[17:13:51] [11/100] 11360 run 3 done walk=16.0 lat=23.3s complete=55/500
+[17:13:51] [12/100] 11439 run 2/4 start
+[17:13:57] [12/100] 11439 run 0 done walk=57.0 lat=16.6s complete=56/500
+[17:13:57] [12/100] 11439 run 3/4 start
+[17:14:06] [12/100] 11439 run 1 done walk=57.0 lat=17.4s complete=57/500
+[17:14:06] [12/100] 11439 run 4/4 start
+[17:14:12] [12/100] 11439 run 2 done walk=57.0 lat=20.3s complete=58/500
+[17:14:12] [13/100] 11523 run 0/4 start
+[17:14:17] [12/100] 11439 run 3 done walk=57.0 lat=20.4s complete=59/500
+[17:14:17] [13/100] 11523 run 1/4 start
+[17:14:28] [12/100] 11439 run 4 done walk=56.0 lat=21.7s complete=60/500
+[17:14:28] [13/100] 11523 run 2/4 start
+[17:14:29] [13/100] 11523 run 0 done walk=66.0 lat=17.0s complete=61/500
+[17:14:29] [13/100] 11523 run 3/4 start
+[17:14:35] [13/100] 11523 run 1 done walk=61.0 lat=17.7s complete=62/500
+[17:14:35] [13/100] 11523 run 4/4 start
+[17:14:43] [13/100] 11523 run 2 done walk=66.0 lat=15.1s complete=63/500
+[17:14:43] [14/100] 11525 run 0/4 start
+[17:14:48] [13/100] 11523 run 3 done walk=67.0 lat=19.6s complete=64/500
+[17:14:48] [14/100] 11525 run 1/4 start
+[17:14:56] [13/100] 11523 run 4 done walk=64.0 lat=20.7s complete=65/500
+[17:14:56] [14/100] 11525 run 2/4 start
+[17:15:02] [14/100] 11525 run 0 done walk=66.0 lat=19.2s complete=66/500
+[17:15:02] [14/100] 11525 run 3/4 start
+[17:15:11] [14/100] 11525 run 1 done walk=69.0 lat=22.9s complete=67/500
+[17:15:11] [14/100] 11525 run 4/4 start
+[17:15:17] [14/100] 11525 run 2 done walk=66.0 lat=21.0s complete=68/500
+[17:15:17] [15/100] 11962 run 0/4 start
+[17:15:20] [14/100] 11525 run 3 done walk=67.0 lat=17.8s complete=69/500
+[17:15:20] [15/100] 11962 run 1/4 start
+[17:15:33] [14/100] 11525 run 4 done walk=69.0 lat=22.2s complete=70/500
+[17:15:33] [15/100] 11962 run 2/4 start
+[17:15:39] [15/100] 11962 run 0 done walk=48.0 lat=22.0s complete=71/500
+[17:15:39] [15/100] 11962 run 3/4 start
+[17:15:40] [15/100] 11962 run 1 done walk=50.0 lat=19.7s complete=72/500
+[17:15:40] [15/100] 11962 run 4/4 start
+[17:15:51] [15/100] 11962 run 2 done walk=50.0 lat=17.6s complete=73/500
+[17:15:51] [16/100] 12065 run 0/4 start
+[17:15:59] [15/100] 11962 run 4 done walk=46.0 lat=19.7s complete=74/500
+[17:15:59] [16/100] 12065 run 1/4 start
+[17:16:00] [15/100] 11962 run 3 done walk=46.0 lat=20.5s complete=75/500
+[17:16:00] [16/100] 12065 run 2/4 start
+[17:16:15] [16/100] 12065 run 2 done walk=24.0 lat=15.0s complete=76/500
+[17:16:15] [16/100] 12065 run 3/4 start
+[17:16:15] ICC n_rows=76 n_oids_any=16 n_oids_complete_5runs=15 |   justice: ICC(2,1)=0.978 meanSD=1.73 minSD=0.00 maxSD=4.47 pairwiseMAE=1.84 n=15x5 |   safety: ICC(2,1)=0.988 meanSD=1.41 minSD=0.00 maxSD=4.38 pairwiseMAE=1.57 n=15x5 |   livability: ICC(2,1)=0.982 meanSD=1.98 minSD=0.00 maxSD=4.38 pairwiseMAE=2.21 n=15x5 |   sustainability: ICC(2,1)=0.990 meanSD=1.68 minSD=0.00 maxSD=4.38 pairwiseMAE=1.83 n=15x5 |   aesthetics: ICC(2,1)=0.990 meanSD=1.63 minSD=0.00 maxSD=3.42 pairwiseMAE=1.81 n=15x5 |   comfort: ICC(2,1)=0.989 meanSD=1.55 minSD=0.00 maxSD=3.83 pairwiseMAE=1.76 n=15x5 |   walkability: ICC(2,1)=0.985 meanSD=2.09 minSD=0.00 maxSD=3.97 pairwiseMAE=2.41 n=15x5
+[17:16:16] [16/100] 12065 run 0 done walk=22.0 lat=25.2s complete=77/500
+[17:16:16] [16/100] 12065 run 4/4 start
+[17:16:23] [16/100] 12065 run 1 done walk=22.0 lat=23.8s complete=78/500
+[17:16:23] [17/100] 12087 run 0/4 start
+[17:16:34] [16/100] 12065 run 3 done walk=24.0 lat=19.5s complete=79/500
+[17:16:34] [17/100] 12087 run 1/4 start
+[17:16:38] [16/100] 12065 run 4 done walk=24.0 lat=21.5s complete=80/500
+[17:16:38] [17/100] 12087 run 2/4 start
+[17:16:45] [17/100] 12087 run 0 done walk=41.0 lat=22.0s complete=81/500
+[17:16:45] [17/100] 12087 run 3/4 start
+[17:16:51] [17/100] 12087 run 1 done walk=38.0 lat=16.5s complete=82/500
+[17:16:51] [17/100] 12087 run 4/4 start
+[17:16:57] [17/100] 12087 run 2 done walk=46.0 lat=19.0s complete=83/500
+[17:16:57] [18/100] 12212 run 0/4 start
+[17:17:04] [17/100] 12087 run 3 done walk=46.0 lat=18.9s complete=84/500
+[17:17:04] [18/100] 12212 run 1/4 start
+[17:17:08] [17/100] 12087 run 4 done walk=46.0 lat=17.0s complete=85/500
+[17:17:08] [18/100] 12212 run 2/4 start
+[17:17:16] [18/100] 12212 run 0 done walk=54.0 lat=19.4s complete=86/500
+[17:17:16] [18/100] 12212 run 3/4 start
+[17:17:20] [18/100] 12212 run 1 done walk=57.0 lat=15.5s complete=87/500
+[17:17:20] [18/100] 12212 run 4/4 start
+[17:17:32] [18/100] 12212 run 2 done walk=54.0 lat=24.6s complete=88/500
+[17:17:32] [19/100] 12331 run 0/4 start
+[17:17:39] [18/100] 12212 run 3 done walk=54.0 lat=23.1s complete=89/500
+[17:17:39] [19/100] 12331 run 1/4 start
+[17:17:45] [18/100] 12212 run 4 done walk=54.0 lat=25.4s complete=90/500
+[17:17:45] [19/100] 12331 run 2/4 start
+[17:17:56] [19/100] 12331 run 0 done walk=54.0 lat=23.7s complete=91/500
+[17:17:56] [19/100] 12331 run 3/4 start
+[17:17:58] [19/100] 12331 run 1 done walk=57.0 lat=18.8s complete=92/500
+[17:17:58] [19/100] 12331 run 4/4 start
+[17:18:02] [19/100] 12331 run 2 done walk=55.0 lat=17.2s complete=93/500
+[17:18:02] [20/100] 12355 run 0/4 start
+[17:18:18] [19/100] 12331 run 3 done walk=56.0 lat=21.9s complete=94/500
+[17:18:18] [20/100] 12355 run 1/4 start
+[17:18:23] [19/100] 12331 run 4 done walk=54.0 lat=25.3s complete=95/500
+[17:18:23] [20/100] 12355 run 2/4 start
+[17:18:27] [20/100] 12355 run 0 done walk=33.0 lat=25.0s complete=96/500
+[17:18:27] [20/100] 12355 run 3/4 start
+[17:18:35] [20/100] 12355 run 1 done walk=33.0 lat=17.8s complete=97/500
+[17:18:35] [20/100] 12355 run 4/4 start
+[17:18:40] [20/100] 12355 run 2 done walk=32.0 lat=16.8s complete=98/500
+[17:18:40] [21/100] 12741 run 0/4 start
+[17:18:45] [20/100] 12355 run 3 done walk=35.0 lat=17.4s complete=99/500
+[17:18:45] [21/100] 12741 run 1/4 start
+[17:18:51] [20/100] 12355 run 4 done walk=35.0 lat=16.0s complete=100/500
+[17:18:51] [21/100] 12741 run 2/4 start
+[17:18:57] [21/100] 12741 run 0 done walk=55.0 lat=17.3s complete=101/500
+[17:18:57] [21/100] 12741 run 3/4 start
+[17:18:58] ICC n_rows=101 n_oids_any=21 n_oids_complete_5runs=20 |   justice: ICC(2,1)=0.979 meanSD=1.57 minSD=0.00 maxSD=4.47 pairwiseMAE=1.62 n=20x5 |   safety: ICC(2,1)=0.985 meanSD=1.55 minSD=0.00 maxSD=4.38 pairwiseMAE=1.71 n=20x5 |   livability: ICC(2,1)=0.984 meanSD=1.64 minSD=0.00 maxSD=4.38 pairwiseMAE=1.84 n=20x5 |   sustainability: ICC(2,1)=0.992 meanSD=1.32 minSD=0.00 maxSD=4.38 pairwiseMAE=1.43 n=20x5 |   aesthetics: ICC(2,1)=0.990 meanSD=1.54 minSD=0.00 maxSD=3.42 pairwiseMAE=1.72 n=20x5 |   comfort: ICC(2,1)=0.990 meanSD=1.53 minSD=0.00 maxSD=3.83 pairwiseMAE=1.72 n=20x5 |   walkability: ICC(2,1)=0.984 meanSD=2.00 minSD=0.00 maxSD=3.97 pairwiseMAE=2.30 n=20x5
+[17:19:03] [21/100] 12741 run 1 done walk=55.0 lat=18.5s complete=102/500
+[17:19:03] [21/100] 12741 run 4/4 start
+[17:19:09] [21/100] 12741 run 2 done walk=54.0 lat=17.5s complete=103/500
+[17:19:09] [22/100] 12901 run 0/4 start
+[17:19:14] [21/100] 12741 run 3 done walk=54.0 lat=16.5s complete=104/500
+[17:19:14] [22/100] 12901 run 1/4 start
+[17:19:22] [21/100] 12741 run 4 done walk=55.0 lat=19.1s complete=105/500
+[17:19:22] [22/100] 12901 run 2/4 start
+[17:19:29] [22/100] 12901 run 0 done walk=22.0 lat=20.4s complete=106/500
+[17:19:29] [22/100] 12901 run 3/4 start
+[17:19:30] [22/100] 12901 run 1 done walk=22.0 lat=16.3s complete=107/500
+[17:19:30] [22/100] 12901 run 4/4 start
+[17:19:39] [22/100] 12901 run 2 done walk=22.0 lat=16.6s complete=108/500
+[17:19:39] [23/100] 12908 run 0/4 start
+[17:19:46] [22/100] 12901 run 3 done walk=22.0 lat=17.0s complete=109/500
+[17:19:46] [23/100] 12908 run 1/4 start
+[17:19:49] [22/100] 12901 run 4 done walk=22.0 lat=19.1s complete=110/500
+[17:19:49] [23/100] 12908 run 2/4 start
+[17:19:54] [23/100] 12908 run 0 done walk=50.0 lat=15.2s complete=111/500
+[17:19:54] [23/100] 12908 run 3/4 start
+[17:20:08] [23/100] 12908 run 1 done walk=48.0 lat=21.4s complete=112/500
+[17:20:08] [23/100] 12908 run 4/4 start
+[17:20:09] [23/100] 12908 run 2 done walk=46.0 lat=19.5s complete=113/500
+[17:20:09] [24/100] 13266 run 0/4 start
+[17:20:15] [23/100] 12908 run 3 done walk=49.0 lat=20.9s complete=114/500
+[17:20:15] [24/100] 13266 run 1/4 start
+[17:20:25] [23/100] 12908 run 4 done walk=46.0 lat=17.5s complete=115/500
+[17:20:25] [24/100] 13266 run 2/4 start
+[17:20:28] [24/100] 13266 run 0 done walk=12.0 lat=18.9s complete=116/500
+[17:20:28] [24/100] 13266 run 3/4 start
+[17:20:31] [24/100] 13266 run 1 done walk=12.0 lat=15.7s complete=117/500
+[17:20:31] [24/100] 13266 run 4/4 start
+[17:20:42] [24/100] 13266 run 2 done walk=12.0 lat=16.6s complete=118/500
+[17:20:42] [25/100] 13324 run 0/4 start
+[17:20:46] [24/100] 13266 run 3 done walk=12.0 lat=18.6s complete=119/500
+[17:20:46] [25/100] 13324 run 1/4 start
+[17:20:48] [24/100] 13266 run 4 done walk=12.0 lat=17.3s complete=120/500
+[17:20:48] [25/100] 13324 run 2/4 start
+[17:21:03] [25/100] 13324 run 0 done walk=28.0 lat=21.0s complete=121/500
+[17:21:03] [25/100] 13324 run 3/4 start
+[17:21:05] [25/100] 13324 run 1 done walk=18.0 lat=18.5s complete=122/500
+[17:21:05] [25/100] 13324 run 4/4 start
+[17:21:06] [25/100] 13324 run 2 done walk=28.0 lat=18.2s complete=123/500
+[17:21:06] [26/100] 1383 run 0/4 start
+[17:21:21] [25/100] 13324 run 3 done walk=24.0 lat=17.9s complete=124/500
+[17:21:21] [26/100] 1383 run 1/4 start
+[17:21:24] [25/100] 13324 run 4 done walk=28.0 lat=19.1s complete=125/500
+[17:21:24] [26/100] 1383 run 2/4 start
+[17:21:28] [26/100] 1383 run 0 done walk=8.0 lat=22.1s complete=126/500
+[17:21:28] [26/100] 1383 run 3/4 start
+[17:21:28] ICC n_rows=126 n_oids_any=26 n_oids_complete_5runs=25 |   justice: ICC(2,1)=0.976 meanSD=1.74 minSD=0.00 maxSD=4.47 pairwiseMAE=1.82 n=25x5 |   safety: ICC(2,1)=0.983 meanSD=1.67 minSD=0.00 maxSD=5.37 pairwiseMAE=1.82 n=25x5 |   livability: ICC(2,1)=0.983 meanSD=1.71 minSD=0.00 maxSD=4.38 pairwiseMAE=1.91 n=25x5 |   sustainability: ICC(2,1)=0.986 meanSD=1.74 minSD=0.00 maxSD=6.72 pairwiseMAE=1.95 n=25x5 |   aesthetics: ICC(2,1)=0.985 meanSD=1.80 minSD=0.00 maxSD=4.38 pairwiseMAE=1.95 n=25x5 |   comfort: ICC(2,1)=0.987 meanSD=1.74 minSD=0.00 maxSD=3.83 pairwiseMAE=1.96 n=25x5 |   walkability: ICC(2,1)=0.984 meanSD=1.87 minSD=0.00 maxSD=4.38 pairwiseMAE=2.14 n=25x5
+[17:21:40] [26/100] 1383 run 1 done walk=8.0 lat=19.6s complete=127/500
+[17:21:40] [26/100] 1383 run 4/4 start
+[17:21:43] [26/100] 1383 run 2 done walk=8.0 lat=19.4s complete=128/500
+[17:21:43] [27/100] 13915 run 0/4 start
+[17:21:49] [26/100] 1383 run 3 done walk=8.0 lat=20.3s complete=129/500
+[17:21:49] [27/100] 13915 run 1/4 start
+[17:22:02] [27/100] 13915 run 0 done walk=12.0 lat=18.4s complete=130/500
+[17:22:02] [27/100] 13915 run 2/4 start
+[17:22:03] [26/100] 1383 run 4 done walk=8.0 lat=22.6s complete=131/500
+[17:22:03] [27/100] 13915 run 3/4 start
+[17:22:07] [27/100] 13915 run 1 done walk=16.0 lat=18.2s complete=132/500
+[17:22:07] [27/100] 13915 run 4/4 start
+[17:22:18] [27/100] 13915 run 2 done walk=18.0 lat=16.5s complete=133/500
+[17:22:18] [28/100] 14201 run 0/4 start
+[17:22:21] [27/100] 13915 run 3 done walk=18.0 lat=17.7s complete=134/500
+[17:22:21] [28/100] 14201 run 1/4 start
+[17:22:27] [27/100] 13915 run 4 done walk=18.0 lat=20.0s complete=135/500
+[17:22:27] [28/100] 14201 run 2/4 start
+[17:22:40] [28/100] 14201 run 1 done walk=28.0 lat=19.3s complete=136/500
+[17:22:40] [28/100] 14201 run 3/4 start
+[17:22:40] [28/100] 14201 run 0 done walk=28.0 lat=22.2s complete=137/500
+[17:22:40] [28/100] 14201 run 4/4 start
+[17:22:47] [28/100] 14201 run 2 done walk=28.0 lat=20.1s complete=138/500
+[17:22:47] [29/100] 14460 run 0/4 start
+[17:22:57] [28/100] 14201 run 4 done walk=28.0 lat=17.2s complete=139/500
+[17:22:57] [29/100] 14460 run 1/4 start
+[17:22:59] [28/100] 14201 run 3 done walk=29.0 lat=18.7s complete=140/500
+[17:22:59] [29/100] 14460 run 2/4 start
+[17:23:07] [29/100] 14460 run 0 done walk=46.0 lat=20.1s complete=141/500
+[17:23:07] [29/100] 14460 run 3/4 start
+[17:23:17] [29/100] 14460 run 1 done walk=61.0 lat=19.3s complete=142/500
+[17:23:17] [29/100] 14460 run 4/4 start
+[17:23:20] [29/100] 14460 run 2 done walk=63.0 lat=21.1s complete=143/500
+[17:23:20] [30/100] 14725 run 0/4 start
+[17:23:31] [29/100] 14460 run 3 done walk=46.0 lat=23.5s complete=144/500
+[17:23:31] [30/100] 14725 run 1/4 start
+[17:23:38] [29/100] 14460 run 4 done walk=54.0 lat=21.1s complete=145/500
+[17:23:38] [30/100] 14725 run 2/4 start
+[17:23:49] [30/100] 14725 run 1 done walk=34.0 lat=18.1s complete=146/500
+[17:23:49] [30/100] 14725 run 3/4 start
+[17:23:49] [30/100] 14725 run 0 done walk=34.0 lat=28.9s complete=147/500
+[17:23:49] [30/100] 14725 run 4/4 start
+[17:24:00] [30/100] 14725 run 2 done walk=34.0 lat=21.7s complete=148/500
+[17:24:00] [31/100] 14982 run 0/4 start
+[17:24:05] [30/100] 14725 run 3 done walk=38.0 lat=16.8s complete=149/500
+[17:24:05] [31/100] 14982 run 1/4 start
+[17:24:07] [30/100] 14725 run 4 done walk=38.0 lat=18.1s complete=150/500
+[17:24:07] [31/100] 14982 run 2/4 start
+[17:24:20] [31/100] 14982 run 0 done walk=50.0 lat=20.3s complete=151/500
+[17:24:20] [31/100] 14982 run 3/4 start
+[17:24:20] ICC n_rows=151 n_oids_any=31 n_oids_complete_5runs=30 |   justice: ICC(2,1)=0.967 meanSD=2.00 minSD=0.00 maxSD=8.73 pairwiseMAE=2.11 n=30x5 |   safety: ICC(2,1)=0.974 meanSD=1.93 minSD=0.00 maxSD=6.02 pairwiseMAE=2.15 n=30x5 |   livability: ICC(2,1)=0.984 meanSD=1.66 minSD=0.00 maxSD=5.26 pairwiseMAE=1.86 n=30x5 |   sustainability: ICC(2,1)=0.987 meanSD=1.65 minSD=0.00 maxSD=6.72 pairwiseMAE=1.86 n=30x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.70 minSD=0.00 maxSD=4.38 pairwiseMAE=1.84 n=30x5 |   comfort: ICC(2,1)=0.986 meanSD=1.80 minSD=0.00 maxSD=3.83 pairwiseMAE=2.02 n=30x5 |   walkability: ICC(2,1)=0.980 meanSD=2.00 minSD=0.00 maxSD=8.03 pairwiseMAE=2.30 n=30x5
+[17:24:23] [31/100] 14982 run 1 done walk=48.0 lat=17.9s complete=152/500
+[17:24:23] [31/100] 14982 run 4/4 start
+[17:24:31] [31/100] 14982 run 2 done walk=50.0 lat=24.2s complete=153/500
+[17:24:31] [32/100] 15121 run 0/4 start
+[17:24:42] [31/100] 14982 run 3 done walk=46.0 lat=22.2s complete=154/500
+[17:24:42] [32/100] 15121 run 1/4 start
+[17:24:44] [31/100] 14982 run 4 done walk=48.0 lat=20.8s complete=155/500
+[17:24:44] [32/100] 15121 run 2/4 start
+[17:24:50] [32/100] 15121 run 0 done walk=26.0 lat=18.8s complete=156/500
+[17:24:50] [32/100] 15121 run 3/4 start
+[17:24:58] [32/100] 15121 run 1 done walk=31.0 lat=15.7s complete=157/500
+[17:24:58] [32/100] 15121 run 4/4 start
+[17:25:04] [32/100] 15121 run 2 done walk=30.0 lat=20.1s complete=158/500
+[17:25:04] [33/100] 15217 run 0/4 start
+[17:25:07] [32/100] 15121 run 3 done walk=30.0 lat=17.5s complete=159/500
+[17:25:07] [33/100] 15217 run 1/4 start
+[17:25:15] [32/100] 15121 run 4 done walk=28.0 lat=16.9s complete=160/500
+[17:25:15] [33/100] 15217 run 2/4 start
+[17:25:23] [33/100] 15217 run 0 done walk=34.0 lat=18.7s complete=161/500
+[17:25:23] [33/100] 15217 run 3/4 start
+[17:25:25] [33/100] 15217 run 1 done walk=38.0 lat=18.0s complete=162/500
+[17:25:25] [33/100] 15217 run 4/4 start
+[17:25:34] [33/100] 15217 run 2 done walk=38.0 lat=19.3s complete=163/500
+[17:25:34] [34/100] 15353 run 0/4 start
+[17:25:42] [33/100] 15217 run 3 done walk=28.0 lat=18.9s complete=164/500
+[17:25:42] [34/100] 15353 run 1/4 start
+[17:25:47] [33/100] 15217 run 4 done walk=38.0 lat=21.6s complete=165/500
+[17:25:47] [34/100] 15353 run 2/4 start
+[17:25:53] [34/100] 15353 run 0 done walk=67.0 lat=19.2s complete=166/500
+[17:25:53] [34/100] 15353 run 3/4 start
+[17:26:04] [34/100] 15353 run 1 done walk=70.0 lat=22.5s complete=167/500
+[17:26:04] [34/100] 15353 run 4/4 start
+[17:26:09] [34/100] 15353 run 2 done walk=70.0 lat=21.8s complete=168/500
+[17:26:09] [35/100] 1562 run 0/4 start
+[17:26:13] [34/100] 15353 run 3 done walk=67.0 lat=19.7s complete=169/500
+[17:26:13] [35/100] 1562 run 1/4 start
+[17:26:21] [34/100] 15353 run 4 done walk=67.0 lat=16.9s complete=170/500
+[17:26:21] [35/100] 1562 run 2/4 start
+[17:26:24] [35/100] 1562 run 0 done walk=8.0 lat=15.4s complete=171/500
+[17:26:24] [35/100] 1562 run 3/4 start
+[17:26:29] [35/100] 1562 run 1 done walk=8.0 lat=16.1s complete=172/500
+[17:26:29] [35/100] 1562 run 4/4 start
+[17:26:42] [35/100] 1562 run 2 done walk=5.0 lat=20.6s complete=173/500
+[17:26:42] [36/100] 16041 run 0/4 start
+[17:26:44] [35/100] 1562 run 3 done walk=8.0 lat=19.9s complete=174/500
+[17:26:44] [36/100] 16041 run 1/4 start
+[17:26:49] [35/100] 1562 run 4 done walk=8.0 lat=19.8s complete=175/500
+[17:26:49] [36/100] 16041 run 2/4 start
+[17:27:03] [36/100] 16041 run 0 done walk=52.0 lat=20.6s complete=176/500
+[17:27:03] [36/100] 16041 run 3/4 start
+[17:27:03] ICC n_rows=176 n_oids_any=36 n_oids_complete_5runs=35 |   justice: ICC(2,1)=0.968 meanSD=2.01 minSD=0.00 maxSD=8.73 pairwiseMAE=2.10 n=35x5 |   safety: ICC(2,1)=0.970 meanSD=2.10 minSD=0.00 maxSD=6.26 pairwiseMAE=2.28 n=35x5 |   livability: ICC(2,1)=0.983 meanSD=1.77 minSD=0.00 maxSD=5.26 pairwiseMAE=1.96 n=35x5 |   sustainability: ICC(2,1)=0.984 meanSD=1.91 minSD=0.00 maxSD=6.95 pairwiseMAE=2.17 n=35x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.70 minSD=0.00 maxSD=4.38 pairwiseMAE=1.85 n=35x5 |   comfort: ICC(2,1)=0.985 meanSD=1.90 minSD=0.00 maxSD=3.83 pairwiseMAE=2.14 n=35x5 |   walkability: ICC(2,1)=0.981 meanSD=2.03 minSD=0.00 maxSD=8.03 pairwiseMAE=2.32 n=35x5
+[17:27:05] [36/100] 16041 run 1 done walk=54.0 lat=20.6s complete=177/500
+[17:27:05] [36/100] 16041 run 4/4 start
+[17:27:06] [36/100] 16041 run 2 done walk=54.0 lat=16.9s complete=178/500
+[17:27:06] [37/100] 16053 run 0/4 start
+[17:27:19] [36/100] 16041 run 3 done walk=54.0 lat=16.5s complete=179/500
+[17:27:19] [37/100] 16053 run 1/4 start
+[17:27:21] [36/100] 16041 run 4 done walk=54.0 lat=16.0s complete=180/500
+[17:27:21] [37/100] 16053 run 2/4 start
+[17:27:24] [37/100] 16053 run 0 done walk=38.0 lat=17.8s complete=181/500
+[17:27:24] [37/100] 16053 run 3/4 start
+[17:27:40] [37/100] 16053 run 1 done walk=35.0 lat=20.5s complete=182/500
+[17:27:40] [37/100] 16053 run 4/4 start
+[17:27:40] [37/100] 16053 run 2 done walk=34.0 lat=19.2s complete=183/500
+[17:27:40] [38/100] 16164 run 0/4 start
+[17:27:44] [37/100] 16053 run 3 done walk=38.0 lat=20.4s complete=184/500
+[17:27:44] [38/100] 16164 run 1/4 start
+[17:27:56] [38/100] 16164 run 0 done walk=40.0 lat=16.0s complete=185/500
+[17:27:56] [38/100] 16164 run 2/4 start
+[17:27:58] [37/100] 16053 run 4 done walk=35.0 lat=18.4s complete=186/500
+[17:27:58] [38/100] 16164 run 3/4 start
+[17:28:04] [38/100] 16164 run 1 done walk=35.0 lat=19.7s complete=187/500
+[17:28:04] [38/100] 16164 run 4/4 start
+[17:28:13] [38/100] 16164 run 2 done walk=41.0 lat=16.9s complete=188/500
+[17:28:13] [39/100] 16297 run 0/4 start
+[17:28:15] [38/100] 16164 run 3 done walk=40.0 lat=17.3s complete=189/500
+[17:28:15] [39/100] 16297 run 1/4 start
+[17:28:21] [38/100] 16164 run 4 done walk=41.0 lat=17.0s complete=190/500
+[17:28:21] [39/100] 16297 run 2/4 start
+[17:28:29] [39/100] 16297 run 0 done walk=35.0 lat=16.4s complete=191/500
+[17:28:29] [39/100] 16297 run 3/4 start
+[17:28:30] [39/100] 16297 run 1 done walk=35.0 lat=15.2s complete=192/500
+[17:28:30] [39/100] 16297 run 4/4 start
+[17:28:39] [39/100] 16297 run 2 done walk=35.0 lat=18.6s complete=193/500
+[17:28:39] [40/100] 16322 run 0/4 start
+[17:28:45] [39/100] 16297 run 3 done walk=35.0 lat=15.9s complete=194/500
+[17:28:45] [40/100] 16322 run 1/4 start
+[17:28:48] [39/100] 16297 run 4 done walk=35.0 lat=17.3s complete=195/500
+[17:28:48] [40/100] 16322 run 2/4 start
+[17:28:56] [40/100] 16322 run 0 done walk=22.0 lat=16.5s complete=196/500
+[17:28:56] [40/100] 16322 run 3/4 start
+[17:29:02] [40/100] 16322 run 1 done walk=22.0 lat=16.9s complete=197/500
+[17:29:02] [40/100] 16322 run 4/4 start
+[17:29:05] [40/100] 16322 run 2 done walk=22.0 lat=17.4s complete=198/500
+[17:29:05] [41/100] 16377 run 0/4 start
+[17:29:13] [40/100] 16322 run 3 done walk=22.0 lat=17.2s complete=199/500
+[17:29:13] [41/100] 16377 run 1/4 start
+[17:29:20] [40/100] 16322 run 4 done walk=22.0 lat=17.6s complete=200/500
+[17:29:20] [41/100] 16377 run 2/4 start
+[17:29:23] [41/100] 16377 run 0 done walk=73.0 lat=18.2s complete=201/500
+[17:29:23] [41/100] 16377 run 3/4 start
+[17:29:24] ICC n_rows=201 n_oids_any=41 n_oids_complete_5runs=40 |   justice: ICC(2,1)=0.965 meanSD=2.07 minSD=0.00 maxSD=8.73 pairwiseMAE=2.16 n=40x5 |   safety: ICC(2,1)=0.969 meanSD=2.09 minSD=0.00 maxSD=6.26 pairwiseMAE=2.26 n=40x5 |   livability: ICC(2,1)=0.983 meanSD=1.67 minSD=0.00 maxSD=5.26 pairwiseMAE=1.85 n=40x5 |   sustainability: ICC(2,1)=0.984 meanSD=1.87 minSD=0.00 maxSD=6.95 pairwiseMAE=2.10 n=40x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.62 minSD=0.00 maxSD=4.38 pairwiseMAE=1.77 n=40x5 |   comfort: ICC(2,1)=0.984 meanSD=1.87 minSD=0.00 maxSD=3.83 pairwiseMAE=2.11 n=40x5 |   walkability: ICC(2,1)=0.981 meanSD=1.91 minSD=0.00 maxSD=8.03 pairwiseMAE=2.17 n=40x5
+[17:29:32] [41/100] 16377 run 1 done walk=73.0 lat=19.1s complete=202/500
+[17:29:32] [41/100] 16377 run 4/4 start
+[17:29:37] [41/100] 16377 run 2 done walk=73.0 lat=17.1s complete=203/500
+[17:29:37] [42/100] 16529 run 0/4 start
+[17:29:40] [41/100] 16377 run 3 done walk=74.0 lat=16.9s complete=204/500
+[17:29:40] [42/100] 16529 run 1/4 start
+[17:29:48] [41/100] 16377 run 4 done walk=76.0 lat=15.5s complete=205/500
+[17:29:48] [42/100] 16529 run 2/4 start
+[17:29:55] [42/100] 16529 run 0 done walk=56.0 lat=18.6s complete=206/500
+[17:29:55] [42/100] 16529 run 3/4 start
+[17:29:59] [42/100] 16529 run 1 done walk=57.0 lat=18.7s complete=207/500
+[17:29:59] [42/100] 16529 run 4/4 start
+[17:30:06] [42/100] 16529 run 2 done walk=63.0 lat=18.2s complete=208/500
+[17:30:06] [43/100] 1655 run 0/4 start
+[17:30:11] [42/100] 16529 run 3 done walk=56.0 lat=15.9s complete=209/500
+[17:30:11] [43/100] 1655 run 1/4 start
+[17:30:19] [42/100] 16529 run 4 done walk=56.0 lat=19.9s complete=210/500
+[17:30:19] [43/100] 1655 run 2/4 start
+[17:30:24] [43/100] 1655 run 0 done walk=8.0 lat=18.6s complete=211/500
+[17:30:24] [43/100] 1655 run 3/4 start
+[17:30:29] [43/100] 1655 run 1 done walk=12.0 lat=17.7s complete=212/500
+[17:30:29] [43/100] 1655 run 4/4 start
+[17:30:39] [43/100] 1655 run 2 done walk=8.0 lat=19.9s complete=213/500
+[17:30:39] [44/100] 16559 run 0/4 start
+[17:30:41] [43/100] 1655 run 3 done walk=8.0 lat=16.3s complete=214/500
+[17:30:41] [44/100] 16559 run 1/4 start
+[17:30:47] [43/100] 1655 run 4 done walk=8.0 lat=18.2s complete=215/500
+[17:30:47] [44/100] 16559 run 2/4 start
+[17:30:59] [44/100] 16559 run 0 done walk=60.0 lat=20.1s complete=216/500
+[17:30:59] [44/100] 16559 run 3/4 start
+[17:31:02] [44/100] 16559 run 1 done walk=59.0 lat=20.9s complete=217/500
+[17:31:02] [44/100] 16559 run 4/4 start
+[17:31:08] [44/100] 16559 run 2 done walk=59.0 lat=20.4s complete=218/500
+[17:31:08] [45/100] 16562 run 0/4 start
+[17:31:20] [44/100] 16559 run 3 done walk=58.0 lat=21.4s complete=219/500
+[17:31:20] [45/100] 16562 run 1/4 start
+[17:31:23] [44/100] 16559 run 4 done walk=58.0 lat=21.7s complete=220/500
+[17:31:23] [45/100] 16562 run 2/4 start
+[17:31:25] [45/100] 16562 run 0 done walk=28.0 lat=17.3s complete=221/500
+[17:31:25] [45/100] 16562 run 3/4 start
+[17:31:39] [45/100] 16562 run 1 done walk=34.0 lat=18.2s complete=222/500
+[17:31:39] [45/100] 16562 run 4/4 start
+[17:31:41] [45/100] 16562 run 2 done walk=34.0 lat=17.6s complete=223/500
+[17:31:41] [46/100] 16568 run 0/4 start
+[17:31:41] [45/100] 16562 run 3 done walk=34.0 lat=16.2s complete=224/500
+[17:31:41] [46/100] 16568 run 1/4 start
+[17:31:58] [46/100] 16568 run 0 done walk=24.0 lat=17.0s complete=225/500
+[17:31:58] [46/100] 16568 run 2/4 start
+[17:31:58] [45/100] 16562 run 4 done walk=34.0 lat=19.9s complete=226/500
+[17:31:58] [46/100] 16568 run 3/4 start
+[17:31:59] ICC n_rows=226 n_oids_any=46 n_oids_complete_5runs=45 |   justice: ICC(2,1)=0.969 meanSD=1.98 minSD=0.00 maxSD=8.73 pairwiseMAE=2.07 n=45x5 |   safety: ICC(2,1)=0.970 meanSD=2.00 minSD=0.00 maxSD=6.26 pairwiseMAE=2.16 n=45x5 |   livability: ICC(2,1)=0.984 meanSD=1.62 minSD=0.00 maxSD=5.26 pairwiseMAE=1.80 n=45x5 |   sustainability: ICC(2,1)=0.985 meanSD=1.80 minSD=0.00 maxSD=6.95 pairwiseMAE=2.02 n=45x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.59 minSD=0.00 maxSD=4.38 pairwiseMAE=1.74 n=45x5 |   comfort: ICC(2,1)=0.983 meanSD=1.97 minSD=0.00 maxSD=3.83 pairwiseMAE=2.23 n=45x5 |   walkability: ICC(2,1)=0.983 meanSD=1.91 minSD=0.00 maxSD=8.03 pairwiseMAE=2.14 n=45x5
+[17:32:00] [46/100] 16568 run 1 done walk=32.0 lat=18.7s complete=227/500
+[17:32:00] [46/100] 16568 run 4/4 start
+[17:32:13] [46/100] 16568 run 3 done walk=28.0 lat=14.3s complete=228/500
+[17:32:13] [47/100] 16669 run 0/4 start
+[17:32:20] [46/100] 16568 run 2 done walk=27.0 lat=21.8s complete=229/500
+[17:32:20] [47/100] 16669 run 1/4 start
+[17:32:20] [46/100] 16568 run 4 done walk=24.0 lat=20.7s complete=230/500
+[17:32:20] [47/100] 16669 run 2/4 start
+[17:32:30] [47/100] 16669 run 0 done walk=33.0 lat=17.3s complete=231/500
+[17:32:30] [47/100] 16669 run 3/4 start
+[17:32:35] [47/100] 16669 run 1 done walk=30.0 lat=15.3s complete=232/500
+[17:32:35] [47/100] 16669 run 4/4 start
+[17:32:38] [47/100] 16669 run 2 done walk=33.0 lat=17.3s complete=233/500
+[17:32:38] [48/100] 16676 run 0/4 start
+[17:32:49] [47/100] 16669 run 3 done walk=32.0 lat=18.4s complete=234/500
+[17:32:49] [48/100] 16676 run 1/4 start
+[17:32:51] [47/100] 16669 run 4 done walk=28.0 lat=16.0s complete=235/500
+[17:32:51] [48/100] 16676 run 2/4 start
+[17:32:55] [48/100] 16676 run 0 done walk=51.0 lat=16.8s complete=236/500
+[17:32:55] [48/100] 16676 run 3/4 start
+[17:33:04] [48/100] 16676 run 1 done walk=46.0 lat=15.4s complete=237/500
+[17:33:04] [48/100] 16676 run 4/4 start
+[17:33:07] [48/100] 16676 run 2 done walk=50.0 lat=16.3s complete=238/500
+[17:33:07] [49/100] 16700 run 0/4 start
+[17:33:11] [48/100] 16676 run 3 done walk=50.0 lat=16.3s complete=239/500
+[17:33:11] [49/100] 16700 run 1/4 start
+[17:33:22] [48/100] 16676 run 4 done walk=42.0 lat=17.6s complete=240/500
+[17:33:22] [49/100] 16700 run 2/4 start
+[17:33:25] [49/100] 16700 run 0 done walk=69.0 lat=17.8s complete=241/500
+[17:33:25] [49/100] 16700 run 3/4 start
+[17:33:30] [49/100] 16700 run 1 done walk=66.0 lat=18.7s complete=242/500
+[17:33:30] [49/100] 16700 run 4/4 start
+[17:33:46] [49/100] 16700 run 3 done walk=68.0 lat=20.9s complete=243/500
+[17:33:46] [50/100] 16849 run 0/4 start
+[17:33:47] [49/100] 16700 run 4 done walk=66.0 lat=17.8s complete=244/500
+[17:33:47] [50/100] 16849 run 1/4 start
+[17:33:50] [49/100] 16700 run 2 done walk=64.0 lat=28.5s complete=245/500
+[17:33:50] [50/100] 16849 run 2/4 start
+[17:34:05] [50/100] 16849 run 0 done walk=41.0 lat=18.8s complete=246/500
+[17:34:05] [50/100] 16849 run 3/4 start
+[17:34:05] [50/100] 16849 run 1 done walk=40.0 lat=17.3s complete=247/500
+[17:34:05] [50/100] 16849 run 4/4 start
+[17:34:13] [50/100] 16849 run 2 done walk=44.0 lat=22.9s complete=248/500
+[17:34:13] [51/100] 17141 run 0/4 start
+[17:34:23] [50/100] 16849 run 4 done walk=40.0 lat=18.1s complete=249/500
+[17:34:23] [51/100] 17141 run 1/4 start
+[17:34:24] [50/100] 16849 run 3 done walk=40.0 lat=19.4s complete=250/500
+[17:34:24] [51/100] 17141 run 2/4 start
+[17:34:30] [51/100] 17141 run 0 done walk=46.0 lat=17.3s complete=251/500
+[17:34:30] [51/100] 17141 run 3/4 start
+[17:34:30] ICC n_rows=251 n_oids_any=51 n_oids_complete_5runs=50 |   justice: ICC(2,1)=0.968 meanSD=2.02 minSD=0.00 maxSD=8.73 pairwiseMAE=2.12 n=50x5 |   safety: ICC(2,1)=0.972 meanSD=1.98 minSD=0.00 maxSD=6.26 pairwiseMAE=2.15 n=50x5 |   livability: ICC(2,1)=0.984 meanSD=1.63 minSD=0.00 maxSD=5.26 pairwiseMAE=1.80 n=50x5 |   sustainability: ICC(2,1)=0.985 meanSD=1.80 minSD=0.00 maxSD=6.95 pairwiseMAE=2.03 n=50x5 |   aesthetics: ICC(2,1)=0.985 meanSD=1.56 minSD=0.00 maxSD=4.38 pairwiseMAE=1.70 n=50x5 |   comfort: ICC(2,1)=0.983 meanSD=1.98 minSD=0.00 maxSD=3.83 pairwiseMAE=2.24 n=50x5 |   walkability: ICC(2,1)=0.982 meanSD=1.98 minSD=0.00 maxSD=8.03 pairwiseMAE=2.23 n=50x5
+[17:34:41] [51/100] 17141 run 1 done walk=42.0 lat=18.3s complete=252/500
+[17:34:41] [51/100] 17141 run 4/4 start
+[17:34:41] [51/100] 17141 run 2 done walk=42.0 lat=17.2s complete=253/500
+[17:34:41] [52/100] 17592 run 0/4 start
+[17:34:48] [51/100] 17141 run 3 done walk=42.0 lat=17.6s complete=254/500
+[17:34:48] [52/100] 17592 run 1/4 start
+[17:35:01] [51/100] 17141 run 4 done walk=42.0 lat=19.6s complete=255/500
+[17:35:01] [52/100] 17592 run 2/4 start
+[17:35:02] [52/100] 17592 run 0 done walk=73.0 lat=20.4s complete=256/500
+[17:35:02] [52/100] 17592 run 3/4 start
+[17:35:06] [52/100] 17592 run 1 done walk=73.0 lat=18.4s complete=257/500
+[17:35:06] [52/100] 17592 run 4/4 start
+[17:35:18] [52/100] 17592 run 3 done walk=73.0 lat=16.0s complete=258/500
+[17:35:18] [53/100] 17648 run 0/4 start
+[17:35:18] [52/100] 17592 run 2 done walk=72.0 lat=17.1s complete=259/500
+[17:35:18] [53/100] 17648 run 1/4 start
+[17:35:22] [52/100] 17592 run 4 done walk=75.0 lat=16.2s complete=260/500
+[17:35:22] [53/100] 17648 run 2/4 start
+[17:35:37] [53/100] 17648 run 0 done walk=36.0 lat=18.9s complete=261/500
+[17:35:37] [53/100] 17648 run 3/4 start
+[17:35:37] [53/100] 17648 run 1 done walk=35.0 lat=19.5s complete=262/500
+[17:35:37] [53/100] 17648 run 4/4 start
+[17:35:41] [53/100] 17648 run 2 done walk=36.0 lat=18.4s complete=263/500
+[17:35:41] [54/100] 17650 run 0/4 start
+[17:35:53] [53/100] 17648 run 3 done walk=36.0 lat=16.0s complete=264/500
+[17:35:53] [54/100] 17650 run 1/4 start
+[17:35:54] [53/100] 17648 run 4 done walk=36.0 lat=16.9s complete=265/500
+[17:35:54] [54/100] 17650 run 2/4 start
+[17:36:03] [54/100] 17650 run 0 done walk=42.0 lat=21.9s complete=266/500
+[17:36:03] [54/100] 17650 run 3/4 start
+[17:36:13] [54/100] 17650 run 2 done walk=46.0 lat=18.3s complete=267/500
+[17:36:13] [54/100] 17650 run 4/4 start
+[17:36:18] [54/100] 17650 run 1 done walk=52.0 lat=25.2s complete=268/500
+[17:36:18] [55/100] 17811 run 0/4 start
+[17:36:23] [54/100] 17650 run 3 done walk=48.0 lat=20.6s complete=269/500
+[17:36:23] [55/100] 17811 run 1/4 start
+[17:36:30] [54/100] 17650 run 4 done walk=50.0 lat=17.2s complete=270/500
+[17:36:30] [55/100] 17811 run 2/4 start
+[17:36:36] [55/100] 17811 run 0 done walk=22.0 lat=18.0s complete=271/500
+[17:36:36] [55/100] 17811 run 3/4 start
+[17:36:41] [55/100] 17811 run 1 done walk=21.0 lat=17.6s complete=272/500
+[17:36:41] [55/100] 17811 run 4/4 start
+[17:36:45] [55/100] 17811 run 2 done walk=20.0 lat=15.7s complete=273/500
+[17:36:45] [56/100] 17863 run 0/4 start
+[17:36:53] [55/100] 17811 run 3 done walk=22.0 lat=17.4s complete=274/500
+[17:36:53] [56/100] 17863 run 1/4 start
+[17:36:59] [55/100] 17811 run 4 done walk=21.0 lat=18.2s complete=275/500
+[17:36:59] [56/100] 17863 run 2/4 start
+[17:37:02] [56/100] 17863 run 0 done walk=61.0 lat=16.9s complete=276/500
+[17:37:02] [56/100] 17863 run 3/4 start
+[17:37:03] ICC n_rows=276 n_oids_any=56 n_oids_complete_5runs=55 |   justice: ICC(2,1)=0.971 meanSD=1.88 minSD=0.00 maxSD=8.73 pairwiseMAE=1.97 n=55x5 |   safety: ICC(2,1)=0.976 meanSD=1.86 minSD=0.00 maxSD=6.26 pairwiseMAE=2.02 n=55x5 |   livability: ICC(2,1)=0.985 meanSD=1.55 minSD=0.00 maxSD=5.26 pairwiseMAE=1.71 n=55x5 |   sustainability: ICC(2,1)=0.986 meanSD=1.73 minSD=0.00 maxSD=6.95 pairwiseMAE=1.94 n=55x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.56 minSD=0.00 maxSD=4.38 pairwiseMAE=1.68 n=55x5 |   comfort: ICC(2,1)=0.984 meanSD=1.95 minSD=0.00 maxSD=3.83 pairwiseMAE=2.21 n=55x5 |   walkability: ICC(2,1)=0.982 meanSD=1.95 minSD=0.00 maxSD=8.03 pairwiseMAE=2.19 n=55x5
+[17:37:12] [56/100] 17863 run 1 done walk=67.0 lat=18.6s complete=277/500
+[17:37:12] [56/100] 17863 run 4/4 start
+[17:37:22] [56/100] 17863 run 2 done walk=62.0 lat=22.4s complete=278/500
+[17:37:22] [57/100] 17872 run 0/4 start
+[17:37:24] [56/100] 17863 run 3 done walk=60.0 lat=21.7s complete=279/500
+[17:37:24] [57/100] 17872 run 1/4 start
+[17:37:32] [56/100] 17863 run 4 done walk=62.0 lat=20.2s complete=280/500
+[17:37:32] [57/100] 17872 run 2/4 start
+[17:37:41] [57/100] 17872 run 1 done walk=58.0 lat=17.3s complete=281/500
+[17:37:41] [57/100] 17872 run 3/4 start
+[17:37:43] [57/100] 17872 run 0 done walk=54.0 lat=21.0s complete=282/500
+[17:37:43] [57/100] 17872 run 4/4 start
+[17:37:49] [57/100] 17872 run 2 done walk=61.0 lat=16.5s complete=283/500
+[17:37:49] [58/100] 18099 run 0/4 start
+[17:37:58] [57/100] 17872 run 3 done walk=61.0 lat=17.0s complete=284/500
+[17:37:58] [58/100] 18099 run 1/4 start
+[17:38:01] [57/100] 17872 run 4 done walk=64.0 lat=18.3s complete=285/500
+[17:38:01] [58/100] 18099 run 2/4 start
+[17:38:05] [58/100] 18099 run 0 done walk=62.0 lat=16.2s complete=286/500
+[17:38:05] [58/100] 18099 run 3/4 start
+[17:38:19] [58/100] 18099 run 1 done walk=59.0 lat=20.4s complete=287/500
+[17:38:19] [58/100] 18099 run 4/4 start
+[17:38:21] [58/100] 18099 run 2 done walk=56.0 lat=19.9s complete=288/500
+[17:38:21] [59/100] 18130 run 0/4 start
+[17:38:21] [58/100] 18099 run 3 done walk=59.0 lat=16.0s complete=289/500
+[17:38:21] [59/100] 18130 run 1/4 start
+[17:38:33] [58/100] 18099 run 4 done walk=56.0 lat=14.1s complete=290/500
+[17:38:33] [59/100] 18130 run 2/4 start
+[17:38:37] [59/100] 18130 run 1 done walk=26.0 lat=15.7s complete=291/500
+[17:38:37] [59/100] 18130 run 3/4 start
+[17:38:39] [59/100] 18130 run 0 done walk=22.0 lat=18.6s complete=292/500
+[17:38:39] [59/100] 18130 run 4/4 start
+[17:38:49] [59/100] 18130 run 2 done walk=26.0 lat=15.6s complete=293/500
+[17:38:49] [60/100] 18572 run 0/4 start
+[17:38:52] [59/100] 18130 run 3 done walk=25.0 lat=15.6s complete=294/500
+[17:38:52] [60/100] 18572 run 1/4 start
+[17:38:54] [59/100] 18130 run 4 done walk=24.0 lat=14.8s complete=295/500
+[17:38:54] [60/100] 18572 run 2/4 start
+[17:39:07] [60/100] 18572 run 0 done walk=49.0 lat=18.1s complete=296/500
+[17:39:07] [60/100] 18572 run 3/4 start
+[17:39:11] [60/100] 18572 run 1 done walk=52.0 lat=18.7s complete=297/500
+[17:39:11] [60/100] 18572 run 4/4 start
+[17:39:15] [60/100] 18572 run 2 done walk=50.0 lat=20.8s complete=298/500
+[17:39:15] [61/100] 18597 run 0/4 start
+[17:39:29] [60/100] 18572 run 3 done walk=56.0 lat=22.4s complete=299/500
+[17:39:29] [61/100] 18597 run 1/4 start
+[17:39:31] [60/100] 18572 run 4 done walk=48.0 lat=19.9s complete=300/500
+[17:39:31] [61/100] 18597 run 2/4 start
+[17:39:34] [61/100] 18597 run 0 done walk=42.0 lat=18.5s complete=301/500
+[17:39:34] [61/100] 18597 run 3/4 start
+[17:39:34] ICC n_rows=301 n_oids_any=61 n_oids_complete_5runs=60 |   justice: ICC(2,1)=0.971 meanSD=1.85 minSD=0.00 maxSD=8.73 pairwiseMAE=1.96 n=60x5 |   safety: ICC(2,1)=0.975 meanSD=1.92 minSD=0.00 maxSD=6.26 pairwiseMAE=2.08 n=60x5 |   livability: ICC(2,1)=0.985 meanSD=1.55 minSD=0.00 maxSD=5.26 pairwiseMAE=1.70 n=60x5 |   sustainability: ICC(2,1)=0.984 meanSD=1.77 minSD=0.00 maxSD=6.95 pairwiseMAE=2.00 n=60x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.58 minSD=0.00 maxSD=4.38 pairwiseMAE=1.71 n=60x5 |   comfort: ICC(2,1)=0.984 meanSD=1.92 minSD=0.00 maxSD=3.83 pairwiseMAE=2.19 n=60x5 |   walkability: ICC(2,1)=0.982 meanSD=2.01 minSD=0.00 maxSD=8.03 pairwiseMAE=2.28 n=60x5
+[17:39:47] [61/100] 18597 run 2 done walk=38.0 lat=15.7s complete=302/500
+[17:39:47] [61/100] 18597 run 4/4 start
+[17:39:47] [61/100] 18597 run 1 done walk=30.0 lat=17.8s complete=303/500
+[17:39:47] [62/100] 18624 run 0/4 start
+[17:39:55] [61/100] 18597 run 3 done walk=42.0 lat=21.0s complete=304/500
+[17:39:55] [62/100] 18624 run 1/4 start
+[17:40:05] [61/100] 18597 run 4 done walk=34.0 lat=18.4s complete=305/500
+[17:40:05] [62/100] 18624 run 2/4 start
+[17:40:12] [62/100] 18624 run 0 done walk=50.0 lat=25.3s complete=306/500
+[17:40:12] [62/100] 18624 run 3/4 start
+[17:40:18] [62/100] 18624 run 1 done walk=52.0 lat=23.2s complete=307/500
+[17:40:18] [62/100] 18624 run 4/4 start
+[17:40:27] [62/100] 18624 run 2 done walk=54.0 lat=22.0s complete=308/500
+[17:40:27] [63/100] 18745 run 0/4 start
+[17:40:33] [62/100] 18624 run 3 done walk=50.0 lat=21.0s complete=309/500
+[17:40:33] [63/100] 18745 run 1/4 start
+[17:40:39] [62/100] 18624 run 4 done walk=52.0 lat=21.1s complete=310/500
+[17:40:39] [63/100] 18745 run 2/4 start
+[17:40:45] [63/100] 18745 run 0 done walk=42.0 lat=17.6s complete=311/500
+[17:40:45] [63/100] 18745 run 3/4 start
+[17:40:54] [63/100] 18745 run 1 done walk=46.0 lat=20.2s complete=312/500
+[17:40:54] [63/100] 18745 run 4/4 start
+[17:40:56] [63/100] 18745 run 2 done walk=48.0 lat=17.4s complete=313/500
+[17:40:56] [64/100] 18916 run 0/4 start
+[17:41:04] [63/100] 18745 run 3 done walk=46.0 lat=19.3s complete=314/500
+[17:41:04] [64/100] 18916 run 1/4 start
+[17:41:15] [63/100] 18745 run 4 done walk=42.0 lat=21.4s complete=315/500
+[17:41:15] [64/100] 18916 run 2/4 start
+[17:41:16] [64/100] 18916 run 0 done walk=38.0 lat=19.3s complete=316/500
+[17:41:16] [64/100] 18916 run 3/4 start
+[17:41:25] [64/100] 18916 run 1 done walk=40.0 lat=21.2s complete=317/500
+[17:41:25] [64/100] 18916 run 4/4 start
+[17:41:34] [64/100] 18916 run 3 done walk=39.0 lat=18.4s complete=318/500
+[17:41:34] [65/100] 19142 run 0/4 start
+[17:41:36] [64/100] 18916 run 2 done walk=38.0 lat=20.7s complete=319/500
+[17:41:36] [65/100] 19142 run 1/4 start
+[17:41:42] [64/100] 18916 run 4 done walk=40.0 lat=16.6s complete=320/500
+[17:41:42] [65/100] 19142 run 2/4 start
+[17:41:51] [65/100] 19142 run 1 done walk=50.0 lat=15.4s complete=321/500
+[17:41:51] [65/100] 19142 run 3/4 start
+[17:41:52] [65/100] 19142 run 0 done walk=51.0 lat=17.7s complete=322/500
+[17:41:52] [65/100] 19142 run 4/4 start
+[17:41:58] [65/100] 19142 run 2 done walk=57.0 lat=16.2s complete=323/500
+[17:41:58] [66/100] 19858 run 0/4 start
+[17:42:08] [65/100] 19142 run 3 done walk=57.0 lat=17.3s complete=324/500
+[17:42:08] [66/100] 19858 run 1/4 start
+[17:42:13] [65/100] 19142 run 4 done walk=57.0 lat=21.0s complete=325/500
+[17:42:13] [66/100] 19858 run 2/4 start
+[17:42:21] [66/100] 19858 run 0 done walk=54.0 lat=23.5s complete=326/500
+[17:42:21] [66/100] 19858 run 3/4 start
+[17:42:22] ICC n_rows=326 n_oids_any=66 n_oids_complete_5runs=65 |   justice: ICC(2,1)=0.968 meanSD=1.86 minSD=0.00 maxSD=8.73 pairwiseMAE=1.98 n=65x5 |   safety: ICC(2,1)=0.974 meanSD=1.92 minSD=0.00 maxSD=6.26 pairwiseMAE=2.08 n=65x5 |   livability: ICC(2,1)=0.983 meanSD=1.60 minSD=0.00 maxSD=5.26 pairwiseMAE=1.77 n=65x5 |   sustainability: ICC(2,1)=0.982 meanSD=1.84 minSD=0.00 maxSD=6.95 pairwiseMAE=2.08 n=65x5 |   aesthetics: ICC(2,1)=0.985 meanSD=1.57 minSD=0.00 maxSD=4.38 pairwiseMAE=1.70 n=65x5 |   comfort: ICC(2,1)=0.982 meanSD=1.94 minSD=0.00 maxSD=3.83 pairwiseMAE=2.22 n=65x5 |   walkability: ICC(2,1)=0.979 meanSD=2.08 minSD=0.00 maxSD=8.03 pairwiseMAE=2.36 n=65x5
+[17:42:29] [66/100] 19858 run 1 done walk=52.0 lat=20.9s complete=327/500
+[17:42:29] [66/100] 19858 run 4/4 start
+[17:42:31] [66/100] 19858 run 2 done walk=61.0 lat=18.1s complete=328/500
+[17:42:31] [67/100] 19880 run 0/4 start
+[17:42:40] [66/100] 19858 run 3 done walk=46.0 lat=18.2s complete=329/500
+[17:42:40] [67/100] 19880 run 1/4 start
+[17:42:47] [67/100] 19880 run 0 done walk=50.0 lat=16.2s complete=330/500
+[17:42:47] [67/100] 19880 run 2/4 start
+[17:42:48] [66/100] 19858 run 4 done walk=46.0 lat=18.5s complete=331/500
+[17:42:48] [67/100] 19880 run 3/4 start
+[17:42:58] [67/100] 19880 run 1 done walk=50.0 lat=17.9s complete=332/500
+[17:42:58] [67/100] 19880 run 4/4 start
+[17:43:05] [67/100] 19880 run 2 done walk=46.0 lat=18.3s complete=333/500
+[17:43:05] [68/100] 19888 run 0/4 start
+[17:43:08] [67/100] 19880 run 3 done walk=57.0 lat=20.0s complete=334/500
+[17:43:08] [68/100] 19888 run 1/4 start
+[17:43:16] [67/100] 19880 run 4 done walk=57.0 lat=18.2s complete=335/500
+[17:43:16] [68/100] 19888 run 2/4 start
+[17:43:26] [68/100] 19888 run 0 done walk=28.0 lat=21.0s complete=336/500
+[17:43:26] [68/100] 19888 run 3/4 start
+[17:43:28] [68/100] 19888 run 1 done walk=28.0 lat=19.7s complete=337/500
+[17:43:28] [68/100] 19888 run 4/4 start
+[17:43:35] [68/100] 19888 run 2 done walk=28.0 lat=19.5s complete=338/500
+[17:43:35] [69/100] 20258 run 0/4 start
+[17:43:45] [68/100] 19888 run 3 done walk=28.0 lat=18.2s complete=339/500
+[17:43:45] [69/100] 20258 run 1/4 start
+[17:43:45] [68/100] 19888 run 4 done walk=24.0 lat=17.1s complete=340/500
+[17:43:45] [69/100] 20258 run 2/4 start
+[17:43:57] [69/100] 20258 run 0 done walk=46.0 lat=21.3s complete=341/500
+[17:43:57] [69/100] 20258 run 3/4 start
+[17:44:02] [69/100] 20258 run 2 done walk=36.0 lat=17.7s complete=342/500
+[17:44:02] [69/100] 20258 run 4/4 start
+[17:44:05] [69/100] 20258 run 1 done walk=36.0 lat=20.1s complete=343/500
+[17:44:05] [70/100] 20288 run 0/4 start
+[17:44:16] [69/100] 20258 run 3 done walk=46.0 lat=18.9s complete=344/500
+[17:44:16] [70/100] 20288 run 1/4 start
+[17:44:19] [69/100] 20258 run 4 done walk=46.0 lat=17.0s complete=345/500
+[17:44:19] [70/100] 20288 run 2/4 start
+[17:44:25] [70/100] 20288 run 0 done walk=46.0 lat=20.3s complete=346/500
+[17:44:25] [70/100] 20288 run 3/4 start
+[17:44:39] [70/100] 20288 run 2 done walk=57.0 lat=19.6s complete=347/500
+[17:44:39] [70/100] 20288 run 4/4 start
+[17:44:39] [70/100] 20288 run 1 done walk=57.0 lat=23.3s complete=348/500
+[17:44:39] [71/100] 20329 run 0/4 start
+[17:44:44] [70/100] 20288 run 3 done walk=57.0 lat=19.1s complete=349/500
+[17:44:44] [71/100] 20329 run 1/4 start
+[17:44:58] [71/100] 20329 run 0 done walk=42.0 lat=18.5s complete=350/500
+[17:44:58] [71/100] 20329 run 2/4 start
+[17:44:59] [70/100] 20288 run 4 done walk=57.0 lat=20.0s complete=351/500
+[17:44:59] [71/100] 20329 run 3/4 start
+[17:44:59] ICC n_rows=351 n_oids_any=71 n_oids_complete_5runs=70 |   justice: ICC(2,1)=0.964 meanSD=1.98 minSD=0.00 maxSD=8.73 pairwiseMAE=2.11 n=70x5 |   safety: ICC(2,1)=0.974 meanSD=1.91 minSD=0.00 maxSD=6.26 pairwiseMAE=2.07 n=70x5 |   livability: ICC(2,1)=0.981 meanSD=1.73 minSD=0.00 maxSD=5.26 pairwiseMAE=1.93 n=70x5 |   sustainability: ICC(2,1)=0.982 meanSD=1.86 minSD=0.00 maxSD=6.95 pairwiseMAE=2.11 n=70x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.53 minSD=0.00 maxSD=4.38 pairwiseMAE=1.66 n=70x5 |   comfort: ICC(2,1)=0.983 meanSD=1.92 minSD=0.00 maxSD=3.83 pairwiseMAE=2.19 n=70x5 |   walkability: ICC(2,1)=0.974 meanSD=2.26 minSD=0.00 maxSD=8.03 pairwiseMAE=2.56 n=70x5
+[17:45:04] [71/100] 20329 run 1 done walk=42.0 lat=19.6s complete=352/500
+[17:45:04] [71/100] 20329 run 4/4 start
+[17:45:16] [71/100] 20329 run 3 done walk=42.0 lat=17.5s complete=353/500
+[17:45:16] [72/100] 20443 run 0/4 start
+[17:45:20] [71/100] 20329 run 2 done walk=42.0 lat=22.9s complete=354/500
+[17:45:20] [72/100] 20443 run 1/4 start
+[17:45:24] [71/100] 20329 run 4 done walk=38.0 lat=20.6s complete=355/500
+[17:45:24] [72/100] 20443 run 2/4 start
+[17:45:36] [72/100] 20443 run 0 done walk=38.0 lat=19.8s complete=356/500
+[17:45:36] [72/100] 20443 run 3/4 start
+[17:45:37] [72/100] 20443 run 1 done walk=42.0 lat=16.8s complete=357/500
+[17:45:37] [72/100] 20443 run 4/4 start
+[17:45:42] [72/100] 20443 run 2 done walk=42.0 lat=17.9s complete=358/500
+[17:45:42] [73/100] 2102 run 0/4 start
+[17:45:54] [72/100] 20443 run 3 done walk=42.0 lat=17.7s complete=359/500
+[17:45:54] [73/100] 2102 run 1/4 start
+[17:45:55] [72/100] 20443 run 4 done walk=42.0 lat=17.3s complete=360/500
+[17:45:55] [73/100] 2102 run 2/4 start
+[17:45:58] [73/100] 2102 run 0 done walk=50.0 lat=15.4s complete=361/500
+[17:45:58] [73/100] 2102 run 3/4 start
+[17:46:14] [73/100] 2102 run 1 done walk=50.0 lat=20.3s complete=362/500
+[17:46:14] [73/100] 2102 run 4/4 start
+[17:46:15] [73/100] 2102 run 2 done walk=50.0 lat=20.4s complete=363/500
+[17:46:15] [74/100] 21096 run 0/4 start
+[17:46:18] [73/100] 2102 run 3 done walk=50.0 lat=20.8s complete=364/500
+[17:46:18] [74/100] 21096 run 1/4 start
+[17:46:32] [73/100] 2102 run 4 done walk=50.0 lat=17.6s complete=365/500
+[17:46:32] [74/100] 21096 run 2/4 start
+[17:46:34] [74/100] 21096 run 0 done walk=49.0 lat=19.2s complete=366/500
+[17:46:34] [74/100] 21096 run 3/4 start
+[17:46:39] [74/100] 21096 run 1 done walk=49.0 lat=20.2s complete=367/500
+[17:46:39] [74/100] 21096 run 4/4 start
+[17:46:48] [74/100] 21096 run 2 done walk=49.0 lat=15.9s complete=368/500
+[17:46:48] [75/100] 21170 run 0/4 start
+[17:46:52] [74/100] 21096 run 3 done walk=49.0 lat=17.8s complete=369/500
+[17:46:52] [75/100] 21170 run 1/4 start
+[17:46:57] [74/100] 21096 run 4 done walk=49.0 lat=18.4s complete=370/500
+[17:46:57] [75/100] 21170 run 2/4 start
+[17:47:06] [75/100] 21170 run 0 done walk=10.0 lat=18.3s complete=371/500
+[17:47:06] [75/100] 21170 run 3/4 start
+[17:47:10] [75/100] 21170 run 1 done walk=12.0 lat=18.0s complete=372/500
+[17:47:10] [75/100] 21170 run 4/4 start
+[17:47:13] [75/100] 21170 run 2 done walk=10.0 lat=15.7s complete=373/500
+[17:47:13] [76/100] 21279 run 0/4 start
+[17:47:23] [75/100] 21170 run 3 done walk=12.0 lat=16.7s complete=374/500
+[17:47:23] [76/100] 21279 run 1/4 start
+[17:47:27] [75/100] 21170 run 4 done walk=12.0 lat=17.1s complete=375/500
+[17:47:27] [76/100] 21279 run 2/4 start
+[17:47:28] [76/100] 21279 run 0 done walk=40.0 lat=14.9s complete=376/500
+[17:47:28] [76/100] 21279 run 3/4 start
+[17:47:28] ICC n_rows=376 n_oids_any=76 n_oids_complete_5runs=75 |   justice: ICC(2,1)=0.964 meanSD=1.97 minSD=0.00 maxSD=8.73 pairwiseMAE=2.09 n=75x5 |   safety: ICC(2,1)=0.975 meanSD=1.86 minSD=0.00 maxSD=6.26 pairwiseMAE=2.02 n=75x5 |   livability: ICC(2,1)=0.981 meanSD=1.68 minSD=0.00 maxSD=5.26 pairwiseMAE=1.87 n=75x5 |   sustainability: ICC(2,1)=0.982 meanSD=1.86 minSD=0.00 maxSD=6.95 pairwiseMAE=2.10 n=75x5 |   aesthetics: ICC(2,1)=0.985 meanSD=1.52 minSD=0.00 maxSD=4.38 pairwiseMAE=1.66 n=75x5 |   comfort: ICC(2,1)=0.982 meanSD=1.89 minSD=0.00 maxSD=3.83 pairwiseMAE=2.16 n=75x5 |   walkability: ICC(2,1)=0.975 meanSD=2.17 minSD=0.00 maxSD=8.03 pairwiseMAE=2.45 n=75x5
+[17:47:38] [76/100] 21279 run 1 done walk=38.0 lat=15.1s complete=377/500
+[17:47:38] [76/100] 21279 run 4/4 start
+[17:47:44] [76/100] 21279 run 2 done walk=38.0 lat=16.7s complete=378/500
+[17:47:44] [77/100] 21320 run 0/4 start
+[17:47:45] [76/100] 21279 run 3 done walk=36.0 lat=17.0s complete=379/500
+[17:47:45] [77/100] 21320 run 1/4 start
+[17:47:53] [76/100] 21279 run 4 done walk=40.0 lat=15.1s complete=380/500
+[17:47:53] [77/100] 21320 run 2/4 start
+[17:47:59] [77/100] 21320 run 0 done walk=63.0 lat=15.3s complete=381/500
+[17:47:59] [77/100] 21320 run 3/4 start
+[17:48:00] [77/100] 21320 run 1 done walk=63.0 lat=15.2s complete=382/500
+[17:48:00] [77/100] 21320 run 4/4 start
+[17:48:13] [77/100] 21320 run 2 done walk=64.0 lat=20.1s complete=383/500
+[17:48:13] [78/100] 21469 run 0/4 start
+[17:48:16] [77/100] 21320 run 4 done walk=61.0 lat=15.8s complete=384/500
+[17:48:16] [78/100] 21469 run 1/4 start
+[17:48:17] [77/100] 21320 run 3 done walk=64.0 lat=18.1s complete=385/500
+[17:48:17] [78/100] 21469 run 2/4 start
+[17:48:29] [78/100] 21469 run 0 done walk=28.0 lat=16.1s complete=386/500
+[17:48:29] [78/100] 21469 run 3/4 start
+[17:48:36] [78/100] 21469 run 1 done walk=24.0 lat=20.4s complete=387/500
+[17:48:36] [78/100] 21469 run 4/4 start
+[17:48:38] [78/100] 21469 run 2 done walk=28.0 lat=20.9s complete=388/500
+[17:48:38] [79/100] 21794 run 0/4 start
+[17:48:50] [78/100] 21469 run 3 done walk=24.0 lat=20.5s complete=389/500
+[17:48:50] [79/100] 21794 run 1/4 start
+[17:48:55] [78/100] 21469 run 4 done walk=28.0 lat=19.0s complete=390/500
+[17:48:55] [79/100] 21794 run 2/4 start
+[17:48:59] [79/100] 21794 run 0 done walk=50.0 lat=21.1s complete=391/500
+[17:48:59] [79/100] 21794 run 3/4 start
+[17:49:07] [79/100] 21794 run 1 done walk=46.0 lat=16.9s complete=392/500
+[17:49:07] [79/100] 21794 run 4/4 start
+[17:49:11] [79/100] 21794 run 2 done walk=41.0 lat=15.9s complete=393/500
+[17:49:11] [80/100] 21979 run 0/4 start
+[17:49:18] [79/100] 21794 run 3 done walk=52.0 lat=18.4s complete=394/500
+[17:49:18] [80/100] 21979 run 1/4 start
+[17:49:23] [79/100] 21794 run 4 done walk=41.0 lat=16.2s complete=395/500
+[17:49:23] [80/100] 21979 run 2/4 start
+[17:49:30] [80/100] 21979 run 0 done walk=42.0 lat=18.8s complete=396/500
+[17:49:30] [80/100] 21979 run 3/4 start
+[17:49:35] [80/100] 21979 run 1 done walk=38.0 lat=17.2s complete=397/500
+[17:49:35] [80/100] 21979 run 4/4 start
+[17:49:40] [80/100] 21979 run 2 done walk=38.0 lat=17.5s complete=398/500
+[17:49:40] [81/100] 22062 run 0/4 start
+[17:49:48] [80/100] 21979 run 3 done walk=38.0 lat=18.4s complete=399/500
+[17:49:48] [81/100] 22062 run 1/4 start
+[17:49:56] [80/100] 21979 run 4 done walk=38.0 lat=21.4s complete=400/500
+[17:49:56] [81/100] 22062 run 2/4 start
+[17:49:57] [81/100] 22062 run 0 done walk=54.0 lat=16.5s complete=401/500
+[17:49:57] [81/100] 22062 run 3/4 start
+[17:49:57] ICC n_rows=401 n_oids_any=81 n_oids_complete_5runs=80 |   justice: ICC(2,1)=0.963 meanSD=1.99 minSD=0.00 maxSD=8.73 pairwiseMAE=2.12 n=80x5 |   safety: ICC(2,1)=0.975 meanSD=1.83 minSD=0.00 maxSD=6.26 pairwiseMAE=1.98 n=80x5 |   livability: ICC(2,1)=0.980 meanSD=1.73 minSD=0.00 maxSD=5.26 pairwiseMAE=1.93 n=80x5 |   sustainability: ICC(2,1)=0.981 meanSD=1.91 minSD=0.00 maxSD=6.95 pairwiseMAE=2.16 n=80x5 |   aesthetics: ICC(2,1)=0.984 meanSD=1.53 minSD=0.00 maxSD=4.38 pairwiseMAE=1.67 n=80x5 |   comfort: ICC(2,1)=0.982 meanSD=1.89 minSD=0.00 maxSD=3.83 pairwiseMAE=2.17 n=80x5 |   walkability: ICC(2,1)=0.974 meanSD=2.19 minSD=0.00 maxSD=8.03 pairwiseMAE=2.46 n=80x5
+[17:50:05] [81/100] 22062 run 1 done walk=54.0 lat=16.6s complete=402/500
+[17:50:05] [81/100] 22062 run 4/4 start
+[17:50:15] [81/100] 22062 run 2 done walk=57.0 lat=18.3s complete=403/500
+[17:50:15] [82/100] 22179 run 0/4 start
+[17:50:20] [81/100] 22062 run 3 done walk=57.0 lat=23.7s complete=404/500
+[17:50:20] [82/100] 22179 run 1/4 start
+[17:50:22] [81/100] 22062 run 4 done walk=55.0 lat=17.7s complete=405/500
+[17:50:22] [82/100] 22179 run 2/4 start
+[17:50:36] [82/100] 22179 run 0 done walk=54.0 lat=21.7s complete=406/500
+[17:50:36] [82/100] 22179 run 3/4 start
+[17:50:38] [82/100] 22179 run 1 done walk=50.0 lat=17.3s complete=407/500
+[17:50:38] [82/100] 22179 run 4/4 start
+[17:50:43] [82/100] 22179 run 2 done walk=54.0 lat=20.3s complete=408/500
+[17:50:43] [83/100] 22224 run 0/4 start
+[17:50:53] [82/100] 22179 run 3 done walk=54.0 lat=16.4s complete=409/500
+[17:50:53] [83/100] 22224 run 1/4 start
+[17:50:54] [82/100] 22179 run 4 done walk=50.0 lat=16.3s complete=410/500
+[17:50:54] [83/100] 22224 run 2/4 start
+[17:51:00] [83/100] 22224 run 0 done walk=48.0 lat=17.8s complete=411/500
+[17:51:00] [83/100] 22224 run 3/4 start
+[17:51:09] [83/100] 22224 run 1 done walk=42.0 lat=16.0s complete=412/500
+[17:51:09] [83/100] 22224 run 4/4 start
+[17:51:10] [83/100] 22224 run 2 done walk=48.0 lat=16.2s complete=413/500
+[17:51:10] [84/100] 22309 run 0/4 start
+[17:51:18] [83/100] 22224 run 3 done walk=46.0 lat=17.4s complete=414/500
+[17:51:18] [84/100] 22309 run 1/4 start
+[17:51:26] [83/100] 22224 run 4 done walk=46.0 lat=16.8s complete=415/500
+[17:51:26] [84/100] 22309 run 2/4 start
+[17:51:30] [84/100] 22309 run 0 done walk=54.0 lat=19.3s complete=416/500
+[17:51:30] [84/100] 22309 run 3/4 start
+[17:51:35] [84/100] 22309 run 1 done walk=54.0 lat=17.1s complete=417/500
+[17:51:35] [84/100] 22309 run 4/4 start
+[17:51:45] [84/100] 22309 run 2 done walk=54.0 lat=19.4s complete=418/500
+[17:51:45] [85/100] 22356 run 0/4 start
+[17:51:47] [84/100] 22309 run 3 done walk=54.0 lat=17.5s complete=419/500
+[17:51:47] [85/100] 22356 run 1/4 start
+[17:51:56] [84/100] 22309 run 4 done walk=54.0 lat=20.8s complete=420/500
+[17:51:56] [85/100] 22356 run 2/4 start
+[17:52:03] [85/100] 22356 run 0 done walk=52.0 lat=18.2s complete=421/500
+[17:52:03] [85/100] 22356 run 3/4 start
+[17:52:08] [85/100] 22356 run 1 done walk=54.0 lat=20.9s complete=422/500
+[17:52:08] [85/100] 22356 run 4/4 start
+[17:52:14] [85/100] 22356 run 2 done walk=52.0 lat=18.6s complete=423/500
+[17:52:14] [86/100] 22552 run 0/4 start
+[17:52:19] [85/100] 22356 run 3 done walk=52.0 lat=15.7s complete=424/500
+[17:52:19] [86/100] 22552 run 1/4 start
+[17:52:25] [85/100] 22356 run 4 done walk=52.0 lat=16.6s complete=425/500
+[17:52:25] [86/100] 22552 run 2/4 start
+[17:52:34] [86/100] 22552 run 1 done walk=20.0 lat=15.7s complete=426/500
+[17:52:34] [86/100] 22552 run 3/4 start
+[17:52:35] ICC n_rows=426 n_oids_any=86 n_oids_complete_5runs=85 |   justice: ICC(2,1)=0.964 meanSD=1.91 minSD=0.00 maxSD=8.73 pairwiseMAE=2.03 n=85x5 |   safety: ICC(2,1)=0.974 meanSD=1.82 minSD=0.00 maxSD=6.26 pairwiseMAE=1.98 n=85x5 |   livability: ICC(2,1)=0.980 meanSD=1.71 minSD=0.00 maxSD=5.26 pairwiseMAE=1.91 n=85x5 |   sustainability: ICC(2,1)=0.981 meanSD=1.92 minSD=0.00 maxSD=6.95 pairwiseMAE=2.17 n=85x5 |   aesthetics: ICC(2,1)=0.985 meanSD=1.51 minSD=0.00 maxSD=4.38 pairwiseMAE=1.65 n=85x5 |   comfort: ICC(2,1)=0.982 meanSD=1.89 minSD=0.00 maxSD=3.83 pairwiseMAE=2.17 n=85x5 |   walkability: ICC(2,1)=0.974 meanSD=2.14 minSD=0.00 maxSD=8.03 pairwiseMAE=2.41 n=85x5
+[17:52:36] [86/100] 22552 run 0 done walk=20.0 lat=21.1s complete=427/500
+[17:52:36] [86/100] 22552 run 4/4 start
+[17:52:41] [86/100] 22552 run 2 done walk=20.0 lat=16.2s complete=428/500
+[17:52:41] [87/100] 22911 run 0/4 start
+[17:52:50] [86/100] 22552 run 3 done walk=20.0 lat=16.0s complete=429/500
+[17:52:50] [87/100] 22911 run 1/4 start
+[17:52:52] [86/100] 22552 run 4 done walk=20.0 lat=16.9s complete=430/500
+[17:52:52] [87/100] 22911 run 2/4 start
+[17:52:59] [87/100] 22911 run 0 done walk=66.0 lat=18.1s complete=431/500
+[17:52:59] [87/100] 22911 run 3/4 start
+[17:53:09] [87/100] 22911 run 1 done walk=64.0 lat=18.4s complete=432/500
+[17:53:09] [87/100] 22911 run 4/4 start
+[17:53:11] [87/100] 22911 run 2 done walk=66.0 lat=18.5s complete=433/500
+[17:53:11] [88/100] 22932 run 0/4 start
+[17:53:23] [87/100] 22911 run 3 done walk=66.0 lat=23.8s complete=434/500
+[17:53:23] [88/100] 22932 run 1/4 start
+[17:53:28] [87/100] 22911 run 4 done walk=66.0 lat=19.3s complete=435/500
+[17:53:28] [88/100] 22932 run 2/4 start
+[17:53:29] [88/100] 22932 run 0 done walk=54.0 lat=18.2s complete=436/500
+[17:53:29] [88/100] 22932 run 3/4 start
+[17:53:40] [88/100] 22932 run 1 done walk=58.0 lat=17.3s complete=437/500
+[17:53:40] [88/100] 22932 run 4/4 start
+[17:53:45] [88/100] 22932 run 3 done walk=58.0 lat=15.8s complete=438/500
+[17:53:45] [89/100] 23116 run 0/4 start
+[17:53:49] [88/100] 22932 run 2 done walk=57.0 lat=20.6s complete=439/500
+[17:53:49] [89/100] 23116 run 1/4 start
+[17:53:59] [88/100] 22932 run 4 done walk=54.0 lat=19.2s complete=440/500
+[17:53:59] [89/100] 23116 run 2/4 start
+[17:54:04] [89/100] 23116 run 0 done walk=46.0 lat=18.7s complete=441/500
+[17:54:04] [89/100] 23116 run 3/4 start
+[17:54:07] [89/100] 23116 run 1 done walk=32.0 lat=18.2s complete=442/500
+[17:54:07] [89/100] 23116 run 4/4 start
+[17:54:16] [89/100] 23116 run 2 done walk=41.0 lat=17.2s complete=443/500
+[17:54:16] [90/100] 23207 run 0/4 start
+[17:54:25] [89/100] 23116 run 4 done walk=46.0 lat=17.6s complete=444/500
+[17:54:25] [90/100] 23207 run 1/4 start
+[17:54:26] [89/100] 23116 run 3 done walk=46.0 lat=21.7s complete=445/500
+[17:54:26] [90/100] 23207 run 2/4 start
+[17:54:35] [90/100] 23207 run 0 done walk=26.0 lat=18.3s complete=446/500
+[17:54:35] [90/100] 23207 run 3/4 start
+[17:54:42] [90/100] 23207 run 2 done walk=26.0 lat=16.4s complete=447/500
+[17:54:42] [90/100] 23207 run 4/4 start
+[17:54:45] [90/100] 23207 run 1 done walk=24.0 lat=20.2s complete=448/500
+[17:54:45] [91/100] 23264 run 0/4 start
+[17:54:52] [90/100] 23207 run 3 done walk=26.0 lat=17.6s complete=449/500
+[17:54:52] [91/100] 23264 run 1/4 start
+[17:54:58] [90/100] 23207 run 4 done walk=26.0 lat=15.9s complete=450/500
+[17:54:58] [91/100] 23264 run 2/4 start
+[17:55:02] [91/100] 23264 run 0 done walk=54.0 lat=17.2s complete=451/500
+[17:55:02] [91/100] 23264 run 3/4 start
+[17:55:02] ICC n_rows=451 n_oids_any=91 n_oids_complete_5runs=90 |   justice: ICC(2,1)=0.964 meanSD=1.90 minSD=0.00 maxSD=8.73 pairwiseMAE=2.00 n=90x5 |   safety: ICC(2,1)=0.976 meanSD=1.79 minSD=0.00 maxSD=6.26 pairwiseMAE=1.93 n=90x5 |   livability: ICC(2,1)=0.981 meanSD=1.71 minSD=0.00 maxSD=5.26 pairwiseMAE=1.90 n=90x5 |   sustainability: ICC(2,1)=0.982 meanSD=1.88 minSD=0.00 maxSD=6.95 pairwiseMAE=2.11 n=90x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.48 minSD=0.00 maxSD=4.38 pairwiseMAE=1.62 n=90x5 |   comfort: ICC(2,1)=0.983 meanSD=1.89 minSD=0.00 maxSD=3.83 pairwiseMAE=2.15 n=90x5 |   walkability: ICC(2,1)=0.974 meanSD=2.13 minSD=0.00 maxSD=8.03 pairwiseMAE=2.39 n=90x5
+[17:55:10] [91/100] 23264 run 1 done walk=52.0 lat=18.0s complete=452/500
+[17:55:10] [91/100] 23264 run 4/4 start
+[17:55:17] [91/100] 23264 run 2 done walk=54.0 lat=18.8s complete=453/500
+[17:55:17] [92/100] 23274 run 0/4 start
+[17:55:23] [91/100] 23264 run 3 done walk=48.0 lat=20.7s complete=454/500
+[17:55:23] [92/100] 23274 run 1/4 start
+[17:55:27] [91/100] 23264 run 4 done walk=52.0 lat=16.6s complete=455/500
+[17:55:27] [92/100] 23274 run 2/4 start
+[17:55:33] [92/100] 23274 run 0 done walk=50.0 lat=16.6s complete=456/500
+[17:55:33] [92/100] 23274 run 3/4 start
+[17:55:40] [92/100] 23274 run 1 done walk=50.0 lat=17.0s complete=457/500
+[17:55:40] [92/100] 23274 run 4/4 start
+[17:55:42] [92/100] 23274 run 2 done walk=50.0 lat=15.5s complete=458/500
+[17:55:42] [93/100] 23428 run 0/4 start
+[17:55:49] [92/100] 23274 run 3 done walk=52.0 lat=16.1s complete=459/500
+[17:55:49] [93/100] 23428 run 1/4 start
+[17:55:56] [92/100] 23274 run 4 done walk=52.0 lat=16.3s complete=460/500
+[17:55:56] [93/100] 23428 run 2/4 start
+[17:56:00] [93/100] 23428 run 0 done walk=34.0 lat=17.6s complete=461/500
+[17:56:00] [93/100] 23428 run 3/4 start
+[17:56:05] [93/100] 23428 run 1 done walk=34.0 lat=15.4s complete=462/500
+[17:56:05] [93/100] 23428 run 4/4 start
+[17:56:10] [93/100] 23428 run 2 done walk=28.0 lat=14.4s complete=463/500
+[17:56:10] [94/100] 23649 run 0/4 start
+[17:56:15] [93/100] 23428 run 3 done walk=33.0 lat=15.4s complete=464/500
+[17:56:15] [94/100] 23649 run 1/4 start
+[17:56:21] [93/100] 23428 run 4 done walk=28.0 lat=16.1s complete=465/500
+[17:56:21] [94/100] 23649 run 2/4 start
+[17:56:26] [94/100] 23649 run 0 done walk=5.0 lat=15.7s complete=466/500
+[17:56:26] [94/100] 23649 run 3/4 start
+[17:56:31] [94/100] 23649 run 1 done walk=8.0 lat=16.0s complete=467/500
+[17:56:31] [94/100] 23649 run 4/4 start
+[17:56:38] [94/100] 23649 run 2 done walk=5.0 lat=16.8s complete=468/500
+[17:56:38] [95/100] 23652 run 0/4 start
+[17:56:43] [94/100] 23649 run 3 done walk=8.0 lat=16.9s complete=469/500
+[17:56:43] [95/100] 23652 run 1/4 start
+[17:56:50] [94/100] 23649 run 4 done walk=6.0 lat=18.5s complete=470/500
+[17:56:50] [95/100] 23652 run 2/4 start
+[17:56:58] [95/100] 23652 run 0 done walk=34.0 lat=20.4s complete=471/500
+[17:56:58] [95/100] 23652 run 3/4 start
+[17:57:00] [95/100] 23652 run 1 done walk=34.0 lat=16.9s complete=472/500
+[17:57:00] [95/100] 23652 run 4/4 start
+[17:57:12] [95/100] 23652 run 2 done walk=38.0 lat=22.2s complete=473/500
+[17:57:12] [96/100] 23693 run 0/4 start
+[17:57:16] [95/100] 23652 run 3 done walk=34.0 lat=17.6s complete=474/500
+[17:57:16] [96/100] 23693 run 1/4 start
+[17:57:18] [95/100] 23652 run 4 done walk=34.0 lat=18.0s complete=475/500
+[17:57:18] [96/100] 23693 run 2/4 start
+[17:57:31] [96/100] 23693 run 0 done walk=69.0 lat=19.1s complete=476/500
+[17:57:31] [96/100] 23693 run 3/4 start
+[17:57:32] ICC n_rows=476 n_oids_any=96 n_oids_complete_5runs=95 |   justice: ICC(2,1)=0.966 meanSD=1.87 minSD=0.00 maxSD=8.73 pairwiseMAE=1.98 n=95x5 |   safety: ICC(2,1)=0.976 meanSD=1.77 minSD=0.00 maxSD=6.26 pairwiseMAE=1.91 n=95x5 |   livability: ICC(2,1)=0.981 meanSD=1.72 minSD=0.00 maxSD=5.26 pairwiseMAE=1.91 n=95x5 |   sustainability: ICC(2,1)=0.982 meanSD=1.88 minSD=0.00 maxSD=6.95 pairwiseMAE=2.10 n=95x5 |   aesthetics: ICC(2,1)=0.986 meanSD=1.45 minSD=0.00 maxSD=4.38 pairwiseMAE=1.58 n=95x5 |   comfort: ICC(2,1)=0.983 meanSD=1.87 minSD=0.00 maxSD=3.83 pairwiseMAE=2.13 n=95x5 |   walkability: ICC(2,1)=0.975 meanSD=2.12 minSD=0.00 maxSD=8.03 pairwiseMAE=2.38 n=95x5
+[17:57:33] [96/100] 23693 run 1 done walk=73.0 lat=17.8s complete=477/500
+[17:57:33] [96/100] 23693 run 4/4 start
+[17:57:38] [96/100] 23693 run 2 done walk=71.0 lat=19.9s complete=478/500
+[17:57:38] [97/100] 23751 run 0/4 start
+[17:57:49] [96/100] 23693 run 3 done walk=69.0 lat=17.7s complete=479/500
+[17:57:49] [97/100] 23751 run 1/4 start
+[17:57:52] [96/100] 23693 run 4 done walk=71.0 lat=18.5s complete=480/500
+[17:57:52] [97/100] 23751 run 2/4 start
+[17:57:57] [97/100] 23751 run 0 done walk=70.0 lat=18.9s complete=481/500
+[17:57:57] [97/100] 23751 run 3/4 start
+[17:58:08] [97/100] 23751 run 1 done walk=70.0 lat=19.2s complete=482/500
+[17:58:08] [97/100] 23751 run 4/4 start
+[17:58:13] [97/100] 23751 run 2 done walk=71.0 lat=21.1s complete=483/500
+[17:58:13] [98/100] 23776 run 0/4 start
+[17:58:17] [97/100] 23751 run 3 done walk=71.0 lat=19.8s complete=484/500
+[17:58:17] [98/100] 23776 run 1/4 start
+[17:58:30] [97/100] 23751 run 4 done walk=70.0 lat=21.4s complete=485/500
+[17:58:30] [98/100] 23776 run 2/4 start
+[17:58:31] [98/100] 23776 run 0 done walk=52.0 lat=17.5s complete=486/500
+[17:58:31] [98/100] 23776 run 3/4 start
+[17:58:34] [98/100] 23776 run 1 done walk=48.0 lat=17.0s complete=487/500
+[17:58:34] [98/100] 23776 run 4/4 start
+[17:58:49] [98/100] 23776 run 2 done walk=52.0 lat=19.0s complete=488/500
+[17:58:49] [99/100] 23798 run 0/4 start
+[17:58:53] [98/100] 23776 run 3 done walk=48.0 lat=22.0s complete=489/500
+[17:58:53] [99/100] 23798 run 1/4 start
+[17:58:55] [98/100] 23776 run 4 done walk=52.0 lat=21.1s complete=490/500
+[17:58:55] [99/100] 23798 run 2/4 start
+[17:59:06] [99/100] 23798 run 0 done walk=66.0 lat=17.7s complete=491/500
+[17:59:06] [99/100] 23798 run 3/4 start
+[17:59:10] [99/100] 23798 run 1 done walk=61.0 lat=17.3s complete=492/500
+[17:59:10] [99/100] 23798 run 4/4 start
+[17:59:11] [99/100] 23798 run 2 done walk=66.0 lat=16.1s complete=493/500
+[17:59:11] [100/100] 23981 run 0/4 start
+[17:59:23] [99/100] 23798 run 3 done walk=66.0 lat=16.5s complete=494/500
+[17:59:23] [100/100] 23981 run 1/4 start
+[17:59:27] [100/100] 23981 run 0 done walk=54.0 lat=16.8s complete=495/500
+[17:59:27] [100/100] 23981 run 2/4 start
+[17:59:28] [99/100] 23798 run 4 done walk=60.0 lat=18.4s complete=496/500
+[17:59:28] [100/100] 23981 run 3/4 start
+[17:59:44] [100/100] 23981 run 2 done walk=58.0 lat=16.7s complete=497/500
+[17:59:44] [100/100] 23981 run 4/4 start
+[17:59:45] [100/100] 23981 run 1 done walk=58.0 lat=22.2s complete=498/500
+[17:59:47] [100/100] 23981 run 3 done walk=58.0 lat=19.1s complete=499/500
+[17:59:59] [100/100] 23981 run 4 done walk=54.0 lat=14.9s complete=500/500
+[17:59:59] ICC n_rows=500 n_oids_any=100 n_oids_complete_5runs=100 |   justice: ICC(2,1)=0.967 meanSD=1.89 minSD=0.00 maxSD=8.73 pairwiseMAE=2.00 n=100x5 |   safety: ICC(2,1)=0.977 meanSD=1.76 minSD=0.00 maxSD=6.26 pairwiseMAE=1.90 n=100x5 |   livability: ICC(2,1)=0.982 meanSD=1.70 minSD=0.00 maxSD=5.26 pairwiseMAE=1.88 n=100x5 |   sustainability: ICC(2,1)=0.983 meanSD=1.85 minSD=0.00 maxSD=6.95 pairwiseMAE=2.07 n=100x5 |   aesthetics: ICC(2,1)=0.987 meanSD=1.41 minSD=0.00 maxSD=4.38 pairwiseMAE=1.53 n=100x5 |   comfort: ICC(2,1)=0.985 meanSD=1.84 minSD=0.00 maxSD=3.83 pairwiseMAE=2.11 n=100x5 |   walkability: ICC(2,1)=0.976 meanSD=2.11 minSD=0.00 maxSD=8.03 pairwiseMAE=2.37 n=100x5
+[17:59:59] === finished complete=500/500 dir=E:\PAPER1\revision\results\sameconfig_repeat_100x5 ===

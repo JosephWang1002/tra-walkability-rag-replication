@@ -1,0 +1,122 @@
+{
+ "oid": "15121",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\15121.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\15121_120.612724_31.195171_0900290012210414125647204GR_262.87_2021_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.5,
+ "usage": {
+  "completion_tokens": 807,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 416,
+   "engine_ttlt_ms": 12164,
+   "pre_inference_ms": 297,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 980,
+   "service_ttlt_ms": 12723,
+   "user_visible_ttft_ms": 683
+  },
+  "prompt_tokens": 5338,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6145
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 38.0,\n      \"equity\": 42.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 37.0\n    },\n    \"safety\": 46.0,\n    \"livability\": 34.0,\n    \"sustainability\": 28.0,\n    \"aesthetics\": 41.0,\n    \"comfort\": 36.0,\n    \"walkability\": 30.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible street space is allocated to a narrow vehicular carriageway, while no clearly separated sidewalk is visible on either side, suggesting limited equitable space for non-drivers.\",\n      \"The right edge has a very narrow concrete strip beside a fence and building wall, but it does not read as a continuous pedestrian facility and appears constrained by utility poles and boundary structures.\",\n      \"No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible, so accessibility for diverse users cannot be considered well provided.\"\n    ],\n    \"safety\": [\n      \"The road is narrow and visually simple, which may keep vehicle speeds relatively low, offering some basic safety benefit.\",\n      \"There is no marked pedestrian path, bike lane, or shoulder separation, so walkers and any cyclists would likely share space with vehicles on the same pavement.\",\n      \"Utility poles stand close to the roadway edge and overhead wires dominate the corridor, while the long straight alignment may reduce reaction margins if opposing traffic appears.\"\n    ],\n    \"livability\": [\n      \"The scene shows a fenced edge on the left and walled residential or institutional frontage on the right, with almost no visible active ground-floor uses or social destinations.\",\n      \"No benches, bus stops, shops, play areas, or public gathering features are visible, limiting everyday street life and convenience for all road users.\",\n      \"The corridor feels utilitarian and enclosed, with long blank edges and little evidence of community activity, which weakens overall street vitality.\"\n    ],\n    \"sustainability\": [\n      \"A few trees are visible on the right side in the mid-distance, but overall green infrastructure is sparse along the corridor.\",\n      \"No bike lane, bike parking, bus stop, or other visible support for low-carbon travel modes is present in the image.\",\n      \"The street surface appears fully paved with hard materials, and no visible rain gardens, permeable strips, or stormwater features can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"The street has a relatively clean and orderly appearance, with continuous paving and aligned fences creating some visual coherence.\",\n      \"However, the long green construction-style fence on the left and the black-yellow barrier base create a harsh, utilitarian visual character.\",\n      \"Overhead utility wires, blank edges, and the lack of planting or street furniture reduce visual richness and make the corridor feel monotonous.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears limited because the road is largely exposed, with very little continuous tree canopy or shade structure over the travel space.\",\n      \"Physical comfort is modest at best: the pavement looks fairly even for vehicles, but there are no visible benches, resting places, or dedicated pedestrian walking surfaces.\",\n      \"Psychological comfort is weakened by the enclosed linear corridor formed by tall fencing, walls, and sparse activity, which can feel isolated for users outside a car.\"\n    ],\n    \"walkability\": [\n      \"No continuous, clearly designated sidewalk is visible, so walking space appears discontinuous and subordinate to vehicle movement.\",\n      \"There are no visible crossings, curb extensions, wayfinding signs, or pedestrian-priority markings to support safe and legible walking routes.\",\n      \"The lack of shade, seating, active frontage, and pedestrian amenities makes the corridor unattractive and inconvenient for routine walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 38.0,
+   "equity": 42.0,
+   "fairness": 35.0,
+   "accessibility": 37.0
+  },
+  "safety": 46.0,
+  "livability": 34.0,
+  "sustainability": 28.0,
+  "aesthetics": 41.0,
+  "comfort": 36.0,
+  "walkability": 30.0
+ },
+ "scores_flat": {
+  "justice": 38.0,
+  "justice_equity": 42.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 37.0,
+  "safety": 46.0,
+  "livability": 34.0,
+  "sustainability": 28.0,
+  "aesthetics": 41.0,
+  "comfort": 36.0,
+  "walkability": 30.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:25:07+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible street space is allocated to a narrow vehicular carriageway, while no clearly separated sidewalk is visible on either side, suggesting limited equitable space for non-drivers.",
+   "The right edge has a very narrow concrete strip beside a fence and building wall, but it does not read as a continuous pedestrian facility and appears constrained by utility poles and boundary structures.",
+   "No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible, so accessibility for diverse users cannot be considered well provided."
+  ],
+  "safety": [
+   "The road is narrow and visually simple, which may keep vehicle speeds relatively low, offering some basic safety benefit.",
+   "There is no marked pedestrian path, bike lane, or shoulder separation, so walkers and any cyclists would likely share space with vehicles on the same pavement.",
+   "Utility poles stand close to the roadway edge and overhead wires dominate the corridor, while the long straight alignment may reduce reaction margins if opposing traffic appears."
+  ],
+  "livability": [
+   "The scene shows a fenced edge on the left and walled residential or institutional frontage on the right, with almost no visible active ground-floor uses or social destinations.",
+   "No benches, bus stops, shops, play areas, or public gathering features are visible, limiting everyday street life and convenience for all road users.",
+   "The corridor feels utilitarian and enclosed, with long blank edges and little evidence of community activity, which weakens overall street vitality."
+  ],
+  "sustainability": [
+   "A few trees are visible on the right side in the mid-distance, but overall green infrastructure is sparse along the corridor.",
+   "No bike lane, bike parking, bus stop, or other visible support for low-carbon travel modes is present in the image.",
+   "The street surface appears fully paved with hard materials, and no visible rain gardens, permeable strips, or stormwater features can be identified."
+  ],
+  "aesthetics": [
+   "The street has a relatively clean and orderly appearance, with continuous paving and aligned fences creating some visual coherence.",
+   "However, the long green construction-style fence on the left and the black-yellow barrier base create a harsh, utilitarian visual character.",
+   "Overhead utility wires, blank edges, and the lack of planting or street furniture reduce visual richness and make the corridor feel monotonous."
+  ],
+  "comfort": [
+   "Thermal comfort appears limited because the road is largely exposed, with very little continuous tree canopy or shade structure over the travel space.",
+   "Physical comfort is modest at best: the pavement looks fairly even for vehicles, but there are no visible benches, resting places, or dedicated pedestrian walking surfaces.",
+   "Psychological comfort is weakened by the enclosed linear corridor formed by tall fencing, walls, and sparse activity, which can feel isolated for users outside a car."
+  ],
+  "walkability": [
+   "No continuous, clearly designated sidewalk is visible, so walking space appears discontinuous and subordinate to vehicle movement.",
+   "There are no visible crossings, curb extensions, wayfinding signs, or pedestrian-priority markings to support safe and legible walking routes.",
+   "The lack of shade, seating, active frontage, and pedestrian amenities makes the corridor unattractive and inconvenient for routine walking."
+  ]
+ }
+}

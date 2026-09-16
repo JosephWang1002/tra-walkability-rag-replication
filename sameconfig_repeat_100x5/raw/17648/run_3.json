@@ -1,0 +1,122 @@
+{
+ "oid": "17648",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\17648.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\17648_120.531293_31.25351_09002900121708181559465373O_99.06_2017_8_吴中区木渎镇禾粮路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.0,
+ "usage": {
+  "completion_tokens": 768,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 405,
+   "engine_ttlt_ms": 11866,
+   "pre_inference_ms": 392,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1114,
+   "service_ttlt_ms": 12551,
+   "user_visible_ttft_ms": 722
+  },
+  "prompt_tokens": 5332,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6100
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 40.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 48.0,\n    \"livability\": 34.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 43.0,\n    \"comfort\": 39.0,\n    \"walkability\": 36.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is occupied by a long blank concrete wall, while the pedestrian realm appears limited to a narrow edge of pavement, suggesting weak spatial balance for all road users.\",\n      \"No visible curb ramps, tactile paving, marked crossings, or other barrier-free elements can be identified in the scene, so accessibility support is limited based on the image.\",\n      \"Dense vines and shrubs spill toward the pavement edge, which may reduce usable walking width and create unequal access for people pushing strollers, carts, or using mobility aids.\"\n    ],\n    \"safety\": [\n      \"The image shows no marked pedestrian crossing, traffic calming device, bike lane, or protective separation, so visible safety infrastructure is minimal.\",\n      \"Vegetation encroaching onto the pavement edge can create tripping hazards and reduce clear passage for pedestrians.\",\n      \"The tall opaque wall reduces natural surveillance and visibility into adjacent land uses, which can weaken perceived personal safety for people walking along this segment.\"\n    ],\n    \"livability\": [\n      \"A long blank wall dominates the frontage, offering no active uses, shopfronts, seating, or social spaces that would support everyday street life.\",\n      \"No benches, bus stops, public amenities, or gathering places are visible, limiting the street's usefulness beyond basic passage.\",\n      \"Although there is some greenery at the base of the wall, the overall environment appears inactive and mono-functional rather than vibrant or community-oriented.\"\n    ],\n    \"sustainability\": [\n      \"Ground vegetation and shrubs provide some green cover, which modestly contributes to ecological value and softens the hard wall edge.\",\n      \"However, the scene shows mostly concrete surfaces and a large impervious wall-and-pavement environment, with no visible stormwater features or diverse planting structure.\",\n      \"No visible support for low-carbon travel such as bike parking, bike lanes, or transit facilities can be identified in the image.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous concrete wall creates a monotonous visual experience with little architectural detail or variation.\",\n      \"Green vines and shrubs add color and texture at the base of the wall, slightly improving the scene's appearance.\",\n      \"Strong sunlight and shadows create some visual contrast, but the overall composition remains dominated by a blank, utilitarian boundary.\"\n    ],\n    \"comfort\": [\n      \"There is little visible shade over the walking area, and the bright sun on concrete surfaces suggests weak thermal comfort during hot weather.\",\n      \"No seating, resting points, or pedestrian amenities are visible, reducing physical comfort for people spending time here.\",\n      \"The blank wall and inactive frontage can make the space feel isolated and less psychologically comfortable, even though the vegetation slightly softens the edge.\"\n    ],\n    \"walkability\": [\n      \"The visible walking surface appears narrow and partly constrained by overgrown vegetation, which can reduce effective pedestrian width.\",\n      \"No visible crossing facilities, wayfinding, curb ramps, or pedestrian-priority markings are present to support a connected walking route.\",\n      \"The frontage is inactive and visually unengaging, so the segment is likely less attractive for walking despite having a paved surface.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 40.0,
+   "fairness": 45.0,
+   "accessibility": 41.0
+  },
+  "safety": 48.0,
+  "livability": 34.0,
+  "sustainability": 46.0,
+  "aesthetics": 43.0,
+  "comfort": 39.0,
+  "walkability": 36.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 40.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 41.0,
+  "safety": 48.0,
+  "livability": 34.0,
+  "sustainability": 46.0,
+  "aesthetics": 43.0,
+  "comfort": 39.0,
+  "walkability": 36.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:35:53+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is occupied by a long blank concrete wall, while the pedestrian realm appears limited to a narrow edge of pavement, suggesting weak spatial balance for all road users.",
+   "No visible curb ramps, tactile paving, marked crossings, or other barrier-free elements can be identified in the scene, so accessibility support is limited based on the image.",
+   "Dense vines and shrubs spill toward the pavement edge, which may reduce usable walking width and create unequal access for people pushing strollers, carts, or using mobility aids."
+  ],
+  "safety": [
+   "The image shows no marked pedestrian crossing, traffic calming device, bike lane, or protective separation, so visible safety infrastructure is minimal.",
+   "Vegetation encroaching onto the pavement edge can create tripping hazards and reduce clear passage for pedestrians.",
+   "The tall opaque wall reduces natural surveillance and visibility into adjacent land uses, which can weaken perceived personal safety for people walking along this segment."
+  ],
+  "livability": [
+   "A long blank wall dominates the frontage, offering no active uses, shopfronts, seating, or social spaces that would support everyday street life.",
+   "No benches, bus stops, public amenities, or gathering places are visible, limiting the street's usefulness beyond basic passage.",
+   "Although there is some greenery at the base of the wall, the overall environment appears inactive and mono-functional rather than vibrant or community-oriented."
+  ],
+  "sustainability": [
+   "Ground vegetation and shrubs provide some green cover, which modestly contributes to ecological value and softens the hard wall edge.",
+   "However, the scene shows mostly concrete surfaces and a large impervious wall-and-pavement environment, with no visible stormwater features or diverse planting structure.",
+   "No visible support for low-carbon travel such as bike parking, bike lanes, or transit facilities can be identified in the image."
+  ],
+  "aesthetics": [
+   "The continuous concrete wall creates a monotonous visual experience with little architectural detail or variation.",
+   "Green vines and shrubs add color and texture at the base of the wall, slightly improving the scene's appearance.",
+   "Strong sunlight and shadows create some visual contrast, but the overall composition remains dominated by a blank, utilitarian boundary."
+  ],
+  "comfort": [
+   "There is little visible shade over the walking area, and the bright sun on concrete surfaces suggests weak thermal comfort during hot weather.",
+   "No seating, resting points, or pedestrian amenities are visible, reducing physical comfort for people spending time here.",
+   "The blank wall and inactive frontage can make the space feel isolated and less psychologically comfortable, even though the vegetation slightly softens the edge."
+  ],
+  "walkability": [
+   "The visible walking surface appears narrow and partly constrained by overgrown vegetation, which can reduce effective pedestrian width.",
+   "No visible crossing facilities, wayfinding, curb ramps, or pedestrian-priority markings are present to support a connected walking route.",
+   "The frontage is inactive and visually unengaging, so the segment is likely less attractive for walking despite having a paved surface."
+  ]
+ }
+}

@@ -1,0 +1,73 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 55,
+      "equity": 57,
+      "fairness": 56,
+      "accessibility": 51
+    },
+    "safety": 68,
+    "livability": 58,
+    "sustainability": 60,
+    "aesthetics": 65,
+    "comfort": 60,
+    "walkability": 50,
+    "bikeability": 48
+  },
+  "explanations": {
+    "justice": [
+      "Multi-lane intersection layout allocates balanced passage rights for all directions of motor vehicles.",
+      "Basic flat pavement conditions, lack of dedicated barrier-free ramps and pedestrian priority facilities.",
+      "Right-of-way is still significantly tilted to motor vehicle traffic, overall equity is moderate."
+    ],
+    "safety": [
+      "Wide open sight distance eliminates visual blind spots at intersections.",
+      "Complete lane markings and crosswalk standardize traffic operation order.",
+      "Large traffic flow at peak hours brings potential conflict risk of crossing pedestrians and vehicles."
+    ],
+    "livability": [
+      "Surrounding new urban residential and industrial clusters have good future livability potential.",
+      "Simple roadside greening improves environmental atmosphere.",
+      "Lack of supporting rest and leisure facilities around the intersection."
+    ],
+    "sustainability": [
+      "Scattered roadside arbors and green belts provide basic ecological carbon sink benefits.",
+      "Large-area impermeable pavement lacks sponge city rainwater management design.",
+      "No systematic low-carbon travel priority planning."
+    ],
+    "aesthetics": [
+      "Wide open urban road space with neat and orderly vision.",
+      "Distant high-rise buildings form a modern city skyline.",
+      "Overhead lines and simple greening slightly reduce landscape refinement."
+    ],
+    "comfort": [
+      "Smooth pavement ensures good driving experience.",
+      "Green buffer weakens partial noise and thermal radiation.",
+      "No independent pedestrian buffer zones, poor comfort for non-motorized users."
+    ],
+    "walkability": [
+      "Crosswalk facilities support basic pedestrian crossing.",
+      "No continuous separated sidewalk along the road.",
+      "Need to pay attention to vehicle avoidance during walking."
+    ],
+    "bikeability": [
+      "No exclusive bicycle lanes reserved.",
+      "Basic usable shared cycling space.",
+      "Higher risk of conflict with turning vehicles at intersections."
+    ]
+  },
+  "image_id": "urban-intersection-blvd-001",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-25T10:00:00.000Z",
+  "record_id": "rec-urban-intersection-blvd-001",
+  "stored_image_url": "/storage/records/rec-urban-intersection-blvd-001/image.jpg",
+  "stored_thumb_url": "/storage/records/rec-urban-intersection-blvd-001/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-25T10:00:50.000Z"
+}

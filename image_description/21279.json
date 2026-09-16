@@ -1,0 +1,33 @@
+{
+ "oid": "21279",
+ "description": "The scene shows a narrow, continuous paved path with no visible curb or marked sidewalk, running straight through a landscaped area with low grass and rows of trees that provide substantial shade. There’s no clear traffic separation (no barriers or lanes visible), and the roadway/path appears to be bordered by vegetation and small roadside features rather than sidewalks; lighting and any curb cuts/ramps are not visible. Overall, pedestrian comfort is improved by greenery and shade, but safety for walkers is less clear due to the lack of dedicated pedestrian infrastructure and separation from any vehicle use.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 115,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 12,
+   "engine_ttft_ms": 306,
+   "engine_ttlt_ms": 1646,
+   "pre_inference_ms": 592,
+   "service_tbt_ms": 12,
+   "service_ttft_ms": 1122,
+   "service_ttlt_ms": 2458,
+   "total_duration_ms": 1876,
+   "user_visible_ttft_ms": 530
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1099
+ },
+ "latency_s": 6.0,
+ "timestamp": "2026-08-31T16:33:54"
+}

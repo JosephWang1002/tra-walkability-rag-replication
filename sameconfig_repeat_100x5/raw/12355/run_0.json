@@ -1,0 +1,129 @@
+{
+ "oid": "12355",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12355.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12355_120.505308_31.376368_09002900121706181626565295H_58.62_2017_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 25.0,
+ "usage": {
+  "completion_tokens": 1122,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 1508,
+   "engine_ttlt_ms": 20981,
+   "pre_inference_ms": 470,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 2367,
+   "service_ttlt_ms": 21839,
+   "user_visible_ttft_ms": 1897
+  },
+  "prompt_tokens": 5249,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6371
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 45.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 46.0,\n    \"livability\": 38.0,\n    \"sustainability\": 34.0,\n    \"aesthetics\": 52.0,\n    \"comfort\": 39.0,\n    \"walkability\": 33.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible space is dominated by a broad paved parking/courtyard area with multiple parked cars, while no clearly marked pedestrian sidewalk or dedicated walking lane is visible, suggesting spatial resources are allocated more to vehicles than to people on foot.\",\n      \"Accessibility appears limited because there are no visible curb ramps, tactile paving, handrails, or marked barrier-free routes along the building edge or through the open paved area.\",\n      \"Fairness for all road users is weakened by the lack of visible lane markings or rules separating pedestrians from vehicles; people walking would need to share the same gray brick surface used by parked and moving cars.\",\n      \"The flat surface of the brick paving may help basic movement for many users, but the parked black sedan close to the building narrows informal walking space and reduces equitable use of the frontage.\"\n    ],\n    \"safety\": [\n      \"Safety is reduced because the scene shows a shared paved area with parked vehicles and driveway access but no painted pedestrian crossing, bollards, or protective separation between walking space and vehicle space.\",\n      \"The side passage on the right is partly screened by the building and trees, which may limit sightlines between drivers and pedestrians entering or exiting that area.\",\n      \"No visible streetlights, warning markings, speed-control devices, or traffic signs for pedestrians can be seen in the immediate foreground, which weakens perceived and operational safety.\",\n      \"The open surface is relatively flat and even, so trip risk from major level changes appears low, but conflict risk with cars remains the main safety concern.\"\n    ],\n    \"livability\": [\n      \"Livability is low because the image shows a utilitarian residential/service back-area character with blank building walls, parked cars, and little evidence of active frontage, shops, seating, or social space.\",\n      \"There are some trees in the background, but most of the visible ground plane is hard paving, limiting the sense of neighborhood amenity and everyday outdoor use.\",\n      \"A green trash bin is present, which supports basic maintenance, yet there are no visible benches, play elements, or gathering features that would encourage staying or community interaction.\",\n      \"The environment appears quiet and low-traffic at the moment, but the lack of pedestrian-oriented functions makes it feel more like an access/parking space than a lively street.\"\n    ],\n    \"sustainability\": [\n      \"Sustainability performance appears weak because the scene is heavily paved with gray brick surfacing and visibly accommodates private car parking, while no bike parking, transit stop, or dedicated active-mobility infrastructure is visible.\",\n      \"Tree cover exists only at the edges and background; the central open area around the building has very limited visible greenery or shade-producing landscape elements.\",\n      \"There are no visible rain gardens, bioswales, permeable green strips, or other stormwater features that would soften the large paved surface.\",\n      \"The simple low-rise buildings may imply modest intensity of development, but the visible design still prioritizes vehicle access over lower-carbon street use.\"\n    ],\n    \"aesthetics\": [\n      \"The buildings have a simple, clean white appearance and the paved surface looks generally orderly, which gives the scene a basic level of visual neatness.\",\n      \"However, the large blank side wall of the central building creates a monotonous streetscape with little facade detail, transparency, or visual interest.\",\n      \"Parked cars, exposed service-like paving, and the absence of planting beds or decorative street elements make the space feel plain rather than attractive.\",\n      \"The trees in the background soften the scene somewhat, but they are not enough to overcome the overall austere and parking-oriented character.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears limited because most of the visible foreground is exposed hard paving with almost no overhead shade; trees are set back and do not cover the main walking area.\",\n      \"Physical comfort is modest at best: the brick paving looks relatively even, but there are no benches, resting points, or clearly designated pedestrian paths.\",\n      \"Psychological comfort is reduced by the ambiguous shared-space condition, where pedestrians would likely walk near parked or moving cars without protective buffers.\",\n      \"The area does appear uncrowded and relatively calm, which may reduce stress for some users, but the lack of pedestrian amenities keeps overall comfort low.\"\n    ],\n    \"walkability\": [\n      \"Walkability is poor because no continuous sidewalk is visible along the building edges or across the open paved area; pedestrians appear expected to walk within vehicle space.\",\n      \"There are no visible crosswalks, curb ramps, pedestrian signs, or wayfinding elements to support clear and legible walking routes.\",\n      \"The parked black sedan and driveway-like layout interrupt the most direct pedestrian desire lines around the central building.\",\n      \"Although the surface is mostly flat and unobstructed by major level changes, the absence of dedicated pedestrian infrastructure significantly limits walking quality.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 45.0,
+   "fairness": 40.0,
+   "accessibility": 41.0
+  },
+  "safety": 46.0,
+  "livability": 38.0,
+  "sustainability": 34.0,
+  "aesthetics": 52.0,
+  "comfort": 39.0,
+  "walkability": 33.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 41.0,
+  "safety": 46.0,
+  "livability": 38.0,
+  "sustainability": 34.0,
+  "aesthetics": 52.0,
+  "comfort": 39.0,
+  "walkability": 33.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:18:27+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible space is dominated by a broad paved parking/courtyard area with multiple parked cars, while no clearly marked pedestrian sidewalk or dedicated walking lane is visible, suggesting spatial resources are allocated more to vehicles than to people on foot.",
+   "Accessibility appears limited because there are no visible curb ramps, tactile paving, handrails, or marked barrier-free routes along the building edge or through the open paved area.",
+   "Fairness for all road users is weakened by the lack of visible lane markings or rules separating pedestrians from vehicles; people walking would need to share the same gray brick surface used by parked and moving cars.",
+   "The flat surface of the brick paving may help basic movement for many users, but the parked black sedan close to the building narrows informal walking space and reduces equitable use of the frontage."
+  ],
+  "safety": [
+   "Safety is reduced because the scene shows a shared paved area with parked vehicles and driveway access but no painted pedestrian crossing, bollards, or protective separation between walking space and vehicle space.",
+   "The side passage on the right is partly screened by the building and trees, which may limit sightlines between drivers and pedestrians entering or exiting that area.",
+   "No visible streetlights, warning markings, speed-control devices, or traffic signs for pedestrians can be seen in the immediate foreground, which weakens perceived and operational safety.",
+   "The open surface is relatively flat and even, so trip risk from major level changes appears low, but conflict risk with cars remains the main safety concern."
+  ],
+  "livability": [
+   "Livability is low because the image shows a utilitarian residential/service back-area character with blank building walls, parked cars, and little evidence of active frontage, shops, seating, or social space.",
+   "There are some trees in the background, but most of the visible ground plane is hard paving, limiting the sense of neighborhood amenity and everyday outdoor use.",
+   "A green trash bin is present, which supports basic maintenance, yet there are no visible benches, play elements, or gathering features that would encourage staying or community interaction.",
+   "The environment appears quiet and low-traffic at the moment, but the lack of pedestrian-oriented functions makes it feel more like an access/parking space than a lively street."
+  ],
+  "sustainability": [
+   "Sustainability performance appears weak because the scene is heavily paved with gray brick surfacing and visibly accommodates private car parking, while no bike parking, transit stop, or dedicated active-mobility infrastructure is visible.",
+   "Tree cover exists only at the edges and background; the central open area around the building has very limited visible greenery or shade-producing landscape elements.",
+   "There are no visible rain gardens, bioswales, permeable green strips, or other stormwater features that would soften the large paved surface.",
+   "The simple low-rise buildings may imply modest intensity of development, but the visible design still prioritizes vehicle access over lower-carbon street use."
+  ],
+  "aesthetics": [
+   "The buildings have a simple, clean white appearance and the paved surface looks generally orderly, which gives the scene a basic level of visual neatness.",
+   "However, the large blank side wall of the central building creates a monotonous streetscape with little facade detail, transparency, or visual interest.",
+   "Parked cars, exposed service-like paving, and the absence of planting beds or decorative street elements make the space feel plain rather than attractive.",
+   "The trees in the background soften the scene somewhat, but they are not enough to overcome the overall austere and parking-oriented character."
+  ],
+  "comfort": [
+   "Thermal comfort appears limited because most of the visible foreground is exposed hard paving with almost no overhead shade; trees are set back and do not cover the main walking area.",
+   "Physical comfort is modest at best: the brick paving looks relatively even, but there are no benches, resting points, or clearly designated pedestrian paths.",
+   "Psychological comfort is reduced by the ambiguous shared-space condition, where pedestrians would likely walk near parked or moving cars without protective buffers.",
+   "The area does appear uncrowded and relatively calm, which may reduce stress for some users, but the lack of pedestrian amenities keeps overall comfort low."
+  ],
+  "walkability": [
+   "Walkability is poor because no continuous sidewalk is visible along the building edges or across the open paved area; pedestrians appear expected to walk within vehicle space.",
+   "There are no visible crosswalks, curb ramps, pedestrian signs, or wayfinding elements to support clear and legible walking routes.",
+   "The parked black sedan and driveway-like layout interrupt the most direct pedestrian desire lines around the central building.",
+   "Although the surface is mostly flat and unobstructed by major level changes, the absence of dedicated pedestrian infrastructure significantly limits walking quality."
+  ]
+ }
+}

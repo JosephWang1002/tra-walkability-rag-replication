@@ -1,0 +1,122 @@
+{
+ "oid": "12355",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12355.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12355_120.505308_31.376368_09002900121706181626565295H_58.62_2017_6_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.8,
+ "usage": {
+  "completion_tokens": 834,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 474,
+   "engine_ttlt_ms": 12984,
+   "pre_inference_ms": 495,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1261,
+   "service_ttlt_ms": 13764,
+   "user_visible_ttft_ms": 765
+  },
+  "prompt_tokens": 5249,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6083
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 40.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 48.0,\n    \"livability\": 38.0,\n    \"sustainability\": 34.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 39.0,\n    \"walkability\": 32.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible ground space is allocated to vehicle access and parking, including a black sedan parked directly beside the building and another car in the rear lane, leaving no clearly designated pedestrian zone.\",\n      \"There is no visible sidewalk, curb-separated footpath, or marked pedestrian route across the paved surface, so spatial resources do not appear evenly distributed for all road users.\",\n      \"Accessibility is limited because the image shows a continuous paved yard without curb ramps, tactile paving, handrails, or other barrier-free guidance features that would support diverse users.\"\n    ],\n    \"safety\": [\n      \"The open paved area mixes parked cars, driveway movement, and walking space without lane markings or pedestrian separation, which can increase conflict risk.\",\n      \"A narrow passage beside the main building leads to rear parking, and the building corner reduces sightlines between pedestrians and vehicles emerging from that side.\",\n      \"The paving appears even and unobstructed in many places, which slightly supports basic movement safety, but the lack of crossings, bollards, or traffic-calming elements keeps the score modest.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by blank building walls, parked vehicles, and hard paving, with no visible shops, seating, play space, or active frontage that would support everyday street life.\",\n      \"Only limited greenery is visible as trees in the background, while the immediate foreground lacks planted edges, social amenities, or human-scale gathering features.\",\n      \"A trash bin is present, which supports basic maintenance, but the overall environment reads more like a service or parking court than a lively public street.\"\n    ],\n    \"sustainability\": [\n      \"There is no visible bike lane, bike parking, bus stop, or other infrastructure encouraging low-carbon travel modes in the photographed space.\",\n      \"The surface is largely covered by impermeable-looking block paving and building footprints, with little visible stormwater landscape treatment or planted infiltration area.\",\n      \"Some mature trees are visible behind the buildings, which provides limited ecological value, but green infrastructure is sparse in the main usable space.\"\n    ],\n    \"aesthetics\": [\n      \"The buildings have simple, plain white facades that create a relatively orderly appearance, but the large blank side wall lacks visual interest.\",\n      \"The paved surface and walls appear generally maintained, and there is no heavy clutter, which supports a basic level of neatness.\",\n      \"Visual quality is reduced by the dominance of parked cars, exposed service space, and minimal landscaping or facade articulation.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears weak because the foreground paved area is exposed and there is no visible shade structure or street tree canopy over the walking space.\",\n      \"Physical comfort is limited by the absence of benches, resting places, or a dedicated smooth pedestrian path distinct from vehicle areas.\",\n      \"Psychological comfort is reduced because pedestrians would need to share an undefined paved court with cars near building corners and parking spaces, creating uncertainty about where to walk.\"\n    ],\n    \"walkability\": [\n      \"There is no clearly defined sidewalk or pedestrian-only corridor; walking would occur on the same paved surface used by parked and moving vehicles.\",\n      \"The route network appears discontinuous from a pedestrian perspective, especially around the building corner and the narrow side access lane to the rear.\",\n      \"The flat block paving may allow basic walking movement, but the lack of crossings, shade, frontage activity, and pedestrian wayfinding makes the environment weak for walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 40.0,
+   "fairness": 45.0,
+   "accessibility": 41.0
+  },
+  "safety": 48.0,
+  "livability": 38.0,
+  "sustainability": 34.0,
+  "aesthetics": 46.0,
+  "comfort": 39.0,
+  "walkability": 32.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 40.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 41.0,
+  "safety": 48.0,
+  "livability": 38.0,
+  "sustainability": 34.0,
+  "aesthetics": 46.0,
+  "comfort": 39.0,
+  "walkability": 32.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:18:40+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible ground space is allocated to vehicle access and parking, including a black sedan parked directly beside the building and another car in the rear lane, leaving no clearly designated pedestrian zone.",
+   "There is no visible sidewalk, curb-separated footpath, or marked pedestrian route across the paved surface, so spatial resources do not appear evenly distributed for all road users.",
+   "Accessibility is limited because the image shows a continuous paved yard without curb ramps, tactile paving, handrails, or other barrier-free guidance features that would support diverse users."
+  ],
+  "safety": [
+   "The open paved area mixes parked cars, driveway movement, and walking space without lane markings or pedestrian separation, which can increase conflict risk.",
+   "A narrow passage beside the main building leads to rear parking, and the building corner reduces sightlines between pedestrians and vehicles emerging from that side.",
+   "The paving appears even and unobstructed in many places, which slightly supports basic movement safety, but the lack of crossings, bollards, or traffic-calming elements keeps the score modest."
+  ],
+  "livability": [
+   "The scene is dominated by blank building walls, parked vehicles, and hard paving, with no visible shops, seating, play space, or active frontage that would support everyday street life.",
+   "Only limited greenery is visible as trees in the background, while the immediate foreground lacks planted edges, social amenities, or human-scale gathering features.",
+   "A trash bin is present, which supports basic maintenance, but the overall environment reads more like a service or parking court than a lively public street."
+  ],
+  "sustainability": [
+   "There is no visible bike lane, bike parking, bus stop, or other infrastructure encouraging low-carbon travel modes in the photographed space.",
+   "The surface is largely covered by impermeable-looking block paving and building footprints, with little visible stormwater landscape treatment or planted infiltration area.",
+   "Some mature trees are visible behind the buildings, which provides limited ecological value, but green infrastructure is sparse in the main usable space."
+  ],
+  "aesthetics": [
+   "The buildings have simple, plain white facades that create a relatively orderly appearance, but the large blank side wall lacks visual interest.",
+   "The paved surface and walls appear generally maintained, and there is no heavy clutter, which supports a basic level of neatness.",
+   "Visual quality is reduced by the dominance of parked cars, exposed service space, and minimal landscaping or facade articulation."
+  ],
+  "comfort": [
+   "Thermal comfort appears weak because the foreground paved area is exposed and there is no visible shade structure or street tree canopy over the walking space.",
+   "Physical comfort is limited by the absence of benches, resting places, or a dedicated smooth pedestrian path distinct from vehicle areas.",
+   "Psychological comfort is reduced because pedestrians would need to share an undefined paved court with cars near building corners and parking spaces, creating uncertainty about where to walk."
+  ],
+  "walkability": [
+   "There is no clearly defined sidewalk or pedestrian-only corridor; walking would occur on the same paved surface used by parked and moving vehicles.",
+   "The route network appears discontinuous from a pedestrian perspective, especially around the building corner and the narrow side access lane to the rear.",
+   "The flat block paving may allow basic walking movement, but the lack of crossings, shade, frontage activity, and pedestrian wayfinding makes the environment weak for walking."
+  ]
+ }
+}

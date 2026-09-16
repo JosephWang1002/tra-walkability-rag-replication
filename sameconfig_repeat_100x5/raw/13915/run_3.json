@@ -1,0 +1,122 @@
+{
+ "oid": "13915",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\13915.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\13915_120.575953_31.063437_01002900001405281114328195W_42.52_2014_5_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.7,
+ "usage": {
+  "completion_tokens": 819,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 396,
+   "engine_ttlt_ms": 13589,
+   "pre_inference_ms": 387,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1250,
+   "service_ttlt_ms": 14439,
+   "user_visible_ttft_ms": 863
+  },
+  "prompt_tokens": 5405,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 2176
+  },
+  "total_tokens": 6224
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 28.0,\n      \"equity\": 32.0,\n      \"fairness\": 30.0,\n      \"accessibility\": 22.0\n    },\n    \"safety\": 46.0,\n    \"livability\": 24.0,\n    \"sustainability\": 38.0,\n    \"aesthetics\": 58.0,\n    \"comfort\": 34.0,\n    \"walkability\": 18.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible space is dominated by multiple wide motor-vehicle lanes, while no sidewalk, crosswalk, or pedestrian zone is visible, indicating an uneven distribution of street space across road users.\",\n      \"A planted median and roadside guardrail organize vehicle movement, but there is no visible infrastructure serving non-drivers such as curb ramps, refuge islands, or accessible pedestrian paths.\",\n      \"Accessibility appears weak because the image shows only carriageway, shoulder line, median planting, and guardrails; no barrier-free walking route or crossing facility can be identified for general public use.\"\n    ],\n    \"safety\": [\n      \"Lane markings are clear and the asphalt surface appears smooth and well maintained, which supports predictable vehicle movement.\",\n      \"A central planted median separates opposing traffic, reducing head-on conflict risk for drivers.\",\n      \"Safety for all road users is limited because no sidewalk, bike lane, or protected crossing is visible, and the roadside guardrail suggests a high-speed environment that is not forgiving for pedestrians or cyclists.\"\n    ],\n    \"livability\": [\n      \"The corridor reads as a high-speed through-road rather than a social street, with long uninterrupted asphalt lanes and no visible shops, seating, or public gathering spaces.\",\n      \"There are no visible pedestrians, street-facing activities, or community amenities along the roadway, which weakens everyday street life.\",\n      \"Although there is greenery in the median and along the roadside, it functions mainly as roadside landscaping rather than as usable public space for staying or social interaction.\"\n    ],\n    \"sustainability\": [\n      \"The planted median and extensive roadside vegetation add green cover and may provide some ecological and visual benefits.\",\n      \"The road design strongly prioritizes private motor traffic, with no visible bus stop, bike lane, or pedestrian facility to support lower-carbon travel choices.\",\n      \"Large paved carriageway width increases impervious surface area, and no visible permeable paving, bioswale, or stormwater feature can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway has a clean, orderly appearance with smooth asphalt, consistent lane markings, and regularly spaced streetlights.\",\n      \"Median shrubs and continuous roadside greenery soften the corridor and improve visual quality compared with a fully barren highway edge.\",\n      \"Visual appeal is reduced by the very wide expanse of asphalt and the absence of human-scale elements such as buildings, active frontages, seating, or detailed streetscape features.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is limited because the road is highly exposed to direct sun, and no tree canopy or shade structure covers the travel space.\",\n      \"Physical comfort for walking is poor because no sidewalk, bench, or resting area is visible anywhere along the corridor.\",\n      \"Psychological comfort for non-drivers is low: the wide lanes, long sightlines, guardrails, and highway-like character create an environment that feels oriented to fast traffic rather than relaxed shared use.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very weak because no sidewalk or separated pedestrian path is visible on either side of the road.\",\n      \"There are no visible crosswalks, pedestrian signals, refuge islands, or curb ramps to support safe route continuity across or along the corridor.\",\n      \"The highway-like design with wide lanes, guardrails, and long distances between visible control points makes the environment unattractive and impractical for everyday walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 28.0,
+   "equity": 32.0,
+   "fairness": 30.0,
+   "accessibility": 22.0
+  },
+  "safety": 46.0,
+  "livability": 24.0,
+  "sustainability": 38.0,
+  "aesthetics": 58.0,
+  "comfort": 34.0,
+  "walkability": 18.0
+ },
+ "scores_flat": {
+  "justice": 28.0,
+  "justice_equity": 32.0,
+  "justice_fairness": 30.0,
+  "justice_accessibility": 22.0,
+  "safety": 46.0,
+  "livability": 24.0,
+  "sustainability": 38.0,
+  "aesthetics": 58.0,
+  "comfort": 34.0,
+  "walkability": 18.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:22:21+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible space is dominated by multiple wide motor-vehicle lanes, while no sidewalk, crosswalk, or pedestrian zone is visible, indicating an uneven distribution of street space across road users.",
+   "A planted median and roadside guardrail organize vehicle movement, but there is no visible infrastructure serving non-drivers such as curb ramps, refuge islands, or accessible pedestrian paths.",
+   "Accessibility appears weak because the image shows only carriageway, shoulder line, median planting, and guardrails; no barrier-free walking route or crossing facility can be identified for general public use."
+  ],
+  "safety": [
+   "Lane markings are clear and the asphalt surface appears smooth and well maintained, which supports predictable vehicle movement.",
+   "A central planted median separates opposing traffic, reducing head-on conflict risk for drivers.",
+   "Safety for all road users is limited because no sidewalk, bike lane, or protected crossing is visible, and the roadside guardrail suggests a high-speed environment that is not forgiving for pedestrians or cyclists."
+  ],
+  "livability": [
+   "The corridor reads as a high-speed through-road rather than a social street, with long uninterrupted asphalt lanes and no visible shops, seating, or public gathering spaces.",
+   "There are no visible pedestrians, street-facing activities, or community amenities along the roadway, which weakens everyday street life.",
+   "Although there is greenery in the median and along the roadside, it functions mainly as roadside landscaping rather than as usable public space for staying or social interaction."
+  ],
+  "sustainability": [
+   "The planted median and extensive roadside vegetation add green cover and may provide some ecological and visual benefits.",
+   "The road design strongly prioritizes private motor traffic, with no visible bus stop, bike lane, or pedestrian facility to support lower-carbon travel choices.",
+   "Large paved carriageway width increases impervious surface area, and no visible permeable paving, bioswale, or stormwater feature can be identified."
+  ],
+  "aesthetics": [
+   "The roadway has a clean, orderly appearance with smooth asphalt, consistent lane markings, and regularly spaced streetlights.",
+   "Median shrubs and continuous roadside greenery soften the corridor and improve visual quality compared with a fully barren highway edge.",
+   "Visual appeal is reduced by the very wide expanse of asphalt and the absence of human-scale elements such as buildings, active frontages, seating, or detailed streetscape features."
+  ],
+  "comfort": [
+   "Thermal comfort is limited because the road is highly exposed to direct sun, and no tree canopy or shade structure covers the travel space.",
+   "Physical comfort for walking is poor because no sidewalk, bench, or resting area is visible anywhere along the corridor.",
+   "Psychological comfort for non-drivers is low: the wide lanes, long sightlines, guardrails, and highway-like character create an environment that feels oriented to fast traffic rather than relaxed shared use."
+  ],
+  "walkability": [
+   "Walkability is very weak because no sidewalk or separated pedestrian path is visible on either side of the road.",
+   "There are no visible crosswalks, pedestrian signals, refuge islands, or curb ramps to support safe route continuity across or along the corridor.",
+   "The highway-like design with wide lanes, guardrails, and long distances between visible control points makes the environment unattractive and impractical for everyday walking."
+  ]
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "oid": "19142",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\19142.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\19142_120.554791_31.393851_09002900121705270827536815H_263.99_2017_5_相城区黄桥街道大东路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.0,
+ "usage": {
+  "completion_tokens": 970,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 456,
+   "engine_ttlt_ms": 16715,
+   "pre_inference_ms": 460,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1181,
+   "service_ttlt_ms": 17434,
+   "user_visible_ttft_ms": 721
+  },
+  "prompt_tokens": 5299,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6269
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 52.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 55.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 60.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 70.0,\n    \"walkability\": 57.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The lane is shared by all users in one narrow carriageway, and no dedicated sidewalk or cycle space is visible, so spatial resources do not appear evenly allocated among pedestrians, cyclists, and drivers.\",\n      \"The entrance edges are flush or only slightly raised in places, which suggests some basic physical access, but there are no marked curb ramps, tactile paving, or other inclusive guidance features visible.\",\n      \"Large roadside trees provide shade to both sides of the lane rather than only one frontage, which supports a modest sense of equitable environmental benefit.\",\n      \"The right side has an open paved apron while the left side is constrained by walls and utility structures, indicating uneven usable edge space along the street.\"\n    ],\n    \"safety\": [\n      \"Motor traffic appears low because this is a narrow local lane with a village-like setting and no visible heavy traffic, which likely reduces crash risk.\",\n      \"There is no marked pedestrian path, crosswalk, or protective separation from vehicles, so walkers would need to share the same paved surface with any passing cars or motorcycles.\",\n      \"Dense tree canopy creates welcome shade but also produces strong light-shadow contrast on the pavement, which can reduce visibility of surface defects or approaching users.\",\n      \"Several people are standing at the right edge near the travel way, and the lack of a defined waiting area or sidewalk increases potential conflict with moving vehicles.\"\n    ],\n    \"livability\": [\n      \"Mature trees on both sides create a green, calm atmosphere that supports a pleasant everyday environment.\",\n      \"The visible presence of several people talking at the roadside suggests some social use and neighborhood familiarity, which contributes to street life.\",\n      \"The setting appears residential or semi-rural, with simple low-rise buildings and limited traffic, supporting quietness but offering few visible public amenities.\",\n      \"No benches, storefronts, play elements, or community facilities are visible in the scene, so opportunities for lingering and diverse daily activity seem limited.\"\n    ],\n    \"sustainability\": [\n      \"The continuous tree canopy is a strong positive feature because it provides shade, cooling, and ecological value along the lane.\",\n      \"The narrow scale of the road and low-speed local character are compatible with walking and other low-carbon short trips, even though no formal facilities are marked.\",\n      \"Most visible ground surfaces appear hard paved, and no rain gardens, permeable paving, or drainage landscape features can be identified from the image.\",\n      \"There is no visible transit stop, bike parking, or dedicated cycling infrastructure, which limits broader sustainable mobility support.\"\n    ],\n    \"aesthetics\": [\n      \"The arching mature trees frame the lane and create a visually attractive green corridor.\",\n      \"The shaded light pattern under the canopy and the modest scale of the lane give the street a calm and intimate character.\",\n      \"Simple walls, low buildings, and limited signage reduce visual clutter and help maintain a coherent rural streetscape appearance.\",\n      \"The pavement and edges look somewhat plain and worn, so the scene is pleasant mainly because of vegetation rather than refined street design details.\"\n    ],\n    \"comfort\": [\n      \"Extensive tree shade on both sides substantially improves thermal comfort for all road users in sunny weather.\",\n      \"The lane appears relatively quiet and lightly trafficked, which likely supports better acoustic and psychological comfort than a busy urban street.\",\n      \"The pavement looks mostly continuous and level enough for basic movement, but there are no visible benches or resting facilities for longer stays.\",\n      \"Because there is no dedicated sidewalk, pedestrians must remain close to the shared travel surface, which reduces psychological comfort when vehicles pass.\"\n    ],\n    \"walkability\": [\n      \"The street is short-scale, shaded, and likely low-speed, all of which support basic walking conditions.\",\n      \"Walkability is weakened by the absence of a clearly defined sidewalk or pedestrian-only zone; people must use the same paved lane as vehicles.\",\n      \"No marked crossings, wayfinding, or pedestrian priority treatments are visible at the entrance or along the lane.\",\n      \"Tree canopy improves the walking experience by providing shade and enclosure, but the limited width and lack of pedestrian amenities constrain overall walkability.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 52.0,
+   "fairness": 55.0,
+   "accessibility": 55.0
+  },
+  "safety": 58.0,
+  "livability": 60.0,
+  "sustainability": 66.0,
+  "aesthetics": 72.0,
+  "comfort": 70.0,
+  "walkability": 57.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 52.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 55.0,
+  "safety": 58.0,
+  "livability": 60.0,
+  "sustainability": 66.0,
+  "aesthetics": 72.0,
+  "comfort": 70.0,
+  "walkability": 57.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:42:13+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The lane is shared by all users in one narrow carriageway, and no dedicated sidewalk or cycle space is visible, so spatial resources do not appear evenly allocated among pedestrians, cyclists, and drivers.",
+   "The entrance edges are flush or only slightly raised in places, which suggests some basic physical access, but there are no marked curb ramps, tactile paving, or other inclusive guidance features visible.",
+   "Large roadside trees provide shade to both sides of the lane rather than only one frontage, which supports a modest sense of equitable environmental benefit.",
+   "The right side has an open paved apron while the left side is constrained by walls and utility structures, indicating uneven usable edge space along the street."
+  ],
+  "safety": [
+   "Motor traffic appears low because this is a narrow local lane with a village-like setting and no visible heavy traffic, which likely reduces crash risk.",
+   "There is no marked pedestrian path, crosswalk, or protective separation from vehicles, so walkers would need to share the same paved surface with any passing cars or motorcycles.",
+   "Dense tree canopy creates welcome shade but also produces strong light-shadow contrast on the pavement, which can reduce visibility of surface defects or approaching users.",
+   "Several people are standing at the right edge near the travel way, and the lack of a defined waiting area or sidewalk increases potential conflict with moving vehicles."
+  ],
+  "livability": [
+   "Mature trees on both sides create a green, calm atmosphere that supports a pleasant everyday environment.",
+   "The visible presence of several people talking at the roadside suggests some social use and neighborhood familiarity, which contributes to street life.",
+   "The setting appears residential or semi-rural, with simple low-rise buildings and limited traffic, supporting quietness but offering few visible public amenities.",
+   "No benches, storefronts, play elements, or community facilities are visible in the scene, so opportunities for lingering and diverse daily activity seem limited."
+  ],
+  "sustainability": [
+   "The continuous tree canopy is a strong positive feature because it provides shade, cooling, and ecological value along the lane.",
+   "The narrow scale of the road and low-speed local character are compatible with walking and other low-carbon short trips, even though no formal facilities are marked.",
+   "Most visible ground surfaces appear hard paved, and no rain gardens, permeable paving, or drainage landscape features can be identified from the image.",
+   "There is no visible transit stop, bike parking, or dedicated cycling infrastructure, which limits broader sustainable mobility support."
+  ],
+  "aesthetics": [
+   "The arching mature trees frame the lane and create a visually attractive green corridor.",
+   "The shaded light pattern under the canopy and the modest scale of the lane give the street a calm and intimate character.",
+   "Simple walls, low buildings, and limited signage reduce visual clutter and help maintain a coherent rural streetscape appearance.",
+   "The pavement and edges look somewhat plain and worn, so the scene is pleasant mainly because of vegetation rather than refined street design details."
+  ],
+  "comfort": [
+   "Extensive tree shade on both sides substantially improves thermal comfort for all road users in sunny weather.",
+   "The lane appears relatively quiet and lightly trafficked, which likely supports better acoustic and psychological comfort than a busy urban street.",
+   "The pavement looks mostly continuous and level enough for basic movement, but there are no visible benches or resting facilities for longer stays.",
+   "Because there is no dedicated sidewalk, pedestrians must remain close to the shared travel surface, which reduces psychological comfort when vehicles pass."
+  ],
+  "walkability": [
+   "The street is short-scale, shaded, and likely low-speed, all of which support basic walking conditions.",
+   "Walkability is weakened by the absence of a clearly defined sidewalk or pedestrian-only zone; people must use the same paved lane as vehicles.",
+   "No marked crossings, wayfinding, or pedestrian priority treatments are visible at the entrance or along the lane.",
+   "Tree canopy improves the walking experience by providing shade and enclosure, but the limited width and lack of pedestrian amenities constrain overall walkability."
+  ]
+ }
+}

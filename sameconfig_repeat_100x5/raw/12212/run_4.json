@@ -1,0 +1,136 @@
+{
+ "oid": "12212",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12212.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12212_120.500449_31.359485_0900290012220829075416565AL_0.17_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 25.4,
+ "usage": {
+  "completion_tokens": 1231,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 443,
+   "engine_ttlt_ms": 21418,
+   "pre_inference_ms": 375,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1054,
+   "service_ttlt_ms": 22023,
+   "user_visible_ttft_ms": 679
+  },
+  "prompt_tokens": 5284,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6515
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 66.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 63.0,\n    \"sustainability\": 81.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 78.0,\n    \"walkability\": 54.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The corridor allocates substantial space to motor traffic with multiple wide vehicle lanes, while pedestrian space is only visible at the edges behind hedges and a fence, suggesting an uneven distribution of street space for all users.\",\n      \"A bus stop shelter is visible on the left, which supports broader access to public transport, but no visible marked crossing connects both sides of the road to that stop, limiting fair access across the corridor.\",\n      \"The sidewalks appear physically separated from traffic by green medians and hedges, which helps basic accessibility, but no curb ramps, tactile paving, or barrier-free crossing details are visible in the image.\",\n      \"The right-side white fence and continuous hedge create a protected edge for pedestrians, yet they may also constrain direct access points if crossings are infrequent, reducing accessibility for users not traveling by car.\",\n      \"Cycling provision is not visible: there is no bike lane marking, cycle track, or bicycle signal shown, so spatial resources appear less equitably distributed for non-motorized users.\"\n    ],\n    \"safety\": [\n      \"The roadway has clear lane markings and a landscaped median, which organize vehicle movement and reduce head-on conflict risk for all road users.\",\n      \"Large trees, hedges, and setback sidewalks create a buffer between fast-moving traffic and pedestrians, improving perceived safety along the corridor edges.\",\n      \"A bus stop is present on the left, but no visible pedestrian crossing facility appears near it; this can create risk if people need to cross several lanes to reach transit.\",\n      \"There is no visible dedicated bicycle facility, so cyclists would likely mix with motor traffic on a multi-lane road, which lowers safety for that user group.\",\n      \"Street lighting poles are visible along the corridor, supporting nighttime traffic safety, although the image does not show pavement-level lighting quality for pedestrians.\"\n    ],\n    \"livability\": [\n      \"The street is lined with mature trees and continuous greenery on both sides and in the median, creating a pleasant and healthier everyday environment.\",\n      \"A bus stop shelter indicates some support for daily mobility needs beyond private cars, which improves general urban livability.\",\n      \"The corridor feels dominated by through-traffic rather than street-level activity; no shops, seating, or active frontages are visible, so opportunities for social interaction appear limited.\",\n      \"The sidewalks are visually separated from the carriageway by hedges and planting, which can make walking more pleasant, but the road width still gives the space a strong vehicular character.\",\n      \"The scene appears clean, orderly, and well maintained, with trimmed hedges, intact pavement markings, and healthy tree canopy contributing positively to livability.\"\n    ],\n    \"sustainability\": [\n      \"Extensive tree canopy and planted medians provide significant green infrastructure, which supports shade, cooling, and ecological value.\",\n      \"The visible bus stop and bus in traffic indicate that the corridor supports public transport, which is more sustainable than car-only travel.\",\n      \"Continuous landscaping with hedges and trees along both sides suggests long-term investment in urban greening and heat mitigation.\",\n      \"No dedicated cycling infrastructure is visible, which weakens support for low-carbon active travel despite the otherwise green corridor.\",\n      \"The broad asphalt carriageway still prioritizes motor vehicle movement, so sustainability benefits from transit and greenery are partly offset by car-oriented design.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue of mature trees on both sides creates a strong, coherent visual identity and a high-quality green streetscape.\",\n      \"Trimmed hedges in the median and roadside strips give the corridor a neat, well-maintained appearance.\",\n      \"The road surface and lane markings appear clean and orderly, reinforcing a visually organized environment.\",\n      \"The white fence on the right and the consistent rhythm of light poles add structure, though the utility towers slightly reduce scenic quality.\",\n      \"The overall composition of broad canopy trees, open sky, and landscaped medians makes the street visually attractive despite its traffic function.\"\n    ],\n    \"comfort\": [\n      \"Dense tree canopy along both sides provides substantial shade for sidewalks and roadside areas, supporting good thermal comfort in warm weather.\",\n      \"Green buffers of hedges and planting separate pedestrians from moving traffic, which likely improves psychological comfort compared with walking directly beside the roadway.\",\n      \"The carriageway surface appears smooth and well maintained, benefiting ride comfort for drivers and bus passengers.\",\n      \"No benches or resting facilities are visible at the bus stop or along the sidewalks, which limits physical comfort for people waiting or walking longer distances.\",\n      \"Because the road is wide and carries buses and cars, traffic noise is likely present, but the setback sidewalks and vegetation may soften some of that discomfort.\"\n    ],\n    \"walkability\": [\n      \"Sidewalks are visible on both sides and are buffered by greenery, which supports a basic walking environment.\",\n      \"However, the road is very wide with multiple traffic lanes, and no marked crosswalk, refuge island, or pedestrian signal is visible in this frame, making crossing difficult for walkers.\",\n      \"The bus stop on the left increases the need for safe pedestrian access, yet the image does not show a nearby crossing connection to it.\",\n      \"Tree shade and landscaped edges improve walking comfort along the corridor, especially for longer linear walks.\",\n      \"The right-side fence and hedges provide protection from traffic but may also reduce permeability if formal crossing points are sparse, weakening overall walkability.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 66.0,
+   "fairness": 58.0,
+   "accessibility": 59.0
+  },
+  "safety": 74.0,
+  "livability": 63.0,
+  "sustainability": 81.0,
+  "aesthetics": 84.0,
+  "comfort": 78.0,
+  "walkability": 54.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 66.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 59.0,
+  "safety": 74.0,
+  "livability": 63.0,
+  "sustainability": 81.0,
+  "aesthetics": 84.0,
+  "comfort": 78.0,
+  "walkability": 54.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:17:45+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The corridor allocates substantial space to motor traffic with multiple wide vehicle lanes, while pedestrian space is only visible at the edges behind hedges and a fence, suggesting an uneven distribution of street space for all users.",
+   "A bus stop shelter is visible on the left, which supports broader access to public transport, but no visible marked crossing connects both sides of the road to that stop, limiting fair access across the corridor.",
+   "The sidewalks appear physically separated from traffic by green medians and hedges, which helps basic accessibility, but no curb ramps, tactile paving, or barrier-free crossing details are visible in the image.",
+   "The right-side white fence and continuous hedge create a protected edge for pedestrians, yet they may also constrain direct access points if crossings are infrequent, reducing accessibility for users not traveling by car.",
+   "Cycling provision is not visible: there is no bike lane marking, cycle track, or bicycle signal shown, so spatial resources appear less equitably distributed for non-motorized users."
+  ],
+  "safety": [
+   "The roadway has clear lane markings and a landscaped median, which organize vehicle movement and reduce head-on conflict risk for all road users.",
+   "Large trees, hedges, and setback sidewalks create a buffer between fast-moving traffic and pedestrians, improving perceived safety along the corridor edges.",
+   "A bus stop is present on the left, but no visible pedestrian crossing facility appears near it; this can create risk if people need to cross several lanes to reach transit.",
+   "There is no visible dedicated bicycle facility, so cyclists would likely mix with motor traffic on a multi-lane road, which lowers safety for that user group.",
+   "Street lighting poles are visible along the corridor, supporting nighttime traffic safety, although the image does not show pavement-level lighting quality for pedestrians."
+  ],
+  "livability": [
+   "The street is lined with mature trees and continuous greenery on both sides and in the median, creating a pleasant and healthier everyday environment.",
+   "A bus stop shelter indicates some support for daily mobility needs beyond private cars, which improves general urban livability.",
+   "The corridor feels dominated by through-traffic rather than street-level activity; no shops, seating, or active frontages are visible, so opportunities for social interaction appear limited.",
+   "The sidewalks are visually separated from the carriageway by hedges and planting, which can make walking more pleasant, but the road width still gives the space a strong vehicular character.",
+   "The scene appears clean, orderly, and well maintained, with trimmed hedges, intact pavement markings, and healthy tree canopy contributing positively to livability."
+  ],
+  "sustainability": [
+   "Extensive tree canopy and planted medians provide significant green infrastructure, which supports shade, cooling, and ecological value.",
+   "The visible bus stop and bus in traffic indicate that the corridor supports public transport, which is more sustainable than car-only travel.",
+   "Continuous landscaping with hedges and trees along both sides suggests long-term investment in urban greening and heat mitigation.",
+   "No dedicated cycling infrastructure is visible, which weakens support for low-carbon active travel despite the otherwise green corridor.",
+   "The broad asphalt carriageway still prioritizes motor vehicle movement, so sustainability benefits from transit and greenery are partly offset by car-oriented design."
+  ],
+  "aesthetics": [
+   "The avenue of mature trees on both sides creates a strong, coherent visual identity and a high-quality green streetscape.",
+   "Trimmed hedges in the median and roadside strips give the corridor a neat, well-maintained appearance.",
+   "The road surface and lane markings appear clean and orderly, reinforcing a visually organized environment.",
+   "The white fence on the right and the consistent rhythm of light poles add structure, though the utility towers slightly reduce scenic quality.",
+   "The overall composition of broad canopy trees, open sky, and landscaped medians makes the street visually attractive despite its traffic function."
+  ],
+  "comfort": [
+   "Dense tree canopy along both sides provides substantial shade for sidewalks and roadside areas, supporting good thermal comfort in warm weather.",
+   "Green buffers of hedges and planting separate pedestrians from moving traffic, which likely improves psychological comfort compared with walking directly beside the roadway.",
+   "The carriageway surface appears smooth and well maintained, benefiting ride comfort for drivers and bus passengers.",
+   "No benches or resting facilities are visible at the bus stop or along the sidewalks, which limits physical comfort for people waiting or walking longer distances.",
+   "Because the road is wide and carries buses and cars, traffic noise is likely present, but the setback sidewalks and vegetation may soften some of that discomfort."
+  ],
+  "walkability": [
+   "Sidewalks are visible on both sides and are buffered by greenery, which supports a basic walking environment.",
+   "However, the road is very wide with multiple traffic lanes, and no marked crosswalk, refuge island, or pedestrian signal is visible in this frame, making crossing difficult for walkers.",
+   "The bus stop on the left increases the need for safe pedestrian access, yet the image does not show a nearby crossing connection to it.",
+   "Tree shade and landscaped edges improve walking comfort along the corridor, especially for longer linear walks.",
+   "The right-side fence and hedges provide protection from traffic but may also reduce permeability if formal crossing points are sparse, weakening overall walkability."
+  ]
+ }
+}

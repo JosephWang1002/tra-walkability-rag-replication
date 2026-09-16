@@ -1,0 +1,122 @@
+{
+ "oid": "12901",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12901.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12901_120.489343_31.361085_09002900121904211047156615H_310.25_2019_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.6,
+ "usage": {
+  "completion_tokens": 834,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 449,
+   "engine_ttlt_ms": 12572,
+   "pre_inference_ms": 552,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1330,
+   "service_ttlt_ms": 13431,
+   "user_visible_ttft_ms": 779
+  },
+  "prompt_tokens": 5272,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6106
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 38.0,\n      \"equity\": 40.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 39.0\n    },\n    \"safety\": 28.0,\n    \"livability\": 34.0,\n    \"sustainability\": 56.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 49.0,\n    \"walkability\": 22.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is occupied by a large tanker truck and the travel lane, while no dedicated sidewalk or pedestrian zone is visible, indicating an uneven allocation of space among road users.\",\n      \"There is no marked pedestrian crossing, curb ramp, tactile paving, or other barrier-free facility visible along the road edge, which weakens accessibility for people moving on foot.\",\n      \"The narrow roadway appears to force different users to share the same carriageway, with a truck, a motorcycle, and possibly pedestrians relying on the same corridor, reducing fairness in practical use.\"\n    ],\n    \"safety\": [\n      \"A large red tanker truck occupies much of the narrow road width, leaving limited lateral clearance for opposing or vulnerable users and increasing conflict risk.\",\n      \"No separated sidewalk, shoulder protection, guardrail, or bike lane is visible, so anyone walking would be exposed directly to moving vehicles.\",\n      \"The road lacks visible crosswalk markings, traffic calming devices, or warning signs in the scene, and the tree-lined edge may also reduce sightlines around the roadside.\"\n    ],\n    \"livability\": [\n      \"The corridor is dominated by through traffic, especially a heavy truck, and there are no visible shops, benches, bus stops, or social amenities that support everyday street life.\",\n      \"The strong presence of roadside greenery and mature trees improves environmental quality, but the space functions more like a vehicular access road than a people-oriented public street.\",\n      \"There is no visible gathering space, seating area, or active frontage along the road edge, limiting opportunities for social interaction and daily use beyond movement.\"\n    ],\n    \"sustainability\": [\n      \"The dense roadside trees and continuous green vegetation provide ecological value, shade, and some carbon-sequestering landscape benefits.\",\n      \"A motorcycle is visible in the corridor, showing that the road is not exclusively car-oriented, but there is no dedicated infrastructure that clearly supports low-carbon walking or cycling.\",\n      \"The street edge is mostly hard asphalt with conventional drainage edges, and no visible permeable paving, bioswale, or rainwater management feature can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"Large mature trees on the right side create a strong green canopy and give the road a visually pleasant natural character.\",\n      \"The wooded hillside and continuous vegetation on both sides produce a scenic landscape setting with relatively little visual clutter.\",\n      \"The heavy truck and plain asphalt surface reduce visual refinement, but overall the greenery and coherent natural backdrop make the scene moderately attractive.\"\n    ],\n    \"comfort\": [\n      \"The mature trees on the right provide substantial shade, which likely improves thermal comfort for users near that edge of the road.\",\n      \"There is no visible sidewalk, bench, or resting facility, so physical comfort for people on foot is limited despite the shaded environment.\",\n      \"Sharing a narrow road with a large tanker truck can create psychological discomfort from noise, speed, and perceived danger, especially for non-motorized users.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk is visible; the road edge transitions directly to curb, leaf litter, and vegetation, making walking routes unclear and uncomfortable.\",\n      \"The narrow carriageway is shared with heavy vehicles, including a tanker truck, which strongly discourages walking and reduces perceived pedestrian priority.\",\n      \"Although the tree cover offers shade and the road appears relatively flat, the absence of crossings, pedestrian markings, and protected walking space keeps overall walkability very low.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 38.0,
+   "equity": 40.0,
+   "fairness": 35.0,
+   "accessibility": 39.0
+  },
+  "safety": 28.0,
+  "livability": 34.0,
+  "sustainability": 56.0,
+  "aesthetics": 72.0,
+  "comfort": 49.0,
+  "walkability": 22.0
+ },
+ "scores_flat": {
+  "justice": 38.0,
+  "justice_equity": 40.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 39.0,
+  "safety": 28.0,
+  "livability": 34.0,
+  "sustainability": 56.0,
+  "aesthetics": 72.0,
+  "comfort": 49.0,
+  "walkability": 22.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:19:39+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is occupied by a large tanker truck and the travel lane, while no dedicated sidewalk or pedestrian zone is visible, indicating an uneven allocation of space among road users.",
+   "There is no marked pedestrian crossing, curb ramp, tactile paving, or other barrier-free facility visible along the road edge, which weakens accessibility for people moving on foot.",
+   "The narrow roadway appears to force different users to share the same carriageway, with a truck, a motorcycle, and possibly pedestrians relying on the same corridor, reducing fairness in practical use."
+  ],
+  "safety": [
+   "A large red tanker truck occupies much of the narrow road width, leaving limited lateral clearance for opposing or vulnerable users and increasing conflict risk.",
+   "No separated sidewalk, shoulder protection, guardrail, or bike lane is visible, so anyone walking would be exposed directly to moving vehicles.",
+   "The road lacks visible crosswalk markings, traffic calming devices, or warning signs in the scene, and the tree-lined edge may also reduce sightlines around the roadside."
+  ],
+  "livability": [
+   "The corridor is dominated by through traffic, especially a heavy truck, and there are no visible shops, benches, bus stops, or social amenities that support everyday street life.",
+   "The strong presence of roadside greenery and mature trees improves environmental quality, but the space functions more like a vehicular access road than a people-oriented public street.",
+   "There is no visible gathering space, seating area, or active frontage along the road edge, limiting opportunities for social interaction and daily use beyond movement."
+  ],
+  "sustainability": [
+   "The dense roadside trees and continuous green vegetation provide ecological value, shade, and some carbon-sequestering landscape benefits.",
+   "A motorcycle is visible in the corridor, showing that the road is not exclusively car-oriented, but there is no dedicated infrastructure that clearly supports low-carbon walking or cycling.",
+   "The street edge is mostly hard asphalt with conventional drainage edges, and no visible permeable paving, bioswale, or rainwater management feature can be identified."
+  ],
+  "aesthetics": [
+   "Large mature trees on the right side create a strong green canopy and give the road a visually pleasant natural character.",
+   "The wooded hillside and continuous vegetation on both sides produce a scenic landscape setting with relatively little visual clutter.",
+   "The heavy truck and plain asphalt surface reduce visual refinement, but overall the greenery and coherent natural backdrop make the scene moderately attractive."
+  ],
+  "comfort": [
+   "The mature trees on the right provide substantial shade, which likely improves thermal comfort for users near that edge of the road.",
+   "There is no visible sidewalk, bench, or resting facility, so physical comfort for people on foot is limited despite the shaded environment.",
+   "Sharing a narrow road with a large tanker truck can create psychological discomfort from noise, speed, and perceived danger, especially for non-motorized users."
+  ],
+  "walkability": [
+   "No continuous sidewalk is visible; the road edge transitions directly to curb, leaf litter, and vegetation, making walking routes unclear and uncomfortable.",
+   "The narrow carriageway is shared with heavy vehicles, including a tanker truck, which strongly discourages walking and reduces perceived pedestrian priority.",
+   "Although the tree cover offers shade and the road appears relatively flat, the absence of crossings, pedestrian markings, and protected walking space keeps overall walkability very low."
+  ]
+ }
+}

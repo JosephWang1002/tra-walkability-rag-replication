@@ -1,0 +1,129 @@
+{
+ "oid": "23207",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23207.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23207_120.753874_31.356864_09002900011603251321295004B_252.2_2016_3_苏州工业园区唯亭街道双泾街_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 20.2,
+ "usage": {
+  "completion_tokens": 1034,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 542,
+   "engine_ttlt_ms": 16581,
+   "pre_inference_ms": 292,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1076,
+   "service_ttlt_ms": 17110,
+   "user_visible_ttft_ms": 784
+  },
+  "prompt_tokens": 5272,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6306
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 29.0\n    },\n    \"safety\": 31.0,\n    \"livability\": 27.0,\n    \"sustainability\": 22.0,\n    \"aesthetics\": 41.0,\n    \"comfort\": 28.0,\n    \"walkability\": 24.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible street space is allocated to car parking and vehicle movement, with parked cars lining both sides and no clearly marked pedestrian zone, indicating an uneven distribution of space among road users.\",\n      \"There is no visible sidewalk, curb-separated footpath, zebra crossing, or dedicated pedestrian refuge, so people on foot appear to share the same wide concrete carriageway with cars.\",\n      \"Accessibility is weak because no curb ramps, tactile paving, handrails, or other barrier-free elements are visible along the building edges or parking areas.\",\n      \"The open asphalt/concrete surface may allow basic passage, but the lack of designated walking routes means access depends on negotiating around parked vehicles, which is less fair for slower or less confident users.\"\n    ],\n    \"safety\": [\n      \"Safety is limited because pedestrians and vehicles appear to mix in the same broad internal road, with no painted crosswalks, bollards, or protective separation visible.\",\n      \"Numerous parked cars on both sides create potential blind spots, especially where vehicles reverse out of angled or edge parking spaces into the travel path.\",\n      \"No traffic calming features such as speed humps, raised crossings, narrowed lanes, or warning markings are visible on this long straight roadway.\",\n      \"Daytime visibility is good due to the open sightline down the street, but the absence of visible pedestrian infrastructure still leaves conflict risk high.\"\n    ],\n    \"livability\": [\n      \"The setting appears dominated by industrial or warehouse-style buildings and surface parking, with little evidence of active frontage, shops, seating, or social space that would support everyday street life.\",\n      \"There are very few visible amenities for staying outdoors, such as benches, shaded gathering areas, or small public spaces.\",\n      \"Sparse greenery is limited to a few small trees near building edges, which does little to soften the parking-dominated environment.\",\n      \"The street may function for access and parking, but it offers limited support for social interaction or pleasant daily use beyond driving.\"\n    ],\n    \"sustainability\": [\n      \"The scene is strongly car-oriented, with extensive surface parking on both sides and no visible bus stop, bike lane, or bike parking to support lower-carbon travel.\",\n      \"Green infrastructure appears minimal: only a few scattered trees are visible, and there are no planted medians, bioswales, or permeable landscape features evident in the image.\",\n      \"The wide paved surface increases hardscape coverage, while no visible stormwater-sensitive design elements are present to offset runoff or heat buildup.\",\n      \"Because walking and cycling facilities are not visibly provided, the street form does little to encourage mode shift away from private vehicles.\"\n    ],\n    \"aesthetics\": [\n      \"The buildings have a relatively orderly and consistent industrial appearance, which gives the street some visual coherence.\",\n      \"However, the dominant impression is a broad expanse of plain concrete and parked cars, which reduces visual richness and human-scale interest.\",\n      \"Limited vegetation and almost no streetscape detailing, such as decorative paving, lighting features, or street furniture, make the environment feel utilitarian rather than attractive.\",\n      \"The street appears reasonably clean and uncluttered, which slightly supports visual quality despite the monotonous parking-heavy layout.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because the street is largely exposed concrete with very little tree canopy or shade structure visible along the roadway.\",\n      \"Physical comfort for non-drivers is weak since there are no visible benches, resting places, or dedicated smooth pedestrian paths separated from parked cars.\",\n      \"Psychological comfort is reduced by the parking-lot character of the space: people on foot would likely feel secondary to vehicles because cars occupy both edges and the center corridor is undefined for walking.\",\n      \"The surface looks generally flat and even, which helps basic movement, but the lack of protected pedestrian space limits overall comfort.\"\n    ],\n    \"walkability\": [\n      \"Walkability is low because no continuous sidewalk or clearly designated pedestrian route is visible along either side of the street.\",\n      \"Parked vehicles occupy the edges where pedestrians would normally expect to walk, forcing walking activity into the same space used by moving cars.\",\n      \"There are no visible crossings, curb ramps, wayfinding cues, or frontage features that would make walking routes legible and convenient.\",\n      \"The long straight internal road provides directness, but without shade, separation, or pedestrian amenities, it is not an inviting walking environment.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 35.0,
+   "accessibility": 29.0
+  },
+  "safety": 31.0,
+  "livability": 27.0,
+  "sustainability": 22.0,
+  "aesthetics": 41.0,
+  "comfort": 28.0,
+  "walkability": 24.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 29.0,
+  "safety": 31.0,
+  "livability": 27.0,
+  "sustainability": 22.0,
+  "aesthetics": 41.0,
+  "comfort": 28.0,
+  "walkability": 24.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:54:45+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible street space is allocated to car parking and vehicle movement, with parked cars lining both sides and no clearly marked pedestrian zone, indicating an uneven distribution of space among road users.",
+   "There is no visible sidewalk, curb-separated footpath, zebra crossing, or dedicated pedestrian refuge, so people on foot appear to share the same wide concrete carriageway with cars.",
+   "Accessibility is weak because no curb ramps, tactile paving, handrails, or other barrier-free elements are visible along the building edges or parking areas.",
+   "The open asphalt/concrete surface may allow basic passage, but the lack of designated walking routes means access depends on negotiating around parked vehicles, which is less fair for slower or less confident users."
+  ],
+  "safety": [
+   "Safety is limited because pedestrians and vehicles appear to mix in the same broad internal road, with no painted crosswalks, bollards, or protective separation visible.",
+   "Numerous parked cars on both sides create potential blind spots, especially where vehicles reverse out of angled or edge parking spaces into the travel path.",
+   "No traffic calming features such as speed humps, raised crossings, narrowed lanes, or warning markings are visible on this long straight roadway.",
+   "Daytime visibility is good due to the open sightline down the street, but the absence of visible pedestrian infrastructure still leaves conflict risk high."
+  ],
+  "livability": [
+   "The setting appears dominated by industrial or warehouse-style buildings and surface parking, with little evidence of active frontage, shops, seating, or social space that would support everyday street life.",
+   "There are very few visible amenities for staying outdoors, such as benches, shaded gathering areas, or small public spaces.",
+   "Sparse greenery is limited to a few small trees near building edges, which does little to soften the parking-dominated environment.",
+   "The street may function for access and parking, but it offers limited support for social interaction or pleasant daily use beyond driving."
+  ],
+  "sustainability": [
+   "The scene is strongly car-oriented, with extensive surface parking on both sides and no visible bus stop, bike lane, or bike parking to support lower-carbon travel.",
+   "Green infrastructure appears minimal: only a few scattered trees are visible, and there are no planted medians, bioswales, or permeable landscape features evident in the image.",
+   "The wide paved surface increases hardscape coverage, while no visible stormwater-sensitive design elements are present to offset runoff or heat buildup.",
+   "Because walking and cycling facilities are not visibly provided, the street form does little to encourage mode shift away from private vehicles."
+  ],
+  "aesthetics": [
+   "The buildings have a relatively orderly and consistent industrial appearance, which gives the street some visual coherence.",
+   "However, the dominant impression is a broad expanse of plain concrete and parked cars, which reduces visual richness and human-scale interest.",
+   "Limited vegetation and almost no streetscape detailing, such as decorative paving, lighting features, or street furniture, make the environment feel utilitarian rather than attractive.",
+   "The street appears reasonably clean and uncluttered, which slightly supports visual quality despite the monotonous parking-heavy layout."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because the street is largely exposed concrete with very little tree canopy or shade structure visible along the roadway.",
+   "Physical comfort for non-drivers is weak since there are no visible benches, resting places, or dedicated smooth pedestrian paths separated from parked cars.",
+   "Psychological comfort is reduced by the parking-lot character of the space: people on foot would likely feel secondary to vehicles because cars occupy both edges and the center corridor is undefined for walking.",
+   "The surface looks generally flat and even, which helps basic movement, but the lack of protected pedestrian space limits overall comfort."
+  ],
+  "walkability": [
+   "Walkability is low because no continuous sidewalk or clearly designated pedestrian route is visible along either side of the street.",
+   "Parked vehicles occupy the edges where pedestrians would normally expect to walk, forcing walking activity into the same space used by moving cars.",
+   "There are no visible crossings, curb ramps, wayfinding cues, or frontage features that would make walking routes legible and convenient.",
+   "The long straight internal road provides directness, but without shade, separation, or pedestrian amenities, it is not an inviting walking environment."
+  ]
+ }
+}

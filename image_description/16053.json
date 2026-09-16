@@ -1,0 +1,33 @@
+{
+ "oid": "16053",
+ "description": "The scene shows a wide, continuous paved pedestrian path/sidewalk along both sides of the road, with low curb edges and some brick/stone edging; the surface appears smooth and even with minimal visible cracks. Traffic is separated from pedestrians by a landscaped median/green strips and a fenced boundary, and the road is largely straight with streetlights along it, suggesting controlled visibility but no obvious pedestrian crossing markings in view. There is limited shade (mostly low shrubs/grass) and few obstacles, though the path is bordered by curbs and landscaping that could narrow the effective walking space near corners.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 122,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 8,
+   "engine_ttft_ms": 726,
+   "engine_ttlt_ms": 1702,
+   "pre_inference_ms": 260,
+   "service_tbt_ms": 7,
+   "service_ttft_ms": 1607,
+   "service_ttlt_ms": 2445,
+   "total_duration_ms": 2198,
+   "user_visible_ttft_ms": 1347
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1106
+ },
+ "latency_s": 5.1,
+ "timestamp": "2026-08-31T16:07:25"
+}

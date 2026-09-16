@@ -1,0 +1,33 @@
+{
+ "oid": "19888",
+ "description": "The roadway has narrow, continuous sidewalks on both sides, but the left sidewalk appears partially obstructed by a fence/rail and parked items, while the right side is separated by a low guardrail with a rough shoulder and vegetation. There is no clear traffic calming or pedestrian barrier beyond the guardrails; multiple utility poles and overhead wires line the street, and vehicles share the same straight roadway with no visible dedicated bike lane. Shade is limited (some trees on the left), lighting is not prominent in the scene, and there are no clearly visible curb ramps or other accessibility features.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 119,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 7,
+   "engine_ttft_ms": 228,
+   "engine_ttlt_ms": 1109,
+   "pre_inference_ms": 647,
+   "service_tbt_ms": 7,
+   "service_ttft_ms": 1336,
+   "service_ttlt_ms": 2189,
+   "total_duration_ms": 1551,
+   "user_visible_ttft_ms": 688
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1103
+ },
+ "latency_s": 5.6,
+ "timestamp": "2026-08-31T16:27:46"
+}

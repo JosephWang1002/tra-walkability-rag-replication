@@ -1,0 +1,122 @@
+{
+ "oid": "16568",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16568.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16568_120.57047_31.180799_09002900011602191306530814C_262.82_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.8,
+ "usage": {
+  "completion_tokens": 883,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 19,
+   "engine_ttft_ms": 450,
+   "engine_ttlt_ms": 17626,
+   "pre_inference_ms": 392,
+   "service_tbt_ms": 19,
+   "service_ttft_ms": 1138,
+   "service_ttlt_ms": 18317,
+   "user_visible_ttft_ms": 746
+  },
+  "prompt_tokens": 5398,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6281
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 32.0,\n      \"accessibility\": 32.0\n    },\n    \"safety\": 36.0,\n    \"livability\": 28.0,\n    \"sustainability\": 30.0,\n    \"aesthetics\": 42.0,\n    \"comfort\": 31.0,\n    \"walkability\": 27.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the visible right-of-way is allocated to a narrow concrete carriageway for vehicles, while no dedicated sidewalk is visible on either side, indicating limited equitable space for non-motorized users.\",\n      \"Accessibility is weak because the road edge transitions directly into dirt shoulders, driveway aprons, and uneven margins near the greenhouse and parked cars, with no curb ramps, tactile paving, or protected pedestrian zone visible.\",\n      \"Fairness for all road users is reduced because pedestrians must likely share the same paved surface with cars on this long straight road, and there are no visible lane markings or separated walking facilities.\"\n    ],\n    \"safety\": [\n      \"Safety is limited by the absence of sidewalks, crosswalks, bike lanes, guardrails, or traffic calming devices, so pedestrians and any cyclists would need to use the same narrow roadway as cars.\",\n      \"Two parked cars partially occupy the road edge areas, especially on the right near the building and on the left shoulder, which can narrow the usable space and create conflicts for passing users.\",\n      \"The long straight alignment may encourage higher vehicle speeds, while overhead utility poles and roadside clutter near the greenhouse area add visual disorder without providing protective infrastructure.\"\n    ],\n    \"livability\": [\n      \"Livability is low because the scene appears sparsely serviced and rural, with open fields, a greenhouse, and a single building but no visible shops, community facilities, seating, or active public frontage.\",\n      \"There are no visible public social spaces such as benches, plazas, bus shelters with waiting areas, or shaded gathering points that would support everyday street life.\",\n      \"The roadside environment looks utilitarian rather than people-oriented, with exposed soil, stored materials, and minimal pedestrian amenities.\"\n    ],\n    \"sustainability\": [\n      \"Sustainability is limited because the street design is dominated by a simple concrete road without visible green stormwater features, permeable pedestrian areas, or planted bioswales.\",\n      \"There is no visible bike lane, transit stop infrastructure, or other clear support for low-carbon travel modes beyond the basic shared road.\",\n      \"Vegetation is sparse along the roadway itself; aside from distant fields and a few scattered plants, there is little street tree cover or green infrastructure integrated into the transport corridor.\"\n    ],\n    \"aesthetics\": [\n      \"The open rural horizon and agricultural landscape provide some visual spaciousness, which slightly improves the scene's aesthetic quality.\",\n      \"Aesthetic quality is weakened by overhead utility wires crisscrossing the sky, creating strong visual clutter across the entire view.\",\n      \"Roadside disorder such as exposed dirt, stacked wood or debris near the greenhouse, and parked cars on the edges reduces visual coherence and refinement.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears poor because there are almost no street trees or shade structures along the road, leaving pedestrians exposed to sun and weather.\",\n      \"Physical comfort is low since no sidewalk, benches, or resting facilities are visible, and walking would likely occur on the concrete carriageway or rough dirt edges.\",\n      \"Psychological comfort is also limited because the empty, exposed roadway and lack of separation from vehicles can make walking feel insecure and unpleasant for general users.\"\n    ],\n    \"walkability\": [\n      \"Walkability is poor because there is no continuous sidewalk or designated pedestrian path visible along either side of the road.\",\n      \"The walking surface continuity is weak: the paved road edges break into dirt shoulders, driveway entrances, and informal margins near parked vehicles and agricultural structures.\",\n      \"Walking attractiveness is low due to minimal shade, no seating, no active frontage, and no pedestrian-oriented features such as crossings, lighting elements, or buffered space from traffic.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 32.0,
+   "accessibility": 32.0
+  },
+  "safety": 36.0,
+  "livability": 28.0,
+  "sustainability": 30.0,
+  "aesthetics": 42.0,
+  "comfort": 31.0,
+  "walkability": 27.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 32.0,
+  "justice_accessibility": 32.0,
+  "safety": 36.0,
+  "livability": 28.0,
+  "sustainability": 30.0,
+  "aesthetics": 42.0,
+  "comfort": 31.0,
+  "walkability": 27.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:32:20+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the visible right-of-way is allocated to a narrow concrete carriageway for vehicles, while no dedicated sidewalk is visible on either side, indicating limited equitable space for non-motorized users.",
+   "Accessibility is weak because the road edge transitions directly into dirt shoulders, driveway aprons, and uneven margins near the greenhouse and parked cars, with no curb ramps, tactile paving, or protected pedestrian zone visible.",
+   "Fairness for all road users is reduced because pedestrians must likely share the same paved surface with cars on this long straight road, and there are no visible lane markings or separated walking facilities."
+  ],
+  "safety": [
+   "Safety is limited by the absence of sidewalks, crosswalks, bike lanes, guardrails, or traffic calming devices, so pedestrians and any cyclists would need to use the same narrow roadway as cars.",
+   "Two parked cars partially occupy the road edge areas, especially on the right near the building and on the left shoulder, which can narrow the usable space and create conflicts for passing users.",
+   "The long straight alignment may encourage higher vehicle speeds, while overhead utility poles and roadside clutter near the greenhouse area add visual disorder without providing protective infrastructure."
+  ],
+  "livability": [
+   "Livability is low because the scene appears sparsely serviced and rural, with open fields, a greenhouse, and a single building but no visible shops, community facilities, seating, or active public frontage.",
+   "There are no visible public social spaces such as benches, plazas, bus shelters with waiting areas, or shaded gathering points that would support everyday street life.",
+   "The roadside environment looks utilitarian rather than people-oriented, with exposed soil, stored materials, and minimal pedestrian amenities."
+  ],
+  "sustainability": [
+   "Sustainability is limited because the street design is dominated by a simple concrete road without visible green stormwater features, permeable pedestrian areas, or planted bioswales.",
+   "There is no visible bike lane, transit stop infrastructure, or other clear support for low-carbon travel modes beyond the basic shared road.",
+   "Vegetation is sparse along the roadway itself; aside from distant fields and a few scattered plants, there is little street tree cover or green infrastructure integrated into the transport corridor."
+  ],
+  "aesthetics": [
+   "The open rural horizon and agricultural landscape provide some visual spaciousness, which slightly improves the scene's aesthetic quality.",
+   "Aesthetic quality is weakened by overhead utility wires crisscrossing the sky, creating strong visual clutter across the entire view.",
+   "Roadside disorder such as exposed dirt, stacked wood or debris near the greenhouse, and parked cars on the edges reduces visual coherence and refinement."
+  ],
+  "comfort": [
+   "Thermal comfort appears poor because there are almost no street trees or shade structures along the road, leaving pedestrians exposed to sun and weather.",
+   "Physical comfort is low since no sidewalk, benches, or resting facilities are visible, and walking would likely occur on the concrete carriageway or rough dirt edges.",
+   "Psychological comfort is also limited because the empty, exposed roadway and lack of separation from vehicles can make walking feel insecure and unpleasant for general users."
+  ],
+  "walkability": [
+   "Walkability is poor because there is no continuous sidewalk or designated pedestrian path visible along either side of the road.",
+   "The walking surface continuity is weak: the paved road edges break into dirt shoulders, driveway entrances, and informal margins near parked vehicles and agricultural structures.",
+   "Walking attractiveness is low due to minimal shade, no seating, no active frontage, and no pedestrian-oriented features such as crossings, lighting elements, or buffered space from traffic."
+  ]
+ }
+}

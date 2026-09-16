@@ -1,0 +1,122 @@
+{
+ "oid": "10558",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\10558.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\10558_120.426432_31.229826_0900290012220828102000058AH_275.78_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 15.9,
+ "usage": {
+  "completion_tokens": 768,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 460,
+   "engine_ttlt_ms": 11904,
+   "pre_inference_ms": 435,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1189,
+   "service_ttlt_ms": 12627,
+   "user_visible_ttft_ms": 754
+  },
+  "prompt_tokens": 5179,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 5947
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 74.0,\n      \"equity\": 76.0,\n      \"fairness\": 72.0,\n      \"accessibility\": 74.0\n    },\n    \"safety\": 81.0,\n    \"livability\": 68.0,\n    \"sustainability\": 78.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 79.0,\n    \"walkability\": 73.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Both sides of the street have continuous sidewalks with similar width and paving, suggesting a relatively even distribution of pedestrian space for all road users.\",\n      \"The carriageway is wide and clearly organized with lane markings, while sidewalks remain protected by curbs and tree strips, indicating a balanced allocation of space rather than complete dominance by vehicles.\",\n      \"Accessibility is only moderate because no curb ramps or tactile paving are clearly visible at the approaching intersection, so barrier-free access cannot be fully confirmed from the image.\"\n    ],\n    \"safety\": [\n      \"The road has clear centerlines, edge lines, and a marked crosswalk ahead, which improves predictability and reduces conflict points for drivers and pedestrians.\",\n      \"Large street trees and setback sidewalks create separation between moving vehicles and people walking, which generally supports safer pedestrian conditions.\",\n      \"Pedestrian warning signs are visible on the right side before the crossing, helping alert drivers to pedestrian activity near the intersection.\"\n    ],\n    \"livability\": [\n      \"The street is lined with mature trees on both sides, giving the corridor a calmer and more pleasant everyday environment.\",\n      \"Sidewalks appear clean, continuous, and uncluttered, which supports routine walking and basic neighborhood usability.\",\n      \"Livability is limited by the lack of visible active frontages, shops, seating, or social amenities; the street edge is mostly walls and fences rather than community-serving uses.\"\n    ],\n    \"sustainability\": [\n      \"The dense rows of mature street trees provide substantial green infrastructure, which can support shade, cooling, and air-quality benefits.\",\n      \"The street design includes usable sidewalks on both sides, supporting non-motorized travel instead of relying only on cars.\",\n      \"No dedicated bike lane, bus stop, or visible stormwater features are present in the image, so sustainability performance is helped by greenery but not strongly reinforced by multimodal infrastructure.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has a strong visual rhythm created by evenly spaced mature trees along both sidewalks.\",\n      \"The roadway, curbs, and sidewalks appear well maintained and clean, contributing to an orderly streetscape.\",\n      \"Consistent paving, neat planting strips, and the symmetrical corridor view toward the intersection create a coherent and attractive street image.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good because the mature tree canopy provides substantial shade along both sidewalks.\",\n      \"Physical comfort is supported by smooth, wide sidewalks and a well-paved roadway with little visible clutter or obstruction.\",\n      \"Psychological comfort is mixed: the street looks quiet and uncrowded, but the broad carriageway and limited visible human activity can make the space feel somewhat vehicle-oriented rather than socially active.\"\n    ],\n    \"walkability\": [\n      \"Continuous sidewalks on both sides and a visible marked crosswalk ahead support basic pedestrian movement along and across the street.\",\n      \"Tree-lined sidewalks improve the walking experience by adding shade and a buffer from traffic.\",\n      \"Walkability is reduced by the wide roadway crossing distance and the absence of clearly visible curb ramps, refuge islands, or other pedestrian-priority features at the intersection.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 74.0,
+   "equity": 76.0,
+   "fairness": 72.0,
+   "accessibility": 74.0
+  },
+  "safety": 81.0,
+  "livability": 68.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 79.0,
+  "walkability": 73.0
+ },
+ "scores_flat": {
+  "justice": 74.0,
+  "justice_equity": 76.0,
+  "justice_fairness": 72.0,
+  "justice_accessibility": 74.0,
+  "safety": 81.0,
+  "livability": 68.0,
+  "sustainability": 78.0,
+  "aesthetics": 84.0,
+  "comfort": 79.0,
+  "walkability": 73.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:09:42+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Both sides of the street have continuous sidewalks with similar width and paving, suggesting a relatively even distribution of pedestrian space for all road users.",
+   "The carriageway is wide and clearly organized with lane markings, while sidewalks remain protected by curbs and tree strips, indicating a balanced allocation of space rather than complete dominance by vehicles.",
+   "Accessibility is only moderate because no curb ramps or tactile paving are clearly visible at the approaching intersection, so barrier-free access cannot be fully confirmed from the image."
+  ],
+  "safety": [
+   "The road has clear centerlines, edge lines, and a marked crosswalk ahead, which improves predictability and reduces conflict points for drivers and pedestrians.",
+   "Large street trees and setback sidewalks create separation between moving vehicles and people walking, which generally supports safer pedestrian conditions.",
+   "Pedestrian warning signs are visible on the right side before the crossing, helping alert drivers to pedestrian activity near the intersection."
+  ],
+  "livability": [
+   "The street is lined with mature trees on both sides, giving the corridor a calmer and more pleasant everyday environment.",
+   "Sidewalks appear clean, continuous, and uncluttered, which supports routine walking and basic neighborhood usability.",
+   "Livability is limited by the lack of visible active frontages, shops, seating, or social amenities; the street edge is mostly walls and fences rather than community-serving uses."
+  ],
+  "sustainability": [
+   "The dense rows of mature street trees provide substantial green infrastructure, which can support shade, cooling, and air-quality benefits.",
+   "The street design includes usable sidewalks on both sides, supporting non-motorized travel instead of relying only on cars.",
+   "No dedicated bike lane, bus stop, or visible stormwater features are present in the image, so sustainability performance is helped by greenery but not strongly reinforced by multimodal infrastructure."
+  ],
+  "aesthetics": [
+   "The avenue has a strong visual rhythm created by evenly spaced mature trees along both sidewalks.",
+   "The roadway, curbs, and sidewalks appear well maintained and clean, contributing to an orderly streetscape.",
+   "Consistent paving, neat planting strips, and the symmetrical corridor view toward the intersection create a coherent and attractive street image."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively good because the mature tree canopy provides substantial shade along both sidewalks.",
+   "Physical comfort is supported by smooth, wide sidewalks and a well-paved roadway with little visible clutter or obstruction.",
+   "Psychological comfort is mixed: the street looks quiet and uncrowded, but the broad carriageway and limited visible human activity can make the space feel somewhat vehicle-oriented rather than socially active."
+  ],
+  "walkability": [
+   "Continuous sidewalks on both sides and a visible marked crosswalk ahead support basic pedestrian movement along and across the street.",
+   "Tree-lined sidewalks improve the walking experience by adding shade and a buffer from traffic.",
+   "Walkability is reduced by the wide roadway crossing distance and the absence of clearly visible curb ramps, refuge islands, or other pedestrian-priority features at the intersection."
+  ]
+ }
+}

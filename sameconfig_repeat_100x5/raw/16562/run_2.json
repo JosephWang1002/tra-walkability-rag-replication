@@ -1,0 +1,122 @@
+{
+ "oid": "16562",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16562.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16562_120.527505_31.177945_09002900011604131153229795L_352.45_2016_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.6,
+ "usage": {
+  "completion_tokens": 862,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 490,
+   "engine_ttlt_ms": 14522,
+   "pre_inference_ms": 336,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1057,
+   "service_ttlt_ms": 15084,
+   "user_visible_ttft_ms": 721
+  },
+  "prompt_tokens": 5193,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6055
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 46.0,\n      \"equity\": 50.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 43.0\n    },\n    \"safety\": 62.0,\n    \"livability\": 48.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 78.0,\n    \"comfort\": 61.0,\n    \"walkability\": 34.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is allocated to multiple wide motor-vehicle lanes, while pedestrian space is only faintly visible at the far edges, suggesting an uneven distribution of road resources for all users.\",\n      \"No dedicated bicycle lane, marked pedestrian crossing, or median refuge for crossing is visible in the scene, so non-motorized users appear to receive less support than drivers.\",\n      \"Although there are edge sidewalks or side paths behind the planting strips, no curb ramps, tactile paving, or other clearly visible barrier-free details can be confirmed from the image, limiting accessibility evidence.\"\n    ],\n    \"safety\": [\n      \"The roadway is wide, straight, and visually open, which supports good sight distance for drivers and reduces immediate blind spots.\",\n      \"Clear lane markings and a landscaped median/planting separation help organize traffic and reduce head-on or side-conflict risk.\",\n      \"However, the long straight alignment and broad carriageway can encourage higher vehicle speeds, which raises risk for any pedestrian crossing this road where no crossing facility is visible.\"\n    ],\n    \"livability\": [\n      \"The corridor is heavily road-oriented, with no visible shops, seating, bus stops, or active building frontages that would support everyday street life for all users.\",\n      \"Landscaped shrubs and trees improve the environmental quality, but the space reads more like a through-traffic boulevard than a socially active public street.\",\n      \"Very low visible pedestrian presence and minimal street-side activity reduce the sense of community interaction and daily-use vitality.\"\n    ],\n    \"sustainability\": [\n      \"Continuous rows of trees and extensive planted medians/side verges provide green infrastructure that can support cooling, air-quality benefits, and visual ecological value.\",\n      \"The broad, smooth roadway appears optimized for motor traffic, and no visible bike lane, bus priority, or transit stop is present to strongly support low-carbon mode shift.\",\n      \"The landscaped strips may offer some stormwater and heat-mitigation benefits, but no clearly visible permeable paving, bioswale detail, or rainwater-management feature can be confirmed.\"\n    ],\n    \"aesthetics\": [\n      \"The boulevard has a strong visual order created by symmetrical lane markings, evenly spaced light poles, and consistent planting bands.\",\n      \"Color contrast from red and purple shrubs, green trees, and neat median planting gives the street a well-maintained and attractive appearance.\",\n      \"The wide open vista and tidy pavement surface create a clean, coherent streetscape, though the scene is somewhat monotonous because it is dominated by roadway.\"\n    ],\n    \"comfort\": [\n      \"Smooth asphalt and orderly lane geometry support physical comfort for drivers, and the road surface appears well maintained without visible potholes or clutter.\",\n      \"Trees and planting along both sides can contribute some thermal relief at the edges, but the central carriageway is largely exposed with little direct shade over travel lanes.\",\n      \"For non-motorized users, comfort is weaker because no benches, sheltered waiting areas, or clearly defined pedestrian amenities are visible, and the wide road may feel psychologically exposed.\"\n    ],\n    \"walkability\": [\n      \"No marked crosswalk, pedestrian signal, curb extension, or refuge island is visible, making crossing this wide multi-lane road appear difficult for pedestrians.\",\n      \"Sidewalks or side paths seem to exist behind the planting strips, but they are visually distant from the main carriageway and lack clearly visible access points or pedestrian-priority features.\",\n      \"The long block form, road width, and auto-oriented design reduce walking convenience and directness, even though the corridor edges are landscaped.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 46.0,
+   "equity": 50.0,
+   "fairness": 45.0,
+   "accessibility": 43.0
+  },
+  "safety": 62.0,
+  "livability": 48.0,
+  "sustainability": 66.0,
+  "aesthetics": 78.0,
+  "comfort": 61.0,
+  "walkability": 34.0
+ },
+ "scores_flat": {
+  "justice": 46.0,
+  "justice_equity": 50.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 43.0,
+  "safety": 62.0,
+  "livability": 48.0,
+  "sustainability": 66.0,
+  "aesthetics": 78.0,
+  "comfort": 61.0,
+  "walkability": 34.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:31:41+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is allocated to multiple wide motor-vehicle lanes, while pedestrian space is only faintly visible at the far edges, suggesting an uneven distribution of road resources for all users.",
+   "No dedicated bicycle lane, marked pedestrian crossing, or median refuge for crossing is visible in the scene, so non-motorized users appear to receive less support than drivers.",
+   "Although there are edge sidewalks or side paths behind the planting strips, no curb ramps, tactile paving, or other clearly visible barrier-free details can be confirmed from the image, limiting accessibility evidence."
+  ],
+  "safety": [
+   "The roadway is wide, straight, and visually open, which supports good sight distance for drivers and reduces immediate blind spots.",
+   "Clear lane markings and a landscaped median/planting separation help organize traffic and reduce head-on or side-conflict risk.",
+   "However, the long straight alignment and broad carriageway can encourage higher vehicle speeds, which raises risk for any pedestrian crossing this road where no crossing facility is visible."
+  ],
+  "livability": [
+   "The corridor is heavily road-oriented, with no visible shops, seating, bus stops, or active building frontages that would support everyday street life for all users.",
+   "Landscaped shrubs and trees improve the environmental quality, but the space reads more like a through-traffic boulevard than a socially active public street.",
+   "Very low visible pedestrian presence and minimal street-side activity reduce the sense of community interaction and daily-use vitality."
+  ],
+  "sustainability": [
+   "Continuous rows of trees and extensive planted medians/side verges provide green infrastructure that can support cooling, air-quality benefits, and visual ecological value.",
+   "The broad, smooth roadway appears optimized for motor traffic, and no visible bike lane, bus priority, or transit stop is present to strongly support low-carbon mode shift.",
+   "The landscaped strips may offer some stormwater and heat-mitigation benefits, but no clearly visible permeable paving, bioswale detail, or rainwater-management feature can be confirmed."
+  ],
+  "aesthetics": [
+   "The boulevard has a strong visual order created by symmetrical lane markings, evenly spaced light poles, and consistent planting bands.",
+   "Color contrast from red and purple shrubs, green trees, and neat median planting gives the street a well-maintained and attractive appearance.",
+   "The wide open vista and tidy pavement surface create a clean, coherent streetscape, though the scene is somewhat monotonous because it is dominated by roadway."
+  ],
+  "comfort": [
+   "Smooth asphalt and orderly lane geometry support physical comfort for drivers, and the road surface appears well maintained without visible potholes or clutter.",
+   "Trees and planting along both sides can contribute some thermal relief at the edges, but the central carriageway is largely exposed with little direct shade over travel lanes.",
+   "For non-motorized users, comfort is weaker because no benches, sheltered waiting areas, or clearly defined pedestrian amenities are visible, and the wide road may feel psychologically exposed."
+  ],
+  "walkability": [
+   "No marked crosswalk, pedestrian signal, curb extension, or refuge island is visible, making crossing this wide multi-lane road appear difficult for pedestrians.",
+   "Sidewalks or side paths seem to exist behind the planting strips, but they are visually distant from the main carriageway and lack clearly visible access points or pedestrian-priority features.",
+   "The long block form, road width, and auto-oriented design reduce walking convenience and directness, even though the corridor edges are landscaped."
+  ]
+ }
+}

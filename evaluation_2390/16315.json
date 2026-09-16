@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 63.5,
+      "equity": 66,
+      "fairness": 60,
+      "accessibility": 64.5
+    },
+    "safety": 71.5,
+    "livability": 48.5,
+    "sustainability": 54.5,
+    "aesthetics": 67.5,
+    "comfort": 52,
+    "walkability": 58.5,
+    "bikeability": 42.5
+  },
+  "explanations": {
+    "justice": [
+      "Clear spatial allocation favors motor vehicles: multiple wide travel lanes with prominent lane arrows and centerline markings, while pedestrian space appears secondary and set behind guardrails.",
+      "Pedestrian accessibility at the intersection is partially supported by marked crosswalks, but no clearly visible pedestrian signal heads/countdown timers are evident from this viewpoint, reducing equitable crossing control for non-drivers.",
+      "Barrier-like roadside railings along both sides may prevent informal or mid-block crossings and can force longer detours to designated crossings, impacting accessibility for all users.",
+      "Sidewalk presence is visible (curb and paved edge), yet curb-ramp/tactile features are not clearly discernible at the crosswalk approach in the image, limiting confidence in barrier-free accessibility for universal users."
+    ],
+    "safety": [
+      "High-visibility zebra crosswalk markings and advance stop/turn lane arrows improve user expectation and reduce ambiguity at the intersection.",
+      "Wide roadway and multiple lanes suggest higher potential operating speeds; the long, open sightlines and sparse roadside friction can increase crash severity risk for all road users.",
+      "Street lighting poles are present along the corridor, supporting nighttime visibility and perceived security for drivers and pedestrians.",
+      "Guardrails separate sidewalks from the carriageway, reducing accidental encroachment conflicts between vehicles and pedestrians along the mid-block segments."
+    ],
+    "livability": [
+      "The corridor is dominated by large, single-use industrial/warehouse-style buildings (left side), with limited ground-level activity or storefronts visible, reducing street vitality for all users.",
+      "Very few people are present (only a distant rider/road user visible), indicating low social activity and limited 'eyes on the street' in this segment.",
+      "Lack of visible street furniture (benches, kiosks, small plazas) and minimal pedestrian amenities reduces opportunities for lingering and social interaction.",
+      "The environment feels auto-oriented with long blocks and expansive asphalt, which typically supports through-movement rather than neighborhood life."
+    ],
+    "sustainability": [
+      "Some street trees and planted verge strips exist, indicating partial green infrastructure, but canopy is sparse and trees appear small/leaf-light, limiting ecosystem services (shade, cooling, air quality).",
+      "No dedicated, protected bicycle lane markings are visible; reliance on mixed traffic discourages mode shift to cycling and lowers low-carbon mobility support.",
+      "Road design appears optimized for motor throughput (wide lanes, multiple movements), which can induce vehicle use compared with a more balanced multimodal design.",
+      "There is no visible stormwater management feature (bioswales/permeable paving signage/inlets integrated with green strips) beyond basic planting, limiting evidence of water-sensitive design."
+    ],
+    "aesthetics": [
+      "The street is clean and newly paved, with crisp lane markings and an orderly corridor appearance.",
+      "Visual coherence is moderate: uniform lighting poles and consistent road markings help, but large blank building facades and long stretches of asphalt reduce visual richness.",
+      "Sparse landscaping and limited tree canopy create a somewhat stark streetscape, though the open sky and uncluttered edges provide a neat, minimal aesthetic.",
+      "Guardrails and wide curb edges add to a utilitarian, infrastructure-forward look rather than a human-scaled streetscape."
+    ],
+    "comfort": [
+      "Thermal comfort is weak: limited tree canopy and minimal shading structures mean high sun exposure on sidewalks and at the crossing.",
+      "Physical comfort for pedestrians is limited by the apparent absence of benches/rest areas and the long, open block length with few intermediate stopping points.",
+      "Psychological comfort is mixed: open visibility and cleanliness help, but the wide, fast-feeling roadway and low activity can make non-drivers feel exposed and less at ease.",
+      "Traffic noise is likely moderate-to-low in the image moment (few vehicles visible), but the road capacity suggests potential for higher noise levels when busier."
+    ],
+    "walkability": [
+      "A marked crosswalk is provided at the intersection, supporting basic pedestrian network continuity across the roadway.",
+      "Sidewalks appear present behind curbs/guardrails, but the corridor looks long and monotonous with few destinations or active edges, reducing walking attractiveness for all users.",
+      "Guardrails can improve separation from traffic but may also reduce directness by channeling pedestrians to specific crossing points, lowering route choice flexibility.",
+      "Lack of shade and limited pedestrian-scale amenities (seating, frequent entrances) reduces walking comfort over longer distances."
+    ],
+    "bikeability": [
+      "No clearly marked or protected bike lanes are visible; cyclists likely must share wide motor lanes, increasing perceived risk.",
+      "Intersection approach shows multiple vehicle movements (straight/turn arrows), creating potential turning conflicts for cyclists without dedicated bicycle signalization or bike boxes visible.",
+      "The wide, high-speed-feeling roadway environment and low roadside activity provide limited 'protective' friction, which typically discourages everyday cycling.",
+      "No bicycle parking racks or cycle-support facilities are visible near the roadside, reducing convenience for utilitarian cycling."
+    ]
+  },
+  "image_id": "img-1776928211132-r6n39zsvq",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T11:23:26.539Z",
+  "record_id": "14ca4874f2814d03bbd61e518b7e0cb2",
+  "stored_image_url": "/storage/records/14ca4874f2814d03bbd61e518b7e0cb2/image.jpg",
+  "stored_thumb_url": "/storage/records/14ca4874f2814d03bbd61e518b7e0cb2/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T11:24:23.287Z"
+}

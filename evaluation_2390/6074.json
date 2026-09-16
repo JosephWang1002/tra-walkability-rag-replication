@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 35,
+      "equity": 37,
+      "fairness": 34,
+      "accessibility": 30
+    },
+    "safety": 40,
+    "livability": 15,
+    "sustainability": 25,
+    "aesthetics": 20,
+    "comfort": 22,
+    "walkability": 25,
+    "bikeability": 18
+  },
+  "explanations": {
+    "justice": [
+      "Temporary construction access, exclusively serving engineering vehicles and construction personnel.",
+      "No dedicated accessibility design for vulnerable groups.",
+      "Road resources fully tilted to heavy construction machinery, extremely low travel equity."
+    ],
+    "safety": [
+      "Unpaved road surface, uneven terrain and exposed soil create slipping and bump hazards.",
+      "Large heavy trucks frequent passing bring major collision risks.",
+      "Lack of traffic markings, warning signs and protective guardrails."
+    ],
+    "livability": [
+      "Pure construction supporting function, no permanent residential or leisure attributes.",
+      "Dust, noise and construction pollution severely degrade surrounding environment.",
+      "Zero public service and resting facilities."
+    ],
+    "sustainability": [
+      "Large bare soil area causes soil erosion and dust pollution.",
+      "No ecological greening or sponge city design.",
+      "Temporary facility with extremely poor environmental sustainability."
+    ],
+    "aesthetics": [
+      "Messy construction site environment, stacked soil mounds and temporary prefab houses.",
+      "Rough and disordered overall visual presentation.",
+      "No landscaping or beautification design."
+    ],
+    "comfort": [
+      "Dusty, bumpy road surface leads to extremely poor driving experience.",
+      "Continuous construction noise and vibration cause severe discomfort.",
+      "No human-oriented buffer and rest space."
+    ],
+    "walkability": [
+      "Only suitable for short-distance passage of construction workers.",
+      "Dust, potholes and large vehicles create great walking threat.",
+      "No dedicated pedestrian walking area."
+    ],
+    "bikeability": [
+      "No cycling infrastructure reserved.",
+      "Extremely poor road condition brings high riding risk.",
+      "Not suitable for any form of cycling activity."
+    ]
+  },
+  "image_id": "construction-site-access-road",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-04-30T10:00:00.000Z",
+  "record_id": "rec-construction-site-access-road",
+  "export_timestamp": "2026-04-30T10:00:50.000Z"
+}

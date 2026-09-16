@@ -1,0 +1,129 @@
+{
+ "oid": "19888",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\19888.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\19888_120.720411_31.153914_0900290012220820090205889AL_11.33_2022_8_吴江区同里镇环湖西路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.0,
+ "usage": {
+  "completion_tokens": 1072,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 440,
+   "engine_ttlt_ms": 16907,
+   "pre_inference_ms": 309,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 983,
+   "service_ttlt_ms": 17446,
+   "user_visible_ttft_ms": 673
+  },
+  "prompt_tokens": 5401,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6473
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 32.0,\n      \"accessibility\": 32.0\n    },\n    \"safety\": 41.0,\n    \"livability\": 43.0,\n    \"sustainability\": 36.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 35.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street space is dominated by a narrow two-way carriageway on a bridge, while there is no clearly separated sidewalk or cycle lane visible, so spatial resources are allocated mainly to motor vehicles rather than all road users equally.\",\n      \"Both bridge edges have only very narrow raised margins next to metal guardrails, which do not appear wide enough for comfortable shared pedestrian use, reducing equitable access for people walking side by side or pushing strollers.\",\n      \"No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible in the scene, so accessibility for a broad range of users cannot be confirmed and appears weak.\",\n      \"The absence of any visible pedestrian priority markings or protected space means rules of movement seem to favor drivers by default, which weakens fairness for non-motorized users.\"\n    ],\n    \"safety\": [\n      \"The road is narrow and carries two-way motor traffic, with a parked car intruding along the left edge and another vehicle ahead, which can create conflicts because there is little recovery space.\",\n      \"There is no marked pedestrian crossing, refuge island, or traffic calming feature visible on or near the bridge, so people crossing or walking along the road would have limited protection.\",\n      \"Metal bridge railings provide edge protection from the canal or drainage corridor, which is a positive safety feature for vehicles and any users near the edge.\",\n      \"Large numbers of overhead utility wires and poles visually clutter the corridor, and the lack of dedicated lanes means all users would need to negotiate the same constrained roadway.\"\n    ],\n    \"livability\": [\n      \"The setting appears low-density and quiet, with houses, small buildings, and greenery, which may support a calm atmosphere rather than an intensely stressful urban environment.\",\n      \"However, there are few visible public amenities such as benches, bus stops, shops, or social spaces, so the street offers limited support for everyday social and community life.\",\n      \"The bridge section and narrow roadway create a movement corridor rather than a place to stay, reducing its usefulness as a lively public street for all users.\",\n      \"Open vegetated land on the right adds some environmental relief, but the overall streetscape lacks active frontage and pedestrian-oriented facilities.\"\n    ],\n    \"sustainability\": [\n      \"Vegetation is visible on the right side and around some buildings, which contributes modestly to ecological value and softens the corridor.\",\n      \"There is no visible bike lane, bus stop, or other clear support for low-carbon travel modes, so the street appears to rely mainly on private motor vehicles.\",\n      \"The extensive overhead utility infrastructure and hard paved surfaces dominate the scene, while no visible stormwater features, permeable paving, or street trees are present on the bridge itself.\",\n      \"Because walking conditions are poor and cycling facilities are absent, the street does not strongly encourage sustainable everyday travel choices.\"\n    ],\n    \"aesthetics\": [\n      \"The open view down the narrow road and the greenery on the right provide some visual depth and a modest rural-edge character.\",\n      \"At the same time, dense overhead wires and multiple utility poles strongly dominate the skyline, reducing visual order and scenic quality.\",\n      \"The bridge railings and asphalt surface look functional but plain, with little decorative planting, paving detail, or coordinated streetscape design.\",\n      \"Building forms are mixed and somewhat utilitarian, so the overall appearance feels ordinary rather than highly attractive.\"\n    ],\n    \"comfort\": [\n      \"There is almost no visible shade over the bridge or roadway, and no street trees along the walking edge, so thermal comfort would likely be poor in hot or sunny weather.\",\n      \"The narrow edge strips beside the guardrails do not provide comfortable walking space, especially for two people passing each other or for anyone needing extra room.\",\n      \"No benches, shelters, or resting places are visible, so the street offers little physical comfort for users who need to pause or wait.\",\n      \"The area appears relatively quiet with low traffic volume, which may slightly improve psychological comfort compared with a busier arterial road.\"\n    ],\n    \"walkability\": [\n      \"There is no clearly designated sidewalk visible across the bridge segment; only narrow margins beside the railings are present, which substantially weakens walkability.\",\n      \"No marked crosswalks, curb extensions, or pedestrian signals are visible, so route continuity and safe crossing opportunities appear limited.\",\n      \"The roadway is narrow and shared with moving and parked cars, meaning pedestrians would likely feel exposed if they had to use the carriageway.\",\n      \"Although the street seems low-speed and low-volume, the lack of dedicated pedestrian infrastructure outweighs that benefit for everyday walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 32.0,
+   "accessibility": 32.0
+  },
+  "safety": 41.0,
+  "livability": 43.0,
+  "sustainability": 36.0,
+  "aesthetics": 46.0,
+  "comfort": 35.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 32.0,
+  "justice_accessibility": 32.0,
+  "safety": 41.0,
+  "livability": 43.0,
+  "sustainability": 36.0,
+  "aesthetics": 46.0,
+  "comfort": 35.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:43:26+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street space is dominated by a narrow two-way carriageway on a bridge, while there is no clearly separated sidewalk or cycle lane visible, so spatial resources are allocated mainly to motor vehicles rather than all road users equally.",
+   "Both bridge edges have only very narrow raised margins next to metal guardrails, which do not appear wide enough for comfortable shared pedestrian use, reducing equitable access for people walking side by side or pushing strollers.",
+   "No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible in the scene, so accessibility for a broad range of users cannot be confirmed and appears weak.",
+   "The absence of any visible pedestrian priority markings or protected space means rules of movement seem to favor drivers by default, which weakens fairness for non-motorized users."
+  ],
+  "safety": [
+   "The road is narrow and carries two-way motor traffic, with a parked car intruding along the left edge and another vehicle ahead, which can create conflicts because there is little recovery space.",
+   "There is no marked pedestrian crossing, refuge island, or traffic calming feature visible on or near the bridge, so people crossing or walking along the road would have limited protection.",
+   "Metal bridge railings provide edge protection from the canal or drainage corridor, which is a positive safety feature for vehicles and any users near the edge.",
+   "Large numbers of overhead utility wires and poles visually clutter the corridor, and the lack of dedicated lanes means all users would need to negotiate the same constrained roadway."
+  ],
+  "livability": [
+   "The setting appears low-density and quiet, with houses, small buildings, and greenery, which may support a calm atmosphere rather than an intensely stressful urban environment.",
+   "However, there are few visible public amenities such as benches, bus stops, shops, or social spaces, so the street offers limited support for everyday social and community life.",
+   "The bridge section and narrow roadway create a movement corridor rather than a place to stay, reducing its usefulness as a lively public street for all users.",
+   "Open vegetated land on the right adds some environmental relief, but the overall streetscape lacks active frontage and pedestrian-oriented facilities."
+  ],
+  "sustainability": [
+   "Vegetation is visible on the right side and around some buildings, which contributes modestly to ecological value and softens the corridor.",
+   "There is no visible bike lane, bus stop, or other clear support for low-carbon travel modes, so the street appears to rely mainly on private motor vehicles.",
+   "The extensive overhead utility infrastructure and hard paved surfaces dominate the scene, while no visible stormwater features, permeable paving, or street trees are present on the bridge itself.",
+   "Because walking conditions are poor and cycling facilities are absent, the street does not strongly encourage sustainable everyday travel choices."
+  ],
+  "aesthetics": [
+   "The open view down the narrow road and the greenery on the right provide some visual depth and a modest rural-edge character.",
+   "At the same time, dense overhead wires and multiple utility poles strongly dominate the skyline, reducing visual order and scenic quality.",
+   "The bridge railings and asphalt surface look functional but plain, with little decorative planting, paving detail, or coordinated streetscape design.",
+   "Building forms are mixed and somewhat utilitarian, so the overall appearance feels ordinary rather than highly attractive."
+  ],
+  "comfort": [
+   "There is almost no visible shade over the bridge or roadway, and no street trees along the walking edge, so thermal comfort would likely be poor in hot or sunny weather.",
+   "The narrow edge strips beside the guardrails do not provide comfortable walking space, especially for two people passing each other or for anyone needing extra room.",
+   "No benches, shelters, or resting places are visible, so the street offers little physical comfort for users who need to pause or wait.",
+   "The area appears relatively quiet with low traffic volume, which may slightly improve psychological comfort compared with a busier arterial road."
+  ],
+  "walkability": [
+   "There is no clearly designated sidewalk visible across the bridge segment; only narrow margins beside the railings are present, which substantially weakens walkability.",
+   "No marked crosswalks, curb extensions, or pedestrian signals are visible, so route continuity and safe crossing opportunities appear limited.",
+   "The roadway is narrow and shared with moving and parked cars, meaning pedestrians would likely feel exposed if they had to use the carriageway.",
+   "Although the street seems low-speed and low-volume, the lack of dedicated pedestrian infrastructure outweighs that benefit for everyday walking."
+  ]
+ }
+}

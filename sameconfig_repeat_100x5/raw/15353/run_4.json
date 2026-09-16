@@ -1,0 +1,122 @@
+{
+ "oid": "15353",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\15353.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\15353_120.538641_31.203558_09002900122201161340434935X_293.86_2022_1_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.9,
+ "usage": {
+  "completion_tokens": 809,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 402,
+   "engine_ttlt_ms": 12744,
+   "pre_inference_ms": 412,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1056,
+   "service_ttlt_ms": 13388,
+   "user_visible_ttft_ms": 644
+  },
+  "prompt_tokens": 5344,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6153
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 71.0,\n      \"equity\": 74.0,\n      \"fairness\": 68.0,\n      \"accessibility\": 71.0\n    },\n    \"safety\": 69.0,\n    \"livability\": 72.0,\n    \"sustainability\": 70.0,\n    \"aesthetics\": 76.0,\n    \"comfort\": 73.0,\n    \"walkability\": 67.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are relatively balanced because both sides of the street have sidewalks or edge space, while the carriageway remains narrow and low-speed rather than overwhelmingly car-dominated.\",\n      \"Accessibility is moderate because the right-side sidewalk appears wide and paved smoothly, but no curb ramps, tactile paving, or marked crossing points are visible in the image.\",\n      \"Fairness is only partial since parked cars line the right side and occupy frontage space, giving motor vehicles a visible advantage over pedestrians and other non-motorized users.\"\n    ],\n    \"safety\": [\n      \"The roadway is narrow and appears to function as a low-speed local street, which generally reduces crash risk for all road users.\",\n      \"Large street trees and planted medians visually calm the corridor, but they also create some sightline constraints around parked vehicles and the curved alignment ahead.\",\n      \"There are no visible zebra crossings, speed humps, protected bike lanes, or other explicit traffic-calming markings, so safety relies mainly on the street's low-speed character.\"\n    ],\n    \"livability\": [\n      \"The street has a residential character with houses directly facing the road, which supports everyday neighborhood life and passive surveillance.\",\n      \"Continuous trees, planting strips, and landscaped islands make the corridor feel more pleasant and habitable than a fully paved street.\",\n      \"The environment appears relatively clean and orderly, with maintained pavement, trimmed planting beds, and no visible litter or derelict frontage.\"\n    ],\n    \"sustainability\": [\n      \"Mature street trees on the left and planted landscape strips on the right provide ecological value, shade, and some urban heat mitigation.\",\n      \"The narrow carriageway and neighborhood scale can support shorter local trips and lower driving speeds, which is more sustainable than a wide traffic-oriented road.\",\n      \"However, no visible bike lane, bus stop, permeable paving, or rainwater-management feature can be confirmed from the image, limiting evidence of stronger low-carbon or sponge-city infrastructure.\"\n    ],\n    \"aesthetics\": [\n      \"The mature tree canopy on the left creates a strong visual frame and gives the street a distinctive green character.\",\n      \"The residential buildings on the right are fairly consistent in height and setback, which adds visual order to the streetscape.\",\n      \"Landscaped planting beds and painted tree trunks contribute to a maintained appearance, though parked cars and a few leafless trees slightly reduce visual harmony.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is fairly good because the large trees on the left cast substantial shade over part of the street and sidewalk edge.\",\n      \"Physical comfort is moderate: the right-side sidewalk looks wide and even, but no benches or resting facilities are visible for longer stays.\",\n      \"Psychological comfort benefits from the quiet residential setting, low apparent traffic volume, and greenery, although parked vehicles close to the walking edge can make the space feel somewhat constrained.\"\n    ],\n    \"walkability\": [\n      \"Walkability is supported by the presence of a paved sidewalk on the right and a generally calm neighborhood street with low apparent traffic.\",\n      \"Tree cover and planted edges improve the walking experience, making the route more attractive than a bare roadway.\",\n      \"Walkability is limited by the lack of visible crossings, curb ramps, pedestrian priority markings, and any clearly protected separation from parked or moving vehicles.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 71.0,
+   "equity": 74.0,
+   "fairness": 68.0,
+   "accessibility": 71.0
+  },
+  "safety": 69.0,
+  "livability": 72.0,
+  "sustainability": 70.0,
+  "aesthetics": 76.0,
+  "comfort": 73.0,
+  "walkability": 67.0
+ },
+ "scores_flat": {
+  "justice": 71.0,
+  "justice_equity": 74.0,
+  "justice_fairness": 68.0,
+  "justice_accessibility": 71.0,
+  "safety": 69.0,
+  "livability": 72.0,
+  "sustainability": 70.0,
+  "aesthetics": 76.0,
+  "comfort": 73.0,
+  "walkability": 67.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:26:21+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are relatively balanced because both sides of the street have sidewalks or edge space, while the carriageway remains narrow and low-speed rather than overwhelmingly car-dominated.",
+   "Accessibility is moderate because the right-side sidewalk appears wide and paved smoothly, but no curb ramps, tactile paving, or marked crossing points are visible in the image.",
+   "Fairness is only partial since parked cars line the right side and occupy frontage space, giving motor vehicles a visible advantage over pedestrians and other non-motorized users."
+  ],
+  "safety": [
+   "The roadway is narrow and appears to function as a low-speed local street, which generally reduces crash risk for all road users.",
+   "Large street trees and planted medians visually calm the corridor, but they also create some sightline constraints around parked vehicles and the curved alignment ahead.",
+   "There are no visible zebra crossings, speed humps, protected bike lanes, or other explicit traffic-calming markings, so safety relies mainly on the street's low-speed character."
+  ],
+  "livability": [
+   "The street has a residential character with houses directly facing the road, which supports everyday neighborhood life and passive surveillance.",
+   "Continuous trees, planting strips, and landscaped islands make the corridor feel more pleasant and habitable than a fully paved street.",
+   "The environment appears relatively clean and orderly, with maintained pavement, trimmed planting beds, and no visible litter or derelict frontage."
+  ],
+  "sustainability": [
+   "Mature street trees on the left and planted landscape strips on the right provide ecological value, shade, and some urban heat mitigation.",
+   "The narrow carriageway and neighborhood scale can support shorter local trips and lower driving speeds, which is more sustainable than a wide traffic-oriented road.",
+   "However, no visible bike lane, bus stop, permeable paving, or rainwater-management feature can be confirmed from the image, limiting evidence of stronger low-carbon or sponge-city infrastructure."
+  ],
+  "aesthetics": [
+   "The mature tree canopy on the left creates a strong visual frame and gives the street a distinctive green character.",
+   "The residential buildings on the right are fairly consistent in height and setback, which adds visual order to the streetscape.",
+   "Landscaped planting beds and painted tree trunks contribute to a maintained appearance, though parked cars and a few leafless trees slightly reduce visual harmony."
+  ],
+  "comfort": [
+   "Thermal comfort is fairly good because the large trees on the left cast substantial shade over part of the street and sidewalk edge.",
+   "Physical comfort is moderate: the right-side sidewalk looks wide and even, but no benches or resting facilities are visible for longer stays.",
+   "Psychological comfort benefits from the quiet residential setting, low apparent traffic volume, and greenery, although parked vehicles close to the walking edge can make the space feel somewhat constrained."
+  ],
+  "walkability": [
+   "Walkability is supported by the presence of a paved sidewalk on the right and a generally calm neighborhood street with low apparent traffic.",
+   "Tree cover and planted edges improve the walking experience, making the route more attractive than a bare roadway.",
+   "Walkability is limited by the lack of visible crossings, curb ramps, pedestrian priority markings, and any clearly protected separation from parked or moving vehicles."
+  ]
+ }
+}

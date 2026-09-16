@@ -1,0 +1,32 @@
+{
+ "oid": "21096",
+ "description": "The image shows a multi-lane road with no visible continuous sidewalk; the pedestrian area appears limited to narrow verge/planting strips along the edges. There is some greenery and young trees providing partial roadside landscaping, but little direct shade, and lighting is provided by tall streetlights along the roadway. Traffic is separated from the planted edge by curb/roadside barriers, with painted lane markings and a central driving area that suggests relatively fast vehicle movement; no clear curb ramps or pedestrian crossing/accessibility features are visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 106,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 8,
+   "engine_ttft_ms": 254,
+   "engine_ttlt_ms": 1097,
+   "pre_inference_ms": 292,
+   "service_tbt_ms": 8,
+   "service_ttft_ms": 812,
+   "service_ttlt_ms": 1649,
+   "user_visible_ttft_ms": 519
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1090
+ },
+ "latency_s": 4.6,
+ "timestamp": "2026-08-31T16:32:17"
+}

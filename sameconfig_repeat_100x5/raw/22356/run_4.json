@@ -1,0 +1,122 @@
+{
+ "oid": "22356",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\22356.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\22356_120.677956_31.298779_09002900121707261255571525R_122.39_2017_7_苏州工业园区金鸡湖街道金鸡湖大道_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.6,
+ "usage": {
+  "completion_tokens": 839,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 432,
+   "engine_ttlt_ms": 12581,
+   "pre_inference_ms": 386,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1085,
+   "service_ttlt_ms": 13230,
+   "user_visible_ttft_ms": 699
+  },
+  "prompt_tokens": 5056,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4736
+  },
+  "total_tokens": 5895
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 58.0,\n      \"equity\": 60.0,\n      \"fairness\": 55.0,\n      \"accessibility\": 59.0\n    },\n    \"safety\": 64.0,\n    \"livability\": 61.0,\n    \"sustainability\": 69.0,\n    \"aesthetics\": 78.0,\n    \"comfort\": 67.0,\n    \"walkability\": 52.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The scene allocates substantial space to motor access with a wide concrete driveway, while no clearly separated pedestrian sidewalk is visible, so spatial resources appear only moderately balanced for all road users.\",\n      \"A landscaped green area with trees, hedges, and a small bridge adds environmental amenity, but this space is visually buffered from the paved route and does not clearly function as universally usable circulation space.\",\n      \"Accessibility is only moderate because the pavement looks smooth and mostly level, yet there are no visible tactile paving strips, marked pedestrian routes, or clearly defined curb ramps for inclusive movement.\"\n    ],\n    \"safety\": [\n      \"The driveway is wide and has a gentle curve, which can support low-speed vehicle movement, but the lack of marked pedestrian crossings or a dedicated footpath increases potential conflict between walkers and cars.\",\n      \"A convex traffic mirror on the right suggests an attempt to improve visibility around the bend or landscaped edge, which is a positive safety feature.\",\n      \"The parked car on the left edge and the building corner can partially constrain sightlines, so people walking in the shared paved area may be less predictable to drivers.\"\n    ],\n    \"livability\": [\n      \"The abundant trees, shrubs, and maintained planting create a calm campus- or office-like setting that supports a pleasant everyday environment.\",\n      \"The area appears quiet and low in traffic, which can improve day-to-day usability and reduce stress for general users.\",\n      \"However, there are no visible active frontages, seating areas, shops, or social gathering elements along the route, so the space feels functional rather than vibrant.\"\n    ],\n    \"sustainability\": [\n      \"Dense tree cover and planted landscape beds provide visible green infrastructure, which supports shade, habitat value, and a softer microclimate.\",\n      \"The setting appears dominated by a private-access driveway rather than multimodal street infrastructure, with no visible transit stop or cycling facility to support lower-carbon travel choices.\",\n      \"The large paved concrete surface may increase runoff and heat gain, but the adjacent vegetation partly offsets this through permeable soil and canopy cover.\"\n    ],\n    \"aesthetics\": [\n      \"The curved building facade with large blue-tinted windows gives the scene a distinctive and visually coherent architectural character.\",\n      \"Well-maintained hedges, mature trees, and the small decorative bridge contribute to an orderly and attractive landscape composition.\",\n      \"The space appears clean and uncluttered, with little visual noise from signage, overhead wires, or heavy traffic.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is fairly good because the right side of the scene has mature trees and substantial greenery that can provide shade and cooling.\",\n      \"Physical comfort is mixed: the concrete paving looks smooth and even for walking, but there are no visible benches or resting amenities.\",\n      \"Psychological comfort is supported by the quiet, landscaped setting and low apparent traffic volume, though the absence of a clearly protected pedestrian zone may reduce comfort for some users.\"\n    ],\n    \"walkability\": [\n      \"Walkability is limited because no continuous, clearly designated sidewalk is visible; pedestrians would likely need to share the driveway space with vehicles.\",\n      \"The paved surface is smooth and relatively wide, which helps basic walking movement, but route definition is weak and there are no visible crossings or pedestrian priority markings.\",\n      \"The greenery and calm setting make the route more pleasant to walk along, yet the environment reads more as vehicle access to a building than as a pedestrian-oriented street.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 58.0,
+   "equity": 60.0,
+   "fairness": 55.0,
+   "accessibility": 59.0
+  },
+  "safety": 64.0,
+  "livability": 61.0,
+  "sustainability": 69.0,
+  "aesthetics": 78.0,
+  "comfort": 67.0,
+  "walkability": 52.0
+ },
+ "scores_flat": {
+  "justice": 58.0,
+  "justice_equity": 60.0,
+  "justice_fairness": 55.0,
+  "justice_accessibility": 59.0,
+  "safety": 64.0,
+  "livability": 61.0,
+  "sustainability": 69.0,
+  "aesthetics": 78.0,
+  "comfort": 67.0,
+  "walkability": 52.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:52:24+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The scene allocates substantial space to motor access with a wide concrete driveway, while no clearly separated pedestrian sidewalk is visible, so spatial resources appear only moderately balanced for all road users.",
+   "A landscaped green area with trees, hedges, and a small bridge adds environmental amenity, but this space is visually buffered from the paved route and does not clearly function as universally usable circulation space.",
+   "Accessibility is only moderate because the pavement looks smooth and mostly level, yet there are no visible tactile paving strips, marked pedestrian routes, or clearly defined curb ramps for inclusive movement."
+  ],
+  "safety": [
+   "The driveway is wide and has a gentle curve, which can support low-speed vehicle movement, but the lack of marked pedestrian crossings or a dedicated footpath increases potential conflict between walkers and cars.",
+   "A convex traffic mirror on the right suggests an attempt to improve visibility around the bend or landscaped edge, which is a positive safety feature.",
+   "The parked car on the left edge and the building corner can partially constrain sightlines, so people walking in the shared paved area may be less predictable to drivers."
+  ],
+  "livability": [
+   "The abundant trees, shrubs, and maintained planting create a calm campus- or office-like setting that supports a pleasant everyday environment.",
+   "The area appears quiet and low in traffic, which can improve day-to-day usability and reduce stress for general users.",
+   "However, there are no visible active frontages, seating areas, shops, or social gathering elements along the route, so the space feels functional rather than vibrant."
+  ],
+  "sustainability": [
+   "Dense tree cover and planted landscape beds provide visible green infrastructure, which supports shade, habitat value, and a softer microclimate.",
+   "The setting appears dominated by a private-access driveway rather than multimodal street infrastructure, with no visible transit stop or cycling facility to support lower-carbon travel choices.",
+   "The large paved concrete surface may increase runoff and heat gain, but the adjacent vegetation partly offsets this through permeable soil and canopy cover."
+  ],
+  "aesthetics": [
+   "The curved building facade with large blue-tinted windows gives the scene a distinctive and visually coherent architectural character.",
+   "Well-maintained hedges, mature trees, and the small decorative bridge contribute to an orderly and attractive landscape composition.",
+   "The space appears clean and uncluttered, with little visual noise from signage, overhead wires, or heavy traffic."
+  ],
+  "comfort": [
+   "Thermal comfort is fairly good because the right side of the scene has mature trees and substantial greenery that can provide shade and cooling.",
+   "Physical comfort is mixed: the concrete paving looks smooth and even for walking, but there are no visible benches or resting amenities.",
+   "Psychological comfort is supported by the quiet, landscaped setting and low apparent traffic volume, though the absence of a clearly protected pedestrian zone may reduce comfort for some users."
+  ],
+  "walkability": [
+   "Walkability is limited because no continuous, clearly designated sidewalk is visible; pedestrians would likely need to share the driveway space with vehicles.",
+   "The paved surface is smooth and relatively wide, which helps basic walking movement, but route definition is weak and there are no visible crossings or pedestrian priority markings.",
+   "The greenery and calm setting make the route more pleasant to walk along, yet the environment reads more as vehicle access to a building than as a pedestrian-oriented street."
+  ]
+ }
+}

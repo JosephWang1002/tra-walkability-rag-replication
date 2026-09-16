@@ -1,0 +1,122 @@
+{
+ "oid": "14982",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\14982.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\14982_120.570572_31.201998_09002900011602231012490934C_266.26_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 22.2,
+ "usage": {
+  "completion_tokens": 832,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 643,
+   "engine_ttlt_ms": 13589,
+   "pre_inference_ms": 333,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1234,
+   "service_ttlt_ms": 14175,
+   "user_visible_ttft_ms": 901
+  },
+  "prompt_tokens": 5182,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6014
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 52.0,\n      \"accessibility\": 52.0\n    },\n    \"safety\": 61.0,\n    \"livability\": 50.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 74.0,\n    \"comfort\": 68.0,\n    \"walkability\": 46.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street space is dominated by wide motor-vehicle carriageway lanes, while no clearly visible sidewalk or pedestrian zone appears in the image, suggesting an uneven allocation of space among road users.\",\n      \"Street trees and verge planting are provided on both sides of the road, which indicates some distribution of environmental amenities across the corridor rather than concentrating them on only one side.\",\n      \"Accessibility is limited because no curb ramps, tactile paving, marked crossings, or other barrier-free pedestrian facilities are visible along the visible segment of the street.\"\n    ],\n    \"safety\": [\n      \"The roadway is straight and has clear centerline and edge-line markings, which supports lane discipline and improves predictability for all road users.\",\n      \"Large roadside trees and planted verges create a buffer between the carriageway and the building edges, which can reduce direct roadside conflict in some sections.\",\n      \"Safety for pedestrians is weakened because no visible crosswalks, refuge islands, sidewalks, or traffic-calming elements appear in the scene, leaving crossing and walking conditions unclear on this long road segment.\"\n    ],\n    \"livability\": [\n      \"The corridor has substantial tree cover and landscaped edges, which improves environmental quality and makes the street feel less harsh than a fully paved industrial road.\",\n      \"Livability is reduced by the absence of visible active frontages such as shops, cafes, seating, or people; the buildings appear mostly closed and low-activity from the street.\",\n      \"The long, empty roadway and sparse street-side functions suggest a place oriented more to movement than to everyday social use or community interaction.\"\n    ],\n    \"sustainability\": [\n      \"Continuous rows of mature trees on both sides provide urban greenery, which supports shade, carbon uptake, and some ecological value.\",\n      \"The landscaped verges and unpaved planted strips along the edges are more permeable than full hard paving and may help with stormwater infiltration.\",\n      \"Sustainability is constrained because no visible bus stop, bike lane, or other dedicated low-carbon transport infrastructure can be identified in the image.\"\n    ],\n    \"aesthetics\": [\n      \"The double rows of mature trees create a strong visual rhythm and a coherent boulevard character along the street.\",\n      \"The roadway and verges appear clean and orderly, with maintained planting, trimmed shrubs, and consistent edge conditions.\",\n      \"The long perspective view, symmetrical tree alignment, and relatively uncluttered streetscape give the scene a calm and visually pleasing appearance.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is relatively good because mature roadside trees provide substantial canopy and likely shade along the corridor edges.\",\n      \"Physical comfort for walking is uncertain because no clearly visible sidewalk surface, benches, or pedestrian amenities can be seen in the image.\",\n      \"Psychological comfort is mixed: the street looks quiet and uncrowded, but the very wide empty carriageway and lack of visible pedestrian activity may make the environment feel exposed for non-drivers.\"\n    ],\n    \"walkability\": [\n      \"Walkability is limited because a dedicated sidewalk is not clearly visible on either side of the road in this image.\",\n      \"No marked pedestrian crossings, curb ramps, refuge islands, or intersection treatments are visible, so route continuity and safe crossing opportunities appear weak.\",\n      \"Although the tree-lined edges could make walking more pleasant in terms of shade and scenery, the street overall reads as vehicle-oriented due to the broad asphalt carriageway and minimal visible pedestrian infrastructure.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 52.0,
+   "accessibility": 52.0
+  },
+  "safety": 61.0,
+  "livability": 50.0,
+  "sustainability": 66.0,
+  "aesthetics": 74.0,
+  "comfort": 68.0,
+  "walkability": 46.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 52.0,
+  "justice_accessibility": 52.0,
+  "safety": 61.0,
+  "livability": 50.0,
+  "sustainability": 66.0,
+  "aesthetics": 74.0,
+  "comfort": 68.0,
+  "walkability": 46.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:24:42+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street space is dominated by wide motor-vehicle carriageway lanes, while no clearly visible sidewalk or pedestrian zone appears in the image, suggesting an uneven allocation of space among road users.",
+   "Street trees and verge planting are provided on both sides of the road, which indicates some distribution of environmental amenities across the corridor rather than concentrating them on only one side.",
+   "Accessibility is limited because no curb ramps, tactile paving, marked crossings, or other barrier-free pedestrian facilities are visible along the visible segment of the street."
+  ],
+  "safety": [
+   "The roadway is straight and has clear centerline and edge-line markings, which supports lane discipline and improves predictability for all road users.",
+   "Large roadside trees and planted verges create a buffer between the carriageway and the building edges, which can reduce direct roadside conflict in some sections.",
+   "Safety for pedestrians is weakened because no visible crosswalks, refuge islands, sidewalks, or traffic-calming elements appear in the scene, leaving crossing and walking conditions unclear on this long road segment."
+  ],
+  "livability": [
+   "The corridor has substantial tree cover and landscaped edges, which improves environmental quality and makes the street feel less harsh than a fully paved industrial road.",
+   "Livability is reduced by the absence of visible active frontages such as shops, cafes, seating, or people; the buildings appear mostly closed and low-activity from the street.",
+   "The long, empty roadway and sparse street-side functions suggest a place oriented more to movement than to everyday social use or community interaction."
+  ],
+  "sustainability": [
+   "Continuous rows of mature trees on both sides provide urban greenery, which supports shade, carbon uptake, and some ecological value.",
+   "The landscaped verges and unpaved planted strips along the edges are more permeable than full hard paving and may help with stormwater infiltration.",
+   "Sustainability is constrained because no visible bus stop, bike lane, or other dedicated low-carbon transport infrastructure can be identified in the image."
+  ],
+  "aesthetics": [
+   "The double rows of mature trees create a strong visual rhythm and a coherent boulevard character along the street.",
+   "The roadway and verges appear clean and orderly, with maintained planting, trimmed shrubs, and consistent edge conditions.",
+   "The long perspective view, symmetrical tree alignment, and relatively uncluttered streetscape give the scene a calm and visually pleasing appearance."
+  ],
+  "comfort": [
+   "Thermal comfort is relatively good because mature roadside trees provide substantial canopy and likely shade along the corridor edges.",
+   "Physical comfort for walking is uncertain because no clearly visible sidewalk surface, benches, or pedestrian amenities can be seen in the image.",
+   "Psychological comfort is mixed: the street looks quiet and uncrowded, but the very wide empty carriageway and lack of visible pedestrian activity may make the environment feel exposed for non-drivers."
+  ],
+  "walkability": [
+   "Walkability is limited because a dedicated sidewalk is not clearly visible on either side of the road in this image.",
+   "No marked pedestrian crossings, curb ramps, refuge islands, or intersection treatments are visible, so route continuity and safe crossing opportunities appear weak.",
+   "Although the tree-lined edges could make walking more pleasant in terms of shade and scenery, the street overall reads as vehicle-oriented due to the broad asphalt carriageway and minimal visible pedestrian infrastructure."
+  ]
+ }
+}

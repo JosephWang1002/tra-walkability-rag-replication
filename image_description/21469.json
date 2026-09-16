@@ -1,0 +1,33 @@
+{
+ "oid": "21469",
+ "description": "The image shows a continuous, fairly wide concrete sidewalk running along the road, with a smooth surface but visible cracking and some debris near the edges. There is limited traffic separation—cars travel in the roadway with only a grassy verge and low curb/edge between pedestrians and vehicles, and there are no clear barriers or marked crossings. Sparse greenery provides some roadside landscaping but little shade, street lighting is minimal (few poles visible), and there are no obvious curb cuts or other accessibility features visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 101,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 758,
+   "engine_ttlt_ms": 2040,
+   "pre_inference_ms": 530,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1645,
+   "service_ttlt_ms": 2922,
+   "total_duration_ms": 2404,
+   "user_visible_ttft_ms": 1115
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1085
+ },
+ "latency_s": 6.5,
+ "timestamp": "2026-08-31T16:35:40"
+}

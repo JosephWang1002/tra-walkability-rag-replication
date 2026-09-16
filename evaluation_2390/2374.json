@@ -1,0 +1,73 @@
+  {
+    "image_id": "img-traffic-intersection-01",
+    "persona": "all_all",
+    "model_info": {
+      "llmVersion": "gpt-5.4",
+      "ragIndexVersion": "v1.0.0"
+    },
+    "generated_at": "2026-04-21T15:10:00.000Z",
+    "record_id": "auto-batch-001-01",
+    "stored_image_url": "/storage/records/auto-batch-001-01/image.jpg",
+    "stored_thumb_url": "/storage/records/auto-batch-001-01/thumb.jpg",
+    "user_feedback": {
+      "by_indicator": {}
+    },
+    "export_timestamp": "2026-04-21T15:10:30.000Z",
+    "scores": {
+      "justice": {
+        "overall": 58,
+        "equity": 60,
+        "fairness": 55,
+        "accessibility": 52
+      },
+      "safety": 50,
+      "livability": 55,
+      "sustainability": 58,
+      "aesthetics": 55,
+      "comfort": 50,
+      "walkability": 45,
+      "bikeability": 42
+    },
+    "explanations": {
+      "justice": [
+        "This large multi-lane intersection prioritizes motor vehicle throughput, with limited dedicated space allocated to pedestrians and non-motorized users.",
+        "Basic crosswalk markings are present, but there is a lack of barrier-free facilities and tactile paving for vulnerable groups.",
+        "Unequal right-of-way allocation reduces travel fairness and independent accessibility for elderly and disabled residents."
+      ],
+      "safety": [
+        "Complex multi-directional traffic flow with mixed cars and electric two-wheelers creates high potential for conflict points.",
+        "Wide intersection span increases pedestrian crossing time and exposure risk during signal phases.",
+        "Sufficient traffic signal control improves basic safety but lacks additional traffic calming measures."
+      ],
+      "livability": [
+        "Surrounding mature greenery provides basic ecological benefits, yet large hard pavement areas create heat island effects.",
+        "No roadside rest amenities or public leisure facilities are provided along the intersection.",
+        "Large-scale road facilities and heavy traffic bring noise and visual interference to the surrounding environment."
+      ],
+      "sustainability": [
+        "Extensive impermeable asphalt pavement lacks sponge city and rainwater management design.",
+        "Green coverage along the road is moderate, delivering limited carbon sequestration benefits.",
+        "No obvious low-carbon travel priority design is observed to encourage walking and cycling modes."
+      ],
+      "aesthetics": [
+        "Overall road layout is neat and orderly with uniform street lamp facilities.",
+        "Large roadside billboard and overhead wires negatively affect the visual integrity of the streetscape.",
+        "Overcast weather and monotonous surrounding architecture create a plain visual experience."
+      ],
+      "comfort": [
+        "Open wide road space brings no enclosed oppressive feeling for vehicle users.",
+        "Long pedestrian crossing distance and lack of shelter reduce thermal and physical comfort for walkers.",
+        "Continuous motor vehicle flow generates persistent noise, reducing overall psychological comfort."
+      ],
+      "walkability": [
+        "Marked zebra crossings are set, yet long crossing distance reduces walking experience.",
+        "Lack of continuous comfortable pedestrian buffer zones alongside vehicle lanes.",
+        "High traffic volume creates an intimidating environment that discourages walking activities."
+      ],
+      "bikeability": [
+        "No independent dedicated bicycle lanes are separated from motor vehicle traffic.",
+        "Large intersection and complex vehicle flow greatly increase cycling safety risks.",
+        "No cycling priority signals or dedicated cycling passage facilities are configured."
+      ]
+    }
+  }

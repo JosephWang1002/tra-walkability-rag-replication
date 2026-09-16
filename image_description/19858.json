@@ -1,0 +1,33 @@
+{
+ "oid": "19858",
+ "description": "The image shows a wide, multi-lane roadway with no visible continuous sidewalk or pedestrian path; the curb line is bordered by landscaped grass and trees, and there are no clear curb cuts or ramps for pedestrians. Traffic is separated only by lane markings, with tall streetlights and overhead signal poles providing lighting, but there are no physical barriers or refuge areas to protect walkers from vehicle traffic. The road is lined with dense greenery that offers some potential shade along the verge, though pedestrian walking space appears absent.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 104,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 8,
+   "engine_ttft_ms": 231,
+   "engine_ttlt_ms": 1058,
+   "pre_inference_ms": 462,
+   "service_tbt_ms": 8,
+   "service_ttft_ms": 1004,
+   "service_ttlt_ms": 1825,
+   "total_duration_ms": 1371,
+   "user_visible_ttft_ms": 542
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1088
+ },
+ "latency_s": 5.4,
+ "timestamp": "2026-08-31T16:26:56"
+}

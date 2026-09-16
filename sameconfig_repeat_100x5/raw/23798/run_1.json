@@ -1,0 +1,122 @@
+{
+ "oid": "23798",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23798.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23798_120.716376_31.375959_0900290012220906163341823AJ_89.35_2022_9_苏州工业园区唯亭街道亭友街_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 17.3,
+ "usage": {
+  "completion_tokens": 842,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 470,
+   "engine_ttlt_ms": 12578,
+   "pre_inference_ms": 477,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1443,
+   "service_ttlt_ms": 13530,
+   "user_visible_ttft_ms": 966
+  },
+  "prompt_tokens": 5261,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6103
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 66.0,\n      \"equity\": 70.0,\n      \"fairness\": 64.0,\n      \"accessibility\": 64.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 68.0,\n    \"sustainability\": 76.0,\n    \"aesthetics\": 84.0,\n    \"comfort\": 79.0,\n    \"walkability\": 61.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Street space appears evenly organized, with sidewalks and tree-lined verges on both sides of the road rather than all space being given only to vehicles, which supports equitable distribution for all users.\",\n      \"Accessibility is only moderate because the image shows long curb edges and narrow sidewalk strips, but no visible curb ramps, tactile paving, or marked crossing points for people moving across the street.\",\n      \"Fairness is limited by the car-oriented geometry of a wide carriageway with only a centerline visible, while dedicated pedestrian priority elements such as zebra crossings, refuge islands, or protected waiting areas are not visible.\"\n    ],\n    \"safety\": [\n      \"The roadway is wide, straight, and lightly trafficked in the visible segment, which likely improves sight distance for drivers and reduces immediate conflict risk.\",\n      \"Large street trees and regularly spaced light poles create a structured edge condition, helping define the road corridor and making the street easier to read.\",\n      \"Safety for crossing pedestrians is weaker because no marked crosswalk, curb extension, raised crossing, or median refuge is visible near the intersection ahead on this broad road.\"\n    ],\n    \"livability\": [\n      \"Continuous mature trees on both sides create a calm residential atmosphere and improve the everyday quality of the street environment.\",\n      \"The sidewalks appear clean and the street is free of visible clutter, parked cars, trash, or commercial spillover, which supports a pleasant daily setting.\",\n      \"Livability is constrained by low visible street activity: there are no people, benches, shops, or community-facing uses apparent in the image, so the street feels quiet but not socially vibrant.\"\n    ],\n    \"sustainability\": [\n      \"Dense rows of mature trees provide substantial canopy cover and likely contribute to cooling, air-quality improvement, and carbon sequestration.\",\n      \"The street design appears low-intensity and uncluttered, with shaded sidewalks that can support walking as a low-carbon travel mode.\",\n      \"Sustainability is not higher because no visible bike lane, bus stop, permeable paving, bioswale, rain garden, or other stormwater infrastructure can be identified from the image.\"\n    ],\n    \"aesthetics\": [\n      \"The double row of mature green trees forms a strong visual canopy and gives the street a coherent, attractive landscape character.\",\n      \"The streetscape looks orderly and well maintained, with clean pavement, trimmed edges, and consistent light poles contributing to visual neatness.\",\n      \"Building walls and setbacks are visually subdued behind the trees, allowing greenery to dominate the scene and creating a serene, high-quality appearance.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is strong because the large tree canopies cast extensive shade over both sidewalks and parts of the roadway.\",\n      \"Physical comfort appears fairly good due to smooth road surfacing and seemingly continuous sidewalks without visible debris or major obstructions.\",\n      \"Psychological comfort benefits from the quiet, uncrowded setting and green enclosure, though the absence of visible seating or pedestrian amenities limits longer stays.\"\n    ],\n    \"walkability\": [\n      \"Sidewalks are visible on both sides of the street, giving pedestrians a dedicated place to walk separate from the carriageway.\",\n      \"Walkability is reduced because the sidewalks appear relatively narrow and there are no visible benches, wayfinding signs, or active frontages to support a richer walking experience.\",\n      \"Crossing convenience seems limited on this wide road since no zebra crossing, pedestrian signal, refuge island, or curb ramp is visible in the scene.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 66.0,
+   "equity": 70.0,
+   "fairness": 64.0,
+   "accessibility": 64.0
+  },
+  "safety": 74.0,
+  "livability": 68.0,
+  "sustainability": 76.0,
+  "aesthetics": 84.0,
+  "comfort": 79.0,
+  "walkability": 61.0
+ },
+ "scores_flat": {
+  "justice": 66.0,
+  "justice_equity": 70.0,
+  "justice_fairness": 64.0,
+  "justice_accessibility": 64.0,
+  "safety": 74.0,
+  "livability": 68.0,
+  "sustainability": 76.0,
+  "aesthetics": 84.0,
+  "comfort": 79.0,
+  "walkability": 61.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:59:10+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Street space appears evenly organized, with sidewalks and tree-lined verges on both sides of the road rather than all space being given only to vehicles, which supports equitable distribution for all users.",
+   "Accessibility is only moderate because the image shows long curb edges and narrow sidewalk strips, but no visible curb ramps, tactile paving, or marked crossing points for people moving across the street.",
+   "Fairness is limited by the car-oriented geometry of a wide carriageway with only a centerline visible, while dedicated pedestrian priority elements such as zebra crossings, refuge islands, or protected waiting areas are not visible."
+  ],
+  "safety": [
+   "The roadway is wide, straight, and lightly trafficked in the visible segment, which likely improves sight distance for drivers and reduces immediate conflict risk.",
+   "Large street trees and regularly spaced light poles create a structured edge condition, helping define the road corridor and making the street easier to read.",
+   "Safety for crossing pedestrians is weaker because no marked crosswalk, curb extension, raised crossing, or median refuge is visible near the intersection ahead on this broad road."
+  ],
+  "livability": [
+   "Continuous mature trees on both sides create a calm residential atmosphere and improve the everyday quality of the street environment.",
+   "The sidewalks appear clean and the street is free of visible clutter, parked cars, trash, or commercial spillover, which supports a pleasant daily setting.",
+   "Livability is constrained by low visible street activity: there are no people, benches, shops, or community-facing uses apparent in the image, so the street feels quiet but not socially vibrant."
+  ],
+  "sustainability": [
+   "Dense rows of mature trees provide substantial canopy cover and likely contribute to cooling, air-quality improvement, and carbon sequestration.",
+   "The street design appears low-intensity and uncluttered, with shaded sidewalks that can support walking as a low-carbon travel mode.",
+   "Sustainability is not higher because no visible bike lane, bus stop, permeable paving, bioswale, rain garden, or other stormwater infrastructure can be identified from the image."
+  ],
+  "aesthetics": [
+   "The double row of mature green trees forms a strong visual canopy and gives the street a coherent, attractive landscape character.",
+   "The streetscape looks orderly and well maintained, with clean pavement, trimmed edges, and consistent light poles contributing to visual neatness.",
+   "Building walls and setbacks are visually subdued behind the trees, allowing greenery to dominate the scene and creating a serene, high-quality appearance."
+  ],
+  "comfort": [
+   "Thermal comfort is strong because the large tree canopies cast extensive shade over both sidewalks and parts of the roadway.",
+   "Physical comfort appears fairly good due to smooth road surfacing and seemingly continuous sidewalks without visible debris or major obstructions.",
+   "Psychological comfort benefits from the quiet, uncrowded setting and green enclosure, though the absence of visible seating or pedestrian amenities limits longer stays."
+  ],
+  "walkability": [
+   "Sidewalks are visible on both sides of the street, giving pedestrians a dedicated place to walk separate from the carriageway.",
+   "Walkability is reduced because the sidewalks appear relatively narrow and there are no visible benches, wayfinding signs, or active frontages to support a richer walking experience.",
+   "Crossing convenience seems limited on this wide road since no zebra crossing, pedestrian signal, refuge island, or curb ramp is visible in the scene."
+  ]
+ }
+}

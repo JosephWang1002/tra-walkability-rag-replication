@@ -1,0 +1,122 @@
+{
+ "oid": "16676",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16676.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16676_120.615547_31.316223_09002900121904121108113075R_261.05_2019_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.3,
+ "usage": {
+  "completion_tokens": 839,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 245,
+   "engine_ttlt_ms": 12187,
+   "pre_inference_ms": 415,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 847,
+   "service_ttlt_ms": 12775,
+   "user_visible_ttft_ms": 432
+  },
+  "prompt_tokens": 5580,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5248
+  },
+  "total_tokens": 6419
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 52.0,\n      \"fairness\": 50.0,\n      \"accessibility\": 60.0\n    },\n    \"safety\": 48.0,\n    \"livability\": 62.0,\n    \"sustainability\": 57.0,\n    \"aesthetics\": 71.0,\n    \"comfort\": 55.0,\n    \"walkability\": 50.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are unevenly distributed because the narrow lane is partly occupied by parked vans on the left and by utility poles and hanging laundry on the right, leaving limited clear space for different users.\",\n      \"Accessibility is only moderate: the paving appears relatively even and flush without obvious curbs, which can help general movement, but there are no visible curb ramps, tactile paving, or marked pedestrian zones.\",\n      \"Fairness for all road users is weakened because pedestrians, small vehicles, and likely cyclists must share the same constrained carriageway, while private parking and household spillover uses take up public space.\"\n    ],\n    \"safety\": [\n      \"The street is narrow and appears to have low traffic speed, which can reduce severe crash risk for all users.\",\n      \"Safety is weakened by the absence of separated sidewalks, bike lanes, or marked pedestrian priority areas; everyone must mix in the same corridor.\",\n      \"Parked vehicles on the left and a large tree trunk, pole, and hanging clothes on the right create visibility and clearance constraints that may force pedestrians into the vehicle path.\"\n    ],\n    \"livability\": [\n      \"The small-scale residential frontage, doors and windows opening directly to the lane, and visible household activity such as drying clothes suggest an inhabited and socially active environment.\",\n      \"The mature street tree adds neighborhood character and some environmental quality to an otherwise hard-paved lane.\",\n      \"Livability is limited by the lack of visible public amenities such as benches, lighting features, storefront services, or dedicated social space within the street.\"\n    ],\n    \"sustainability\": [\n      \"The compact, narrow street form can support short walking trips and low-speed local access rather than high-speed car movement.\",\n      \"A large mature tree provides ecological value and some shade, but overall visible greenery is sparse beyond this tree and a few small plants.\",\n      \"The lane is dominated by hard paving and parked motor vehicles, and there are no visible permeable landscape strips, rain gardens, or dedicated cycling facilities to strengthen low-carbon and stormwater performance.\"\n    ],\n    \"aesthetics\": [\n      \"Traditional low-rise buildings with tiled roofs create a distinctive historic streetscape character and visual identity.\",\n      \"The mature tree in the center-right of the scene softens the lane and adds texture and vertical interest.\",\n      \"Aesthetic quality is reduced by overhead utility wires, weathered facades, parked vans, and hanging laundry that make the scene feel cluttered despite its heritage charm.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: the large tree offers some shade, but canopy coverage is limited along the full lane and much of the street remains exposed.\",\n      \"Physical comfort is only moderate because the paving looks fairly even, yet the walking zone is narrowed by parked vehicles, poles, tree roots/base area, and clothes hanging into the public realm.\",\n      \"Psychological comfort is reduced for all users because the lane feels tight and visually cluttered, with no dedicated refuge space for pedestrians away from vehicles.\"\n    ],\n    \"walkability\": [\n      \"Walkability is constrained by the lack of a continuous, clearly defined sidewalk; pedestrians appear to walk in the same space as vehicles.\",\n      \"The lane surface seems relatively smooth and level, which supports basic walking movement better than rough or broken pavement would.\",\n      \"Obstacles and encroachments—including parked vans, utility poles, the large tree, and hanging laundry near the building edge—reduce effective walking width and continuity.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 52.0,
+   "fairness": 50.0,
+   "accessibility": 60.0
+  },
+  "safety": 48.0,
+  "livability": 62.0,
+  "sustainability": 57.0,
+  "aesthetics": 71.0,
+  "comfort": 55.0,
+  "walkability": 50.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 52.0,
+  "justice_fairness": 50.0,
+  "justice_accessibility": 60.0,
+  "safety": 48.0,
+  "livability": 62.0,
+  "sustainability": 57.0,
+  "aesthetics": 71.0,
+  "comfort": 55.0,
+  "walkability": 50.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:33:11+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are unevenly distributed because the narrow lane is partly occupied by parked vans on the left and by utility poles and hanging laundry on the right, leaving limited clear space for different users.",
+   "Accessibility is only moderate: the paving appears relatively even and flush without obvious curbs, which can help general movement, but there are no visible curb ramps, tactile paving, or marked pedestrian zones.",
+   "Fairness for all road users is weakened because pedestrians, small vehicles, and likely cyclists must share the same constrained carriageway, while private parking and household spillover uses take up public space."
+  ],
+  "safety": [
+   "The street is narrow and appears to have low traffic speed, which can reduce severe crash risk for all users.",
+   "Safety is weakened by the absence of separated sidewalks, bike lanes, or marked pedestrian priority areas; everyone must mix in the same corridor.",
+   "Parked vehicles on the left and a large tree trunk, pole, and hanging clothes on the right create visibility and clearance constraints that may force pedestrians into the vehicle path."
+  ],
+  "livability": [
+   "The small-scale residential frontage, doors and windows opening directly to the lane, and visible household activity such as drying clothes suggest an inhabited and socially active environment.",
+   "The mature street tree adds neighborhood character and some environmental quality to an otherwise hard-paved lane.",
+   "Livability is limited by the lack of visible public amenities such as benches, lighting features, storefront services, or dedicated social space within the street."
+  ],
+  "sustainability": [
+   "The compact, narrow street form can support short walking trips and low-speed local access rather than high-speed car movement.",
+   "A large mature tree provides ecological value and some shade, but overall visible greenery is sparse beyond this tree and a few small plants.",
+   "The lane is dominated by hard paving and parked motor vehicles, and there are no visible permeable landscape strips, rain gardens, or dedicated cycling facilities to strengthen low-carbon and stormwater performance."
+  ],
+  "aesthetics": [
+   "Traditional low-rise buildings with tiled roofs create a distinctive historic streetscape character and visual identity.",
+   "The mature tree in the center-right of the scene softens the lane and adds texture and vertical interest.",
+   "Aesthetic quality is reduced by overhead utility wires, weathered facades, parked vans, and hanging laundry that make the scene feel cluttered despite its heritage charm."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: the large tree offers some shade, but canopy coverage is limited along the full lane and much of the street remains exposed.",
+   "Physical comfort is only moderate because the paving looks fairly even, yet the walking zone is narrowed by parked vehicles, poles, tree roots/base area, and clothes hanging into the public realm.",
+   "Psychological comfort is reduced for all users because the lane feels tight and visually cluttered, with no dedicated refuge space for pedestrians away from vehicles."
+  ],
+  "walkability": [
+   "Walkability is constrained by the lack of a continuous, clearly defined sidewalk; pedestrians appear to walk in the same space as vehicles.",
+   "The lane surface seems relatively smooth and level, which supports basic walking movement better than rough or broken pavement would.",
+   "Obstacles and encroachments—including parked vans, utility poles, the large tree, and hanging laundry near the building edge—reduce effective walking width and continuity."
+  ]
+ }
+}

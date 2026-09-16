@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 66,
+      "equity": 64,
+      "fairness": 63,
+      "accessibility": 71
+    },
+    "safety": 62,
+    "livability": 55,
+    "sustainability": 67,
+    "aesthetics": 71,
+    "comfort": 63,
+    "walkability": 61,
+    "bikeability": 52
+  },
+  "explanations": {
+    "justice": [
+      "Marked zebra crosswalk provides a formal, rule-based crossing space for pedestrians, supporting fair allocation of right-of-way at the intersection",
+      "Sidewalks exist on both sides (red-paved pedestrian area on the left and a separated green verge on the right), indicating basic spatial provision for multiple users rather than only cars",
+      "Accessibility is moderate because the crosswalk connects to sidewalks, but curb ramps/tactile guidance are not clearly visible at the curb edges in the image, which may limit barrier-free continuity for some users"
+    ],
+    "safety": [
+      "Zebra crosswalk and lane-direction arrows create clear guidance, but the crossing is very wide (multiple lanes), increasing exposure time for pedestrians and riders in the conflict zone",
+      "A scooter/e-bike carrying passengers is crossing within the crosswalk area while a car is close to the crossing, suggesting potential vehicle–micromobility conflict at this intersection",
+      "No protected bike facility or physical refuge island is visible at the crossing; turning/through movements may mix with cyclists and e-bikes, reducing perceived and actual safety"
+    ],
+    "livability": [
+      "Street edges are dominated by roadway width and long setback greenery, with limited active frontage (few doors/windows facing the street), reducing 'eyes on the street' and street life",
+      "There are no visible benches, pocket spaces, or social nodes near the intersection that would support lingering and everyday social use",
+      "Large tree belts improve environmental quality, but the overall scene feels more like a through-corridor than a destination, limiting neighborhood vibrancy"
+    ],
+    "sustainability": [
+      "Substantial street trees and planted verge on the right provide green infrastructure benefits (shade potential, air quality, habitat) compared with a fully hardscaped corridor",
+      "Presence of cycling activity (a cyclist on the right side) indicates the corridor can support low-carbon travel, even though facilities appear weak",
+      "Wide motor-vehicle lanes and car presence suggest auto-oriented capacity; however, the greenery and non-motorized use still contribute to a moderate sustainability performance"
+    ],
+    "aesthetics": [
+      "Continuous green canopy and landscaped verge create a visually pleasant corridor and soften the wide road profile",
+      "Clean, orderly pavement markings (zebra crossing and lane arrows) and maintained roadway surface contribute to a neat streetscape appearance",
+      "Streetlights and consistent roadside planting add visual structure and coherence despite relatively plain building facades"
+    ],
+    "comfort": [
+      "Thermal comfort is relatively good due to extensive trees along the right side that likely provide shade and cooling (even if shade coverage over the crosswalk is limited)",
+      "Physical comfort for walking is mixed: sidewalks appear present and smooth (notably the red-paved walk area), but the crossing distance is long and may feel tiring or stressful for some users",
+      "Psychological comfort is moderate because the street is wide and vehicle-oriented; the open intersection and limited enclosure can make pedestrians/cyclists feel exposed while crossing"
+    ],
+    "walkability": [
+      "Zebra crossing offers direct pedestrian connectivity across the roadway, supporting basic walk network continuity",
+      "However, the intersection is large and multi-lane with no visible median refuge, which can reduce walking convenience and perceived safety during crossing",
+      "Sidewalks appear continuous (left-side red paving and right-side separated edge), but the lack of clearly visible curb ramps/tactile cues at the crossing approaches may hinder seamless walking for all users"
+    ],
+    "bikeability": [
+      "Cyclists appear to ride at the roadway edge/shoulder area without a clearly protected or painted bike lane, reducing comfort and safety for typical riders",
+      "At the intersection, mixing between cars, e-bikes/scooters, and bicycles is likely because there are no visible dedicated bicycle signal phases or protected intersection geometry",
+      "No visible bicycle-specific markings (bike symbols) or bike parking is present near the crossing, lowering convenience and clarity for cycling users"
+    ]
+  },
+  "image_id": "img-1777267085461-bvsaax3ri",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:53:10.723Z",
+  "record_id": "0175ba3a387043908b6225d47e4c950d",
+  "stored_image_url": "/storage/records/0175ba3a387043908b6225d47e4c950d/image.jpg",
+  "stored_thumb_url": "/storage/records/0175ba3a387043908b6225d47e4c950d/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:53:26.338Z"
+}

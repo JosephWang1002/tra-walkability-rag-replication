@@ -1,0 +1,122 @@
+{
+ "oid": "15353",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\15353.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\15353_120.538641_31.203558_09002900122201161340434935X_293.86_2022_1_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.2,
+ "usage": {
+  "completion_tokens": 872,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 427,
+   "engine_ttlt_ms": 14791,
+   "pre_inference_ms": 380,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1102,
+   "service_ttlt_ms": 15463,
+   "user_visible_ttft_ms": 721
+  },
+  "prompt_tokens": 5344,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6216
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 71.0,\n      \"equity\": 74.0,\n      \"fairness\": 68.0,\n      \"accessibility\": 71.0\n    },\n    \"safety\": 69.0,\n    \"livability\": 72.0,\n    \"sustainability\": 70.0,\n    \"aesthetics\": 76.0,\n    \"comfort\": 73.0,\n    \"walkability\": 67.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Street space is distributed more evenly than on a car-dominated road: there is a visible sidewalk on the right, a planted verge/median area, and a relatively narrow carriageway rather than multiple traffic lanes.\",\n      \"Accessibility is moderate because the right-side sidewalk appears wide, paved, and mostly level, which can support general pedestrian movement, but no curb ramps or tactile paving are visible at the edge near the planted island.\",\n      \"Fairness is limited by the lack of clearly marked pedestrian crossings, dedicated cycling space, or visible universal-design elements, so different users appear to share the corridor without equally explicit support.\"\n    ],\n    \"safety\": [\n      \"Motor traffic appears relatively calm because the roadway is narrow and local in character, with low visible traffic volume and residential frontage rather than a high-speed arterial layout.\",\n      \"Safety is weakened by cars parked along the right edge and one vehicle partly intruding near the foreground left, which can create visibility conflicts and reduce clear separation between moving and stationary vehicles.\",\n      \"Large street trees and planted edges provide some buffer from buildings and parked cars, but there are no visible crosswalk markings, bike lanes, or traffic-calming devices such as raised crossings.\"\n    ],\n    \"livability\": [\n      \"The street has a residential neighborhood character with houses directly facing the road, which supports everyday living and passive surveillance from windows and entrances.\",\n      \"Tree-lined edges and planted shrub beds improve the sense of neighborhood quality and make the corridor feel more pleasant than a fully paved street.\",\n      \"Livability is somewhat reduced because there are no visible benches, play elements, bus stops, or active ground-floor community uses that would support lingering or social interaction.\"\n    ],\n    \"sustainability\": [\n      \"The mature street trees on the left and planted shrub areas on the right contribute visible green infrastructure, helping with shade, habitat value, and a lower-heat streetscape.\",\n      \"The narrow local street form and compact residential frontage can support shorter local trips and lower-speed movement compared with wider vehicle-oriented roads.\",\n      \"Sustainability is constrained because no dedicated bike lane, transit stop, permeable paving, or visible rainwater-management feature is evident in the image.\"\n    ],\n    \"aesthetics\": [\n      \"The mature tree canopy on the left creates a strong visual frame and gives the street a calm, green character.\",\n      \"Residential buildings on the right are relatively consistent in scale and setback, which adds visual order and coherence to the corridor.\",\n      \"Aesthetic quality is lowered slightly by visible parked cars, overhead utility wires, and several leafless trees on the right that make parts of the scene feel less polished.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is fairly good on the left side because the large tree canopy provides substantial shade over part of the street and sidewalk edge.\",\n      \"Physical comfort is moderate because the right-side sidewalk looks smooth and reasonably wide, but there are no visible benches or resting facilities for users who want to stop.\",\n      \"Psychological comfort benefits from the quiet residential setting, low apparent traffic, and greenery, though parked vehicles close to the travel way can make movement feel somewhat constrained.\"\n    ],\n    \"walkability\": [\n      \"Walkability is supported by the presence of a continuous sidewalk on the right and a low-speed residential street environment with limited visible traffic.\",\n      \"Shade from mature trees and planted landscaping improves the attractiveness of walking, which is important for encouraging pedestrian activity.\",\n      \"Walkability is held back because there is no clearly visible marked crossing, no obvious pedestrian-priority treatment at the planted island, and no visible seating or wayfinding features.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 71.0,
+   "equity": 74.0,
+   "fairness": 68.0,
+   "accessibility": 71.0
+  },
+  "safety": 69.0,
+  "livability": 72.0,
+  "sustainability": 70.0,
+  "aesthetics": 76.0,
+  "comfort": 73.0,
+  "walkability": 67.0
+ },
+ "scores_flat": {
+  "justice": 71.0,
+  "justice_equity": 74.0,
+  "justice_fairness": 68.0,
+  "justice_accessibility": 71.0,
+  "safety": 69.0,
+  "livability": 72.0,
+  "sustainability": 70.0,
+  "aesthetics": 76.0,
+  "comfort": 73.0,
+  "walkability": 67.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:25:53+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Street space is distributed more evenly than on a car-dominated road: there is a visible sidewalk on the right, a planted verge/median area, and a relatively narrow carriageway rather than multiple traffic lanes.",
+   "Accessibility is moderate because the right-side sidewalk appears wide, paved, and mostly level, which can support general pedestrian movement, but no curb ramps or tactile paving are visible at the edge near the planted island.",
+   "Fairness is limited by the lack of clearly marked pedestrian crossings, dedicated cycling space, or visible universal-design elements, so different users appear to share the corridor without equally explicit support."
+  ],
+  "safety": [
+   "Motor traffic appears relatively calm because the roadway is narrow and local in character, with low visible traffic volume and residential frontage rather than a high-speed arterial layout.",
+   "Safety is weakened by cars parked along the right edge and one vehicle partly intruding near the foreground left, which can create visibility conflicts and reduce clear separation between moving and stationary vehicles.",
+   "Large street trees and planted edges provide some buffer from buildings and parked cars, but there are no visible crosswalk markings, bike lanes, or traffic-calming devices such as raised crossings."
+  ],
+  "livability": [
+   "The street has a residential neighborhood character with houses directly facing the road, which supports everyday living and passive surveillance from windows and entrances.",
+   "Tree-lined edges and planted shrub beds improve the sense of neighborhood quality and make the corridor feel more pleasant than a fully paved street.",
+   "Livability is somewhat reduced because there are no visible benches, play elements, bus stops, or active ground-floor community uses that would support lingering or social interaction."
+  ],
+  "sustainability": [
+   "The mature street trees on the left and planted shrub areas on the right contribute visible green infrastructure, helping with shade, habitat value, and a lower-heat streetscape.",
+   "The narrow local street form and compact residential frontage can support shorter local trips and lower-speed movement compared with wider vehicle-oriented roads.",
+   "Sustainability is constrained because no dedicated bike lane, transit stop, permeable paving, or visible rainwater-management feature is evident in the image."
+  ],
+  "aesthetics": [
+   "The mature tree canopy on the left creates a strong visual frame and gives the street a calm, green character.",
+   "Residential buildings on the right are relatively consistent in scale and setback, which adds visual order and coherence to the corridor.",
+   "Aesthetic quality is lowered slightly by visible parked cars, overhead utility wires, and several leafless trees on the right that make parts of the scene feel less polished."
+  ],
+  "comfort": [
+   "Thermal comfort is fairly good on the left side because the large tree canopy provides substantial shade over part of the street and sidewalk edge.",
+   "Physical comfort is moderate because the right-side sidewalk looks smooth and reasonably wide, but there are no visible benches or resting facilities for users who want to stop.",
+   "Psychological comfort benefits from the quiet residential setting, low apparent traffic, and greenery, though parked vehicles close to the travel way can make movement feel somewhat constrained."
+  ],
+  "walkability": [
+   "Walkability is supported by the presence of a continuous sidewalk on the right and a low-speed residential street environment with limited visible traffic.",
+   "Shade from mature trees and planted landscaping improves the attractiveness of walking, which is important for encouraging pedestrian activity.",
+   "Walkability is held back because there is no clearly visible marked crossing, no obvious pedestrian-priority treatment at the planted island, and no visible seating or wayfinding features."
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "oid": "15217",
+ "description": "The image shows a multi-lane roadway with no visible pedestrian sidewalk; the only walkway-like surfaces appear to be narrow concrete shoulders/edge areas, separated from traffic by a metal guardrail on the left and landscaped verge on the right. Traffic is separated by lane markings and a high elevated structure overhead, with no physical barriers directly protecting pedestrians from vehicle lanes; lighting poles are present but the scene is mostly daylight, and there are no clear curb ramps or curb cuts. Greenery along both sides provides some visual buffer, but there are no obvious pedestrian crossing facilities, refuge areas, or accessible features visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 124,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 10,
+   "engine_ttft_ms": 601,
+   "engine_ttlt_ms": 1888,
+   "pre_inference_ms": 563,
+   "service_tbt_ms": 10,
+   "service_ttft_ms": 1489,
+   "service_ttlt_ms": 2757,
+   "user_visible_ttft_ms": 927
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1108
+ },
+ "latency_s": 5.9,
+ "timestamp": "2026-08-31T16:03:35"
+}

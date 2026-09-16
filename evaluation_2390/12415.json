@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 34,
+      "equity": 30,
+      "fairness": 45,
+      "accessibility": 27
+    },
+    "safety": 62,
+    "livability": 18,
+    "sustainability": 36,
+    "aesthetics": 48,
+    "comfort": 40,
+    "walkability": 12,
+    "bikeability": 10
+  },
+  "explanations": {
+    "justice": [
+      "Spatial resources are overwhelmingly allocated to motor vehicles: multiple high-speed lanes and ramp geometry dominate, while no sidewalk space is visible, indicating low equity for non-drivers.",
+      "Rules/information appear driver-centric: repeated chevron direction signs along the curve support motorists, but there are no visible wayfinding or warnings for pedestrians/cyclists, reducing fairness across user types.",
+      "Accessibility is poor for all users who are not in a vehicle: continuous guardrails, a concrete barrier edge, and the absence of curb ramps or crossings indicate that barrier-free movement is not supported."
+    ],
+    "safety": [
+      "For drivers, the curve is clearly communicated by large chevron signs and consistent lane-edge markings, which improves guidance on a high-speed ramp.",
+      "Crash severity risk remains high due to ramp curvature and an expressway context; even with guardrails, a run-off-road incident on a curve can be severe.",
+      "For pedestrians/cyclists, safety is very low because there is no separated non-motorized facility and the guardrails/barriers suggest they would be forced into or very near vehicle travel space."
+    ],
+    "livability": [
+      "The setting is an expressway interchange/ramp with no storefronts, public activity nodes, or community facilities visible, offering little support for daily street life.",
+      "No pedestrian amenities are present (no benches, shelters, or gathering spaces), limiting social use and day-to-day comfort for non-motorized users.",
+      "The landscape reads as roadside infrastructure (embankments, barriers, distant industrial/utility elements), not a human-scale place for lingering or neighborhood interaction."
+    ],
+    "sustainability": [
+      "Car-oriented ramp infrastructure encourages motorized travel; no transit stop, sidewalk, or bike facility is visible to support low-carbon mode shift.",
+      "Some planted roadside vegetation exists on the embankment, but it is sparse and not configured as substantial green infrastructure (limited canopy/shade, limited habitat complexity).",
+      "No visible stormwater features (bioswales, permeable shoulders, infiltration planters) are apparent; runoff likely flows to conventional drainage typical of highways."
+    ],
+    "aesthetics": [
+      "The sweeping curve and repeating chevron signs create a strong visual rhythm and legibility, giving the scene a coherent infrastructural aesthetic.",
+      "Visual clutter and harshness come from continuous metal guardrails, concrete barriers, and overhead utility towers/lines, reducing scenic quality.",
+      "Greenery is present but low in diversity and canopy; the large blank sky and wide asphalt surface dominate the view, limiting visual richness."
+    ],
+    "comfort": [
+      "Thermal comfort is weak: there is minimal tree canopy and little shade over the paved surface, which would increase heat exposure for any non-motorized user.",
+      "Physical comfort for non-drivers is poor because there is no visible sidewalk/shoulder designed for walking, and guardrails constrain refuge space.",
+      "Psychological comfort for non-drivers is low due to the highway-like environment (wide asphalt, high-speed geometry, barriers), which typically feels noisy and intimidating even if traffic volume appears light in the image."
+    ],
+    "walkability": [
+      "No dedicated pedestrian sidewalk or path is visible along the ramp; the paved area is designed as vehicle lanes with edge lines, not pedestrian space.",
+      "Guardrails and a concrete barrier create a continuous edge with no evident safe crossing points, reducing route choice and pedestrian connectivity.",
+      "Lack of pedestrian-scale elements (crosswalks, signals, lighting poles for walkways, resting points) indicates walking is not an intended or supported mode here."
+    ],
+    "bikeability": [
+      "No bike lane markings, protected cycle track, or paved shoulder of usable width is visible; the space reads as general traffic lanes only.",
+      "Ramp curvature and merging/high-speed context increase cyclist exposure to turning and speed differentials, reducing cycling feasibility.",
+      "There is no visible bicycle-support infrastructure (bike signage, rumble separation, safe pull-off area, or bike parking), indicating cycling is not accommodated."
+    ]
+  },
+  "image_id": "img-1777267106964-gzw95blt1",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:24:11.980Z",
+  "record_id": "bbd5d226c3dc47179355200b3641678c",
+  "stored_image_url": "/storage/records/bbd5d226c3dc47179355200b3641678c/image.jpg",
+  "stored_thumb_url": "/storage/records/bbd5d226c3dc47179355200b3641678c/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:25:08.345Z"
+}

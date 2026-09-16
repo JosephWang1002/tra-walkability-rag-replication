@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 61,
+      "equity": 63,
+      "fairness": 60,
+      "accessibility": 60
+    },
+    "safety": 71,
+    "livability": 62,
+    "sustainability": 58,
+    "aesthetics": 72,
+    "comfort": 64,
+    "walkability": 57,
+    "bikeability": 41
+  },
+  "explanations": {
+    "justice": [
+      "The street space is dominated by a central carriageway, while the pedestrian realm appears narrow and incomplete, suggesting only moderate equity in spatial allocation among users.",
+      "Both sides have curb-separated edges and some walking space beside the buildings, so access is not fully excluded for pedestrians, supporting a moderate fairness score.",
+      "No visible curb ramps, tactile paving, or marked barrier-free crossings can be identified in the image, which weakens accessibility for diverse users.",
+      "There is no dedicated bicycle lane or protected cycling space, indicating that road resources are not evenly distributed across travel modes."
+    ],
+    "safety": [
+      "The roadway is relatively narrow with a simple centerline and low apparent traffic volume, which likely reduces vehicle speed and conflict intensity.",
+      "Streetlights are installed along the right side, which can support nighttime visibility and personal security.",
+      "Large street trees on the left create enclosure and may calm traffic visually, but they also partly obscure sightlines along the edge.",
+      "Parked cars along the curb introduce some dooring and visibility risks for passing cyclists or pedestrians near the roadway."
+    ],
+    "livability": [
+      "The street is lined with residential apartment buildings, indicating a stable everyday living environment rather than a purely traffic-oriented corridor.",
+      "Mature trees provide a neighborhood character and a quieter residential atmosphere, which supports day-to-day livability.",
+      "However, there are no visible benches, play areas, shopfronts, or community activity nodes, so opportunities for social interaction appear limited.",
+      "The open asphalt road and sparse active frontage at ground level make the street feel functional but not highly vibrant."
+    ],
+    "sustainability": [
+      "The mature street trees contribute shade, cooling, and ecological value, supporting environmental performance.",
+      "There is no visible dedicated bike lane, bus stop, or other clear low-carbon mobility infrastructure in the scene.",
+      "Large asphalt coverage on the roadway increases impervious surface area and may worsen runoff and heat accumulation.",
+      "The planted strips on both sides are present, but much of the ground cover appears dry and sparse, limiting green infrastructure benefits."
+    ],
+    "aesthetics": [
+      "The mature tree canopy on the left side adds strong visual softness and greenery to the residential street.",
+      "The buildings have relatively consistent height and color, creating a coherent overall streetscape.",
+      "The roadway surface appears newly paved and clean, which improves visual order.",
+      "At the same time, barred balconies, exposed air-conditioning units, and hanging laundry reduce facade neatness and visual refinement."
+    ],
+    "comfort": [
+      "Tree cover on the left provides meaningful shade and improves thermal comfort for users on that side of the street.",
+      "The right side has much less canopy cover and more exposed ground, so thermal comfort is uneven across the corridor.",
+      "The asphalt surface is smooth and the street appears free of heavy congestion, which supports basic physical and psychological comfort.",
+      "No benches, shelters, or dedicated resting facilities are visible, limiting comfort for users who want to stop or linger."
+    ],
+    "walkability": [
+      "There appears to be only a narrow edge space beside the buildings rather than a generous, clearly defined sidewalk, which constrains pedestrian movement.",
+      "No marked crosswalks, pedestrian-priority elements, or curb ramps are visible in the scene, reducing walking convenience and inclusiveness.",
+      "The low-traffic residential character and street trees make walking feel calmer than on a major road.",
+      "Long building frontages with limited active ground-floor uses provide little pedestrian interest or destination value."
+    ],
+    "bikeability": [
+      "There is no visible bike lane, painted cycle marking, or protected cycling space, which is a major limitation for everyday cycling.",
+      "The relatively low traffic volume and narrow residential street may allow informal cycling in mixed traffic conditions.",
+      "Parked cars along the curb create potential dooring conflicts for cyclists using the carriageway.",
+      "No bicycle parking, intersection treatments, or other cycling-supportive facilities can be identified in the image."
+    ]
+  },
+  "image_id": "img-1777146549351-x8d495c9n",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4"
+  },
+  "generated_at": "2026-04-26T06:19:45.580Z",
+  "record_id": "0176ebade1b34f738c5dc615be2ac967",
+  "stored_image_url": "/storage/records/0176ebade1b34f738c5dc615be2ac967/image.jpg",
+  "stored_thumb_url": "/storage/records/0176ebade1b34f738c5dc615be2ac967/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-26T06:20:21.525Z"
+}

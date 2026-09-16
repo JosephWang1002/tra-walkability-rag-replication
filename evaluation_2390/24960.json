@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 49,
+      "equity": 52,
+      "fairness": 50,
+      "accessibility": 45
+    },
+    "safety": 58,
+    "livability": 42,
+    "sustainability": 61,
+    "aesthetics": 66,
+    "comfort": 55,
+    "walkability": 38,
+    "bikeability": 34
+  },
+  "explanations": {
+    "justice": [
+      "The carriageway is very wide while dedicated space for pedestrians or cyclists is not visibly provided, indicating uneven allocation of street space across user groups.",
+      "Road edges are lined with trees and a raised curb on the right, but there is no clearly marked sidewalk, cycle lane, or crossing facility visible for non-motorized users.",
+      "Accessibility is limited because no curb ramps, tactile paving, marked crossings, or continuous barrier-free pedestrian path can be identified in the image."
+    ],
+    "safety": [
+      "The roadway appears wide and sightlines are long and open, which helps drivers detect oncoming conditions early.",
+      "There is no visible protected bike lane, shoulder protection, or pedestrian refuge, increasing potential conflict if people walk or cycle along the road edge.",
+      "Edge conditions are ambiguous because the right side has a curb and planting strip while the left side transitions directly to a dirt edge, which may reduce safety for roadside walking."
+    ],
+    "livability": [
+      "The street has very low visible human activity, with no storefronts, seating, bus stops, or gathering spaces that would support everyday street life.",
+      "Vegetation along both sides softens the corridor, but the environment feels primarily designed for through movement rather than social or local use.",
+      "Only a few buildings are visible and they are set back from the road, suggesting limited direct access to daily services or active street frontage."
+    ],
+    "sustainability": [
+      "Continuous roadside trees and planted verges provide ecological value and some potential air-quality and heat-mitigation benefits.",
+      "The corridor lacks visible public transport infrastructure such as bus stops and lacks dedicated cycling facilities, weakening support for low-carbon travel options.",
+      "There is some green infrastructure presence in the form of planted strips and tree rows, but no visible stormwater features such as bioswales, permeable paving, or rain gardens."
+    ],
+    "aesthetics": [
+      "The double row effect of roadside trees creates a pleasant green frame and improves visual order along the corridor.",
+      "The road surface appears clean and well maintained, with relatively neat edges and limited visible clutter.",
+      "Large utility poles and overhead transmission infrastructure interrupt the natural scene and reduce overall scenic quality."
+    ],
+    "comfort": [
+      "Tree cover exists on both sides, but the travel lane itself is highly exposed and there is little direct shade over any potential walking or cycling space.",
+      "The asphalt surface appears smooth for vehicles, but there are no visible benches, shelters, or designated pedestrian amenities to improve physical comfort off the carriageway.",
+      "The street appears uncrowded and likely relatively quiet in terms of pedestrian conflict, which supports psychological comfort, though its emptiness may feel isolating for some users."
+    ],
+    "walkability": [
+      "No continuous sidewalk is clearly visible on either side, making walking accommodation weak despite the broad corridor.",
+      "There are no visible marked crosswalks, pedestrian signals, curb ramps, or refuge islands to support safe crossing of the wide roadway.",
+      "Tree-lined edges improve visual appeal, but the lack of pedestrian infrastructure and the long uninterrupted road section reduce practical walkability."
+    ],
+    "bikeability": [
+      "There is no marked or protected bicycle lane visible, so cyclists would likely need to share space with motor vehicles on the main carriageway.",
+      "The wide road and open sightlines may help visibility for cycling, but the absence of edge protection or shoulder definition lowers perceived safety.",
+      "No bicycle parking, bike signage, colored lane markings, or intersection treatments for cyclists can be identified in the scene."
+    ]
+  },
+  "image_id": "img-1777056011950-2q81o85pc",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4"
+  },
+  "generated_at": "2026-04-25T04:22:51.159Z",
+  "record_id": "dbc32de333544c43adc1ce4ae50dc938",
+  "stored_image_url": "/storage/records/dbc32de333544c43adc1ce4ae50dc938/image.jpg",
+  "stored_thumb_url": "/storage/records/dbc32de333544c43adc1ce4ae50dc938/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-25T04:33:49.775Z"
+}

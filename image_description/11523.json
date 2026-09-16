@@ -1,0 +1,33 @@
+{
+ "oid": "11523",
+ "description": "The scene shows a wide, smooth asphalt roadway with a continuous curb and a narrow, reddish paved shoulder on the right; there is no clearly marked sidewalk or pedestrian path, and no visible curb ramps or other accessibility features. Traffic is separated from the greenery mainly by the curb/shoulder, with no physical barriers, and the road appears to be low-speed/controlled by lane markings and a gentle curve; streetlights line the left side, providing lighting support. Vegetation along the right offers some greenery and potential shade, but there are few pedestrian-specific safety elements (e.g., crossings, guardrails, or dedicated walk space).",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 130,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 741,
+   "engine_ttlt_ms": 2721,
+   "pre_inference_ms": 596,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1847,
+   "service_ttlt_ms": 3782,
+   "total_duration_ms": 3195,
+   "user_visible_ttft_ms": 1251
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1114
+ },
+ "latency_s": 90.1,
+ "timestamp": "2026-08-31T15:33:55"
+}

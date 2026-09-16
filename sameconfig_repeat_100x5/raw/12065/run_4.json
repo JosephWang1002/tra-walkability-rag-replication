@@ -1,0 +1,129 @@
+{
+ "oid": "12065",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12065.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12065_120.455786_31.377091_09002900011602251003026904E_242.68_2016_2_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.5,
+ "usage": {
+  "completion_tokens": 946,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 608,
+   "engine_ttlt_ms": 16619,
+   "pre_inference_ms": 548,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1458,
+   "service_ttlt_ms": 17501,
+   "user_visible_ttft_ms": 910
+  },
+  "prompt_tokens": 5277,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6223
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 31.0,\n      \"equity\": 28.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 30.0\n    },\n    \"safety\": 34.0,\n    \"livability\": 26.0,\n    \"sustainability\": 38.0,\n    \"aesthetics\": 40.0,\n    \"comfort\": 33.0,\n    \"walkability\": 24.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Spatial resources are dominated by an unpaved vehicle track, while no marked sidewalk, curb, or protected pedestrian zone is visible, so space is not equitably allocated among road users.\",\n      \"Accessibility is weak because the surface is loose dirt and gravel with potholes and uneven patches, which would hinder strollers, wheelchairs, and people walking side by side.\",\n      \"No curb ramps, tactile paving, zebra crossing, or other inclusive access features are visible; the scene appears to rely on informal movement rules rather than clearly fair, non-discriminatory design.\",\n      \"The parked construction vehicle occupies part of the roadside space, further reducing usable room for non-motorized users.\"\n    ],\n    \"safety\": [\n      \"Safety is limited by the absence of lane markings, sidewalks, crossings, guardrails, or speed-control elements on this shared dirt road.\",\n      \"The road surface is uneven and dusty, with visible ruts, gravel, and small debris that increase slip and trip risk for walkers and instability risk for two-wheel users.\",\n      \"A construction vehicle is parked directly along the travel path, creating a roadside obstacle and narrowing the effective passage width.\",\n      \"Overhead utility poles and a narrow corridor with limited formal organization suggest a low-forgiveness environment if vehicles and pedestrians meet.\"\n    ],\n    \"livability\": [\n      \"The street lacks visible active frontages, shops, seating, bus stops, or community facilities, so it offers little support for daily social or neighborhood life.\",\n      \"The setting appears industrial or service-oriented, with a blue metal fence on one side and a rough access road rather than a people-centered public street.\",\n      \"There are no visible benches, lighting amenities, or gathering spaces that would encourage staying, resting, or casual interaction.\",\n      \"Sparse human activity and the utilitarian roadside condition reduce the sense of vibrancy and everyday convenience.\"\n    ],\n    \"sustainability\": [\n      \"Some mature trees and roadside vegetation on the right provide ecological value and limited shade, which supports sustainability to a degree.\",\n      \"However, the road shows no visible dedicated walking, cycling, or transit infrastructure, so it does little to encourage low-carbon travel choices.\",\n      \"The largely bare dirt surface and exposed soil edges suggest limited stormwater management or durable green-street treatment.\",\n      \"Utility-heavy infrastructure and a construction-oriented roadside environment dominate over integrated green infrastructure.\"\n    ],\n    \"aesthetics\": [\n      \"The tree canopy on the right adds some visual softness and natural texture to an otherwise harsh corridor.\",\n      \"Aesthetics are weakened by the unpaved dusty road, scattered debris, and rough roadside edges, which create a neglected appearance.\",\n      \"The long blue metal fence and visible utility lines contribute to an industrial, monotonous visual character.\",\n      \"There is little coherent streetscape design such as paving patterns, coordinated planting, lighting, or street furniture.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is mixed: trees on the right provide partial shade, but much of the road remains fully exposed to sun.\",\n      \"Physical comfort is poor because the travel surface is uneven dirt and gravel, with bumps and loose material that make walking and rolling uncomfortable.\",\n      \"No benches, shelters, or resting points are visible, so users have no support for stopping or waiting comfortably.\",\n      \"Psychological comfort is reduced by the isolated industrial character, roadside obstacles, and lack of clearly protected pedestrian space.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very low because no continuous sidewalk or pedestrian path is visible; people would need to walk directly on the vehicle track.\",\n      \"The dirt surface is irregular and includes gravel, potholes, and edge drop-offs, which undermines stable and convenient walking.\",\n      \"There are no crossings, curb ramps, wayfinding elements, or pedestrian-priority markings to support safe route continuity.\",\n      \"Partial tree shade improves the walking experience slightly, but it does not compensate for the lack of basic pedestrian infrastructure.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 31.0,
+   "equity": 28.0,
+   "fairness": 35.0,
+   "accessibility": 30.0
+  },
+  "safety": 34.0,
+  "livability": 26.0,
+  "sustainability": 38.0,
+  "aesthetics": 40.0,
+  "comfort": 33.0,
+  "walkability": 24.0
+ },
+ "scores_flat": {
+  "justice": 31.0,
+  "justice_equity": 28.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 30.0,
+  "safety": 34.0,
+  "livability": 26.0,
+  "sustainability": 38.0,
+  "aesthetics": 40.0,
+  "comfort": 33.0,
+  "walkability": 24.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:16:38+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Spatial resources are dominated by an unpaved vehicle track, while no marked sidewalk, curb, or protected pedestrian zone is visible, so space is not equitably allocated among road users.",
+   "Accessibility is weak because the surface is loose dirt and gravel with potholes and uneven patches, which would hinder strollers, wheelchairs, and people walking side by side.",
+   "No curb ramps, tactile paving, zebra crossing, or other inclusive access features are visible; the scene appears to rely on informal movement rules rather than clearly fair, non-discriminatory design.",
+   "The parked construction vehicle occupies part of the roadside space, further reducing usable room for non-motorized users."
+  ],
+  "safety": [
+   "Safety is limited by the absence of lane markings, sidewalks, crossings, guardrails, or speed-control elements on this shared dirt road.",
+   "The road surface is uneven and dusty, with visible ruts, gravel, and small debris that increase slip and trip risk for walkers and instability risk for two-wheel users.",
+   "A construction vehicle is parked directly along the travel path, creating a roadside obstacle and narrowing the effective passage width.",
+   "Overhead utility poles and a narrow corridor with limited formal organization suggest a low-forgiveness environment if vehicles and pedestrians meet."
+  ],
+  "livability": [
+   "The street lacks visible active frontages, shops, seating, bus stops, or community facilities, so it offers little support for daily social or neighborhood life.",
+   "The setting appears industrial or service-oriented, with a blue metal fence on one side and a rough access road rather than a people-centered public street.",
+   "There are no visible benches, lighting amenities, or gathering spaces that would encourage staying, resting, or casual interaction.",
+   "Sparse human activity and the utilitarian roadside condition reduce the sense of vibrancy and everyday convenience."
+  ],
+  "sustainability": [
+   "Some mature trees and roadside vegetation on the right provide ecological value and limited shade, which supports sustainability to a degree.",
+   "However, the road shows no visible dedicated walking, cycling, or transit infrastructure, so it does little to encourage low-carbon travel choices.",
+   "The largely bare dirt surface and exposed soil edges suggest limited stormwater management or durable green-street treatment.",
+   "Utility-heavy infrastructure and a construction-oriented roadside environment dominate over integrated green infrastructure."
+  ],
+  "aesthetics": [
+   "The tree canopy on the right adds some visual softness and natural texture to an otherwise harsh corridor.",
+   "Aesthetics are weakened by the unpaved dusty road, scattered debris, and rough roadside edges, which create a neglected appearance.",
+   "The long blue metal fence and visible utility lines contribute to an industrial, monotonous visual character.",
+   "There is little coherent streetscape design such as paving patterns, coordinated planting, lighting, or street furniture."
+  ],
+  "comfort": [
+   "Thermal comfort is mixed: trees on the right provide partial shade, but much of the road remains fully exposed to sun.",
+   "Physical comfort is poor because the travel surface is uneven dirt and gravel, with bumps and loose material that make walking and rolling uncomfortable.",
+   "No benches, shelters, or resting points are visible, so users have no support for stopping or waiting comfortably.",
+   "Psychological comfort is reduced by the isolated industrial character, roadside obstacles, and lack of clearly protected pedestrian space."
+  ],
+  "walkability": [
+   "Walkability is very low because no continuous sidewalk or pedestrian path is visible; people would need to walk directly on the vehicle track.",
+   "The dirt surface is irregular and includes gravel, potholes, and edge drop-offs, which undermines stable and convenient walking.",
+   "There are no crossings, curb ramps, wayfinding elements, or pedestrian-priority markings to support safe route continuity.",
+   "Partial tree shade improves the walking experience slightly, but it does not compensate for the lack of basic pedestrian infrastructure."
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "oid": "16568",
+ "description": "The sidewalk is a narrow, continuous concrete path running along the road, but it shows cracking and uneven patches, with no clear curb separation from the adjacent driveway/road edge. There is little traffic separation—cars are parked close to the walkway and the roadway appears to have no barrier or marked pedestrian crossing—while overhead utility lines dominate the streetscape and there is minimal greenery or shade. Lighting is not visible, and there are no obvious accessibility features such as curb ramps or tactile paving; obstacles are limited but the driveway entrances and parked vehicles reduce pedestrian comfort and safety.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 117,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 9,
+   "engine_ttft_ms": 743,
+   "engine_ttlt_ms": 1841,
+   "pre_inference_ms": 452,
+   "service_tbt_ms": 9,
+   "service_ttft_ms": 1727,
+   "service_ttlt_ms": 2820,
+   "total_duration_ms": 2376,
+   "user_visible_ttft_ms": 1274
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1101
+ },
+ "latency_s": 6.1,
+ "timestamp": "2026-08-31T16:12:07"
+}

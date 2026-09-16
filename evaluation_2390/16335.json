@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 62.8,
+      "equity": 60.5,
+      "fairness": 64,
+      "accessibility": 63.8
+    },
+    "safety": 71.2,
+    "livability": 55.6,
+    "sustainability": 63.4,
+    "aesthetics": 66.8,
+    "comfort": 60.7,
+    "walkability": 57.9,
+    "bikeability": 48.6
+  },
+  "explanations": {
+    "justice": [
+      "Large carriageway space is allocated to motor traffic (multiple wide lanes), while pedestrian space is not clearly visible in-frame, suggesting an imbalanced distribution of street resources across users.",
+      "A continuous central metal barrier limits random mid-block crossing, which can be fair for safety but may reduce direct access for people who need shorter crossing paths (e.g., families, people carrying goods).",
+      "No curb ramps, tactile paving, or marked crosswalks are visible in the scene, making barrier-free accessibility uncertain for wheelchair users and visually impaired pedestrians.",
+      "The right-side verge includes a narrow planted strip and a building setback wall, but there are no clearly designated spaces or amenities that support non-motorized users equally (e.g., waiting areas, protected cycle space)."
+    ],
+    "safety": [
+      "A central guardrail physically separates opposing traffic streams, reducing the likelihood of head-on conflicts and dangerous mid-road crossings.",
+      "Clear lane markings and a relatively straight road alignment provide good driver sight distance, supporting predictable vehicle movements.",
+      "Streetlights are present along the corridor, which generally supports nighttime visibility and perceived safety (though actual illumination cannot be confirmed from daytime imagery).",
+      "The presence of a bus operating in the same general roadway space as cars indicates potential speed differentials; without dedicated bus pull-ins visible, stopping maneuvers could create rear-end or merging risks."
+    ],
+    "livability": [
+      "The corridor reads primarily as a traffic-moving arterial (wide lanes, barriers), which tends to reduce street-level social activity and local vibrancy for all users.",
+      "Long building frontages and a boundary wall on the right reduce active edges; few signs of ground-floor commercial frontage or seating/activity nodes are visible.",
+      "Greenery is present (dense tree line on the left and planted strip on the right), but it functions more as roadside buffer than as usable public space.",
+      "No visible public amenities (benches, plazas, small parks, kiosks) appear in the frame, limiting opportunities for lingering and social interaction."
+    ],
+    "sustainability": [
+      "A public bus is visible, indicating the corridor supports mass transit, which can reduce per-capita emissions compared to single-occupancy driving.",
+      "Extensive mature trees along the left side provide substantial urban canopy and potential ecosystem services (shade, air quality benefits, carbon sequestration).",
+      "The street design appears vehicle-oriented (large paved surface area), which increases heat absorption and stormwater runoff potential compared with more permeable/green designs.",
+      "No visible cycling infrastructure or bike parking is present, limiting low-carbon mode shift for short trips."
+    ],
+    "aesthetics": [
+      "The left side features a continuous row of mature, well-formed trees creating a strong visual corridor and a pleasant green edge.",
+      "The streetscape looks relatively orderly and clean with consistent lane markings and maintained roadway surfaces.",
+      "The right-side residential buildings appear uniform in massing, contributing some visual coherence, though the long wall and limited frontage detail reduce interest at eye level.",
+      "The central barrier and wide asphalt dominance create a utilitarian appearance that weakens overall streetscape charm."
+    ],
+    "comfort": [
+      "Thermal comfort is supported by substantial tree canopy on the left, offering shade and likely reducing perceived heat for users near that edge.",
+      "Physical comfort for pedestrians is uncertain because sidewalks and their surface quality are not clearly visible; the scene is dominated by roadway space.",
+      "Psychological comfort may be reduced for non-drivers due to the arterial scale (wide lanes, moving traffic, barriers), which can feel noisy and stressful even if orderly.",
+      "No visible seating, shelters, or resting features are present, reducing comfort for people waiting (e.g., for transit) or needing breaks."
+    ],
+    "walkability": [
+      "Sidewalk presence/continuity cannot be confirmed from the image; pedestrian realm is not prominent, which lowers confidence in comfortable walking conditions.",
+      "The central guardrail restricts informal crossings, potentially forcing longer detours to reach destinations on the opposite side.",
+      "Few visible pedestrian-oriented elements (crosswalk markings, pedestrian signals, curb extensions, refuge islands) are present, which weakens perceived walk priority.",
+      "Tree-lined edges can improve walking experience where accessible, but the overall corridor scale remains vehicle-dominant."
+    ],
+    "bikeability": [
+      "No dedicated bike lanes, protected cycle tracks, or clear bicycle markings are visible, indicating low provision for cycling.",
+      "High-speed/arterial geometry (wide lanes and long sightlines) tends to increase motor vehicle speeds, which can significantly reduce perceived cycling safety without separation.",
+      "The central barrier provides traffic separation for cars but does not create a protected cycling space; cyclists would likely need to mix with general traffic.",
+      "No visible bicycle parking or cycling-supportive amenities appear in the corridor, lowering convenience for riders."
+    ]
+  },
+  "image_id": "img-1776928160711-ylsm193gu",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-23T11:24:58.516Z",
+  "record_id": "98be4885c56b41909d742b26d52af4b0",
+  "stored_image_url": "/storage/records/98be4885c56b41909d742b26d52af4b0/image.jpg",
+  "stored_thumb_url": "/storage/records/98be4885c56b41909d742b26d52af4b0/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-23T11:25:16.077Z"
+}

@@ -1,0 +1,122 @@
+{
+ "oid": "21279",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21279.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21279_120.75939_31.237682_01002900001405261626254055L_267.65_2014_5_吴中区甪直镇远航路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.7,
+ "usage": {
+  "completion_tokens": 840,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 14,
+   "engine_ttft_ms": 515,
+   "engine_ttlt_ms": 12571,
+   "pre_inference_ms": 490,
+   "service_tbt_ms": 14,
+   "service_ttft_ms": 1303,
+   "service_ttlt_ms": 13291,
+   "user_visible_ttft_ms": 812
+  },
+  "prompt_tokens": 5445,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6285
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 45.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 54.0,\n    \"livability\": 46.0,\n    \"sustainability\": 63.0,\n    \"aesthetics\": 74.0,\n    \"comfort\": 58.0,\n    \"walkability\": 38.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The road space is almost entirely a narrow paved carriageway, with no visible sidewalk, shoulder path, or marked space for pedestrians and cyclists, so spatial resources are not evenly distributed among all road users.\",\n      \"There are no visible curb ramps, tactile paving, crossings, or barrier-free edge treatments; for all social groups, this indicates weak accessibility support beyond basic flat pavement.\",\n      \"The corridor appears open to mixed use by drivers, walkers, and cyclists, but there are no markings or rules visible on the surface to clarify priority or protect non-motorized users, which weakens fairness in shared use.\"\n    ],\n    \"safety\": [\n      \"The roadway is narrow and lacks lane markings, edge lines, or separated pedestrian space, so conflicts between vehicles, cyclists, and walkers could occur if multiple users meet on the curve.\",\n      \"Mature trees and roadside vegetation create a pleasant enclosure but may also limit long-distance sightlines around the bend, reducing reaction time for all road users.\",\n      \"A utility pole is placed close to the road edge on the left, and there is little recovery space beside the pavement, which can increase risk if users need to evade oncoming traffic.\"\n    ],\n    \"livability\": [\n      \"The setting is quiet and low-density, with trees, fields, and a few houses visible, which supports a calm rural living environment.\",\n      \"However, there are no visible benches, shops, bus stops, public facilities, or social spaces along the road, so the street itself offers limited everyday activity or service support.\",\n      \"The corridor functions mainly as a movement route through farmland rather than as a socially active public street, which lowers livability for diverse daily uses.\"\n    ],\n    \"sustainability\": [\n      \"The street is lined with substantial tree cover on both sides, providing visible green infrastructure and ecological value.\",\n      \"The rural, low-intensity setting with adjacent cultivated land suggests relatively limited hardscape coverage compared with more heavily urbanized streets.\",\n      \"At the same time, there is no visible bike lane, transit stop, permeable drainage feature, or stormwater facility, so sustainable mobility and water-management elements are only partly supported.\"\n    ],\n    \"aesthetics\": [\n      \"The tree-lined road creates a coherent green corridor with a strong natural character and pleasing visual rhythm.\",\n      \"Open farmland, scattered houses, and the gently curving alignment produce a calm and scenic rural view.\",\n      \"The roadway and verges appear relatively clean and uncluttered, with little visual noise from signage, parking, or heavy traffic infrastructure.\"\n    ],\n    \"comfort\": [\n      \"Tree canopy along both sides provides intermittent shade, which likely improves thermal comfort compared with a fully exposed rural road.\",\n      \"The pavement surface appears smooth and continuous, supporting basic physical comfort for walking, cycling, and driving.\",\n      \"Comfort is reduced by the absence of sidewalks, benches, shelters, or dedicated resting areas, and by the psychological discomfort that can come from sharing a narrow carriageway with vehicles.\"\n    ],\n    \"walkability\": [\n      \"There is no visible sidewalk or separated footpath, so pedestrians would need to walk directly on the carriageway.\",\n      \"The road edges are narrow and blend into grass and soil, offering little protected walking space or buffer from vehicles.\",\n      \"Although the route is flat and visually pleasant, the lack of crossings, pedestrian markings, lighting cues, and dedicated walking infrastructure makes it weak for safe and convenient walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 45.0,
+   "fairness": 40.0,
+   "accessibility": 41.0
+  },
+  "safety": 54.0,
+  "livability": 46.0,
+  "sustainability": 63.0,
+  "aesthetics": 74.0,
+  "comfort": 58.0,
+  "walkability": 38.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 45.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 41.0,
+  "safety": 54.0,
+  "livability": 46.0,
+  "sustainability": 63.0,
+  "aesthetics": 74.0,
+  "comfort": 58.0,
+  "walkability": 38.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:47:44+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The road space is almost entirely a narrow paved carriageway, with no visible sidewalk, shoulder path, or marked space for pedestrians and cyclists, so spatial resources are not evenly distributed among all road users.",
+   "There are no visible curb ramps, tactile paving, crossings, or barrier-free edge treatments; for all social groups, this indicates weak accessibility support beyond basic flat pavement.",
+   "The corridor appears open to mixed use by drivers, walkers, and cyclists, but there are no markings or rules visible on the surface to clarify priority or protect non-motorized users, which weakens fairness in shared use."
+  ],
+  "safety": [
+   "The roadway is narrow and lacks lane markings, edge lines, or separated pedestrian space, so conflicts between vehicles, cyclists, and walkers could occur if multiple users meet on the curve.",
+   "Mature trees and roadside vegetation create a pleasant enclosure but may also limit long-distance sightlines around the bend, reducing reaction time for all road users.",
+   "A utility pole is placed close to the road edge on the left, and there is little recovery space beside the pavement, which can increase risk if users need to evade oncoming traffic."
+  ],
+  "livability": [
+   "The setting is quiet and low-density, with trees, fields, and a few houses visible, which supports a calm rural living environment.",
+   "However, there are no visible benches, shops, bus stops, public facilities, or social spaces along the road, so the street itself offers limited everyday activity or service support.",
+   "The corridor functions mainly as a movement route through farmland rather than as a socially active public street, which lowers livability for diverse daily uses."
+  ],
+  "sustainability": [
+   "The street is lined with substantial tree cover on both sides, providing visible green infrastructure and ecological value.",
+   "The rural, low-intensity setting with adjacent cultivated land suggests relatively limited hardscape coverage compared with more heavily urbanized streets.",
+   "At the same time, there is no visible bike lane, transit stop, permeable drainage feature, or stormwater facility, so sustainable mobility and water-management elements are only partly supported."
+  ],
+  "aesthetics": [
+   "The tree-lined road creates a coherent green corridor with a strong natural character and pleasing visual rhythm.",
+   "Open farmland, scattered houses, and the gently curving alignment produce a calm and scenic rural view.",
+   "The roadway and verges appear relatively clean and uncluttered, with little visual noise from signage, parking, or heavy traffic infrastructure."
+  ],
+  "comfort": [
+   "Tree canopy along both sides provides intermittent shade, which likely improves thermal comfort compared with a fully exposed rural road.",
+   "The pavement surface appears smooth and continuous, supporting basic physical comfort for walking, cycling, and driving.",
+   "Comfort is reduced by the absence of sidewalks, benches, shelters, or dedicated resting areas, and by the psychological discomfort that can come from sharing a narrow carriageway with vehicles."
+  ],
+  "walkability": [
+   "There is no visible sidewalk or separated footpath, so pedestrians would need to walk directly on the carriageway.",
+   "The road edges are narrow and blend into grass and soil, offering little protected walking space or buffer from vehicles.",
+   "Although the route is flat and visually pleasant, the lack of crossings, pedestrian markings, lighting cues, and dedicated walking infrastructure makes it weak for safe and convenient walking."
+  ]
+ }
+}

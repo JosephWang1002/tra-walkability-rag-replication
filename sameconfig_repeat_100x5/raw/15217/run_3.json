@@ -1,0 +1,122 @@
+{
+ "oid": "15217",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\15217.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\15217_120.617361_31.213972_0900290012220828134916688AP_58.36_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.9,
+ "usage": {
+  "completion_tokens": 841,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 17,
+   "engine_ttft_ms": 500,
+   "engine_ttlt_ms": 15071,
+   "pre_inference_ms": 376,
+   "service_tbt_ms": 17,
+   "service_ttft_ms": 1155,
+   "service_ttlt_ms": 15713,
+   "user_visible_ttft_ms": 779
+  },
+  "prompt_tokens": 5279,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6120
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 40.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 34.0,\n    \"sustainability\": 39.0,\n    \"aesthetics\": 52.0,\n    \"comfort\": 43.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is allocated to multiple wide motor-vehicle lanes, while pedestrian space is barely visible, indicating an uneven distribution of public right-of-way for all road users.\",\n      \"A metal median barrier separates directions of traffic and may reduce dangerous crossings, but it also shows that pedestrian movement is tightly constrained and not prioritized in the visible design.\",\n      \"No visible sidewalk, curb ramp, tactile paving, marked pedestrian refuge, or clearly accessible crossing path can be confirmed in the image, so accessibility for diverse users cannot be rated highly.\"\n    ],\n    \"safety\": [\n      \"Lane markings are clear and wide, with directional arrows and signal heads visible ahead, which helps organize vehicle movements and reduces ambiguity for drivers.\",\n      \"The overpass columns, broad carriageway, and high-speed road geometry suggest a vehicle-oriented environment where crossing on foot would feel exposed and potentially unsafe.\",\n      \"A central guardrail and roadside barriers provide separation between traffic streams, but no visible zebra crossing or pedestrian-protected facility is present at the intersection area in view.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by asphalt, flyover infrastructure, traffic signals, and utility poles, with little evidence of active frontage, shops, seating, or social space that would support everyday street life.\",\n      \"Greenery exists mainly as roadside trees and planted edges at the margins, but these do not create a visibly usable public place for lingering or community interaction.\",\n      \"The large intersection under an elevated roadway reads as a transport corridor rather than a human-scaled neighborhood street, limiting its livability for general users.\"\n    ],\n    \"sustainability\": [\n      \"Some planted medians and roadside vegetation are visible, which adds limited green infrastructure compared with a fully paved roadway.\",\n      \"No dedicated bike lane, bus stop, bus-only lane, or other clearly visible support for low-carbon travel can be identified in the image.\",\n      \"The very large paved surface and flyover-centered design indicate strong dependence on motorized traffic, which weakens the sustainability profile of the streetscape.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway appears clean and orderly, with fresh pavement and crisp lane markings that create a visually maintained environment.\",\n      \"Trees and trimmed planting along the edges soften the scene somewhat, especially on the left and right margins.\",\n      \"However, the elevated viaduct, expansive asphalt, signal gantries, and sparse human-scale elements create a utilitarian visual character rather than an inviting or distinctive streetscape.\"\n    ],\n    \"comfort\": [\n      \"There is little visible pedestrian-scale shade where people would actually walk or wait; the overpass provides structural cover in places, but not clearly designed comfort space for users.\",\n      \"No benches, shelters, or resting facilities are visible, so physical comfort for people outside vehicles appears limited.\",\n      \"The broad multi-lane roadway and likely traffic noise from vehicles and the flyover environment may reduce psychological comfort, even though the pavement surface itself looks smooth for driving.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk is clearly visible in the main field of view, making the walking network appear incomplete or at least not legible from the image.\",\n      \"There is no clearly marked zebra crossing, pedestrian signal phase indication for walkers, or refuge island visible for crossing this very wide road.\",\n      \"The intersection geometry is long and vehicle-scaled, and the central barrier further suggests that walking routes are indirect and constrained rather than convenient.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 40.0,
+   "fairness": 45.0,
+   "accessibility": 41.0
+  },
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 39.0,
+  "aesthetics": 52.0,
+  "comfort": 43.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 40.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 41.0,
+  "safety": 58.0,
+  "livability": 34.0,
+  "sustainability": 39.0,
+  "aesthetics": 52.0,
+  "comfort": 43.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:25:42+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is allocated to multiple wide motor-vehicle lanes, while pedestrian space is barely visible, indicating an uneven distribution of public right-of-way for all road users.",
+   "A metal median barrier separates directions of traffic and may reduce dangerous crossings, but it also shows that pedestrian movement is tightly constrained and not prioritized in the visible design.",
+   "No visible sidewalk, curb ramp, tactile paving, marked pedestrian refuge, or clearly accessible crossing path can be confirmed in the image, so accessibility for diverse users cannot be rated highly."
+  ],
+  "safety": [
+   "Lane markings are clear and wide, with directional arrows and signal heads visible ahead, which helps organize vehicle movements and reduces ambiguity for drivers.",
+   "The overpass columns, broad carriageway, and high-speed road geometry suggest a vehicle-oriented environment where crossing on foot would feel exposed and potentially unsafe.",
+   "A central guardrail and roadside barriers provide separation between traffic streams, but no visible zebra crossing or pedestrian-protected facility is present at the intersection area in view."
+  ],
+  "livability": [
+   "The scene is dominated by asphalt, flyover infrastructure, traffic signals, and utility poles, with little evidence of active frontage, shops, seating, or social space that would support everyday street life.",
+   "Greenery exists mainly as roadside trees and planted edges at the margins, but these do not create a visibly usable public place for lingering or community interaction.",
+   "The large intersection under an elevated roadway reads as a transport corridor rather than a human-scaled neighborhood street, limiting its livability for general users."
+  ],
+  "sustainability": [
+   "Some planted medians and roadside vegetation are visible, which adds limited green infrastructure compared with a fully paved roadway.",
+   "No dedicated bike lane, bus stop, bus-only lane, or other clearly visible support for low-carbon travel can be identified in the image.",
+   "The very large paved surface and flyover-centered design indicate strong dependence on motorized traffic, which weakens the sustainability profile of the streetscape."
+  ],
+  "aesthetics": [
+   "The roadway appears clean and orderly, with fresh pavement and crisp lane markings that create a visually maintained environment.",
+   "Trees and trimmed planting along the edges soften the scene somewhat, especially on the left and right margins.",
+   "However, the elevated viaduct, expansive asphalt, signal gantries, and sparse human-scale elements create a utilitarian visual character rather than an inviting or distinctive streetscape."
+  ],
+  "comfort": [
+   "There is little visible pedestrian-scale shade where people would actually walk or wait; the overpass provides structural cover in places, but not clearly designed comfort space for users.",
+   "No benches, shelters, or resting facilities are visible, so physical comfort for people outside vehicles appears limited.",
+   "The broad multi-lane roadway and likely traffic noise from vehicles and the flyover environment may reduce psychological comfort, even though the pavement surface itself looks smooth for driving."
+  ],
+  "walkability": [
+   "No continuous sidewalk is clearly visible in the main field of view, making the walking network appear incomplete or at least not legible from the image.",
+   "There is no clearly marked zebra crossing, pedestrian signal phase indication for walkers, or refuge island visible for crossing this very wide road.",
+   "The intersection geometry is long and vehicle-scaled, and the central barrier further suggests that walking routes are indirect and constrained rather than convenient."
+  ]
+ }
+}

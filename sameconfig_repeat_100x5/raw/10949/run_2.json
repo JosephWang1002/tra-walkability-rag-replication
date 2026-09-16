@@ -1,0 +1,129 @@
+{
+ "oid": "10949",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\10949.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\10949_120.476902_31.251558_09002900122004011101307337I_92.39_2020_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 32.9,
+ "usage": {
+  "completion_tokens": 953,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 383,
+   "engine_ttlt_ms": 14680,
+   "pre_inference_ms": 325,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1024,
+   "service_ttlt_ms": 15290,
+   "user_visible_ttft_ms": 699
+  },
+  "prompt_tokens": 5270,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6223
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 49.0,\n      \"equity\": 52.0,\n      \"fairness\": 48.0,\n      \"accessibility\": 47.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 42.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 51.0,\n    \"comfort\": 44.0,\n    \"walkability\": 45.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The roadway is wide and smoothly paved, so basic movement space is available for multiple users rather than being fully dominated by parked vehicles or clutter.\",\n      \"There is no clearly separated sidewalk on either side; pedestrians appear to share the concrete carriageway with any vehicles, which weakens equitable allocation of space among road users.\",\n      \"No visible curb ramps, tactile paving, marked crossings, or guidance features are present, so accessibility support is limited for users who need barrier-free design.\",\n      \"Long boundary walls and gated compounds on both sides provide little visible public-facing activity or inclusive street infrastructure, suggesting a utilitarian space that serves access more than diverse public use.\"\n    ],\n    \"safety\": [\n      \"The lane is relatively narrow and appears to carry low traffic volume, which likely reduces conflict intensity compared with a busy arterial street.\",\n      \"The straight, long sightline down the road improves forward visibility for all road users.\",\n      \"There are no visible sidewalks, bike lanes, crosswalks, speed humps, or protective barriers, so pedestrians and cyclists would have limited dedicated protection if vehicles are present.\",\n      \"Utility poles and overhead power lines indicate basic infrastructure, but no visible street lighting is evident in the scene, which may reduce perceived safety after dark.\"\n    ],\n    \"livability\": [\n      \"The street is lined mainly by blank walls, gates, and industrial-looking compounds, with no visible shops, cafes, seating, or community amenities that would support everyday street life.\",\n      \"There are no visible pedestrians, cyclists, or social activities, making the corridor feel inactive and weak in public vitality.\",\n      \"A narrow strip of vegetation exists along the left edge and some trees appear farther ahead, but these elements are limited and do not create a strong social or recreational environment.\",\n      \"The setting reads more as a service or access road than a mixed-use neighborhood street, which lowers livability for all road users.\"\n    ],\n    \"sustainability\": [\n      \"The presence of some roadside vegetation and trees ahead adds a small amount of green infrastructure to the corridor.\",\n      \"The street lacks visible public transit stops, bike lanes, or other clear support for low-carbon multimodal travel.\",\n      \"The large concrete surface and sparse planting suggest a hardscape-dominant environment with limited ecological performance.\",\n      \"No visible permeable paving, bioswales, rain gardens, or stormwater features can be identified from the image.\"\n    ],\n    \"aesthetics\": [\n      \"The road surface is clean and visually orderly, which gives the scene a basic sense of neatness.\",\n      \"However, long plain boundary walls on both sides create a monotonous and enclosed visual character.\",\n      \"Vegetation along the left verge and trees in the distance soften the corridor somewhat, but greenery is too limited to strongly enhance visual quality.\",\n      \"Overhead utility lines and utilitarian gates contribute to an industrial, functional appearance rather than a distinctive or attractive streetscape.\"\n    ],\n    \"comfort\": [\n      \"There is very little shade over the roadway, and the open concrete surface under direct sun likely creates poor thermal comfort in warm weather.\",\n      \"The pavement appears smooth and even, which supports basic physical comfort for walking, cycling, and driving.\",\n      \"No benches, shelters, or resting places are visible, so the street offers little support for lingering or recovery.\",\n      \"Blank walls, low activity, and the absence of pedestrian-oriented features may reduce psychological comfort by making the space feel isolated.\"\n    ],\n    \"walkability\": [\n      \"The concrete surface appears continuous, flat, and unobstructed, which supports basic walking movement along the corridor.\",\n      \"Walkability is weakened because there is no dedicated sidewalk; pedestrians would likely need to walk within the same paved space used by vehicles.\",\n      \"There are no visible crossings, curb ramps, tactile guides, seating, or pedestrian signs to improve route quality and usability.\",\n      \"Limited shade, sparse frontage activity, and long blank walls reduce the attractiveness of walking even if the route is physically passable.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 49.0,
+   "equity": 52.0,
+   "fairness": 48.0,
+   "accessibility": 47.0
+  },
+  "safety": 58.0,
+  "livability": 42.0,
+  "sustainability": 46.0,
+  "aesthetics": 51.0,
+  "comfort": 44.0,
+  "walkability": 45.0
+ },
+ "scores_flat": {
+  "justice": 49.0,
+  "justice_equity": 52.0,
+  "justice_fairness": 48.0,
+  "justice_accessibility": 47.0,
+  "safety": 58.0,
+  "livability": 42.0,
+  "sustainability": 46.0,
+  "aesthetics": 51.0,
+  "comfort": 44.0,
+  "walkability": 45.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:12:15+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The roadway is wide and smoothly paved, so basic movement space is available for multiple users rather than being fully dominated by parked vehicles or clutter.",
+   "There is no clearly separated sidewalk on either side; pedestrians appear to share the concrete carriageway with any vehicles, which weakens equitable allocation of space among road users.",
+   "No visible curb ramps, tactile paving, marked crossings, or guidance features are present, so accessibility support is limited for users who need barrier-free design.",
+   "Long boundary walls and gated compounds on both sides provide little visible public-facing activity or inclusive street infrastructure, suggesting a utilitarian space that serves access more than diverse public use."
+  ],
+  "safety": [
+   "The lane is relatively narrow and appears to carry low traffic volume, which likely reduces conflict intensity compared with a busy arterial street.",
+   "The straight, long sightline down the road improves forward visibility for all road users.",
+   "There are no visible sidewalks, bike lanes, crosswalks, speed humps, or protective barriers, so pedestrians and cyclists would have limited dedicated protection if vehicles are present.",
+   "Utility poles and overhead power lines indicate basic infrastructure, but no visible street lighting is evident in the scene, which may reduce perceived safety after dark."
+  ],
+  "livability": [
+   "The street is lined mainly by blank walls, gates, and industrial-looking compounds, with no visible shops, cafes, seating, or community amenities that would support everyday street life.",
+   "There are no visible pedestrians, cyclists, or social activities, making the corridor feel inactive and weak in public vitality.",
+   "A narrow strip of vegetation exists along the left edge and some trees appear farther ahead, but these elements are limited and do not create a strong social or recreational environment.",
+   "The setting reads more as a service or access road than a mixed-use neighborhood street, which lowers livability for all road users."
+  ],
+  "sustainability": [
+   "The presence of some roadside vegetation and trees ahead adds a small amount of green infrastructure to the corridor.",
+   "The street lacks visible public transit stops, bike lanes, or other clear support for low-carbon multimodal travel.",
+   "The large concrete surface and sparse planting suggest a hardscape-dominant environment with limited ecological performance.",
+   "No visible permeable paving, bioswales, rain gardens, or stormwater features can be identified from the image."
+  ],
+  "aesthetics": [
+   "The road surface is clean and visually orderly, which gives the scene a basic sense of neatness.",
+   "However, long plain boundary walls on both sides create a monotonous and enclosed visual character.",
+   "Vegetation along the left verge and trees in the distance soften the corridor somewhat, but greenery is too limited to strongly enhance visual quality.",
+   "Overhead utility lines and utilitarian gates contribute to an industrial, functional appearance rather than a distinctive or attractive streetscape."
+  ],
+  "comfort": [
+   "There is very little shade over the roadway, and the open concrete surface under direct sun likely creates poor thermal comfort in warm weather.",
+   "The pavement appears smooth and even, which supports basic physical comfort for walking, cycling, and driving.",
+   "No benches, shelters, or resting places are visible, so the street offers little support for lingering or recovery.",
+   "Blank walls, low activity, and the absence of pedestrian-oriented features may reduce psychological comfort by making the space feel isolated."
+  ],
+  "walkability": [
+   "The concrete surface appears continuous, flat, and unobstructed, which supports basic walking movement along the corridor.",
+   "Walkability is weakened because there is no dedicated sidewalk; pedestrians would likely need to walk within the same paved space used by vehicles.",
+   "There are no visible crossings, curb ramps, tactile guides, seating, or pedestrian signs to improve route quality and usability.",
+   "Limited shade, sparse frontage activity, and long blank walls reduce the attractiveness of walking even if the route is physically passable."
+  ]
+ }
+}

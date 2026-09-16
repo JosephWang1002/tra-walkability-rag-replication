@@ -1,0 +1,33 @@
+{
+ "oid": "16676",
+ "description": "The sidewalk is a narrow, continuous brick-paved walkway along both sides of the street, but it appears uneven in places and is partially constrained by parked vehicles and street fixtures. There’s limited traffic separation—cars and a van share the roadway immediately adjacent to pedestrians—with overhead utility lines and few visible barriers; shade is provided by tall trees, though lighting is not prominent. Obstacles include a utility pole and hanging laundry/fixtures near building entrances, and no clear curb ramps or other accessibility features are visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 105,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 7,
+   "engine_ttft_ms": 896,
+   "engine_ttlt_ms": 1620,
+   "pre_inference_ms": 370,
+   "service_tbt_ms": 7,
+   "service_ttft_ms": 1657,
+   "service_ttlt_ms": 2376,
+   "total_duration_ms": 2014,
+   "user_visible_ttft_ms": 1287
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1089
+ },
+ "latency_s": 5.5,
+ "timestamp": "2026-08-31T16:13:40"
+}

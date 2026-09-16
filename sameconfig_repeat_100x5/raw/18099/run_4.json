@@ -1,0 +1,122 @@
+{
+ "oid": "18099",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\18099.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\18099_120.531389_31.347278_0900290012200306111421557GR_173.84_2020_3_虎丘区浒墅关镇长江路856号_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 14.1,
+ "usage": {
+  "completion_tokens": 769,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 463,
+   "engine_ttlt_ms": 10451,
+   "pre_inference_ms": 337,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1076,
+   "service_ttlt_ms": 11047,
+   "user_visible_ttft_ms": 739
+  },
+  "prompt_tokens": 5352,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6121
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 61.0,\n      \"equity\": 63.0,\n      \"fairness\": 58.0,\n      \"accessibility\": 62.0\n    },\n    \"safety\": 57.0,\n    \"livability\": 54.0,\n    \"sustainability\": 60.0,\n    \"aesthetics\": 68.0,\n    \"comfort\": 59.0,\n    \"walkability\": 56.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"A full-width zebra crossing is clearly marked across the road, showing that pedestrian movement is formally recognized within the street space.\",\n      \"The roadway appears very wide while dedicated pedestrian space is mostly limited to the crossing edges and distant sidewalks, suggesting spatial resources are still allocated primarily to motor traffic.\",\n      \"No curb ramps, tactile paving, refuge island, or other barrier-free details are visible at the crossing edges, so accessibility for diverse users cannot be confirmed from the image.\"\n    ],\n    \"safety\": [\n      \"The zebra crossing is highly visible in daylight because of the broad white stripes spanning the carriageway.\",\n      \"A large truck is positioned close to the right side of the crossing approach, which can obstruct sight lines between drivers and pedestrians and increase conflict risk near the crosswalk.\",\n      \"The crossing is long and exposed across a wide paved roadway, and no median refuge, signal head, or traffic-calming feature is visible to reduce pedestrian exposure time.\"\n    ],\n    \"livability\": [\n      \"Rows of mature trees and planted greenery along the far side add environmental quality and make the street edge feel less barren.\",\n      \"The scene is dominated by asphalt roadway with little visible street furniture, seating, storefront activity, or human-scale amenities that would support everyday social use.\",\n      \"The intersection appears quiet and uncluttered, but it functions more as a movement corridor than as an active public place.\"\n    ],\n    \"sustainability\": [\n      \"The continuous tree canopy and landscaped verge on the far side provide ecological value, shade, and some mitigation of heat and air pollution.\",\n      \"No bike lane, bus stop, or other visible support for low-carbon travel modes is present in the image.\",\n      \"The large expanse of impervious asphalt suggests a car-oriented surface treatment, and no visible permeable paving, bioswale, or stormwater feature can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"The aligned rows of mature trees create a strong green backdrop and visual rhythm across the street.\",\n      \"The roadway and crosswalk markings appear relatively clean and orderly, which supports a neat overall appearance.\",\n      \"Visual quality is reduced somewhat by overhead utility wires and the large truck occupying the foreground right side of the frame.\"\n    ],\n    \"comfort\": [\n      \"Tree cover along the far side likely improves thermal comfort for users near that edge by providing shade.\",\n      \"The crossing itself is mostly unshaded and spans a broad open asphalt surface, which can feel hot and physically tiring during sunny conditions.\",\n      \"No benches, shelters, or resting facilities are visible, and the presence of a heavy truck close to the crossing may reduce psychological comfort for people on foot.\"\n    ],\n    \"walkability\": [\n      \"The marked zebra crossing provides a direct legal walking route across the street and improves route legibility.\",\n      \"Walkability is weakened by the wide crossing distance and absence of a median refuge, which makes pedestrians spend longer in the carriageway.\",\n      \"No visible curb ramps, tactile guidance, pedestrian signals, or protective bollards can be confirmed at the crossing approaches, limiting confidence in continuous pedestrian support.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 61.0,
+   "equity": 63.0,
+   "fairness": 58.0,
+   "accessibility": 62.0
+  },
+  "safety": 57.0,
+  "livability": 54.0,
+  "sustainability": 60.0,
+  "aesthetics": 68.0,
+  "comfort": 59.0,
+  "walkability": 56.0
+ },
+ "scores_flat": {
+  "justice": 61.0,
+  "justice_equity": 63.0,
+  "justice_fairness": 58.0,
+  "justice_accessibility": 62.0,
+  "safety": 57.0,
+  "livability": 54.0,
+  "sustainability": 60.0,
+  "aesthetics": 68.0,
+  "comfort": 59.0,
+  "walkability": 56.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:38:33+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "A full-width zebra crossing is clearly marked across the road, showing that pedestrian movement is formally recognized within the street space.",
+   "The roadway appears very wide while dedicated pedestrian space is mostly limited to the crossing edges and distant sidewalks, suggesting spatial resources are still allocated primarily to motor traffic.",
+   "No curb ramps, tactile paving, refuge island, or other barrier-free details are visible at the crossing edges, so accessibility for diverse users cannot be confirmed from the image."
+  ],
+  "safety": [
+   "The zebra crossing is highly visible in daylight because of the broad white stripes spanning the carriageway.",
+   "A large truck is positioned close to the right side of the crossing approach, which can obstruct sight lines between drivers and pedestrians and increase conflict risk near the crosswalk.",
+   "The crossing is long and exposed across a wide paved roadway, and no median refuge, signal head, or traffic-calming feature is visible to reduce pedestrian exposure time."
+  ],
+  "livability": [
+   "Rows of mature trees and planted greenery along the far side add environmental quality and make the street edge feel less barren.",
+   "The scene is dominated by asphalt roadway with little visible street furniture, seating, storefront activity, or human-scale amenities that would support everyday social use.",
+   "The intersection appears quiet and uncluttered, but it functions more as a movement corridor than as an active public place."
+  ],
+  "sustainability": [
+   "The continuous tree canopy and landscaped verge on the far side provide ecological value, shade, and some mitigation of heat and air pollution.",
+   "No bike lane, bus stop, or other visible support for low-carbon travel modes is present in the image.",
+   "The large expanse of impervious asphalt suggests a car-oriented surface treatment, and no visible permeable paving, bioswale, or stormwater feature can be identified."
+  ],
+  "aesthetics": [
+   "The aligned rows of mature trees create a strong green backdrop and visual rhythm across the street.",
+   "The roadway and crosswalk markings appear relatively clean and orderly, which supports a neat overall appearance.",
+   "Visual quality is reduced somewhat by overhead utility wires and the large truck occupying the foreground right side of the frame."
+  ],
+  "comfort": [
+   "Tree cover along the far side likely improves thermal comfort for users near that edge by providing shade.",
+   "The crossing itself is mostly unshaded and spans a broad open asphalt surface, which can feel hot and physically tiring during sunny conditions.",
+   "No benches, shelters, or resting facilities are visible, and the presence of a heavy truck close to the crossing may reduce psychological comfort for people on foot."
+  ],
+  "walkability": [
+   "The marked zebra crossing provides a direct legal walking route across the street and improves route legibility.",
+   "Walkability is weakened by the wide crossing distance and absence of a median refuge, which makes pedestrians spend longer in the carriageway.",
+   "No visible curb ramps, tactile guidance, pedestrian signals, or protective bollards can be confirmed at the crossing approaches, limiting confidence in continuous pedestrian support."
+  ]
+ }
+}

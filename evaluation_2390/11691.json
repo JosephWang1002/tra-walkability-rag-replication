@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 53,
+      "equity": 55,
+      "fairness": 54,
+      "accessibility": 51
+    },
+    "safety": 55,
+    "livability": 64,
+    "sustainability": 52,
+    "aesthetics": 56,
+    "comfort": 55,
+    "walkability": 62,
+    "bikeability": 50
+  },
+  "explanations": {
+    "justice": [
+      "Narrow internal access lane inside urban village residential area.",
+      "Space occupied by roadside parking, pedestrian right is squeezed.",
+      "Limited travel fairness, basic accessibility can be guaranteed."
+    ],
+    "safety": [
+      "Narrow road width, blocked sight distance by parked vehicles.",
+      "Mixed pedestrian and slow vehicle traffic.",
+      "Low driving speed reduces major accident risk."
+    ],
+    "livability": [
+      "Dense residential buildings, high life convenience.",
+      "Quiet internal block environment.",
+      "Suitable for long-term resident daily living."
+    ],
+    "sustainability": [
+      "Very limited roadside green vegetation.",
+      "Large hardened pavement with poor permeability.",
+      "Overall sustainability level is low."
+    ],
+    "aesthetics": [
+      "Simple residential street appearance.",
+      "Messy wiring and building exterior affect visual tidiness.",
+      "Plain practical daily living street aesthetic."
+    ],
+    "comfort": [
+      "Blocked ventilation and lighting in narrow space.",
+      "Residential life noise interference.",
+      "Basic acceptable daily passing comfort."
+    ],
+    "walkability": [
+      "Wide enough reserved pedestrian space.",
+      "Familiar neighborhood environment improves walking experience.",
+      "Good walking experience for short-distance movement."
+    ],
+    "bikeability": [
+      "No dedicated bicycle lane.",
+      "Obstacles and parked vehicles limit riding.",
+      "Only suitable for extremely slow short-distance cycling."
+    ]
+  },
+  "image_id": "urban-village-residential-narrow-lane",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-05-15T10:10:00.000Z",
+  "record_id": "rec-urban-village-residential-narrow-lane",
+  "export_timestamp": "2026-05-15T10:10:50.000Z"
+}

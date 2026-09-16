@@ -1,0 +1,33 @@
+{
+ "oid": "18099",
+ "description": "The image shows a wide, multi-lane intersection with marked crosswalk/turning markings, but no visible continuous sidewalk or curb ramps in the immediate foreground; the roadway surface appears smooth with some cracking. There is limited pedestrian separation from traffic—only lane markings and a curb/edge are visible, while a parked or slow-moving truck occupies the right side, creating an obstacle and narrowing usable space. Trees line both sides and provide some shade, but lighting and dedicated pedestrian infrastructure (signals, barriers, accessible crossings) are not clearly visible.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 112,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 12,
+   "engine_ttft_ms": 901,
+   "engine_ttlt_ms": 2281,
+   "pre_inference_ms": 397,
+   "service_tbt_ms": 12,
+   "service_ttft_ms": 1841,
+   "service_ttlt_ms": 3217,
+   "total_duration_ms": 2828,
+   "user_visible_ttft_ms": 1444
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1096
+ },
+ "latency_s": 6.2,
+ "timestamp": "2026-08-31T16:20:13"
+}

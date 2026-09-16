@@ -1,0 +1,129 @@
+{
+ "oid": "16297",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16297.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16297_120.521009_31.238573_0900290012220831104152356AH_266.9_2022_8_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.6,
+ "usage": {
+  "completion_tokens": 954,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 555,
+   "engine_ttlt_ms": 14673,
+   "pre_inference_ms": 461,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1313,
+   "service_ttlt_ms": 15424,
+   "user_visible_ttft_ms": 852
+  },
+  "prompt_tokens": 5364,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6318
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 42.0,\n      \"equity\": 40.0,\n      \"fairness\": 45.0,\n      \"accessibility\": 41.0\n    },\n    \"safety\": 46.0,\n    \"livability\": 38.0,\n    \"sustainability\": 44.0,\n    \"aesthetics\": 47.0,\n    \"comfort\": 43.0,\n    \"walkability\": 35.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most of the narrow street space is occupied by parked cars on both sides, while no clearly protected sidewalk or pedestrian zone is visible, indicating an uneven allocation of space among road users.\",\n      \"The roadway appears to function as a shared surface without marked pedestrian priority, so people walking must adapt to vehicle parking and movement rather than being given dedicated space.\",\n      \"No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible in the scene, which weakens accessibility for a broad range of users.\",\n      \"The long blank walls on both sides provide little active frontage or public-facing amenities, suggesting the street mainly serves vehicle access rather than inclusive public use.\"\n    ],\n    \"safety\": [\n      \"There is no visible sidewalk separation, bike lane, or lane marking, so pedestrians, cyclists, and cars would likely mix in the same narrow carriageway, increasing conflict risk.\",\n      \"Cars are parked along both edges of the lane, which narrows the usable travel space and may reduce sightlines for people stepping out from between vehicles.\",\n      \"The street is relatively narrow and appears low-speed, which can moderate crash severity compared with a wider fast road.\",\n      \"Large trees line part of the street, but their trunks and parked vehicles create intermittent visual obstructions that may limit visibility ahead.\"\n    ],\n    \"livability\": [\n      \"The street lacks visible benches, storefronts, play elements, or social spaces, so it appears to support passage and parking more than everyday public life.\",\n      \"Long continuous boundary walls on both sides reduce visual interest and street activity, making the environment feel less socially engaging.\",\n      \"Some mature trees add greenery and soften the corridor, which modestly improves the everyday experience of the street.\",\n      \"The overall setting looks quiet with limited moving traffic visible, but the dominance of parked cars reduces the sense of the street as a people-oriented place.\"\n    ],\n    \"sustainability\": [\n      \"Mature street trees provide canopy and ecological value, contributing positively to shade and urban greening.\",\n      \"However, the visible transport function is dominated by private car parking, with no bus stop, bike lane, or other clear support for low-carbon travel modes in view.\",\n      \"The paved surface appears largely impermeable, and no rain gardens, bioswales, or other stormwater features are visible.\",\n      \"The narrow scale of the street could support walking in principle, but the absence of dedicated pedestrian infrastructure limits that sustainability benefit.\"\n    ],\n    \"aesthetics\": [\n      \"Large mature trees create a pleasant green canopy and add the strongest visual quality in the scene.\",\n      \"The street has a simple linear perspective with repeating parked cars and walls, but the long blank concrete wall on the right feels monotonous.\",\n      \"Building facades are mostly utilitarian and inactive, offering limited architectural richness or human-scale detail.\",\n      \"The environment appears reasonably clean and orderly, which supports a moderate visual score despite the plain setting.\"\n    ],\n    \"comfort\": [\n      \"Tree canopy on the left side provides meaningful shade, which improves thermal comfort for all road users during warm weather.\",\n      \"Comfort is reduced by the lack of visible seating, resting places, or pedestrian amenities anywhere along the corridor.\",\n      \"Because there is no dedicated sidewalk, people walking would need to share space with vehicles and parked cars, lowering physical and psychological comfort.\",\n      \"The street appears relatively quiet and low-traffic at the moment of capture, which likely reduces noise stress compared with a busier road.\"\n    ],\n    \"walkability\": [\n      \"No continuous, clearly designated sidewalk is visible, so walking space is ambiguous and likely interrupted by parked vehicles and driveway-like edges.\",\n      \"There are no visible crossings, curb extensions, pedestrian markings, or wayfinding elements to support safe and legible walking routes.\",\n      \"The narrow street and low apparent traffic volume make walking possible, but not especially comfortable or prioritized.\",\n      \"Tree shade improves the walking experience somewhat, yet the inactive walls and car-dominated layout reduce overall walkability.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 42.0,
+   "equity": 40.0,
+   "fairness": 45.0,
+   "accessibility": 41.0
+  },
+  "safety": 46.0,
+  "livability": 38.0,
+  "sustainability": 44.0,
+  "aesthetics": 47.0,
+  "comfort": 43.0,
+  "walkability": 35.0
+ },
+ "scores_flat": {
+  "justice": 42.0,
+  "justice_equity": 40.0,
+  "justice_fairness": 45.0,
+  "justice_accessibility": 41.0,
+  "safety": 46.0,
+  "livability": 38.0,
+  "sustainability": 44.0,
+  "aesthetics": 47.0,
+  "comfort": 43.0,
+  "walkability": 35.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:28:39+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most of the narrow street space is occupied by parked cars on both sides, while no clearly protected sidewalk or pedestrian zone is visible, indicating an uneven allocation of space among road users.",
+   "The roadway appears to function as a shared surface without marked pedestrian priority, so people walking must adapt to vehicle parking and movement rather than being given dedicated space.",
+   "No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible in the scene, which weakens accessibility for a broad range of users.",
+   "The long blank walls on both sides provide little active frontage or public-facing amenities, suggesting the street mainly serves vehicle access rather than inclusive public use."
+  ],
+  "safety": [
+   "There is no visible sidewalk separation, bike lane, or lane marking, so pedestrians, cyclists, and cars would likely mix in the same narrow carriageway, increasing conflict risk.",
+   "Cars are parked along both edges of the lane, which narrows the usable travel space and may reduce sightlines for people stepping out from between vehicles.",
+   "The street is relatively narrow and appears low-speed, which can moderate crash severity compared with a wider fast road.",
+   "Large trees line part of the street, but their trunks and parked vehicles create intermittent visual obstructions that may limit visibility ahead."
+  ],
+  "livability": [
+   "The street lacks visible benches, storefronts, play elements, or social spaces, so it appears to support passage and parking more than everyday public life.",
+   "Long continuous boundary walls on both sides reduce visual interest and street activity, making the environment feel less socially engaging.",
+   "Some mature trees add greenery and soften the corridor, which modestly improves the everyday experience of the street.",
+   "The overall setting looks quiet with limited moving traffic visible, but the dominance of parked cars reduces the sense of the street as a people-oriented place."
+  ],
+  "sustainability": [
+   "Mature street trees provide canopy and ecological value, contributing positively to shade and urban greening.",
+   "However, the visible transport function is dominated by private car parking, with no bus stop, bike lane, or other clear support for low-carbon travel modes in view.",
+   "The paved surface appears largely impermeable, and no rain gardens, bioswales, or other stormwater features are visible.",
+   "The narrow scale of the street could support walking in principle, but the absence of dedicated pedestrian infrastructure limits that sustainability benefit."
+  ],
+  "aesthetics": [
+   "Large mature trees create a pleasant green canopy and add the strongest visual quality in the scene.",
+   "The street has a simple linear perspective with repeating parked cars and walls, but the long blank concrete wall on the right feels monotonous.",
+   "Building facades are mostly utilitarian and inactive, offering limited architectural richness or human-scale detail.",
+   "The environment appears reasonably clean and orderly, which supports a moderate visual score despite the plain setting."
+  ],
+  "comfort": [
+   "Tree canopy on the left side provides meaningful shade, which improves thermal comfort for all road users during warm weather.",
+   "Comfort is reduced by the lack of visible seating, resting places, or pedestrian amenities anywhere along the corridor.",
+   "Because there is no dedicated sidewalk, people walking would need to share space with vehicles and parked cars, lowering physical and psychological comfort.",
+   "The street appears relatively quiet and low-traffic at the moment of capture, which likely reduces noise stress compared with a busier road."
+  ],
+  "walkability": [
+   "No continuous, clearly designated sidewalk is visible, so walking space is ambiguous and likely interrupted by parked vehicles and driveway-like edges.",
+   "There are no visible crossings, curb extensions, pedestrian markings, or wayfinding elements to support safe and legible walking routes.",
+   "The narrow street and low apparent traffic volume make walking possible, but not especially comfortable or prioritized.",
+   "Tree shade improves the walking experience somewhat, yet the inactive walls and car-dominated layout reduce overall walkability."
+  ]
+ }
+}

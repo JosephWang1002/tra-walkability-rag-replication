@@ -1,0 +1,125 @@
+{
+ "oid": "16849",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\16849.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\16849_120.580498_31.312941_0900290012200304102952357GN_85.6_2020_3_姑苏区金阊街道枫桥路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 19.4,
+ "usage": {
+  "completion_tokens": 944,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 480,
+   "engine_ttlt_ms": 15993,
+   "pre_inference_ms": 318,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 1144,
+   "service_ttlt_ms": 16597,
+   "user_visible_ttft_ms": 826
+  },
+  "prompt_tokens": 5188,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6132
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 49.0,\n      \"equity\": 52.0,\n      \"fairness\": 50.0,\n      \"accessibility\": 45.0\n    },\n    \"safety\": 58.0,\n    \"livability\": 42.0,\n    \"sustainability\": 38.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 41.0,\n    \"walkability\": 40.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"Most visible street space is allocated to multiple wide motor-vehicle lanes, while pedestrian space on the right edge appears narrow and constrained behind a guardrail, indicating an uneven distribution of road space among users.\",\n      \"A marked zebra crossing is visible ahead, which supports basic crossing rights for all users, but no curb ramps, tactile paving, or median refuge are clearly visible from the image.\",\n      \"The right-side sidewalk appears physically separated from traffic by a railing, which can help protect pedestrians, yet the walking zone looks limited compared with the very wide carriageway and there is no visible dedicated cycling space.\"\n    ],\n    \"safety\": [\n      \"Lane markings are clear and the roadway is wide and orderly, which helps drivers maintain predictable movement and reduces immediate conflict between vehicles.\",\n      \"A zebra crossing is present ahead, but the road is very broad with several traffic lanes, so pedestrians would need to cross a long exposure distance without a clearly visible refuge island.\",\n      \"There is no visible protected bike lane or cycle track, meaning cyclists would likely need to mix with fast-moving traffic on this arterial-scale road, which lowers safety for all road users.\",\n      \"The guardrail along the right side provides some separation between pedestrians and traffic, improving edge protection on the sidewalk.\"\n    ],\n    \"livability\": [\n      \"The street is dominated by asphalt lanes, an elevated structure on the left, and utilitarian residential blocks on the right, creating a traffic-oriented environment rather than a socially active public realm.\",\n      \"There are no visible benches, pocket spaces, outdoor seating, or active storefronts at street level that would support lingering or everyday street life.\",\n      \"The visible pedestrian realm is narrow and secondary compared with the carriageway, which weakens the sense of the street as a place for daily community activity.\"\n    ],\n    \"sustainability\": [\n      \"No dedicated cycling infrastructure or visible bus-priority lane can be seen, so the corridor appears to prioritize private motor traffic over lower-carbon travel modes.\",\n      \"Green infrastructure is limited: there are only small planted strips or shrubs near the elevated structure, with very little visible tree canopy along the walking edge.\",\n      \"The large paved roadway surface and lack of visible permeable landscape features suggest limited stormwater or heat-mitigation benefits.\"\n    ],\n    \"aesthetics\": [\n      \"The street has some visual order through consistent lane markings, aligned streetlights, and a continuous building edge on the right.\",\n      \"However, the elevated structure on the left forms a long blank barrier, and the broad asphalt foreground creates a harsh, infrastructure-heavy visual character.\",\n      \"The residential buildings appear repetitive and plain, and the overcast sky combined with limited greenery reduces visual richness and attractiveness.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort appears weak because there is very little visible tree shade or canopy along the pedestrian side, and the broad paved roadway likely increases heat exposure in warm weather.\",\n      \"Physical comfort for walking seems limited by the narrow right-side sidewalk and the absence of visible seating, resting areas, or generous buffer space.\",\n      \"Psychological comfort is reduced by the arterial scale of the road, the long elevated wall-like structure on the left, and the dominance of vehicle space, which can make the environment feel inhospitable for non-drivers.\",\n      \"The road surface itself looks smooth for vehicles, but that benefit does not translate into strong comfort for pedestrians because pedestrian amenities are sparse.\"\n    ],\n    \"walkability\": [\n      \"A sidewalk is visible on the right and a zebra crossing is marked ahead, so basic walking infrastructure exists.\",\n      \"Walkability is weakened by the very wide carriageway, which increases crossing distance and makes the street feel vehicle-dominated.\",\n      \"No visible street trees, benches, active frontages, or generous pedestrian zone are present to make walking pleasant or inviting.\",\n      \"The guardrail protects pedestrians from traffic at the edge, but it also reinforces that walking space is confined and secondary to motor movement.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 49.0,
+   "equity": 52.0,
+   "fairness": 50.0,
+   "accessibility": 45.0
+  },
+  "safety": 58.0,
+  "livability": 42.0,
+  "sustainability": 38.0,
+  "aesthetics": 46.0,
+  "comfort": 41.0,
+  "walkability": 40.0
+ },
+ "scores_flat": {
+  "justice": 49.0,
+  "justice_equity": 52.0,
+  "justice_fairness": 50.0,
+  "justice_accessibility": 45.0,
+  "safety": 58.0,
+  "livability": 42.0,
+  "sustainability": 38.0,
+  "aesthetics": 46.0,
+  "comfort": 41.0,
+  "walkability": 40.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:34:24+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "Most visible street space is allocated to multiple wide motor-vehicle lanes, while pedestrian space on the right edge appears narrow and constrained behind a guardrail, indicating an uneven distribution of road space among users.",
+   "A marked zebra crossing is visible ahead, which supports basic crossing rights for all users, but no curb ramps, tactile paving, or median refuge are clearly visible from the image.",
+   "The right-side sidewalk appears physically separated from traffic by a railing, which can help protect pedestrians, yet the walking zone looks limited compared with the very wide carriageway and there is no visible dedicated cycling space."
+  ],
+  "safety": [
+   "Lane markings are clear and the roadway is wide and orderly, which helps drivers maintain predictable movement and reduces immediate conflict between vehicles.",
+   "A zebra crossing is present ahead, but the road is very broad with several traffic lanes, so pedestrians would need to cross a long exposure distance without a clearly visible refuge island.",
+   "There is no visible protected bike lane or cycle track, meaning cyclists would likely need to mix with fast-moving traffic on this arterial-scale road, which lowers safety for all road users.",
+   "The guardrail along the right side provides some separation between pedestrians and traffic, improving edge protection on the sidewalk."
+  ],
+  "livability": [
+   "The street is dominated by asphalt lanes, an elevated structure on the left, and utilitarian residential blocks on the right, creating a traffic-oriented environment rather than a socially active public realm.",
+   "There are no visible benches, pocket spaces, outdoor seating, or active storefronts at street level that would support lingering or everyday street life.",
+   "The visible pedestrian realm is narrow and secondary compared with the carriageway, which weakens the sense of the street as a place for daily community activity."
+  ],
+  "sustainability": [
+   "No dedicated cycling infrastructure or visible bus-priority lane can be seen, so the corridor appears to prioritize private motor traffic over lower-carbon travel modes.",
+   "Green infrastructure is limited: there are only small planted strips or shrubs near the elevated structure, with very little visible tree canopy along the walking edge.",
+   "The large paved roadway surface and lack of visible permeable landscape features suggest limited stormwater or heat-mitigation benefits."
+  ],
+  "aesthetics": [
+   "The street has some visual order through consistent lane markings, aligned streetlights, and a continuous building edge on the right.",
+   "However, the elevated structure on the left forms a long blank barrier, and the broad asphalt foreground creates a harsh, infrastructure-heavy visual character.",
+   "The residential buildings appear repetitive and plain, and the overcast sky combined with limited greenery reduces visual richness and attractiveness."
+  ],
+  "comfort": [
+   "Thermal comfort appears weak because there is very little visible tree shade or canopy along the pedestrian side, and the broad paved roadway likely increases heat exposure in warm weather.",
+   "Physical comfort for walking seems limited by the narrow right-side sidewalk and the absence of visible seating, resting areas, or generous buffer space.",
+   "Psychological comfort is reduced by the arterial scale of the road, the long elevated wall-like structure on the left, and the dominance of vehicle space, which can make the environment feel inhospitable for non-drivers.",
+   "The road surface itself looks smooth for vehicles, but that benefit does not translate into strong comfort for pedestrians because pedestrian amenities are sparse."
+  ],
+  "walkability": [
+   "A sidewalk is visible on the right and a zebra crossing is marked ahead, so basic walking infrastructure exists.",
+   "Walkability is weakened by the very wide carriageway, which increases crossing distance and makes the street feel vehicle-dominated.",
+   "No visible street trees, benches, active frontages, or generous pedestrian zone are present to make walking pleasant or inviting.",
+   "The guardrail protects pedestrians from traffic at the edge, but it also reinforces that walking space is confined and secondary to motor movement."
+  ]
+ }
+}

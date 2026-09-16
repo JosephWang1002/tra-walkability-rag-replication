@@ -1,0 +1,122 @@
+{
+ "oid": "23649",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23649.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23649_120.748539_31.383781_09002900121708021157284747H_284.49_2017_8_苏州工业园区唯亭街道水芙路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.9,
+ "usage": {
+  "completion_tokens": 870,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 370,
+   "engine_ttlt_ms": 13355,
+   "pre_inference_ms": 270,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 884,
+   "service_ttlt_ms": 13862,
+   "user_visible_ttft_ms": 614
+  },
+  "prompt_tokens": 5368,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 5120
+  },
+  "total_tokens": 6238
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 18.0,\n      \"equity\": 20.0,\n      \"fairness\": 18.0,\n      \"accessibility\": 16.0\n    },\n    \"safety\": 42.0,\n    \"livability\": 12.0,\n    \"sustainability\": 28.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 20.0,\n    \"walkability\": 8.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible space is almost entirely allocated to a multi-lane motor roadway, while no sidewalk, crosswalk, or pedestrian zone is visible, indicating highly uneven distribution of street space among road users.\",\n      \"Continuous concrete barriers with red guardrails line both sides of the carriageway, and there are no visible curb ramps, tactile paving, or barrier-free pedestrian paths, which weakens accessibility for non-drivers.\",\n      \"Tall light poles and extensive road infrastructure are provided for vehicle movement, but equivalent facilities for walking such as benches, shelters, or protected footpaths are absent, suggesting limited fairness across user groups.\"\n    ],\n    \"safety\": [\n      \"The asphalt surface appears smooth and lane markings are clear, which supports predictable vehicle movement and reduces immediate crash risk for drivers.\",\n      \"Concrete side barriers and red guardrails separate the roadway from the edges and elevated sides, helping prevent vehicles from leaving the carriageway.\",\n      \"Safety is weakened for all road users beyond drivers because no sidewalk, refuge area, bike lane, or crossing facility is visible on this elevated corridor, leaving no safe accommodation for walking or other non-motorized travel.\"\n    ],\n    \"livability\": [\n      \"The scene functions as a transport corridor rather than a social street: there are no shops, active frontages, seating areas, or public gathering spaces visible.\",\n      \"Large elevated structures, long concrete walls, and rail viaducts dominate the environment, creating a utilitarian setting with little evidence of daily street life.\",\n      \"Although residential towers are visible in the distance, the immediate roadway environment offers no visible amenities for staying, meeting, or local neighborhood use.\"\n    ],\n    \"sustainability\": [\n      \"The adjacent elevated rail infrastructure on the right suggests the corridor is served by mass transit, which can support lower-carbon regional mobility.\",\n      \"Some green vegetation is visible below and beside the elevated structures, adding limited ecological value compared with a fully paved corridor.\",\n      \"However, the photographed space itself is dominated by wide motor-vehicle pavement and hard concrete infrastructure, with no visible bike lane, permeable paving, or street trees directly serving the roadway environment.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway has a clean, orderly appearance with fresh asphalt, crisp white lane markings, and consistent red rail details that create visual neatness.\",\n      \"Long parallel elevated structures and regularly spaced light poles produce a strong linear composition, but also make the scene feel monotonous and infrastructure-heavy.\",\n      \"Visual quality is reduced by the dominance of concrete barriers, noise walls, and viaducts, while human-scale landscape elements such as trees, storefronts, or public art are largely absent.\"\n    ],\n    \"comfort\": [\n      \"There is no visible shade over the roadway or any pedestrian area, and the exposed paved surface likely creates poor thermal comfort in hot weather.\",\n      \"No benches, rest areas, or widened shoulders are visible, so the corridor provides almost no physical comfort for anyone outside a vehicle.\",\n      \"The tall barriers, elevated structures, and fast-road geometry create a psychologically harsh environment with little sense of enclosure, refuge, or human-scale amenity.\"\n    ],\n    \"walkability\": [\n      \"No sidewalk is visible on either side of the road, making basic pedestrian movement effectively unsupported in the photographed segment.\",\n      \"There are no crosswalks, curb ramps, pedestrian signals, or refuge islands visible, so route continuity for walking appears absent.\",\n      \"The corridor is defined by long uninterrupted vehicle lanes, concrete barriers, and elevated infrastructure, which strongly discourages walking and provides no evident pedestrian comfort or destination appeal.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 18.0,
+   "equity": 20.0,
+   "fairness": 18.0,
+   "accessibility": 16.0
+  },
+  "safety": 42.0,
+  "livability": 12.0,
+  "sustainability": 28.0,
+  "aesthetics": 46.0,
+  "comfort": 20.0,
+  "walkability": 8.0
+ },
+ "scores_flat": {
+  "justice": 18.0,
+  "justice_equity": 20.0,
+  "justice_fairness": 18.0,
+  "justice_accessibility": 16.0,
+  "safety": 42.0,
+  "livability": 12.0,
+  "sustainability": 28.0,
+  "aesthetics": 46.0,
+  "comfort": 20.0,
+  "walkability": 8.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:56:43+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible space is almost entirely allocated to a multi-lane motor roadway, while no sidewalk, crosswalk, or pedestrian zone is visible, indicating highly uneven distribution of street space among road users.",
+   "Continuous concrete barriers with red guardrails line both sides of the carriageway, and there are no visible curb ramps, tactile paving, or barrier-free pedestrian paths, which weakens accessibility for non-drivers.",
+   "Tall light poles and extensive road infrastructure are provided for vehicle movement, but equivalent facilities for walking such as benches, shelters, or protected footpaths are absent, suggesting limited fairness across user groups."
+  ],
+  "safety": [
+   "The asphalt surface appears smooth and lane markings are clear, which supports predictable vehicle movement and reduces immediate crash risk for drivers.",
+   "Concrete side barriers and red guardrails separate the roadway from the edges and elevated sides, helping prevent vehicles from leaving the carriageway.",
+   "Safety is weakened for all road users beyond drivers because no sidewalk, refuge area, bike lane, or crossing facility is visible on this elevated corridor, leaving no safe accommodation for walking or other non-motorized travel."
+  ],
+  "livability": [
+   "The scene functions as a transport corridor rather than a social street: there are no shops, active frontages, seating areas, or public gathering spaces visible.",
+   "Large elevated structures, long concrete walls, and rail viaducts dominate the environment, creating a utilitarian setting with little evidence of daily street life.",
+   "Although residential towers are visible in the distance, the immediate roadway environment offers no visible amenities for staying, meeting, or local neighborhood use."
+  ],
+  "sustainability": [
+   "The adjacent elevated rail infrastructure on the right suggests the corridor is served by mass transit, which can support lower-carbon regional mobility.",
+   "Some green vegetation is visible below and beside the elevated structures, adding limited ecological value compared with a fully paved corridor.",
+   "However, the photographed space itself is dominated by wide motor-vehicle pavement and hard concrete infrastructure, with no visible bike lane, permeable paving, or street trees directly serving the roadway environment."
+  ],
+  "aesthetics": [
+   "The roadway has a clean, orderly appearance with fresh asphalt, crisp white lane markings, and consistent red rail details that create visual neatness.",
+   "Long parallel elevated structures and regularly spaced light poles produce a strong linear composition, but also make the scene feel monotonous and infrastructure-heavy.",
+   "Visual quality is reduced by the dominance of concrete barriers, noise walls, and viaducts, while human-scale landscape elements such as trees, storefronts, or public art are largely absent."
+  ],
+  "comfort": [
+   "There is no visible shade over the roadway or any pedestrian area, and the exposed paved surface likely creates poor thermal comfort in hot weather.",
+   "No benches, rest areas, or widened shoulders are visible, so the corridor provides almost no physical comfort for anyone outside a vehicle.",
+   "The tall barriers, elevated structures, and fast-road geometry create a psychologically harsh environment with little sense of enclosure, refuge, or human-scale amenity."
+  ],
+  "walkability": [
+   "No sidewalk is visible on either side of the road, making basic pedestrian movement effectively unsupported in the photographed segment.",
+   "There are no crosswalks, curb ramps, pedestrian signals, or refuge islands visible, so route continuity for walking appears absent.",
+   "The corridor is defined by long uninterrupted vehicle lanes, concrete barriers, and elevated infrastructure, which strongly discourages walking and provides no evident pedestrian comfort or destination appeal."
+  ]
+ }
+}

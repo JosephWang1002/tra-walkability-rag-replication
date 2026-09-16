@@ -1,0 +1,122 @@
+{
+ "oid": "23428",
+ "run": 2,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23428.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23428_120.677836_31.39172_09002900011507270110012081A_129.77_2015_7_相城区澄阳街道_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 14.4,
+ "usage": {
+  "completion_tokens": 775,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 13,
+   "engine_ttft_ms": 488,
+   "engine_ttlt_ms": 10931,
+   "pre_inference_ms": 288,
+   "service_tbt_ms": 13,
+   "service_ttft_ms": 1019,
+   "service_ttlt_ms": 11458,
+   "user_visible_ttft_ms": 730
+  },
+  "prompt_tokens": 5380,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6155
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 38.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 29.0\n    },\n    \"safety\": 41.0,\n    \"livability\": 46.0,\n    \"sustainability\": 58.0,\n    \"aesthetics\": 62.0,\n    \"comfort\": 39.0,\n    \"walkability\": 28.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible roadway is a narrow cracked rural lane with no marked sidewalk, so space is not clearly allocated for different road users and pedestrians appear to be secondary to vehicles.\",\n      \"There are utility poles placed directly along the road edge and stacked timber beside the lane, which can constrain movement and reduce fair usable space for all users.\",\n      \"No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible, so accessibility is weak for users who need smooth and clearly designated pedestrian infrastructure.\"\n    ],\n    \"safety\": [\n      \"The lane edge runs immediately beside an open water-filled field ditch, creating a roadside hazard with no guardrail or protective barrier visible.\",\n      \"The pavement is visibly cracked and uneven near the right edge, which raises risk for walking, cycling, and vehicle maneuvering.\",\n      \"There are no lane markings, pedestrian crossings, traffic calming devices, or separated walking space visible, so conflicts between road users would rely mainly on informal negotiation.\"\n    ],\n    \"livability\": [\n      \"The surrounding green agricultural landscape and distant houses create a quiet low-density setting that may feel calm and visually open.\",\n      \"However, there are no visible benches, shops, bus stops, lighting amenities, or social facilities along the lane, limiting everyday street life and convenience.\",\n      \"The roadside timber storage and utility infrastructure make the edge feel functional and sparse rather than supportive of lingering or community activity.\"\n    ],\n    \"sustainability\": [\n      \"The large adjacent agricultural fields and abundant vegetation indicate substantial permeable surface and low overall site sealing.\",\n      \"The rural setting appears low intensity, but no visible public transport stop, bike lane, or dedicated active-mobility infrastructure is present to support low-carbon travel choices.\",\n      \"Open drainage along the field edge suggests some natural water management capacity, though no designed green street or stormwater facility is clearly visible.\"\n    ],\n    \"aesthetics\": [\n      \"The expansive green rice field, tree line, and open sky provide a pleasant natural rural view with strong landscape character.\",\n      \"The scene is visually weakened by overhead utility wires and poles that dominate the right side of the image.\",\n      \"Cracked pavement and stacked lumber at the roadside reduce visual refinement and make the street edge appear unfinished.\"\n    ],\n    \"comfort\": [\n      \"There is almost no visible shade over the roadway or roadside path area, so thermal comfort would likely be poor in hot sunny weather.\",\n      \"The pavement surface is cracked and narrow, reducing physical comfort for walking and cycling.\",\n      \"The open rural setting may offer low crowding and relatively low traffic stress, but the lack of seating, shelter, and protected pedestrian space limits overall comfort.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk or separated pedestrian path is visible, so walking appears to occur on the same narrow paved surface used by vehicles.\",\n      \"The road edge is constrained by utility poles, stacked timber, and an adjacent drainage/wet field edge, reducing effective walking space and route comfort.\",\n      \"There are no crossings, curb ramps, wayfinding elements, or pedestrian amenities visible, so the environment provides weak support for everyday walking.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 38.0,
+   "fairness": 35.0,
+   "accessibility": 29.0
+  },
+  "safety": 41.0,
+  "livability": 46.0,
+  "sustainability": 58.0,
+  "aesthetics": 62.0,
+  "comfort": 39.0,
+  "walkability": 28.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 38.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 29.0,
+  "safety": 41.0,
+  "livability": 46.0,
+  "sustainability": 58.0,
+  "aesthetics": 62.0,
+  "comfort": 39.0,
+  "walkability": 28.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:56:10+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible roadway is a narrow cracked rural lane with no marked sidewalk, so space is not clearly allocated for different road users and pedestrians appear to be secondary to vehicles.",
+   "There are utility poles placed directly along the road edge and stacked timber beside the lane, which can constrain movement and reduce fair usable space for all users.",
+   "No curb ramps, tactile paving, marked crossings, or other barrier-free elements are visible, so accessibility is weak for users who need smooth and clearly designated pedestrian infrastructure."
+  ],
+  "safety": [
+   "The lane edge runs immediately beside an open water-filled field ditch, creating a roadside hazard with no guardrail or protective barrier visible.",
+   "The pavement is visibly cracked and uneven near the right edge, which raises risk for walking, cycling, and vehicle maneuvering.",
+   "There are no lane markings, pedestrian crossings, traffic calming devices, or separated walking space visible, so conflicts between road users would rely mainly on informal negotiation."
+  ],
+  "livability": [
+   "The surrounding green agricultural landscape and distant houses create a quiet low-density setting that may feel calm and visually open.",
+   "However, there are no visible benches, shops, bus stops, lighting amenities, or social facilities along the lane, limiting everyday street life and convenience.",
+   "The roadside timber storage and utility infrastructure make the edge feel functional and sparse rather than supportive of lingering or community activity."
+  ],
+  "sustainability": [
+   "The large adjacent agricultural fields and abundant vegetation indicate substantial permeable surface and low overall site sealing.",
+   "The rural setting appears low intensity, but no visible public transport stop, bike lane, or dedicated active-mobility infrastructure is present to support low-carbon travel choices.",
+   "Open drainage along the field edge suggests some natural water management capacity, though no designed green street or stormwater facility is clearly visible."
+  ],
+  "aesthetics": [
+   "The expansive green rice field, tree line, and open sky provide a pleasant natural rural view with strong landscape character.",
+   "The scene is visually weakened by overhead utility wires and poles that dominate the right side of the image.",
+   "Cracked pavement and stacked lumber at the roadside reduce visual refinement and make the street edge appear unfinished."
+  ],
+  "comfort": [
+   "There is almost no visible shade over the roadway or roadside path area, so thermal comfort would likely be poor in hot sunny weather.",
+   "The pavement surface is cracked and narrow, reducing physical comfort for walking and cycling.",
+   "The open rural setting may offer low crowding and relatively low traffic stress, but the lack of seating, shelter, and protected pedestrian space limits overall comfort."
+  ],
+  "walkability": [
+   "No continuous sidewalk or separated pedestrian path is visible, so walking appears to occur on the same narrow paved surface used by vehicles.",
+   "The road edge is constrained by utility poles, stacked timber, and an adjacent drainage/wet field edge, reducing effective walking space and route comfort.",
+   "There are no crossings, curb ramps, wayfinding elements, or pedestrian amenities visible, so the environment provides weak support for everyday walking."
+  ]
+ }
+}

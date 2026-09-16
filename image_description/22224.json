@@ -1,0 +1,33 @@
+{
+ "oid": "22224",
+ "description": "The image shows a narrow, continuous parking/drive lane with no visible pedestrian sidewalk; the only pedestrian-adjacent surfaces appear to be a cobblestone strip along the left and a curb/edge on the right. Traffic is separated from any walkway by parked cars and lane markings, with no physical barriers or clear pedestrian crossing features visible, and the roadway surface looks worn with patches and stains. Dense trees provide substantial shade, but lighting and accessibility elements (e.g., curb ramps/curb cuts) are not visible, and there are obstacles near the edge (e.g., a bollard/utility object and signage).",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 129,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 35,
+   "engine_ttft_ms": 609,
+   "engine_ttlt_ms": 5159,
+   "pre_inference_ms": 451,
+   "service_tbt_ms": 35,
+   "service_ttft_ms": 1186,
+   "service_ttlt_ms": 5714,
+   "total_duration_ms": 5270,
+   "user_visible_ttft_ms": 735
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1113
+ },
+ "latency_s": 8.5,
+ "timestamp": "2026-08-31T16:38:29"
+}

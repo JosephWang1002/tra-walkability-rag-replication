@@ -1,0 +1,33 @@
+{
+ "oid": "17811",
+ "description": "The street has no clear, continuous sidewalk; the roadway edge is mostly bare ground with debris and construction materials piled along both sides, creating an obstacle-filled walking path. Traffic is mixed with parked cars and no visible pedestrian barriers or lane separation, and the street appears to be low-speed but lacks dedicated crossings or accessibility features like curb cuts/ramps. There is little greenery or shade, and lighting is not visible in this daytime view.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 91,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 228,
+   "engine_ttlt_ms": 1615,
+   "pre_inference_ms": 292,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 600,
+   "service_ttlt_ms": 1975,
+   "total_duration_ms": 1690,
+   "user_visible_ttft_ms": 308
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1075
+ },
+ "latency_s": 8.2,
+ "timestamp": "2026-08-31T16:18:17"
+}

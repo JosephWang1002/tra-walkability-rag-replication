@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 41,
+      "equity": 43,
+      "fairness": 42,
+      "accessibility": 37
+    },
+    "safety": 46,
+    "livability": 30,
+    "sustainability": 36,
+    "aesthetics": 32,
+    "comfort": 33,
+    "walkability": 34,
+    "bikeability": 31
+  },
+  "explanations": {
+    "justice": [
+      "Industrial area temporary logistics auxiliary road, mainly serving large freight vehicles.",
+      "Only basic flat passing pavement, no barrier-free optimization design.",
+      "Road resources obviously favor engineering vehicles, overall equity is low."
+    ],
+    "safety": [
+      "Narrow road width, roadside stacking and uneven road surface bring hidden dangers.",
+      "Mixed flow of heavy trucks and pedestrians increases collision risk.",
+      "Lack of traffic markings, warning signs and isolation protection."
+    ],
+    "livability": [
+      "Pure industrial production supporting area, no permanent residential function.",
+      "Construction dust, noise and pollution greatly reduce environmental quality.",
+      "Zero leisure and public service facilities."
+    ],
+    "sustainability": [
+      "Sparse surrounding weeds have limited ecological benefits.",
+      "Exposed bare soil causes dust and soil erosion.",
+      "Poor environmental sustainability."
+    ],
+    "aesthetics": [
+      "Messy roadside environment, stacked materials and simple factory buildings.",
+      "No artificial greening and landscape beautification.",
+      "Overall dilapidated and disordered visual impression."
+    ],
+    "comfort": [
+      "Bumpy road surface and dust lead to extremely poor passing experience.",
+      "Long-term noise and vibration interference.",
+      "No human-oriented comfort design."
+    ],
+    "walkability": [
+      "Only suitable for short-distance passage of factory staff.",
+      "Dust and vehicle interference affect walking experience greatly.",
+      "No dedicated pedestrian safety zone."
+    ],
+    "bikeability": [
+      "No bicycle lane planning at all.",
+      "High riding risk.",
+      "Not recommended for any riding activity."
+    ]
+  },
+  "image_id": "suburban-factory-logistics-access-lane",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-05-06T10:04:00.000Z",
+  "record_id": "rec-suburban-factory-logistics-access-lane",
+  "export_timestamp": "2026-05-06T10:04:50.000Z"
+}

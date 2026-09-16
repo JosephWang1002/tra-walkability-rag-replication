@@ -1,0 +1,32 @@
+{
+ "oid": "16164",
+ "description": "The scene shows a wide, mostly empty roadway with no clearly defined sidewalk along either side; the left edge appears to have a curb and narrow paved strip, while the right side is bordered by a landscaped planting bed with low grass and shrubs. There is limited traffic separation—no visible guardrails or barriers between pedestrians and vehicle lanes, and the road surface looks worn with patches and stains, which could reduce comfort and traction. Street lighting is present via tall poles, but there are few pedestrian amenities or accessibility features visible (no curb cuts/ramps or marked crossings), and the greenery provides some visual buffer but not continuous shade.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 129,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 8,
+   "engine_ttft_ms": 910,
+   "engine_ttlt_ms": 1990,
+   "pre_inference_ms": 360,
+   "service_tbt_ms": 8,
+   "service_ttft_ms": 1651,
+   "service_ttlt_ms": 2728,
+   "user_visible_ttft_ms": 1291
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1113
+ },
+ "latency_s": 6.1,
+ "timestamp": "2026-08-31T16:07:51"
+}

@@ -1,0 +1,122 @@
+{
+ "oid": "23274",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23274.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23274_120.678062_31.34674_09002900121708060706173587H_8.13_2017_8_苏州工业园区娄葑街道陆泾路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.6,
+ "usage": {
+  "completion_tokens": 762,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 16,
+   "engine_ttft_ms": 403,
+   "engine_ttlt_ms": 12835,
+   "pre_inference_ms": 348,
+   "service_tbt_ms": 16,
+   "service_ttft_ms": 991,
+   "service_ttlt_ms": 13414,
+   "user_visible_ttft_ms": 644
+  },
+  "prompt_tokens": 5313,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6075
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 54.0,\n      \"equity\": 58.0,\n      \"fairness\": 52.0,\n      \"accessibility\": 52.0\n    },\n    \"safety\": 60.0,\n    \"livability\": 48.0,\n    \"sustainability\": 66.0,\n    \"aesthetics\": 72.0,\n    \"comfort\": 58.0,\n    \"walkability\": 50.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"A broad paved edge is visible, suggesting some spatial allocation for non-motorized use rather than only vehicle lanes.\",\n      \"However, the image shows no marked sidewalk zone, curb ramps, crossing points, or tactile paving, so accessibility for diverse users is only partially supported.\",\n      \"The streetscape appears dominated by a wide concrete carriageway and a planted verge, while dedicated pedestrian facilities are visually unclear, indicating an uneven distribution of usable space for all road users.\"\n    ],\n    \"safety\": [\n      \"The roadside has a clear open edge with grass verge and trees, which creates some separation from dense roadside obstacles.\",\n      \"No visible crosswalks, traffic calming devices, lane markings for pedestrians, or protective barriers are present, limiting perceived safety for people moving outside vehicles.\",\n      \"The road surface is wide and open, which can encourage higher vehicle speeds if this is an active roadway, reducing safety for all road users.\"\n    ],\n    \"livability\": [\n      \"The row of trees and continuous hedge provide a greener setting than a fully hardscaped roadside.\",\n      \"There are no visible benches, shops, building entrances, bus stops, or social activity generators, so the space appears low in everyday street life and utility.\",\n      \"The scene feels more like an edge road or service corridor than a mixed-use public street, which weakens its support for daily public life.\"\n    ],\n    \"sustainability\": [\n      \"Multiple trees, hedges, and a grass strip contribute visible green cover and some ecological value.\",\n      \"The planted verge may help with shade, habitat, and limited stormwater absorption compared with a fully paved edge.\",\n      \"At the same time, the very large concrete surface and absence of visible transit stops or cycling facilities suggest the corridor still relies heavily on hard infrastructure rather than multimodal low-carbon design.\"\n    ],\n    \"aesthetics\": [\n      \"The continuous line of trees and hedge creates a coherent green edge with a neat visual rhythm.\",\n      \"The streetscape appears relatively clean and uncluttered, with little visible litter or visual chaos.\",\n      \"Visual interest is limited because the scene lacks active frontages, architectural detail, public art, or varied street elements, making it pleasant but somewhat monotonous.\"\n    ],\n    \"comfort\": [\n      \"Trees provide some shade potential, but the canopy is sparse and does not cover much of the paved area, so thermal comfort is only moderate.\",\n      \"The concrete surface looks even and smooth, which supports stable walking or rolling comfort where access is permitted.\",\n      \"There are no visible benches, shelters, or designated resting places, and the open exposed roadway edge may feel psychologically uncomfortable for users outside vehicles.\"\n    ],\n    \"walkability\": [\n      \"The edge route appears wide and relatively flat, which can support basic pedestrian movement.\",\n      \"Yet there is no clearly defined sidewalk, no visible crossing infrastructure, and no curb ramps or tactile guidance, so pedestrian continuity is weak.\",\n      \"The lack of destinations, frontage activity, and shade directly over the walking zone reduces the attractiveness and practicality of walking here.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 54.0,
+   "equity": 58.0,
+   "fairness": 52.0,
+   "accessibility": 52.0
+  },
+  "safety": 60.0,
+  "livability": 48.0,
+  "sustainability": 66.0,
+  "aesthetics": 72.0,
+  "comfort": 58.0,
+  "walkability": 50.0
+ },
+ "scores_flat": {
+  "justice": 54.0,
+  "justice_equity": 58.0,
+  "justice_fairness": 52.0,
+  "justice_accessibility": 52.0,
+  "safety": 60.0,
+  "livability": 48.0,
+  "sustainability": 66.0,
+  "aesthetics": 72.0,
+  "comfort": 58.0,
+  "walkability": 50.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:55:33+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "A broad paved edge is visible, suggesting some spatial allocation for non-motorized use rather than only vehicle lanes.",
+   "However, the image shows no marked sidewalk zone, curb ramps, crossing points, or tactile paving, so accessibility for diverse users is only partially supported.",
+   "The streetscape appears dominated by a wide concrete carriageway and a planted verge, while dedicated pedestrian facilities are visually unclear, indicating an uneven distribution of usable space for all road users."
+  ],
+  "safety": [
+   "The roadside has a clear open edge with grass verge and trees, which creates some separation from dense roadside obstacles.",
+   "No visible crosswalks, traffic calming devices, lane markings for pedestrians, or protective barriers are present, limiting perceived safety for people moving outside vehicles.",
+   "The road surface is wide and open, which can encourage higher vehicle speeds if this is an active roadway, reducing safety for all road users."
+  ],
+  "livability": [
+   "The row of trees and continuous hedge provide a greener setting than a fully hardscaped roadside.",
+   "There are no visible benches, shops, building entrances, bus stops, or social activity generators, so the space appears low in everyday street life and utility.",
+   "The scene feels more like an edge road or service corridor than a mixed-use public street, which weakens its support for daily public life."
+  ],
+  "sustainability": [
+   "Multiple trees, hedges, and a grass strip contribute visible green cover and some ecological value.",
+   "The planted verge may help with shade, habitat, and limited stormwater absorption compared with a fully paved edge.",
+   "At the same time, the very large concrete surface and absence of visible transit stops or cycling facilities suggest the corridor still relies heavily on hard infrastructure rather than multimodal low-carbon design."
+  ],
+  "aesthetics": [
+   "The continuous line of trees and hedge creates a coherent green edge with a neat visual rhythm.",
+   "The streetscape appears relatively clean and uncluttered, with little visible litter or visual chaos.",
+   "Visual interest is limited because the scene lacks active frontages, architectural detail, public art, or varied street elements, making it pleasant but somewhat monotonous."
+  ],
+  "comfort": [
+   "Trees provide some shade potential, but the canopy is sparse and does not cover much of the paved area, so thermal comfort is only moderate.",
+   "The concrete surface looks even and smooth, which supports stable walking or rolling comfort where access is permitted.",
+   "There are no visible benches, shelters, or designated resting places, and the open exposed roadway edge may feel psychologically uncomfortable for users outside vehicles."
+  ],
+  "walkability": [
+   "The edge route appears wide and relatively flat, which can support basic pedestrian movement.",
+   "Yet there is no clearly defined sidewalk, no visible crossing infrastructure, and no curb ramps or tactile guidance, so pedestrian continuity is weak.",
+   "The lack of destinations, frontage activity, and shade directly over the walking zone reduces the attractiveness and practicality of walking here."
+  ]
+ }
+}

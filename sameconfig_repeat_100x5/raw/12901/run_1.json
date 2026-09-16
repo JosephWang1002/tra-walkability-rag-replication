@@ -1,0 +1,122 @@
+{
+ "oid": "12901",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\12901.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\12901_120.489343_31.361085_09002900121904211047156615H_310.25_2019_4_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.3,
+ "usage": {
+  "completion_tokens": 790,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 477,
+   "engine_ttlt_ms": 12205,
+   "pre_inference_ms": 364,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1105,
+   "service_ttlt_ms": 12828,
+   "user_visible_ttft_ms": 741
+  },
+  "prompt_tokens": 5272,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 1536
+  },
+  "total_tokens": 6062
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 34.0,\n      \"equity\": 32.0,\n      \"fairness\": 35.0,\n      \"accessibility\": 35.0\n    },\n    \"safety\": 28.0,\n    \"livability\": 30.0,\n    \"sustainability\": 42.0,\n    \"aesthetics\": 62.0,\n    \"comfort\": 46.0,\n    \"walkability\": 22.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The visible roadway is almost entirely allocated to motor traffic, with a large red truck occupying much of the narrow carriageway while no dedicated sidewalk is visible for pedestrians.\",\n      \"There is no marked pedestrian zone, curb ramp, tactile paving, or protected edge for slower users, so spatial resources are not distributed equitably among different road users.\",\n      \"A motorcyclist appears to share the same narrow lane space with heavy trucks, indicating limited fair separation between user types and little protection for non-motorized movement.\"\n    ],\n    \"safety\": [\n      \"A heavy truck is traveling on a very narrow road with limited lateral clearance, increasing conflict risk for any pedestrian, cyclist, or smaller vehicle using the same corridor.\",\n      \"There are no visible crosswalks, warning markings, speed-calming devices, guardrails, or protected shoulders to reduce crash risk.\",\n      \"Dense roadside vegetation and the road’s constrained width may reduce sightlines, while the motorcyclist ahead is exposed in the same traffic stream as larger vehicles.\"\n    ],\n    \"livability\": [\n      \"The scene is dominated by through traffic, especially a large freight truck, rather than by spaces that support everyday social or street life.\",\n      \"No benches, storefronts, bus stops, public amenities, or gathering spaces are visible along the road edge.\",\n      \"Although the green surroundings are pleasant, the corridor functions more like a vehicular access road than a lively, service-rich public street.\"\n    ],\n    \"sustainability\": [\n      \"Large mature trees and extensive roadside vegetation provide ecological value and some carbon and stormwater benefits.\",\n      \"A motorcycle is visible, but there is no dedicated walking, cycling, or public transport infrastructure to strongly support low-carbon travel choices.\",\n      \"The road surface appears conventional asphalt with hard edges, and no visible permeable paving, bioswale, or rainwater management feature can be identified.\"\n    ],\n    \"aesthetics\": [\n      \"The corridor benefits from abundant greenery, including a continuous line of mature trees on the right and wooded hills in the background.\",\n      \"The natural landscape creates a visually calm setting with strong green enclosure and limited visual clutter from buildings or signage.\",\n      \"Aesthetic quality is reduced somewhat by the dominance of heavy vehicles and the plain asphalt roadway, which make the scene feel utilitarian rather than carefully designed.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is moderate because the large roadside trees on the right provide shade potential, although the road itself remains partly exposed to sun.\",\n      \"Physical comfort is limited because no sidewalk, seating, or buffered walking area is visible, forcing any non-driver user close to moving traffic.\",\n      \"Psychological comfort is low for most road users because the presence of a large truck on a narrow road can feel intimidating, even though the green setting is visually calming.\"\n    ],\n    \"walkability\": [\n      \"No continuous sidewalk or clearly designated pedestrian path is visible along either side of the road.\",\n      \"The narrow carriageway is shared with heavy vehicles, making walking feel unsafe and inconvenient for all road users outside cars.\",\n      \"There are no visible crossings, pedestrian signs, resting points, or frontage destinations that would support a comfortable and connected walking experience.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 34.0,
+   "equity": 32.0,
+   "fairness": 35.0,
+   "accessibility": 35.0
+  },
+  "safety": 28.0,
+  "livability": 30.0,
+  "sustainability": 42.0,
+  "aesthetics": 62.0,
+  "comfort": 46.0,
+  "walkability": 22.0
+ },
+ "scores_flat": {
+  "justice": 34.0,
+  "justice_equity": 32.0,
+  "justice_fairness": 35.0,
+  "justice_accessibility": 35.0,
+  "safety": 28.0,
+  "livability": 30.0,
+  "sustainability": 42.0,
+  "aesthetics": 62.0,
+  "comfort": 46.0,
+  "walkability": 22.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:19:30+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The visible roadway is almost entirely allocated to motor traffic, with a large red truck occupying much of the narrow carriageway while no dedicated sidewalk is visible for pedestrians.",
+   "There is no marked pedestrian zone, curb ramp, tactile paving, or protected edge for slower users, so spatial resources are not distributed equitably among different road users.",
+   "A motorcyclist appears to share the same narrow lane space with heavy trucks, indicating limited fair separation between user types and little protection for non-motorized movement."
+  ],
+  "safety": [
+   "A heavy truck is traveling on a very narrow road with limited lateral clearance, increasing conflict risk for any pedestrian, cyclist, or smaller vehicle using the same corridor.",
+   "There are no visible crosswalks, warning markings, speed-calming devices, guardrails, or protected shoulders to reduce crash risk.",
+   "Dense roadside vegetation and the road’s constrained width may reduce sightlines, while the motorcyclist ahead is exposed in the same traffic stream as larger vehicles."
+  ],
+  "livability": [
+   "The scene is dominated by through traffic, especially a large freight truck, rather than by spaces that support everyday social or street life.",
+   "No benches, storefronts, bus stops, public amenities, or gathering spaces are visible along the road edge.",
+   "Although the green surroundings are pleasant, the corridor functions more like a vehicular access road than a lively, service-rich public street."
+  ],
+  "sustainability": [
+   "Large mature trees and extensive roadside vegetation provide ecological value and some carbon and stormwater benefits.",
+   "A motorcycle is visible, but there is no dedicated walking, cycling, or public transport infrastructure to strongly support low-carbon travel choices.",
+   "The road surface appears conventional asphalt with hard edges, and no visible permeable paving, bioswale, or rainwater management feature can be identified."
+  ],
+  "aesthetics": [
+   "The corridor benefits from abundant greenery, including a continuous line of mature trees on the right and wooded hills in the background.",
+   "The natural landscape creates a visually calm setting with strong green enclosure and limited visual clutter from buildings or signage.",
+   "Aesthetic quality is reduced somewhat by the dominance of heavy vehicles and the plain asphalt roadway, which make the scene feel utilitarian rather than carefully designed."
+  ],
+  "comfort": [
+   "Thermal comfort is moderate because the large roadside trees on the right provide shade potential, although the road itself remains partly exposed to sun.",
+   "Physical comfort is limited because no sidewalk, seating, or buffered walking area is visible, forcing any non-driver user close to moving traffic.",
+   "Psychological comfort is low for most road users because the presence of a large truck on a narrow road can feel intimidating, even though the green setting is visually calming."
+  ],
+  "walkability": [
+   "No continuous sidewalk or clearly designated pedestrian path is visible along either side of the road.",
+   "The narrow carriageway is shared with heavy vehicles, making walking feel unsafe and inconvenient for all road users outside cars.",
+   "There are no visible crossings, pedestrian signs, resting points, or frontage destinations that would support a comfortable and connected walking experience."
+  ]
+ }
+}

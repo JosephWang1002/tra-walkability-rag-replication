@@ -1,0 +1,122 @@
+{
+ "oid": "21469",
+ "run": 1,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21469.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21469_120.756585_31.247513_09002900121904121129584935X_79.76_2019_4_苏州工业园区斜塘街道赵家上路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 20.4,
+ "usage": {
+  "completion_tokens": 857,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 18,
+   "engine_ttft_ms": 884,
+   "engine_ttlt_ms": 16604,
+   "pre_inference_ms": 368,
+   "service_tbt_ms": 18,
+   "service_ttft_ms": 1489,
+   "service_ttlt_ms": 17202,
+   "user_visible_ttft_ms": 1122
+  },
+  "prompt_tokens": 5182,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6039
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 38.0,\n      \"equity\": 42.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 32.0\n    },\n    \"safety\": 34.0,\n    \"livability\": 41.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 49.0,\n    \"comfort\": 36.0,\n    \"walkability\": 24.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The paved carriageway is allocated almost entirely to motor vehicles, while no visible sidewalk, shoulder path, or protected pedestrian space is provided along either edge.\",\n      \"There are no marked crossings, curb ramps, tactile paving, or refuge islands visible, so access appears uneven for people moving on foot compared with drivers.\",\n      \"Street lighting is present, but inclusive street elements such as benches, bus stops, or separated slow-traffic facilities are absent, indicating limited distribution of public-space resources across user groups.\"\n    ],\n    \"safety\": [\n      \"Cars and a large truck share a narrow two-way road with no centerline, shoulder, or separated pedestrian zone, increasing conflict risk for all road users.\",\n      \"The road edges drop directly to rough soil, weeds, and drainage-like margins, so anyone walking would have little recovery space if vehicles pass close by.\",\n      \"No marked crossing, traffic calming device, guardrail, or visible warning signage is present, and the truck ahead may also reduce sightlines on this straight but narrow segment.\"\n    ],\n    \"livability\": [\n      \"The setting appears low-density and semi-rural, with open fields and scattered buildings, so daily street activity and service access seem limited.\",\n      \"There are no visible shops, seating areas, transit stops, or social spaces along the road, reducing support for everyday public life beyond vehicle movement.\",\n      \"Vegetation and open land provide some environmental openness, but the unfinished edges, debris, and deteriorated buildings on the right weaken the sense of a well-supported living street.\"\n    ],\n    \"sustainability\": [\n      \"The open vegetation and unbuilt land on both sides preserve some permeable ground and green cover compared with a fully hardened streetscape.\",\n      \"However, the corridor shows no visible bike lane, sidewalk, bus stop, or other low-carbon mobility infrastructure, so sustainable travel choices appear poorly supported.\",\n      \"The road surface is fully concrete and there are no visible bioswales, rain gardens, or formal stormwater features, even though the edges remain largely informal and unmanaged.\"\n    ],\n    \"aesthetics\": [\n      \"The broad sky, roadside greenery, and large mature tree on the left add some visual openness and natural character.\",\n      \"At the same time, the scene lacks visual cohesion: modern apartment blocks on the left contrast sharply with older deteriorated houses and rough vacant edges on the right.\",\n      \"Loose materials, patchy roadside vegetation, and an unfinished edge condition reduce perceived neatness and design quality despite the relatively clean road surface.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is weak because tree shade covers only small portions of the corridor, and most of the road and edges are fully exposed to sun.\",\n      \"Physical comfort for non-drivers is poor since there is no visible sidewalk, no seating, and no smooth dedicated walking zone separate from moving traffic.\",\n      \"Psychological comfort is limited by the narrow carriageway, presence of cars and a truck, and lack of protective buffers, which can make the space feel vehicle-dominated and stressful for anyone outside a car.\"\n    ],\n    \"walkability\": [\n      \"Walkability is very low because no continuous sidewalk or footpath is visible on either side of the road.\",\n      \"The road edges are uneven dirt and vegetation rather than paved pedestrian space, making walking continuity and stability poor.\",\n      \"There are no crossings, curb extensions, shade structures, benches, or active frontages along the route, so the corridor functions mainly as a vehicle passage rather than a walkable street.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 38.0,
+   "equity": 42.0,
+   "fairness": 40.0,
+   "accessibility": 32.0
+  },
+  "safety": 34.0,
+  "livability": 41.0,
+  "sustainability": 46.0,
+  "aesthetics": 49.0,
+  "comfort": 36.0,
+  "walkability": 24.0
+ },
+ "scores_flat": {
+  "justice": 38.0,
+  "justice_equity": 42.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 32.0,
+  "safety": 34.0,
+  "livability": 41.0,
+  "sustainability": 46.0,
+  "aesthetics": 49.0,
+  "comfort": 36.0,
+  "walkability": 24.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:48:36+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The paved carriageway is allocated almost entirely to motor vehicles, while no visible sidewalk, shoulder path, or protected pedestrian space is provided along either edge.",
+   "There are no marked crossings, curb ramps, tactile paving, or refuge islands visible, so access appears uneven for people moving on foot compared with drivers.",
+   "Street lighting is present, but inclusive street elements such as benches, bus stops, or separated slow-traffic facilities are absent, indicating limited distribution of public-space resources across user groups."
+  ],
+  "safety": [
+   "Cars and a large truck share a narrow two-way road with no centerline, shoulder, or separated pedestrian zone, increasing conflict risk for all road users.",
+   "The road edges drop directly to rough soil, weeds, and drainage-like margins, so anyone walking would have little recovery space if vehicles pass close by.",
+   "No marked crossing, traffic calming device, guardrail, or visible warning signage is present, and the truck ahead may also reduce sightlines on this straight but narrow segment."
+  ],
+  "livability": [
+   "The setting appears low-density and semi-rural, with open fields and scattered buildings, so daily street activity and service access seem limited.",
+   "There are no visible shops, seating areas, transit stops, or social spaces along the road, reducing support for everyday public life beyond vehicle movement.",
+   "Vegetation and open land provide some environmental openness, but the unfinished edges, debris, and deteriorated buildings on the right weaken the sense of a well-supported living street."
+  ],
+  "sustainability": [
+   "The open vegetation and unbuilt land on both sides preserve some permeable ground and green cover compared with a fully hardened streetscape.",
+   "However, the corridor shows no visible bike lane, sidewalk, bus stop, or other low-carbon mobility infrastructure, so sustainable travel choices appear poorly supported.",
+   "The road surface is fully concrete and there are no visible bioswales, rain gardens, or formal stormwater features, even though the edges remain largely informal and unmanaged."
+  ],
+  "aesthetics": [
+   "The broad sky, roadside greenery, and large mature tree on the left add some visual openness and natural character.",
+   "At the same time, the scene lacks visual cohesion: modern apartment blocks on the left contrast sharply with older deteriorated houses and rough vacant edges on the right.",
+   "Loose materials, patchy roadside vegetation, and an unfinished edge condition reduce perceived neatness and design quality despite the relatively clean road surface."
+  ],
+  "comfort": [
+   "Thermal comfort is weak because tree shade covers only small portions of the corridor, and most of the road and edges are fully exposed to sun.",
+   "Physical comfort for non-drivers is poor since there is no visible sidewalk, no seating, and no smooth dedicated walking zone separate from moving traffic.",
+   "Psychological comfort is limited by the narrow carriageway, presence of cars and a truck, and lack of protective buffers, which can make the space feel vehicle-dominated and stressful for anyone outside a car."
+  ],
+  "walkability": [
+   "Walkability is very low because no continuous sidewalk or footpath is visible on either side of the road.",
+   "The road edges are uneven dirt and vegetation rather than paved pedestrian space, making walking continuity and stability poor.",
+   "There are no crossings, curb extensions, shade structures, benches, or active frontages along the route, so the corridor functions mainly as a vehicle passage rather than a walkable street."
+  ]
+ }
+}

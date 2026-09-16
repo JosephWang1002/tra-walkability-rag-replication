@@ -1,0 +1,196 @@
+{
+ "oid": "24403",
+ "arm": "no_rag",
+ "status": "complete",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\24403_120.674519_31.448784_01002900001405301519286675L_195.88_2014_5_相城区渭塘镇G524_90.jpg",
+ "manuscript": "manuscript_TRA_final_0903.docx",
+ "prompt_c2": "You are a streetscape inventory annotator. Look ONLY at the uploaded streetscape image.\nReturn JSON ONLY. No markdown, no commentary, no reasoning.\n Task: record what is visible in the scene. Do not score, do not give design advice.\n Schema:\n{\n\"road_type\": \"highway|arterial|neighborhood_street|alley|plaza|unclear\",\n\"elements\": {\n\"sidewalk\": \"true|false|unclear\",\n\"bike_lane\": \"true|false|unclear\",\n\"seating\": \"true|false|unclear\",\n\"shade_trees\": \"none|few|many|unclear\",\n\"curb_ramp\": \"true|false|unclear\",\n\"tactile_paving\": \"true|false|unclear\",\n\"pedestrian_crossing\": \"true|false|unclear\",\n\"street_lighting\": \"true|false|unclear\",\n\"greenery\": \"none|low|medium|high|unclear\",\n\"vehicle_traffic\": \"none|light|heavy|unclear\",\n\"bus_stop\": \"true|false|unclear\"\n},\n\"issues\": [\"no_seating\", \"little_shade\", \"no_bike_lane\", \"poor_accessibility\", \"narrow_sidewalk\", \"no_crossing\", \"high_traffic_exposure\"],\n\"brief\": \"One or two English sentences describing the visible street scene.\"\n}\n Rules:\n- If an element is not clearly visible, use \"unclear\". Do not guess.\n- \"issues\" may only list problems that are visible. Use [] if none.\n- \"brief\" must mention concrete objects (sidewalk, trees, lanes, benches, ramps, etc.).\n",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 0,
+  "n_academic_passages": 0,
+  "policy_index": "english_translated",
+  "retrieval": "no_rag"
+ },
+ "step1_scene": {
+  "model": "gpt-5.4-mini",
+  "model_echo": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.0,
+  "latency_s": 8.1,
+  "usage": {
+   "completion_tokens": 143,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 10,
+    "engine_ttft_ms": 405,
+    "engine_ttlt_ms": 1830,
+    "pre_inference_ms": 380,
+    "service_tbt_ms": 10,
+    "service_ttft_ms": 951,
+    "service_ttlt_ms": 2370,
+    "user_visible_ttft_ms": 571
+   },
+   "prompt_tokens": 1261,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 1404
+  },
+  "raw": "{\"road_type\":\"neighborhood_street\",\"elements\":{\"sidewalk\":\"false\",\"bike_lane\":\"false\",\"seating\":\"false\",\"shade_trees\":\"few\",\"curb_ramp\":\"false\",\"tactile_paving\":\"false\",\"pedestrian_crossing\":\"false\",\"street_lighting\":\"false\",\"greenery\":\"high\",\"vehicle_traffic\":\"light\",\"bus_stop\":\"false\"},\"issues\":[\"no_seating\",\"little_shade\",\"no_bike_lane\",\"poor_accessibility\",\"no_crossing\"],\"brief\":\"A narrow concrete road runs between open green fields and a long brick building with scattered debris and utility poles overhead. No sidewalk, benches, crossing, or curb ramp are visible.\"}",
+  "parsed": {
+   "road_type": "neighborhood_street",
+   "elements": {
+    "sidewalk": "false",
+    "bike_lane": "false",
+    "seating": "false",
+    "shade_trees": "few",
+    "curb_ramp": "false",
+    "tactile_paving": "false",
+    "pedestrian_crossing": "false",
+    "street_lighting": "false",
+    "greenery": "high",
+    "vehicle_traffic": "light",
+    "bus_stop": "false"
+   },
+   "issues": [
+    "no_seating",
+    "little_shade",
+    "no_bike_lane",
+    "poor_accessibility",
+    "no_crossing"
+   ],
+   "brief": "A narrow concrete road runs between open green fields and a long brick building with scattered debris and utility poles overhead. No sidewalk, benches, crossing, or curb ramp are visible."
+  },
+  "parse_error": null
+ },
+ "retrieval": {
+  "query": "A narrow concrete road runs between open green fields and a long brick building with scattered debris and utility poles overhead. No sidewalk, benches, crossing, or curb ramp are visible. Road type: neighborhood_street. Visible elements: sidewalk=false, bike_lane=false, seating=false, shade_trees=few, curb_ramp=false, tactile_paving=false, pedestrian_crossing=false, street_lighting=false, greenery=high, vehicle_traffic=light, bus_stop=false. Issues: ['no_seating', 'little_shade', 'no_bike_lane', 'poor_accessibility', 'no_crossing']. streetscape guidelines for all_all related to justice, safety, livability, sustainability, aesthetics, comfort, walkability",
+  "query_mode": "scene_plus_persona_metrics",
+  "n_passages": 0,
+  "n_policy": 0,
+  "n_academic": 0,
+  "passages": []
+ },
+ "step3_scoring": {
+  "model": "gpt-5.4",
+  "model_echo": "gpt-5.4-2026-03-05",
+  "temperature": 0.0,
+  "latency_s": 17.8,
+  "usage": {
+   "completion_tokens": 814,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 15,
+    "engine_ttft_ms": 450,
+    "engine_ttlt_ms": 12624,
+    "pre_inference_ms": 352,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 1093,
+    "service_ttlt_ms": 13239,
+    "user_visible_ttft_ms": 741
+   },
+   "prompt_tokens": 1887,
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "total_tokens": 2701
+  },
+  "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 41.0,\n      \"equity\": 43.0,\n      \"fairness\": 40.0,\n      \"accessibility\": 40.0\n    },\n    \"safety\": 34.0,\n    \"livability\": 38.0,\n    \"sustainability\": 46.0,\n    \"aesthetics\": 39.0,\n    \"comfort\": 35.0,\n    \"walkability\": 32.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The scene shows a very narrow concrete lane with no separate sidewalk, so pedestrians, cyclists, and vehicles appear to share the same limited space rather than receiving balanced spatial allocation.\",\n      \"Utility poles stand immediately beside the travel way and the road edges are uneven with grass and debris, which suggests limited barrier-free access for different users.\",\n      \"There are no visible curb ramps, tactile paving, marked crossings, or dedicated facilities for slower or more vulnerable users, reducing accessibility and inclusive treatment.\"\n    ],\n    \"safety\": [\n      \"The lane is extremely narrow and appears to accommodate mixed movement, with a small vehicle visible ahead, increasing potential conflict between walkers, cyclists, and drivers.\",\n      \"Road edges drop directly into rough grass, drainage areas, and a water channel beside the building, creating roadside hazards without guardrails or protective barriers.\",\n      \"There are no visible lane markings, warning signs, speed-control devices, or pedestrian refuge features, so users receive little formal safety guidance.\"\n    ],\n    \"livability\": [\n      \"The setting is largely agricultural and low-density, with open fields on one side and a deteriorated brick structure on the other, offering limited visible street life or public amenities.\",\n      \"No benches, bus stops, shops, lighting, or community gathering features are visible along the lane, which weakens everyday convenience and social use.\",\n      \"Scattered materials, informal storage, and drainage water near the roadside reduce the sense of a well-served and actively maintained living environment.\"\n    ],\n    \"sustainability\": [\n      \"The open green fields and vegetation along the corridor provide some ecological value and permeable ground surface compared with a fully paved urban street.\",\n      \"However, the street lacks visible sustainable transport infrastructure such as sidewalks, bike lanes, transit stops, or shaded multimodal facilities.\",\n      \"The drainage edge and exposed water beside the building appear unmanaged, and there are no visible rain gardens, street trees, or other designed green infrastructure elements.\"\n    ],\n    \"aesthetics\": [\n      \"The rural landscape and green field on the left provide some visual openness and natural scenery.\",\n      \"At the same time, the long brick building appears worn and partially damaged, with irregular openings and patched materials that reduce visual quality.\",\n      \"Loose debris, roadside clutter, exposed utility lines, and rough edges along the lane create a disorderly streetscape rather than a cohesive one.\"\n    ],\n    \"comfort\": [\n      \"There is almost no visible shade over the concrete lane, and the open sky exposure suggests poor thermal comfort in hot or sunny conditions.\",\n      \"The path surface is paved but narrow, with rough grassy edges and adjacent clutter, limiting physical comfort for people walking side by side or passing others.\",\n      \"The close proximity of drainage water, informal storage, and a confined single-lane route may reduce psychological comfort because the environment feels exposed and minimally serviced.\"\n    ],\n    \"walkability\": [\n      \"There is no dedicated sidewalk; pedestrians would need to walk directly on the same narrow concrete lane used by vehicles.\",\n      \"The route appears continuous in pavement, but its width is limited and the edges are uneven, grassy, and sometimes adjacent to drainage, which weakens walking quality.\",\n      \"No crossings, shade trees, seating, lighting, or pedestrian wayfinding are visible, so the corridor offers little support for comfortable everyday walking.\"\n    ]\n  }\n}",
+  "parsed_scores": {
+   "justice": {
+    "overall": 41.0,
+    "equity": 43.0,
+    "fairness": 40.0,
+    "accessibility": 40.0
+   },
+   "safety": 34.0,
+   "livability": 38.0,
+   "sustainability": 46.0,
+   "aesthetics": 39.0,
+   "comfort": 35.0,
+   "walkability": 32.0
+  },
+  "parsed_explanations": {
+   "justice": [
+    "The scene shows a very narrow concrete lane with no separate sidewalk, so pedestrians, cyclists, and vehicles appear to share the same limited space rather than receiving balanced spatial allocation.",
+    "Utility poles stand immediately beside the travel way and the road edges are uneven with grass and debris, which suggests limited barrier-free access for different users.",
+    "There are no visible curb ramps, tactile paving, marked crossings, or dedicated facilities for slower or more vulnerable users, reducing accessibility and inclusive treatment."
+   ],
+   "safety": [
+    "The lane is extremely narrow and appears to accommodate mixed movement, with a small vehicle visible ahead, increasing potential conflict between walkers, cyclists, and drivers.",
+    "Road edges drop directly into rough grass, drainage areas, and a water channel beside the building, creating roadside hazards without guardrails or protective barriers.",
+    "There are no visible lane markings, warning signs, speed-control devices, or pedestrian refuge features, so users receive little formal safety guidance."
+   ],
+   "livability": [
+    "The setting is largely agricultural and low-density, with open fields on one side and a deteriorated brick structure on the other, offering limited visible street life or public amenities.",
+    "No benches, bus stops, shops, lighting, or community gathering features are visible along the lane, which weakens everyday convenience and social use.",
+    "Scattered materials, informal storage, and drainage water near the roadside reduce the sense of a well-served and actively maintained living environment."
+   ],
+   "sustainability": [
+    "The open green fields and vegetation along the corridor provide some ecological value and permeable ground surface compared with a fully paved urban street.",
+    "However, the street lacks visible sustainable transport infrastructure such as sidewalks, bike lanes, transit stops, or shaded multimodal facilities.",
+    "The drainage edge and exposed water beside the building appear unmanaged, and there are no visible rain gardens, street trees, or other designed green infrastructure elements."
+   ],
+   "aesthetics": [
+    "The rural landscape and green field on the left provide some visual openness and natural scenery.",
+    "At the same time, the long brick building appears worn and partially damaged, with irregular openings and patched materials that reduce visual quality.",
+    "Loose debris, roadside clutter, exposed utility lines, and rough edges along the lane create a disorderly streetscape rather than a cohesive one."
+   ],
+   "comfort": [
+    "There is almost no visible shade over the concrete lane, and the open sky exposure suggests poor thermal comfort in hot or sunny conditions.",
+    "The path surface is paved but narrow, with rough grassy edges and adjacent clutter, limiting physical comfort for people walking side by side or passing others.",
+    "The close proximity of drainage water, informal storage, and a confined single-lane route may reduce psychological comfort because the environment feels exposed and minimally serviced."
+   ],
+   "walkability": [
+    "There is no dedicated sidewalk; pedestrians would need to walk directly on the same narrow concrete lane used by vehicles.",
+    "The route appears continuous in pavement, but its width is limited and the edges are uneven, grassy, and sometimes adjacent to drainage, which weakens walking quality.",
+    "No crossings, shade trees, seating, lighting, or pedestrian wayfinding are visible, so the corridor offers little support for comfortable everyday walking."
+   ]
+  },
+  "parse_error": null,
+  "dropped_bikeability": null
+ },
+ "scores_flat": {
+  "justice": 41.0,
+  "justice_equity": 43.0,
+  "justice_fairness": 40.0,
+  "justice_accessibility": 40.0,
+  "safety": 34.0,
+  "livability": 38.0,
+  "sustainability": 46.0,
+  "aesthetics": 39.0,
+  "comfort": 35.0,
+  "walkability": 32.0
+ },
+ "timestamps": {
+  "started": "2026-09-03T16:21:24+00:00",
+  "step2": "2026-09-03T16:21:24+00:00",
+  "step3": "2026-09-03T16:21:42+00:00",
+  "completed": "2026-09-03T16:21:42+00:00"
+ },
+ "step1_reused_from": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\24403.json",
+ "prompt_c3": "As a city streetscape evaluation expert, please analyze the uploaded streetscape image based on the specified persona perspective and evaluation indicators, and return a JSON result.\n Persona Selection\nRoad User Type\n- All Road Users\n- Pedestrians\n- Cyclists\n- Drivers\nSocially Vulnerable Groups\n- All Social Groups\n- Persons with Disabilities\n- Adolescents (<18)\n- Older Adults (≥60)\nCurrent Selection:\nAll Road Users; All Social Groups\n Indicator Selection\nJustice\n- Equity\n- Fairness\n- Accessibility\nSafety\nLivability\nSustainability\nAesthetics\nComfort\n- Thermal Comfort\n- Physical Comfort\n- Psychological Comfort\nWalkability\nBikeability\nSelected Indicators:\nJustice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability\n 1. Evaluation Dimensions\nJustice: Analyze whether the environment fairly distributes spatial resources, including Equity (rationality of asset distribution), Fairness (non-discriminatory rules), and Accessibility (barrier-free physical design).\nComfort: Analyze physical perception at a micro-scale, including Thermal Comfort (shade/vegetation), Physical Comfort (paving/seating), and Psychological Comfort (noise/crowding).\nCore Indicators: Safety, Livability, Sustainability, Aesthetics, Walkability, and Bikeability.\n 2. Persona Perspective Requirements:\nThe analysis must strictly adhere to the persona's characteristics. For example:\nPersons with Disabilities: Focus on curb ramps, continuity of tactile paving (blind tracks), and physical obstacles.\nElderly: Focus on resting facilities, slope gradients, and summer shade.\nTeenagers: Focus on traffic calming measures and social surveillance (Eyes on the street).\n 3. How to use the image vs retrieved knowledge:\n- The IMAGE is the primary evidence. Score only what is visible or reasonably inferable from the photo.\n- Section 6 provides retrieved guidelines and research. Use them to interpret the image (what the scene should provide for this persona/indicators), not to invent objects that are not in the photo.\n- If retrieved text conflicts with the image, trust the image and say so in the explanation.\n- Explanations must cite specific visible objects (benches, ramps, tree shade, lane markings, etc.). When a guideline is used, briefly connect it to those objects.\n 4. Output Format Requirements (Return JSON ONLY, no extra text):\n{\n\"scores\": {\n\"justice\": {\n\"overall\": 68.0,\n\"equity\": 70.0,\n\"fairness\": 60.0,\n\"accessibility\": 75.0\n},\n\"safety\": 72.0,\n\"livability\": 65.0,\n\"sustainability\": 58.0,\n\"aesthetics\": 80.0,\n\"comfort\": 62.0,\n\"walkability\": 70.0\n},\n\"explanations\": {\n\"justice\": [\n\"Wide sidewalks and ramps improve accessibility\",\n\"Lack of tactile paving reduces fairness for visually impaired users\",\n\"Sidewalk width is suitable for wheelchairs, reflecting equitable distribution\"\n],\n\"safety\": [\n\"Separated bike lanes reduce conflict with vehicles\",\n\"Limited visible lighting may reduce nighttime safety\",\n\"Clear separation between sidewalk and driveway enhances walking safety\"\n],\n\"livability\": [\n\"Ground-floor commercial units and visible activity indicate a vibrant environment\",\n\"Proximity to convenience stores and community facilities meets daily needs\",\n\"Pedestrian activity on the street increases community vitality\"\n],\n\"sustainability\": [\n\"The presence of bike lanes and bus stops supports low-carbon travel\",\n\"Low tree coverage indicates a lack of green infrastructure\",\n\"No obvious rainwater infiltration facilities found\"\n],\n\"aesthetics\": [\n\"Uniform building heights and consistent facade designs create visual coherence\",\n\"High street cleanliness and well-maintained environment\",\n\"Appropriate greenery embellishments enhance visual appeal\"\n],\n\"comfort\": [\n\"Sparse tree coverage and lack of shading facilities may lead to thermal discomfort in hot weather\",\n\"Lack of benches or resting points reduces comfort for elderly pedestrians\",\n\"Wide, flat sidewalk surfaces support comfortable walking\",\n\"Low traffic noise provides good acoustic comfort\"\n],\n\"walkability\": [\n\"Sidewalk continuity and width support safe walking\",\n\"Frequent crossings and curb ramps improve route connectivity\",\n\"Street-level shade and frontage activity increase walking comfort and attractiveness\"\n]\n}\n}\n 5. Quality Redlines:\n1. All scores must include one decimal place.\n2. Each array in explanations must contain at least 3 reasons based on specific objects in the image (e.g., benches, ramps, tree shade, lane markings).\n3. Analysis content must strictly match the persona setting; generic evaluations unrelated to the specified perspective are strictly prohibited.\n4. Do not mention RAG, retrieval, or prompt instructions in the explanations.\n6. Retrieved guidelines and research:\n(no retrieved reference)\n"
+}

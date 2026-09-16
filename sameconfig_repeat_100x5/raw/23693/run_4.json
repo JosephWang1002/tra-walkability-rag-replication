@@ -1,0 +1,122 @@
+{
+ "oid": "23693",
+ "run": 4,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\23693.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\23693_120.698819_31.34361_09002900121708010943106347H_85.24_2017_8_苏州工业园区唯亭街道娄中路_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 18.5,
+ "usage": {
+  "completion_tokens": 884,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 411,
+   "engine_ttlt_ms": 13583,
+   "pre_inference_ms": 394,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1295,
+   "service_ttlt_ms": 14448,
+   "user_visible_ttft_ms": 901
+  },
+  "prompt_tokens": 5198,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4864
+  },
+  "total_tokens": 6082
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 72.0,\n      \"equity\": 78.0,\n      \"fairness\": 70.0,\n      \"accessibility\": 68.0\n    },\n    \"safety\": 82.0,\n    \"livability\": 66.0,\n    \"sustainability\": 84.0,\n    \"aesthetics\": 86.0,\n    \"comfort\": 74.0,\n    \"walkability\": 71.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to multiple users, with wide motor lanes, a planted median, a separate side path, and a sidewalk visible on the right, suggesting a relatively balanced distribution of corridor space.\",\n      \"Accessibility is only moderate because the visible sidewalk appears smooth and wide, but no curb ramps, tactile paving, or marked crossing points are visible in this scene.\",\n      \"Fairness is supported by the physical separation created by hedges, curbs, and tree-lined verges, which helps reduce direct conflict between faster traffic and slower users rather than forcing all users into the same space.\"\n    ],\n    \"safety\": [\n      \"Motor traffic safety appears strong because the carriageway is wide, well paved, and clearly marked with lane lines, and the central planted median separates opposing directions.\",\n      \"Pedestrian safety benefits from the sidewalk being set back from the roadway behind a verge with trees and shrubs, creating a buffer from moving vehicles.\",\n      \"The side path on the right appears physically separated from the main road by curbs and planting, which generally lowers conflict with high-speed traffic compared with mixing directly in the travel lanes.\"\n    ],\n    \"livability\": [\n      \"The corridor feels orderly and calm due to continuous trees, trimmed hedges, and generous open space along the right side, which can support a pleasant everyday environment.\",\n      \"Livability is limited by the lack of visible active frontages, shops, seating, bus stops, or people, so the street reads more as a movement corridor than a socially vibrant place.\",\n      \"The broad landscaped setback and low traffic presence reduce visual clutter and stress, but the scene offers few visible amenities for lingering or community interaction.\"\n    ],\n    \"sustainability\": [\n      \"The street includes extensive green infrastructure in the form of continuous street trees, hedges, and planted medians, which can support shade, cooling, and ecological value.\",\n      \"A separated side path and sidewalk provide visible support for non-motorized travel, which is more sustainable than a road designed only for cars.\",\n      \"The large amount of vegetation along both the median and roadside suggests better stormwater absorption and urban heat mitigation potential than a fully hardscaped corridor.\"\n    ],\n    \"aesthetics\": [\n      \"The avenue has strong visual coherence, with repeated street trees, evenly spaced light poles, and continuous hedges creating a clean and organized composition.\",\n      \"The roadway and sidewalks appear well maintained, with smooth asphalt, trimmed planting, and little visible litter or surface damage.\",\n      \"The gentle curve of the boulevard, open sky, and layered greenery give the scene a spacious and attractive parkway character.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is fairly good because rows of mature trees on the right cast intermittent shade onto the side path and sidewalk, though the main roadway remains largely exposed.\",\n      \"Physical comfort is supported by smooth asphalt in the roadway and a paved sidewalk with no obvious obstructions, potholes, or clutter visible in the scene.\",\n      \"Psychological comfort is improved by low visible traffic volume, generous spacing, and landscaped buffers, although the wide road cross-section may still feel somewhat vehicle-oriented for some users.\"\n    ],\n    \"walkability\": [\n      \"Walkability is helped by the continuous sidewalk on the right, which appears wide, even, and separated from traffic by trees and planting.\",\n      \"The walking environment is more pleasant because the sidewalk runs through a green corridor with shade trees and a landscaped verge rather than directly against the curb.\",\n      \"Walkability is constrained by the absence of visible crossings, curb ramps, benches, or active destinations in this view, which weakens connectivity and support for longer pedestrian trips.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 72.0,
+   "equity": 78.0,
+   "fairness": 70.0,
+   "accessibility": 68.0
+  },
+  "safety": 82.0,
+  "livability": 66.0,
+  "sustainability": 84.0,
+  "aesthetics": 86.0,
+  "comfort": 74.0,
+  "walkability": 71.0
+ },
+ "scores_flat": {
+  "justice": 72.0,
+  "justice_equity": 78.0,
+  "justice_fairness": 70.0,
+  "justice_accessibility": 68.0,
+  "safety": 82.0,
+  "livability": 66.0,
+  "sustainability": 84.0,
+  "aesthetics": 86.0,
+  "comfort": 74.0,
+  "walkability": 71.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:57:52+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to multiple users, with wide motor lanes, a planted median, a separate side path, and a sidewalk visible on the right, suggesting a relatively balanced distribution of corridor space.",
+   "Accessibility is only moderate because the visible sidewalk appears smooth and wide, but no curb ramps, tactile paving, or marked crossing points are visible in this scene.",
+   "Fairness is supported by the physical separation created by hedges, curbs, and tree-lined verges, which helps reduce direct conflict between faster traffic and slower users rather than forcing all users into the same space."
+  ],
+  "safety": [
+   "Motor traffic safety appears strong because the carriageway is wide, well paved, and clearly marked with lane lines, and the central planted median separates opposing directions.",
+   "Pedestrian safety benefits from the sidewalk being set back from the roadway behind a verge with trees and shrubs, creating a buffer from moving vehicles.",
+   "The side path on the right appears physically separated from the main road by curbs and planting, which generally lowers conflict with high-speed traffic compared with mixing directly in the travel lanes."
+  ],
+  "livability": [
+   "The corridor feels orderly and calm due to continuous trees, trimmed hedges, and generous open space along the right side, which can support a pleasant everyday environment.",
+   "Livability is limited by the lack of visible active frontages, shops, seating, bus stops, or people, so the street reads more as a movement corridor than a socially vibrant place.",
+   "The broad landscaped setback and low traffic presence reduce visual clutter and stress, but the scene offers few visible amenities for lingering or community interaction."
+  ],
+  "sustainability": [
+   "The street includes extensive green infrastructure in the form of continuous street trees, hedges, and planted medians, which can support shade, cooling, and ecological value.",
+   "A separated side path and sidewalk provide visible support for non-motorized travel, which is more sustainable than a road designed only for cars.",
+   "The large amount of vegetation along both the median and roadside suggests better stormwater absorption and urban heat mitigation potential than a fully hardscaped corridor."
+  ],
+  "aesthetics": [
+   "The avenue has strong visual coherence, with repeated street trees, evenly spaced light poles, and continuous hedges creating a clean and organized composition.",
+   "The roadway and sidewalks appear well maintained, with smooth asphalt, trimmed planting, and little visible litter or surface damage.",
+   "The gentle curve of the boulevard, open sky, and layered greenery give the scene a spacious and attractive parkway character."
+  ],
+  "comfort": [
+   "Thermal comfort is fairly good because rows of mature trees on the right cast intermittent shade onto the side path and sidewalk, though the main roadway remains largely exposed.",
+   "Physical comfort is supported by smooth asphalt in the roadway and a paved sidewalk with no obvious obstructions, potholes, or clutter visible in the scene.",
+   "Psychological comfort is improved by low visible traffic volume, generous spacing, and landscaped buffers, although the wide road cross-section may still feel somewhat vehicle-oriented for some users."
+  ],
+  "walkability": [
+   "Walkability is helped by the continuous sidewalk on the right, which appears wide, even, and separated from traffic by trees and planting.",
+   "The walking environment is more pleasant because the sidewalk runs through a green corridor with shade trees and a landscaped verge rather than directly against the curb.",
+   "Walkability is constrained by the absence of visible crossings, curb ramps, benches, or active destinations in this view, which weakens connectivity and support for longer pedestrian trips."
+  ]
+ }
+}

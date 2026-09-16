@@ -1,0 +1,129 @@
+{
+ "oid": "21794",
+ "run": 0,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21794.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21794_120.711648_31.219437_09002900011603121017250364C_181.2_2016_3_吴中区郭巷街道S58_西官浦大桥_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 21.1,
+ "usage": {
+  "completion_tokens": 1101,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 450,
+   "engine_ttlt_ms": 17413,
+   "pre_inference_ms": 344,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1099,
+   "service_ttlt_ms": 18047,
+   "user_visible_ttft_ms": 755
+  },
+  "prompt_tokens": 5620,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 6721
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 66.0,\n      \"equity\": 72.0,\n      \"fairness\": 64.0,\n      \"accessibility\": 62.0\n    },\n    \"safety\": 74.0,\n    \"livability\": 48.0,\n    \"sustainability\": 63.0,\n    \"aesthetics\": 70.0,\n    \"comfort\": 52.0,\n    \"walkability\": 50.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The street allocates substantial space to multiple users, with a very wide carriageway, a separated side path on the right, and planting strips, which suggests relatively generous spatial distribution overall.\",\n      \"A curb-separated side path is visible on the right, giving non-motorized users their own corridor instead of forcing them into the vehicle lanes, which supports fairer use of the street space.\",\n      \"Accessibility is only moderate because the image shows continuous curbs along the right edge but no visible curb ramps, tactile paving, or marked crossings that would demonstrate barrier-free access for all users.\",\n      \"The roadway markings are clear and orderly, which supports rule legibility for all users, but the absence of visible pedestrian priority elements means fairness for slower users is not strongly expressed.\"\n    ],\n    \"safety\": [\n      \"The road surface is new and smooth, and the lane markings are highly visible, which helps drivers maintain lane position and reduces operational uncertainty.\",\n      \"Streetlights are installed continuously along the corridor, which likely improves nighttime visibility and perceived safety compared with an unlit road.\",\n      \"The right-side path is physically separated from the main carriageway by a curb and planting strip, reducing direct conflict between motor vehicles and slower users.\",\n      \"Safety is limited by the very wide, straight, open roadway, which can encourage higher driving speeds, and there are no visible crossings, traffic-calming devices, or pedestrian refuge features in the scene.\"\n    ],\n    \"livability\": [\n      \"The corridor appears sparse and single-purpose, with no visible shops, seating, bus stops, or active building frontages that would support daily social or service needs.\",\n      \"There are planted strips and rows of young trees on both sides, which add some environmental quality, but the surrounding area still feels undeveloped and low in human activity.\",\n      \"No pedestrians, cyclists, or street-side gathering spaces are visible, so the street currently offers limited signs of social vitality or community interaction.\",\n      \"The adjacent water edge and open sky provide some amenity value, but the overall setting reads more as a transport corridor than a lived-in public place.\"\n    ],\n    \"sustainability\": [\n      \"The presence of a separated side path on the right can support walking or cycling, which is more sustainable than a road designed only for cars.\",\n      \"Linear planting strips and rows of street trees contribute some green infrastructure, although the trees are young and currently provide limited canopy or ecological performance.\",\n      \"The broad paved carriageway occupies a large amount of impervious surface, which weakens sustainability compared with a more space-efficient street allocation.\",\n      \"No visible bus stop, transit facility, bioswale, rain garden, or permeable drainage feature can be identified from the image, so sustainable mobility and stormwater functions appear limited.\"\n    ],\n    \"aesthetics\": [\n      \"The street has a clean, orderly appearance with fresh asphalt, crisp lane markings, and a consistent rhythm of modern light poles, creating strong visual coherence.\",\n      \"Rows of trees and low planting beds soften the corridor and add structure, even though the vegetation is still immature.\",\n      \"The open water on both sides and long sightline give the scene a spacious landscape character that many users may find visually appealing.\",\n      \"Aesthetic quality is reduced somewhat by the emptiness of the surroundings and the lack of mature shade trees, active edges, or distinctive architectural features.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is weak because the visible trees are small and leafless, providing almost no shade on either the roadway edge or the side path.\",\n      \"Physical comfort is mixed: the asphalt road and side path appear smooth and even, but no benches, shelters, or resting facilities are visible anywhere along the corridor.\",\n      \"Psychological comfort may be limited for some users because the street is extremely wide, open, and largely empty, which can feel exposed rather than sheltered.\",\n      \"The planting strip and separation from traffic on the right improve comfort somewhat for non-motorized users, but the lack of enclosure and amenities keeps the overall comfort score modest.\"\n    ],\n    \"walkability\": [\n      \"A dedicated side path exists on the right side, which provides a continuous space where walking is at least physically possible without entering the vehicle lanes.\",\n      \"Walkability is constrained because the path is narrow-to-moderate in width and lacks visible benches, shade structures, crossings, or destination-oriented frontage that would make walking attractive.\",\n      \"The long straight corridor has no visible intersections, curb ramps, or marked pedestrian crossings in the frame, so route connectivity and crossing convenience cannot be confirmed.\",\n      \"Young trees and low planting improve the walking environment slightly, but the absence of mature canopy means limited shade and reduced walking comfort in hot weather.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 66.0,
+   "equity": 72.0,
+   "fairness": 64.0,
+   "accessibility": 62.0
+  },
+  "safety": 74.0,
+  "livability": 48.0,
+  "sustainability": 63.0,
+  "aesthetics": 70.0,
+  "comfort": 52.0,
+  "walkability": 50.0
+ },
+ "scores_flat": {
+  "justice": 66.0,
+  "justice_equity": 72.0,
+  "justice_fairness": 64.0,
+  "justice_accessibility": 62.0,
+  "safety": 74.0,
+  "livability": 48.0,
+  "sustainability": 63.0,
+  "aesthetics": 70.0,
+  "comfort": 52.0,
+  "walkability": 50.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:48:59+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The street allocates substantial space to multiple users, with a very wide carriageway, a separated side path on the right, and planting strips, which suggests relatively generous spatial distribution overall.",
+   "A curb-separated side path is visible on the right, giving non-motorized users their own corridor instead of forcing them into the vehicle lanes, which supports fairer use of the street space.",
+   "Accessibility is only moderate because the image shows continuous curbs along the right edge but no visible curb ramps, tactile paving, or marked crossings that would demonstrate barrier-free access for all users.",
+   "The roadway markings are clear and orderly, which supports rule legibility for all users, but the absence of visible pedestrian priority elements means fairness for slower users is not strongly expressed."
+  ],
+  "safety": [
+   "The road surface is new and smooth, and the lane markings are highly visible, which helps drivers maintain lane position and reduces operational uncertainty.",
+   "Streetlights are installed continuously along the corridor, which likely improves nighttime visibility and perceived safety compared with an unlit road.",
+   "The right-side path is physically separated from the main carriageway by a curb and planting strip, reducing direct conflict between motor vehicles and slower users.",
+   "Safety is limited by the very wide, straight, open roadway, which can encourage higher driving speeds, and there are no visible crossings, traffic-calming devices, or pedestrian refuge features in the scene."
+  ],
+  "livability": [
+   "The corridor appears sparse and single-purpose, with no visible shops, seating, bus stops, or active building frontages that would support daily social or service needs.",
+   "There are planted strips and rows of young trees on both sides, which add some environmental quality, but the surrounding area still feels undeveloped and low in human activity.",
+   "No pedestrians, cyclists, or street-side gathering spaces are visible, so the street currently offers limited signs of social vitality or community interaction.",
+   "The adjacent water edge and open sky provide some amenity value, but the overall setting reads more as a transport corridor than a lived-in public place."
+  ],
+  "sustainability": [
+   "The presence of a separated side path on the right can support walking or cycling, which is more sustainable than a road designed only for cars.",
+   "Linear planting strips and rows of street trees contribute some green infrastructure, although the trees are young and currently provide limited canopy or ecological performance.",
+   "The broad paved carriageway occupies a large amount of impervious surface, which weakens sustainability compared with a more space-efficient street allocation.",
+   "No visible bus stop, transit facility, bioswale, rain garden, or permeable drainage feature can be identified from the image, so sustainable mobility and stormwater functions appear limited."
+  ],
+  "aesthetics": [
+   "The street has a clean, orderly appearance with fresh asphalt, crisp lane markings, and a consistent rhythm of modern light poles, creating strong visual coherence.",
+   "Rows of trees and low planting beds soften the corridor and add structure, even though the vegetation is still immature.",
+   "The open water on both sides and long sightline give the scene a spacious landscape character that many users may find visually appealing.",
+   "Aesthetic quality is reduced somewhat by the emptiness of the surroundings and the lack of mature shade trees, active edges, or distinctive architectural features."
+  ],
+  "comfort": [
+   "Thermal comfort is weak because the visible trees are small and leafless, providing almost no shade on either the roadway edge or the side path.",
+   "Physical comfort is mixed: the asphalt road and side path appear smooth and even, but no benches, shelters, or resting facilities are visible anywhere along the corridor.",
+   "Psychological comfort may be limited for some users because the street is extremely wide, open, and largely empty, which can feel exposed rather than sheltered.",
+   "The planting strip and separation from traffic on the right improve comfort somewhat for non-motorized users, but the lack of enclosure and amenities keeps the overall comfort score modest."
+  ],
+  "walkability": [
+   "A dedicated side path exists on the right side, which provides a continuous space where walking is at least physically possible without entering the vehicle lanes.",
+   "Walkability is constrained because the path is narrow-to-moderate in width and lacks visible benches, shade structures, crossings, or destination-oriented frontage that would make walking attractive.",
+   "The long straight corridor has no visible intersections, curb ramps, or marked pedestrian crossings in the frame, so route connectivity and crossing convenience cannot be confirmed.",
+   "Young trees and low planting improve the walking environment slightly, but the absence of mature canopy means limited shade and reduced walking comfort in hot weather."
+  ]
+ }
+}

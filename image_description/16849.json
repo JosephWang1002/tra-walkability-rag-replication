@@ -1,0 +1,33 @@
+{
+ "oid": "16849",
+ "description": "The scene shows a multi-lane road with no visible continuous sidewalk on either side; pedestrians would likely need to walk along the roadway edge. There is some physical separation on the right via a low curb/guardrail and a fenced building frontage, but the street appears wide and traffic is not clearly calmed (marked lanes, no pedestrian crossing visible), with limited greenery and shade. Lighting is provided by tall streetlights and there are few apparent obstacles or accessibility features like curb ramps/marked crossings in view.",
+ "model": "gpt-5.4-nano",
+ "usage": {
+  "completion_tokens": 105,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 11,
+   "engine_ttft_ms": 771,
+   "engine_ttlt_ms": 1892,
+   "pre_inference_ms": 445,
+   "service_tbt_ms": 11,
+   "service_ttft_ms": 1749,
+   "service_ttlt_ms": 2899,
+   "total_duration_ms": 2463,
+   "user_visible_ttft_ms": 1304
+  },
+  "prompt_tokens": 984,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 0
+  },
+  "total_tokens": 1089
+ },
+ "latency_s": 6.4,
+ "timestamp": "2026-08-31T16:14:37"
+}

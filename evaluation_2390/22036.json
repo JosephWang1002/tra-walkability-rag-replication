@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 58,
+      "equity": 61,
+      "fairness": 57,
+      "accessibility": 56
+    },
+    "safety": 64,
+    "livability": 50,
+    "sustainability": 63,
+    "aesthetics": 78,
+    "comfort": 66,
+    "walkability": 46,
+    "bikeability": 34
+  },
+  "explanations": {
+    "justice": [
+      "The street allocates most visible space to multiple wide motor-vehicle lanes, while pedestrian space is visually recessed behind the tree lines.",
+      "Both sides have continuous roadside tree corridors and sidewalks, suggesting some distribution of public space beyond cars.",
+      "No visible crosswalk, curb ramp, tactile paving, or other barrier-free crossing element can be identified in the scene, limiting accessibility for diverse users.",
+      "There is no visible dedicated bicycle lane, so space allocation appears less equitable for cyclists compared with drivers."
+    ],
+    "safety": [
+      "Clear lane markings and a divided traffic direction help organize vehicle movement and reduce head-on conflict.",
+      "A queue of cars in the right lanes indicates active traffic and possible speed reduction, which can lower crash severity in that lane group.",
+      "Strong low-angle sun and glare toward the horizon reduce forward visibility for all road users, especially drivers and cyclists.",
+      "No visible pedestrian crossing, refuge island, or protected bike facility is present in the image, leaving vulnerable users less protected."
+    ],
+    "livability": [
+      "Dense mature trees on both sides create a green corridor that improves the overall environmental quality of the street.",
+      "The scene is dominated by through-traffic lanes and moving or queued cars, with little visible street-level social activity or active frontage.",
+      "No visible shops, cafes, benches, bus stops, or public gathering features can be identified, which weakens everyday street life.",
+      "The road appears spacious and orderly, but its auto-oriented character limits the sense of neighborhood interaction and human-scale use."
+    ],
+    "sustainability": [
+      "Large continuous tree canopies along both sides provide substantial urban greenery and likely contribute to cooling and air-quality benefits.",
+      "The broad roadway encourages motor-vehicle travel as the dominant mode, which weakens low-carbon mobility performance.",
+      "No visible protected cycle lane, bicycle parking, or clear transit stop infrastructure is present to support mode shift away from private cars.",
+      "The vegetated roadside edges and median planting indicate some investment in green infrastructure, even though stormwater features are not clearly visible."
+    ],
+    "aesthetics": [
+      "The symmetrical rows of mature trees create a strong boulevard character and high visual coherence.",
+      "The long perspective view, orderly lane markings, and framed skyline produce a visually legible streetscape.",
+      "Road surfaces and edges appear relatively clean and maintained, supporting a neat appearance.",
+      "The heavy sun glare slightly washes out the sky and reduces detail, but the tree-lined composition remains attractive."
+    ],
+    "comfort": [
+      "Extensive tree cover along both sides likely improves thermal comfort for users on the sidewalks, especially in warm weather.",
+      "The visible roadway surface appears smooth and well paved, which supports physical comfort for drivers and potentially cyclists where they must mix with traffic.",
+      "Sun glare in the travel direction can cause visual discomfort and eye strain for road users.",
+      "The absence of visible benches, waiting areas, or pedestrian amenities reduces comfort for people spending time along the street rather than passing through."
+    ],
+    "walkability": [
+      "Sidewalks appear to exist behind the tree lines on both sides, providing at least basic pedestrian infrastructure.",
+      "However, the street is very wide and vehicle-oriented, which increases crossing distance and reduces pedestrian convenience.",
+      "No marked crosswalk, pedestrian signal, or curb extension is visible in the scene, weakening route continuity across the road.",
+      "The strong tree canopy likely makes walking more pleasant along the edges, but the lack of visible active frontage or destinations limits walking attractiveness."
+    ],
+    "bikeability": [
+      "No dedicated or protected bicycle lane is visible anywhere on the carriageway.",
+      "Cyclists would likely need to share space with several lanes of motor traffic, which reduces perceived and actual safety.",
+      "The wide roadway and queued vehicles may create overtaking and turning conflicts without any visible cycling separation.",
+      "Although the pavement looks smooth and the corridor is relatively straight, the lack of bike markings or bicycle-support facilities keeps bikeability low."
+    ]
+  },
+  "image_id": "img-1777042476773-mdem7mart",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4"
+  },
+  "generated_at": "2026-04-24T17:33:53.994Z",
+  "record_id": "54c5a2ec5084429abd833f796c29752a",
+  "stored_image_url": "/storage/records/54c5a2ec5084429abd833f796c29752a/image.jpg",
+  "stored_thumb_url": "/storage/records/54c5a2ec5084429abd833f796c29752a/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-24T17:36:58.359Z"
+}

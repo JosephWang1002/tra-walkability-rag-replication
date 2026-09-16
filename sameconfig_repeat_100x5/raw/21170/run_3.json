@@ -1,0 +1,122 @@
+{
+ "oid": "21170",
+ "run": 3,
+ "status": "complete",
+ "source_json": "E:\\PAPER1\\revision\\results\\ablation_3step\\full_rag_v2\\21170.json",
+ "image_path": "E:\\PAPER1\\human_sampled_images_200\\21170_120.687771_31.240658_09002900122003081543456597I_276.82_2020_3_吴中区郭巷街道_90.jpg",
+ "config": {
+  "desc_model": "gpt-5.4-mini",
+  "score_model": "gpt-5.4",
+  "temperature": 0.0,
+  "chunk": 512,
+  "overlap": 128,
+  "top_k": 5,
+  "dense_weight": 0.5,
+  "bm25_weight": 0.5,
+  "persona": "all_all",
+  "current_selection": "All Road Users; All Social Groups",
+  "selected_indicators": "Justice; Safety; Livability; Sustainability; Aesthetics; Comfort; Walkability",
+  "bikeability": "excluded",
+  "min_policy_passages": 1,
+  "n_academic_passages": 4,
+  "policy_index": "english_translated",
+  "retrieval": "stratified_4academic_1policy_en"
+ },
+ "model": "gpt-5.4",
+ "model_echo": "gpt-5.4-2026-03-05",
+ "temperature": 0.0,
+ "latency_s": 16.7,
+ "usage": {
+  "completion_tokens": 876,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": 0,
+   "audio_tokens": 0,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": 0
+  },
+  "latency_checkpoint": {
+   "engine_tbt_ms": 15,
+   "engine_ttft_ms": 377,
+   "engine_ttlt_ms": 13101,
+   "pre_inference_ms": 391,
+   "service_tbt_ms": 15,
+   "service_ttft_ms": 1063,
+   "service_ttlt_ms": 13782,
+   "user_visible_ttft_ms": 672
+  },
+  "prompt_tokens": 5348,
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cached_tokens": 4992
+  },
+  "total_tokens": 6224
+ },
+ "raw": "{\n  \"scores\": {\n    \"justice\": {\n      \"overall\": 28.0,\n      \"equity\": 30.0,\n      \"fairness\": 25.0,\n      \"accessibility\": 20.0\n    },\n    \"safety\": 42.0,\n    \"livability\": 18.0,\n    \"sustainability\": 22.0,\n    \"aesthetics\": 46.0,\n    \"comfort\": 24.0,\n    \"walkability\": 12.0\n  },\n  \"explanations\": {\n    \"justice\": [\n      \"The image shows a very wide multi-lane bridge carriageway devoted almost entirely to motor traffic, while no visible sidewalk, pedestrian zone, or bike lane is present, indicating highly uneven spatial allocation among road users.\",\n      \"Accessibility is weak because there are no visible curb ramps, tactile paving, crossings, refuge islands, or barrier-free pedestrian facilities anywhere in the scene.\",\n      \"Fairness for all road users is limited since the bridge design visibly prioritizes drivers through multiple travel lanes, lane markings, and continuous guardrails, but provides no clearly usable space for pedestrians or cyclists.\"\n    ],\n    \"safety\": [\n      \"For drivers, safety is moderately supported by clear lane markings, a smooth asphalt surface, and regularly spaced streetlights along the bridge.\",\n      \"Safety for non-motorized users appears poor because no separated sidewalk, shoulder suitable for walking, or protected cycling facility is visible on either side of the bridge.\",\n      \"The bridge edges are protected by concrete barriers and railings, which help contain vehicles, but the long open roadway and apparent high-speed geometry may increase crash severity if conflicts occur.\"\n    ],\n    \"livability\": [\n      \"Livability is very low because the scene is dominated by fast-moving road infrastructure with no visible shops, seating, social spaces, or active street frontage.\",\n      \"There are no benches, bus stops, shelters, or gathering areas visible, so the space does not appear to support everyday public life beyond vehicle movement.\",\n      \"The bridge setting, with expansive asphalt, barriers, and distant towers, offers little evidence of human-scale amenities or mixed-use activity that would make the street socially vibrant.\"\n    ],\n    \"sustainability\": [\n      \"Sustainability appears limited because the visible design allocates most space to private motor traffic and does not show dedicated infrastructure for walking, cycling, or public transit.\",\n      \"There is almost no visible street greenery on the bridge deck itself; trees and vegetation are only distant and do not function as integrated green infrastructure in the roadway space.\",\n      \"No permeable paving, bioswales, rain gardens, or other stormwater features are visible; the scene is dominated by impervious asphalt and concrete barriers.\"\n    ],\n    \"aesthetics\": [\n      \"The roadway has a clean, orderly appearance with consistent lane markings, evenly spaced lamp posts, and a broad open sky, which gives some visual coherence.\",\n      \"However, the visual character is heavily infrastructural, dominated by asphalt, concrete barriers, utility towers, and guardrails, which reduces richness and human-scale appeal.\",\n      \"Distant water, skyline buildings, and the expansive cloud pattern add some scenic value, but the immediate streetscape remains stark and utilitarian.\"\n    ],\n    \"comfort\": [\n      \"Thermal comfort is poor because the bridge is fully exposed to sun and sky, with no visible tree canopy, shade structures, or sheltered pedestrian areas.\",\n      \"Physical comfort for all road users beyond drivers is very weak since no sidewalk, seating, resting point, or protected edge space is visible.\",\n      \"Psychological comfort is limited by the wide high-speed roadway, long uninterrupted bridge span, and absence of buffering features that would make the environment feel calm or welcoming for non-drivers.\"\n    ],\n    \"walkability\": [\n      \"Walkability is extremely poor because no continuous sidewalk or pedestrian path is visible anywhere along the bridge.\",\n      \"There are no visible crossings, curb extensions, pedestrian signals, or refuge islands, so route continuity and crossing opportunities appear absent.\",\n      \"The environment lacks key walking supports such as shade, seating, active frontage, and human-scale enclosure; instead it is a vehicle-oriented bridge corridor.\"\n    ]\n  }\n}",
+ "parsed_scores": {
+  "justice": {
+   "overall": 28.0,
+   "equity": 30.0,
+   "fairness": 25.0,
+   "accessibility": 20.0
+  },
+  "safety": 42.0,
+  "livability": 18.0,
+  "sustainability": 22.0,
+  "aesthetics": 46.0,
+  "comfort": 24.0,
+  "walkability": 12.0
+ },
+ "scores_flat": {
+  "justice": 28.0,
+  "justice_equity": 30.0,
+  "justice_fairness": 25.0,
+  "justice_accessibility": 20.0,
+  "safety": 42.0,
+  "livability": 18.0,
+  "sustainability": 22.0,
+  "aesthetics": 46.0,
+  "comfort": 24.0,
+  "walkability": 12.0
+ },
+ "parse_error": null,
+ "timestamps": {
+  "completed": "2026-09-10T09:47:23+00:00"
+ },
+ "parsed_explanations": {
+  "justice": [
+   "The image shows a very wide multi-lane bridge carriageway devoted almost entirely to motor traffic, while no visible sidewalk, pedestrian zone, or bike lane is present, indicating highly uneven spatial allocation among road users.",
+   "Accessibility is weak because there are no visible curb ramps, tactile paving, crossings, refuge islands, or barrier-free pedestrian facilities anywhere in the scene.",
+   "Fairness for all road users is limited since the bridge design visibly prioritizes drivers through multiple travel lanes, lane markings, and continuous guardrails, but provides no clearly usable space for pedestrians or cyclists."
+  ],
+  "safety": [
+   "For drivers, safety is moderately supported by clear lane markings, a smooth asphalt surface, and regularly spaced streetlights along the bridge.",
+   "Safety for non-motorized users appears poor because no separated sidewalk, shoulder suitable for walking, or protected cycling facility is visible on either side of the bridge.",
+   "The bridge edges are protected by concrete barriers and railings, which help contain vehicles, but the long open roadway and apparent high-speed geometry may increase crash severity if conflicts occur."
+  ],
+  "livability": [
+   "Livability is very low because the scene is dominated by fast-moving road infrastructure with no visible shops, seating, social spaces, or active street frontage.",
+   "There are no benches, bus stops, shelters, or gathering areas visible, so the space does not appear to support everyday public life beyond vehicle movement.",
+   "The bridge setting, with expansive asphalt, barriers, and distant towers, offers little evidence of human-scale amenities or mixed-use activity that would make the street socially vibrant."
+  ],
+  "sustainability": [
+   "Sustainability appears limited because the visible design allocates most space to private motor traffic and does not show dedicated infrastructure for walking, cycling, or public transit.",
+   "There is almost no visible street greenery on the bridge deck itself; trees and vegetation are only distant and do not function as integrated green infrastructure in the roadway space.",
+   "No permeable paving, bioswales, rain gardens, or other stormwater features are visible; the scene is dominated by impervious asphalt and concrete barriers."
+  ],
+  "aesthetics": [
+   "The roadway has a clean, orderly appearance with consistent lane markings, evenly spaced lamp posts, and a broad open sky, which gives some visual coherence.",
+   "However, the visual character is heavily infrastructural, dominated by asphalt, concrete barriers, utility towers, and guardrails, which reduces richness and human-scale appeal.",
+   "Distant water, skyline buildings, and the expansive cloud pattern add some scenic value, but the immediate streetscape remains stark and utilitarian."
+  ],
+  "comfort": [
+   "Thermal comfort is poor because the bridge is fully exposed to sun and sky, with no visible tree canopy, shade structures, or sheltered pedestrian areas.",
+   "Physical comfort for all road users beyond drivers is very weak since no sidewalk, seating, resting point, or protected edge space is visible.",
+   "Psychological comfort is limited by the wide high-speed roadway, long uninterrupted bridge span, and absence of buffering features that would make the environment feel calm or welcoming for non-drivers."
+  ],
+  "walkability": [
+   "Walkability is extremely poor because no continuous sidewalk or pedestrian path is visible anywhere along the bridge.",
+   "There are no visible crossings, curb extensions, pedestrian signals, or refuge islands, so route continuity and crossing opportunities appear absent.",
+   "The environment lacks key walking supports such as shade, seating, active frontage, and human-scale enclosure; instead it is a vehicle-oriented bridge corridor."
+  ]
+ }
+}

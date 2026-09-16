@@ -1,0 +1,68 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 33,
+      "equity": 35,
+      "fairness": 34,
+      "accessibility": 28
+    },
+    "safety": 38,
+    "livability": 20,
+    "sustainability": 30,
+    "aesthetics": 22,
+    "comfort": 18,
+    "walkability": 26,
+    "bikeability": 15
+  },
+  "explanations": {
+    "justice": [
+      "Unimproved countryside temporary connecting lane, only meets basic passing demand.",
+      "No accessibility modification, extremely inconvenient for vulnerable groups.",
+      "Serious resource shortage, low overall travel equity."
+    ],
+    "safety": [
+      "Road surface mud, water accumulation, cracks and uneven terrain bring slipping hazard.",
+      "Narrow road width, no guardrails and traffic warning signs.",
+      "Power poles and weeds on both sides bring additional collision risks."
+    ],
+    "livability": [
+      "Located in undeveloped rural fringe, no residential and public supporting facilities.",
+      "No leisure, rest and daily service functions.",
+      "Almost no permanent livability attribute."
+    ],
+    "sustainability": [
+      "Surrounding natural wild vegetation provides limited ecological benefits.",
+      "Bare soil and muddy road cause soil erosion and rainwater runoff problems.",
+      "No ecological and low-carbon design consideration."
+    ],
+    "aesthetics": [
+      "Rough unarranged road appearance, messy overhead lines and weeds on both sides.",
+      "No artificial landscaping and tidiness treatment.",
+      "Overall visual feeling is dilapidated and disordered."
+    ],
+    "comfort": [
+      "Bumpy, muddy road surface leads to extremely poor passing experience.",
+      "No shading and noise isolation design.",
+      "Zero human-oriented comfort optimization."
+    ],
+    "walkability": [
+      "Only basic short-distance foot passage available.",
+      "Mud and water accumulation greatly hinder walking.",
+      "Very poor walking experience in rainy days."
+    ],
+    "bikeability": [
+      "Road condition is extremely unsuitable for riding.",
+      "High slipping and falling risk.",
+      "Not recommended for any cycling activity."
+    ]
+  },
+  "image_id": "suburban-rural-mud-access-lane",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.4",
+    "ragIndexVersion": "v1.0.0"
+  },
+  "generated_at": "2026-05-01T10:04:00.000Z",
+  "record_id": "rec-suburban-rural-mud-access-lane",
+  "export_timestamp": "2026-05-01T10:04:50.000Z"
+}

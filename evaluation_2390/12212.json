@@ -1,0 +1,72 @@
+{
+  "scores": {
+    "justice": {
+      "overall": 55,
+      "equity": 58,
+      "fairness": 55,
+      "accessibility": 52
+    },
+    "safety": 70,
+    "livability": 50,
+    "sustainability": 66,
+    "aesthetics": 82,
+    "comfort": 74,
+    "walkability": 46,
+    "bikeability": 40
+  },
+  "explanations": {
+    "justice": [
+      "Spatial resources appear heavily allocated to motor vehicles (multiple wide travel lanes with clear lane markings), while dedicated space for walking/cycling is not visible, reducing equity for non-drivers.",
+      "No marked crosswalks, curb ramps, or pedestrian signals are visible in the scene, limiting practical accessibility for people who need safe crossing opportunities.",
+      "A continuous roadside fence/guardrail on the right edge suggests pedestrians are physically separated/channeled, which can be fair for preventing unsafe crossings but may also restrict access to destinations along the corridor if openings are limited."
+    ],
+    "safety": [
+      "Clear lane markings and a wide carriageway support predictable vehicle movements, reducing sideswipe/conflict risk for drivers.",
+      "A planted median/green buffer separates opposing directions (and/or separates carriageway segments), which typically lowers head-on conflict risk and improves overall traffic safety.",
+      "However, there are no visible protected bike lanes or dedicated pedestrian crossings; mixed or informal crossing would be hazardous on this high-speed-looking arterial, reducing safety for cyclists and pedestrians."
+    ],
+    "livability": [
+      "The corridor reads as a through-traffic arterial (wide lanes, long sightlines, sparse frontage), which tends to discourage street-level social activity and reduces perceived neighborhood vibrancy.",
+      "No benches, plazas, or small public activity nodes are visible; the right-side path area (behind the fence) lacks identifiable social/resting amenities.",
+      "Vehicle presence (bus and cars) dominates the scene, and there are no visible storefronts or active building edges, limiting daily-use convenience and street life in this segment."
+    ],
+    "sustainability": [
+      "Extensive mature street trees and landscaped greenery (left and right tree lines, median shrubs) contribute to urban cooling, air quality benefits, and habitat value.",
+      "A bus is present in the traffic stream, indicating public transport is operating on this corridor, supporting lower-carbon mobility compared with car-only streets.",
+      "Despite greenery, the design appears car-oriented (large paved roadway), which can induce higher vehicle use; no visible cycling infrastructure suggests limited support for low-carbon active travel."
+    ],
+    "aesthetics": [
+      "Continuous rows of mature trees create a strong green canopy and pleasant visual rhythm along both sides of the road.",
+      "Landscaped median and roadside shrubs look maintained and coherent, adding visual order and softness to the corridor.",
+      "The roadway appears clean with consistent markings and minimal visual clutter, producing a tidy, visually legible streetscape."
+    ],
+    "comfort": [
+      "Dense tree canopy and abundant greenery provide shade and reduce radiant heat exposure, improving thermal comfort (especially along edges/side paths).",
+      "The roadway surface appears smooth and well-maintained, which improves physical comfort for drivers and bus passengers (less vibration).",
+      "Psychological comfort is mixed: the open sightlines and orderly layout feel predictable, but the scale and speed-cueing width of the road can feel stressful for pedestrians/cyclists if they must travel or cross here."
+    ],
+    "walkability": [
+      "A pedestrian realm is not clearly visible (sidewalk width/continuity cannot be confirmed from the image), and the right-side fence suggests limited direct access, reducing walkability.",
+      "No marked crosswalks or pedestrian refuge islands are visible, making crossing difficult and discouraging walking for trip-making across the corridor.",
+      "While the tree-lined edges could make walking pleasant thermally, the apparent arterial speed environment and distance from active frontages reduce walking attractiveness and practicality."
+    ],
+    "bikeability": [
+      "No bike lanes, protected cycle tracks, or bicycle markings are visible; cyclists would likely need to mix with fast motor traffic, which strongly reduces bikeability.",
+      "The wide multi-lane roadway and long straight geometry cue higher speeds, increasing perceived and actual risk for cycling in mixed traffic.",
+      "No visible bicycle-specific signals, intersection treatments, or bike parking are present in this segment, limiting cycling convenience and network support."
+    ]
+  },
+  "image_id": "img-1777267093313-k24w0ja0w",
+  "persona": "all_all",
+  "model_info": {
+    "llmVersion": "gpt-5.2"
+  },
+  "generated_at": "2026-04-27T05:35:19.611Z",
+  "record_id": "0fa6175eb3ec439a813bad1c95c6ae3e",
+  "stored_image_url": "/storage/records/0fa6175eb3ec439a813bad1c95c6ae3e/image.jpg",
+  "stored_thumb_url": "/storage/records/0fa6175eb3ec439a813bad1c95c6ae3e/thumb.jpg",
+  "user_feedback": {
+    "by_indicator": {}
+  },
+  "export_timestamp": "2026-04-27T05:37:50.425Z"
+}
